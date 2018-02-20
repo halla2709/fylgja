@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, TouchableOpacity, Image} from 'react-native';
 import { Font } from 'expo'; 
 
 export default class App extends React.Component {
@@ -10,15 +10,17 @@ export default class App extends React.Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      'merriweather-black': require('./source/styles/fonts/Merriweather-Black.ttf'),
-      'dosis-medium': require('./source/styles/fonts/Dosis-Medium.ttf'),
-      'opensans-regular': require('./source/styles/fonts/OpenSans-Regular.ttf'),
+      'merriweather-black': require('./src/assets/fonts/Merriweather-Black.ttf'),
+      'dosis-medium': require('./src/assets/fonts/Dosis-Medium.ttf'),
+      'opensans-regular': require('./src/assets/fonts/OpenSans-Regular.ttf'),
     });
     this.setState({ fontLoaded: true });
   }
 
   render(){
     return (
+
+      <Image source={require("./src/assets/images/logo.png")}/>
       
       <View style={styles.container}>
       {
@@ -53,12 +55,13 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgb(239,239,239)',
     alignItems: 'center',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    flexDirection: 'column'
   },
 
   title: {
     fontFamily: 'merriweather-black',
-    fontSize: 50
+    fontSize: 50,
   },
   
   buttons: {
@@ -73,11 +76,11 @@ const styles = StyleSheet.create({
 
   h1: {
     fontFamily: 'dosis-medium',
-    fontSize: 25
+    fontSize: 25,
   },
 
   body: {
     fontFamily: 'opensans-regular',
-    fontSize: 18
+    fontSize: 18,
   }
 });
