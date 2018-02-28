@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from 'react-native';
-import { Font } from 'expo'; 
+import { Font } from 'expo';
+var styles = require('../styles/style.js'); 
 
 export class SearchScreen extends React.Component {
   
@@ -10,9 +11,9 @@ export class SearchScreen extends React.Component {
   
     async componentDidMount() {
       await Font.loadAsync({
-        'merriweather-black': require('../assets/fonts/Merriweather-Black.ttf'),
-        'dosis-medium': require('../assets/fonts/Dosis-Medium.ttf'),
-        'opensans-regular': require('../assets/fonts/OpenSans-Regular.ttf'),
+        'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
+        'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
+        'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
       });
       this.setState({ fontLoaded: true });
     }

@@ -1,8 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, Alert, TouchableOpacity, Image } from 'react-native';
 import { Font } from 'expo'; 
+var styles = require('../styles/style.js');
 
 export class HomeScreen extends React.Component {
+  
+
   
     state = {
       fontLoaded: false
@@ -10,84 +13,46 @@ export class HomeScreen extends React.Component {
   
     async componentDidMount() {
       await Font.loadAsync({
-        'merriweather-black': require('../assets/fonts/Merriweather-Black.ttf'),
-        'dosis-medium': require('../assets/fonts/Dosis-Medium.ttf'),
-        'opensans-regular': require('../assets/fonts/OpenSans-Regular.ttf'),
+        'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
+        'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
+        'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
+  
       });
       this.setState({ fontLoaded: true });
     }
   
     render(){
       return (
-       
-        <View style={styles.container}>
-        <Image style={styles.image} source={require('./src/assets/images/logo.png')}/>
-  
+      <View style={styles.wholepage}>
+        <View style={styles.imagecontainer}>
+        <Image style={styles.image} source={require('../assets/images/logo.png')}/>
+        </View>
+
+        <View style={styles.textcontainer}>
+        
         {
           this.state.fontLoaded ? (
           <Text style={styles.title}> Fylgja </Text>
           ) : null
         }
   
-  {
-          this.state.fontLoaded ? (
-          <Text style={styles.h1}> Ég er fyrirsögn </Text>
-          ) : null
-        }
-  
-        {
-          this.state.fontLoaded ? (
-        <Text style={styles.body}> Góðan dag, ég er Fylgjan</Text>
-      ) : null
-    }
         <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
-        <Text>Veldu mig!</Text> 
+        <Text>Fylgjan</Text> 
         </TouchableOpacity>
-  
+
+        <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
+        <Text>Upplýsingar</Text> 
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
+        <Text>Fréttaveita</Text> 
+        </TouchableOpacity>
+
+        
         </View>
+        </View>
+    
       );
     }
   }
     
-  
-  const styles = StyleSheet.create({
-    container: {
-      backgroundColor: 'rgb(239,239,239)',
-      alignItems: 'center',
-      justifyContent: 'space-around',
-      flex: 1
-    },
-  
-    title: {
-      fontFamily: 'merriweather-black',
-      fontSize: 50,
-    },
-    
-    buttons: {
-      width: 300,
-      backgroundColor: '#DDDDDD',
-      alignItems: 'center',
-      padding: 10,
-      borderColor: '#000',
-      borderWidth: 1
-  
-    },
-  
-    h1: {
-      fontFamily: 'dosis-medium',
-      fontSize: 25,
-      
-    },
-  
-    body: {
-      fontFamily: 'opensans-regular',
-      fontSize: 18,
-      
-    },
-    image: { 
-      height: 250,
-      width: 250,
-      flex: 1
-    },
-    
-  });
