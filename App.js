@@ -19,10 +19,10 @@ export default class App extends React.Component {
 
   render(){
     return (
-
-      <Image source={require("./src/assets/images/logo.png")}/>
-      
+     
       <View style={styles.container}>
+      <Image style={styles.image} source={require('./src/assets/images/logo.png')}/>
+
       {
         this.state.fontLoaded ? (
         <Text style={styles.title}> Fylgja </Text>
@@ -52,11 +52,10 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: 'rgb(239,239,239)',
     alignItems: 'center',
     justifyContent: 'space-around',
-    flexDirection: 'column'
+    flex: 1
   },
 
   title: {
@@ -77,10 +76,18 @@ const styles = StyleSheet.create({
   h1: {
     fontFamily: 'dosis-medium',
     fontSize: 25,
+    
   },
 
   body: {
     fontFamily: 'opensans-regular',
     fontSize: 18,
-  }
+    
+  },
+  image: { 
+    height: 250,
+    width: 250,
+    flex: 1
+  },
+  
 });
