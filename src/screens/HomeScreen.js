@@ -19,8 +19,10 @@ export class HomeScreen extends React.Component {
   
     render(){
       return (
-        
+       
         <View style={styles.container}>
+        <Image style={styles.image} source={require('./src/assets/images/logo.png')}/>
+  
         {
           this.state.fontLoaded ? (
           <Text style={styles.title}> Fylgja </Text>
@@ -50,15 +52,15 @@ export class HomeScreen extends React.Component {
   
   const styles = StyleSheet.create({
     container: {
-      flex: 1,
       backgroundColor: 'rgb(239,239,239)',
       alignItems: 'center',
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
+      flex: 1
     },
   
     title: {
       fontFamily: 'merriweather-black',
-      fontSize: 50
+      fontSize: 50,
     },
     
     buttons: {
@@ -73,11 +75,19 @@ export class HomeScreen extends React.Component {
   
     h1: {
       fontFamily: 'dosis-medium',
-      fontSize: 25
+      fontSize: 25,
+      
     },
   
     body: {
       fontFamily: 'opensans-regular',
-      fontSize: 18
-    }
+      fontSize: 18,
+      
+    },
+    image: { 
+      height: 250,
+      width: 250,
+      flex: 1
+    },
+    
   });
