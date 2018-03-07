@@ -1,15 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, TouchableOpacity, Image } from 'react-native';
-import { Font } from 'expo'; 
-var styles = require('../styles/style.js');
 import Favicon from 'react-favicon';
+import { Text, View, Button, Alert, TouchableOpacity, Image } from 'react-native';
+import { Font } from 'expo';
+import Styles from './../styles/Styles'
 
 export class HomeScreen extends React.Component {
+  state = {
+    fontLoaded: false
+  };
 
-
-    state = {
-      fontLoaded: false
-    };
   
     async componentDidMount() {
       await Font.loadAsync({
@@ -52,9 +51,32 @@ export class HomeScreen extends React.Component {
 
         
         </View>
+
+        <View style={Styles.textcontainer}>
+
+          {
+            this.state.fontLoaded ? (
+              <Text style={Styles.title}> Fylgja </Text>
+            ) : null
+          }
+
+          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+            <Text>Fylgjan</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+            <Text>Upplýsingar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+            <Text>Fréttaveita</Text>
+          </TouchableOpacity>
+
+
         </View>
-    
-      );
-    }
+      </View>
+
+    );
   }
-    
+}
+

@@ -1,8 +1,6 @@
-'use strict';
+import { StyleSheet } from 'react-native';
 
-var React = require('react-native');
-
-var myStyles = React.StyleSheet.create({ 
+export default StyleSheet.create({
   
   /*Color theme:
   Úr logoinu:
@@ -84,4 +82,3 @@ var myStyles = React.StyleSheet.create({
   //SearchScreen
 
 
-module.exports = myStyles;
