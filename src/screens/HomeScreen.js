@@ -4,7 +4,7 @@ import { Font } from 'expo';
 var styles = require('../styles/style.js');
 
 export class HomeScreen extends React.Component {
-  
+
 
   
     state = {
