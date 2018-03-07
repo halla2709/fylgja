@@ -4,6 +4,9 @@ import { Text } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
+import { InformationScreen } from '../screens/InformationScreen.js';
+import { NewsFeedScreen } from '../screens/NewsfeedScreen.js';
+import DrawerComponent from '../components/DrawerComponent.js';
 
 const NavStack = StackNavigator({
     Home: {
@@ -20,19 +23,25 @@ const NavStack = StackNavigator({
     })
 
 const DrawerStack = DrawerNavigator({
-    Nav: { screen: NavStack }
+    Nav: { 
+        screen: NavStack 
+    },
+    Information: {
+        screen: InformationScreen
+    },
+    NewsFeed: {
+        screen: NewsFeedScreen
+    }
 },
-    {
-        navigationOptions: {
-            drawerLabel: 'Drawer'
-        }
-    });
+{
+    contentComponent: DrawerComponent
+});
 
 const RootStack = StackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
 {
-    headerMode: 'float',
+    headerMode: 'screen',
     navigationOptions: ({navigation}) => ({
         headerLeft: <Ionicons onPress={() => 
             navigation.navigate('DrawerToggle')}
