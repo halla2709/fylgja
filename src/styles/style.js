@@ -6,35 +6,39 @@ var myStyles = React.StyleSheet.create({
   
   /*Color theme:
   Úr logoinu:
-  Aðalblár (34,82,171)
+  Aðalblár rgb(34,82,171),
   Gulur rgb(251,199,6),
-  Grænn (62,135,60)
-  Brúnn (201,52,36)
+  Grænn rgb(62,135,60),
+  Brúnn rgb(201,52,36),
 
-
-  Ljósblárri í sama 54,62,201
-  Grár bakgrunnur 239,239,239
+  Gott að vita:
+  Ljósblárri í sama schema rgb(54,62,201),
+  Grár bakgrunnur rgb(239,239,239),
+  Hvítur rgb(255,255,255),
+  Svartur rgb(0,0,0),
   */
   
   //for all pages
 
   wholepage: {
-    backgroundColor: 'rgb(239,239,239)',
-    
+   backgroundColor: 'rgb(239,239,239)',
   },
 
   title: {
     fontFamily: 'merriweather-black',
-    fontSize: 50,
+    fontSize: 60,
+
   },
   
   buttons: {
     width: 300,
+    height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
     borderColor: '#000',
     borderWidth: 1,
+    margin: 3,
   },
 
   h1: {
@@ -62,18 +66,20 @@ var myStyles = React.StyleSheet.create({
   imagecontainer: {
     alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1
+   
   },
 
   image: { 
     width: 250,
-    height: 250
+    height: 300,
+    
+    
   },
 
   textcontainer: {
     alignItems: 'center',
     justifyContent: 'space-between',
-    flex: 2
+
   },
 })
   

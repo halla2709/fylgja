@@ -31,7 +31,7 @@ const RootStack = StackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
 {
-    headerMode: 'float',
+    headerMode: 'screen',
     navigationOptions: {
         title: 'Hello',
         headerStyle: {

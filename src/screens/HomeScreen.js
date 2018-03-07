@@ -2,11 +2,11 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, TouchableOpacity, Image } from 'react-native';
 import { Font } from 'expo'; 
 var styles = require('../styles/style.js');
+import Favicon from 'react-favicon';
 
 export class HomeScreen extends React.Component {
 
 
-  
     state = {
       fontLoaded: false
     };
@@ -24,28 +24,30 @@ export class HomeScreen extends React.Component {
     render(){
       return (
       <View style={styles.wholepage}>
-        <View style={styles.imagecontainer}>
-        <Image style={styles.image} source={require('../assets/images/storkur.png')}/>
-        </View>
+        
 
         <View style={styles.textcontainer}>
         
         {
           this.state.fontLoaded ? (
-          <Text style={styles.title}> Fylgja </Text>
+          <Text style={styles.title}> Fylgjan </Text>
           ) : null
         }
+
+        <View style={styles.imagecontainer}>
+        <Image style={styles.image} source={require('../assets/images/storkur.png')}/>
+        </View>
   
         <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
-        <Text>Fylgjan</Text> 
+        <Text style={styles.h2}>Fylgjan</Text> 
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
-        <Text>Upplýsingar</Text> 
+        <Text style={styles.h2}>Upplýsingar</Text> 
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.buttons} onPress={() => this.props.navigation.navigate('Search')}> 
-        <Text>Fréttaveita</Text> 
+        <Text style={styles.h2}>Fréttaveita</Text> 
         </TouchableOpacity>
 
         
