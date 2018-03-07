@@ -2,7 +2,7 @@ import React from 'react';
 import Favicon from 'react-favicon';
 import { Text, View, Button, Alert, TouchableOpacity, Image } from 'react-native';
 import { Font } from 'expo';
-import Styles from './../styles/Styles'
+import styles from './../styles/Styles'
 
 export class HomeScreen extends React.Component {
   state = {
@@ -52,28 +52,7 @@ export class HomeScreen extends React.Component {
         
         </View>
 
-        <View style={Styles.textcontainer}>
-
-          {
-            this.state.fontLoaded ? (
-              <Text style={Styles.title}> Fylgja </Text>
-            ) : null
-          }
-
-          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
-            <Text>Fylgjan</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
-            <Text>Upplýsingar</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
-            <Text>Fréttaveita</Text>
-          </TouchableOpacity>
-
-
-        </View>
+        
       </View>
 
     );

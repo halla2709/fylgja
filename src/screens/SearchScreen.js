@@ -43,7 +43,7 @@ onCancelButtonPress={() => {Alert.alert("Hættir við að leita :(")}}
 />
 */
 
-        <TouchableOpacity style={styles.buttons} onPress={() => {Alert.alert("Kemst ekkert héðan :(")}}> 
+        <TouchableOpacity style={Styles.buttons} onPress={() => {Alert.alert("Kemst ekkert héðan :(")}}> 
         <Text>Ekki velja mig!</Text> 
         </TouchableOpacity>
 
