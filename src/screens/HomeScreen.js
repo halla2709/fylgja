@@ -25,7 +25,7 @@ export class HomeScreen extends React.Component {
       return (
       <View style={styles.wholepage}>
         <View style={styles.imagecontainer}>
-        <Image style={styles.image} source={require('../assets/images/logo.png')}/>
+        <Image style={styles.image} source={require('../assets/images/storkur.png')}/>
         </View>
 
         <View style={styles.textcontainer}>
