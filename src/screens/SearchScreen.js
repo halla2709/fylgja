@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from 'react-native';
 import { Font } from 'expo';
+import SearchBar from 'react-native-search-bar';
 var styles = require('../styles/style.js'); 
 
 export class SearchScreen extends React.Component {
@@ -34,6 +35,15 @@ export class SearchScreen extends React.Component {
           ) : null
         }
   
+/*
+  <SearchBar
+ref='searchBar'
+placeholder='Search'
+onSearchButtonPress={() => {Alert.alert("YAY þú leitaðir :)")}}
+onCancelButtonPress={() => {Alert.alert("Hættir við að leita :(")}}
+/>
+*/
+
         <TouchableOpacity style={styles.buttons} onPress={() => {Alert.alert("Kemst ekkert héðan :(")}}> 
         <Text>Ekki velja mig!</Text> 
         </TouchableOpacity>
@@ -43,37 +53,3 @@ export class SearchScreen extends React.Component {
     }
   }
     
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'rgb(239,239,239)',
-      alignItems: 'center',
-      justifyContent: 'space-around'
-    },
-  
-    title: {
-      fontFamily: 'merriweather-black',
-      fontSize: 50
-    },
-    
-    buttons: {
-      width: 300,
-      backgroundColor: '#DDDDDD',
-      alignItems: 'center',
-      padding: 10,
-      borderColor: '#000',
-      borderWidth: 1
-  
-    },
-  
-    h1: {
-      fontFamily: 'dosis-medium',
-      fontSize: 25
-    },
-  
-    body: {
-      fontFamily: 'opensans-regular',
-      fontSize: 18
-    }
-  });

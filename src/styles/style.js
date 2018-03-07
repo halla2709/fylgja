@@ -4,9 +4,23 @@ var React = require('react-native');
 
 var myStyles = React.StyleSheet.create({ 
   
+  /*Color theme:
+  Úr logoinu:
+  Aðalblár (34,82,171)
+  Gulur rgb(251,199,6),
+  Grænn (62,135,60)
+  Brúnn (201,52,36)
+
+
+  Ljósblárri í sama 54,62,201
+  Grár bakgrunnur 239,239,239
+  */
+  
   //for all pages
+
   wholepage: {
     backgroundColor: 'rgb(239,239,239)',
+    
   },
 
   title: {
@@ -26,6 +40,16 @@ var myStyles = React.StyleSheet.create({
   h1: {
     fontFamily: 'dosis-medium',
     fontSize: 25,
+  },
+
+  h2: {
+    fontFamily: 'dosis-medium',
+    fontSize: 25,
+  },
+
+  p: {
+    fontFamily: 'opensans-regular',
+    fontSize: 15,
   },
 
   body: {
@@ -53,7 +77,7 @@ var myStyles = React.StyleSheet.create({
   },
 })
   
-  
+  //SearchScreen
 
 
 module.exports = myStyles;
