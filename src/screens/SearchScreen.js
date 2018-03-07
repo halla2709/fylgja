@@ -1,79 +1,43 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Alert, TouchableOpacity } from 'react-native';
+import {Text, View, Button, Alert, TouchableOpacity } from 'react-native';
 import { Font } from 'expo';
-var styles = require('../styles/style.js'); 
+import Styles from './../styles/Styles'
 
 export class SearchScreen extends React.Component {
-  
-    state = {
-      fontLoaded: false
-    };
-  
-    async componentDidMount() {
-      await Font.loadAsync({
-        'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
-        'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
-        'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
-      });
-      this.setState({ fontLoaded: true });
-    }
-  
-    render(){
-      return (
-        
-        <View style={styles.container}>
+  state = {
+    fontLoaded: false
+  };
+
+  async componentDidMount() {
+    await Font.loadAsync({
+      'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
+      'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
+      'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
+    });
+    this.setState({ fontLoaded: true });
+  }
+
+  render() {
+    return (
+
+      <View style={Styles.textcontainer}>
         {
           this.state.fontLoaded ? (
-          <Text style={styles.title}> Fylgja </Text>
+            <Text style={Styles.title}> Fylgja </Text>
           ) : null
         }
-  
-  {
+
+        {
           this.state.fontLoaded ? (
-          <Text style={styles.h1}> Hér mun vera leitarstöng </Text>
+            <Text style={Styles.h1}> Hér mun vera leitarstöng </Text>
           ) : null
         }
-  
-        <TouchableOpacity style={styles.buttons} onPress={() => {Alert.alert("Kemst ekkert héðan :(")}}> 
-        <Text>Ekki velja mig!</Text> 
+
+        <TouchableOpacity style={Styles.buttons} onPress={() => { Alert.alert("Kemst ekkert héðan :(") }}>
+          <Text>Ekki velja mig!</Text>
         </TouchableOpacity>
-  
-        </View>
-      );
-    }
+
+      </View>
+    );
   }
-    
-  
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: 'rgb(239,239,239)',
-      alignItems: 'center',
-      justifyContent: 'space-around'
-    },
-  
-    title: {
-      fontFamily: 'merriweather-black',
-      fontSize: 50
-    },
-    
-    buttons: {
-      width: 300,
-      backgroundColor: '#DDDDDD',
-      alignItems: 'center',
-      padding: 10,
-      borderColor: '#000',
-      borderWidth: 1
-  
-    },
-  
-    h1: {
-      fontFamily: 'dosis-medium',
-      fontSize: 25
-    },
-  
-    body: {
-      fontFamily: 'opensans-regular',
-      fontSize: 18
-    }
-  });
+}

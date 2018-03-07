@@ -1,12 +1,9 @@
-'use strict';
+import { StyleSheet } from 'react-native';
 
-var React = require('react-native');
-
-var myStyles = React.StyleSheet.create({ 
-  
+export default StyleSheet.create({
   //for all pages
   wholepage: {
-    backgroundColor: 'rgb(239,239,239)',
+    backgroundColor: 'rgb(239,239,239)'
   },
 
   title: {
@@ -38,7 +35,7 @@ var myStyles = React.StyleSheet.create({
   imagecontainer: {
     alignItems: 'center',
     justifyContent: 'space-around',
-    flex: 1
+    flex: 1,
   },
 
   image: { 
@@ -50,10 +47,5 @@ var myStyles = React.StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     flex: 2
-  },
-})
-  
-  
-
-
-module.exports = myStyles;
+  }
+});
