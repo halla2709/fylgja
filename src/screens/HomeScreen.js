@@ -37,11 +37,11 @@ export class HomeScreen extends React.Component {
             <Text>Fylgjan</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Information')}>
             <Text>Upplýsingar</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+          <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed')}>
             <Text>Fréttaveita</Text>
           </TouchableOpacity>
 

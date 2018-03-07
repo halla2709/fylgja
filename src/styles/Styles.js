@@ -47,5 +47,26 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     flex: 2
+  },
+
+  //drawer
+  drawer: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgb(74,135,247)',
+    paddingTop: 40,
+    paddingHorizontal: 20
+  },
+
+  drawerItem: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: 'rgb(251,199,6)',
+    padding: 12,
+    margin: 5,
+    borderRadius: 2,
+    borderColor: 'rgb(251,199,6)',
+    borderWidth: 1,
+    textAlign: 'center'
   }
 });
