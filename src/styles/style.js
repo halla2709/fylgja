@@ -12,14 +12,12 @@ var myStyles = React.StyleSheet.create({
   Brúnn rgb(201,52,36),
 
   Gott að vita:
-  Ljósblárri í sama schema rgb(54,62,201),
   Grár bakgrunnur rgb(239,239,239),
   Hvítur rgb(255,255,255),
   Svartur rgb(0,0,0),
   */
   
   //for all pages
-
   wholepage: {
    backgroundColor: 'rgb(239,239,239)',
   },
