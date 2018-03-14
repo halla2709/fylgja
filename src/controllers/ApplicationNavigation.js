@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
 import { InformationScreen } from '../screens/InformationScreen.js';
-import { NewsFeedScreen } from '../screens/NewsfeedScreen.js';
+import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
 const NavStack = StackNavigator({
