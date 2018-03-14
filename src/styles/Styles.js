@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import styles from './../styles/Styles';
 
 export default StyleSheet.create({
   
@@ -18,23 +19,32 @@ export default StyleSheet.create({
   //for all pages
   wholepage: {
    backgroundColor: 'rgb(239,239,239)',
+   flexDirection: 'column',
+   justifyContent: 'space-between',
+   alignItems: 'center',
   },
 
   title: {
     fontFamily: 'merriweather-black',
     fontSize: 60,
-
+    
   },
-  
   buttons: {
     width: 300,
     height: 50,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
-    borderColor: '#000',
-    borderWidth: 1,
+    borderColor: 'rgb(34,82,171)',
+    borderWidth: 2,
     margin: 3,
+    backgroundColor: 'rgb(34,82,171)',
+  },
+
+  buttontext: {
+    color: 'rgb(255,255,255)',
+    fontFamily: 'dosis-medium',
+    fontSize: 18,
   },
 
   h1: {
@@ -53,28 +63,43 @@ export default StyleSheet.create({
   },
 
   body: {
-    fontFamily: 'opensans-regular',
+   fontFamily: 'opensans-regular',
     fontSize: 18,
   },
 
  //HomeScreen
 
-  imagecontainer: {
-    alignItems: 'center',
-    justifyContent: 'space-around',
-   
-  },
-
-  image: { 
-    width: 250,
-    height: 300,
-    
-    
+ titlecontainer: {
+  height:'20%', 
+  width:'100%',
+  alignItems: 'center',
+  justifyContent: 'space-around'
+ },
+ 
+ imagecontainer: {
+  height:'80%', 
+  width:'100%',
+  alignItems: 'center',
+  justifyContent: 'space-around'
   },
 
   textcontainer: {
-    alignItems: 'center',
-    justifyContent: 'space-between'
+  height:'80%', 
+  width:'100%',
+  alignItems: 'center',
+  justifyContent: 'space-around'
+  },
+
+  image: { 
+    width: 280,
+    height: 300,
+    flex: 2
+  },
+
+  //SearchScreen
+
+  contentContainer: {
+    paddingVertical: 20
   },
 
   //drawer
