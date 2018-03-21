@@ -10,7 +10,7 @@ export class HomeScreen extends React.Component {
         <View style={styles.wholepage}>
         
         <View style={styles.titlecontainer}>
-          <Text style={styles.title}> Fylgjan </Text>
+          <Text style={styles.title}> FYLGJAN </Text>
         </View>
 
         <View style={styles.imagecontainer}>

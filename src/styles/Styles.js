@@ -43,18 +43,19 @@ export default StyleSheet.create({
 
   buttontext: {
     color: 'rgb(255,255,255)',
-    fontFamily: 'dosis-medium',
+    fontFamily: 'opensans-regular',
     fontSize: 18,
   },
 
   h1: {
-    fontFamily: 'dosis-medium',
-    fontSize: 25,
+    fontFamily: 'dosis-regular',
+    fontSize: 35,
+    alignItems: 'center',
   },
 
   h2: {
-    fontFamily: 'dosis-medium',
-    fontSize: 25,
+    fontFamily: 'dosis-bold',
+    fontSize: 20,
   },
 
   p: {
@@ -83,24 +84,53 @@ export default StyleSheet.create({
   justifyContent: 'space-around'
   },
 
-  textcontainer: {
-  height:'80%', 
-  width:'100%',
-  alignItems: 'center',
-  justifyContent: 'space-around'
-  },
-
   image: { 
     width: 280,
     height: 300,
     flex: 2
   },
 
-  //SearchScreen
+  //ReaderScreen
+  readerwholepage: {
+    backgroundColor: 'rgb(239,239,239)',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+   },  
+  
+  chaptercontainer: {
+      width:'100%',
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+    },
+    
+    subchaptercontainer: {
+      width:'100%',
+      alignItems: 'center',
+      justifyContent: 'space-around'
+    },
 
-  contentContainer: {
-    paddingVertical: 20
-  },
+    textcontainer: {
+      width:'100%',
+      justifyContent: 'space-around'
+      },
+
+      leftarrow: {
+        width:'5%',
+        alignItems: 'flex-start',
+      },
+
+      rightarrow: {
+        width:'5%',
+        alignItems: 'flex-end',
+      },
+      
+      h1arrow: {
+        fontFamily: 'dosis-regular',
+        fontSize: 35,
+        alignItems: 'center',
+        width: '90%',
+        justifyContent: 'space-between',
+      },
 
   //drawer
   drawer: {
