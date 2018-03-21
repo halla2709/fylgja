@@ -8,26 +8,26 @@ export class SearchScreen extends React.Component {
   render() {
     return (
         this.props.screenProps.fontLoaded ? (
-          <View style={styles.wholepage}>
-       <ScrollView contentContainerStyle={styles.contentContainer}>
+          <View style={Styles.wholepage}>
+       <ScrollView contentContainerStyle={Styles.contentContainer}>
         
-      <View style={styles.titlecontainer}>
-        <Text style={styles.title}> Fylgjan </Text>
+      <View style={Styles.titlecontainer}>
+        <Text style={Styles.title}> Fylgjan </Text>
       </View>
       
-        <Text style={styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
+        <Text style={Styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
 
           Nam bonorum eloquentiam cu. Sumo platonem vix ea, et pro simul assueverit. Dolore delicatissimi usu in, sed commodo dolores detraxit id. Ne illud viderer vix, id amet homero convenire eam, per te epicurei argumentum. Te lorem invenire mea, cu tale indoctum incorrupte eos, harum libris vim ei.
       </Text> 
-      <Text style={styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
+      <Text style={Styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
 
           Nam bonorum eloquentiam cu. Sumo platonem vix ea, et pro simul assueverit. Dolore delicatissimi usu in, sed commodo dolores detraxit id. Ne illud viderer vix, id amet homero convenire eam, per te epicurei argumentum. Te lorem invenire mea, cu tale indoctum incorrupte eos, harum libris vim ei.
       </Text> 
-      <Text style={styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
+      <Text style={Styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
 
           Nam bonorum eloquentiam cu. Sumo platonem vix ea, et pro simul assueverit. Dolore delicatissimi usu in, sed commodo dolores detraxit id. Ne illud viderer vix, id amet homero convenire eam, per te epicurei argumentum. Te lorem invenire mea, cu tale indoctum incorrupte eos, harum libris vim ei.
       </Text> 
-      <Text style={styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
+      <Text style={Styles.p}>Lorem ipsum dolor sit amet, suas eius decore an ius, congue scaevola pertinax qui an. Te eum tota nihil consul, dolores apeirian eos ut, eum falli debet tantas id. Velit doming ad sit, duo justo perpetua no. Sit eu alterum facilisi quaestio, autem sonet nonumy ad duo, oporteat voluptaria neglegentur ad mei. Ludus aperiri sanctus per an.
 
           Nam bonorum eloquentiam cu. Sumo platonem vix ea, et pro simul assueverit. Dolore delicatissimi usu in, sed commodo dolores detraxit id. Ne illud viderer vix, id amet homero convenire eam, per te epicurei argumentum. Te lorem invenire mea, cu tale indoctum incorrupte eos, harum libris vim ei.
       </Text> 

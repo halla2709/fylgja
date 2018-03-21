@@ -12,7 +12,7 @@ export default class App extends React.Component {
         'merriweather-black': require('./src/assets/fonts/Merriweather/Merriweather-Black.ttf'),
         'dosis-medium': require('./src/assets/fonts/Dosis/Dosis-Medium.ttf'),
         'opensans-regular': require('./src/assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
-  
+        'spinwerad': require('./src/assets/fonts/Spinwerad/spinweradC.ttf')
       });
       this.setState({ fontLoaded: true });
     }

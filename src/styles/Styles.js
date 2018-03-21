@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import styles from './../styles/Styles';
 
 export default StyleSheet.create({
   
@@ -22,16 +21,21 @@ export default StyleSheet.create({
    flexDirection: 'column',
    justifyContent: 'space-between',
    alignItems: 'center',
+   width: '100%'
   },
 
   title: {
     fontFamily: 'merriweather-black',
-    fontSize: 60,
-    
+    fontSize: 74
   },
+
+  smallTitle: {
+    fontSize: 52
+  }, 
+
   buttons: {
-    width: 300,
-    height: 50,
+    width: 350,
+    height: 70,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
@@ -43,8 +47,8 @@ export default StyleSheet.create({
 
   buttontext: {
     color: 'rgb(255,255,255)',
-    fontFamily: 'dosis-medium',
-    fontSize: 18,
+    fontFamily: 'opensans-regular',
+    fontSize: 24,
   },
 
   h1: {
@@ -70,17 +74,21 @@ export default StyleSheet.create({
  //HomeScreen
 
  titlecontainer: {
-  height:'20%', 
-  width:'100%',
+  height: '15%',
   alignItems: 'center',
   justifyContent: 'space-around'
  },
  
  imagecontainer: {
-  height:'80%', 
-  width:'100%',
+  height: '85%',
   alignItems: 'center',
   justifyContent: 'space-around'
+  },
+
+  buttonGroup: {
+    flex: 4,
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
 
   textcontainer: {
@@ -90,14 +98,12 @@ export default StyleSheet.create({
   justifyContent: 'space-around'
   },
 
-  image: { 
-    width: 280,
-    height: 300,
-    flex: 2
+  image: {
+    width: 250,
+    flex: 5
   },
 
   //SearchScreen
-
   contentContainer: {
     paddingVertical: 20
   },
@@ -106,7 +112,7 @@ export default StyleSheet.create({
   drawer: {
     flex: 1,
     justifyContent: 'flex-end',
-    backgroundColor: 'rgb(74,135,247)',
+    backgroundColor: 'rgb(250,215,82)', //'rgb(251,199,6)',
     paddingTop: 40,
     paddingHorizontal: 20
   },
@@ -114,12 +120,13 @@ export default StyleSheet.create({
   drawerItem: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: 'rgb(251,199,6)',
+    color: 'white',
     padding: 12,
     margin: 5,
     borderRadius: 2,
-    borderColor: 'rgb(251,199,6)',
+    borderColor: 'rgb(34,82,171)',
     borderWidth: 1,
+    backgroundColor: 'rgb(34,82,171)',
     textAlign: 'center'
   }
 });

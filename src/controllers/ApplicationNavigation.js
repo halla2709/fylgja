@@ -45,7 +45,7 @@ const RootStack = StackNavigator({
     navigationOptions: ({navigation}) => ({
         headerLeft: <Ionicons onPress={() => 
             navigation.navigate('DrawerToggle')}
-            name="md-menu" size={42} color="rgb(251,199,6)" />,
+            name="md-menu" size={42} color="white" />,
         headerStyle: {
             backgroundColor: 'rgb(34,82,171)',
             paddingLeft: 10
