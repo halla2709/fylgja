@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  
+
   /*Color theme:
   Úr logoinu:
   Aðalblár rgb(34,82,171),
@@ -14,14 +14,22 @@ export default StyleSheet.create({
   Hvítur rgb(255,255,255),
   Svartur rgb(0,0,0),
   */
-  
+
   //for all pages
   wholepage: {
-   backgroundColor: 'rgb(239,239,239)',
-   flexDirection: 'column',
-   justifyContent: 'space-between',
-   alignItems: 'center',
-   width: '100%'
+    backgroundColor: 'rgb(239,239,239)',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+    flex: 1,
+    flexWrap: 'wrap'
+  },
+
+  splitpage: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flex: 1
   },
 
   title: {
@@ -31,7 +39,7 @@ export default StyleSheet.create({
 
   smallTitle: {
     fontSize: 52
-  }, 
+  },
 
   buttons: {
     width: 350,
@@ -70,40 +78,39 @@ export default StyleSheet.create({
   },
 
   body: {
-   fontFamily: 'opensans-regular',
+    fontFamily: 'opensans-regular',
     fontSize: 18,
   },
 
- //HomeScreen
+  //HomeScreen
 
- titlecontainer: {
-  height: '15%',
-  alignItems: 'center',
-  justifyContent: 'space-around'
- },
- 
- imagecontainer: {
-  height: '85%',
-  alignItems: 'center',
-  justifyContent: 'space-around'
+  titlecontainer: {
+    flex: 2,
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
 
-  buttonGroup: {
+  imagecontainer: {
+    flex: 4,
+    alignItems: 'center',
+    justifyContent: 'space-around'
+  },
+
+  buttoncontainer: {
     flex: 4,
     alignItems: 'center',
     justifyContent: 'space-around'
   },
 
   textcontainer: {
-  height:'80%', 
-  width:'100%',
-  alignItems: 'center',
-  justifyContent: 'space-around',
+    height: '80%',
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'space-around'
   },
 
   image: {
-    width: 250,
-    flex: 5
+    flex: 1,
   },
 
   //SearchScreen

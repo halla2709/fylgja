@@ -1,31 +1,23 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView, FlatList } from 'react-native'
 import { NavigationActions } from 'react-navigation'
-import styles from './../styles/Styles'
+import ChapterListItem from './ChapterListItem'
+import styles from '../styles/Styles'
 import Chapters from "../assets/testContent/chapters.js";
-import chapters from '../assets/testContent/chapters.js';
 
 export default class DrawerComponent extends React.Component {
 
   render() {
-    const { navigation } = this.props
-
-    var chapterViews = [];
-    for (var i = 0; i < Chapters.length; i++) {
-      chapterViews.push(
-        <View key={Chapters[i].name}>
-          <Text>{Chapters[i].name}</Text>
-        </View>
-      )
-    }
+    const { navigation } = this.props;
 
     return (
       <View style={styles.drawer}>
 
-        <ScrollView>
-          <Text>HALLA</Text>
-          {chapterViews}
-        </ScrollView>
+        <FlatList
+          data={Chapters}
+          renderItem={({item}) => <ChapterListItem chapter={item} level={0}/>}
+        />
+          
 
         <Text
           onPress={() => navigation.navigate('Search')}
