@@ -1,7 +1,6 @@
 import React from 'react';
-import {Text, View, Button, Alert, TouchableOpacity, ScrollView } from 'react-native';
+import {Text, View, Button, Alert, TouchableOpacity, ScrollView, AppRegistry, TextInput } from 'react-native';
 import { Font } from 'expo';
-import SearchBar from 'react-native-search-bar';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 
@@ -10,31 +9,35 @@ export class SearchScreen extends React.Component {
     return (
         this.props.screenProps.fontLoaded ? (
 
-<View>
-<Ionicons name="md-search" size={42} color="rgb(128,128,128)" />
-       
+        <View style={Styles.searchwholepage}>
 
-<TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Reader')}> 
-        <Text style={Styles.buttontext} >Reader</Text> 
-        </TouchableOpacity>
+        <View style={Styles.titlecontainer}>
+            <Text style={Styles.title}> F<Text style={Styles.smallTitle}>YLGJAN </Text> </Text>
+          </View>
+
+        <View>
+        <TextInput style={Styles.search}> 
+        <Ionicons name="md-search" size={42} color="rgb(128,128,128)" />
+        <Text style={Styles.searchtext} onChangeText={(text) => this.setState({text})}>Leita...</Text> 
+        </TextInput>
 
         </View>
-      
-     
 
+        
 
+        <View style={Styles.searchresult}>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 1</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 2</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 3</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 4</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 5</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 6</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 7</Text>
+        </View>
 
+        </View>
    
         ) : null
-      
-/*
-  <SearchBar
-ref='searchBar'
-placeholder='Search'
-onSearchButtonPress={() => {Alert.alert("YAY þú leitaðir :)")}}
-onCancelButtonPress={() => {Alert.alert("Hættir við að leita :(")}}
-/>
-*/
     );
   }
     

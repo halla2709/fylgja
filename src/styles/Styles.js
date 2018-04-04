@@ -53,18 +53,20 @@ export default StyleSheet.create({
 
   h1: {
     fontFamily: 'dosis-regular',
-    fontSize: 35,
+    fontSize: 32,
     alignItems: 'center',
+    padding: 10,
   },
 
   h2: {
     fontFamily: 'dosis-bold',
-    fontSize: 20,
+    fontSize: 25,
+    paddingBottom: 5,
   },
 
   p: {
     fontFamily: 'opensans-regular',
-    fontSize: 15,
+    fontSize: 18,
   },
 
   body: {
@@ -96,7 +98,7 @@ export default StyleSheet.create({
   height:'80%', 
   width:'100%',
   alignItems: 'center',
-  justifyContent: 'space-around'
+  justifyContent: 'space-around',
   },
 
   image: {
@@ -104,29 +106,66 @@ export default StyleSheet.create({
     flex: 5
   },
 
+  //SearchScreen
+  searchwholepage: {
+    backgroundColor: 'rgb(239,239,239)',
+    justifyContent: 'space-between',
+   },  
+
+   search: {
+    width: '90%',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 10,
+    borderColor: 'rgb(128,128,128)',
+    borderWidth: 2,
+    backgroundColor: 'rgb(255,255,255)',
+  
+   }, 
+   searchtext: {
+    color: 'rgb(128,128,128)',
+    fontFamily: 'opensans-regular',
+    fontSize: 24,
+   },
+
+   searchresult: {
+    width:'100%',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  }, 
 
   //ReaderScreen
   readerwholepage: {
     backgroundColor: 'rgb(239,239,239)',
     justifyContent: 'space-between',
-    alignItems: 'center',
    },  
   
   chaptercontainer: {
       width:'100%',
       justifyContent: 'space-between',
       flexDirection: 'row',
+    alignItems: 'center',
     },
     
     subchaptercontainer: {
       width:'100%',
       alignItems: 'center',
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
+    alignItems: 'center',
     },
 
-    textcontainer: {
+    pcontainer: {
       width:'100%',
-      justifyContent: 'space-around'
+      justifyContent: 'space-around',
+      overflow: 'scroll',
+      paddingHorizontal: 10,
+      paddingBottom: 10,
+      },
+
+      chaptertext: {
+        overflow: 'scroll',
+        alignItems: 'center',
+        width: '90%',
       },
 
       leftarrow: {
@@ -138,14 +177,10 @@ export default StyleSheet.create({
         width:'5%',
         alignItems: 'flex-end',
       },
-      
-      h1arrow: {
-        fontFamily: 'dosis-regular',
-        fontSize: 35,
-        alignItems: 'center',
-        width: '90%',
-        justifyContent: 'space-between',
-      },
+
+      container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
+  head: { height: 40, backgroundColor: '#f1f8ff' },
+  text: { margin: 6 },
 
   //drawer
   drawer: {
