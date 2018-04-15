@@ -9,9 +9,9 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
-const NavStack = StackNavigator({
+const MainStack = StackNavigator({
     Home: {
-        screen: HomeScreen,
+        screen: HomeScreen
     },
     Search: {
         screen: SearchScreen
@@ -25,11 +25,12 @@ const NavStack = StackNavigator({
         initialRouteName: 'Home',
         title: 'Main',
         headerMode: 'none'
-    })
+    }
+)
 
 const DrawerStack = DrawerNavigator({
-    Nav: { 
-        screen: NavStack 
+    Main: { 
+        screen: MainStack 
     },
     Information: {
         screen: InformationScreen

@@ -29,15 +29,15 @@ export class HomeScreen extends React.Component {
 
     var buttoncontainer =
       <View style={Styles.buttoncontainer}>
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search')}>
+        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search', {drawerContent: "chapters"})}>
           <Text style={Styles.buttontext}>Handbók ljósmæðra</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Information')}>
+        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Information', {drawerContent: "information"})}>
           <Text style={Styles.buttontext}>Upplýsingar</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed')}>
+        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
           <Text style={Styles.buttontext}>Fréttaveita</Text>
         </TouchableOpacity>
       </View>

@@ -5,6 +5,7 @@ import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 
 export class SearchScreen extends React.Component {
+
   render() {
     return (
         this.props.screenProps.fontLoaded ? (
@@ -26,13 +27,13 @@ export class SearchScreen extends React.Component {
         
 
         <View style={Styles.searchresult}>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 1</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 2</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 3</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 4</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 5</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 6</Text>
-        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader')}>Kafli 7</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "1" })}>Kafli 1</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "2" })}>Kafli 2</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "3" })}>Kafli 3</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "4" })}>Kafli 4</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "5" })}>Kafli 5</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "6" })}>Kafli 6</Text>
+        <Text style={Styles.h2} onPress={() => this.props.navigation.navigate('Reader', { drawerContent: "chapters", currentChapter: "7" })}>Kafli 7</Text>
         </View>
 
         </View>

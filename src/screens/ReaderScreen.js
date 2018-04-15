@@ -4,13 +4,11 @@ import { Font } from 'expo';
 import SearchBar from 'react-native-search-bar';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import { Table, Row, Rows } from 'react-native-table-component';
 
 export class ReaderScreen extends React.Component {
   render() {
     return (
         this.props.screenProps.fontLoaded ? (
-//<Ionicons name="md-search" size={42} color="rgb(128,128,128)" />
        <ScrollView contentContainerStyle={Styles.readerwholepage}>
 
       
