@@ -26,12 +26,16 @@ export default class DrawerComponent extends React.Component {
       <View style={styles.drawer}>
 
         {drawerContent}
+        <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/1.png')} />
+      </View>
+      
 
         <Text
           onPress={() => navigation.navigate('Search', {drawerContent: "chapters"})}
           style={styles.drawerItem}>
           Handbók
         </Text>
+        
         <Text
           onPress={() => navigation.navigate('Information', {drawerContent: "information"})}
           style={styles.drawerItem}>
@@ -42,7 +46,14 @@ export default class DrawerComponent extends React.Component {
           style={styles.drawerItem}>
           Fréttaveita
         </Text>
+
+        <View>
+    <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/2.png')} />
       </View>
+
+
+      </View>
+
     )
   }
 }

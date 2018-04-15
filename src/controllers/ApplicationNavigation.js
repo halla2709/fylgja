@@ -19,7 +19,6 @@ const MainStack = StackNavigator({
     Reader: {
         screen: ReaderScreen
     }
-
 },
     {
         initialRouteName: 'Home',
