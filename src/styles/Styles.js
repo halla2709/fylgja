@@ -145,7 +145,7 @@ export default StyleSheet.create({
   readerwholepage: {
     backgroundColor: 'rgb(239,239,239)',
     justifyContent: 'space-between',
-   },  
+     },
   
   chaptercontainer: {
       width:'100%',
@@ -153,12 +153,18 @@ export default StyleSheet.create({
       flexDirection: 'row',
     alignItems: 'center',
     },
+
+    decorationcontainer: {
+    alignItems: 'center',
+    justifyContent: 'space-around'
+    },
     
     subchaptercontainer: {
       width:'100%',
-      alignItems: 'center',
       justifyContent: 'space-around',
-    alignItems: 'center',
+      paddingTop: 20,
+      paddingBottom: 0,
+      paddingHorizontal: 10,
     },
 
     pcontainer: {
@@ -166,7 +172,6 @@ export default StyleSheet.create({
       justifyContent: 'space-around',
       overflow: 'scroll',
       paddingHorizontal: 10,
-      paddingBottom: 10,
       },
 
       chaptertext: {
@@ -193,7 +198,7 @@ export default StyleSheet.create({
   drawer: {
     flex: 1,
     justifyContent: 'flex-end',
-    backgroundColor: 'rgb(250,215,82)', //'rgb(251,199,6)',
+    backgroundColor: 'rgb(239,239,239)',//'rgb(250,215,82)', //'rgb(251,199,6)',
     paddingTop: 40,
     paddingHorizontal: 20
   },
@@ -209,5 +214,11 @@ export default StyleSheet.create({
     borderWidth: 1,
     backgroundColor: 'rgb(34,82,171)',
     textAlign: 'center'
-  }
+  },
+
+  drawerGold: {
+    justifyContent: 'flex-end',
+    width: '100%',
+
+  },
 });

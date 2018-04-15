@@ -11,7 +11,7 @@ import DrawerComponent from '../components/DrawerComponent.js';
 
 const NavStack = StackNavigator({
     Home: {
-        screen: HomeScreen,
+        screen: ReaderScreen
     },
     Search: {
         screen: SearchScreen
@@ -19,7 +19,6 @@ const NavStack = StackNavigator({
     Reader: {
         screen: ReaderScreen
     }
-
 },
     {
         initialRouteName: 'Home',
