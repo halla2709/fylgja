@@ -13,43 +13,44 @@ export default class DrawerComponent extends React.Component {
     const params = GetCurrentRouteParams(navigation.state);
     var drawerContent;
     if (params) {
-      if(params.drawerContent === "chapters") {
+      if (params.drawerContent === "chapters") {
         drawerContent =
-        <FlatList
-          data={Chapters}
-          renderItem={({ item }) => <ChapterListItem chapter={item} level={0} currentChapter={params.currentChapter} />}
-          extraData={currentChapter=params.currentChapter}
-        />
-      }      
+          <FlatList
+            data={Chapters}
+            renderItem={({ item }) => <ChapterListItem chapter={item} level={0} currentChapter={params.currentChapter} />}
+            extraData={currentChapter = params.currentChapter}
+          />
+      }
     }
     return (
       <View style={styles.drawer}>
 
-        {drawerContent}
-        <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/1.png')} />
-      </View>
-      
+        <View>
+          {drawerContent}
+          <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/1.png')} />
+        </View>
+
 
         <Text
-          onPress={() => navigation.navigate('Search', {drawerContent: "chapters"})}
+          onPress={() => navigation.navigate('Search', { drawerContent: "chapters" })}
           style={styles.drawerItem}>
           Handbók
         </Text>
-        
+
         <Text
-          onPress={() => navigation.navigate('Information', {drawerContent: "information"})}
+          onPress={() => navigation.navigate('Information', { drawerContent: "information" })}
           style={styles.drawerItem}>
           Upplýsingar
         </Text>
         <Text
-          onPress={() => navigation.navigate('NewsFeed', {drawerContent: "news"})}
+          onPress={() => navigation.navigate('NewsFeed', { drawerContent: "news" })}
           style={styles.drawerItem}>
           Fréttaveita
         </Text>
 
         <View>
-    <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/2.png')} />
-      </View>
+          <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/2.png')} />
+        </View>
 
 
       </View>
