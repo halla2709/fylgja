@@ -118,89 +118,89 @@ export default StyleSheet.create({
     backgroundColor: 'rgb(239,239,239)',
     alignItems: 'center',
     flex: 1,
-   }, 
-   
-   searchtitlecontainer: {
+  },
+
+  searchtitlecontainer: {
     flex: 2,
     alignItems: 'center',
     justifyContent: 'space-around'
   },
 
-   search: {
+  search: {
     width: 400,
     padding: 5,
     margin: 10,
     borderColor: 'rgb(128,128,128)',
     borderWidth: 2,
     backgroundColor: 'rgb(255,255,255)',
-  
-   }, 
-   searchtext: {
+
+  },
+  searchtext: {
     color: 'rgb(128,128,128)',
     fontFamily: 'opensans-regular',
     fontSize: 24,
-   },
-   
-   searchcontainer: {
-    width:'100%',
-    flex: 5,
-  }, 
+  },
 
-   searchresult: {
-    width:'100%',
+  searchcontainer: {
+    width: '100%',
+    flex: 5,
+  },
+
+  searchresult: {
+    width: '100%',
     alignItems: 'center',
-  }, 
+  },
 
   //ReaderScreen
   readerwholepage: {
     backgroundColor: 'rgb(239,239,239)',
     justifyContent: 'space-between',
-     },
-  
-  chaptercontainer: {
-      width:'100%',
-      justifyContent: 'space-between',
-      flexDirection: 'row',
-    alignItems: 'center',
-    },
+  },
 
-    decorationcontainer: {
+  chaptercontainer: {
+    width: '100%',
+    justifyContent: 'space-around',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+
+  decorationcontainer: {
     alignItems: 'center',
     justifyContent: 'space-around'
-    },
-    
-    subchaptercontainer: {
-      width:'100%',
-      justifyContent: 'space-around',
-      paddingTop: 20,
-      paddingBottom: 0,
-      paddingHorizontal: 10,
-    },
+  },
 
-    pcontainer: {
-      width:'100%',
-      justifyContent: 'space-around',
-      overflow: 'scroll',
-      paddingHorizontal: 10,
-      },
+  subchaptercontainer: {
+    width: '100%',
+    justifyContent: 'space-around',
+    paddingTop: 20,
+    paddingBottom: 0,
+    paddingHorizontal: 10,
+  },
 
-      chaptertext: {
-        overflow: 'scroll',
-        alignItems: 'center',
-        width: '90%',
-      },
+  pcontainer: {
+    width: '100%',
+    justifyContent: 'space-around',
+    overflow: 'scroll',
+    paddingHorizontal: 10,
+  },
 
-      leftarrow: {
-        width:'5%',
-        alignItems: 'flex-start',
-      },
+  chaptertext: {
+    overflow: 'scroll',
+    alignItems: 'center',
+    flex: 8
+  },
 
-      rightarrow: {
-        width:'5%',
-        alignItems: 'flex-end',
-      },
+  leftarrow: {
+    flex: 1,
+    alignItems: 'center'
+  },
 
-      container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
+  rightarrow: {
+    flex: 1,
+    alignItems: 'center'
+  },
+
+  container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
   head: { height: 40, backgroundColor: '#f1f8ff' },
   text: { margin: 6 },
 

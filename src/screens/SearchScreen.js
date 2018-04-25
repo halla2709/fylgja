@@ -9,18 +9,19 @@ import {
   AppRegistry,
   TextInput
 } from 'react-native';
-import {Font} from 'expo';
+import { Font } from 'expo';
 import Styles from './../styles/Styles';
-import {Ionicons} from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { SearchBar } from 'react-native-elements'
 
 export class SearchScreen extends React.Component {
 
-  render() { 
+  render() {
     return (
       this.props.screenProps.fontLoaded ? (
 
         <View style={Styles.searchwholepage}>
-        
+
           <View style={Styles.searchtitlecontainer}>
             <Text style={Styles.title}>
               F<Text style={Styles.smallTitle}>YLGJAN
@@ -29,219 +30,216 @@ export class SearchScreen extends React.Component {
           </View>
 
           <View style={Styles.searchcontainer}>
-            <TextInput style={Styles.search}>
-              <Ionicons name="md-search" size={42} color="rgb(128,128,128)"/>
-              <Text style={Styles.searchtext} onChangeText={(text) => this.setState({text})}>Leita...</Text>
-            </TextInput>
+            <SearchBar onChangeText={()=>{console.log("text changed in search bar");}}
+              onClear={()=>{console.log("search box cleared");}}
+              placeholder='Type Here...' />
 
-          
+            <ScrollView style={{
+              width: '100%'
+            }}>
+              <View style={Styles.searchresult}>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "6"
+                  })}>Kafli 6</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "7"
+                  })}>Kafli 7</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "1"
+                  })}>Kafli 1</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "2"
+                  })}>Kafli 2</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "3"
+                  })}>Kafli 3</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "4"
+                  })}>Kafli 4</Text>
+                <Text
+                  style={Styles.h2}
+                  onPress={() => this.props.navigation.navigate('Reader', {
+                    drawerContent: "chapters",
+                    currentChapter: "5"
+                  })}>Kafli 5</Text>
 
-          <ScrollView style={{
-            width: '100%'
-          }}>
-            <View style={Styles.searchresult}>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "6"
-              })}>Kafli 6</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "7"
-              })}>Kafli 7</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "1"
-              })}>Kafli 1</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "2"
-              })}>Kafli 2</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "3"
-              })}>Kafli 3</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "4"
-              })}>Kafli 4</Text>
-              <Text
-                style={Styles.h2}
-                onPress={() => this.props.navigation.navigate('Reader', {
-                drawerContent: "chapters",
-                currentChapter: "5"
-              })}>Kafli 5</Text>
-              
 
-            </View>
-          </ScrollView>
+              </View>
+            </ScrollView>
           </View>
 
         </View>
 
       )
-      : null
+        : null
     );
   }
 
