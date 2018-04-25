@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import {
   Text,
   View,
@@ -11,10 +10,6 @@ import {
   TextInput
 } from 'react-native';
 import {Font} from 'expo';
-=======
-import { Text, View, Button, Alert, TouchableOpacity, ScrollView, AppRegistry, TextInput } from 'react-native';
-import { Font } from 'expo';
->>>>>>> 9a9f8451f4aa1bad4a4a0ad3f10e6e5cf839ee76
 import Styles from './../styles/Styles';
 import {Ionicons} from '@expo/vector-icons';
 
