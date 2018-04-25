@@ -204,6 +204,18 @@ export default StyleSheet.create({
   head: { height: 40, backgroundColor: '#f1f8ff' },
   text: { margin: 6 },
 
+
+  //InformationScreen
+  informationwholepage: {
+    backgroundColor: 'rgb(239,239,239)',
+    justifyContent: 'space-between',
+     },
+
+  informationimage: {
+    height: '30%',
+  },
+
+
   //drawer
   drawer: {
     flex: 1,
