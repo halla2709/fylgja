@@ -212,7 +212,7 @@ export default StyleSheet.create({
      },
 
   informationimage: {
-    height: '30%'
+    height: '30%',
   },
 
 
