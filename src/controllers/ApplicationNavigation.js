@@ -11,7 +11,7 @@ import DrawerComponent from '../components/DrawerComponent.js';
 
 const MainStack = StackNavigator({
     Home: {
-        screen: HomeScreen
+        screen: SearchScreen
     },
     Search: {
         screen: SearchScreen
