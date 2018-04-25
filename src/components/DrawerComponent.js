@@ -15,9 +15,11 @@ export default class DrawerComponent extends React.Component {
     if (params) {
       if (params.drawerContent === "chapters") {
         drawerContent =
-          <FlatList
+        
+       <FlatList
             data={Chapters}
-            renderItem={({ item }) => <ChapterListItem chapter={item} level={0} currentChapter={params.currentChapter} />}
+            renderItem={({ item }) => 
+            <ChapterListItem chapter={item} level={0} currentChapter={params.currentChapter} />}
             extraData={currentChapter = params.currentChapter}
           />
       }
@@ -51,8 +53,6 @@ export default class DrawerComponent extends React.Component {
         <View>
           <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/2.png')} />
         </View>
-
-
       </View>
 
     )

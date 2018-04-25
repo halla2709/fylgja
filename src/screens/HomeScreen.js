@@ -40,6 +40,7 @@ export class HomeScreen extends React.Component {
         <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
           <Text style={Styles.buttontext}>Fréttaveita</Text>
         </TouchableOpacity>
+
       </View>
 
     return (

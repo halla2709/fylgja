@@ -116,14 +116,20 @@ export default StyleSheet.create({
   //SearchScreen
   searchwholepage: {
     backgroundColor: 'rgb(239,239,239)',
-    justifyContent: 'space-between',
-   },  
+    alignItems: 'center',
+    flex: 1,
+   }, 
+   
+   searchtitlecontainer: {
+    flex: 2,
+    alignItems: 'center',
+    justifyContent: 'space-around'
+  },
 
    search: {
-    width: '90%',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 10,
+    width: 400,
+    padding: 5,
+    margin: 10,
     borderColor: 'rgb(128,128,128)',
     borderWidth: 2,
     backgroundColor: 'rgb(255,255,255)',
@@ -134,11 +140,15 @@ export default StyleSheet.create({
     fontFamily: 'opensans-regular',
     fontSize: 24,
    },
+   
+   searchcontainer: {
+    width:'100%',
+    flex: 5,
+  }, 
 
    searchresult: {
     width:'100%',
     alignItems: 'center',
-    justifyContent: 'space-around',
   }, 
 
   //ReaderScreen
@@ -219,6 +229,13 @@ export default StyleSheet.create({
   drawerGold: {
     justifyContent: 'flex-end',
     width: '100%',
+
+  },
+
+  drawerGold2: {
+    justifyContent: 'flex-end',
+    width: '20%',
+    height: '20%'
 
   },
 });
