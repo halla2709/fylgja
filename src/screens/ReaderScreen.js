@@ -8,7 +8,8 @@ import Chapters from "../assets/testContent/chapters.js";
 
 export class ReaderScreen extends React.Component {
   getChapter(chapterKey) {
-    return Chapters[chapterKey - 1];
+    const topChapter = chapterKey.split(".")[0];
+    return Chapters[topChapter - 1];
   }
 
   constructor(props) {
