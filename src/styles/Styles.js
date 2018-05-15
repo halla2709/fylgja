@@ -215,6 +215,20 @@ export default StyleSheet.create({
     height: '30%',
   },
 
+  informationcontainer: {
+  width: '100%',
+  justifyContent: 'space-around',
+  overflow: 'scroll',
+  paddingHorizontal: 10,
+  },
+  
+  infosubchaptercontainer: {
+    width: '100%',
+    justifyContent: 'space-around',
+    paddingTop: 20,
+    paddingBottom: 0,
+    paddingHorizontal: 10,
+  },
 
   //drawer
   drawer: {

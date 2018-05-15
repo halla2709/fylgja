@@ -4,14 +4,15 @@ import {
     View,
     Button,
     Alert,
-    TouchableOpacity,
+    TouchableHighlight,
     Image,
     ScrollView
 } from 'react-native';
 import {Font} from 'expo';
 import Styles from './../styles/Styles';
 import {Ionicons} from '@expo/vector-icons';
-import Chapters from "../assets/testContent/chapters.js";
+import Information from "../assets/testContent/info.js";
+
 
 export class InformationScreen extends React.Component {
     render() {
@@ -28,19 +29,20 @@ export class InformationScreen extends React.Component {
                 </View>
             </View>
 
-                <View style={Styles.subchaptercontainer}>
-                    <Text style={Styles.h2}>Heilsugæslur</Text>
+            <ScrollView style = {{ marginBottom: 150 }} >
+                
+                <TouchableHighlight>
+                  <View style={Styles.infosubchaptercontainer}>
+                    <Text style={Styles.h2}>Um Ljósmóðurfélagið  
+                    <Ionicons name="md-add" size={25} color="rgb(34,82,171)" />
+                    </Text>
+                  </View>
+                </TouchableHighlight> 
+                   
+                <View style={Styles.informationcontainer}>
+                    <Text style={Styles.p} layout="row">Ljósmæðrafélag íslands - heimilisfang og blabla</Text>
                 </View>
 
-                <View style={Styles.pcontainer}>
-                    <Text style={Styles.p} layout="row">Heilsugæslan Lágmúla blabla</Text>
-                </View>
-
-
-            <ScrollView style = {{ marginBottom: 150 }} > 
-            <View style={Styles.pcontainer}>
-                <Text style={Styles.p} layout="row"></Text>
-            </View> 
             </ScrollView>
 
             </View>
