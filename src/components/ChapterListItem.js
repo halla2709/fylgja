@@ -46,7 +46,6 @@ class ChapterListItem extends React.Component {
         return (
             <View>
                 <TouchableOpacity onPress={() => {
-                    console.log(this.props);
                     this._onPress(this.props.chapter.key)}}>
                     <View>
                         <Text style={styles.text}>

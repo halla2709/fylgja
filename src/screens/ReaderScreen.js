@@ -8,21 +8,25 @@ import Chapters from "../assets/testContent/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 
 export class ReaderScreen extends React.Component {
+
+  onViewLayout(key, y) {
+    if(key === this.props.navigation.state.params.currentChapter) {
+      this.setState({toScrollTo: y});
+    }
+  }
+
   getChapter(chapterKey) {
     const topChapter = chapterKey.split(".")[0];
     return Chapters[topChapter - 1];
   }
 
-  constructor(props) {
-    super(props);
-    this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
-    this.numberOfChapters = Chapters.length;
-  }
-
-  render() {
+  getChapterViews(chapter) {
     var textBlocks = [];
-    this.chapter.subchapters.forEach(subchapter => {
-      textBlocks.push(<View key={subchapter.key}>
+    chapter.subchapters.forEach(subchapter => {
+      textBlocks.push(<View key={subchapter.key} onLayout={(event) => {
+        var {x, y, width, height} = event.nativeEvent.layout;
+        this.onViewLayout(subchapter.key, y);
+      }}>
         <View style={Styles.subchaptercontainer}>
           <Text style={Styles.h2}>{subchapter.name}</Text>
         </View>
@@ -31,7 +35,19 @@ export class ReaderScreen extends React.Component {
         </View>
       </View>)
     });
+    return textBlocks;
+  }
 
+  constructor(props) {
+    super(props);
+    this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
+    this.numberOfChapters = Chapters.length;
+    this.textBlockYs = [];
+    this.textBlocks = this.getChapterViews(this.chapter); 
+    this.state = {toScrollTo: 0};   
+  }
+
+  render() {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
@@ -55,11 +71,15 @@ export class ReaderScreen extends React.Component {
               <Image resizeMode="contain" source={require('../assets/images/4.png')} />
             </View>
           </View>
-          <ScrollView style={{ marginBottom: 150 }}>
+          <ScrollView style={{ marginBottom: 150 }} ref={(scrollView) => {
+            if(scrollView != null) {
+              scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true});
+            }
+          }}>
             <View style={Styles.pcontainer}>
               <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
             </View>
-            {textBlocks}
+            {this.textBlocks}
             <View style={{ alignItems: 'center' }}>
               <Image resizeMode="contain" style={{ width: '40%' }} source={require('../assets/images/2.png')} />
               <Text style={Styles.h3}> Skilgreining á ljósmóðurstarfinu </Text>
