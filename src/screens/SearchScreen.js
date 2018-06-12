@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
   ScrollView,
   AppRegistry,
-  TextInput
+  TextInput,
+  KeyboardAvoidingView
 } from 'react-native';
 import { Font } from 'expo';
 import Styles from './../styles/Styles';
@@ -50,7 +51,7 @@ export class SearchScreen extends React.Component {
     return (
       this.props.screenProps.fontLoaded ? (
 
-        <View style={Styles.searchwholepage}>
+        <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
 
           <View style={Styles.searchtitlecontainer}>
             <Text style={Styles.title}>
@@ -79,7 +80,7 @@ export class SearchScreen extends React.Component {
             </ScrollView>
           </View>
 
-        </View>
+        </KeyboardAvoidingView>
 
       )
         : null
