@@ -60,15 +60,22 @@ export class SearchScreen extends React.Component {
           </View>
 
           <View style={Styles.searchcontainer}>
-            <SearchBar onChangeText={(searchString) => {
-              console.log("text changed in search bar to " + searchString);
+            <SearchBar lightTheme round style={Styles.searchBar} 
+            placeholder='Skrifaðu leitarorð hér...'
+            placeholderTextColor='rgb(189, 194, 201)'
+            searchIcon={{color: 'grey', padding:2}}
+            clearIcon={{color: 'grey'}}
+            inputStyle={{color: 'black', fontSize: 18, backgroundColor: 'white'}} //Style TextInput
+            inputContainerStyle={Styles.p}
+            containerStyle={{backgroundColor: 'rgb(239,239,239)'}}
+
+            onChangeText={(searchString) => {
               this.setState({currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString))});
             }}
-              onClear={() => {
-              console.log("search box cleared"); 
+              onClear={() => { 
               this.setState({currentChapterBlocks: this.getChapterViews(Chapters)});
             }}
-              placeholder='Skrifaðu leitarorð hér...' />
+              />
 
             <ScrollView style={{
               width: '100%'

@@ -20,12 +20,13 @@ export class NewsFeedScreen extends React.Component {
                  
                         <View style={Styles.chaptertext}>
                             <Text style={Styles.h1}> Fréttaveita </Text>
+                            <Image resizeMode="contain" style={{width: '50%'}} source={require('../assets/images/6.png')} />
                         </View>
                     </View>
                 </View>
     
                     <View style={Styles.subchaptercontainer}>
-                        <Text style={Styles.h2}>Frétt</Text>
+                        <Text style={Styles.h22}>Frétt</Text>
                     </View>
     
                     <View style={Styles.pcontainer}>

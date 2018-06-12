@@ -72,6 +72,16 @@ export default StyleSheet.create({
     paddingBottom: 5,
   },
 
+  h22: {
+    fontFamily: 'dosis-medium',
+    fontSize: 25,
+    paddingBottom: 5,
+  },
+
+  decorationh22: {
+    
+  },
+
   p: {
     fontFamily: 'opensans-regular',
     fontSize: 18,
@@ -151,6 +161,13 @@ export default StyleSheet.create({
     alignItems: 'center',
   },
 
+  searchBar: {
+    backgroundColor: 'white',
+    color: 'white',
+    fontSize: 10,
+
+  },
+
   //ReaderScreen
   readerwholepage: {
     backgroundColor: 'rgb(239,239,239)',
@@ -221,6 +238,10 @@ export default StyleSheet.create({
   overflow: 'scroll',
   paddingHorizontal: 10,
   },
+
+  plusbutton: {
+    color: 'rgb(34,82,171)',
+  },
   
   infosubchaptercontainer: {
     width: '100%',
@@ -228,6 +249,8 @@ export default StyleSheet.create({
     paddingTop: 20,
     paddingBottom: 0,
     paddingHorizontal: 10,
+    flex: 1, 
+    flexDirection: 'row',
   },
 
   //drawer

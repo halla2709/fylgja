@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
+    AppRegistry,
     Text,
     View,
     Button,
     Alert,
-    TouchableHighlight,
+    TouchableOpacity,
     Image,
     ScrollView
 } from 'react-native';
@@ -15,36 +16,62 @@ import Information from "../assets/testContent/info.js";
 
 
 export class InformationScreen extends React.Component {
+
+    constructor(){
+        super();
+        this.state ={
+        status:false
+        }
+    }
+
+    ShowHideTextComponentView = () =>{
+        if(this.state.status == true)
+        {
+          this.setState({status: false})
+        }
+        else
+        {
+          this.setState({status: true})
+        }
+      }
+
+
     render() {
         return (
             this.props.screenProps.fontLoaded ? (
-         <View contentContainerStyle={Styles.informationwholepage}>
 
+         <View contentContainerStyle={Styles.informationwholepage}>
             <View style={{ paddingBottom: 15 }}>
-                <View style={Styles.chaptercontainer}>
-             
+                <View style={Styles.chaptercontainer}>              
+        
                     <View style={Styles.chaptertext}>
-                        <Text style={Styles.h1}> Upplýsingar </Text>
+                        <Text style={Styles.h1}> Upplýsingar 
+                        </Text>
+                        <Image resizeMode="contain" style={{width: '50%'}} source={require('../assets/images/6.png')} />                        
                     </View>
                 </View>
+                
             </View>
+            
 
             <ScrollView style = {{ marginBottom: 150 }} >
                 
-                <TouchableHighlight>
+                <TouchableOpacity onPress={this.ShowHideTextComponentView}>
                   <View style={Styles.infosubchaptercontainer}>
-                    <Text style={Styles.h2}>Um Ljósmóðurfélagið  
-                    <Ionicons name="md-add" size={25} color="rgb(34,82,171)" />
-                    </Text>
+                  
+                    <Text style={Styles.h22}>Eitthvað mjög gaman </Text>
+                    <Ionicons style={Styles.plusbutton} name="md-add" size={30}/>
                   </View>
-                </TouchableHighlight> 
+                </TouchableOpacity> 
                    
                 <View style={Styles.informationcontainer}>
-                    <Text style={Styles.p} layout="row">Ljósmæðrafélag íslands - heimilisfang og blabla</Text>
+                {
+                    this.state.status ? <Text style={Styles.p} layout="row">
+                    Hallo, {Information.phone}, {Information.fax}
+                    </Text> : null
+                }              
                 </View>
-
             </ScrollView>
-
             </View>
             
             ) : null);
