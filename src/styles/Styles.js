@@ -64,10 +64,11 @@ export default StyleSheet.create({
     fontSize: 32,
     alignItems: 'center',
     padding: 10,
+    textDecorationLine: 'underline',
   },
 
   h2: {
-    fontFamily: 'dosis-bold',
+    fontFamily: 'dosis-extralight',
     fontSize: 25,
     paddingBottom: 5,
   },
@@ -76,6 +77,7 @@ export default StyleSheet.create({
     fontFamily: 'dosis-medium',
     fontSize: 25,
     paddingBottom: 5,
+    alignItems: 'flex-start',
   },
 
   decorationh22: {

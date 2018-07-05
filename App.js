@@ -21,6 +21,7 @@ export default class App extends React.Component {
         'dosis-medium': require('./src/assets/fonts/Dosis/Dosis-Medium.ttf'),
         'dosis-semibold': require('./src/assets/fonts/Dosis/Dosis-SemiBold.ttf'),
         'dosis-light': require('./src/assets/fonts/Dosis/Dosis-Light.ttf'),
+        'dosis-extralight': require('./src/assets/fonts/Dosis/Dosis-ExtraLight.ttf'),
 
         'opensans-regular': require('./src/assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
         'opensans-bold': require('./src/assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
