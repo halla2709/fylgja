@@ -10,20 +10,16 @@ import { Font } from 'expo';
 import Styles from './../styles/Styles';
 
 export class NewsFeedScreen extends React.Component {
+
+    static navigationOptions = {
+        title: 'Fréttaveita',
+      };
+
     render() {
         return(
                 this.props.screenProps.fontLoaded ? (
              <View contentContainerStyle={Styles.informationwholepage}>
-    
-                <View style={{ paddingBottom: 15 }}>
-                    <View style={Styles.chaptercontainer}>
-                 
-                        <View style={Styles.chaptertext}>
-                            <Text style={Styles.h1}> Fréttaveita </Text>
-                            <Image resizeMode="contain" style={{width: '50%'}} source={require('../assets/images/6.png')} />
-                        </View>
-                    </View>
-                </View>
+
     
                     <View style={Styles.subchaptercontainer}>
                         <Text style={Styles.h22}>Frétt</Text>

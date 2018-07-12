@@ -69,7 +69,7 @@ export default StyleSheet.create({
 
   h2: {
     fontFamily: 'dosis-extralight',
-    fontSize: 25,
+    fontSize: 22,
     paddingBottom: 5,
   },
 
@@ -155,6 +155,7 @@ export default StyleSheet.create({
 
   searchcontainer: {
     width: '100%',
+    alignItems: 'center',
     flex: 5,
   },
 

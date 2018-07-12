@@ -26,6 +26,10 @@ export class InformationScreen extends React.Component {
     }
    
 
+    static navigationOptions = {
+        title: 'Upplýsingar',
+      };
+
     
     ShowHideTextComponentView = () =>{
         if(this.state.status == true)
@@ -45,16 +49,7 @@ export class InformationScreen extends React.Component {
             this.props.screenProps.fontLoaded ? (
 
          <View contentContainerStyle={Styles.informationwholepage}>
-            <View style={{ paddingBottom: 5 }}>
-                <View style={Styles.chaptercontainer}>              
-        
-                    <View style={Styles.chaptertext}>
-                        <Text style={Styles.h1}> Upplýsingar 
-                        </Text>
-                        <Image resizeMode="contain" style={{width: '50%'}} source={require('../assets/images/6.png')} />                        
-                    </View>
-                </View>    
-            </View>
+           
             
             <ScrollView style = {{ marginBottom: 150 }} >
                 
