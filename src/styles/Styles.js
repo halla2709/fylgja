@@ -68,11 +68,12 @@ export default StyleSheet.create({
     fontSize: 32,
     alignItems: 'center',
     padding: 10,
+    textDecorationLine: 'underline',
   },
 
   h2: {
-    fontFamily: 'dosis-bold',
-    fontSize: 25,
+    fontFamily: 'dosis-extralight',
+    fontSize: 22,
     paddingBottom: 5,
   },
 
@@ -80,10 +81,16 @@ export default StyleSheet.create({
     fontFamily: 'dosis-medium',
     fontSize: 25,
     paddingBottom: 5,
+    alignItems: 'flex-start',
   },
 
-  decorationh22: {
-    
+  TextShadowStyle:
+  {
+     textAlign: 'center',
+     fontSize: 30,
+     textShadowColor: '#E91E63',
+     textShadowOffset: { width: 1, height: 4 },
+     textShadowRadius: 5
   },
 
   p: {
@@ -157,6 +164,7 @@ export default StyleSheet.create({
 
   searchcontainer: {
     width: '100%',
+    alignItems: 'center',
     flex: 5,
   },
 
@@ -187,7 +195,11 @@ export default StyleSheet.create({
 
   decorationcontainer: {
     alignItems: 'center',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+  },
+
+  readerdecoration: {
+    height: 20,
   },
 
   subchaptercontainer: {

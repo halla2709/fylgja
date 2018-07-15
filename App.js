@@ -64,7 +64,7 @@ export default class App extends React.Component {
     });
     this.setState({notification: notification});
   };
-
+  
   render() {
     return (
       <View style={Styles.appcontainer}>
