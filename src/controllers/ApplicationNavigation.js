@@ -11,7 +11,7 @@ import DrawerComponent from '../components/DrawerComponent.js';
 
 const MainStack = StackNavigator({
     Home: {
-        screen: InformationScreen
+        screen: HomeScreen
     },
     Search: {
         screen: SearchScreen
@@ -47,6 +47,8 @@ const RootStack = StackNavigator({
 },
 {
     headerMode: 'screen',
+    swipeEnabled: false,
+    animationEnabled: false,
     navigationOptions: ({navigation}) => ({
         headerLeft: <Ionicons onPress={() => 
             navigation.navigate('DrawerToggle')}

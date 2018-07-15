@@ -16,6 +16,10 @@ export default StyleSheet.create({
   */
 
   //for all pages
+  appcontainer: {
+    flex: 1
+  },
+  
   wholepage: {
     backgroundColor: 'rgb(239,239,239)',
     flexDirection: 'column',
