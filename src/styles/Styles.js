@@ -80,8 +80,13 @@ export default StyleSheet.create({
     alignItems: 'flex-start',
   },
 
-  decorationh22: {
-    
+  TextShadowStyle:
+  {
+     textAlign: 'center',
+     fontSize: 30,
+     textShadowColor: '#E91E63',
+     textShadowOffset: { width: 1, height: 4 },
+     textShadowRadius: 5
   },
 
   p: {
@@ -186,7 +191,11 @@ export default StyleSheet.create({
 
   decorationcontainer: {
     alignItems: 'center',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+  },
+
+  readerdecoration: {
+    height: 20,
   },
 
   subchaptercontainer: {

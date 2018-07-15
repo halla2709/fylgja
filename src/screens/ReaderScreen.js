@@ -53,7 +53,7 @@ export class ReaderScreen extends React.Component {
         <View contentContainerStyle={Styles.readerwholepage}>
           <View style={{ paddingBottom: 15 }}>
             <View style={Styles.decorationcontainer}>
-              <Image resizeMode="contain" source={require('../assets/images/3.png')} />
+              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/3.png')} />
             </View>
             <View style={Styles.chaptercontainer}>
               <TouchableHighlight style={Styles.leftarrow} onPress={()=>{this.props.navigation.navigate('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1)})}} underlayColor="rgb(245,245,245)">
@@ -68,7 +68,7 @@ export class ReaderScreen extends React.Component {
               </TouchableHighlight>
             </View>
             <View style={Styles.decorationcontainer}>
-              <Image resizeMode="contain" source={require('../assets/images/4.png')} />
+              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/4.png')} />
             </View>
           </View>
           <ScrollView style={{ marginBottom: 150 }} ref={(scrollView) => {
