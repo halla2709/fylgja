@@ -12,9 +12,14 @@ function GetCurrentRouteParams(state) {
 function SwitchChapter(currentChapter, increment) {
     const numberOfChapters = Chapters.length;
     const topChapter = parseInt(currentChapter.split(".")[0]);
-    const nextNumber = topChapter + increment;
-    const chapterToReturn = nextNumber === numberOfChapters ? numberOfChapters : nextNumber % numberOfChapters;
-    return chapterToReturn.toString();
+    let nextNumber = topChapter + increment;
+    if(nextNumber > numberOfChapters) {
+        nextNumber = 1;
+    }
+    if(nextNumber < 1) {
+        nextNumber = numberOfChapters;
+    }
+    return nextNumber.toString();
 }
 
 export {

@@ -6,11 +6,19 @@ import Styles from './../styles/Styles';
 export class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {isLargeWindow: Dimensions.get('window').height > 500};
+    this.state = {
+      fontLoaded: props.screenProps.fontLoaded,
+      isLargeWindow: Dimensions.get('window').height > 500
+    };
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.state.fontLoaded !== newProps.screenProps.fontLoaded) {
+      this.setState({fontLoaded: newProps.screenProps.fontLoaded});
+    }
   }
 
   render() {
-
     Dimensions.addEventListener("change", (dimension) => {
       this.setState(() => {
         return {isLargeWindow: dimension.window.height > 500};
@@ -44,9 +52,10 @@ export class HomeScreen extends React.Component {
       </View>
 
     return (
-      this.props.screenProps.fontLoaded ? (
+      this.state.fontLoaded ? (
 
         this.state.isLargeWindow ? (
+          
           <View style={Styles.wholepage}>
             {titlecontainer}
             {imagecontainer}
@@ -56,20 +65,15 @@ export class HomeScreen extends React.Component {
           (
             <View style={Styles.splitpage}>
               <View style={Styles.wholepage}>
-
                 {titlecontainer}
                 {imagecontainer}
               </View>
               <View style={Styles.wholepage}>
                 {buttoncontainer}
-
               </View>
             </View>
           )
-
-
       ) : null
-
     );
 
   }
