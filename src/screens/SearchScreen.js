@@ -19,6 +19,10 @@ import Chapters from "../assets/testContent/chapters.js";
 
 export class SearchScreen extends React.Component {
 
+  static navigationOptions = {
+    title: 'Handbók',
+  };
+
   getChapterView(chapter, level) {
     return <Text
       key={chapter.key}
@@ -68,7 +72,7 @@ export class SearchScreen extends React.Component {
             clearIcon={{color: 'grey'}}
             inputStyle={{color: 'black', fontSize: 18, backgroundColor: 'white'}} //Style TextInput
             inputContainerStyle={Styles.p}
-            containerStyle={{backgroundColor: 'rgb(239,239,239)'}}
+            containerStyle={{backgroundColor: 'rgb(239,239,239)', width: '90%'}}
 
             onChangeText={(searchString) => {
               this.setState({currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString))});
