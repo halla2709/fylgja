@@ -2,6 +2,7 @@ import React from 'react';
 import { Font, Notifications } from 'expo';
 import { View, Text } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
+import InformationScraper from './src/controllers/InformationScraper';
 import registerForPushNotificationsAsync from './src/controllers/NotificationController';
 import RootStack from './src/controllers/ApplicationNavigation.js';
 import AppContainer from './src/screens/AppContainer.js';
@@ -17,7 +18,7 @@ export default class App extends React.Component {
   }
 
   async componentDidMount() {
-    registerForPushNotificationsAsync();
+    //registerForPushNotificationsAsync();
 
     // Handle notifications that are received or selected while the app
     // is open. If the app was closed and then opened by tapping the
@@ -25,6 +26,8 @@ export default class App extends React.Component {
     // this function will fire on the next tick after the app starts
     // with the notification data.
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
+    this.scraper = new InformationScraper();
+    //this.scraper.init();
   }
 
   _handleNotification = (notification) => {
