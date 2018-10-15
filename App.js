@@ -18,7 +18,7 @@ export default class App extends React.Component {
   }
 
   async componentDidMount() {
-    //registerForPushNotificationsAsync();
+    registerForPushNotificationsAsync();
 
     // Handle notifications that are received or selected while the app
     // is open. If the app was closed and then opened by tapping the
