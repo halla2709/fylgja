@@ -5,9 +5,7 @@ import { Permissions, Notifications } from 'expo';
 export default async function registerForPushNotificationsAsync() {
   let finalStatus;
   try {
-    const { status: existingStatus } = await Permissions.getAsync(
-      Permissions.NOTIFICATIONS
-    );
+    const { existingStatus } = await Permissions.getAsync(Permissions.NOTIFICATIONS);
     finalStatus = existingStatus;
 
     // only ask if permissions have not already been determined, because
@@ -31,7 +29,7 @@ export default async function registerForPushNotificationsAsync() {
 
   // Get the token that uniquely identifies this device
   let token = await Notifications.getExpoPushTokenAsync();
-
+  console.log(token);
   // POST the token to your backend server from where you can retrieve it to send push notifications.
   /*return fetch(PUSH_ENDPOINT, {
     method: 'POST',
