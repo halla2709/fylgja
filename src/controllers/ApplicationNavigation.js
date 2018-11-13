@@ -1,5 +1,5 @@
 import React from 'react';
-import { StackNavigator, DrawerNavigator } from 'react-navigation';
+import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
 import { Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
@@ -9,7 +9,7 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
-const MainStack = StackNavigator({
+const MainStack = createStackNavigator({
     Home: {
         screen: HomeScreen
     },
@@ -27,7 +27,7 @@ const MainStack = StackNavigator({
     }
 )
 
-const DrawerStack = DrawerNavigator({
+const DrawerStack = createDrawerNavigator({
     Main: { 
         screen: MainStack 
     },
@@ -42,7 +42,7 @@ const DrawerStack = DrawerNavigator({
     contentComponent: DrawerComponent
 });
 
-const RootStack = StackNavigator({
+const RootStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
 {
@@ -51,7 +51,7 @@ const RootStack = StackNavigator({
     animationEnabled: false,
     navigationOptions: ({navigation}) => ({
         headerLeft: <Ionicons onPress={() => 
-            navigation.navigate('DrawerToggle')}
+            navigation.toggleDrawer()}
             name="md-menu" size={42} color="white" />,
             
         headerRight: (<View/>),        
