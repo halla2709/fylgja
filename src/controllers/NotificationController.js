@@ -4,7 +4,7 @@ import 'firebase/firestore';
 
 // Initialize Firebase
 var config = {
-  apiKey: "AIzaSyCZrmxMufEJSmoSriaahe20IFe5MTYTixw",
+  apiKey: "",
   authDomain: "fylgjutest.firebaseapp.com",
   databaseURL: "https://fylgjutest.firebaseio.com",
   projectId: "fylgjutest",
