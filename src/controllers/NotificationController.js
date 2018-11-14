@@ -1,13 +1,46 @@
 import { Permissions, Notifications } from 'expo';
+import * as firebase from 'firebase';
+import 'firebase/firestore';
 
-//const PUSH_ENDPOINT = 'https://localhost:3000/users/push-token';
+// Initialize Firebase
+var config = {
+  apiKey: "",
+  authDomain: "fylgjutest.firebaseapp.com",
+  databaseURL: "https://fylgjutest.firebaseio.com",
+  projectId: "fylgjutest",
+  storageBucket: "fylgjutest.appspot.com",
+  messagingSenderId: "512062902885"
+};
+firebase.initializeApp(config);
+const firestore = firebase.firestore();
+const settings = {timestampsInSnapshots: true};
+firestore.settings(settings);
+var token;
+
+/*firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    console.log("User is signed in! Id ", user.uid); 
+    const userId = user.uid;
+    if(token) {
+      console.log("Saving token");
+      firebase.database().ref('tokens/' + userId).set({
+        token: token
+      });  
+    } 
+    // ...
+  } else {
+    console.log("User is signed out!");    
+    // User is signed out.
+    // ...
+  }
+  // ...
+});*/
 
 export default async function registerForPushNotificationsAsync() {
   let finalStatus;
   try {
-    const { status: existingStatus } = await Permissions.getAsync(
-      Permissions.NOTIFICATIONS
-    );
+    const { existingStatus } = await Permissions.getAsync(Permissions.NOTIFICATIONS);
     finalStatus = existingStatus;
 
     // only ask if permissions have not already been determined, because
@@ -30,23 +63,26 @@ export default async function registerForPushNotificationsAsync() {
   }
 
   // Get the token that uniquely identifies this device
-  let token = await Notifications.getExpoPushTokenAsync();
-
-  // POST the token to your backend server from where you can retrieve it to send push notifications.
-  /*return fetch(PUSH_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      token: {
-        value: token,
-      },
-      user: {
-        username: 'Brent',
-      },
-    }),
+  token = await Notifications.getExpoPushTokenAsync();
+  /*console.log(firebase.auth().currentUser);
+  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+  .then(function() {
+    return firebase.auth().signInAnonymously();
+  })
+  .catch(function(error) {
+    // Handle Errors here.
+    console.error(error);
   });*/
+
+  firestore.collection("tokens").doc(token).set({})
+  .then(function(){
+    console.log("Written to db");
+  })
+  .catch(function(error) {
+    console.error(error);
+
+  });
+
+  console.log(token);
   return;
 }

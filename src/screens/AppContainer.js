@@ -44,7 +44,8 @@ export default class AppContainer extends React.Component {
 
   render() {
     return (
-      <RootStack screenProps={{fontLoaded: this.state.fontLoaded}} />
+      <RootStack ref={this.props.navigatorRef}
+        screenProps={{fontLoaded: this.state.fontLoaded}} />
     );
   }
 }
