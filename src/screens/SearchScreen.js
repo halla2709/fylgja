@@ -59,7 +59,7 @@ export class SearchScreen extends React.Component {
 
           <View style={Styles.searchtitlecontainer}>
             <Text style={Styles.title}>
-              F<Text style={Styles.smallTitle}>YLGJAN
+              F<Text style={Styles.smallTitle}>YLGJA
               </Text>
             </Text>
           </View>

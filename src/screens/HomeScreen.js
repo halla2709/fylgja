@@ -2,6 +2,7 @@ import React from 'react';
 import Favicon from 'react-favicon';
 import { Text, View, Button, Alert, TouchableOpacity, Image, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
+<Image source={require("./assets/2.png")}/>
 
 export class HomeScreen extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export class HomeScreen extends React.Component {
 
     var titlecontainer =
       <View style={Styles.titlecontainer}>
-        <Text style={Styles.title}> F<Text style={Styles.smallTitle}>YLGJAN </Text> </Text>
+        <Text style={Styles.title}> F<Text style={Styles.smallTitle}>YLGJA </Text> </Text>
       </View>
 
     var imagecontainer =
@@ -38,15 +39,17 @@ export class HomeScreen extends React.Component {
     var buttoncontainer =
       <View style={Styles.buttoncontainer}>
         <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search', {drawerContent: "chapters"})}>
-          <Text style={Styles.buttontext}>Handbók ljósmæðra</Text>
+          <Image source={require("../assets/tinyhand.png")}/>
         </TouchableOpacity>
 
         <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Information', {drawerContent: "information"})}>
           <Text style={Styles.buttontext}>Upplýsingar</Text>
+          <Text style={Styles.buttontext}>símanúmer, heimasíður, þjónustur, um ljósmæður og ljósmæðrafélag</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
           <Text style={Styles.buttontext}>Fréttaveita</Text>
+          <Text style={Styles.buttontext}>fréttir frá ljósmæðrafélag.is</Text>
         </TouchableOpacity>
 
       </View>
