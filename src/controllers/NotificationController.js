@@ -1,17 +1,10 @@
 import { Permissions, Notifications } from 'expo';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
+import firebaseConfig from '../assets/firebaseConfig';
 
 // Initialize Firebase
-var config = {
-  apiKey: "",
-  authDomain: "fylgjutest.firebaseapp.com",
-  databaseURL: "https://fylgjutest.firebaseio.com",
-  projectId: "fylgjutest",
-  storageBucket: "fylgjutest.appspot.com",
-  messagingSenderId: "512062902885"
-};
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 const settings = {timestampsInSnapshots: true};
 firestore.settings(settings);
