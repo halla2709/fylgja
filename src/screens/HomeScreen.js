@@ -2,7 +2,7 @@ import React from 'react';
 import Favicon from 'react-favicon';
 import { Text, View, Button, Alert, TouchableOpacity, Image, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
-<Image source={require("./assets/2.png")}/>
+<Image source={require("../assets/images/2.png")}/>
 
 export class HomeScreen extends React.Component {
   constructor(props) {
