@@ -23,7 +23,7 @@ export class InformationScreen extends React.Component {
         icon:true
         }
     }
-   
+
 
     static navigationOptions = {
         title: 'Upplýsingar',

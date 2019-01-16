@@ -27,7 +27,12 @@ export default class App extends React.Component {
     // with the notification data.
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
     this.scraper = new InformationScraper();
-    //this.scraper.init();
+    try{
+      this.scraper.init();
+    }
+    catch(err) {
+      console.error("Could not open information scaper", err);
+    }
   }
 
   _handleNotification = (notification) => {
