@@ -1,4 +1,5 @@
 import cheerio from 'react-native-cheerio';
+import Information from '../assets/testContent/info';
 
 export default class InformationScraper {
 
@@ -8,36 +9,54 @@ export default class InformationScraper {
     
     async init() {
         this.data = [];
+        //this.DataKeeper = new Information();
         console.log("init");
-        fetch('https://www.ljosmaedrafelag.is/um-felagid')
-            .then((response) => {
-                console.log("Got response", response.status);
-                setTimeout(() => null, 0);
-                return response.text();
-            })
-            .then((text) => {
-                console.log("loaded content");
-                const $ = cheerio.load(text);
-                const container = $('.container');
-                let pageTitle = container.find('.page-title').text().replace(/\s+/,'');
-                console.log("Page title", pageTitle);
-                let content = container.has('#block_1 .Category').find('p');
-                var contentText = [];
-                content.each(function(i,p) {
-                    contentText[i] = [];
-                    $(p).contents().map(function(ii, el) {
-                        if(el.type === "text") {
-                            contentText[i].push($(el).text());
-                        }
-                    })
-                });
-                console.log("Done");
-                console.log(contentText.join(" "));
-            })
-            .catch((e) => {
-                console.error(e);
-            });
-
+        Information.setData([]);
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa");
+        
         console.log("constructing information scraper");
+    }
+
+    getDataFromUrl(url, name) {
+        fetch(url).then((response) => {
+            console.log("Got response", response.status);
+            setTimeout(() => null, 0);
+            return response.text();
+        }).then((text) => {
+            console.log("loaded content");
+            const $ = cheerio.load(text);
+            const container = $('.container');
+            let pageTitle = container.find('.page-title').text().replace(/\s+/,'');
+            console.log("Page title", pageTitle);
+            let textContainer = container.find('#block_1 .Category');
+            var contentText = [];
+            this.findRawTextInElement(textContainer, contentText, $);
+            console.log("Done");
+            let currentData = Information.getData();
+            currentData.push({name:name, data:contentText});
+            Information.setData(currentData);
+        })
+        .catch((e) => {
+            console.error(e);
+        });
+    }
+
+    findRawTextInElement(element, array, $) {
+        console.log("HERE AGAIN");
+        var content = $(element).find('p, strong, a');
+        var self = this;
+        content.each(function(i,p) {
+            $(p).contents().map(function(ii, el) {
+                console.log(p.tagName);
+                if(el.type === "text") {
+                    array.push( {"text": $(el).text(), "type": p.tagName });
+                }
+                else if(el.tagName === "span") {
+                    console.log("Span in a A");
+                    self.findRawTextInElement(el, array, $);
+                }
+            })
+        });
     }
 }
