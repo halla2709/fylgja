@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, ScrollView, FlatList } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView, FlatList, TouchableOpacity, ImageBackground, Icon } from 'react-native'
 import { NavigationActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
@@ -15,46 +15,54 @@ export default class DrawerComponent extends React.Component {
     if (params) {
       if (params.drawerContent === "chapters") {
         drawerContent =
-        
-       <FlatList
+       <FlatList 
             data={Chapters}
             renderItem={({ item }) => 
-            <ChapterListItem chapter={item} level={0} currentChapter={params.currentChapter} />}
+            <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={params.currentChapter} />}
             extraData={currentChapter = params.currentChapter}
           />
       }
+     
     }
+
+
     return (
-      <View style={styles.drawer}>
+      this.props.screenProps.fontLoaded ? (
+    <View style={styles.drawer}>
 
-        <View>
-          {drawerContent}
-          <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/1.png')} />
-        </View>
-
-
-        <Text
-          onPress={() => navigation.navigate('Search', { drawerContent: "chapters" })}
-          style={styles.drawerItem}>
-          Handbók
-        </Text>
-
-        <Text
-          onPress={() => navigation.navigate('Information', { drawerContent: "information" })}
-          style={styles.drawerItem}>
-          Upplýsingar
-        </Text>
-        <Text
-          onPress={() => navigation.navigate('NewsFeed', { drawerContent: "news" })}
-          style={styles.drawerItem}>
-          Fréttaveita
-        </Text>
-
-        <View>
-          <Image resizeMode="contain" style={styles.drawerGold} source={require('../assets/images/2.png')} />
+      <View style={styles.drawerLogo}>
+        <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')}/>
+        <View style={{flexDirection: "column"}}>
+        <Text style={styles.ljosmaedrafelagInfo}>Ljósmæðrafélag</Text>
+        <Text style={styles.ljosmaedrafelagInfo}>Íslands</Text>
         </View>
       </View>
+
+      <ScrollView style={styles.drawerChapters}>   
+        {drawerContent}
+      </ScrollView>
+        
+      <View style={styles.drawerButtons} > 
+        <TouchableOpacity  onPress={() => navigation.navigate('NewsFeed', { drawerContent: "news" })}>
+          <Text style={styles.drawerItem}> Fréttaveita </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('Information', { drawerContent: "information" })}>
+         <Text style={styles.drawerItem}> Upplýsingar </Text>
+        </TouchableOpacity>
+        
+        <TouchableOpacity onPress={() => navigation.navigate('Search', { drawerContent: "chapters" })}>
+         <Text style={styles.drawerItem}> Handbók  </Text>
+        </TouchableOpacity>
+
+      </View>
+    </View>
+
+)
+: null
 
     )
   }
 }
+
+

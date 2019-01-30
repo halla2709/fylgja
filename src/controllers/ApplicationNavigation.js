@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
+import { Icon } from 'react-native-elements';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
@@ -27,6 +28,7 @@ const MainStack = createStackNavigator({
     }
 )
 
+
 const DrawerStack = createDrawerNavigator({
     Main: { 
         screen: MainStack 
@@ -42,6 +44,7 @@ const DrawerStack = createDrawerNavigator({
     contentComponent: DrawerComponent
 });
 
+
 const RootStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
@@ -49,23 +52,28 @@ const RootStack = createStackNavigator({
     headerMode: 'screen',
     swipeEnabled: false,
     animationEnabled: false,
-    navigationOptions: ({navigation}) => ({
-        headerLeft: <Ionicons onPress={() => 
-            navigation.toggleDrawer()}
-            name="md-menu" size={42} color="white" />,
+    navigationOptions: ({navigation}) => ({  
+        headerLeft:     
+                <Ionicons onPress={() => 
+                navigation.toggleDrawer()}
+                name="md-menu" size={42} color="white" />,
+                headerRight: 
+                <Icon name='home' size={42} color="white" type='font-awesome-5' 
+                onPress={() => navigation.navigate('Home')}/> ,
+            headerStyle: {
+                backgroundColor: 'rgb(34,82,171)',
+                paddingLeft: 10,
+                paddingRight: 10,
+            },
+            headerTintColor:'white',  
+            headerTitleStyle: {
+                fontSize: 25, 
+                alignSelf: 'center',
+              },
             
-        headerRight: (<View/>),        
-        headerStyle: {
-            backgroundColor: 'rgb(34,82,171)',
-            paddingLeft: 10
-        },
-        headerTintColor:'white',
-        headerTitleStyle: {
-            fontSize: 25, 
-            alignSelf: 'center',
-          },
-        
-    })
-});
-
-export default RootStack;
+        })
+    });
+    
+    export default RootStack;
+     
+    <Image style={{height:50, width:50}} source={require('../assets/images/logo.png')} /> 

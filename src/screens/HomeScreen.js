@@ -1,7 +1,8 @@
 import React from 'react';
 import Favicon from 'react-favicon';
-import { Text, View, Button, Alert, TouchableOpacity, Image, Dimensions } from 'react-native';
+import { Text, View, Button, Alert, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
 import Styles from './../styles/Styles';
+import { Icon } from 'react-native-elements'; 
 <Image source={require("../assets/images/2.png")}/>
 
 export class HomeScreen extends React.Component {
@@ -26,57 +27,86 @@ export class HomeScreen extends React.Component {
       })
     });
 
+       
     var titlecontainer =
-      <View style={Styles.titlecontainer}>
+    <View style={Styles.titlecontainer}>
         <Text style={Styles.title}> F<Text style={Styles.smallTitle}>YLGJA </Text> </Text>
       </View>
-
+      
     var imagecontainer =
-      <View style={Styles.imagecontainer}>
-        <Image resizeMode="contain" style={Styles.image} source={require('../assets/images/storkur.png')} />
-      </View>
+    <View style={Styles.imagecontainer}>
+    
+      <Image resizeMode="contain" style={Styles.image} source={require('../assets/images/storkur.png')} />
+      
+    </View>
 
     var buttoncontainer =
-      <View style={Styles.buttoncontainer}>
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Search', {drawerContent: "chapters"})}>
-          <Image source={require("../assets/tinyhand.png")}/>
+    <View style={Styles.buttoncontainer}>
+        <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
+       
+       <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
+            <Icon reverse name='newspaper-o' type='font-awesome' color='#FF3A0D' size={30} /> 
+            <View style={{flex: 1}}>
+            <Text style={Styles.buttontitle1}>Fréttaveita</Text>
+            <Text style={Styles.buttontext1}>Fréttir frá ljósmaedrafelag.is</Text>
+            </View>
+            </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('Information', {drawerContent: "information"})}>
-          <Text style={Styles.buttontext}>Upplýsingar</Text>
-          <Text style={Styles.buttontext}>símanúmer, heimasíður, þjónustur, um ljósmæður og ljósmæðrafélag</Text>
+        <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('Information', {drawerContent: "information"})}>
+        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
+        <Icon reverse name='md-information-circle' type='ionicon' color='#1500FF' size={30} /> 
+            <View style={{flex: 1}}>
+            <Text style={Styles.buttontitle2}>Upplýsingar</Text>
+            <Text style={Styles.buttontext2}>Símanúmer, heimasíður, þjónustur og fleira</Text>
+            </View>
+            </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.buttons} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
-          <Text style={Styles.buttontext}>Fréttaveita</Text>
-          <Text style={Styles.buttontext}>fréttir frá ljósmæðrafélag.is</Text>
+        <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('Search', {drawerContent: "chapters"})}>
+        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
+        <Icon reverse name='open-book' type='entypo' color='#05bc00' size={30} /> 
+          
+          <View style={{flex: 1}}>
+          <Text style={Styles.buttontitle3}>Handbók</Text>
+          <Text style={Styles.buttontext3}>Fylgjan á rafrænu formi</Text>
+          </View>
+          </View>
         </TouchableOpacity>
 
       </View>
 
-    return (
-      this.state.fontLoaded ? (
+return (
+  this.state.fontLoaded ? (
 
-        this.state.isLargeWindow ? (
-          
+    this.state.isLargeWindow ? (
+      
+      <View style={Styles.wholepage}>
+      <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{width: '100%', height: '100%', opacity:0.9}}>
+      
+        {titlecontainer}
+        {imagecontainer}
+       
+        {buttoncontainer}
+        </ImageBackground>
+      </View>
+    ) :
+      (
+        <View style={Styles.splitpage}>
           <View style={Styles.wholepage}>
-            {titlecontainer}
+          <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{width: '100%', height: '100%', opacity:0.9}}>
+           
+           {titlecontainer}
             {imagecontainer}
-            {buttoncontainer}
+            </ImageBackground>
           </View>
-        ) :
-          (
-            <View style={Styles.splitpage}>
-              <View style={Styles.wholepage}>
-                {titlecontainer}
-                {imagecontainer}
-              </View>
-              <View style={Styles.wholepage}>
-                {buttoncontainer}
-              </View>
-            </View>
-          )
-      ) : null
+          <View style={Styles.wholepage}>
+            {buttoncontainer}
+            
+          </View>
+        </View>
+      )
+  ) : null
     );
 
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, FlatList } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Icon } from 'react-native'
 import { withNavigation } from 'react-navigation'
 
 class ChapterListItem extends React.Component {
@@ -22,6 +22,7 @@ class ChapterListItem extends React.Component {
                 this.subChapterView = <FlatList
                     data={subChapters}
                     renderItem={({ item }) => 
+                    
                         <ChapterListItem chapter={item} level={this.props.level+1}
                         extraData={{currentChapter:this.props.currentChapter, navigate:this.props.navigation.navigate}}/>}
                 />
@@ -31,7 +32,7 @@ class ChapterListItem extends React.Component {
             this.subChapterView = null;
         }
 
-        var fontSize = this.props.level == 0 ? 24 : 16;
+        var fontSize = this.props.level == 0 ? 20 : 15;
         var indent = "";
         for (var i = 0; i < this.props.level; i++) {
             indent += "   ";
@@ -39,21 +40,26 @@ class ChapterListItem extends React.Component {
 
         const styles = StyleSheet.create({
             text: {
-                fontSize: fontSize
+                fontFamily: 'dosis-regular',
+                fontSize: fontSize,
+                color: '#3a3a3a',
+
             }
         });
 
         return (
             <View>
+                
                 <TouchableOpacity onPress={() => {
                     this._onPress(this.props.chapter.key)}}>
-                    <View>
+                    <View> 
                         <Text style={styles.text}>
                             {indent + this.props.chapter.name}
                         </Text>
                     </View>
                 </TouchableOpacity>
                 {this.subChapterView}
+                
             </View>
         );
     }

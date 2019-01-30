@@ -58,23 +58,35 @@ export default StyleSheet.create({
   },
 
   buttontext: {
-    color: 'rgb(255,255,255)',
+    color: 'black',
     fontFamily: 'opensans-regular',
     fontSize: 24,
   },
 
   h1: {
     fontFamily: 'dosis-regular',
-    fontSize: 32,
-    alignItems: 'center',
+    fontSize: 25,
+    alignSelf: 'center',
+    padding: 25,
+  },
+
+  searchh1: {
+    fontFamily: 'dosis-regular',
+    fontSize: 28,
     padding: 10,
-    textDecorationLine: 'underline',
+    opacity: 1,
   },
 
   h2: {
-    fontFamily: 'dosis-extralight',
-    fontSize: 22,
-    paddingBottom: 5,
+    fontFamily: 'opensans-light',
+    fontSize: 20,
+    alignSelf: 'center',
+  },
+
+  searchh2: {
+    fontFamily: 'opensans-light',
+    fontSize: 20,
+    paddingLeft: 35,
   },
 
   h22: {
@@ -110,17 +122,120 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around'
   },
-
+  
   imagecontainer: {
     flex: 4,
     alignItems: 'center',
-    justifyContent: 'space-around'
+    },
+
+  icon1: {
+    color: '#FF3A0D',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2,
   },
+
+  icon2: {
+    fontSize: 400,
+    color: '#1500FF',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2
+  },
+
+  icon3: {
+    color: '#0CE832',
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2
+  },
+
+  button1:{
+    width: "90%",
+    height: "33%",
+    justifyContent: 'center',
+    padding: 10,
+
+  },
+
+  button2:{
+    width: "90%",
+    height: "33%",
+    justifyContent: 'center',
+    padding: 10,
+    borderTopColor: 'rgb(160,199,230)',
+    borderTopWidth: 1.5,
+  
+  },
+  button3:{
+    width: "90%",
+    height: "33%",
+    padding: 10,
+    borderTopWidth: 1.5, 
+    borderTopColor: 'rgb(160,199,230)',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+
+  buttontitle1:{
+    textAlign: 'center',
+    color: '#FF3A0D',
+    fontSize: 32,
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2,
+  },
+
+  buttontext1:{
+    color: '#666F7F',
+    fontSize: 12,
+    textAlign: 'center',
+  },
+
+  buttontitle2:{
+    textAlign: 'center',
+    color: '#1500FF',
+    fontSize: 32,
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2,
+  },
+
+  buttontext2:{
+    color: '#666F7F',
+    fontSize: 12,
+    textAlign: 'center',
+  },
+
+  buttontitle3:{
+    color: '#05bc00',
+    fontSize: 32,
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 2,
+    textAlign: 'center',
+  },
+
+  buttontext3:{
+    color: '#666F7F',
+    fontSize: 12,
+    textAlign: 'center',
+  },
+  
 
   buttoncontainer: {
     flex: 4,
     alignItems: 'center',
-    justifyContent: 'space-around'
+    width: '100%',
+    height: '100%',
+    backgroundColor: '#f7f7f7',
+  },
+
+  imagetext: {
+    fontFamily: 'opensans-regular',
+    fontSize: 18,
+    color: 'black',
   },
 
   textcontainer: {
@@ -132,17 +247,25 @@ export default StyleSheet.create({
 
   image: {
     flex: 1,
+    justifyContent:'center',
   },
+
 
   //SearchScreen
   searchwholepage: {
     backgroundColor: 'rgb(239,239,239)',
     alignItems: 'center',
-    flex: 1,
+    flex: 8,
+  },
+
+  searchTitle: {
+    fontFamily: 'merriweather-black',
+    fontSize: 40
+
   },
 
   searchtitlecontainer: {
-    flex: 2,
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'space-around'
   },
@@ -165,77 +288,81 @@ export default StyleSheet.create({
   searchcontainer: {
     width: '100%',
     alignItems: 'center',
-    flex: 5,
+    flex: 7,
   },
 
   searchresult: {
     width: '100%',
-    alignItems: 'center',
+    backgroundColor: 'rgb(248,248,249)',
+    borderRadius: 10,
+    opacity: 0.6,
+
   },
 
   searchBar: {
     backgroundColor: 'white',
     color: 'white',
     fontSize: 10,
+    alignSelf: 'center',
 
   },
 
   //ReaderScreen
-  readerwholepage: {
-    backgroundColor: 'rgb(239,239,239)',
-    justifyContent: 'space-between',
-  },
-
-  chaptercontainer: {
-    width: '100%',
-    justifyContent: 'space-around',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-
-  decorationcontainer: {
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-
-  readerdecoration: {
-    height: 20,
-  },
-
-  subchaptercontainer: {
-    width: '100%',
-    justifyContent: 'space-around',
-    paddingTop: 20,
-    paddingBottom: 0,
-    paddingHorizontal: 10,
-  },
-
-  pcontainer: {
-    width: '100%',
-    justifyContent: 'space-around',
-    overflow: 'scroll',
-    paddingHorizontal: 10,
-  },
-
-  chaptertext: {
-    overflow: 'scroll',
-    alignItems: 'center',
-    flex: 8
-  },
-
-  leftarrow: {
-    flex: 1,
-    alignItems: 'center'
-  },
-
-  rightarrow: {
-    flex: 1,
-    alignItems: 'center'
-  },
-
-  container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
-  head: { height: 40, backgroundColor: '#f1f8ff' },
-  text: { margin: 6 },
+    readerwholepage: {
+      backgroundColor: 'rgb(239,239,239)',
+      justifyContent: 'space-between',
+    },
+  
+    chaptercontainer: {
+      width: '100%',
+      justifyContent: 'space-around',
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+  
+    decorationcontainer: {
+      alignItems: 'center',
+      justifyContent: 'space-around',
+    },
+  
+    readerdecoration: {
+      height: 20,
+    },
+  
+    subchaptercontainer: {
+      width: '100%',
+      justifyContent: 'space-around',
+      paddingTop: 20,
+      paddingBottom: 0,
+      paddingHorizontal: 10,
+    },
+  
+    pcontainer: {
+      width: '100%',
+      justifyContent: 'space-around',
+      overflow: 'scroll',
+      paddingHorizontal: 10,
+    },
+  
+    chaptertext: {
+      overflow: 'scroll',
+      alignItems: 'center',
+      flex: 8,
+    },
+  
+    leftarrow: {
+      flex: 1,
+      alignItems: 'center'
+    },
+  
+    rightarrow: {
+      flex: 1,
+      alignItems: 'center'
+    },
+  
+    container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
+    head: { height: 40, backgroundColor: '#f1f8ff' },
+    text: { margin: 6 },  
 
 
   //InformationScreen
@@ -271,36 +398,74 @@ export default StyleSheet.create({
 
   //drawer
   drawer: {
+    flex: 12,
+    backgroundColor: 'rgb(252, 252, 252)',
+  },
+
+  drawerLogo: {
     flex: 1,
+    flexDirection: 'row', 
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    backgroundColor: 'rgb(242,242,243)',
+    borderBottomWidth: 2,
+    borderColor: '#d8d8d8',
+  },
+
+  drawerImage: {
+    flex: 1,
+    resizeMode: 'contain', // or 'stretch'
+    height: '80%',
+    width: '80%',
+    alignSelf: 'center',
+  },
+
+  ljosmaedrafelagInfo: {
+    fontFamily: 'merriweather-black',
+    fontSize: 20,
+    padding: 2,
+    paddingRight: 10,
+    color: 'rgb(34,82,171)',
+    alignSelf: 'center',
+  },
+
+  drawerChapters:{
+    flex: 7,
+    fontSize: 40,
+    paddingHorizontal: 5,
+    color: 'rgb(34,82,171)',
+    backgroundColor: 'rgb(239,239,240)'
+  },
+
+  drawerButtons: {
+    flex: 4,
     justifyContent: 'flex-end',
-    backgroundColor: 'rgb(239,239,239)',//'rgb(250,215,82)', //'rgb(251,199,6)',
-    paddingTop: 40,
-    paddingHorizontal: 20
+    backgroundColor: 'rgb(239,239,240)'
+  },
+
+backgroundImage: {
+    flex: 1,
+    opacity: 0.4,
+    height: '100%',
+    width: '100%',
+    alignSelf: 'center',
+    
   },
 
   drawerItem: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: 'white',
-    padding: 12,
+    fontSize: 20,
+    padding: 10,
     margin: 5,
-    borderRadius: 2,
+    textAlign: 'center',
+    color: 'white',
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 5,
     borderColor: 'rgb(34,82,171)',
-    borderWidth: 1,
+    borderTopWidth: 1,
     backgroundColor: 'rgb(34,82,171)',
-    textAlign: 'center'
+    opacity: 0.85,
+    borderRadius: 10,
   },
 
-  drawerGold: {
-    justifyContent: 'flex-end',
-    width: '100%',
-
-  },
-
-  drawerGold2: {
-    justifyContent: 'flex-end',
-    width: '20%',
-    height: '20%'
-
-  },
 });

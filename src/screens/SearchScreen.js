@@ -7,7 +7,9 @@ import {
   TouchableOpacity,
   ScrollView,
   TextInput,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
+  Icon, 
+  ImageBackground
 } from 'react-native';
 import { Font } from 'expo';
 import Styles from './../styles/Styles';
@@ -25,7 +27,7 @@ export class SearchScreen extends React.Component {
   getChapterView(chapter, level) {
     return <Text
       key={chapter.key}
-      style={(level === 1 ? Styles.h1 : Styles.h2)}
+      style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
       onPress={() => this.props.navigation.navigate('Reader', {
         drawerContent: "chapters",
         currentChapter: chapter.key
@@ -56,22 +58,18 @@ export class SearchScreen extends React.Component {
 
         <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
 
-          <View style={Styles.searchtitlecontainer}>
-            <Text style={Styles.title}>
-              F<Text style={Styles.smallTitle}>YLGJA
-              </Text>
-            </Text>
-          </View>
-
           <View style={Styles.searchcontainer}>
+          <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{width: '100%', height: '100%'}}>
+      
+         
             <SearchBar lightTheme round style={Styles.searchBar} 
             placeholder='Skrifaðu leitarorð hér...'
             placeholderTextColor='rgb(189, 194, 201)'
-            searchIcon={{color: 'grey', padding:2}}
+            searchIcon={{color: 'grey', padding:3,}}
             clearIcon={{color: 'grey'}}
             inputStyle={{color: 'black', fontSize: 18, backgroundColor: 'white'}} //Style TextInput
             inputContainerStyle={Styles.p}
-            containerStyle={{backgroundColor: 'rgb(239,239,239)', width: '90%'}}
+            containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10,}}
 
             onChangeText={(searchString) => {
               this.setState({currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString))});
@@ -80,15 +78,17 @@ export class SearchScreen extends React.Component {
               this.setState({currentChapterBlocks: this.getChapterViews(Chapters)});
             }}
               />
-
-            <ScrollView style={{
-              width: '100%'
-            }}>
+               
+            <ScrollView style={{ width: '100%', paddingHorizontal: 8, }}>
+            
               <View style={Styles.searchresult}>
+              
                 {this.state.currentChapterBlocks}
               </View>
             </ScrollView>
+            </ImageBackground>
           </View>
+          
 
         </KeyboardAvoidingView>
 

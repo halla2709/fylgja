@@ -71,7 +71,7 @@ export class ReaderScreen extends React.Component {
               <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/4.png')} />
             </View>
           </View>
-          <ScrollView style={{ marginBottom: 150 }} ref={(scrollView) => {
+          <ScrollView style={{ marginBottom: 150, padding: 10, backgroundColor: 'rgb(239,239,239)', borderRadius: 10 }} ref={(scrollView) => {
             if(scrollView != null) {
               scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true});
             }
