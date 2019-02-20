@@ -1,7 +1,5 @@
 import React from 'react';
-import { Text, View, Button, Alert, TouchableHighlight, Image, ScrollView } from 'react-native';
-import { Font } from 'expo';
-import SearchBar from 'react-native-search-bar';
+import { Text, View,  TouchableHighlight, Image, ScrollView, ImageBackground } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import Chapters from "../assets/testContent/chapters.js";
@@ -51,9 +49,10 @@ export class ReaderScreen extends React.Component {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
-          <View style={{ paddingBottom: 15 }}>
+         
+          <View style={{ paddingBottom: 5 }}>
             <View style={Styles.decorationcontainer}>
-              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/3.png')} />
+              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/11.png')} />
             </View>
             <View style={Styles.chaptercontainer}>
               <TouchableHighlight style={Styles.leftarrow} onPress={()=>{this.props.navigation.navigate('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1)})}} underlayColor="rgb(245,245,245)">
@@ -68,10 +67,10 @@ export class ReaderScreen extends React.Component {
               </TouchableHighlight>
             </View>
             <View style={Styles.decorationcontainer}>
-              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/4.png')} />
+              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/10.png')} />
             </View>
           </View>
-          <ScrollView style={{ marginBottom: 150, padding: 10, backgroundColor: 'rgb(239,239,239)', borderRadius: 10 }} ref={(scrollView) => {
+          <ScrollView style={{ padding: 10, width: '100%', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
             if(scrollView != null) {
               scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true});
             }
@@ -87,3 +86,4 @@ export class ReaderScreen extends React.Component {
     );
   }
 }
+

@@ -14,6 +14,9 @@ export default class InformationScraper {
         Information.setData([]);
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið");
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn");
+        
+
         
         console.log("constructing information scraper");
     }
@@ -59,4 +62,6 @@ export default class InformationScraper {
             })
         });
     }
+
+
 }

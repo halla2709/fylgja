@@ -5,10 +5,10 @@ import Styles from './../styles/Styles';
 
 export default class InformationListItem extends React.Component {
     componentWillMount() { 
-        this.state ={
+        this.setState( { 
             status:false,
             icon:true
-            }
+            });
     }
 
     ShowHideTextComponentView = () => {
@@ -19,14 +19,23 @@ export default class InformationListItem extends React.Component {
             this.setState({ status: true, icon: false });
         }
     }
+    
 
     render() {
+
+        const allData = this.props.data;
+        const infoItems = [];
+        allData.forEach(dataItem => {
+        infoItems.push(<Text style={{flex:1}} numberOfLines={1}>{dataItem.text}</Text>);
+    });       
+
+
         return (
             <View>
 
                 <TouchableOpacity onPress={this.ShowHideTextComponentView}>
                     <View style={Styles.infosubchaptercontainer}>
-                        <Text style={Styles.h22}>{this.props.title}</Text>
+                        <Text numberOfLines={1} style={Styles.h22}>{this.props.title}</Text>
                         {
                             this.state.icon ?
                                 <Ionicons style={Styles.plusbutton} name="md-add" size={30} /> : <Ionicons style={Styles.plusbutton} name="md-remove" size={30} />}
@@ -34,19 +43,13 @@ export default class InformationListItem extends React.Component {
                 </TouchableOpacity>
 
                 <View style={Styles.informationcontainer}>
+                
                     {
-                        this.state.status ? <Text style={Styles.p} layout="row">
-                            <Text style={Styles.h3}>Skilgreining á ljósmóðurstarfinu </Text>
-                            <Text style={Styles.h3}>Samþykkt af Alþjóða samtökum ljósmæðra ICM, Alþjóðaheilbrigðisstofnuninni WHO, og Alþjóðasamtökum fæðingar- og kvensjúkdómalækna FIGO árið 1992.</Text>
-                            <Text style={Styles.h3}>„Ljósmóðir er einstaklingur, sem hefur lokið námi í ljósmóðurfræði sem er viðurkennt í því landi sem það var stundað. Hún hefur lokið náminu með viðunandi vitnisburði og hlotið leyfi viðkomandi yfirvalda til að stunda ljósmæðrastörf.
-                            Ljósmóðir þarf að geta séð um nauðsynlegt eftirlit, umönnun og ráðgjöf til kvenna á meðgöngu, í fæðingu og sængurlegu, stundað fæðingarhjálp á eigin ábyrgð og annast nýbura og ungbörn. Þessi umönnun felur í sér fyrirbyggjandi aðgerðir, greiningu á frávikum hjá móður og
-                            barni, aðstoð við læknismeðferð og bráðahjálp í fjarveru læknis. Ljósmóðir gegnir mikilvægu hlutverki í heilbrigðisfræðslu og ráðgjöf ekki aðeins fyrir konur, heldur einnig fyrir fjölskylduna og þjóðfélagið í heild. Hlutverk ljósmóður ætti að fela í sér fjölskylduáætlun, undirbúning
-                            fyrir foreldrahlutverkið, fræðslu fyrir fæðinguna, umönnun barna og einnig að hluta til fræðslu vegna kvensjúkdóma. Ljósmóðir getur stafað á sjúkrahúsum, á stofu, á heilsugæslustöðvum, í heimahúsi eða annarstaðar í heilbrigðisþjónustunni."
-                            </Text>
-                        </Text> : null
+                        this.state.status ? {infoItems} : null
                     }
                 </View>
             </View>
         )
     }
 }
+

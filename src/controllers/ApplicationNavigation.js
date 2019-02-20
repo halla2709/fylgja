@@ -56,9 +56,9 @@ const RootStack = createStackNavigator({
         headerLeft:     
                 <Ionicons onPress={() => 
                 navigation.toggleDrawer()}
-                name="md-menu" size={42} color="white" />,
+                name="md-menu" size={35} color="white" />,
                 headerRight: 
-                <Icon name='home' size={42} color="white" type='font-awesome-5' 
+                <Icon name='home' size={35} color="white" type='font-awesome-5' 
                 onPress={() => navigation.navigate('Home')}/> ,
             headerStyle: {
                 backgroundColor: 'rgb(34,82,171)',
@@ -76,4 +76,3 @@ const RootStack = createStackNavigator({
     
     export default RootStack;
      
-    <Image style={{height:50, width:50}} source={require('../assets/images/logo.png')} /> 
