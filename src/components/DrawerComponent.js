@@ -8,6 +8,12 @@ import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 
 export default class DrawerComponent extends React.Component {
 
+  onChapterPressed(chapterKey) {
+    console.log(chapterKey + " pressed");
+    this.props.navigation.closeDrawer();
+    this.props.navigation.getChildNavigation('Main').replace('Reader', {drawerContent: "chapters", currentChapter: chapterKey});
+  }
+
   render() {
     const { navigation } = this.props;
     const params = GetCurrentRouteParams(navigation.state);
@@ -18,11 +24,10 @@ export default class DrawerComponent extends React.Component {
        <FlatList 
             data={Chapters}
             renderItem={({ item }) => 
-            <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={params.currentChapter} />}
+            <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={params.currentChapter} onChapterPressed={(chapterKey) => this.onChapterPressed(chapterKey)}/>}
             extraData={currentChapter = params.currentChapter}
           />
       }
-     
     }
 
 
@@ -51,7 +56,7 @@ export default class DrawerComponent extends React.Component {
          <Text style={styles.drawerItem}> Upplýsingar </Text>
         </TouchableOpacity>
         
-        <TouchableOpacity onPress={() => navigation.navigate('Search', { drawerContent: "chapters" })}>
+        <TouchableOpacity onPress={() => navigation.navigate('Search')}>
          <Text style={styles.drawerItem}> Handbók  </Text>
         </TouchableOpacity>
 

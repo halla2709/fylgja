@@ -13,6 +13,8 @@ function SwitchChapter(currentChapter, increment) {
     const numberOfChapters = Chapters.length;
     const topChapter = parseInt(currentChapter.split(".")[0]);
     let nextNumber = topChapter + increment;
+    console.log("Switching from chapter " + topChapter + " to chapter " + nextNumber);
+    
     if(nextNumber > numberOfChapters) {
         nextNumber = 1;
     }

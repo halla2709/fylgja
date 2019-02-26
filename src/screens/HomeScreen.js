@@ -63,7 +63,7 @@ export class HomeScreen extends React.Component {
             </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('Search', {drawerContent: "chapters"})}>
+        <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('Search')}>
         <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
         <Icon reverse name='open-book' type='entypo' color='#05bc00' size={30} /> 
           

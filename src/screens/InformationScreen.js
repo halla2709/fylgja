@@ -47,7 +47,6 @@ export class InformationScreen extends React.Component {
       }
 
     render() {
-        console.log("Data at screen ", Information.getData());
         const allData = Information.getData();
         const infoItems = [];
         allData.forEach(dataItem => {

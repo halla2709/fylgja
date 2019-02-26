@@ -49,7 +49,6 @@ function getData() {
 }
 
 function setData(newData) {
-    console.log("Setting new data", newData);
     data = newData;
 }
 

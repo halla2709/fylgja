@@ -23,7 +23,7 @@ const MainStack = createStackNavigator({
 },
     {
         initialRouteName: 'Home',
-        title: 'Main',
+        title: 'Home',
         headerMode: 'none'
     }
 )
