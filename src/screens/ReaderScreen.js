@@ -41,10 +41,12 @@ export class ReaderScreen extends React.Component {
   constructor(props) {
     super(props);
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
+    console.log("Chapter " + props.navigation.state.params.currentChapter);
+    //console.log(this.chapter);
     this.numberOfChapters = Chapters.length;
     this.textBlockYs = [];
     this.textBlocks = this.getChapterViews(this.chapter); 
-    this.state = {toScrollTo: 0};   
+    this.state = {toScrollTo: 0};
   }
 
   render() {
@@ -56,13 +58,13 @@ export class ReaderScreen extends React.Component {
               <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/3.png')} />
             </View>
             <View style={Styles.chaptercontainer}>
-              <TouchableHighlight style={Styles.leftarrow} onPress={()=>{this.props.navigation.navigate('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1)})}} underlayColor="rgb(245,245,245)">
+              <TouchableHighlight style={Styles.leftarrow} onPress={()=>{console.log("Left arrow pressed"); this.props.navigation.replace('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1)});}} underlayColor="rgb(245,245,245)">
                 <Ionicons name="ios-arrow-back" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
               <View style={Styles.chaptertext}>
                 <Text style={Styles.h1}> {this.chapter.name} </Text>
               </View>
-              <TouchableHighlight style={Styles.rightarrow} onPress={()=>{ this.props.navigation.navigate('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, 1)}) }}
+              <TouchableHighlight style={Styles.rightarrow} onPress={()=>{console.log("Right arrow pressed"); this.props.navigation.replace('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, 1)});}}
                 underlayColor="rgb(245,245,245)">
                 <Ionicons name="ios-arrow-forward" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>

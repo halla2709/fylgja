@@ -1,12 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity, FlatList, Icon } from 'react-native'
-import { withNavigation } from 'react-navigation'
 
 class ChapterListItem extends React.Component {
-    _onPress = (chapterKey) => {
-        var naviagteFunction = this.props.navigation ? this.props.navigation.navigate : this.props.extraData.navigate;
-        naviagteFunction("Reader", { drawerContent: "chapters", currentChapter: chapterKey });
-    };
+    constructor(props) {
+        super();
+    }
 
     shouldOpenChapter(currentChapterKey, level, chapter) {
         const currentKeys = currentChapterKey.split(".");
@@ -22,9 +20,7 @@ class ChapterListItem extends React.Component {
                 this.subChapterView = <FlatList
                     data={subChapters}
                     renderItem={({ item }) => 
-                    
-                        <ChapterListItem chapter={item} level={this.props.level+1}
-                        extraData={{currentChapter:this.props.currentChapter, navigate:this.props.navigation.navigate}}/>}
+                        <ChapterListItem chapter={item} level={this.props.level+1} currentChapter={this.props.currentChapter} onChapterPressed={(chapterKey) => this.props.onChapterPressed(chapterKey)}/>}
                 />
             }
         }
@@ -51,7 +47,7 @@ class ChapterListItem extends React.Component {
             <View>
                 
                 <TouchableOpacity onPress={() => {
-                    this._onPress(this.props.chapter.key)}}>
+                    this.props.onChapterPressed(this.props.chapter.key)}}>
                     <View> 
                         <Text style={styles.text}>
                             {indent + this.props.chapter.name}
@@ -65,4 +61,4 @@ class ChapterListItem extends React.Component {
     }
 }
 
-export default withNavigation(ChapterListItem);
+export default ChapterListItem;
