@@ -23,12 +23,12 @@ export default class InformationListItem extends React.Component {
 
     render() {
 
+
         const allData = this.props.data;
         const infoItems = [];
         allData.forEach(dataItem => {
-        infoItems.push(<Text style={{flex:1}} numberOfLines={1}>{dataItem.text}</Text>);
-    });       
-
+        infoItems.push(<Text>{dataItem.text}</Text>);
+    });  
 
         return (
             <View>
@@ -45,8 +45,9 @@ export default class InformationListItem extends React.Component {
                 <View style={Styles.informationcontainer}>
                 
                     {
-                        this.state.status ? {infoItems} : null
+                        this.state.status ? <Text key="{infoItems}">{infoItems}</Text> : null
                     }
+                     
                 </View>
             </View>
         )

@@ -4,7 +4,7 @@ import Information from '../assets/testContent/info';
 export default class InformationScraper {
 
     constructor() {
-        console.log("constructor");
+        
     }
     
     async init() {
