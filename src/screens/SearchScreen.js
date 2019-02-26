@@ -79,7 +79,7 @@ export class SearchScreen extends React.Component {
             }}
               />
                
-            <ScrollView style={{ width: '100%', paddingHorizontal: 8, }}>
+            <ScrollView style={{ width: '100%', paddingHorizontal: 8, paddingBottom: 10}}>
             
               <View style={Styles.searchresult}>
               

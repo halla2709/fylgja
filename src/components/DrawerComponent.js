@@ -37,9 +37,9 @@ export default class DrawerComponent extends React.Component {
 
       <View style={styles.drawerLogo}>
         <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')}/>
-        <View style={{flexDirection: "column"}}>
-        <Text style={styles.ljosmaedrafelagInfo}>Ljósmæðrafélag</Text>
-        <Text style={styles.ljosmaedrafelagInfo}>Íslands</Text>
+        <View style={styles.drawerLogoText}>
+        <Text style={styles.ljosmaedrafelagInfo1}>Ljósmæðrafélag</Text>
+        <Text style={styles.ljosmaedrafelagInfo2}>Íslands</Text>
         </View>
       </View>
 

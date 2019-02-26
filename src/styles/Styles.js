@@ -64,28 +64,40 @@ export default StyleSheet.create({
   },
 
   h1: {
-    fontFamily: 'dosis-regular',
+    fontFamily: 'merriweather-regular',
     fontSize: 25,
     alignSelf: 'center',
     padding: 25,
   },
 
+  h1reader: {
+    fontFamily: 'merriweather-regular',
+    fontSize: 25,
+    alignSelf: 'center',
+    alignContent: 'center',
+    padding: 25,
+    color: 'rgb(34,82,171)',
+  },
+
+
+  
+
   searchh1: {
-    fontFamily: 'dosis-regular',
-    fontSize: 28,
+    fontFamily: 'merriweather-regular',
+    fontSize: 22,
     padding: 10,
     opacity: 1,
   },
 
   h2: {
-    fontFamily: 'opensans-light',
+    fontFamily: 'merriweather-light',
     fontSize: 20,
     alignSelf: 'center',
   },
 
   searchh2: {
-    fontFamily: 'opensans-light',
-    fontSize: 20,
+    fontFamily: 'merriweather-light',
+    fontSize: 18,
     paddingLeft: 35,
   },
 
@@ -304,7 +316,6 @@ export default StyleSheet.create({
     color: 'white',
     fontSize: 10,
     alignSelf: 'center',
-
   },
 
   //ReaderScreen
@@ -312,21 +323,22 @@ export default StyleSheet.create({
       backgroundColor: 'rgb(239,239,239)',
       justifyContent: 'space-between',
     },
+
   
     chaptercontainer: {
       width: '100%',
       justifyContent: 'space-around',
       flexDirection: 'row',
       alignItems: 'center',
+      backgroundColor: 'rgb(239,239,239)',
     },
   
     decorationcontainer: {
       alignItems: 'center',
-      justifyContent: 'space-around',
     },
   
     readerdecoration: {
-      height: 20,
+      height: 25,
     },
   
     subchaptercontainer: {
@@ -398,47 +410,61 @@ export default StyleSheet.create({
 
   //drawer
   drawer: {
-    flex: 12,
+    flex: 1,
     backgroundColor: 'rgb(252, 252, 252)',
+    justifyContent: 'space-between',
   },
 
   drawerLogo: {
-    flex: 1,
     flexDirection: 'row', 
     justifyContent: 'flex-start',
     alignItems: 'center',
     backgroundColor: 'rgb(242,242,243)',
-    borderBottomWidth: 2,
+    borderBottomWidth: 1.5,
     borderColor: '#d8d8d8',
+    minHeight: 85,
   },
 
   drawerImage: {
     flex: 1,
     resizeMode: 'contain', // or 'stretch'
-    height: '80%',
-    width: '80%',
+    height: '92%',
+    width: '92%',
     alignSelf: 'center',
   },
 
-  ljosmaedrafelagInfo: {
+  drawerLogoText: {
+    flex: 2,
+    flexDirection: "column",
+    alignSelf: 'center',
+  },
+
+  ljosmaedrafelagInfo1: {
     fontFamily: 'merriweather-black',
-    fontSize: 20,
-    padding: 2,
+    fontSize: 18,
+    paddingTop: 5,
+    paddingRight: 10,
+    color: 'rgb(34,82,171)',
+    alignSelf: 'center',
+  },
+  ljosmaedrafelagInfo2: {
+    fontFamily: 'merriweather-black',
+    fontSize: 18,
+    paddingBottom: 5,
     paddingRight: 10,
     color: 'rgb(34,82,171)',
     alignSelf: 'center',
   },
 
   drawerChapters:{
-    flex: 7,
-    fontSize: 40,
-    paddingHorizontal: 5,
-    color: 'rgb(34,82,171)',
-    backgroundColor: 'rgb(239,239,240)'
-  },
+    paddingHorizontal: 6,
+    backgroundColor: 'rgb(239,239,240)',
+    height: '100%',
+    borderBottomWidth: 1.5,
+    borderColor: '#d8d8d8',
+    },
 
   drawerButtons: {
-    flex: 4,
     justifyContent: 'flex-end',
     backgroundColor: 'rgb(239,239,240)'
   },

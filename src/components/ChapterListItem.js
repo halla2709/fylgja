@@ -27,8 +27,8 @@ class ChapterListItem extends React.Component {
         else {
             this.subChapterView = null;
         }
-
-        var fontSize = this.props.level == 0 ? 20 : 15;
+        
+        var fontSize = this.props.level == 0 ? 20 : 17;
         var indent = "";
         for (var i = 0; i < this.props.level; i++) {
             indent += "   ";
