@@ -34,11 +34,9 @@ function findMatchingSubChapters(chapter, key) {
     return subChaptersToReturn;
 }
 
-function chapterTitleMatchesSearch(chapter, key) {
-    
-console.log(chapter.name);
-    return chapter.name.toString().toLowerCase().contains(key.toLowerCase());
-    
+function chapterTitleMatchesSearch(chapter, key) {    
+    console.log(chapter.name);
+    return chapter.name.toString().toLowerCase().includes(key.toLowerCase());   
 }
 
 export {
