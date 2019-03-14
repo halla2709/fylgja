@@ -6,6 +6,7 @@ import {
     Alert,
     TouchableOpacity,
     Image,
+    ImageBackground,
     ScrollView
 } from 'react-native';
 import {Font} from 'expo';
@@ -56,9 +57,12 @@ export class InformationScreen extends React.Component {
             this.props.screenProps.fontLoaded ? (
 
          <View contentContainerStyle={Styles.informationwholepage}>
+         <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{width: '100%', height: '100%'}}>
+      
             <ScrollView style = {{ marginBottom: 1 }} >
                 {infoItems}
             </ScrollView>
+            </ImageBackground>
             </View>
             
             ) : null);

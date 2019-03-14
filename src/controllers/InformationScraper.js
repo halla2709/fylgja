@@ -13,12 +13,13 @@ export default class InformationScraper {
         //this.DataKeeper = new Information();
         Information.setData([]);
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið");
-        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa");
-        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn");
-        
-
-        
-        console.log("constructing information scraper");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn og nefndir");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/trunadarmenn', "Trúnaðarmenn");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/sagaogmerki', "Saga félagsins og merki"); 
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/minningarkort', "Minningarkort");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir");
     }
 
     getDataFromUrl(url, name) {
@@ -42,12 +43,12 @@ export default class InformationScraper {
     }
 
     findRawTextInElement(element, array, $) {
-        var content = $(element).find('p, strong, a');
+        var content = $(element).find('p, strong, a, td, br, href, tr');
         var self = this;
         content.each(function(i,p) {
             $(p).contents().map(function(ii, el) {
                 if(el.type === "text") {
-                    array.push( {"text": $(el).text(), "type": p.tagName });
+                    array.push( {"text": $(el).text(),"type": p.tagName });
                 }
                 else if(el.tagName === "span") {
                     self.findRawTextInElement(el, array, $);

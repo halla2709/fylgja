@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View,  TouchableHighlight, Image, ScrollView, ImageBackground } from 'react-native';
+import { Text, View,  TouchableHighlight, Image, ScrollView, } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import Chapters from "../assets/testContent/chapters.js";
@@ -52,7 +52,7 @@ export class ReaderScreen extends React.Component {
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
          
-          <View style={{ paddingBottom: 5 }}>
+          <View style={{borderColor:"rgb(34,82,171)", borderRadius: 10, borderBottomWidth:1, width: '99%', alignSelf: 'center',}}>
             <View style={Styles.decorationcontainer}>
               <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/11.png')} />
             </View>
@@ -61,7 +61,7 @@ export class ReaderScreen extends React.Component {
                 <Ionicons name="ios-arrow-back" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
               <View style={Styles.chaptertext}>
-                <Text style={Styles.h1}> {this.chapter.name} </Text>
+                <Text style={Styles.h1reader}> {this.chapter.name} </Text>
               </View>
               <TouchableHighlight style={Styles.rightarrow} onPress={()=>{console.log("Right arrow pressed"); this.props.navigation.replace('Reader', {drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, 1)});}}
                 underlayColor="rgb(245,245,245)">
@@ -72,7 +72,7 @@ export class ReaderScreen extends React.Component {
               <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/10.png')} />
             </View>
           </View>
-          <ScrollView style={{ padding: 10, width: '100%', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
+          <ScrollView style={{ padding: 10, paddingBottom: 30, marginBottom: 30, width: '99%', alignSelf: 'center', height: '100%', overflow: 'scroll', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
             if(scrollView != null) {
               scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true});
             }
@@ -81,8 +81,9 @@ export class ReaderScreen extends React.Component {
               <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
             </View>
             {this.textBlocks}
-      
+            <Text>hæ</Text>
           </ScrollView>
+          
         </View>
       ) : null
     );

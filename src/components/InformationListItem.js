@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, TouchableOpacity } from 'react-native'
+import { Text, View, TouchableOpacity, B } from 'react-native'
 import {Ionicons} from '@expo/vector-icons';
 import Styles from './../styles/Styles';
 
@@ -22,30 +22,85 @@ export default class InformationListItem extends React.Component {
     
 
     render() {
+          
+          
 
 
         const allData = this.props.data;
         const infoItems = [];
         allData.forEach(dataItem => {
-        infoItems.push(<Text>{dataItem.text}</Text>);
+
+            if(dataItem.type === 'p') {
+                infoItems.push(  
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>)
+            }
+            
+            else if (dataItem.type === 'strong') {
+                infoItems.push(  
+                    <Text style={Styles.pBold} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>)
+            }
+
+
+            else if (dataItem.type === 'a') {
+                infoItems.push(  
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}</Text>)
+            }
+
+            
+            else if (dataItem.type === 'tr') {
+                infoItems.push(  
+                    <View style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>
+                    </View>)
+            }
+            
+            else if (dataItem.type === 'td') {
+                infoItems.push(  
+                    <View style={{ flex: 1, alignSelf: 'stretch' }} >
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>
+                    </View>)
+            }
+       
+
+
     });  
 
         return (
             <View>
 
                 <TouchableOpacity onPress={this.ShowHideTextComponentView}>
-                    <View style={Styles.infosubchaptercontainer}>
-                        <Text numberOfLines={1} style={Styles.h22}>{this.props.title}</Text>
+                        
                         {
                             this.state.icon ?
-                                <Ionicons style={Styles.plusbutton} name="md-add" size={30} /> : <Ionicons style={Styles.plusbutton} name="md-remove" size={30} />}
-                    </View>
+                                <View style={Styles.infosubchaptercontainerplus}> 
+                                <View style={Styles.info1}>
+                                <Text numberOfLines={1} style={Styles.h2informationplus}>{this.props.title}</Text>
+                                </View>
+                                <View style={Styles.info2}>
+                                <Ionicons style={Styles.plusbutton} name="md-add" size={30} /> 
+                                </View>
+                                </View>
+                                : 
+                                <View style={Styles.infosubchaptercontainerminus}> 
+                                <View style={Styles.info1}>
+                                <Text numberOfLines={1} style={Styles.h2informationminus}>{this.props.title}</Text>
+                                </View>
+                                <View style={Styles.info2}>
+                                <Ionicons style={Styles.minusbutton} name="md-remove" size={30} />
+                                </View>
+                                </View>
+                        }
+                       
+                    
                 </TouchableOpacity>
 
                 <View style={Styles.informationcontainer}>
+
+                
                 
                     {
-                        this.state.status ? <Text key="{infoItems}">{infoItems}</Text> : null
+                        this.state.status ? 
+                        <View style={{ flex: 1 }}>{infoItems}</View>: null
                     }
                      
                 </View>

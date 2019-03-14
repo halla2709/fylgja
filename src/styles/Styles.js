@@ -75,7 +75,7 @@ export default StyleSheet.create({
     fontSize: 25,
     alignSelf: 'center',
     alignContent: 'center',
-    padding: 25,
+    padding: 10,
     color: 'rgb(34,82,171)',
   },
 
@@ -108,6 +108,19 @@ export default StyleSheet.create({
     alignItems: 'flex-start',
   },
 
+  h2informationplus: {
+    fontFamily: 'merriweather-regular',
+    fontSize: 22,
+    paddingBottom: 5,
+  },
+
+  h2informationminus: {
+    fontFamily: 'merriweather-regular',
+    fontSize: 22,
+    paddingBottom: 5,
+    color: 'rgb(34,82,171)',
+  },
+
   TextShadowStyle:
   {
      textAlign: 'center',
@@ -119,6 +132,11 @@ export default StyleSheet.create({
 
   p: {
     fontFamily: 'opensans-regular',
+    fontSize: 18,
+  },
+
+  pBold: {
+    fontFamily: 'opensans-bold',
     fontSize: 18,
   },
 
@@ -323,18 +341,18 @@ export default StyleSheet.create({
       backgroundColor: 'rgb(239,239,239)',
       justifyContent: 'space-between',
     },
-
   
     chaptercontainer: {
       width: '100%',
       justifyContent: 'space-around',
       flexDirection: 'row',
       alignItems: 'center',
-      backgroundColor: 'rgb(239,239,239)',
+      backgroundColor: 'rgb(248,248,249)',
     },
   
     decorationcontainer: {
       alignItems: 'center',
+      backgroundColor: 'rgb(248,248,249)',
     },
   
     readerdecoration: {
@@ -344,9 +362,9 @@ export default StyleSheet.create({
     subchaptercontainer: {
       width: '100%',
       justifyContent: 'space-around',
-      paddingTop: 20,
-      paddingBottom: 0,
-      paddingHorizontal: 10,
+      paddingTop: 10,
+      paddingBottom: 1,
+      paddingHorizontal: 5,
     },
   
     pcontainer: {
@@ -372,15 +390,20 @@ export default StyleSheet.create({
       alignItems: 'center'
     },
   
-    container: { flex: 1, padding: 16, paddingTop: 30, backgroundColor: '#fff' },
+    container: { 
+      flex: 1, 
+      padding: 16, 
+      paddingTop: 30, 
+      backgroundColor: '#fff' },
+
     head: { height: 40, backgroundColor: '#f1f8ff' },
     text: { margin: 6 },  
 
 
   //InformationScreen
   informationwholepage: {
-    backgroundColor: 'rgb(239,239,239)',
-    justifyContent: 'space-between',
+    backgroundColor: 'rgb(249,249,249)',
+    flex: 1,
      },
 
   informationimage: {
@@ -388,24 +411,54 @@ export default StyleSheet.create({
   },
 
   informationcontainer: {
-  width: '100%',
-  justifyContent: 'space-around',
-  overflow: 'scroll',
-  paddingHorizontal: 10,
+   
+    backgroundColor: 'rgb(248,248,249)',
+    borderRadius: 10,
+    opacity: 0.6,
+    width: '100%',
+    overflow: 'scroll',
+    paddingHorizontal: 10,
+    flex: 2,
   },
 
   plusbutton: {
     color: 'rgb(34,82,171)',
+    flex: 1,
+    
+  },
+
+  minusbutton: {
+    color: 'rgb(34,82,171)',
+    flex: 1,
+  },
+
+  info1: {
+    flexBasis: '90%',
+  },
+
+  info2: {
+    flexBasis: '10%',
   },
   
-  infosubchaptercontainer: {
+  infosubchaptercontainerplus: {
     width: '100%',
-    justifyContent: 'space-around',
+    paddingTop: 20,
+    paddingBottom: 0,
+    paddingHorizontal: 10, 
+    flexDirection: 'row',
+    borderBottomWidth: 0.5,
+    borderColor: 'rgb(34,82,171)',
+    justifyContent: 'space-between',
+  },
+
+  infosubchaptercontainerminus: {
+    width: '100%',
     paddingTop: 20,
     paddingBottom: 0,
     paddingHorizontal: 10,
     flex: 1, 
     flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 
   //drawer
