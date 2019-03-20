@@ -23,44 +23,51 @@ export default class InformationListItem extends React.Component {
 
     render() {
           
-          
-
-
         const allData = this.props.data;
         const infoItems = [];
         allData.forEach(dataItem => {
 
-            if(dataItem.type === 'p') {
+               if(dataItem.type === 'p') {
                 infoItems.push(  
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>)
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}p</Text>)
             }
             
             else if (dataItem.type === 'strong') {
                 infoItems.push(  
-                    <Text style={Styles.pBold} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>)
+                    <Text style={Styles.pBold} key="{dataItem.text}"> {dataItem.text}strong</Text>)
             }
 
 
             else if (dataItem.type === 'a') {
                 infoItems.push(  
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}</Text>)
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}a</Text>)
             }
 
-            
+
+           
             else if (dataItem.type === 'tr') {
                 infoItems.push(  
                     <View style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}tr</Text>
+                   
+                    while (dataItem.type === 'td') {
+
+}
+
                     </View>)
             }
             
             else if (dataItem.type === 'td') {
+                console.log(dataItem.length);
+                
                 infoItems.push(  
                     <View style={{ flex: 1, alignSelf: 'stretch' }} >
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}{'\n'}</Text>
+                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}td</Text>
                     </View>)
             }
-       
+
+            
+
 
 
     });  
@@ -100,7 +107,7 @@ export default class InformationListItem extends React.Component {
                 
                     {
                         this.state.status ? 
-                        <View style={{ flex: 1 }}>{infoItems}</View>: null
+                        <View style={{ flex: 1 }}>{infoItems}</View> : null
                     }
                      
                 </View>

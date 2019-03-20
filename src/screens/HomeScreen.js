@@ -1,6 +1,5 @@
 import React from 'react';
-import Favicon from 'react-favicon';
-import { Text, View, Button, Alert, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
+import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
 import Styles from './../styles/Styles';
 import { Icon } from 'react-native-elements'; 
 <Image source={require("../assets/images/2.png")}/>

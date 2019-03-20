@@ -20,6 +20,8 @@ export default class InformationScraper {
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð");
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/minningarkort', "Minningarkort");
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir");
+        
+        
     }
 
     getDataFromUrl(url, name) {
