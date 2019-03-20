@@ -72,15 +72,14 @@ export default StyleSheet.create({
 
   h1reader: {
     fontFamily: 'merriweather-regular',
-    fontSize: 25,
+    fontSize: 22,
     alignSelf: 'center',
     alignContent: 'center',
+    textAlign: 'center',
     padding: 10,
+    overflow: 'hidden',
     color: 'rgb(34,82,171)',
   },
-
-
-  
 
   searchh1: {
     fontFamily: 'merriweather-regular',
@@ -369,8 +368,6 @@ export default StyleSheet.create({
   
     pcontainer: {
       width: '100%',
-      justifyContent: 'space-around',
-      overflow: 'scroll',
       paddingHorizontal: 10,
     },
   
