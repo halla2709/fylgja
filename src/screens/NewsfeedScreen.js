@@ -14,7 +14,6 @@ import {
     
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
-
 import News from "../assets/testContent/news.js";
 
 export class NewsFeedScreen extends React.Component {
@@ -23,41 +22,35 @@ export class NewsFeedScreen extends React.Component {
         title: 'Fréttaveita'
     };
 
+ 
 
 
     render() {
-
-
+        const allData = News.getData();
+        const infoItems = [];
+        allData.forEach(news => {
+            infoItems.push(
+            <Card key={news.key}>
+                <View style={{paddingRight: 5,alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end'}}>
+                    <Text style={Styles.dateText}>{news.date}</Text>
+                </View>
+                <View style={{flex:1, flexDirection: "row", paddingRight:5, paddingLeft: 10}}>
+                   <Icon style={{flex:1}} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} /> 
+                   <CardTitle title={news.title} style={{flex:1, alignSelf: 'center'}}/>
+               </View>
+                   
+               <CardContent text={news.text}/>
+                   <CardAction onPress={() => {news.href}} separator={true} inColumn={false}>
+                       <CardButton title="Opna Frétt" color="rgb(34,82,171)" />
+                   </CardAction>
+            </Card> )
+               });
         return (this.props.screenProps.fontLoaded
             ? (
                 <View contentContainerStyle={Styles.informationwholepage}>
 
                     <ScrollView>
-
-                        <Card>
-                         <View style={{flex:1, flexDirection: "row", paddingRight:5, paddingLeft: 10}}>
-                            <Icon style={{flex:1}} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} /> 
-                            <CardTitle title= "Titill á frétt" style={{flex:1, alignSelf: 'center'}}/>
-                        </View>
-                            
-                        <CardContent text="Texti á frétt sem má vera rosa langur jájá langur hvað gerist þá hvað gerist ef of langur fer hann hvert? útum allt? hver á að laga það er það ég?"/>
-                            <CardAction separator={true} inColumn={false}>
-                                <CardButton onPress={() => {}} title="Opna Frétt" href={News.href} color="rgb(251,199,6)" style={{}}/>
-                            </CardAction>
-                        </Card>
-
-                        <Card>
-                         <View style={{flex:1, flexDirection: "row", paddingRight:5, paddingLeft: 10}}>
-                            <Icon style={{flex:1}} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} /> 
-                            <CardTitle title= "Venjulega eðlilega langur titill á frétt" style={{flex:1, alignSelf: 'center'}}/>
-                        </View>
-                           
-                        <CardContent text="Texti á frétt sem má vera rosa langur jájá langur hvað gerist þá hvað gerist ef of langur fer hann hvert? útum allt? hver á að laga það er það ég?"/>
-                            <CardAction separator={true} inColumn={false}>
-                                <CardButton onPress={() => {}} title="Opna Frétt" href={News.href} color="rgb(251,199,6)"/>
-                            </CardAction>
-                        </Card>
-                        
+                        {infoItems}                        
                     </ScrollView>
 
                 </View>

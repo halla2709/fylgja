@@ -1,6 +1,7 @@
 
 let data = [
     {
+        "key": "1",
         "title": "Þátttakendur í rannsókn",
         "href": "/um-felagid/frettir/nanar/7314/thatttakendur-i-rannsokn",
         "date": "12.02.2019",
@@ -8,6 +9,7 @@ let data = [
     },
     {
 
+        "key": "2",
         "title": "Námskeið og Vinnustofur",
         "href": "/um-felagid/frettir/nanar/7313/namskeid-og-vinnustofur",
         "date": "16.01.2019",
