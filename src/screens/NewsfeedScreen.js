@@ -15,11 +15,14 @@ import {
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
 import News from "../assets/testContent/news.js";
+import InformationListItem from '../components/InformationListItem';
+import Information from "../assets/testContent/info.js";
+
 
 export class NewsFeedScreen extends React.Component {
 
     static navigationOptions = {
-        title: 'Fréttaveita'
+        title: 'Fréttir og Viðburðir'
     };
 
  

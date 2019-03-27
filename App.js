@@ -38,7 +38,7 @@ export default class App extends React.Component {
   _handleNotification = (notification) => {
     console.log(notification);
     this.popup.show({
-      onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsFeedScreen', {});},
+      onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsOverviewScreen', {});},
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
       title: "Ný frétt",

@@ -290,6 +290,15 @@ export default StyleSheet.create({
     alignSelf: 'flex-end',
   },
 
+  dateText2: {
+    fontFamily: 'opensans-bold',
+    fontSize: 14,
+    color: 'rgb(34,82,171)',
+    textAlign: 'right',
+    alignContent: 'flex-end',
+    alignSelf: 'flex-end',
+  },
+
 
   //SearchScreen
   searchwholepage: {
