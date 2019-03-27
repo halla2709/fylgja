@@ -58,8 +58,6 @@ export default class InformationListItem extends React.Component {
             }
             
             else if (dataItem.type === 'td') {
-                console.log(dataItem.length);
-                
                 infoItems.push(  
                     <View style={{ flex: 1, alignSelf: 'stretch' }} >
                     <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}td</Text>

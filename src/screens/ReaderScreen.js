@@ -39,8 +39,6 @@ export class ReaderScreen extends React.Component {
   constructor(props) {
     super(props);
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
-    console.log("Chapter " + props.navigation.state.params.currentChapter);
-    //console.log(this.chapter);
     this.numberOfChapters = Chapters.length;
     this.textBlockYs = [];
     this.textBlocks = this.getChapterViews(this.chapter); 

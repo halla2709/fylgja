@@ -20,8 +20,6 @@ export class InformationScreen extends React.Component {
 
     constructor(){
         super();
-        //this.DataKeeper = new Information();
-        //console.log(this.DataKeeper);
         this.state ={
         status:false,
         icon:true
