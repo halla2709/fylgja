@@ -17,11 +17,14 @@ import {
 import Styles from './../styles/Styles';
 import * as rssParser from 'react-native-rss-parser';
 import News from "../assets/testContent/news.js";
+import InformationListItem from '../components/InformationListItem';
+import Information from "../assets/testContent/info.js";
+
 
 export class NewsFeedScreen extends React.Component {
 
     static navigationOptions = {
-        title: 'Fréttaveita'
+        title: 'Fréttir og Viðburðir'
     };
 
     constructor(props) {
@@ -74,20 +77,25 @@ export class NewsFeedScreen extends React.Component {
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.openNewsItem(index)}}>
                     <View>
-                    <Card>
-                        <View style={{ flex: 1, flexDirection: "row", paddingRight: 5, paddingLeft: 10 }}>
-                            <Icon style={{ flex: 1 }} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} />
-                            <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
-                        </View>
-                        <CardContent text={this.getRawText(element)} />
-                        <CardAction separator={true} inColumn={false}>
-                            <CardButton onPress={() => { console.log("OPEN news", element.link); }} title="Opna Frétt" color="rgb(251,199,6)" style={{}} />
-                        </CardAction>
-                    </Card>
+                        <Card key={news.key}>
+                            <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
+                                <Text style={Styles.dateText}>{element.pubDate}</Text>
+                            </View>
+                            <View style={{ flex: 1, flexDirection: "row", paddingRight: 5, paddingLeft: 10 }}>
+                                <Icon style={{ flex: 1 }} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} />
+                                <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
+                            </View>
+
+                            <CardContent text={element.description} />
+                            <CardAction separator={true} inColumn={false}>
+                                <CardButton title="Opna Frétt" color="rgb(34,82,171)" />
+                            </CardAction>
+                        </Card>
                     </View>
                 </TouchableWithoutFeedback>
             );
         });
+        
         var view = (this.state.newsLoaded ?  (
             <View contentContainerStyle={Styles.informationwholepage}>
                 <ScrollView>
@@ -100,7 +108,6 @@ export class NewsFeedScreen extends React.Component {
             <ActivityIndicator size="large" color="#0000ff" />
             </View> )
     )
-
         return (this.props.screenProps.fontLoaded ? view : null);
     }
 }

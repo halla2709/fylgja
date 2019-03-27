@@ -47,7 +47,7 @@ export class HomeScreen extends React.Component {
             <Icon reverse name='newspaper-o' type='font-awesome' color='#FF3A0D' size={30} /> 
             <View style={{flex: 1}}>
             <Text style={Styles.buttontitle1}>Fréttaveita</Text>
-            <Text style={Styles.buttontext1}>Fréttir frá ljósmaedrafelag.is</Text>
+            <Text style={Styles.buttontext1}>Fréttir og viðburðir frá ljosmaedrafelag.is</Text>
             </View>
             </View>
         </TouchableOpacity>

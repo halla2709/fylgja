@@ -49,8 +49,9 @@ export default class InformationScraper {
         var self = this;
         content.each(function(i,p) {
             $(p).contents().map(function(ii, el) {
+               
                 if(el.type === "text") {
-                    array.push( {"text": $(el).text(),"type": p.tagName });
+                    array.push( {"text": $(el).text(),"type": p.tagName, });
                 }
                 else if(el.tagName === "span") {
                     self.findRawTextInElement(el, array, $);

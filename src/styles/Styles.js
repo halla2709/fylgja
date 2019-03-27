@@ -280,6 +280,26 @@ export default StyleSheet.create({
   },
 
 
+  //NewsFeedScreen
+  dateText: {
+    fontFamily: 'opensans-bold',
+    fontSize: 14,
+    color: 'rgb(131,27,0)',
+    textAlign: 'right',
+    alignContent: 'flex-end',
+    alignSelf: 'flex-end',
+  },
+
+  dateText2: {
+    fontFamily: 'opensans-bold',
+    fontSize: 14,
+    color: 'rgb(34,82,171)',
+    textAlign: 'right',
+    alignContent: 'flex-end',
+    alignSelf: 'flex-end',
+  },
+
+
   //SearchScreen
   searchwholepage: {
     backgroundColor: 'rgb(239,239,239)',
