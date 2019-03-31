@@ -26,48 +26,47 @@ export default class InformationListItem extends React.Component {
         const allData = this.props.data;
         const infoItems = [];
         allData.forEach(dataItem => {
-
-               if(dataItem.type === 'p') {
+            var key = 0;
+            for(var i; i<=dataItem.length ;i++)
+            {
+                var key = i + key;
+                return key;
+            console.log(key);
+               
+            }
+          
+           
+            if(dataItem.type === 'p') {
                 infoItems.push(  
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}p</Text>)
+                    <Text style={Styles.p} key="{dataItem.text + key}"> {dataItem.text}</Text>)
             }
             
             else if (dataItem.type === 'strong') {
                 infoItems.push(  
-                    <Text style={Styles.pBold} key="{dataItem.text}"> {dataItem.text}strong</Text>)
+                    <Text style={Styles.pBold} key="{dataItem.text + key}"> {dataItem.text}</Text>)
             }
 
 
             else if (dataItem.type === 'a') {
                 infoItems.push(  
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}a</Text>)
+                    <Text style={Styles.p} key="{dataItem.text + key}"> {dataItem.text}</Text>)
             }
 
 
            
-            else if (dataItem.type === 'tr') {
+            else if (dataItem.type === 'tr' ) {
                 infoItems.push(  
                     <View style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}tr</Text>
+                    <Text style={Styles.p}> </Text>
                    
-                    while (dataItem.type === 'td') {
-
-}
+                   
 
                     </View>)
             }
             
-            else if (dataItem.type === 'td') {
-                console.log(dataItem.length);
-                
-                infoItems.push(  
-                    <View style={{ flex: 1, alignSelf: 'stretch' }} >
-                    <Text style={Styles.p} key="{dataItem.text}"> {dataItem.text}td</Text>
-                    </View>)
-            }
+    
 
-            
-
+    
 
 
     });  
