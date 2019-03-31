@@ -70,13 +70,15 @@ export class ReaderScreen extends React.Component {
             </View>
           </View>
 
-          <ScrollView style={{ paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
+          <ScrollView style={{ height: '100%',paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
             if(scrollView != null) {
               scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true}); }}}>
             <View style={{paddingBottom: 150}}>
               <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
                 {this.textBlocks} 
             </View> 
+
+            <Image style={Styles.readerImage} resizeMode="contain" source={require('../assets/images/litilhendi.jpg')}/>
          </ScrollView>
          
     

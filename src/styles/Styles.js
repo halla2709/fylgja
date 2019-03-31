@@ -356,6 +356,14 @@ export default StyleSheet.create({
   },
 
   //ReaderScreen
+
+    readerImage: {
+      flex:1, 
+      height: undefined, 
+      width: undefined,
+      alignSelf:'center'
+    },
+
     readerwholepage: {
       backgroundColor: 'rgb(239,239,239)',
       justifyContent: 'space-between',
@@ -429,7 +437,7 @@ export default StyleSheet.create({
 
   informationcontainer: {
    
-    backgroundColor: 'rgb(248,248,249)',
+    backgroundColor: 'rgb(218,232,245)',
     borderRadius: 10,
     opacity: 0.6,
     width: '100%',

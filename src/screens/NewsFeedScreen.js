@@ -16,9 +16,6 @@ import {
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
 import * as rssParser from 'react-native-rss-parser';
-import News from "../assets/testContent/news.js";
-import InformationListItem from '../components/InformationListItem';
-import Information from "../assets/testContent/info.js";
 
 
 export class NewsFeedScreen extends React.Component {

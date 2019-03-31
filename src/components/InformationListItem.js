@@ -1,7 +1,9 @@
 import React from 'react'
-import { Text, View, TouchableOpacity, B } from 'react-native'
+import { Text, View, TouchableOpacity, 
+ActivityIndicator, } from 'react-native'
 import {Ionicons} from '@expo/vector-icons';
 import Styles from './../styles/Styles';
+
 
 export default class InformationListItem extends React.Component {
     componentWillMount() { 
@@ -44,26 +46,38 @@ export default class InformationListItem extends React.Component {
                     <Text style={Styles.p} key="{dataItem.text + key}"> {dataItem.text}</Text>)
             }
 
+            else if (dataItem.type === 'a href') {
+                infoItems.push(  
+                    <Text style={Styles.p} key="{dataItem.text + key}"> {dataItem.text}</Text>)
+            }
+
+            else if (dataItem.type === 'href') {
+                infoItems.push(  
+                    <Text style={Styles.p} key="{dataItem.text + key}"> {dataItem.text}</Text>)
+            }
+
+
 
            
-            else if (dataItem.type === 'tr' ) {
-                infoItems.push(  
-                    <View style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
-                    <Text style={Styles.p}> </Text>
-                   
-                   
+            else if (dataItem.type === 'td' ) {
 
-                    </View>)
-            }
-            
-    
+            infoItems.push(  
+                <View style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
+                 <Text style={Styles.p}> {dataItem.text}</Text>
+                 <Text style={Styles.p}> {dataItem.text}</Text>
+                 <Text style={Styles.p}> {dataItem.text}</Text>
+                 <Text style={Styles.p}> {dataItem.text}</Text>
 
-    
-
+                </View>)
+               
+                    }
 
     });  
-
-        return (
+    
+    
+    
+    
+    return (
             <View>
 
                 <TouchableOpacity onPress={this.ShowHideTextComponentView}>
