@@ -11,7 +11,7 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
-const MainStack = createStackNavigator({
+const ReaderStack = createStackNavigator({
     Home: {
         screen: HomeScreen
     },
@@ -28,17 +28,30 @@ const MainStack = createStackNavigator({
         headerMode: 'none'
     }
 )
-
+const NewsFeedStack = createStackNavigator({
+    Overview: {
+        screen: NewsOverviewScreen
+    },
+    News: {
+        screen: NewsFeedScreen
+    }
+},
+    {
+        initialRouteName: 'Overview',
+        title: 'Fréttir',
+        headerMode: 'none'
+    }
+)
 
 const DrawerStack = createDrawerNavigator({
     Main: { 
-        screen: MainStack 
+        screen: ReaderStack 
     },
     Information: {
         screen: InformationScreen
     },
     NewsFeed: {
-        screen: NewsOverviewScreen
+        screen: NewsFeedStack
     }
 },
 {
