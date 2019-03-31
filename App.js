@@ -1,6 +1,6 @@
 import React from 'react';
 import { Font, Notifications } from 'expo';
-import { View, Text } from 'react-native';
+import { View, Text, Platform } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
 import InformationScraper from './src/controllers/InformationScraper';
 import registerForPushNotificationsAsync from './src/controllers/NotificationController';
@@ -25,6 +25,15 @@ export default class App extends React.Component {
     // notification (rather than just tapping the app icon to open it),
     // this function will fire on the next tick after the app starts
     // with the notification data.
+    console.log("subscribing to notificaionts");
+    if (Platform.OS === 'android') {
+      Expo.Notifications.createChannelAndroidAsync('reminders', {
+        name: 'Reminders',
+        priority: 'max',
+        vibrate: [0, 250, 250, 250],
+      })
+      .then(() => { console.log("Created channel"); });
+    }
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
     this.scraper = new InformationScraper();
     try{

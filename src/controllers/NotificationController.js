@@ -10,26 +10,6 @@ const settings = {timestampsInSnapshots: true};
 firestore.settings(settings);
 var token;
 
-/*firebase.auth().onAuthStateChanged(function(user) {
-  if (user) {
-    // User is signed in.
-    console.log("User is signed in! Id ", user.uid); 
-    const userId = user.uid;
-    if(token) {
-      console.log("Saving token");
-      firebase.database().ref('tokens/' + userId).set({
-        token: token
-      });  
-    } 
-    // ...
-  } else {
-    console.log("User is signed out!");    
-    // User is signed out.
-    // ...
-  }
-  // ...
-});*/
-
 export default async function registerForPushNotificationsAsync() {
   let finalStatus;
   try {
@@ -57,15 +37,6 @@ export default async function registerForPushNotificationsAsync() {
 
   // Get the token that uniquely identifies this device
   token = await Notifications.getExpoPushTokenAsync();
-  /*console.log(firebase.auth().currentUser);
-  firebase.auth().setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-  .then(function() {
-    return firebase.auth().signInAnonymously();
-  })
-  .catch(function(error) {
-    // Handle Errors here.
-    console.error(error);
-  });*/
 
   firestore.collection("tokens").doc(token).set({})
   .then(function(){

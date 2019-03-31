@@ -26,14 +26,6 @@ export default class InformationListItem extends React.Component {
         const allData = this.props.data;
         const infoItems = [];
         allData.forEach(dataItem => {
-            var key = 0;
-            for(var i; i<=dataItem.length ;i++)
-            {
-                var key = i + key;
-                return key;
-            console.log(key);
-               
-            }
           
            
             if(dataItem.type === 'p') {

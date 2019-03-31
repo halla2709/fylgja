@@ -35,7 +35,6 @@ function findMatchingSubChapters(chapter, key) {
 }
 
 function chapterTitleMatchesSearch(chapter, key) {    
-    console.log(chapter.name);
     return chapter.name.toString().toLowerCase().includes(key.toLowerCase());   
 }
 

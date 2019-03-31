@@ -9,7 +9,6 @@ import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 export default class DrawerComponent extends React.Component {
 
   onChapterPressed(chapterKey) {
-    console.log(chapterKey + " pressed");
     this.props.navigation.closeDrawer();
     this.props.navigation.getChildNavigation('Main').replace('Reader', {drawerContent: "chapters", currentChapter: chapterKey});
   }
