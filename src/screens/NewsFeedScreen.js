@@ -15,7 +15,9 @@ import {
     CardButton
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
-import * as rssParser from 'react-native-rss-parser';
+import InformationListItem from '../components/InformationListItem';
+import Information from "../assets/testContent/info.js";
+import { GetNews } from './../controllers/NewsFeedHelper';
 
 
 export class NewsFeedScreen extends React.Component {
@@ -26,31 +28,14 @@ export class NewsFeedScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        console.log("constructor")
-        this.numberLoaded = 0;
+        this.contentID = props.navigation.state.params.contentID;
         this.data = [];
         this.state = {newsLoaded: false};
     }
 
-    getNews(link) {
-        fetch(link)
-            .then((response) => response.text())
-            .then((responseData) => rssParser.parse(responseData))
-            .then((rss) => {
-                console.log(rss.title);
-                console.log(rss.items.length);
-                if(rss.items.length > 0) {
-                    this.data = rss.items;
-                }
-                this.setState({newsLoaded: true});
-            });
-    }
-
     async componentDidMount() {
-        this.getNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=10');
-        /*this.getNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=132&cnt=10');
-        this.getNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=149&cnt=10');
-        this.getNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=148&cnt=10');*/        
+        GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
+            .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
     }
 
     getRawText(element) {
@@ -74,7 +59,7 @@ export class NewsFeedScreen extends React.Component {
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.openNewsItem(index)}}>
                     <View>
-                        <Card key={news.key}>
+                        <Card>
                             <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
                                 <Text style={Styles.dateText}>{element.pubDate}</Text>
                             </View>
@@ -83,7 +68,7 @@ export class NewsFeedScreen extends React.Component {
                                 <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
                             </View>
 
-                            <CardContent text={element.description} />
+                            <CardContent text={this.getRawText(element)} />
                             <CardAction separator={true} inColumn={false}>
                                 <CardButton title="Opna Frétt" color="rgb(34,82,171)" />
                             </CardAction>
