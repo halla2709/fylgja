@@ -70,7 +70,7 @@ export class NewsFeedScreen extends React.Component {
 
                             <CardContent text={this.getRawText(element)} />
                             <CardAction separator={true} inColumn={false}>
-                                <CardButton title="Opna Frétt" color="rgb(34,82,171)" />
+                                <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />
                             </CardAction>
                         </Card>
                     </View>
