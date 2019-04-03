@@ -12,9 +12,6 @@ import { ReaderScreen } from '../screens/ReaderScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
 const ReaderStack = createStackNavigator({
-    Home: {
-        screen: HomeScreen
-    },
     Search: {
         screen: SearchScreen
     },
@@ -23,8 +20,8 @@ const ReaderStack = createStackNavigator({
     }
 },
     {
-        initialRouteName: 'Home',
-        title: 'Home',
+        initialRouteName: 'Search',
+        title: 'Handbók',
         headerMode: 'none'
     }
 )
@@ -43,50 +40,73 @@ const NewsFeedStack = createStackNavigator({
     }
 )
 
-const DrawerStack = createDrawerNavigator({
-    Main: { 
-        screen: ReaderStack 
-    },
+const InformationStack = createStackNavigator({
     Information: {
         screen: InformationScreen
+    }
+},
+    {
+        title: 'Upplýsingar',
+        headerMode: 'none'
+    }
+)
+
+const MainStack = createStackNavigator({
+    Home: {
+        screen: HomeScreen
     },
-    NewsFeed: {
+    ReaderStack: {
+        screen: ReaderStack
+    },
+    InformationStack: {
+        screen: InformationStack
+    },
+    NewsFeedStack: {
         screen: NewsFeedStack
     }
 },
-{
-    contentComponent: DrawerComponent
-});
+    {
+        headerMode: 'none'
+    }
+)
+
+const DrawerStack = createDrawerNavigator({
+    Main: {
+        screen: MainStack
+    }
+},
+    {
+        contentComponent: DrawerComponent
+    });
 
 
 const RootStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
-{
-    headerMode: 'screen',
-    swipeEnabled: false,
-    animationEnabled: false,
-    navigationOptions: ({navigation}) => ({  
-        headerLeft:     
-                <Ionicons onPress={() => 
-                navigation.toggleDrawer()}
-                name="md-menu" size={35} color="white" />,
-                headerRight: 
-                <Icon name='home' size={35} color="white" type='font-awesome-5' 
-                onPress={() => navigation.navigate('Home')}/> ,
+    {
+        headerMode: 'screen',
+        swipeEnabled: false,
+        animationEnabled: false,
+        navigationOptions: ({ navigation }) => ({
+            headerLeft:
+                <Ionicons onPress={() =>
+                    navigation.toggleDrawer()}
+                    name="md-menu" size={35} color="white" />,
+            headerRight:
+                <Icon name='home' size={35} color="white" type='font-awesome-5'
+                    onPress={() => navigation.navigate('Home')} />,
             headerStyle: {
                 backgroundColor: 'rgb(34,82,171)',
                 paddingLeft: 10,
                 paddingRight: 10,
             },
-            headerTintColor:'white',  
+            headerTintColor: 'white',
             headerTitleStyle: {
-                fontSize: 25, 
+                fontSize: 25,
                 alignSelf: 'center',
-              },
-            
+            },
+
         })
     });
-    
-    export default RootStack;
-     
+
+export default RootStack;

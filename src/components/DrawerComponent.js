@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image, ScrollView, FlatList, TouchableOpacity, ImageBackground, Icon } from 'react-native'
-import { NavigationActions } from 'react-navigation'
+import { StackActions, NavigationActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
 import Chapters from "../assets/testContent/chapters.js";
@@ -10,7 +10,10 @@ export default class DrawerComponent extends React.Component {
 
   onChapterPressed(chapterKey) {
     this.props.navigation.closeDrawer();
-    this.props.navigation.getChildNavigation('Main').replace('Reader', {drawerContent: "chapters", currentChapter: chapterKey});
+    this.props.navigation.dispatch(
+      StackActions.reset({ index:0, actions:[
+        NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
+    ]}));
   }
 
   render() {
@@ -47,15 +50,15 @@ export default class DrawerComponent extends React.Component {
       </ScrollView>
         
       <View style={styles.drawerButtons} > 
-        <TouchableOpacity  onPress={() => navigation.navigate('NewsFeed', { drawerContent: "news" })}>
+        <TouchableOpacity  onPress={() => navigation.navigate('NewsFeedStack', { drawerContent: "news" })}>
           <Text style={styles.drawerItem}> Fréttaveita </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('Information', { drawerContent: "information" })}>
+        <TouchableOpacity onPress={() => navigation.navigate('InformationStack', { drawerContent: "information" })}>
          <Text style={styles.drawerItem}> Upplýsingar </Text>
         </TouchableOpacity>
         
-        <TouchableOpacity onPress={() => navigation.navigate('Search')}>
+        <TouchableOpacity onPress={() => navigation.navigate('ReaderStack')}>
          <Text style={styles.drawerItem}> Handbók  </Text>
         </TouchableOpacity>
 

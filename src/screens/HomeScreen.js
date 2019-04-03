@@ -41,7 +41,7 @@ export class HomeScreen extends React.Component {
 
     var buttoncontainer =
     <View style={Styles.buttoncontainer}>
-        <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeed', {drawerContent: "news"})}>
+        <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeedStack', {drawerContent: "news"})}>
        
        <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
             <Icon reverse name='newspaper-o' type='font-awesome' color='#FF3A0D' size={30} /> 
@@ -52,7 +52,7 @@ export class HomeScreen extends React.Component {
             </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('Information', {drawerContent: "information"})}>
+        <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('InformationStack', {drawerContent: "information"})}>
         <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
         <Icon reverse name='md-information-circle' type='ionicon' color='#1500FF' size={30} /> 
             <View style={{flex: 1}}>
@@ -62,7 +62,7 @@ export class HomeScreen extends React.Component {
             </View>
         </TouchableOpacity>
 
-        <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('Search')}>
+        <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('ReaderStack')}>
         <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center',}}>
         <Icon reverse name='open-book' type='entypo' color='#05bc00' size={30} /> 
           
