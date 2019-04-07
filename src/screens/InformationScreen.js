@@ -51,6 +51,7 @@ export class InformationScreen extends React.Component {
         allData.forEach(dataItem => {
             infoItems.push(<InformationListItem data={dataItem.data} key={dataItem.name} title={dataItem.name} />);
         });
+        
         return (
             this.props.screenProps.fontLoaded ? (
 
@@ -64,8 +65,5 @@ export class InformationScreen extends React.Component {
             </View>
             
             ) : null);
-            
-                //<InformationListItem data={Information.getData()}/>
     }
-
 }
