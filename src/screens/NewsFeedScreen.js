@@ -34,8 +34,9 @@ export class NewsFeedScreen extends React.Component {
     }
 
     async componentDidMount() {
+        //GetNewsJson("https://www.ljosmaedrafelag.is/api/articles/GetArticleList?count=10&catId=132&skip=0");
         GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
-            .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
+           .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
     }
 
     getRawText(element) {
