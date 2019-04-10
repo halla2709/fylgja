@@ -13,14 +13,14 @@ export default class InformationScraper {
         //this.DataKeeper = new Information();
         this.index = 0;
         Information.setData([]);
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið");
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins");
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn og nefndir");
         this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/trunadarmenn', "Trúnaðarmenn");
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/sagaogmerki', "Saga félagsins og merki"); 
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð");
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/minningarkort', "Minningarkort");
-        //this.getDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/sagaogmerki', "Saga félagsins og merki"); 
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/minningarkort', "Minningarkort");
+        this.getDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir");
     }
 
     getDataFromUrl(url, name) {

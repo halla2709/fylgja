@@ -32,27 +32,27 @@ export default class InformationListItem extends React.Component {
         allData.forEach(dataItem => {
             if (dataItem.type === 'p') {
                 infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}> {dataItem.text}</Text>)
+                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type === 'strong') {
                 infoItems.push(
-                    <Text style={Styles.pBold} key={dataItem.key}> {dataItem.text}</Text>)
+                    <Text style={Styles.pBold} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type === 'a') {
                 infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}> {dataItem.text}</Text>)
+                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type === 'a href') {
                 infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}> {dataItem.text}</Text>)
+                    <Text style={Styles.pBold} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type === 'href') {
                 infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}> {dataItem.text}</Text>)
+                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type == "table") {
@@ -61,18 +61,18 @@ export default class InformationListItem extends React.Component {
                     var columns = [];
                     dataRow.columns.forEach(function(dataColumn) {
                         columns.push(
-                            <Text style={Styles.p} key={dataColumn.key}>{dataColumn.text}</Text>
+                            <Text style={{fontFamily: 'opensans-regular', fontSize: 18, flex: 1, alignSelf: 'stretch', flexDirection: 'column', width: '100%' }} key={dataColumn.key}>{dataColumn.text}</Text>
                         );
                     });
                     rows.push(
-                        <View key={dataRow.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row', width: '100%'}}>
+                        <View key={dataRow.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row', color: 'rgb(34,82,171)'}}>
                             {columns}
                         </View>
                     );
                 });
 
                 infoItems.push(
-                    <View key={dataItem.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'column' }}>
+                    <View key={dataItem.key} style={{ flex: 1 }}>
                         {rows}
                     </View>)
             }
