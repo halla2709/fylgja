@@ -31,7 +31,20 @@ export class NewsFeedScreen extends React.Component {
         this.contentID = props.navigation.state.params.contentID;
         this.data = [];
         this.state = {newsLoaded: false};
+        this.setState( {status: true });
+
     }
+
+    ShowHideTextComponentView = () =>{
+        if(this.state.status == true)
+        {
+            this.setState({status: false})    
+        }
+        else
+        {
+          this.setState({status: true})
+        }
+      }
 
     async componentDidMount() {
         GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
@@ -46,8 +59,9 @@ export class NewsFeedScreen extends React.Component {
     }
 
     openNewsItem(index) {
-        this.data[index].description += "opnopnopnopnopnopnopnopnopnopnopnopnopnopnpo nopdnfialsdfkhdasjkfbaewuifbvidlbuvialnflidsubadsfbweak";
+        this.data[index].description += "OOOOOOOOOOOOOOPNA MEIRA";
         this.forceUpdate();
+        this.setState({status: true});
         console.log("Opening " + index);
     }
 
@@ -57,7 +71,8 @@ export class NewsFeedScreen extends React.Component {
         this.data.forEach(element => {
             var index = cnt;
             cards.push(
-                <TouchableWithoutFeedback key={cnt++} onPress={() => {this.openNewsItem(index)}}>
+                <TouchableWithoutFeedback key={cnt++} onPress={this.ShowHideTextComponentView}>
+
                     <View>
                         <Card>
                             <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
@@ -67,16 +82,30 @@ export class NewsFeedScreen extends React.Component {
                                 <Icon style={{ flex: 1 }} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} />
                                 <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
                             </View>
+                            
+                            {
+                            this.state.status ?
 
-                            <CardContent text={this.getRawText(element)} />
+                            <CardContent text={this.getRawText(element)} /> 
+                            : 
+                            
+                            <View>
+                                <CardContent text={this.getRawText(element)} /> 
+                                <Text>Bætist á textann eitthvað stöff</Text>
+                            </View>
+                            }
+
                             <CardAction separator={true} inColumn={false}>
+                            <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
                                 <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />
+                            </View>
                             </CardAction>
                         </Card>
                     </View>
                 </TouchableWithoutFeedback>
             );
-        });
+
+       });
         
         var view = (this.state.newsLoaded ?  (
             <View contentContainerStyle={Styles.informationwholepage}>

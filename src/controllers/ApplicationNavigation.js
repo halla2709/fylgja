@@ -1,7 +1,5 @@
 import React from 'react';
 import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
-import { Text, View, Image } from 'react-native';
-import { Icon } from 'react-native-elements';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
@@ -89,12 +87,11 @@ const RootStack = createStackNavigator({
         animationEnabled: false,
         navigationOptions: ({ navigation }) => ({
             headerLeft:
-                <Ionicons onPress={() =>
-                    navigation.toggleDrawer()}
-                    name="md-menu" size={35} color="white" />,
+            <Ionicons onPress={() => navigation.toggleDrawer()}
+                name="md-menu" size={35} color="white" />,
             headerRight:
-                <Icon name='home' size={35} color="white" type='font-awesome-5'
-                    onPress={() => navigation.navigate('Home')} />,
+            <Ionicons onPress={() => navigation.navigate(this.state.goBack())}
+                name="md-arrow-round-forward" size={35} color="white" />, 
             headerStyle: {
                 backgroundColor: 'rgb(34,82,171)',
                 paddingLeft: 10,

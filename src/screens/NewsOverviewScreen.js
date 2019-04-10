@@ -68,10 +68,10 @@ export class NewsOverviewScreen extends React.Component {
             <View style={{ flex: 1 }}>
                 <Card>
 
-                    <CardTitle title="Fréttir" style={{ flex: 1, alignSelf: 'center' }} />
+                    <CardTitle title="Fréttir" />
                     <CardContent text={ "Nýjast: " + (this.state.newsLoaded ? this.state.news.frett.title : null)} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ backgroundColor: 'rgb(34,82,171)', width: '85%', alignContent: 'center' }} title="Skoða allar fréttir" color="#ffffff" />
+                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '85%', alignContent: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða allar fréttir" color="rgb(34,82,171)" />
                     </CardAction>
 
                 </Card>
@@ -80,10 +80,10 @@ export class NewsOverviewScreen extends React.Component {
         var vidburdirContainer =
             <View style={{ flex: 1 }}>
                 <Card>
-                    <CardTitle title="Viðburðir" style={{ flex: 1, alignSelf: 'center' }} />
+                    <CardTitle title="Viðburðir" style={{ alignSelf: 'center', alignContent: 'center', alignItems:'center'}} />
                     <CardContent text={"Nýjast: " + (this.state.newsLoaded ? this.state.news.vidburdur.title : null)} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 132}); }} style={{ backgroundColor: 'rgb(34,82,171)', width: '85%', alignContent: 'center' }} title="Skoða alla viðburði" color="#ffffff" />
+                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
+                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 132}); }} style={{ width: '85%', alignContent: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða alla viðburði" color="rgb(34,82,171)" />
                     </CardAction>
                 </Card>
             </View>
@@ -93,8 +93,8 @@ export class NewsOverviewScreen extends React.Component {
                 <Card>
                     <CardTitle title="Málstofur og Fræðslufundir" style={{ flex: 1, alignSelf: 'center' }} />
                     <CardContent text={"Nýjast: " + (this.state.newsLoaded ? this.state.news.malstofa.title : null)} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 149}); }} style={{ backgroundColor: 'rgb(34,82,171)', width: '85%', alignContent: 'center' }} title="Skoða allar málstofur og fræðslufundi" color="#ffffff" />
+                    <CardAction separator={true} inColumn={false} style={Styles.h2}>
+                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 149}); }} style={{ width: '85%', alignContent: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða allar málstofur og fræðslufundi" color="rgb(34,82,171)" />
                     </CardAction>
                 </Card>
             </View>
@@ -105,7 +105,7 @@ export class NewsOverviewScreen extends React.Component {
                     <CardTitle title="Ráðstefnur" style={{ flex: 1, alignSelf: 'center' }} />
                     <CardContent text={"Nýjast: " + (this.state.newsLoaded ? this.state.news.radstefna.title : null)} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 148}); }} style={{ backgroundColor: 'rgb(34,82,171)', width: '85%', alignContent: 'center' }} title="Skoða allar ráðstefnur" color="#ffffff" />
+                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 148}); }} style={{  width: '85%', alignContent: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða allar ráðstefnur" color="rgb(34,82,171)" />
                     </CardAction>
                 </Card>
             </View>

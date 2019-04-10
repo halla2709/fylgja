@@ -35,15 +35,17 @@ export default class DrawerComponent extends React.Component {
 
     return (
       this.props.screenProps.fontLoaded ? (
-    <View style={styles.drawer}>
-
-      <View style={styles.drawerLogo}>
-        <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')}/>
-        <View style={styles.drawerLogoText}>
-        <Text style={styles.ljosmaedrafelagInfo1}>Ljósmæðrafélag</Text>
-        <Text style={styles.ljosmaedrafelagInfo2}>Íslands</Text>
-        </View>
-      </View>
+    <View style={styles.drawer} onPress={() => navigation.navigate('Home')} >
+      <TouchableOpacity> 
+        <View style={styles.drawerLogo}>
+          <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')} />
+            <View style={styles.drawerLogoText}>
+            <Text style={styles.ljosmaedrafelagInfo1}>Ljósmæðrafélag</Text>
+            <Text style={styles.ljosmaedrafelagInfo2}>Íslands</Text>
+            </View>
+            </View>
+        </TouchableOpacity>
+      
 
       <ScrollView style={styles.drawerChapters}>   
         {drawerContent}
