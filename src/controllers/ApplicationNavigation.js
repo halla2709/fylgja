@@ -90,7 +90,7 @@ const RootStack = createStackNavigator({
             <Ionicons onPress={() => navigation.toggleDrawer()}
                 name="md-menu" size={35} color="white" />,
             headerRight:
-            <Ionicons onPress={() => navigation.goBack(null)}
+            <Ionicons onPress={() => navigation.goBack(null)} 
                 name="ios-undo" size={35} color="white" />, 
             headerStyle: {
                 backgroundColor: 'rgb(34,82,171)',

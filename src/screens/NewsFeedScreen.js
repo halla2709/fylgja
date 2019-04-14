@@ -17,7 +17,7 @@ import {
 import Styles from './../styles/Styles';
 import InformationListItem from '../components/InformationListItem';
 import Information from "../assets/testContent/info.js";
-import { GetNews } from './../controllers/NewsFeedHelper';
+import { GetNewsJson } from './../controllers/NewsFeedHelper';
 
 
 export class NewsFeedScreen extends React.Component {
@@ -30,40 +30,58 @@ export class NewsFeedScreen extends React.Component {
         super(props);
         this.contentID = props.navigation.state.params.contentID;
         this.data = [];
-        this.state = {newsLoaded: false};
-        this.setState( {status: true });
-
+        this.state = {newsLoaded: false, states: []};
     }
 
-    ShowHideTextComponentView = () =>{
-        if(this.state.status == true)
+    ShowHideTextComponentView = (element) =>{
+        if(element.status)
         {
-            this.setState({status: false})    
+            element.status = false;
         }
         else
         {
-          this.setState({status: true})
+            element.status = true;
         }
       }
 
     async componentDidMount() {
-        //GetNewsJson("https://www.ljosmaedrafelag.is/api/articles/GetArticleList?count=10&catId=132&skip=0");
-        GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
-           .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
+        GetNewsJson("https://www.ljosmaedrafelag.is/api/articles/GetArticleList?count=10&catId="+this.contentID+"&skip=0")
+            .then((items) => {
+                this.data = items;
+                this.setState({newsLoaded: true});
+            });
+        //GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
+        //   .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
     }
 
-    getRawText(element) {
-        if(element.description.substring(0,1) === "<") {
-            element.description = element.description.substring(3, element.description.length-4);
+    getRawText(text) {
+        if(text.substring(0,1) === "<") {
+            return text.substring(3, text.length-4);
         }
-        return element.description;
+        return text;
     }
 
-    openNewsItem(index) {
-        this.data[index].description += "OOOOOOOOOOOOOOPNA MEIRA";
-        this.forceUpdate();
-        this.setState({status: true});
-        console.log("Opening " + index);
+    getDate(dateString) {
+        var date = new Date(dateString);
+        var monthNames = [
+            "Janúar", "Febrúar", "Mars",
+            "Apríl", "Maí", "Júní", "Júlí",
+            "Ágúst", "September", "Október",
+            "Nóvember", "Desember"
+          ];
+        
+          var day = date.getDate();
+          var monthIndex = date.getMonth();
+          var year = date.getFullYear();
+        
+          return day + '. ' + monthNames[monthIndex] + ' ' + year;
+    }
+
+    toggleNewsItem(index) {
+        var states = this.state.states;
+        var currentValue = states[index] ? states[index] : false;
+        states[index] = !currentValue;
+        this.setState({states});
     }
 
     render() {
@@ -72,30 +90,18 @@ export class NewsFeedScreen extends React.Component {
         this.data.forEach(element => {
             var index = cnt;
             cards.push(
-                <TouchableWithoutFeedback key={cnt++} onPress={this.ShowHideTextComponentView}>
-
+                <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
                     <View>
                         <Card>
                             <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
-                                <Text style={Styles.dateText}>{element.pubDate}</Text>
+                                <Text style={Styles.dateText}>{this.getDate(element.displayDate)}</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "row", paddingRight: 5, paddingLeft: 10 }}>
                                 <Icon style={{ flex: 1 }} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} />
                                 <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
                             </View>
                             
-                            {
-                            this.state.status ?
-
-                            <CardContent text={this.getRawText(element)} /> 
-                            : 
-                            
-                            <View>
-                                <CardContent text={this.getRawText(element)} /> 
-                                <Text>Bætist á textann eitthvað stöff</Text>
-                            </View>
-                            }
-
+                            <CardContent text={this.state.states[index] ? this.getRawText(element.bodyText) : this.getRawText(element.entryText)} />
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
                                 <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />
