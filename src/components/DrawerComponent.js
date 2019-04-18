@@ -35,8 +35,8 @@ export default class DrawerComponent extends React.Component {
 
     return (
       this.props.screenProps.fontLoaded ? (
-    <View style={styles.drawer} onPress={() => navigation.navigate('Home')} >
-      <TouchableOpacity> 
+    <View style={styles.drawer}>
+      <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')}> 
         <View style={styles.drawerLogo}>
           <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')} />
             <View style={styles.drawerLogoText}>
