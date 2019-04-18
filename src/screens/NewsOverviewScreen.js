@@ -93,7 +93,7 @@ export class NewsOverviewScreen extends React.Component {
                 <Card>
                     <CardTitle title="Málstofur og Fræðslufundir" style={{ flex: 1, alignSelf: 'center' }} />
                     <CardContent text={"Nýjast: " + (this.state.newsLoaded ? this.state.news.malstofa.title : null)} />
-                    <CardAction separator={true} inColumn={false} style={Styles.h2}>
+                    <CardAction separator={true} inColumn={false}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 149}); }} style={{ width: '85%', alignContent: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða allar málstofur og fræðslufundi" color="rgb(34,82,171)" />
                     </CardAction>
                 </Card>

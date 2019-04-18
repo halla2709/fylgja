@@ -85,14 +85,10 @@ export class NewsFeedScreen extends React.Component {
                             
                             {
                             this.state.status ?
-
                             <CardContent text={this.getRawText(element)} /> 
-                            : 
                             
-                            <View>
-                                <CardContent text={this.getRawText(element)} /> 
-                                <Text>Bætist á textann eitthvað stöff</Text>
-                            </View>
+                            : 
+                            <Text>Bæ</Text>
                             }
 
                             <CardAction separator={true} inColumn={false}>
