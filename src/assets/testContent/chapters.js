@@ -70,7 +70,7 @@ export default
             "name": "Mynd",
             "subchapters": [
                 {
-                    "key": "4.1",
+                    "key": "5.1",
                     "name":  "Mynd 1",
                     "subchapters": [],
                     "content": "../assets/images/storkur.png"

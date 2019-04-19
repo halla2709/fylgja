@@ -139,6 +139,12 @@ export default StyleSheet.create({
     fontSize: 18,
   },
 
+  pBoldCenter: {
+    fontFamily: 'opensans-bold',
+    fontSize: 18,
+    textAlign: 'center'
+  },
+
   body: {
     fontFamily: 'opensans-regular',
     fontSize: 18,

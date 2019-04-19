@@ -47,7 +47,17 @@ export default class InformationListItem extends React.Component {
 
             else if (dataItem.type === 'a href') {
                 infoItems.push(
+                    <Text style={Styles.pBoldCenter} key={dataItem.key}>{dataItem.text}</Text>)
+            }
+
+            else if (dataItem.type === 'p a') {
+                infoItems.push(
                     <Text style={Styles.pBold} key={dataItem.key}>{dataItem.text}</Text>)
+            }
+
+            else if (dataItem.type === 'span') {
+                infoItems.push(
+                    <Text style={Styles.pBoldCenter} key={dataItem.key}>{dataItem.text}</Text>)
             }
 
             else if (dataItem.type === 'href') {

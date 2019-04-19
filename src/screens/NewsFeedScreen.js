@@ -30,8 +30,7 @@ export class NewsFeedScreen extends React.Component {
         super(props);
         this.contentID = props.navigation.state.params.contentID;
         this.data = [];
-        this.state = {newsLoaded: false};
-        this.setState( {status: true });
+        this.state = {newsLoaded: false, status: false};
 
     }
 
@@ -85,11 +84,9 @@ export class NewsFeedScreen extends React.Component {
                             </View>
                             
                             {
-                            this.state.status ?
-                            <CardContent text={this.getRawText(element)} /> 
-                            
-                            : 
-                            <CardContent text={this.getRawText(element) + "Hallo Hallo Hallo fréttin heldur áfram yay"} />
+                                this.state.status ?
+                                     <CardContent text={this.getRawText(element) + "Hallo Hallo Hallo fréttin heldur áfram yay"} /> 
+                                     : <CardContent text={this.getRawText(element)}/>
                             }
 
                             <CardAction separator={true} inColumn={false}>
