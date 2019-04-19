@@ -9,6 +9,12 @@ export default
                     "name": "Skemmri skírn fer fram með þessum hætti:",
                     "subchapters": [],
                     "content": "Sá sem skírir nefnir nafn barnsins, eys þrisvar með lófa sínum vatni á höfuð þess og segir um leið: \nÉg skíri þig í nafni föður, sonar og heilags anda. Amen.\nSíðan biður hann Faðir vor og blessar yfir barnið með blessunarorðunum. Þá er sunginn skírnarsálmur ef því verður við komið, annars lesinn.\nFaðir vor, þú sem ert á himnum.\nHelgist þitt nafn, til komi þitt ríki,\nverði þinn vilji svo á jörðu sem á himni.\nGef oss í dag vort daglegt brauð\nog fyrirgef oss vorar skuldir\nsvo sem vér og fyrirgefum vorum skuldunautum.\nEigi leið þú oss í freistni,\nheldur frelsa oss frá illu.\nÞví að þitt er ríkið, mátturinn og dýrðin að eilífu.\nAmen.\n\nDrottinn blessi þig og varðveiti þig.\nDrottinn láti sína ásjónu lýsa yfir þig og sé þér náðugur.\nDrottinn upplyfti sínu augliti yfir sig og gefi þér frið.\nSvar: Amen."
+                },
+                {
+                    "key": "1.2",
+                    "name": "Mynd",
+                    "subchapters": [],
+                    "content": "../assets/images/litilhendi.jpg"
                 }
             ],
             "content": "Þegar barn er hættulega sjúkt og eigi er unnt að ná til prests, má skíra það skemmri skírn. Má hver skírður maður fullvita, karl eða kona framkvæma skemmri skírn en tilkynna skal presti um hana og ber honum að staðfesta hana í kirkju. Skírnarvatn skal vera hreint og ylvolgt."
@@ -54,6 +60,20 @@ export default
                     "name":  "Allt á útopnu",
                     "subchapters": [],
                     "content": "„Þegar líða tekur á meðgönguna er heilinn í kvendýrum ekki ólíkur leikfangaverksmiðju í jólaösinni“ sagði einn sérfræðinganna, Craig H. Kinsley. „þar er allt á útopnu. Verið að taka á móti pöntunum og búa sig undir enn meira pantanaflóð“."
+                }
+            ],
+            "content": "Meðganga virðist auka gáfur kvenna og hugsanlega til frambúðar. Hefur það komið í ljós við rannsóknir á dýrum, að kynhormónarnir sem mikið er af á meðgöngu og við brjóstagjöf efli þær heilastöðvar sem fást við nám og minni. Kom þetta fram á ráðstefnu taugasérfræðinga í Los Angeles og að því er segir í blaðinu Los Angeles Times er kvenheilinn svo næmur fyrir breytingum á hormónamagni að þess sjást merki á meðan á tíðum stendur í mánuði hverjum. Það voru þó fyrst og fremst áhrif hormónanna á minnisstöðvar heilans sem vöktu athygli. Með myndum hefur verið sýnt framá að fjöldi svokallaðra taugagripla sem flytja boð á milli taugafrumna tvöfaldaðist við meðgöngu og brjóstagjöf og svo var líka með taugatraðirnar sem eru taugafrumunum til styrktar. Voru rannsóknirnar gerðar á kvenmúsum og við þessar aðstæður voru þær djarfari, forvitnari og duglegri en ella. Þær réðu betur en áður við ýmsar þrautir, urðu á færri mistök og svo virtist sem þessi aukna geta væri varanleg. „Þegar líða tekur á meðgönguna er heilinn í kvendýrum ekki ólíkur leikfangaverksmiðju í jólaösinni“ sagði einn sérfræðinganna, Craig H. Kinsley. „þar er allt á útopnu. Verið að taka á móti pöntunum og búa sig undir enn meira pantanaflóð“."
+        },
+
+        {
+            "key": "5",
+            "name": "Mynd",
+            "subchapters": [
+                {
+                    "key": "5.1",
+                    "name":  "Mynd 1",
+                    "subchapters": [],
+                    "content": "../assets/images/storkur.png"
                 }
             ],
             "content": "Meðganga virðist auka gáfur kvenna og hugsanlega til frambúðar. Hefur það komið í ljós við rannsóknir á dýrum, að kynhormónarnir sem mikið er af á meðgöngu og við brjóstagjöf efli þær heilastöðvar sem fást við nám og minni. Kom þetta fram á ráðstefnu taugasérfræðinga í Los Angeles og að því er segir í blaðinu Los Angeles Times er kvenheilinn svo næmur fyrir breytingum á hormónamagni að þess sjást merki á meðan á tíðum stendur í mánuði hverjum. Það voru þó fyrst og fremst áhrif hormónanna á minnisstöðvar heilans sem vöktu athygli. Með myndum hefur verið sýnt framá að fjöldi svokallaðra taugagripla sem flytja boð á milli taugafrumna tvöfaldaðist við meðgöngu og brjóstagjöf og svo var líka með taugatraðirnar sem eru taugafrumunum til styrktar. Voru rannsóknirnar gerðar á kvenmúsum og við þessar aðstæður voru þær djarfari, forvitnari og duglegri en ella. Þær réðu betur en áður við ýmsar þrautir, urðu á færri mistök og svo virtist sem þessi aukna geta væri varanleg. „Þegar líða tekur á meðgönguna er heilinn í kvendýrum ekki ólíkur leikfangaverksmiðju í jólaösinni“ sagði einn sérfræðinganna, Craig H. Kinsley. „þar er allt á útopnu. Verið að taka á móti pöntunum og búa sig undir enn meira pantanaflóð“."

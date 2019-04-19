@@ -48,7 +48,7 @@ export default class InformationScraper {
         var table = $(element).find('table');
         table.remove();
 
-        var content = $(element).find('p, strong, a, br, href');        
+        var content = $(element).find('p, strong, a, br, href, span');        
         content.each(function(i,p) {
             $(p).contents().map(function(ii, el) {
                 if(el.type === "text") {
