@@ -62,7 +62,7 @@ export class NewsFeedScreen extends React.Component {
     openNewsItem(index) {
         this.data[index].description += "OOOOOOOOOOOOOOPNA MEIRA";
         this.forceUpdate();
-        this.setState({status: true});
+        this.setState({status: false});
         console.log("Opening " + index);
     }
 
@@ -89,7 +89,7 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent text={this.getRawText(element)} /> 
                             
                             : 
-                            <Text>Bæ</Text>
+                            <CardContent text={this.getRawText(element) + "Hallo Hallo Hallo fréttin heldur áfram yay"} />
                             }
 
                             <CardAction separator={true} inColumn={false}>

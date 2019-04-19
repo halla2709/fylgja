@@ -65,7 +65,7 @@ export default class InformationListItem extends React.Component {
                         );
                     });
                     rows.push(
-                        <View key={dataRow.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row', color: 'rgb(34,82,171)'}}>
+                        <View key={dataRow.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row'}}>
                             {columns}
                         </View>
                     );
