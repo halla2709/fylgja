@@ -76,7 +76,7 @@ export default
                     "content": "../assets/images/storkur.png"
                 }
             ],
-            "content": "Meðganga virðist auka gáfur kvenna og hugsanlega til frambúðar. Hefur það komið í ljós við rannsóknir á dýrum, að kynhormónarnir sem mikið er af á meðgöngu og við brjóstagjöf efli þær heilastöðvar sem fást við nám og minni. Kom þetta fram á ráðstefnu taugasérfræðinga í Los Angeles og að því er segir í blaðinu Los Angeles Times er kvenheilinn svo næmur fyrir breytingum á hormónamagni að þess sjást merki á meðan á tíðum stendur í mánuði hverjum. Það voru þó fyrst og fremst áhrif hormónanna á minnisstöðvar heilans sem vöktu athygli. Með myndum hefur verið sýnt framá að fjöldi svokallaðra taugagripla sem flytja boð á milli taugafrumna tvöfaldaðist við meðgöngu og brjóstagjöf og svo var líka með taugatraðirnar sem eru taugafrumunum til styrktar. Voru rannsóknirnar gerðar á kvenmúsum og við þessar aðstæður voru þær djarfari, forvitnari og duglegri en ella. Þær réðu betur en áður við ýmsar þrautir, urðu á færri mistök og svo virtist sem þessi aukna geta væri varanleg. „Þegar líða tekur á meðgönguna er heilinn í kvendýrum ekki ólíkur leikfangaverksmiðju í jólaösinni“ sagði einn sérfræðinganna, Craig H. Kinsley. „þar er allt á útopnu. Verið að taka á móti pöntunum og búa sig undir enn meira pantanaflóð“."
+            "content": "Hér skal vera mynd"
         }
 
     ]
