@@ -20,19 +20,14 @@ async function GetNews(link, array) {
 }
 
 async function GetNewsJson(link, array) {
-    return fetch(link, {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json;charset=utf-16',
-        }
-    })
-        .then((response) => response.text())
+    return fetch(link, {headers: {
+        'Cache-Control': 'no-cache',
+        'Content-Type': 'application/json; charset=utf-8'
+    }
+      })
+        .then((response) => response.json())
         .then((responseData) => {
-            console.log(responseData);
-            parseString(responseData, function (err, result) {
-                if (err) console.log("error", err);
-            });
+            return responseData;
         })
         .catch((error) => { console.error(error); });
 }
