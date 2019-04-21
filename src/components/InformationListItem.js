@@ -24,19 +24,6 @@ export default class InformationListItem extends React.Component {
         }
     }
 
-    getStyle(type) {
-        switch (type) {
-            case 'p': return Styles.p;
-            case 'a': return Styles.p;
-            case 'stong': return StyleSheet.flatten([Styles.pBold, Style.columnItem]);
-            case 'a href': return Styles.pBoldCenter;
-            case 'p a': return Styles.pBold;
-            case 'span': return Styles.pBoldCenter;
-            case 'href': return Styles.p;
-            default: return Styles.p;
-        }
-    }
-
     getTextWithStyle(data) {
         switch (data.type) {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
@@ -50,10 +37,10 @@ export default class InformationListItem extends React.Component {
         }
     }
 
-    splitColumns(columns) {
+    formatColumns(columns) {
         var result = [];
         while (columns[0]) {
-            result.push(columns.splice(0, 3));
+            result.push(columns.splice(0,3));
         }
         return result;
     }
@@ -68,36 +55,30 @@ export default class InformationListItem extends React.Component {
                 dataItem.rows.forEach(function (dataRow) {
                     var columns = [];
                     dataRow.columns.forEach(function (dataColumn) {
-                        if (dataColumn.type === 'strong') {
-                            console.log("Is header ", dataColumn.text);
-                            columns.push(<Text style={[Styles.pBold, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
-                        }
-                        else {
-                            columns.push(<Text style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                        if(dataColumn.text.trim().length > 1) {
+                            if (dataColumn.type === 'strong') {
+                                columns.push(<Text style={[Styles.pBoldCenter, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                            }
+                            else {
+                                columns.push(<Text style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                            }
                         }
                     });
 
-                    rows.push(
-                        <View
-                            style={{
-                                borderBottomColor: 'black',
-                                borderBottomWidth: StyleSheet.hairlineWidth
-                            }}
-                        />);
-                    self.splitColumns(columns).forEach((splitColumns, index) => {
+                    rows.push(<View key = {dataRow.key} style={{borderBottomColor: 'black', borderBottomWidth: StyleSheet.hairlineWidth}}/>);
+                    self.formatColumns(columns).forEach((splitColumns, index) => {
                         rows.push(
                             <View key={dataRow.key + "." + index} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
                                 {splitColumns}
                             </View>
                         );
-                    })
-
+                    });
                 });
 
                 infoItems.push(
                     <View key={dataItem.key} style={{ flex: 1 }}>
                         {rows}
-                    </View>)
+                    </View>);
             }
             else {
                 infoItems.push(this.getTextWithStyle(dataItem));
