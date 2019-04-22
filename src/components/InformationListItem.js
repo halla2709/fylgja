@@ -1,7 +1,7 @@
 import React from 'react'
 import {
     Text, View, TouchableOpacity,
-    ActivityIndicator,
+    ActivityIndicator, StyleSheet
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import Styles from './../styles/Styles';
@@ -24,67 +24,83 @@ export default class InformationListItem extends React.Component {
         }
     }
 
+    getStyle(type) {
+        switch (type) {
+            case 'p': return Styles.p;
+            case 'a': return Styles.p;
+            case 'stong': return StyleSheet.flatten([Styles.pBold, Style.columnItem]);
+            case 'a href': return Styles.pBoldCenter;
+            case 'p a': return Styles.pBold;
+            case 'span': return Styles.pBoldCenter;
+            case 'href': return Styles.p;
+            default: return Styles.p;
+        }
+    }
+
+    getTextWithStyle(data) {
+        switch (data.type) {
+            case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            case 'a': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            case 'stong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
+            case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
+            case 'href': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            default: return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+        }
+    }
+
+    splitColumns(columns) {
+        var result = [];
+        while (columns[0]) {
+            result.push(columns.splice(0, 3));
+        }
+        return result;
+    }
 
     render() {
-
         const allData = this.props.data;
+        const self = this;
         const infoItems = [];
         allData.forEach(dataItem => {
-            if (dataItem.type === 'p') {
-                infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'strong') {
-                infoItems.push(
-                    <Text style={Styles.pBold} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'a') {
-                infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'a href') {
-                infoItems.push(
-                    <Text style={Styles.pBoldCenter} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'p a') {
-                infoItems.push(
-                    <Text style={Styles.pBold} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'span') {
-                infoItems.push(
-                    <Text style={Styles.pBoldCenter} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type === 'href') {
-                infoItems.push(
-                    <Text style={Styles.p} key={dataItem.key}>{dataItem.text}</Text>)
-            }
-
-            else if (dataItem.type == "table") {
+            if (dataItem.type == "table") {
                 var rows = [];
-                dataItem.rows.forEach(function(dataRow) {
+                dataItem.rows.forEach(function (dataRow) {
                     var columns = [];
-                    dataRow.columns.forEach(function(dataColumn) {
-                        columns.push(
-                            <Text style={{fontFamily: 'opensans-regular', fontSize: 18, flex: 1, alignSelf: 'stretch', flexDirection: 'column', width: '100%' }} key={dataColumn.key}>{dataColumn.text}</Text>
-                        );
+                    dataRow.columns.forEach(function (dataColumn) {
+                        if (dataColumn.type === 'strong') {
+                            console.log("Is header ", dataColumn.text);
+                            columns.push(<Text style={[Styles.pBold, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                        }
+                        else {
+                            columns.push(<Text style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                        }
                     });
+
                     rows.push(
-                        <View key={dataRow.key} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row'}}>
-                            {columns}
-                        </View>
-                    );
+                        <View
+                            style={{
+                                borderBottomColor: 'black',
+                                borderBottomWidth: StyleSheet.hairlineWidth
+                            }}
+                        />);
+                    self.splitColumns(columns).forEach((splitColumns, index) => {
+                        rows.push(
+                            <View key={dataRow.key + "." + index} style={{ flex: 1, alignSelf: 'stretch', flexDirection: 'row' }}>
+                                {splitColumns}
+                            </View>
+                        );
+                    })
+
                 });
 
                 infoItems.push(
                     <View key={dataItem.key} style={{ flex: 1 }}>
                         {rows}
                     </View>)
+            }
+            else {
+                infoItems.push(this.getTextWithStyle(dataItem));
             }
         });
 
