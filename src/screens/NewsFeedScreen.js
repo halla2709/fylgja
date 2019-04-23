@@ -17,8 +17,7 @@ import {
 import Styles from './../styles/Styles';
 import InformationListItem from '../components/InformationListItem';
 import Information from "../assets/testContent/info.js";
-import { GetNewsJson } from './../controllers/NewsFeedHelper';
-
+import { GetNewsJson } from '../controllers/NewsFeedHelper';
 
 export class NewsFeedScreen extends React.Component {
 
@@ -50,8 +49,6 @@ export class NewsFeedScreen extends React.Component {
                 this.data = items;
                 this.setState({newsLoaded: true});
             });
-        //GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId='+this.contentID+'&cnt=10')
-        //   .then((items) => { this.data = items; this.setState({newsLoaded: true}); });      
     }
 
     getRawText(text) {
@@ -84,10 +81,27 @@ export class NewsFeedScreen extends React.Component {
         this.setState({states});
     }
 
+    getTextWithStyle(data) {
+        switch (data.type) {
+            case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            case 'a': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            case 'stong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
+            case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
+            case 'href': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            default: return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+        }
+    }
+
     render() {
         var cards = [];
         var cnt = 0;
         this.data.forEach(element => {
+            var body = [];
+            element.parsedBody.forEach((data) => {
+                body.push(this.getTextWithStyle(data));
+            });
             var index = cnt;
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
@@ -101,7 +115,17 @@ export class NewsFeedScreen extends React.Component {
                                 <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
                             </View>
                             
-                            <CardContent text={this.state.states[index] ? this.getRawText(element.bodyText) : this.getRawText(element.entryText)} />
+                            <CardContent> 
+                                {this.state.states[index] ? (
+                                    <View>
+                                        <Text style={Styles.pBoldCenter}>{this.getRawText(element.entryText)}</Text>
+                                        {body}
+                                        </View>
+                                 ) : 
+                                (
+                                    <Text style={Styles.p}>{this.getRawText(element.entryText)}</Text>                                    
+                                )}
+                            </CardContent>
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
                                 <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />

@@ -14,7 +14,7 @@ import { Font } from 'expo';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import InformationListItem from '../components/InformationListItem';
-import Information from "../assets/testContent/info.js";
+import InformationScraper from "../controllers/InformationScraper";
 
 
 export class InformationScreen extends React.Component {
@@ -26,6 +26,13 @@ export class InformationScreen extends React.Component {
             icon: true,
             data: []
         }
+        this.scraper = new InformationScraper();
+        try{
+            this.scraper.init();
+          }
+          catch(err) {
+            console.error("Could not open information scaper", err);
+          }
     }
 
 
@@ -34,10 +41,10 @@ export class InformationScreen extends React.Component {
     };
 
     componentDidMount() {
-        const allData = Information.getData();
+        const allData = this.scraper.getData();
         this.setState({data: allData});
         var self = this;
-        Information.setDataChangedCallback((data)=>{
+        this.scraper.setDataChangedCallback((data)=>{
             self.setState({data: data});
         });
     }
@@ -48,7 +55,6 @@ export class InformationScreen extends React.Component {
             infoItems.push(<InformationListItem data={dataItem.data} key={dataItem.name} title={dataItem.name} />);
         });
 
-        console.log(this.state.data);
         return (
                 this.props.screenProps.fontLoaded ? (
                     <View contentContainerStyle={Styles.informationwholepage}>

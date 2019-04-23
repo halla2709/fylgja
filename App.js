@@ -25,7 +25,7 @@ export default class App extends React.Component {
     // notification (rather than just tapping the app icon to open it),
     // this function will fire on the next tick after the app starts
     // with the notification data.
-    console.log("subscribing to notificaionts");
+    console.log("subscribing to notifications");
     if (Platform.OS === 'android') {
       Expo.Notifications.createChannelAndroidAsync('reminders', {
         name: 'Reminders',
@@ -35,13 +35,6 @@ export default class App extends React.Component {
       .then(() => { console.log("Created channel"); });
     }
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
-    this.scraper = new InformationScraper();
-    try{
-      this.scraper.init();
-    }
-    catch(err) {
-      console.error("Could not open information scaper", err);
-    }
   }
 
   _handleNotification = (notification) => {

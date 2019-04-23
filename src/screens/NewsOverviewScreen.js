@@ -39,7 +39,6 @@ export class NewsOverviewScreen extends React.Component {
     }
 
     async componentDidMount() {
-        console.log("Getting news");
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
