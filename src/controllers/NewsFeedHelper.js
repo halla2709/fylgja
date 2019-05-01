@@ -1,5 +1,7 @@
 import React from 'react';
 import * as rssParser from 'react-native-rss-parser';
+import { ParseDataFromText } from '../controllers/Parser';
+
 /**
  * catids:
  * 136 frettir
@@ -27,11 +29,18 @@ async function GetNewsJson(link, array) {
       })
         .then((response) => response.json())
         .then((responseData) => {
+            parseBody(responseData);
             return responseData;
         })
         .catch((error) => { console.error(error); });
 }
 
+function parseBody(data) {
+    data.forEach(element => {
+        var wrapped = "<div>"+element.bodyText+"</div>"
+        element.parsedBody = ParseDataFromText(wrapped);
+    });
+}
 
 export {
     GetNews,
