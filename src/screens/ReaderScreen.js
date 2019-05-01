@@ -42,7 +42,7 @@ export class ReaderScreen extends React.Component {
         </View>
 
         <View style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Image resizeMode="center" source={subchapter.image} style={{width: 200, height:200 }} />  
+          <Image resizeMode="contain" source={subchapter.image} style={{flex:1, width: '80%'}}/>
         </View>
       </View>)
 
