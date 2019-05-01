@@ -163,6 +163,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     },
 
+  
   icon1: {
     color: '#FF3A0D',
     textShadowColor: 'rgba(0, 0, 0, 0.75)',

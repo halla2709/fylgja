@@ -1,11 +1,14 @@
 import React from 'react';
-import { Text, View,  TouchableHighlight, Image, ScrollView, } from 'react-native';
+import { Text, View,  TouchableHighlight, Image, ScrollView, Dimensions, } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import Chapters from "../assets/testContent/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
+//import ImageSize from 'react-native-image-size';
 
 export class ReaderScreen extends React.Component {
+
+  
 
   onViewLayout(key, y) {
     if(key === this.props.navigation.state.params.currentChapter) {
@@ -20,7 +23,11 @@ export class ReaderScreen extends React.Component {
 
   getChapterViews(chapter) {
     var textBlocks = [];
-    chapter.subchapters.forEach(subchapter => {
+    
+   
+       
+  chapter.subchapters.forEach(subchapter => {
+
       textBlocks.push(
       <View style={{marginBottom: 10}} key={subchapter.key} onLayout={(event) => {
         var {x, y, width, height} = event.nativeEvent.layout;
@@ -28,13 +35,21 @@ export class ReaderScreen extends React.Component {
         <View style={Styles.subchaptercontainer}>
           <Text style={Styles.h2}>{subchapter.name}</Text>
         </View>
+
         <View style={Styles.pcontainer}>
           <Text style={Styles.p} layout="row">{subchapter.content}</Text>
         </View>
+
+        <View style={{justifyContent: 'center', alignItems: 'center'}}>
+          <Image resizeMode="center" source={subchapter.image} style={{width: 200, height:200 }} />  
+        </View>
       </View>)
+
     });
     return textBlocks;
   }
+
+
 
   constructor(props) {
     super(props);
@@ -49,6 +64,8 @@ export class ReaderScreen extends React.Component {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
+
+           
          
           <View style={{borderColor:"rgb(34,82,171)", borderRadius: 10, borderBottomWidth:0.5, width: '99%', alignSelf: 'center',}}>
             <View style={Styles.decorationcontainer}>
@@ -70,15 +87,16 @@ export class ReaderScreen extends React.Component {
             </View>
           </View>
 
+            
           <ScrollView style={{ height: '100%',paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
             if(scrollView != null) {
               scrollView.scrollTo({x:0, y:this.state.toScrollTo, animated:true}); }}}>
-            <View style={{paddingBottom: 150}}>
+
+              
+           <View style={{paddingBottom: 150}}>
               <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
                 {this.textBlocks} 
             </View> 
-
-            <Image style={Styles.readerImage} resizeMode="contain" source={require('../assets/images/litilhendi.jpg')}/>
          </ScrollView>
          
     

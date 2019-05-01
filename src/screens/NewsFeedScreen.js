@@ -104,7 +104,7 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent text={this.state.states[index] ? this.getRawText(element.bodyText) : this.getRawText(element.entryText)} />
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
-                                <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />
+                                <CardButton onPress={()=>{element.link}} title="Opna Frétt" color="rgb(34,82,171)" />
                             </View>
                             </CardAction>
                         </Card>
