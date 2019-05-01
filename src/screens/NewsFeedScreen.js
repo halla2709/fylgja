@@ -6,6 +6,7 @@ import {
     ActivityIndicator,
     TouchableWithoutFeedback
 } from 'react-native';
+import { WebBrowser } from 'expo';
 import { Icon } from 'react-native-elements'; 
 import {
     Card,
@@ -128,7 +129,7 @@ export class NewsFeedScreen extends React.Component {
                             </CardContent>
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
-                                <CardButton onPress={()=>{}} title="Opna Frétt" color="rgb(34,82,171)" />
+                                <CardButton onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} title="Opna Frétt" color="rgb(34,82,171)" />
                             </View>
                             </CardAction>
                         </Card>
