@@ -1,11 +1,11 @@
 import React from 'react'
 import {
     Text, View, TouchableOpacity,
-    ActivityIndicator, StyleSheet
+    ActivityIndicator, StyleSheet, TouchableWithoutFeedback
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import Styles from './../styles/Styles';
-
+import { WebBrowser } from 'expo';
 
 export default class InformationListItem extends React.Component {
     componentWillMount() {
@@ -24,17 +24,50 @@ export default class InformationListItem extends React.Component {
         }
     }
 
+    
     getTextWithStyle(data) {
+        function goToLink(href) {
+            try {
+                console.log("Opening " + href)
+                if (href.startsWith("/")) {
+                    WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+                }
+                else {
+                    WebBrowser.openBrowserAsync(href);
+                }
+            }
+           catch(e) {
+               console.error(e);
+           }
+        }
+
+        console.log("Getting style for ", data);
         switch (data.type) {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
-            case 'a': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
-            case 'stong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;
+            case 'strong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'href': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
             default: return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
         }
+    }
+    
+    getTextViews(paragraphs, array) {
+        var views = [];
+        var index = 0;
+        var f = this.getTextWithStyle;
+        paragraphs.text.forEach(function(p) {
+            var texts = [];
+            p.forEach(function(textItem) {
+                texts.push(f(textItem));
+            });
+            array.push(
+                <Text key={ paragraphs.key+"."+index++ } >{texts}</Text>
+            );
+        });
+        return views;
     }
 
     formatColumns(columns) {
@@ -48,7 +81,7 @@ export default class InformationListItem extends React.Component {
     render() {
         const allData = this.props.data;
         const self = this;
-        const infoItems = [];
+        var infoItems = [];
         allData.forEach(dataItem => {
             if (dataItem.type == "table") {
                 var rows = [];
@@ -80,8 +113,11 @@ export default class InformationListItem extends React.Component {
                         {rows}
                     </View>);
             }
+            else if(dataItem.type == 'p') {
+                this.getTextViews(dataItem, infoItems);
+            }
             else {
-                infoItems.push(this.getTextWithStyle(dataItem));
+                console.error("Not recognized type", dataItem.type);
             }
         });
 
@@ -113,8 +149,7 @@ export default class InformationListItem extends React.Component {
 
                 <View style={Styles.informationcontainer}>
                     {
-                        this.state.status ?
-                            <View style={{ flex: 1 }}>{infoItems}</View> : null
+                        this.state.status ? infoItems : null
                     }
                 </View>
             </View>

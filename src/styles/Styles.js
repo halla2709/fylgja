@@ -145,6 +145,13 @@ export default StyleSheet.create({
     textAlign: 'center'
   },
 
+  pA: {
+    fontSize: 18,
+    color: 'rgb(34,82,171)', 
+    fontWeight: 'bold', 
+    textDecorationLine: 'underline'
+  },
+
   body: {
     fontFamily: 'opensans-regular',
     fontSize: 18,
