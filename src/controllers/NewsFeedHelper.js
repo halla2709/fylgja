@@ -1,6 +1,6 @@
 import React from 'react';
 import * as rssParser from 'react-native-rss-parser';
-import { ParseDataFromText } from '../controllers/Parser';
+import { ParseDataFromText, GetOnlyText } from '../controllers/Parser';
 
 /**
  * catids:
@@ -39,6 +39,8 @@ function parseBody(data) {
     data.forEach(element => {
         var wrapped = "<div>"+element.bodyText+"</div>"
         element.parsedBody = ParseDataFromText(wrapped);
+        wrapped = "<div>"+element.entryText+"</div>"
+        element.parsedEntry = GetOnlyText(wrapped);
     });
 }
 

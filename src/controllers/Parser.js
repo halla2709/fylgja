@@ -78,7 +78,7 @@ function parseElement(element, array, $) {
         });
     });
 */
-    var content = $(element).children('p');
+    var content = $(element).children('p, ul');
 
     content.each(function (i, p) {
         var final = [];

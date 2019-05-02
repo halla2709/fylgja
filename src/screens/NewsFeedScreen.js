@@ -119,12 +119,12 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent> 
                                 {this.state.states[index] ? (
                                     <View>
-                                        <Text style={Styles.pBoldCenter}>{this.getRawText(element.entryText)}</Text>
+                                        <Text style={Styles.pBoldCenter}>{element.parsedEntry}</Text>
                                         {body}
                                         </View>
                                  ) : 
                                 (
-                                    <Text style={Styles.p}>{this.getRawText(element.entryText)}</Text>                                    
+                                    <Text style={Styles.p}>{element.parsedEntry}</Text>                                    
                                 )}
                             </CardContent>
                             <CardAction separator={true} inColumn={false}>

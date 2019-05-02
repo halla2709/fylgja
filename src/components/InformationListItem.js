@@ -32,7 +32,7 @@ export default class InformationListItem extends React.Component {
                 if (href.startsWith("/")) {
                     WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
                 }
-                else {
+                else if(!href.startsWith("#")){
                     WebBrowser.openBrowserAsync(href);
                 }
             }
