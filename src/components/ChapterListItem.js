@@ -50,7 +50,8 @@ class ChapterListItem extends React.Component {
                     this.props.onChapterPressed(this.props.chapter.key)}}>
                     <View> 
                         <Text style={styles.text}>
-                            {indent + this.props.chapter.name}
+                        
+                            
                         </Text>
                     </View>
                 </TouchableOpacity>
