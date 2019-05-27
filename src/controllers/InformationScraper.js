@@ -29,7 +29,7 @@ export default class InformationScraper {
                 var item = {
 
                     "name" : "Launatafla",
-                    "data" : [{
+                    "data" : [[{
                         "type": "p",
                         "text": [
                             {
@@ -40,7 +40,7 @@ export default class InformationScraper {
                             }
                         ],
                         "key": items.length+2
-                    }]
+                    }]]
                 }
                
                items.push(item);
