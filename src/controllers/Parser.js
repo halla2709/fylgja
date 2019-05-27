@@ -4,7 +4,7 @@ var index = 0;
 function ParseDataFromText(text) {
     const $ = cheerio.load(text);
     var content = [];
-    originalFind($.root(), content, $);
+    parseElement($('div'), content, $);
     return content;
 }
 
@@ -43,43 +43,8 @@ function originalFind(element, array, $) {
 function parseElement(element, array, $) {
     var table = $(element).find('table');
     table.remove();
-    /*var content = $(element).children('p, strong, a, br')
-    content.each(function() {
-        $(this).contents().map(function(ii,text) {
-            if(text.type === "text") {
-                console.log($(text).text());
-            }
-        });
-        let text = $(this).text()
-        // You need to inject cleaned string into the DOM
-        var tagName = $(this)[0].name;
-        if (tagName === 'br' || tagName === 'strong') text += "\n"
-        $(this).html(text)
-    });
-    var stripped = $(element).find('p, strong, a')
-    stripped.each(function (i, p) {
-        array.push({ "text": $(p).text(), "type": p.tagName, "href": $(p).attr('href'), key: index++ });
-        /*$(p).contents().map(function (ii, el) {
-            if (el.type === "text") {
-                array.push({ "text": $(el).text(), "type": p.tagName, "href": $(p).attr('href'), key: index++ });
-            }
-        });
-    });
-    var content = $(element).children('p, strong, a, br, href, span');
-
-    content.each(function (i, p) {
-        $(p).contents().map(function (ii, el) {
-            if (el.type === "text") {
-                array.push({ "text": $(el).text(), "type": p.tagName, "href": $(p).attr('href'), key: index++ });
-            }
-            else {
-                findRawTextInElement(el, array, $);
-            }
-        });
-    });
-*/
     var content = $(element).children('p, ul');
-
+    console.log("Found " + content.length + " elements");
     content.each(function (i, p) {
         var final = [];
         var thisCurrent = findRawText(p, $, [], final);

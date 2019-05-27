@@ -152,6 +152,12 @@ export default StyleSheet.create({
     textDecorationLine: 'underline'
   },
 
+  pImportant: {
+    fontFamily: 'opensans-regular',
+    fontSize: 18,
+    color:'rgb(131,27,0)'
+  },
+
   body: {
     fontFamily: 'opensans-regular',
     fontSize: 18,

@@ -7,6 +7,9 @@
     "splash": {
       "backgroundColor": "#efefef",
       "image": "src/assets/images/icon.png"
+    },
+    "android": {
+      "package": "com.fylgja.fylgja"
     }
   }
 }
