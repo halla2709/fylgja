@@ -243,7 +243,7 @@ export default [{
             },
             {
                 "key": "14.2",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_14-2.png'),
             },
@@ -256,7 +256,7 @@ export default [{
 
             {
                 "key": "14.4",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_14-4.png'),
             },
@@ -270,7 +270,7 @@ export default [{
 
             {
                 "key": "14.6",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_14-6.png'),
             },
@@ -290,7 +290,7 @@ export default [{
             },
             {
                 "key": "14.9",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_14-9.png'),
             },
@@ -364,7 +364,7 @@ export default [{
         "name": "Bishop skor",
         "subchapters": [{
                 "key": "16.1",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_16-1.png'),
             },
@@ -534,7 +534,7 @@ export default [{
         "name": "Þroskamat finnström",
         "subchapters": [{
             "key": "24.1",
-            "name": "Mynd",
+            "name": "#EkkiBirta#",
             "subchapters": [],
             "image": require('../images/handbok_24-1.png'),
         }, ],
@@ -544,7 +544,7 @@ export default [{
         "name": "Apgar skor",
         "subchapters": [{
             "key": "25.1",
-            "name": "Mynd",
+            "name": "#EkkiBirta#",
             "subchapters": [],
             "image": require('../images/handbok_25-1.png'),
         }, ],
@@ -602,7 +602,7 @@ export default [{
             },
             {
                 "key": "27.3",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_27-3.png'),
                 "content": "Skýring fyrir mynd:\nSvæði 1: 100 µmol/ L\nSvæði 2: 150 µmol/ L\nSvæði 3: 200 µmol/ L\nSvæði 4: 250 µmol/ L\nSvæði 5: >250 µmol/ L"
@@ -1034,13 +1034,13 @@ export default [{
         "content": "Þyngdaraukning á meðgöngu: https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Greiningark%C3%B3%C3%B0ar%20fyrir%20sj%C3%BAkd%C3%B3ma%20%C3%A1%20me%C3%B0g%C3%B6ngu%20og%20eftir%20f%C3%A6%C3%B0ingu%20-%202017.pdf\n\nTafla fengin úr bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
         "subchapters": [{
                 "key": "42.1",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_42-1.png'),
             },
             {
                 "key": "42.2",
-                "name": "Mynd",
+                "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_42-2.png'),
 

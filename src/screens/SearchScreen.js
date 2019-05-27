@@ -25,13 +25,26 @@ export class SearchScreen extends React.Component {
   };
 
   getChapterView(chapter, level) {
-    return <Text
+    if (chapter.name === "#EkkiBirta#") {
+      return <Text
       key={chapter.key}
       style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
       onPress={() => this.props.navigation.navigate('Reader', {
         drawerContent: "chapters",
-        currentChapter: chapter.key
-      })}>{chapter.name}</Text>
+        currentChapter: chapter.key})}/>
+
+    } else {
+      return <Text
+      key={chapter.key}
+      style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
+      onPress={() => this.props.navigation.navigate('Reader', {
+        drawerContent: "chapters",
+        currentChapter: chapter.key})}>{chapter.name}</Text>
+
+    }
+    
+    
+    
   }
 
   getChapterViews(chapters) {
@@ -42,6 +55,7 @@ export class SearchScreen extends React.Component {
         chapter.subchapters.forEach(subchapter => {
           chapterBlocks.push(this.getChapterView(subchapter, 2));
         });
+        
       }
     });
     return chapterBlocks;

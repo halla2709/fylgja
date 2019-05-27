@@ -14,7 +14,6 @@ export default class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/log_og_reglugerdir', "Lög og Reglugerðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/althjodasidareglur', "Alþjóða siðareglur ljósmæðra"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal', "Kjaramál"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/launatafla-2016/launatafla-2018', "Launatöflur"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/stofnanasamningar', "Stofnanasamningar"),
 
             //Hér að ofan var það eina sem hún listaði upp... á þá að sleppa þessu fyrir neðan?
@@ -23,10 +22,32 @@ export default class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn og nefndir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/trunadarmenn', "Trúnaðarmenn"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins")
+            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins"),
+            
         ])
             .then((items) => {
+                var item = {
+
+                    "name" : "Launatafla",
+                    "data" : [{
+                        "type": "p",
+                        "text": [
+                            {
+                                "text" : "Nýjasta Launatafla",
+                                "type" : "a",
+                                "href" : "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
+                                "key" : items.length+1,
+                            }
+                        ],
+                        "key": items.length+2
+                    }]
+                }
+               
+               items.push(item);
                 this.setData(items);
+
+
+console.log(items[0]);
             })
             .catch((e) => { 
                 this.setData([]);

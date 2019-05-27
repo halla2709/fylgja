@@ -43,6 +43,13 @@ class ChapterListItem extends React.Component {
             }
         });
 
+        var text = "";
+        if (this.props.chapter.name !== "#EkkiBirta#") {
+            text = indent + this.props.chapter.name;
+
+                 
+        }
+        
         return (
             <View>
                 
@@ -50,13 +57,12 @@ class ChapterListItem extends React.Component {
                     this.props.onChapterPressed(this.props.chapter.key)}}>
                     <View> 
                         <Text style={styles.text}>
-                        
-                            
+                        {text}
                         </Text>
                     </View>
                 </TouchableOpacity>
-                {this.subChapterView}
-                
+                    {this.subChapterView}
+        
             </View>
         );
     }

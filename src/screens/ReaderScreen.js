@@ -29,6 +29,26 @@ export class ReaderScreen extends React.Component {
        
   chapter.subchapters.forEach(subchapter => {
 
+    if (subchapter.name == "#EkkiBirta#"){
+      textBlocks.push(
+        <View style={{marginBottom: 10}} key={subchapter.key} onLayout={(event) => {
+          var {x, y, width, height} = event.nativeEvent.layout;
+          this.onViewLayout(subchapter.key, y);}}>
+  
+          <View style={Styles.pcontainer}>
+            <Text style={Styles.p} layout="row">{subchapter.content}</Text>
+          </View>
+  
+          <View style={{justifyContent: 'center', alignItems: 'center'}}>
+            <Image resizeMode="contain" source={subchapter.image} style={{flex:1, width: '80%'}}/>
+          </View>
+        </View>)
+      
+
+    }
+    else
+    {
+
       textBlocks.push(
       <View style={{marginBottom: 10}} key={subchapter.key} onLayout={(event) => {
         var {x, y, width, height} = event.nativeEvent.layout;
@@ -45,6 +65,7 @@ export class ReaderScreen extends React.Component {
           <Image resizeMode="contain" source={subchapter.image} style={{flex:1, width: '80%'}}/>
         </View>
       </View>)
+      }
 
     });
     return textBlocks;

@@ -119,7 +119,7 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent> 
                                 {this.state.states[index] ? (
                                     <View>
-                                        <Text style={Styles.pBoldCenter}>{element.parsedEntry}</Text>
+                                        <Text style={Styles.pBold}>{element.parsedEntry}</Text>
                                         {body}
                                         </View>
                                  ) : 

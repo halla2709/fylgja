@@ -43,8 +43,8 @@ export default class App extends React.Component {
       onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsOverviewScreen', {});},
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
-      title: "Ný frétt",
-      body: "Ný frétt hefur verið birt í appinu.",
+      title: "Ný færsla",
+      body: "Ný frétt, viðburður eða ráðstefna á vegum Ljósmæðrafélagsins.",
     });
     this.setState({notification: notification});
   };
