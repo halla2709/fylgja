@@ -83,10 +83,26 @@ export class NewsFeedScreen extends React.Component {
     }
 
     getTextWithStyle(data) {
+        function goToLink(href) {
+            try {
+                console.log("Opening " + href)
+                if (href.startsWith("/")) {
+                    WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+                }
+                else if(!href.startsWith("#")){
+                    WebBrowser.openBrowserAsync(href);
+                }
+            }
+           catch(e) {
+               console.error(e);
+           }
+        }
+
+        console.log("Getting style for ", data);
         switch (data.type) {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
-            case 'a': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
-            case 'stong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;
+            case 'strong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
@@ -95,13 +111,38 @@ export class NewsFeedScreen extends React.Component {
         }
     }
 
+    getTextViews(paragraphs, array) {
+        var views = [];
+        var index = 0;
+        var f = this.getTextWithStyle;
+        paragraphs.text.forEach(function(p) {
+            var texts = [];
+            p.forEach(function(textItem) {
+                texts.push(f(textItem));
+            });
+            array.push(
+                <Text key={ paragraphs.key+"."+index++ } >{texts}</Text>
+            );
+        });
+        return views;
+    }
+
     render() {
         var cards = [];
         var cnt = 0;
         this.data.forEach(element => {
             var body = [];
+            console.log(element.parsedBody);
             element.parsedBody.forEach((data) => {
-                body.push(this.getTextWithStyle(data));
+                console.log("Body data", data);
+                if(data.type == 'p') {
+                    this.getTextViews(data, body);
+                }
+                else {
+                    body.push(
+                        <Text style={Styles.pImportant} key={ data.key } >Ýtið að Opna frétt hér að neðan til að lesa meira.</Text>
+                    );
+                }
             });
             var index = cnt;
             cards.push(
@@ -119,7 +160,7 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent> 
                                 {this.state.states[index] ? (
                                     <View>
-                                        <Text style={Styles.pBoldCenter}>{element.parsedEntry}</Text>
+                                        <Text style={Styles.pImportant}>{element.parsedEntry}</Text>
                                         {body}
                                         </View>
                                  ) : 
