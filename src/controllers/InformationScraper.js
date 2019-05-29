@@ -4,6 +4,9 @@ import { ParseDataFromUrl } from './Parser'
 export default class InformationScraper {
     async init() {
         this.data = [];
+
+
+        
         Promise.all([
             
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
@@ -29,22 +32,26 @@ export default class InformationScraper {
                 var item = {
 
                     "name" : "Launatafla",
-                    "data" : [[{
+                    "key": items.length+2,
+                    "type": "p",
+                    "data" : [{
+                
                         "type": "p",
-                        "text": [
+                        "key": items.length+2,
+                        "text": [[
                             {
-                                "text" : "Nýjasta Launatafla",
+                                "text" : "Smelltu hér til að hlaða niður nýjustu launatöflu",
                                 "type" : "a",
                                 "href" : "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
                                 "key" : items.length+1,
                             }
-                        ],
-                        "key": items.length+2
-                    }]]
+                    ]],
+                        
+                    }]
                 }
                
                items.push(item);
-                this.setData(items);
+            this.setData(items);
 
 
 console.log(items[0]);
