@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
 import Styles from './../styles/Styles';
-import { Icon } from 'react-native-elements';
+import { Ionicons } from '@expo/vector-icons';
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
@@ -44,7 +44,8 @@ export class HomeScreen extends React.Component {
         <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeedStack', { drawerContent: "news" })}>
 
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-            <Icon reverse name='newspaper-o' type='font-awesome' color='#FF3A0D' size={30} />
+          <Ionicons name="md-paper" reverse color="#FF3A0D" size={35} />
+          
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle1}>Fréttaveita</Text>
               <Text style={Styles.buttontext1}>Fréttir og viðburðir frá ljosmaedrafelag.is</Text>
@@ -54,7 +55,8 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('InformationStack', { drawerContent: "information" })}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-            <Icon reverse name='md-information-circle' type='ionicon' color='#1500FF' size={30} />
+          <Ionicons name="md-information-circle" reverse color="#1500FF" size={35} />
+          
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle2}>Upplýsingar</Text>
               <Text style={Styles.buttontext2}>Símanúmer, heimasíður, þjónustur og fleira</Text>
@@ -64,8 +66,8 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('ReaderStack')}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-            <Icon reverse name='open-book' type='entypo' color='#05bc00' size={30} />
-
+          <Ionicons name="ios-book" reverse color="#05BC00" size={35} />
+          
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle3}>Handbók</Text>
               <Text style={Styles.buttontext3}>Fylgjan á rafrænu formi</Text>

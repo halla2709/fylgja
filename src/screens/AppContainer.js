@@ -37,6 +37,7 @@ export default class AppContainer extends React.Component {
       'opensans-semibold': require('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
       'opensans-italic': require('../assets/fonts/Open_Sans/OpenSans-Italic.ttf'),
       'opensans-light': require('../assets/fonts/Open_Sans/OpenSans-Light.ttf'),
+      'MaterialIcons': require('@expo/vector-icons/fonts/MaterialIcons.ttf')
 
     });
     this.setState({ fontLoaded: true });

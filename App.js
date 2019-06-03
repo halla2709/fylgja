@@ -38,24 +38,23 @@ export default class App extends React.Component {
   }
 
   _handleNotification = (notification) => {
-    console.log(notification);
     this.popup.show({
-      onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsOverviewScreen', {});},
+      onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsFeedStack', { drawerContent: "news" });},
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
       title: "Ný færsla",
       body: "Ný frétt, viðburður eða ráðstefna á vegum Ljósmæðrafélagsins.",
     });
     this.setState({notification: notification});
-  };
+  };  
 
   render() {
     return (
       <View style={Styles.appcontainer}>
-        <NotificationPopup ref={ref => this.popup = ref} />
         <AppContainer navigatorRef={navigatorRef => {
           NavigationService.setTopLevelNavigator(navigatorRef);}
         }/>
+        <NotificationPopup ref={ref => this.popup = ref} />        
       </View>
     );
   }

@@ -8,7 +8,6 @@ import {
   ScrollView,
   TextInput,
   KeyboardAvoidingView,
-  Icon, 
   ImageBackground
 } from 'react-native';
 import { Font } from 'expo';
@@ -79,7 +78,7 @@ export class SearchScreen extends React.Component {
             <SearchBar lightTheme round style={Styles.searchBar} 
             placeholder='Skrifaðu leitarorð hér...'
             placeholderTextColor='rgb(189, 194, 201)'
-            searchIcon={{color: 'grey', padding:3,}}
+            searchIcon={{color: 'grey', padding:3}}
             clearIcon={{color: 'grey'}}
             inputStyle={{color: 'black', fontSize: 18, backgroundColor: 'white'}} //Style TextInput
             inputContainerStyle={Styles.p}

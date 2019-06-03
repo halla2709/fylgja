@@ -7,7 +7,7 @@ import {
     TouchableWithoutFeedback
 } from 'react-native';
 import { WebBrowser } from 'expo';
-import { Icon } from 'react-native-elements'; 
+//import { Icon } from 'react-native-elements'; 
 import {
     Card,
     CardTitle,
@@ -153,7 +153,6 @@ export class NewsFeedScreen extends React.Component {
                                 <Text style={Styles.dateText}>{this.getDate(element.displayDate)}</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "row", paddingRight: 5, paddingLeft: 10 }}>
-                                <Icon style={{ flex: 1 }} name='newspaper-o' type='font-awesome' color='rgb(131,27,0)' size={30} />
                                 <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center' }} />
                             </View>
                             

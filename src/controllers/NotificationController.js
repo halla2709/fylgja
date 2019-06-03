@@ -26,7 +26,7 @@ export default async function registerForPushNotificationsAsync() {
     }
   }
   catch (e) {
-    console.error(e);
+    console.log(e);
     return;
   }
 
@@ -43,8 +43,7 @@ export default async function registerForPushNotificationsAsync() {
     console.log("Written to db");
   })
   .catch(function(error) {
-    console.error(error);
-
+    console.log(error);
   });
 
   console.log(token);

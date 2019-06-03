@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 import { Font } from 'expo';
 import Styles from './../styles/Styles';
-import { Ionicons } from '@expo/vector-icons';
 import InformationListItem from '../components/InformationListItem';
 import InformationScraper from "../controllers/InformationScraper";
 
