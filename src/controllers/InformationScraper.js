@@ -6,9 +6,9 @@ export default class InformationScraper {
         this.data = [];
 
 
-        
+
         Promise.all([
-            
+
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/sagaogmerki', "Um merki Ljósmæðrafélags Íslands"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/ljosmaedranamid', "Ljósmæðranámið"),
@@ -26,52 +26,51 @@ export default class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/trunadarmenn', "Trúnaðarmenn"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins"),
-            
+
         ])
             .then((items) => {
+                // Need to sort chapters here so they are in the right order
                 var item = {
 
-                    "name" : "Launatafla",
-                    "key": items.length+2,
+                    "name": "Launatafla",
+                    "key": items.length + 2,
                     "type": "p",
-                    "data" : [{
-                
+                    "data": [{
+
                         "type": "p",
-                        "key": items.length+2,
+                        "key": items.length + 2,
                         "text": [[
                             {
-                                "text" : "Smelltu hér til að hlaða niður nýjustu launatöflu",
-                                "type" : "a",
-                                "href" : "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
-                                "key" : items.length+1,
+                                "text": "Smelltu hér til að hlaða niður nýjustu launatöflu",
+                                "type": "a",
+                                "href": "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
+                                "key": items.length + 1,
                             }
-                    ]],
-                        
+                        ]],
+
                     }]
                 }
-               
-               items.push(item);
-            this.setData(items);
 
+                items.push(item);
+                this.setData(items);
 
-console.log(items[0]);
             })
-            .catch((e) => { 
+            .catch((e) => {
                 this.setData([]);
-             });
+            });
     }
 
     getData() {
         return this.data;
     }
-    
+
     setData(newData) {
         this.data = newData;
-        if(this.dataChangedCallback){
+        if (this.dataChangedCallback) {
             this.dataChangedCallback(this.data);
         }
     }
-    
+
     setDataChangedCallback(cb) {
         this.dataChangedCallback = cb;
     }

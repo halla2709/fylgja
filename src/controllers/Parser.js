@@ -44,7 +44,6 @@ function parseElement(element, array, $) {
     var table = $(element).find('table');
     table.remove();
     var content = $(element).children('p, ul');
-    console.log("Found " + content.length + " elements");
     content.each(function (i, p) {
         var final = [];
         var thisCurrent = findRawText(p, $, [], final);

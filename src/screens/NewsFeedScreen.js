@@ -98,7 +98,6 @@ export class NewsFeedScreen extends React.Component {
            }
         }
 
-        console.log("Getting style for ", data);
         switch (data.type) {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
             case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;
@@ -132,9 +131,7 @@ export class NewsFeedScreen extends React.Component {
         var cnt = 0;
         this.data.forEach(element => {
             var body = [];
-            console.log(element.parsedBody);
             element.parsedBody.forEach((data) => {
-                console.log("Body data", data);
                 if(data.type == 'p') {
                     this.getTextViews(data, body);
                 }

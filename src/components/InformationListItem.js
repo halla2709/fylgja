@@ -28,7 +28,6 @@ export default class InformationListItem extends React.Component {
     getTextWithStyle(data) {
         function goToLink(href) {
             try {
-                console.log("Opening " + href)
                 if (href.startsWith("/")) {
                     WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
                 }
@@ -41,7 +40,6 @@ export default class InformationListItem extends React.Component {
            }
         }
 
-        console.log("Getting style for ", data);
         switch (data.type) {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
             case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;

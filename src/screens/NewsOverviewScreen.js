@@ -4,7 +4,8 @@ import {
     ImageBackground,
     Dimensions,
     ScrollView,
-    ActivityIndicator
+    ActivityIndicator,
+    Text
 } from 'react-native';
 import {
     Card,

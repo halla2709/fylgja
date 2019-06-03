@@ -32,29 +32,27 @@ export default class App extends React.Component {
         priority: 'max',
         vibrate: [0, 250, 250, 250],
       })
-      .then(() => { console.log("Created channel"); });
+        .then(() => { console.log("Created channel"); });
     }
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
   }
 
   _handleNotification = (notification) => {
     this.popup.show({
-      onPress: function() { console.log("Navigating"); NavigationService.navigate('NewsFeedStack', { drawerContent: "news" });},
+      onPress: function () { console.log("Navigating"); NavigationService.navigate('NewsFeedStack', { drawerContent: "news" }); },
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
       title: "Ný færsla",
       body: "Ný frétt, viðburður eða ráðstefna á vegum Ljósmæðrafélagsins.",
     });
-    this.setState({notification: notification});
-  };  
+    this.setState({ notification: notification });
+  };
 
   render() {
     return (
       <View style={Styles.appcontainer}>
-        <AppContainer navigatorRef={navigatorRef => {
-          NavigationService.setTopLevelNavigator(navigatorRef);}
-        }/>
-        <NotificationPopup ref={ref => this.popup = ref} />        
+        <AppContainer navigatorRef={navigatorRef => { NavigationService.setTopLevelNavigator(navigatorRef); }} />
+        <NotificationPopup ref={ref => this.popup = ref} />
       </View>
     );
   }
