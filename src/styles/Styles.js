@@ -89,7 +89,9 @@ export default StyleSheet.create({
   },
 
   h2: {
-    fontFamily: 'merriweather-light',
+    fontFamily: '
+    
+    ',
     fontSize: 20,
     alignSelf: 'center',
   },
