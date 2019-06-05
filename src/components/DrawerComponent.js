@@ -16,6 +16,11 @@ export default class DrawerComponent extends React.Component {
     ]}));
   }
 
+  navigate(navigation, options) {
+    this.props.navigation.closeDrawer(); 
+    this.props.navigation.navigate(navigation, options);
+  }
+
   render() {
     const { navigation } = this.props;
     const params = GetCurrentRouteParams(navigation.state);
@@ -31,12 +36,10 @@ export default class DrawerComponent extends React.Component {
           />
       }
     }
-
-
     return (
       this.props.screenProps.fontLoaded ? (
     <View style={styles.drawer}>
-      <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')}> 
+      <TouchableOpacity onPress={() => { this.navigate('Home') } }> 
         <View style={styles.drawerLogo}>
           <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')} />
             <View style={styles.drawerLogoText}>
@@ -52,15 +55,15 @@ export default class DrawerComponent extends React.Component {
       </ScrollView>
         
       <View style={styles.drawerButtons} > 
-        <TouchableOpacity  onPress={() => navigation.navigate('NewsFeedStack', { drawerContent: "news" })}>
+        <TouchableOpacity  onPress={() => this.navigate('NewsFeedStack', { drawerContent: "news" })}>
           <Text style={styles.drawerItem}> Fréttaveita </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate('InformationStack', { drawerContent: "information" })}>
+        <TouchableOpacity onPress={() => this.navigate('InformationStack', { drawerContent: "information" })}>
          <Text style={styles.drawerItem}> Upplýsingar </Text>
         </TouchableOpacity>
         
-        <TouchableOpacity onPress={() => navigation.navigate('ReaderStack')}>
+        <TouchableOpacity onPress={() => this.navigate('ReaderStack')}>
          <Text style={styles.drawerItem}> Handbók  </Text>
         </TouchableOpacity>
 
