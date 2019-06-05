@@ -1013,7 +1013,7 @@ export default [{
     {
         "key": "39",
         "name": "Klínískar Leiðbeiningar",
-        "content": "Meðgönguvernd heilbrigðra kvenna í eðlilegri meðgöngu\nhttps://www.landlaeknir.is/servlet/file/store93/item2548/4407.pdf \n\nNICE: Antenatal care for uncomplicated pregnancies\nhttps://www.nice.org.uk/guidance/CG62 \n\nMeðgöngusykursýki, klínískar leiðbeiningar\nhttps://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf\n\nNICE: Antenatal and postnatal mental health: clinical management and service guidance\nhttps://www.nice.org.uk/guidance/CG192 \n\nOfbeldi í nánum samböndum: Mat og viðbrögð: Klínískar leiðbeiningar, 2012\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nNICE: Intrapartum care for healthy women and babies\nhttps://www.nice.org.uk/guidance/cg190",
+        "content": "Meðgönguvernd heilbrigðra kvenna í eðlilegri meðgöngu\nhttps://www.landlaeknir.is/servlet/file/store93/item2548/4407.pdf \n\nNICE: Antenatal care for uncomplicated pregnancies\nhttps://www.nice.org.uk/guidance/CG62 \n\nMeðgöngusykursýki, klínískar leiðbeiningar\nhttps://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf\n\nNICE: Antenatal and postnatal mental health: clinical management and service guidance\nhttps://www.nice.org.uk/guidance/CG192 \n\nOfbeldi í nánum samböndum: Mat og viðbrögð: Klínískar leiðbeiningar, 2012\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nNICE: Intrapartum care for healthy women and babies\nhttps://www.nice.org.uk/guidance/cg190\n\nWHO recommendations on antenatal care for a positive pregnancy experience\n http://apps.who.int/iris/bitstream/10665/250796/1/9789241549912-eng.pdf?ua=1\n\nWHO recommendations: intrapartum care for a positive childbirth experience\nhttp://apps.who.int/iris/bitstream/10665/260178/1/9789241550215-eng.pdf?ua=1\n\nSjá fleiri leiðbeiningar inná vefsíðu Ljósmæðrafélagsins,\nhttps://www.ljosmaedrafelag.is/utgafa/kliniskar-leidbeiningar",
         "subchapters": [],
     },
     {
@@ -1050,7 +1050,7 @@ export default [{
     {
         "key": "43",
         "name": "Ofbeldi í nánum samböndum",
-        "content": "Flýtispjald\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_spjald.pdf \n\nKlínískar leiðbeiningar um ofbeldi í nánum samböndum\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nHvert get ég leitað og fengið hjálp?\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_baeklingur.pdf",
+        "content": "Flýtispjald\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_spjald.pdf \n\nKlínískar leiðbeiningar um ofbeldi í nánum samböndum\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nHvert get ég leitað og fengið hjálp?\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_baeklingur.pdf\n",
         "subchapters": [],
 
     },
