@@ -1,8 +1,9 @@
 import cheerio from 'react-native-cheerio';
 import { ParseDataFromUrl } from './Parser'
 
-export default class InformationScraper {
+class InformationScraper {
     async init() {
+        console.log("Init");
         this.data = [];
         this.chapterOrder = [
             "Um félagið",
@@ -13,7 +14,6 @@ export default class InformationScraper {
             "Ljósmæðraráð",
             "Lög og reglur LMFÍ",
             "Handbók LMFÍ",
-            "Skýrslur",
             "Styrkir og sjóðir",
             "Orlofsmál",
             "Kjaramál",
@@ -41,7 +41,7 @@ export default class InformationScraper {
             "Heimaþjónustu samningar og leiðbeiningar",
             "Brjóstagjafaráðgjöf"
         ];
-        Promise.all([
+        return Promise.all([
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/framhaldsnam', "Framhaldsnám"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/stofnanasamningar', "Stofnanasamningar"),
@@ -53,7 +53,6 @@ export default class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/logogreglurlmfi', "Lög og reglur LMFÍ"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/utgafa/handbok-lmfi', "Handbók LMFÍ"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skyrslur', "Skýrslur"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/styrkir-sjodir', "Styrkir og sjóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/orlofsmal', "Orlofsmál"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal', "Kjaramál"),
@@ -111,11 +110,13 @@ export default class InformationScraper {
     }
 
     getData() {
+        console.log("Getting data " + this.data.length);
         return this.data;
     }
 
     setData(newData) {
         this.data = newData;
+        console.log("Setting data " + this.data.length);        
         if (this.dataChangedCallback) {
             this.dataChangedCallback(this.data);
         }
@@ -125,3 +126,5 @@ export default class InformationScraper {
         this.dataChangedCallback = cb;
     }
 }
+
+export let Scraper = new InformationScraper();

@@ -1053,11 +1053,5 @@ export default [{
         "content": "Flýtispjald\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_spjald.pdf \n\nKlínískar leiðbeiningar um ofbeldi í nánum samböndum\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nHvert get ég leitað og fengið hjálp?\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_baeklingur.pdf\n",
         "subchapters": [],
 
-    },
-
-
-
-
-
-
+    }
 ]

@@ -6,10 +6,11 @@ import Chapters from "../assets/testContent/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import { WebBrowser } from 'expo';
+import SelectableText from 'react-native-selectable-text'
 
 export class ReaderScreen extends React.Component {
 
-  
+
 
   onViewLayout(key, y) {
     if (key === this.props.navigation.state.params.currentChapter) {
@@ -24,47 +25,48 @@ export class ReaderScreen extends React.Component {
 
   getChapterViews(chapter) {
     var textBlocks = [];
-    
-   
-       
-  chapter.subchapters.forEach(subchapter => {
 
-    if (subchapter.name == "#EkkiBirta#"){
-      textBlocks.push(
-        <View style={{marginBottom: 10}} key={subchapter.key} onLayout={(event) => {
-          var {x, y, width, height} = event.nativeEvent.layout;
-          this.onViewLayout(subchapter.key, y);}}>
-  
-          <View style={Styles.pcontainer}>
-            <Text style={Styles.p} layout="row">{subchapter.content}</Text>
-          </View>
-  
-          <View style={{justifyContent: 'center', alignItems: 'center'}}>
-            <Image resizeMode="contain" source={subchapter.image} style={{flex:1, width: '80%'}}/>
-          </View>
-        </View>)
-      
 
-    }
-    else
-    {
 
-      textBlocks.push(
-      <View style={{marginBottom: 10}} key={subchapter.key} onLayout={(event) => {
-        var {x, y, width, height} = event.nativeEvent.layout;
-        this.onViewLayout(subchapter.key, y);}}>
-        <View style={Styles.subchaptercontainer}>
-          <Text style={Styles.h2}>{subchapter.name}</Text>
-        </View>
+    chapter.subchapters.forEach(subchapter => {
 
-        <View style={Styles.pcontainer}>
-          <Text style={Styles.p} layout="row">{subchapter.content}</Text>
-        </View>
+      if (subchapter.name == "#EkkiBirta#") {
+        textBlocks.push(
+          <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
+            var { x, y, width, height } = event.nativeEvent.layout;
+            this.onViewLayout(subchapter.key, y);
+          }}>
 
-        <View style={{justifyContent: 'center', alignItems: 'center'}}>
-          <Image resizeMode="contain" source={subchapter.image} style={{flex:1, width: '80%'}}/>
-        </View>
-      </View>)
+            <View style={Styles.pcontainer}>
+              <Text style={Styles.p} layout="row">{subchapter.content}</Text>
+            </View>
+
+            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+              <Image resizeMode="contain" source={subchapter.image} style={{ flex: 1, width: '80%' }} />
+            </View>
+          </View>)
+
+
+      }
+      else {
+
+        textBlocks.push(
+          <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
+            var { x, y, width, height } = event.nativeEvent.layout;
+            this.onViewLayout(subchapter.key, y);
+          }}>
+            <View style={Styles.subchaptercontainer}>
+              <Text style={Styles.h2}>{subchapter.name}</Text>
+            </View>
+
+            <View style={Styles.pcontainer}>
+              <Text selectable={true} selectionColor='#4E75BC' style={Styles.p} layout="row">{subchapter.content}</Text>
+            </View>
+
+            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+              <Image resizeMode="contain" source={subchapter.image} style={{ flex: 1, width: '80%' }} />
+            </View>
+          </View>)
       }
 
     });
@@ -113,8 +115,8 @@ export class ReaderScreen extends React.Component {
             }
           }}>
             <View style={{ paddingBottom: 150 }}>
-              <Hyperlink linkStyle={ { color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline'} } onPress={ (url, text) => WebBrowser.openBrowserAsync(url) }
-              linkText={ url => url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk' }>
+              <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => WebBrowser.openBrowserAsync(url)}
+                linkText={url => url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk'}>
                 <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
                 {this.textBlocks}
               </Hyperlink>
