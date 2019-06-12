@@ -41,9 +41,6 @@ export class SearchScreen extends React.Component {
         currentChapter: chapter.key})}>{chapter.name}</Text>
 
     }
-    
-    
-    
   }
 
   getChapterViews(chapters) {

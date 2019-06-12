@@ -6,7 +6,6 @@ import Chapters from "../assets/testContent/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import { WebBrowser } from 'expo';
-import SelectableText from 'react-native-selectable-text'
 
 export class ReaderScreen extends React.Component {
 
