@@ -13,12 +13,6 @@ import { SearchBar } from 'react-native-elements';
 import { GetInformationChapters } from './../controllers/SearchHelper';
 
 export class InformationScreen extends React.Component {
-    
-    readFromClipboard = async () => {   
-        const clipboardContent = await Clipboard.getString();   
-        this.setState({ clipboardContent }); 
-      };
-
     constructor() {
         super();
         this.state = {
@@ -33,14 +27,19 @@ export class InformationScreen extends React.Component {
         title: 'Upplýsingar',
     };
 
+    componentWillMount() {
+        console.log("Information screen will mount");
+    }
+
     async componentDidMount() {
-        console.log("Information screen did mount");
         const allData = GetInformationChapters();
+        if (allData.length == 0)
+            Scraper.init();        
         this.setState({ data: allData });
         var self = this;
         Scraper.setDataChangedCallback((data) => {
             console.log("Information screen got new data");
-            const allData = GetInformationChapters(this.currentFilter);     
+            const allData = GetInformationChapters(self.currentFilter);     
             self.setState({ data: allData });
         });
     }
