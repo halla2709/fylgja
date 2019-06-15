@@ -62,7 +62,7 @@ export default class InformationListItem extends React.Component {
                 texts.push(f(textItem));
             });
             array.push(
-                <Text key={ paragraphs.key+"."+index++ } >{texts}</Text>
+                <Text selectable={true} selectionColor="#4E75BC" key={ paragraphs.key+"."+index++ } >{texts}</Text>
             );
         });
         return views;
@@ -88,10 +88,10 @@ export default class InformationListItem extends React.Component {
                     dataRow.columns.forEach(function (dataColumn) {
                         if(dataColumn.text.trim().length > 1) {
                             if (dataColumn.type === 'strong') {
-                                columns.push(<Text style={[Styles.pBoldCenter, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                                columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBoldCenter, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
                             }
                             else {
-                                columns.push(<Text style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                                columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
                             }
                         }
                     });

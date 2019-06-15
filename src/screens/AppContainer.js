@@ -3,9 +3,10 @@ import {
   Font,
 } from 'expo';
 import RootStack from '../controllers/ApplicationNavigation.js';
+import { Scraper } from "../controllers/InformationScraper";
 
 export default class AppContainer extends React.Component {
-  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -13,7 +14,7 @@ export default class AppContainer extends React.Component {
     };
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     await Font.loadAsync({
       'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
       'merriweather-regular': require('../assets/fonts/Merriweather/Merriweather-Regular.ttf'),
@@ -28,12 +29,21 @@ export default class AppContainer extends React.Component {
 
     });
     this.setState({ fontLoaded: true });
+    
+    try {
+      console.log("Init from container");
+      Scraper.init();
+      console.log("After init");
+    }
+    catch (err) {
+      console.error("Could not open information scaper", err);
+    }
   }
 
   render() {
     return (
       <RootStack ref={this.props.navigatorRef}
-        screenProps={{fontLoaded: this.state.fontLoaded}} />
+        screenProps={{ fontLoaded: this.state.fontLoaded }} />
     );
   }
 }
