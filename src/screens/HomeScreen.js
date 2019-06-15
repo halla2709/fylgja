@@ -59,7 +59,7 @@ export class HomeScreen extends React.Component {
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle2}>Upplýsingar</Text>
-              <Text style={Styles.buttontext2}>Símanúmer, heimasíður, þjónustur og fleira</Text>
+              <Text style={Styles.buttontext2}>Símanúmer, ljósmæðraþjónusta, stjórn, nefndir o.fl.</Text>
             </View>
           </View>
         </TouchableOpacity>

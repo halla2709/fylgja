@@ -24,7 +24,8 @@ export class InformationScreen extends React.Component {
         this.state = {
             status: false,
             icon: true,
-            data: []
+            data: [],
+            searchingText: false,
         }
         this.currentFilter = "";
     }
@@ -73,19 +74,27 @@ export class InformationScreen extends React.Component {
                                     containerStyle={{ width: '100%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10, }}
 
                                     onChangeText={(searchString) => {
+                                        this.state.searchingText = true;
                                         this.currentFilter = searchString;
                                         const filteredChapters = GetInformationChapters(searchString);
                                         console.log("filtered", filteredChapters.length);
                                         this.setState({ data: filteredChapters });
+                                        
                                     }}
                                     onClear={() => {
                                         this.currentFilter = "";
                                         const allChapters = GetInformationChapters(searchString)
                                         this.setState({ data: allChapters });
+                                        
                                     }}
                                 />
+                                {this.state.searchingText === true ?
+                                <Text style={Styles.p}>Leita að niðurstöðum sem innihalda: {this.currentFilter}</Text>
+                                : 
+                                <Text>Sýni niðurstöður sem innihalda: {this.currentFilter}</Text>}
                                     {infoItems}
-                                    </View>}
+                                </View>
+                                }
                             </ScrollView>
                     </ImageBackground>
                 </View>
