@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Text,
     View,
-    Button,
-    Alert,
-    TouchableOpacity,
-    Image,
     ImageBackground,
     ScrollView,
     ActivityIndicator
 } from 'react-native';
-import { Font } from 'expo';
 import Styles from './../styles/Styles';
 import InformationListItem from '../components/InformationListItem';
 import { Scraper } from "../controllers/InformationScraper";
@@ -18,6 +13,11 @@ import { SearchBar } from 'react-native-elements';
 import { GetInformationChapters } from './../controllers/SearchHelper';
 
 export class InformationScreen extends React.Component {
+    
+    readFromClipboard = async () => {   
+        const clipboardContent = await Clipboard.getString();   
+        this.setState({ clipboardContent }); 
+      };
 
     constructor() {
         super();
