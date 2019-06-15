@@ -23,7 +23,7 @@ export default class InformationScraper {
             "Upplýsingar til atvinnurekenda",
             "Lög og reglugerðir",
             "Alþjóða siðareglur",
-            "Ljósmæðranámið"",
+            "Ljósmæðranámið",
             "Saga ljósmæðranámsins",
             "Framhaldsnám",
             "Hvað er ljósmóðir",
@@ -40,9 +40,7 @@ export default class InformationScraper {
             "Heimaþjónustuljósmæður",
             "Heimaþjónustu samningar og leiðbeiningar",
             "Brjóstagjafaráðgjöf",
-
         ];
-
 
         Promise.all([
 
@@ -80,9 +78,7 @@ export default class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/heimathj-ljosm', "Heimaþjónustuljósmæður"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/log-og-samningar-og-leidbeiningar', "Heimaþjónustu samningar og leiðbeiningar"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/brjostagjafaradgjof', "Brjóstagjafaráðgjöf"),
-        
-
-            
+                  
             
         ])
             .then((items) => {

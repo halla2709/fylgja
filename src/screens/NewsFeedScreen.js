@@ -7,7 +7,6 @@ import {
     TouchableWithoutFeedback
 } from 'react-native';
 import { WebBrowser } from 'expo';
-//import { Icon } from 'react-native-elements'; 
 import {
     Card,
     CardTitle,
@@ -16,8 +15,6 @@ import {
     CardButton
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
-import InformationListItem from '../components/InformationListItem';
-import Information from "../assets/testContent/info.js";
 import { GetNewsJson } from '../controllers/NewsFeedHelper';
 
 export class NewsFeedScreen extends React.Component {

@@ -48,7 +48,7 @@ export class HomeScreen extends React.Component {
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle1}>Fréttaveita</Text>
-              <Text style={Styles.buttontext1}>Fréttir og viðburðir frá ljosmaedrafelag.is</Text>
+              <Text style={Styles.buttontext1}>Fréttir og viðburðir af vef Ljósmæðrafélagsins</Text>
             </View>
           </View>
         </TouchableOpacity>
