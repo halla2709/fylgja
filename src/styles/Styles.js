@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, PixelRatio } from 'react-native';
 
 export default StyleSheet.create({
 
@@ -38,11 +38,11 @@ export default StyleSheet.create({
 
   title: {
     fontFamily: 'merriweather-black',
-    fontSize: 74
+    fontSize: 74/PixelRatio.getFontScale()
   },
 
   smallTitle: {
-    fontSize: 52
+    fontSize: 52/PixelRatio.getFontScale()
   },
 
   buttons: {
@@ -60,19 +60,19 @@ export default StyleSheet.create({
   buttontext: {
     color: 'black',
     fontFamily: 'opensans-regular',
-    fontSize: 24,
+    fontSize: 24/PixelRatio.getFontScale(),
   },
 
   h1: {
     fontFamily: 'merriweather-regular',
-    fontSize: 25,
+    fontSize: 25/PixelRatio.getFontScale(),
     alignSelf: 'center',
     padding: 25,
   },
 
   h1reader: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22,
+    fontSize: 22/PixelRatio.getFontScale(),
     alignSelf: 'center',
     alignContent: 'center',
     textAlign: 'center',
@@ -83,39 +83,39 @@ export default StyleSheet.create({
 
   searchh1: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22,
+    fontSize: 22/PixelRatio.getFontScale(),
     padding: 10,
     opacity: 1,
   },
 
   h2: {
     fontFamily: 'merriweather-light',
-    fontSize: 20,
+    fontSize: 20/PixelRatio.getFontScale(),
     alignSelf: 'center',
   },
 
   searchh2: {
     fontFamily: 'merriweather-light',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     paddingLeft: 35,
   },
 
   h22: {
     fontFamily: 'dosis-medium',
-    fontSize: 25,
+    fontSize: 25/PixelRatio.getFontScale(),
     paddingBottom: 5,
     alignItems: 'flex-start',
   },
 
   h2informationplus: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22,
+    fontSize: 22/PixelRatio.getFontScale(),
     paddingBottom: 5,
   },
 
   h2informationminus: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22,
+    fontSize: 22/PixelRatio.getFontScale(),
     paddingBottom: 5,
     color: 'rgb(34,82,171)',
   },
@@ -123,7 +123,7 @@ export default StyleSheet.create({
   TextShadowStyle:
   {
      textAlign: 'center',
-     fontSize: 30,
+     fontSize: 30/PixelRatio.getFontScale(),
      textShadowColor: '#E91E63',
      textShadowOffset: { width: 1, height: 4 },
      textShadowRadius: 5
@@ -131,22 +131,22 @@ export default StyleSheet.create({
 
   p: {
     fontFamily: 'opensans-regular',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
   },
 
   pBold: {
     fontFamily: 'opensans-bold',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
   },
 
   pBoldCenter: {
     fontFamily: 'opensans-bold',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     textAlign: 'center'
   },
 
   pA: {
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     color: 'rgb(34,82,171)', 
     fontWeight: 'bold', 
     textDecorationLine: 'underline'
@@ -154,13 +154,13 @@ export default StyleSheet.create({
 
   pImportant: {
     fontFamily: 'opensans-regular',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     color:'rgb(131,27,0)'
   },
 
   body: {
     fontFamily: 'opensans-regular',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
   },
 
   //HomeScreen
@@ -185,7 +185,7 @@ export default StyleSheet.create({
   },
 
   icon2: {
-    fontSize: 400,
+    fontSize: 400/PixelRatio.getFontScale(),
     color: '#1500FF',
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: -1, height: 1},
@@ -230,7 +230,7 @@ export default StyleSheet.create({
   buttontitle1:{
     textAlign: 'center',
     color: '#FF3A0D',
-    fontSize: 32,
+    fontSize: 32/PixelRatio.getFontScale(),
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 2,
@@ -238,14 +238,14 @@ export default StyleSheet.create({
 
   buttontext1:{
     color: '#666F7F',
-    fontSize: 12,
+    fontSize: 12/PixelRatio.getFontScale(),
     textAlign: 'center',
   },
 
   buttontitle2:{
     textAlign: 'center',
     color: '#1500FF',
-    fontSize: 32,
+    fontSize: 32/PixelRatio.getFontScale(),
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 2,
@@ -253,13 +253,13 @@ export default StyleSheet.create({
 
   buttontext2:{
     color: '#666F7F',
-    fontSize: 12,
+    fontSize: 12/PixelRatio.getFontScale(),
     textAlign: 'center',
   },
 
   buttontitle3:{
     color: '#05bc00',
-    fontSize: 32,
+    fontSize: 32/PixelRatio.getFontScale(),
     textShadowColor: 'rgba(0, 0, 0, 0.75)',
     textShadowOffset: {width: -1, height: 1},
     textShadowRadius: 2,
@@ -268,7 +268,7 @@ export default StyleSheet.create({
 
   buttontext3:{
     color: '#666F7F',
-    fontSize: 12,
+    fontSize: 12/PixelRatio.getFontScale(),
     textAlign: 'center',
   },
   
@@ -283,7 +283,7 @@ export default StyleSheet.create({
 
   imagetext: {
     fontFamily: 'opensans-regular',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     color: 'black',
   },
 
@@ -303,7 +303,7 @@ export default StyleSheet.create({
   //NewsFeedScreen
   dateText: {
     fontFamily: 'opensans-bold',
-    fontSize: 14,
+    fontSize: 14/PixelRatio.getFontScale(),
     color: 'rgb(131,27,0)',
     textAlign: 'right',
     alignContent: 'flex-end',
@@ -312,7 +312,7 @@ export default StyleSheet.create({
 
   dateText2: {
     fontFamily: 'opensans-bold',
-    fontSize: 14,
+    fontSize: 14/PixelRatio.getFontScale(),
     color: 'rgb(34,82,171)',
     textAlign: 'right',
     alignContent: 'flex-end',
@@ -329,7 +329,7 @@ export default StyleSheet.create({
 
   searchTitle: {
     fontFamily: 'merriweather-black',
-    fontSize: 40
+    fontSize: 40/PixelRatio.getFontScale()
 
   },
 
@@ -351,7 +351,7 @@ export default StyleSheet.create({
   searchtext: {
     color: 'rgb(128,128,128)',
     fontFamily: 'opensans-regular',
-    fontSize: 24,
+    fontSize: 24/PixelRatio.getFontScale(),
   },
 
   searchcontainer: {
@@ -371,7 +371,7 @@ export default StyleSheet.create({
   searchBar: {
     backgroundColor: 'white',
     color: 'white',
-    fontSize: 10,
+    fontSize: 10/PixelRatio.getFontScale(),
     alignSelf: 'center',
   },
 
@@ -539,7 +539,7 @@ export default StyleSheet.create({
 
   ljosmaedrafelagInfo1: {
     fontFamily: 'merriweather-black',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     paddingTop: 5,
     paddingRight: 10,
     color: 'rgb(34,82,171)',
@@ -547,7 +547,7 @@ export default StyleSheet.create({
   },
   ljosmaedrafelagInfo2: {
     fontFamily: 'merriweather-black',
-    fontSize: 18,
+    fontSize: 18/PixelRatio.getFontScale(),
     paddingBottom: 5,
     paddingRight: 10,
     color: 'rgb(34,82,171)',
@@ -577,7 +577,7 @@ backgroundImage: {
   },
 
   drawerItem: {
-    fontSize: 20,
+    fontSize: 20/PixelRatio.getFontScale(),
     padding: 10,
     margin: 5,
     textAlign: 'center',
