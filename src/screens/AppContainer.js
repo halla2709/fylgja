@@ -3,7 +3,6 @@ import {
   Font,
 } from 'expo';
 import RootStack from '../controllers/ApplicationNavigation.js';
-import { Scraper } from "../controllers/InformationScraper";
 
 export default class AppContainer extends React.Component {
 
@@ -26,18 +25,9 @@ export default class AppContainer extends React.Component {
       'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
 
       'MaterialIcons': require('@expo/vector-icons/fonts/MaterialIcons.ttf')
-
     });
     this.setState({ fontLoaded: true });
     
-    try {
-      console.log("Init from container");
-      Scraper.init();
-      console.log("After init");
-    }
-    catch (err) {
-      console.error("Could not open information scaper", err);
-    }
   }
 
   render() {

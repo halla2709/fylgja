@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
+import { Scraper } from "../controllers/InformationScraper";
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
@@ -96,7 +97,6 @@ export class HomeScreen extends React.Component {
             <View style={Styles.splitpage}>
               <View style={Styles.wholepage}>
                 <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%', opacity: 0.9 }}>
-
                   {titlecontainer}
                   {imagecontainer}
                 </ImageBackground>

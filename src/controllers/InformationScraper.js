@@ -2,8 +2,7 @@ import cheerio from 'react-native-cheerio';
 import { ParseDataFromUrl } from './Parser'
 
 class InformationScraper {
-    async init() {
-        console.log("Init");
+    constructor() {
         this.data = [];
         this.chapterOrder = [
             "Um félagið",
@@ -41,7 +40,11 @@ class InformationScraper {
             "Heimaþjónustu samningar og leiðbeiningar",
             "Brjóstagjafaráðgjöf"
         ];
-        return Promise.all([
+    }
+    
+    async init() {
+        console.log("Init");
+        Promise.all([
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/framhaldsnam', "Framhaldsnám"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/stofnanasamningar', "Stofnanasamningar"),
