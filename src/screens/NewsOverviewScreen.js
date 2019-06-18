@@ -5,7 +5,8 @@ import {
     Dimensions,
     ScrollView,
     ActivityIndicator,
-    Text
+    Text,
+    PixelRatio
 } from 'react-native';
 import {
     Card,
@@ -113,7 +114,7 @@ export class NewsOverviewScreen extends React.Component {
 
         return (this.props.screenProps.fontLoaded ? (
             this.state.newsLoaded ? (
-                this.state.isLargeWindow ? (
+                (this.state.isLargeWindow && PixelRatio.getFontScale() < 1.5) ? (
                     <View style={{ flex: 1 }} contentContainerStyle={Styles.informationwholepage}>
                         <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
                             {frettirContainer}

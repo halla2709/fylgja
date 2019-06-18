@@ -8,7 +8,8 @@ import {
   ScrollView,
   TextInput,
   KeyboardAvoidingView,
-  ImageBackground
+  ImageBackground,
+  PixelRatio
 } from 'react-native';
 import { Font } from 'expo';
 import Styles from './../styles/Styles';
@@ -77,7 +78,7 @@ export class SearchScreen extends React.Component {
             placeholderTextColor='rgb(189, 194, 201)'
             searchIcon={{color: 'grey', padding:3}}
             clearIcon={{color: 'grey'}}
-            inputStyle={{color: 'black', fontSize: 18, backgroundColor: 'white'}} //Style TextInput
+            inputStyle={{color: 'black', fontSize: 18/PixelRatio.getFontScale(), backgroundColor: 'white'}} //Style TextInput
             inputContainerStyle={Styles.p}
             containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10,}}
 

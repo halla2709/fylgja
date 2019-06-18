@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, FlatList, Icon } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, Icon, PixelRatio } from 'react-native'
 
 class ChapterListItem extends React.Component {
     constructor(props) {
@@ -28,7 +28,7 @@ class ChapterListItem extends React.Component {
             this.subChapterView = null;
         }
         
-        var fontSize = this.props.level == 0 ? 20 : 17;
+        var fontSize = (this.props.level == 0 ? 20 : 17)/PixelRatio.getFontScale();
         var indent = "";
         for (var i = 0; i < this.props.level; i++) {
             indent += "   ";

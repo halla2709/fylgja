@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, } from 'react-native';
+import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, PixelRatio } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { Scraper } from "../controllers/InformationScraper";
@@ -8,6 +8,7 @@ import { Scraper } from "../controllers/InformationScraper";
 export class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
+    console.log(PixelRatio.getFontScale()); 
     this.state = {
       fontLoaded: props.screenProps.fontLoaded,
       isLargeWindow: Dimensions.get('window').height > 500
@@ -19,7 +20,7 @@ export class HomeScreen extends React.Component {
       this.setState({ fontLoaded: newProps.screenProps.fontLoaded });
     }
   }
-
+ 
   render() {
     Dimensions.addEventListener("change", (dimension) => {
       this.setState(() => {
