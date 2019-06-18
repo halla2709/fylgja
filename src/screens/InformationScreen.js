@@ -98,7 +98,7 @@ export class InformationScreen extends React.Component {
                                     }}
                                 />
                                {this.state.searchingText ? 
-                                <Text style={Styles.p}>Leita að niðurstöðum sem innihalda: {this.currentFilter}</Text>:null}
+                                <Text style={Styles.searchedtext}>Leita að niðurstöðum sem innihalda: {this.currentFilter}</Text>:null}
                                
                                 
                                     
