@@ -131,4 +131,3 @@ export class ReaderScreen extends React.Component {
     );
   }
 }
-
