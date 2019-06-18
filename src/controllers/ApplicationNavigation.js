@@ -100,7 +100,7 @@ const RootStack = createStackNavigator({
             },
             headerTintColor: 'white',
             headerTitleStyle: {
-                fontSize: 25,
+                fontSize: 25/PixelRatio.getFontScale(),
                 alignSelf: 'center',
             },
 
