@@ -25,52 +25,58 @@ function SearchChapterTitles(key) {
     return chaptersToReturn;
 }
 
-function GetInformationChapters(filter) {
-    const allData = Scraper.getData();
-    console.log("Filtering by " + filter);
-    if (filter && filter.length > 0) {
-        var matchingChapters = [];
-        allData.forEach(chapter => {
-            var found = false;
-            chapter.data.forEach(function(dataItem) {
-                if(!found) {
-                    if (dataItem.type == "table") {
-                        dataItem.rows.forEach(function (dataRow) {
-                            if(!found) {
-                                dataRow.columns.forEach(function (dataColumn) {
-                                    if(!found) {
-                                        if (dataColumn.text.toString().toLowerCase().includes(filter.toLowerCase())){
-                                            matchingChapters.push(chapter);
-                                            found = true;
-                                        }
-                                    }                                    
-                                });
-                            }                            
-                        });
+function GetAllInformationChapters() {
+    return Scraper.getData();
+}
+
+async function GetFilteredInformationChapters(filter) {
+    return new Promise(function(resolve, reject) {
+        const allData = Scraper.getData();
+        console.log("Filtering by " + filter);
+        if (filter && filter.length > 0) {
+            var matchingChapters = [];
+            allData.forEach(chapter => {
+                var found = false;
+                chapter.data.forEach(function(dataItem) {
+                    if(!found) {
+                        if (dataItem.type == "table") {
+                            dataItem.rows.forEach(function (dataRow) {
+                                if(!found) {
+                                    dataRow.columns.forEach(function (dataColumn) {
+                                        if(!found) {
+                                            if (dataColumn.text.toString().toLowerCase().includes(filter.toLowerCase())){
+                                                matchingChapters.push(chapter);
+                                                found = true;
+                                            }
+                                        }                                    
+                                    });
+                                }                            
+                            });
+                        }
+                        else if(dataItem.type == 'p') {
+                            dataItem.text.forEach(function(p) {
+                                if(!found) {
+                                    p.forEach(function(textItem) {
+                                        if(!found) {
+                                            if (textItem.text.toString().toLowerCase().includes(filter.toLowerCase())){
+                                                matchingChapters.push(chapter);
+                                                found = true;
+                                            }
+                                        }                                    
+                                    });
+                                }                            
+                            });
+                        }
+                        else {
+                            console.error("Not recognized type", chapter.type);
+                        }
                     }
-                    else if(dataItem.type == 'p') {
-                        dataItem.text.forEach(function(p) {
-                            if(!found) {
-                                p.forEach(function(textItem) {
-                                    if(!found) {
-                                        if (textItem.text.toString().toLowerCase().includes(filter.toLowerCase())){
-                                            matchingChapters.push(chapter);
-                                            found = true;
-                                        }
-                                    }                                    
-                                });
-                            }                            
-                        });
-                    }
-                    else {
-                        console.error("Not recognized type", chapter.type);
-                    }
-                }
-            });         
-        });
-        return matchingChapters;
-    }
-    return allData;
+                });         
+            });
+            resolve(matchingChapters);
+        }
+        resolve(allData);
+    });
 }
 
 function findMatchingSubChapters(chapter, key) {
@@ -89,5 +95,6 @@ function chapterTitleMatchesSearch(chapter, key) {
 
 export {
     SearchChapterTitles,
-    GetInformationChapters
+    GetAllInformationChapters,
+    GetFilteredInformationChapters
 };
