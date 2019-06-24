@@ -46,7 +46,7 @@ export class HomeScreen extends React.Component {
         <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeedStack', { drawerContent: "news" })}>
 
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="md-paper" reverse color="#FF3A0D" size={35} />
+          <Ionicons name="md-paper" reverse color="#FF3A0D" size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle1}>Fréttaveita</Text>
@@ -57,7 +57,7 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('InformationStack', { drawerContent: "information" })}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="md-information-circle" reverse color="#1500FF" size={35} />
+          <Ionicons name="md-information-circle" reverse color="#1500FF" size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle2}>Upplýsingar</Text>
@@ -68,7 +68,7 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('ReaderStack')}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="ios-book" reverse color="#05BC00" size={35} />
+          <Ionicons name="ios-book" reverse color="#05BC00" size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle3}>Handbók</Text>

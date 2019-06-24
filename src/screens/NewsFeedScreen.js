@@ -148,7 +148,7 @@ export class NewsFeedScreen extends React.Component {
                                 <Text style={Styles.dateText}>{this.getDate(element.displayDate)}</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "row", paddingRight: 5, paddingLeft: 10 }}>
-                                <CardTitle title={element.title} style={{ flex: 1, alignSelf: 'center'}} />
+                                <CardTitle title={element.title} style={{ flex: 1}} />
                             </View>
                             
                             <CardContent> 
