@@ -136,7 +136,7 @@ export default StyleSheet.create({
 
   searchedtext: {
     fontFamily: 'opensans-regular',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 15/PixelRatio.getFontScale(),
     paddingLeft: 15,
     color: '#696969',
 

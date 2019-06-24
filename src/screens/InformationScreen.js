@@ -100,7 +100,7 @@ export class InformationScreen extends React.Component {
                             {this.state.loaded ?
                                 <View>
                                     <SearchBar showLoading={this.state.searchingText} lightTheme round style={Styles.searchBar}
-                                        placeholder='Skrifaðu leitarorð hér...'
+                                        placeholder='Skrifaðu þrjá stafi eða fleiri til að leita...'
                                         placeholderTextColor='rgb(189, 194, 201)'
                                         searchIcon={{ color: 'grey', padding: 3 }}
                                         clearIcon={{ color: 'grey' }}
@@ -122,7 +122,7 @@ export class InformationScreen extends React.Component {
 
                                         }}
                                     />
-                                    {this.state.searchingText ? <Text style={Styles.p}>Leita að niðurstöðum sem innihalda: {this.currentFilter}</Text> : null}
+                                    {this.state.searchingText ? <Text style={Styles.searchedtext}>Sýni leitarniðurstöður sem innihalda: {this.currentFilter}</Text> : null }
                                     {infoItems}
                                 </View>
                                 :

@@ -1,4 +1,3 @@
-import cheerio from 'react-native-cheerio';
 import { ParseDataFromUrl } from './Parser'
 
 class InformationScraper {
@@ -40,7 +39,6 @@ class InformationScraper {
     }
     
     async init() {
-        console.log("Init");
         Promise.all([
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/skraningljosmaedra', "Skráning ljósmæðra á lista"),
@@ -107,13 +105,11 @@ class InformationScraper {
     }
 
     getData() {
-        console.log("Getting data " + this.data.length);
         return this.data;
     }
 
     setData(newData) {
-        this.data = newData;
-        console.log("Setting data " + this.data.length);        
+        this.data = newData;       
         if (this.dataChangedCallback) {
             this.dataChangedCallback(this.data);
         }

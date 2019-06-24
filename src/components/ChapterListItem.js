@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, FlatList, Icon, PixelRatio } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, FlatList, PixelRatio } from 'react-native'
 
 class ChapterListItem extends React.Component {
     constructor(props) {

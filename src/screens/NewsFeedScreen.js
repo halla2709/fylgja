@@ -5,7 +5,6 @@ import {
     Text,
     ActivityIndicator,
     TouchableWithoutFeedback,
-    PixelRatio
 } from 'react-native';
 import { WebBrowser } from 'expo';
 import {
@@ -83,7 +82,6 @@ export class NewsFeedScreen extends React.Component {
     getTextWithStyle(data) {
         function goToLink(href) {
             try {
-                console.log("Opening " + href)
                 if (href.startsWith("/")) {
                     WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
                 }

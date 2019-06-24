@@ -25,21 +25,19 @@ export default class App extends React.Component {
     // notification (rather than just tapping the app icon to open it),
     // this function will fire on the next tick after the app starts
     // with the notification data.
-    console.log("subscribing to notifications");
     if (Platform.OS === 'android') {
       Expo.Notifications.createChannelAndroidAsync('reminders', {
         name: 'Reminders',
         priority: 'max',
         vibrate: [0, 250, 250, 250],
       })
-        .then(() => { console.log("Created channel"); });
     }
     this._notificationSubscription = Notifications.addListener(this._handleNotification);
   }
 
   _handleNotification = (notification) => {
     this.popup.show({
-      onPress: function () { console.log("Navigating"); NavigationService.navigate('NewsFeedStack', { drawerContent: "news" }); },
+      onPress: function () { NavigationService.navigate('NewsFeedStack', { drawerContent: "news" }); },
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
       title: "Ný færsla",
