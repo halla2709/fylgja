@@ -134,6 +134,14 @@ export default StyleSheet.create({
     fontSize: 18/PixelRatio.getFontScale(),
   },
 
+  searchedtext: {
+    fontFamily: 'opensans-regular',
+    fontSize: 18/PixelRatio.getFontScale(),
+    paddingLeft: 15,
+    color: '#696969',
+
+  },
+
   pBold: {
     fontFamily: 'opensans-bold',
     fontSize: 18/PixelRatio.getFontScale(),
