@@ -10,6 +10,9 @@
     },
     "android": {
       "package": "com.fylgja.fylgja"
+    },
+    "ios": {
+      "bundleIdentifier": "com.fylgja.fylgja"
     }
   }
 }
