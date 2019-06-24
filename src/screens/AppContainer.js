@@ -20,7 +20,7 @@ export default class AppContainer extends React.Component {
       'merriweather-light': require('../assets/fonts/Merriweather/Merriweather-Light.ttf'),
       'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
       'dosis-regular': require('../assets/fonts/Dosis/Dosis-Regular.ttf'),
-      'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
+      'dosis-bold': require('../assets/fonts/Dosis/Dosis-Bold.ttf'),
       'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
       'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
 

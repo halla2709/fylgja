@@ -6,15 +6,18 @@ class ChapterListItem extends React.Component {
         super();
     }
 
-    shouldOpenChapter(currentChapterKey, level, chapter) {
-        const currentKeys = currentChapterKey.split(".");
-        const chapterKeys = chapter.key.split(".");
-        return currentKeys[level] == chapterKeys[level];
+    isCurrentChapter() {
+        if(this.props.currentChapter) {
+            const currentKeys = this.props.currentChapter.split(".");
+            const chapterKeys = this.props.chapter.key.split(".");
+            return currentKeys[this.props.level] == chapterKeys[this.props.level];
+        }
+        return false;
     }
 
     render() {
         this.subChapterView;
-        if(this.props.currentChapter && this.shouldOpenChapter(this.props.currentChapter, this.props.level, this.props.chapter)) {
+        if(this.isCurrentChapter()) {
             var subChapters = this.props.chapter.subchapters;
             if (subChapters && subChapters.length > 0) {
                 this.subChapterView = <FlatList
@@ -24,11 +27,9 @@ class ChapterListItem extends React.Component {
                 />
             }
         }
-        else {
-            this.subChapterView = null;
-        }
         
         var fontSize = (this.props.level == 0 ? 20 : 17)/PixelRatio.getFontScale();
+        var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';
         var indent = "";
         for (var i = 0; i < this.props.level; i++) {
             indent += "   ";
@@ -36,7 +37,7 @@ class ChapterListItem extends React.Component {
 
         const styles = StyleSheet.create({
             text: {
-                fontFamily: 'dosis-regular',
+                fontFamily: fontFamily,
                 fontSize: fontSize,
                 color: '#3a3a3a',
 
