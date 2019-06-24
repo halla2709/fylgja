@@ -585,9 +585,9 @@ backgroundImage: {
   },
 
   drawerItem: {
-    fontSize: 20/PixelRatio.getFontScale(),
-    padding: 10,
-    margin: 5,
+    fontSize: 18/PixelRatio.getFontScale(),
+    padding: 8,
+    margin: 4,
     textAlign: 'center',
     color: 'white',
     textShadowColor: 'rgba(0, 0, 0, 0.25)',
