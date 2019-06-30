@@ -35,6 +35,7 @@ class InformationScraper {
             "Heimaþjónustu samningar og leiðbeiningar",
             "Brjóstagjafaráðgjöf",
             "Skráning ljósmæðra á lista",
+            "Um Fylgjuappið"
         ];
     }
     
@@ -73,9 +74,10 @@ class InformationScraper {
         ])
             .then((items) => {
                 // Need to sort chapters here so they are in the right order
-                var item = {
+                var item1 =
+                    {
                     "name": "Launatafla",
-                    "key": items.length + 2,
+                    "key": items.length + 1,
                     "type": "p",
                     "data": [{
                         "type": "p",
@@ -85,13 +87,52 @@ class InformationScraper {
                                 "text": "Smelltu hér til að hlaða niður nýjustu launatöflu",
                                 "type": "a",
                                 "href": "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
-                                "key": items.length + 1,
+                                "key": items.length + 3,
                             }
                         ]],
                     }]
-                };
 
-                items.push(item);
+                    };
+                var item2 = 
+                {
+                    "name":"Um Fylgjuappið",
+                    "key": items.length + 4,
+                    "type": "p",
+                    "data": [{
+                        "type": "p",
+                        "key": items.length + 5,
+                        "text": [[
+                            {
+                                "text": "Þú ert með útgáfu 1.0 af Fylgju appinu.\nEf þú hefur athugasemdir eða hugmyndir um umbætur á appinu, sendu þá tölvupóst á",
+                                "type": "p",
+                                "key": items.length + 6,
+                                "href": "",
+                            },  
+                            {
+                                "text": "\nformadur@ljosmodir.is.",
+                                "type": "strong",
+                                "key": items.length + 7,
+                                "href": "",
+                            },                           
+                            {
+                                "text": "\n\nHöfundar appsins: ",
+                                "type": "p",
+                                "key": items.length + 8,
+                                "href": "",
+                            },
+                            {
+                                "text": "Halla Björk Ragnarsdóttir og Unnur Kristín Brynjólfsdóttir",
+                                "type": "strong",
+                                "key": items.length + 9,
+                                "href": "",
+                            }, 
+                        ]],
+                    
+                    }]
+                    
+                };
+                items.push(item1);
+                items.push(item2);
                 var result = [];
                 items.forEach(item => {
                     result[this.chapterOrder.indexOf(item.name)] = item;
