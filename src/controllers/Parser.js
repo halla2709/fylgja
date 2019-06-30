@@ -13,7 +13,6 @@ async function ParseDataFromUrl(url, name) {
         setTimeout(() => null, 0);
         return response.text();
     }).then((text) => {
-        console.log("Parsing " + name);
         const $ = cheerio.load(text);
         const container = $('.container');
         let pageTitle = container.find('.page-title').text().replace(/\s+/, '');

@@ -32,7 +32,6 @@ function GetAllInformationChapters() {
 async function GetFilteredInformationChapters(filter) {
     return new Promise(function(resolve, reject) {
         const allData = Scraper.getData();
-        console.log("Filtering by " + filter);
         if (filter && filter.length > 0) {
             var matchingChapters = [];
             allData.forEach(chapter => {

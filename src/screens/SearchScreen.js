@@ -2,18 +2,12 @@ import React from 'react';
 import {
   Text,
   View,
-  Button,
-  Alert,
-  TouchableOpacity,
   ScrollView,
-  TextInput,
   KeyboardAvoidingView,
   ImageBackground,
   PixelRatio
 } from 'react-native';
-import { Font } from 'expo';
 import Styles from './../styles/Styles';
-import { Ionicons } from '@expo/vector-icons';
 import { SearchBar } from 'react-native-elements';
 import { SearchChapterTitles } from './../controllers/SearchHelper';
 import Chapters from "../assets/testContent/chapters.js";

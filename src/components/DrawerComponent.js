@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image, ScrollView, FlatList, TouchableOpacity, ImageBackground, Icon } from 'react-native'
+import { Text, View, Image, ScrollView, FlatList, TouchableOpacity } from 'react-native'
 import { StackActions, NavigationActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'

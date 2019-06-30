@@ -2,13 +2,11 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, PixelRatio } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import { Scraper } from "../controllers/InformationScraper";
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
-    console.log(PixelRatio.getFontScale()); 
     this.state = {
       fontLoaded: props.screenProps.fontLoaded,
       isLargeWindow: Dimensions.get('window').height > 500

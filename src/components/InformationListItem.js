@@ -1,7 +1,6 @@
 import React from 'react'
 import {
-    Text, View, TouchableOpacity,
-    ActivityIndicator, StyleSheet, TouchableWithoutFeedback
+    Text, View, TouchableOpacity,StyleSheet
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import Styles from './../styles/Styles';
