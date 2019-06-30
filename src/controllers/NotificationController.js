@@ -38,7 +38,9 @@ export default async function registerForPushNotificationsAsync() {
   // Get the token that uniquely identifies this device
   token = await Notifications.getExpoPushTokenAsync();
 
-  firestore.collection("tokens").doc(token).set({})
+  firestore.collection("tokens").doc("tokens").update({
+    array: firebase.firestore.FieldValue.arrayUnion(token)
+  })
   .then(function(){
     console.log("Written to db");
   })
