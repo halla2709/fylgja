@@ -99,6 +99,7 @@ export class NewsFeedScreen extends React.Component {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
             case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;
             case 'strong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'th': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;

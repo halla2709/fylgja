@@ -9,10 +9,12 @@
       "image": "src/assets/images/icon.png"
     },
     "android": {
-      "package": "com.fylgja.fylgja"
+      "package": "com.fylgja.fylgja",
+      "icon": "src/assets/images/icon.png"    
     },
     "ios": {
-      "bundleIdentifier": "com.fylgja.fylgja"
+      "bundleIdentifier": "com.fylgja.fylgja",
+      "icon": "src/assets/images/icon_nottransparent.png"
     }
   }
 }
