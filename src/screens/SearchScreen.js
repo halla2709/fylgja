@@ -70,8 +70,8 @@ export class SearchScreen extends React.Component {
             <SearchBar lightTheme round style={Styles.searchBar} 
             placeholder='Skrifaðu leitarorð hér...'
             placeholderTextColor='rgb(189, 194, 201)'
-            searchIcon={{color: 'grey', padding:3}}
-            clearIcon={{color: 'grey'}}
+            searchIcon={{color: 'grey', padding:3,type: 'material-community'}}
+            clearIcon={{color: 'grey',type: 'material-community'}}
             inputStyle={{color: 'black', fontSize: 18/PixelRatio.getFontScale(), backgroundColor: 'white'}} //Style TextInput
             inputContainerStyle={Styles.p}
             containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10,}}
