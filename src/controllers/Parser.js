@@ -43,7 +43,7 @@ function originalFind(element, array, $) {
 function parseElement(element, array, $) {
     var table = $(element).find('table');
     table.remove();
-    var content = $(element).children('p, ul');
+    var content = $(element).children('p, ul, h1, h2, h3, h4, h5');
     content.each(function (i, p) {
         var final = [];
         var thisCurrent = findRawText(p, $, [], final);
@@ -99,16 +99,15 @@ function extractTable(element, array, $) {
     var rowContent = [];
     rows.each(function (i, tr) {
         var columnContent = [];
-        var columns = $(tr).find('td');
+        var columns = $(tr).find('th, td');
         columns.each(function (ii, td) {
             $(td).contents().map(function (iii, el) {
                 if (el.type === "text") {
-                    columnContent.push({ "text": $(el).text(), "type": "td", key: index++ });
+                    columnContent.push({ "text": $(el).text(), "type": td.tagName, key: index++ });
                 }
                 else {
                     GetTextWithType(td, columnContent, $);
                 }
-                
             });
         });
         rowContent.push({ key: index++, columns: columnContent });

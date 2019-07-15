@@ -43,6 +43,7 @@ export default class InformationListItem extends React.Component {
             case 'p': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
             case 'a': return <Text onPress={ () => {goToLink(data.href)} } style={Styles.pA} key={data.key}>{data.text}</Text>;
             case 'strong': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
+            case 'th': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'a href': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
@@ -61,7 +62,7 @@ export default class InformationListItem extends React.Component {
                 texts.push(f(textItem));
             });
             array.push(
-                <Text selectable={true} selectionColor="#4E75BC" key={ paragraphs.key+"."+index++ } >{texts}</Text>
+                <Text selectable={true} selectionColor="#4E75BC" key={ paragraphs.key+"."+index++ }>{texts}</Text>
             );
         });
         return views;
@@ -88,6 +89,9 @@ export default class InformationListItem extends React.Component {
                         if(dataColumn.text.trim().length > 1) {
                             if (dataColumn.type === 'strong') {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBoldCenter, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                            }
+                            else if(dataColumn.type === 'th') {
+                                columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBold, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);                                
                             }
                             else {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
