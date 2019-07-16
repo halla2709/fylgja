@@ -163,7 +163,7 @@ export default [{
                 "key": "10.6",
                 "name": "Fæðing",
                 "subchapters": [],
-                "content": "Ef gallsýrugildi eru undir 55 míkromól/L með eða án lyfjameðferðar getur konan beðið eftir sjálfkrafa fæðingu og þarf ekki nýja gallsýrumælingu nema einkenni versni. \nEf gallsýrugildi eru hærri en 55 míkromól/L og meðgöngulengd hefur náð 37v er ástæða til að framkalla fæðingu.\nEf gallsýrugildi eru hærri en 55 míkromól/L en meðgöngulengd hefur ekki náð 37v má auka við meðferð, stækka skammta eða bæta við lyfjum\nKonur með gallsýrugildi undir 55 míkromól/L geta fætt á fæðingastað D (skv skilgreiningu í leiðbeiningum landlæknis um val á fæðingarstað), hinar ættu að fæða á fæðingastað A-C.\n\nSjá nánar:\nFróðleiksmoli Heilsugæslu Höfuðborgarsvæðisins https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2015/Gallstasi_a_medgongu_Vinnuleidbeiningar.pdf"
+                "content": "Ef gallsýrugildi eru undir 55 míkromól/L með eða án lyfjameðferðar getur konan beðið eftir sjálfkrafa fæðingu og þarf ekki nýja gallsýrumælingu nema einkenni versni. \nEf gallsýrugildi eru hærri en 55 míkromól/L og meðgöngulengd hefur náð 37v er ástæða til að framkalla fæðingu.\nEf gallsýrugildi eru hærri en 55 míkromól/L en meðgöngulengd hefur ekki náð 37v má auka við meðferð, stækka skammta eða bæta við lyfjum\nKonur með gallsýrugildi undir 55 míkromól/L geta fætt á fæðingastað D (skv skilgreiningu í leiðbeiningum landlæknis um val á fæðingarstað), hinar ættu að fæða á fæðingastað A-C.\n\nSjá nánar:\nFróðleiksmoli Heilsugæslu Höfuðborgarsvæðisins https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe"
             },
         ],
 
