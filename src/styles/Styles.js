@@ -111,6 +111,7 @@ export default StyleSheet.create({
     fontFamily: 'merriweather-regular',
     fontSize: 22/PixelRatio.getFontScale(),
     paddingBottom: 5,
+    
   },
 
   h2informationminus: {
@@ -118,6 +119,7 @@ export default StyleSheet.create({
     fontSize: 22/PixelRatio.getFontScale(),
     paddingBottom: 5,
     color: 'rgb(34,82,171)',
+
   },
 
   TextShadowStyle:
