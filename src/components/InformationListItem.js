@@ -154,7 +154,7 @@ export default class InformationListItem extends React.Component {
                             :
                             <View style={Styles.infosubchaptercontainerminus}>
                                 <View style={Styles.info1}>
-                                    <Text numberOfLines={1} style={Styles.h2informationminus}>{this.props.title}</Text>
+                                    <Text numberOfLines={2} style={Styles.h2informationminus}>{this.props.title}</Text>
                                 </View>
                                 <View style={Styles.info2}>
                                     <Ionicons style={Styles.minusbutton} name="md-remove" size={30} />
