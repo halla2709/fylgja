@@ -134,6 +134,11 @@ export default StyleSheet.create({
     fontSize: 18/PixelRatio.getFontScale(),
   },
 
+  h1Information: {
+    fontFamily: 'opensans-regular',
+    fontSize: 24/PixelRatio.getFontScale(),
+  },
+
   searchedtext: {
     fontFamily: 'opensans-regular',
     fontSize: 15/PixelRatio.getFontScale(),
@@ -151,6 +156,13 @@ export default StyleSheet.create({
     fontFamily: 'opensans-bold',
     fontSize: 18/PixelRatio.getFontScale(),
     textAlign: 'center'
+  },
+
+  pBoldCenterU: {
+    fontFamily: 'opensans-bold',
+    fontSize: 18/PixelRatio.getFontScale(),
+    textAlign: 'center',
+    textDecorationLine: 'underline'
   },
 
   pA: {

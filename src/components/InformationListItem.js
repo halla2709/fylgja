@@ -23,7 +23,6 @@ export default class InformationListItem extends React.Component {
         }
     }
 
-    
     getTextWithStyle(data) {
         function goToLink(href) {
             try {
@@ -34,9 +33,9 @@ export default class InformationListItem extends React.Component {
                     WebBrowser.openBrowserAsync(href);
                 }
             }
-           catch(e) {
-               console.error(e);
-           }
+            catch(e) {
+                console.error(e);
+            }
         }
 
         switch (data.type) {
@@ -48,6 +47,7 @@ export default class InformationListItem extends React.Component {
             case 'p a': return <Text style={Styles.pBold} key={data.key}>{data.text}</Text>;
             case 'span': return <Text style={Styles.pBoldCenter} key={data.key}>{data.text}</Text>;
             case 'href': return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
+            case 'h1': return <Text style={Styles.h1Information} key={data.key}>{data.text}</Text>;
             default: return <Text style={Styles.p} key={data.key}>{data.text}</Text>;
         }
     }
@@ -71,11 +71,25 @@ export default class InformationListItem extends React.Component {
     formatColumns(columns) {
         var result = [];
         while (columns[0]) {
-            result.push(columns.splice(0,3));
+            result.push(columns.splice(0,2));
         }
         return result;
     }
 
+    goToLink(href) {
+        try {
+            if (href.startsWith("/")) {
+                WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+            }
+            else if(!href.startsWith("#")){
+                WebBrowser.openBrowserAsync(href);
+            }
+        }
+        catch(e) {
+            console.error(e);
+        }
+    }
+    
     render() {
         const allData = this.props.data;
         const self = this;
@@ -86,17 +100,18 @@ export default class InformationListItem extends React.Component {
                 dataItem.rows.forEach(function (dataRow) {
                     var columns = [];
                     dataRow.columns.forEach(function (dataColumn) {
-                        if(dataColumn.text.trim().length > 1) {
                             if (dataColumn.type === 'strong') {
-                                columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBoldCenter, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                                columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBoldCenterU, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
                             }
                             else if(dataColumn.type === 'th') {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBold, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);                                
                             }
+                            else if(dataColumn.type === 'a') {
+                                columns.push(<Text selectable={true} onPress={ () => {self.goToLink(dataColumn.href)} } style={[Styles.pA, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                            }
                             else {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
                             }
-                        }
                     });
 
                     rows.push(<View key = {dataRow.key} style={{borderBottomColor: 'black', borderBottomWidth: StyleSheet.hairlineWidth}}/>);
