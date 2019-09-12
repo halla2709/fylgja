@@ -43,7 +43,7 @@ function originalFind(element, array, $) {
 function parseElement(element, array, $) {
     var table = $(element).find('table');
     table.remove();
-    var content = $(element).children('p, ul, h1, h2, h3, h4, h5');
+    var content = $(element).children('p, ul, ol, h1, h2, h3, h4, h5');
     content.each(function (i, p) {
         var final = [];
         var thisCurrent = findRawText(p, $, [], final);
@@ -68,7 +68,16 @@ function findRawText(element, $, currentArray, topArray) {
                 currentArray = [];
             }
             else {
+                console.log("Child type " + child.type);
+                console.log("Child name " + $(child)[0].name)
                 currentArray = findRawText(child, $, currentArray, topArray);
+                if ($(child)[0].name == "li") {
+                    if(currentArray.length > 0) topArray.push([
+                        { "text": " ▪ ", "type": "strong", "href": "", key: index++ },
+                        ...currentArray
+                    ]);
+                    currentArray = [];
+                }
             }
         }
     });

@@ -15,12 +15,10 @@ class InformationScraper {
             "Launatafla",
             "Stofnanasamningar",
             "Laus störf",
-            "Upplýsingar til atvinnurekenda",
             "Lög og reglugerðir",
             "Alþjóða siðareglur",
             "Ljósmæðranámið",
             "Framhaldsnám",
-            "Hvað er ljósmóðir",
             "Skipulag ljósmæðraþjónustu á Íslandi",
             "Þjónustustaðir – símaskrá",
             "Höfuðborgarsvæðið",
@@ -32,6 +30,7 @@ class InformationScraper {
             "Suðurnes",
             "Heimafæðingaljósmæður",
             "Heimaþjónustuljósmæður",
+            "Starfandi sérfræðiljósmæður",
             "Heimaþjónustu samningar og leiðbeiningar",
             "Brjóstagjafaráðgjöf",
             "Skráning ljósmæðra á lista",
@@ -41,7 +40,6 @@ class InformationScraper {
     
     async init() {
         Promise.all([
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/hvad-er-ljosmodir', "Hvað er ljósmóðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/skraningljosmaedra', "Skráning ljósmæðra á lista"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/framhaldsnam', "Framhaldsnám"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/stofnanasamningar', "Stofnanasamningar"),
@@ -54,7 +52,6 @@ class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/utgafa/handbok-lmfi', "Handbók LMFÍ"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal', "Kjaramál"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/laus-storf', "Laus störf"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/upplysingar-til-atvinnurekenda', "Upplýsingar til atvinnurekenda"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/log_og_reglugerdir', "Lög og reglugerðir"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/althjodasidareglur', "Alþjóða siðareglur"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/ljosmaedranamid', "Ljósmæðranámið"),
@@ -70,7 +67,8 @@ class InformationScraper {
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimafaedingar', "Heimafæðingaljósmæður"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/heimathj-ljosm', "Heimaþjónustuljósmæður"),
             ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/log-og-samningar-og-leidbeiningar', "Heimaþjónustu samningar og leiðbeiningar"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/brjostagjafaradgjof', "Brjóstagjafaráðgjöf")
+            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/brjostagjafaradgjof', "Brjóstagjafaráðgjöf"),
+            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/serfraediljosmaedur', "Starfandi sérfræðiljósmæður")
         ])
             .then((items) => {
                 // Need to sort chapters here so they are in the right order
