@@ -68,8 +68,6 @@ function findRawText(element, $, currentArray, topArray) {
                 currentArray = [];
             }
             else {
-                console.log("Child type " + child.type);
-                console.log("Child name " + $(child)[0].name)
                 currentArray = findRawText(child, $, currentArray, topArray);
                 if ($(child)[0].name == "li") {
                     if(currentArray.length > 0) topArray.push([
