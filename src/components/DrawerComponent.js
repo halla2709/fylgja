@@ -3,7 +3,7 @@ import { Text, View, Image, ScrollView, FlatList, TouchableOpacity } from 'react
 import { StackActions, NavigationActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
-import Chapters from "../assets/testContent/chapters.js";
+import Chapters from "../assets/content/chapters.js";
 import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 
 export default class DrawerComponent extends React.Component {

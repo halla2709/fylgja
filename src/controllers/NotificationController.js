@@ -1,4 +1,5 @@
-import { Permissions, Notifications } from 'expo';
+import { Notifications } from 'expo';
+import * as Permissions from 'expo-permissions'
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 import firebaseConfig from '../assets/firebaseConfig';
@@ -6,8 +7,6 @@ import firebaseConfig from '../assets/firebaseConfig';
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
-const settings = {timestampsInSnapshots: true};
-firestore.settings(settings);
 var token;
 
 export default async function registerForPushNotificationsAsync() {
