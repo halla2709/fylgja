@@ -1,6 +1,6 @@
 import React from 'react';
 import { PixelRatio } from 'react-native';
-import { createStackNavigator, createDrawerNavigator } from 'react-navigation';
+import { createStackNavigator, createDrawerNavigator, createSwitchNavigator } from 'react-navigation';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
@@ -8,6 +8,7 @@ import { InformationScreen } from '../screens/InformationScreen.js';
 import { NewsOverviewScreen } from '../screens/NewsOverviewScreen.js';
 import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
+import { LogInScreen } from '../screens/LogInScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
 
 const ReaderStack = createStackNavigator({
@@ -79,7 +80,7 @@ const DrawerStack = createDrawerNavigator({
     });
 
 
-const RootStack = createStackNavigator({
+const AppStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
     {
@@ -106,5 +107,13 @@ const RootStack = createStackNavigator({
 
         })
     });
+
+const RootStack = createSwitchNavigator({
+    App: AppStack,
+    LogIn: LogInScreen
+},
+{
+    initialRouteName: 'LogIn'
+})
 
 export default RootStack;
