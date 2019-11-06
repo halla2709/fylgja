@@ -13,18 +13,30 @@ export default [
     },
     {
         "key": "3",
-        "name": "Skimun fyrir MÓSA, VÓE og BBL (ESBL, AmpC, Karbapenemasi)",
+        "name": "MÓSA, VÓE og BBL (ESBL, AmpC, Karbapenemasi)",
         "subchapters": [{
                 "key": "3.1",
-                "name": "Skimun göngudeildarsjúklinga",
+                "name": "Skimun",
                 "subchapters": [],
-                "content": "Afla upplýsinga í snjókorni Sögu, hjá sjúklingi, forráðamanni eða aðstandenda um hvort sjúklingur uppfylli skilmerki fyrir einangrun og/eða sýnatöku með eftirfarandi hætti:\n\n1. Hefur sjúklingur áður greinst með ónæmar bakteríur og er merktur í snjókorni Sögu? \nEf já: Spritta snertifleti við brottför sjúklings.\n2. Hefur sjúklingur starfað við eða notað heilbrigðisþjónustu erlendis á síðustu 6 mánuðum og dvöl varað lengur en 24 klst. eða farið í blóðskilun eða blóðskipti fósturs framkvæmd? \nEf já: Spritta snertifleti við brottför sjúklings.\n3. Er sjúklingur flóttamaður eða hælisleitandi? \nEf já: Spritta snertifleti við brottför sjúklings.\n4. Hefur sjúklingur verið með kýli eða endurteknar húðsýkingar (oftar en einu sinni) sem voru meðhöndlaðar með sýklalyfjum, síðustu 6 mánuði? \nEf já: Sýnataka fyrir MÓSA og spritta snertifleti við brottför sjúklings.\n\nEf fyrirséð er að sjúklingur/skjólstæðingur muni leggjast inn eða koma oft á Landspítala er sýnataka samkvæmt skimun á bráðamóttökum, dagdeildum og legudeildum."
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/413BAD5193BAD1F700257DEC00359C69?OpenDocument\nFlæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/413bad5193bad1f700257dec00359c69/$FILE/Fl%C3%A6%C3%B0irit%201%20og%202%20%C3%B3n%C3%A6mar%20bakter%C3%ADur%20j%C3%BAl%C3%AD%202018.pdf"
             },
             {
                 "key": "3.2",
-                "name": "Skimun á bráðamóttökum, dagdeildum og legudeildum",
+                "name": "MÓSA",
                 "subchapters": [],
-                "content": "Afla upplýsinga í snjókorni Sögu, hjá sjúklingi, forráðamanni eða aðstandenda um hvort sjúklingur uppfylli skilmerki fyrir einangrun og/eða sýnatöku með eftirfarandi hætti:\n\n1. Hefur sjúklingur áður greinst með ónæmar bakteríur og er merktur í snjókorni Sögu? \nEf já: Einangra og sýnataka skv. leiðbeiningum í smitgátararmi Sögu.\n2. Hefur sjúklingur starfað við eða notað heilbrigðisþjónustu erlendis á síðustu 6 mánuðum og dvöl varað lengur en 24 klst. eða farið í blóðskilun eða blóðskipti fósturs framkvæmd? \nEf já:\n- Einangra og sýnataka fyrir MÓSA, VÓE og BBL. Sýnataka fyrir VÓE og BBL er endurtekin á degi 2 ef sjúklingur leggst inn.\n- Einangrun er aflétt ef hraðgreiningarpróf eru neikvæð. Seinni skimsýni VÓE og BBL fara í ræktun til að staðfesta niðurstöðu hraðgreiningarprófa.\n- Sjúklingar sem koma beint frá sjúkrahúsum á Norðurlöndum og eiga neikvæð MÓSA, VÓE og BBL sýni, ekki eldri en vikugömul, þurfa ekki einangrun en tekin eru ný sýni við komu.\n3. Er sjúklingur flóttamaður eða hælisleitandi? \nEf já:\n- Einangra og sýnataka fyrir MÓSA, VÓE og BBL. Sýnataka fyrir VÓE og BBL er endurtekin á degi 2 ef sjúklingur leggst inn.\n- Einangrun er aflétt ef hraðgreiningarpróf eru neikvæð. Seinni skimsýni VÓE og BBL fara í ræktun til að staðfesta niðurstöðu hraðgreiningarprófa.\n4. Hefur sjúklingur sem á að leggjast inn verið búsettur eða ferðast á síðustu 6 mánuðum til landa utan Evrópu, Bandaríkjanna og Kanada (óháð notkun á heilbrigðisþjónustu)? \nEf já:\n- BBL-sýnataka daglega í 2 daga en ekki einangrun.\n- Einangra ef hraðgreiningarpróf er jákvætt.\n5. Hefur sjúklingur verið með kýli eða endurteknar húðsýkingar (oftar en einu sinni) sem voru meðhöndlaðar með sýklalyfjum, síðustu 6 mánuði? Ef já:\n- Einangrun og sýnataka fyrir MÓSA.\n- Einangrun er aflétt ef hraðgreiningarpróf eru neiðkvæð."
+                "content": "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/C77B3A41ECBD6CC200257DEC003EB320?OpenDocument\nFræðsluefni fyrir skjólstæðinga https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ce493240dbc354c900257dec003dbce3/$FILE/M%C3%93SA_fr%C3%A6%C3%B0sluefni.pdf"
+            },
+            {
+                "key": "3.3",
+                "name": "VÓE",
+                "subchapters": [],
+                "content": "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/80319ED9DCC5B7EE00257E980052E96B?OpenDocument\nFræðsluefni fyrir skjólstæðinga https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/9485a03190b7879c00257dec0049c1fc/$FILE/Vancomycin%20on%C3%A6mir%20enterokokkar%20(VOE).pdf"
+            },
+            {
+                "key": "3.4",
+                "name": "BBL myndandi bakteríur",
+                "subchapters": [],
+                "content": "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/880EC0EC5346B7BA00257DED003E0FD6?OpenDocument\nFræðsluefni fyrir skjólstæðinga – AmpC og ESBL myndandi bakteríur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/2869f72ee506421500257ded003e0781/$FILE/Fj%C3%B6l%C3%B3n%C3%A6mar%20bakter%C3%ADur_BBL%20AmpC_ESBL.pdf\nFræðsluefni fyrir skjólstæðinga – Karbapenemasa myndandi bakteríur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/2869f72ee506421500257ded003e0781/$FILE/Fj%C3%B6l%C3%B3n%C3%A6mar%20bakter%C3%ADur_BBL%20Karba.pdf"
             },
         ],
     },
@@ -81,6 +93,42 @@ export default [
                 "subchapters": [],
                 "content": "1.\nEf vægur tilfinningalegur vandi, bjóða þá þéttari viðtöl við ljósmóður í mæðravernd, innan 2 vikna. Nota má EPDS og GAD-7 til nánara mats.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 2.\nEf alvarlegur vandi, fara þá beint í meðferðarþrep 3, t.d.:\n▪Já við 10. Spurningu á EPDS um sjálfskaða.\n▪15 stig eða meira á GAD-7.\n2.\n Bjóða hópmeðferð fyrir þungaðar konur hjá ljósmóður eða sálfræðingi í heilsugæslu.\nBjóða almenna HAM-hópmeðferð við þunglyndi og kvíða ef hentar betur. Tilvísun frá lækni til sálfræðings á stöð.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 3.\n3.\nSamráð við heilsugæslulækni eða sálfræðing á stöð til ítarlegra mats á vanda og meðferðarþörf.\n4.\n Ef alvarlegur geðheilbrigðisvandi, vísa þá til inntökuteymis geðsviðs Landspítala, í samráði við heilsugæslulækni.\n\nSjá fróðleiksmola HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Vinnulag%20vi%C3%B0%20me%C3%B0fer%C3%B0%20%C3%BEunglyndis%20og%20kv%C3%AD%C3%B0a%C3%AD%20m%C3%A6%C3%B0ravernd%202017.pdf"
              },
+             {
+                "key": "6.7",
+                "name": "Fróðleiksmoli",
+                "subchapters": [],
+                "content": "https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Vinnulag%20vi%C3%B0%20me%C3%B0fer%C3%B0%20%C3%BEunglyndis%20og%20kv%C3%AD%C3%B0a%C3%AD%20m%C3%A6%C3%B0ravernd%202017.pdf"
+             },
+             {
+                "key": "6.8",
+                "name": "Geðræn vandamál í barneignarferlinu",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/208996F2BDCE519F00257E75003D3C63"
+             },
+             {
+                "key": "6.9",
+                "name": "Átröskun og meðganga, fræðslubæklingur",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga.pdf"
+            },
+             {
+                "key": "6.10",
+                "name": "Gæðaskjal LSH um andlega vanlíðan/geðröskun í barneignarferlinu",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/8F5F652A5659339E00257E75003D30CC"
+           },
+             {
+                "key": "6.11",
+                "name": "Lyf vegna geðraskana í barneignarferli",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/BE04A4BAE7D1BC1400257E75003D39A7"
+            },
+            {
+                "key": "6.12",
+                "name": "Flæðirit umönnunar",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/A818CED1C42B2A4400257E75003D5549"
+            },
         ],
     },
     {
@@ -229,6 +277,25 @@ export default [
                 "subchapters": [],
                 "content": "https://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf"
             },
+            {
+                "key": "18.8",
+                "name": "Börn mæðra með sykursýki",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/369BE48A2563282D00257E760050FB85"
+            },
+            {
+                "key": "18.9",
+                "name": "Gæðaskjal LSH um meðgöngusykursýki og sykursýki týpu II",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/16FF731BBB1EFC8800257E7500467930"
+            },
+            {
+                "key": "18.10",
+                "name": "Gæðaskjal LSH um IDDM",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/18819147B6C12DEF00257E75004672C6"
+            },
+            
         ],
     },
     {
@@ -275,19 +342,19 @@ export default [
                 "key": "19.7",
                 "name": "Eftirfylgd",
                 "subchapters": [],
-                "content": "Vægur gallstasi (gallsýrur 16-100 míkrómól/L): Mæðravernd á heilsugæslustöð í samráði við fæðinga –og kvensjúkdómalækni. Konur þurfa oft ekki lyfjameðferð með UDCA, heldur nægja kláðastillandi lyf og almenn ráð.\nEndurtaka gallsýrumælingar vikulega.\nFramköllun fæðingar við 39-40 vikur.\nVið sjálfkrafa sótt geta konur fætt á fæðingarstað D.\n\nAlvarlegur gallstasi (gallsýrur >100 míkrómól/L): Vísa í áhættumæðravernd Landspítala. Ástæða til að framkalla fæðingu ef meðgöngulengd hefur náð 37 vikum.\nFæðing á fæðingarstað A.\n\nSjá nánar: Fróðleiksmola Heilsugæslu Höfuðborgarsvæðisins https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe"
+                "content": "Vægur gallstasi (gallsýrur 16-100 míkrómól/L): Mæðravernd á heilsugæslustöð í samráði við fæðinga –og kvensjúkdómalækni. Konur þurfa oft ekki lyfjameðferð með UDCA, heldur nægja kláðastillandi lyf og almenn ráð.\nEndurtaka gallsýrumælingar vikulega.\nFramköllun fæðingar við 39-40 vikur.\nVið sjálfkrafa sótt geta konur fætt á fæðingarstað D.\n\nAlvarlegur gallstasi (gallsýrur >100 míkrómól/L): Vísa í áhættumæðravernd Landspítala. Ástæða til að framkalla fæðingu ef meðgöngulengd hefur náð 37 vikum.\nFæðing á fæðingarstað A.\n\nSjá nánar: Fróðleiksmola Heilsugæslu Höfuðborgarsvæðisins https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe\nGæðahandbók LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/EE9F2643BA4F185500257E760036824B?OpenDocument"
              },
         ],
     },
     {
         "key": "20",
         "name": "Minnkaðar hreyfingar",
-        "content": "Allt að 15% þungaðra kvenna láta vita af minnkuðum hreyfingum fósturs á þriðja þriðjungi meðgöngu. Fjórðungur þessara kvenna fær slæma útkomu eins og t.d. vaxtarskerðingu, fyrirburafæðingu, lægri apgar við fæðingu, innlögn á vökudeild og þær eru í aukinni hættu á andvana fæðingu.\nKonur í ofþyngd, sem reykja eða eru eldri en 35 ára eru í meiri hættu á óhagstæðari útkomu, einnig þær sem skynja minnkaðar fósturhreyfingar endurtekið, bíða lengi með að leita ráða, það er meira en 48 klukkustundir með minnkaðar hreyfingar eða meira en 24 klukkustundir með engar hreyfingar.\n\nSkynjun móður á minnkuðum hreyfingum getur stafað af sakleysislegum eða alvarlegum ástæðum. Eftirfarandi þættir geta haft áhrif á skynjun fósturhreyfinga:\Móðir: ofþyngd, aukið legvatn, staðsetning fylgju, lyf, reykingar, önnum kafin móðir, alvarlegur járnskortur, sjúkdómar móður, vanstarfsemi fylgju.\nBarn: sofandi, dáið, steragjöf til að auka lungnaþroska (getur valdið tímabundnum minnkuðum hreyfingum), blóðleysi fósturs, fósturgallar, yfirvofandi fósturköfnun.\nMikilvægt er að taka góða sögu og vera vel vakandi fyrir áhættuþáttum sem geta haft áhrif á fósturvöxt s.s. háþrýstingi, sykursýki, reykingum, lyfja/vímuefnanotkun og næringarástandi.",
+        "content": "Allt að 15% þungaðra kvenna láta vita af minnkuðum hreyfingum fósturs á þriðja þriðjungi meðgöngu. Fjórðungur þessara kvenna fær slæma útkomu eins og t.d. vaxtarskerðingu, fyrirburafæðingu, lægri apgar við fæðingu, innlögn á vökudeild og þær eru í aukinni hættu á andvana fæðingu.\nKonur í ofþyngd, sem reykja eða eru eldri en 35 ára eru í meiri hættu á óhagstæðari útkomu, einnig þær sem skynja minnkaðar fósturhreyfingar endurtekið, bíða lengi með að leita ráða, það er meira en 48 klukkustundir með minnkaðar hreyfingar eða meira en 24 klukkustundir með engar hreyfingar.\n\nSkynjun móður á minnkuðum hreyfingum getur stafað af sakleysislegum eða alvarlegum ástæðum. Eftirfarandi þættir geta haft áhrif á skynjun fósturhreyfinga:\nMóðir: ofþyngd, aukið legvatn, staðsetning fylgju, lyf, reykingar, önnum kafin móðir, alvarlegur járnskortur, sjúkdómar móður, vanstarfsemi fylgju.\nBarn: sofandi, dáið, steragjöf til að auka lungnaþroska (getur valdið tímabundnum minnkuðum hreyfingum), blóðleysi fósturs, fósturgallar, yfirvofandi fósturköfnun.\n\nMikilvægt er að taka góða sögu og vera vel vakandi fyrir áhættuþáttum sem geta haft áhrif á fósturvöxt s.s. háþrýstingi, sykursýki, reykingum, lyfja/vímuefnanotkun og næringarástandi.",
         "subchapters": [{
                 "key": "20.1",
                 "name": "Meðferð",
                 "subchapters": [],
-                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu\n\n-Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n-Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n-Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n-Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits.\n-Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar.\n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nSjá einnig: Fróðleiksmoli Heilsugæslu Höfuðborgarsvæðisins um minnkaðar hreyfingar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf\nGrein á ljosmodir.is “Ljósmóðirin skrifar um fósturhreyfingar á meðgöngu” http://www.ljosmodir.is/asset/349/fosturhreyfingar.pdf\nHeimildir: gæðahandbók LSH"
+                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu.\n\n- Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n- Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n- Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n- Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits. \n- Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar. \n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nGæðaskjal LSH\nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD\n\nFróðleiksmoli HH\nhttps://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf\n\nGrein á ljosmodir.is \“Ljósmóðirin skrifar um fósturhreyfingar á meðgöngu\""
             },
         ],
     },
@@ -600,6 +667,12 @@ export default [
                 "subchapters": [],
                 "content": "(e. post term)\nBarn sem fætt er eftir 42 meðgönguvikur. \n\nHelstu einkenni: \nBörnin eru oft stór en grönn vegna fylgjuþurrðar. \nHúðin er oft flögnuð og soðin. \nNeglur eru langar. \nHypoglycemia. \nAukin hætta er á dauða in utero\n\nHeimildir:\nGamla fylgju handbók https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631",
             },
+            {
+                "key": "33.7",
+                "name": "Flæðirit",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ce71226d7cab254200257e7600391796/$FILE/endurl%C3%ADfgun%20n%C3%BDbura%20fl%C3%A6%C3%B0irit.pdf"
+          },
         ],
     },
     {
@@ -655,14 +728,14 @@ export default [
                 "key": "36.1",
                 "name": "Helstu áhættuþættir",
                 "subchapters": [],
-                "content": "Fyrirburar\nBlæðing/mar í eða eftir fæðingu\nBlóðflokkamisræmi\nLítil næringarinntekt" 
+                "content": "Fyrirburar\nBlæðing/mar í eða eftir fæðingu\nBlóðflokkamisræmi\nLítil næringarinntekt",
             },
             {
                 "key": "36.2",
                 "name": "Mat",
                 "subchapters": [],
-                "content": "Sýnileg gula á húð og í augnhvítu gefur vísbendingu um hækkað bilirubin í blóði nýbura, sér í lagi ef gulan er greinileg á neðri hluta líkamans. Að meta dreifingu gula litarins frá toppi til táar getur gagnast við klínískt mat þegar gula er að þróast, sjá mynd.\n\nSýnileg gula hjá nýbura á fyrsta sólarhring eftir fæðingu er að öllum líkindum vegna óeðlilega mikils niðurbrots á rauðum blóðkornum og þarfnast tafarlausrar skoðunar læknis. Líklegasta ástæða þess er blóðflokkamisræmi milli móður og barns.\nÖnnur klínísk einkenni gulu/hækkandi bilirubingilda eru slappleiki og lystarleysi, barnið sefur mikið/erfitt er að vekja barnið og það hefur takmarkaðan áhuga á brjóstagjöf/fæðuinntekt.\n\nEf klínískt mat gefur tilefni til er gerð blossamæling, ef blossamæling gefur tilefni til er bilirubin í blóði mælt.\n\nHjálpartæki fyrir klínískt mat:"
-            },
+                "content": "nSýnileg gula á húð og í augnhvítu gefur vísbendingu um hækkað bilirubin í blóði nýbura, sér í lagi ef gulan er greinileg á neðri hluta líkamans. Önnur klínísk einkenni gulu/hækkandi bilirubingilda eru slappleiki og lystarleysi, barnið sefur mikið/erfitt er að vekja barnið og það hefur takmarkaðan áhuga á brjóstagjöf/fæðuinntekt.\nAð meta dreifingu gula litarins frá toppi til táar getur gagnast við klínískt mat þegar gula er að þróast, sjá mynd.\n\nHjálpartæki fyrir klínískt mat: \n\n\n\nSvæði 1: 100 µmol/ L\nSvæði 2: 150 µmol/ L\nSvæði 3: 200 µmol/ L\nSvæði 4: 250 µmol/ L\nSvæði 5: >250 µmol/ L\n\nSýnileg gula hjá nýbura á fyrsta sólarhring eftir fæðingu er að öllum líkindum vegna óeðlilega mikils niðurbrots á rauðum blóðkornum og þarfnast tafarlausrar skoðunar læknis. Líklegasta ástæða þess er blóðflokkamisræmi milli móður og barns."
+               },
             {
                 "key": "36.3",
                 "name": "#EkkiBirta#",
@@ -672,18 +745,36 @@ export default [
             },
             {
                 "key": "36.4",
+                "name": "Ljósamörk",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/9a1a2416ce6c3f7400257e760050c6f6/$FILE/N%C3%BDburagula%20-%20Lj%C3%B3sam%C3%B6rk.pdf"
+            },
+            {
+                "key": "36.5",
                 "name": "Meðferð",
                 "subchapters": [],
-                "content": "Mikilvægt er að barn með gulu fái nóg að drekka og drekki oft. Börn með gulu er oft löt að drekka og þá þarf að hvetja þau til að drekka. Fyrst og fremst á að mæla með aðferðum sem örva mjólkurframleiðslu svo sem handmjólkun, notkun mjaltavéla og síðast en ekki síst að fylgjast með hvort barnið sjúgi rétt. Ljósmæður ættu ekki ráðleggja sólböð fyrir nýbura með gulu en geta óhikað mælt með því að gluggatjöld séu dregin frá svo nýburinn fái notið dagsbirtunnar.\nTelji ljósmæður þörf á meðferð við gulu er rétt að vísa barninu til barnalæknis.\n\nSjá Gæðahandbók LSH fyrir áhættuþætti, mat og meðferð"
+                "content": "Mikilvægt er að barn með gulu fái nóg að drekka og drekki oft. Börn með gulu er oft löt að drekka og þá þarf að hvetja þau til að drekka. Fyrst og fremst á að mæla með aðferðum sem örva mjólkurframleiðslu svo sem handmjólkun, notkun mjaltavéla og síðast en ekki síst að fylgjast með hvort barnið sjúgi rétt. Ljósmæður ættu ekki ráðleggja sólböð fyrir nýbura með gulu en geta óhikað mælt með því að gluggatjöld séu dregin frá svo nýburinn fái notið dagsbirtunnar. \nTelji ljósmæður þörf á meðferð við gulu er rétt að vísa barninu til barnalæknis."
             },
+            {
+                "key": "36.6",
+                "name": "Gæðaskjal LSH",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/B5FE90B3A2A4254E00257E760050B68D" 
+            },
+            {
+                "key": "36.7",
+                "name": "Fræðslubæklingur",
+                "subchapters": [],
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12c2d9065477ece000257e760050bbed/$FILE/N%C3%BDburagula_yfirfari%C3%B0%20b%C3%A6klingur.pdf"
+           },
         ],
     },
     {
         "key": "37",
         "name": "Sýnatökur fyrir nýburaskimun",
         "subchapters": [],
-        "content": "Þeir sem taka sýni í þerripappír beðnir um að vanda til verka við sýnatökuna og lesa gaumgæfilega þau atriði sem nefnd eru hér að neðan. \nFarið yfir Upplýsingarbækling um nýburaskimun með foreldrum. Kynnið ykkur „Leiðbeiningar vegna sýnatöku“ á sýnatökubeiðninni fyrir sýnatökuna. Takið sýnið á réttum tíma, þegar barnið er 48-72 stunda gamalt. \nGætið þess að sótthreinsandi vökvi hafi þornað áður en blóðið er látið drjúpa í pappírinn. \nGætið þess að blóðið nái að væta þerripappírinn í gegn, annars er ekki rétt magn blóðs notað í rannsóknina, sem veldur „röngum“ niðurstöðum. \nGætið þess að sýnið hafi náð að þorna (2-3 klst), áður það er sett í umslagið, ásamt öllum nauðsynlegum upplýsingum sem beðið er um. \nAthugið sérstaklega að geta um lyfjagjafir móður fyrir fæðingu og barns eftir fæðingu. Einkum sýklalyfjagjafir geta ruglað mælingar. \nSendið sýnin STRAX (samdægurs) til Erfða- og sameindalæknisfræðideildar LSH. Ekki láta foreldra sjá um sendinguna. \nEkki safna sýnunum saman og senda í bunkum. „Týndu börnin“ – munið að það á að taka sýni úr öllum nýburum. \nSá aðili sem tekur sýnið, er beðinn um að skrá niður nafn sitt og GSM símanúmer, svo hægt sé að hafa samband ef athugasemdir eru við sýnatökuna."
-    },
+        "content": "nGæðaskjal LSH\nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EEE382157BA774B800257E760050D6B2"
+      },
     {
         "key": "38",
         "name": "Nálastungur",
