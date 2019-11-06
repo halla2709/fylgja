@@ -10,7 +10,7 @@ import {
 import Styles from './../styles/Styles';
 import { SearchBar } from 'react-native-elements';
 import { SearchChapterTitles } from './../controllers/SearchHelper';
-import Chapters from "../assets/testContent/chapters.js";
+import Chapters from "../assets/content/chapters.js";
 
 export class SearchScreen extends React.Component {
 

@@ -1,12 +1,14 @@
 export default [
     {
         "key": "1",
+        "parent": "1",
         "name": "Klínískar Leiðbeiningar",
         "content": "Meðgönguvernd heilbrigðra kvenna í eðlilegri meðgöngu\nhttps://www.landlaeknir.is/servlet/file/store93/item2548/4407.pdf \n\nNICE: Antenatal care for uncomplicated pregnancies\nhttps://www.nice.org.uk/guidance/CG62 \n\nMeðgöngusykursýki, klínískar leiðbeiningar\nhttps://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf\n\nNICE: Antenatal and postnatal mental health: clinical management and service guidance\nhttps://www.nice.org.uk/guidance/CG192 \n\nOfbeldi í nánum samböndum: Mat og viðbrögð: Klínískar leiðbeiningar, 2012\nhttps://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf \n\nNICE: Intrapartum care for healthy women and babies\nhttps://www.nice.org.uk/guidance/cg190\n\nWHO recommendations on antenatal care for a positive pregnancy experience\n http://apps.who.int/iris/bitstream/10665/250796/1/9789241549912-eng.pdf?ua=1\n\nWHO recommendations: intrapartum care for a positive childbirth experience\nhttp://apps.who.int/iris/bitstream/10665/260178/1/9789241550215-eng.pdf?ua=1\n\nSjá fleiri leiðbeiningar á vefsíðu Ljósmæðrafélagsins,\nhttps://www.ljosmaedrafelag.is/utgafa/kliniskar-leidbeiningar",
         "subchapters": [],
     },
     {
         "key": "2",
+        "parent": "2",
         "name": "Aðrar Leiðbeiningar",
         "content": "Áhættumat mæðraverndar\nhttps://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/%C3%81h%C3%A6ttumat%20m%C3%A6%C3%B0raverndar%20n%C3%B3vember%202017.pdf\n\nVinnulag við meðferð þunglyndis og kvíða\nhttps://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Vinnulag%20vi%C3%B0%20me%C3%B0fer%C3%B0%20%C3%BEunglyndis%20og%20kv%C3%AD%C3%B0a%C3%AD%20m%C3%A6%C3%B0ravernd%202017.pdf\n\nTvíburameðganga – vinnuleiðbeiningar\nhttps://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Tv%C3%ADburame%C3%B0ganga%20Vinnulei%C3%B0beiningar%20um%20m%C3%A6%C3%B0ravernd%202016.pdf\n\nLeiðbeiningar um val á fæðingarstað\nhttps://www.landlaeknir.is/servlet/file/store93/item2818/3304.pdf \n\nFaglegar leiðbeiningar fyrir heimaþjónustu ljósmæðra\nhttps://www.landlaeknir.is/servlet/file/store93/item23146/Fagl-leidbein-heima_ljosmaedur_2014_heildarskjal.pdf \n\nHeilsufarsflokkun sængurkonu og barns\nhttps://www.sjukra.is/media/eydublodin/heilsufarsflokkun-saengurkonu-og-barns.doc \n\nLeiðbeiningar um mataræði á meðgöngu\nhttps://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
         "subchapters": [],
@@ -14,6 +16,7 @@ export default [
     {
         "key": "3",
         "name": "MÓSA, VÓE og BBL (ESBL, AmpC, Karbapenemasi)",
+        "parent": "3",
         "subchapters": [{
                 "key": "3.1",
                 "name": "Skimun",
@@ -41,6 +44,7 @@ export default [
         ],
     },
     {
+        "parent": "1",
         "key": "4",
         "name": "Væntanlegur fæðingardagur",
         "subchapters": [],

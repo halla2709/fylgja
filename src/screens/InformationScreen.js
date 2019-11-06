@@ -11,7 +11,7 @@ import Styles from './../styles/Styles';
 import InformationListItem from '../components/InformationListItem';
 import { Scraper } from "../controllers/InformationScraper";
 import { SearchBar } from 'react-native-elements';
-import { GetAllInformationChapters, GetFilteredInformationChapters } from './../controllers/SearchHelper';
+import { GetAllInformationChapters, GetFilteredInformationChapters } from '../controllers/SearchHelper';
 
 export class InformationScreen extends React.Component {
     constructor() {

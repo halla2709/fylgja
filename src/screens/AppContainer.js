@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Font,
-} from 'expo';
+import * as Font from 'expo-font';
 import RootStack from '../controllers/ApplicationNavigation.js';
 
 export default class AppContainer extends React.Component {
@@ -23,9 +21,8 @@ export default class AppContainer extends React.Component {
       'dosis-bold': require('../assets/fonts/Dosis/Dosis-Bold.ttf'),
       'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
       'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
-
-      'Material Icons': require('@expo/vector-icons/fonts/MaterialIcons.ttf'),
-      'MaterialIcons': require('@expo/vector-icons/fonts/MaterialIcons.ttf'),
+      'MaterialIcons': require('../assets/fonts/MaterialIcons.ttf'),
+      'Material Icons': require('../assets/fonts/MaterialIcons.ttf'),
     });
     this.setState({ fontLoaded: true });
     

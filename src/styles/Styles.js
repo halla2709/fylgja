@@ -361,13 +361,14 @@ export default StyleSheet.create({
     justifyContent: 'space-around'
   },
 
-  search: {
+  input: {
     width: 400,
     padding: 5,
     margin: 10,
     borderColor: 'rgb(128,128,128)',
     borderWidth: 2,
     backgroundColor: 'rgb(255,255,255)',
+    borderRadius: 10
 
   },
   searchtext: {
@@ -619,6 +620,14 @@ backgroundImage: {
     alignSelf: 'stretch',
     flexDirection: 'column',
     width: '100%'
-  }
+  },
 
+  // login
+  loginContainer: {
+    flex: 3,
+    alignItems: 'center'
+  },
+  textInput: {
+    flex:1
+  }
 });

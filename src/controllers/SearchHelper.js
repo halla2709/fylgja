@@ -1,4 +1,4 @@
-import Chapters from "../assets/testContent/chapters.js";
+import Chapters from "../assets/content/chapters.js";
 import { Scraper } from "./InformationScraper";
 
 function SearchChapterTitles(key) {

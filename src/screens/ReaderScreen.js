@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TouchableHighlight, Image, ScrollView, } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import Chapters from "../assets/testContent/chapters.js";
+import Chapters from "../assets/content/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import { WebBrowser } from 'expo';
