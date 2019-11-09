@@ -4,7 +4,7 @@ import {
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons';
 import Styles from './../styles/Styles';
-import { WebBrowser } from 'expo';
+import * as WebBrowser from 'expo-web-browser';
 
 export default class InformationListItem extends React.Component {
     componentWillMount() {

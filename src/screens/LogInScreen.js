@@ -3,7 +3,7 @@ import { AsyncStorage, Text, View, TouchableOpacity, TextInput, ImageBackground 
 import Styles from './../styles/Styles';
 
 export class LogInScreen extends React.Component {
-  ACCESS_WORD = "fylgjaljosmodir"
+  ACCESS_WORD = "fylgjaljosmodir";
   static navigationOptions = {
     header: null
   }
