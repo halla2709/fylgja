@@ -5,7 +5,8 @@ import { Ionicons } from '@expo/vector-icons';
 import Chapters from "../assets/content/chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
-import { WebBrowser } from 'expo';
+import * as WebBrowser from 'expo-web-browser';
+
 
 export class ReaderScreen extends React.Component {
 
