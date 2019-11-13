@@ -50,7 +50,6 @@ export class NewsOverviewScreen extends React.Component {
         ])
             .then((items) => {
                 data.frett = items[0][0];
-                console.log(data.frett);
                 data.vidburdur = items[1][0];
                 data.radstefna = items[2][0];
                 data.malstofa = items[3][0];

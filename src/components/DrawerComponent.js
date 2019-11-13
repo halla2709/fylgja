@@ -23,7 +23,6 @@ export default class DrawerComponent extends React.Component {
 
   GenerateDrawerContent() {
     if(this.currentRouteParams.drawerContent === "chapters") {
-      console.log("Creating drawer content");
       this.drawerContent = 
      <FlatList 
           data={Chapters}
@@ -39,7 +38,6 @@ export default class DrawerComponent extends React.Component {
       return;
     if (this.drawerContent != null) {
       if(routeParams.drawerContent === "chapters" && routeParams.currentChapter == this.currentRouteParams.currentChapter) {
-        console.log("Current chapter is still " + routeParams.currentChapter + ". Nothing has changed.");
         return;
       }
       this.currentRouteParams = routeParams;

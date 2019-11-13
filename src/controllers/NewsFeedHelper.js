@@ -37,7 +37,6 @@ function parseBody(data) {
 }
 
 function GetDate(dateString) {
-    console.log("Getting date from " + dateString)
     var date = new Date(dateString);
     var monthNames = [
         "janúar", "febrúar", "mars",
