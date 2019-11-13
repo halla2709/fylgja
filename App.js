@@ -1,7 +1,7 @@
 import React from 'react';
 import { Notifications } from 'expo';
 import * as Font from 'expo-font';
-import { View, Text, Platform } from 'react-native';
+import { View, Text, Platform, YellowBox } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
 import InformationScraper from './src/controllers/InformationScraper';
 import registerForPushNotificationsAsync from './src/controllers/NotificationController';
@@ -10,12 +10,12 @@ import Styles from './src/styles/Styles';
 import NavigationService from './src/controllers/NavigationService';
 
 export default class App extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       notification: {}
     };
+    YellowBox.ignoreWarnings(['Setting a timer']);
   }
 
   async componentDidMount() {
