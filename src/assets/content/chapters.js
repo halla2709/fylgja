@@ -54,7 +54,7 @@ export default [
         "key": "5",
         "name": "Lyf á meðgöngu",
         "subchapters": [],
-        "content": ""
+        "content": "Sjá fróðleiksmola heilsugæslunnar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Lyf%20%C3%A1%20me%C3%B0g%C3%B6ngu%20april%202016.pdf"
     },
     {
         "key": "6",
@@ -65,7 +65,7 @@ export default [
                 "key": "6.1",
                 "name": "Skimun",
                 "subchapters": [],
-                "content": "Í fyrstu komu í meðgönguvernd ætti að spyrja um:\n▪Fyrri eða núverandi alvarlega geðræna sjúkdóma.\n▪Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi.\n▪Fjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli"
+                "content": "Í fyrstu komu í meðgönguvernd ætti að spyrja um:\n▪Fyrri eða núverandi alvarlega geðræna sjúkdóma.\n▪Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi.\nFjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli"
             },
             {
                 "key": "6.2",
@@ -144,13 +144,19 @@ export default [
                 "key": "7.1",
                 "name": "Skimunarspurningar",
                 "subchapters": [],
-                "content": "https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fd55427735fb5431002583b7005e5a52/$FILE/Kannabis%20og%20me%C3%B0ganga.pdf"
+                "content": "VANTAR",
             },
             {
                 "key": "7.2",
                 "name": "Flæðirit",
                 "subchapters": [],
-                "content": "",
+                "content": "VANTAR",
+            },
+            {
+                "key": "7.3",
+                "name": "Vímuefnaneysla og barneignarferlið",
+                "subchapters": [],
+                "content": "Vímuefnaleit í þvagi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CC23442B89B1AE5800257E760037E8BE\n\nKannabis á meðgöngu, fræðsluefni https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fd55427735fb5431002583b7005e5a52/$FILE/Kannabis%20og%20me%C3%B0ganga.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CFC3355E8A6651C200257E760037D8D2\n\nÍtarefni til leiðbeininga og stuðnings https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FF6AF863579AEF3B00257E760037EF08\n\nVímuefni og brjóstagjöf https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/BA97EF5EE5365C3700257E7600381851",
             }
         ],
     },
@@ -1162,7 +1168,7 @@ export default [
     {
         "key": "47",
         "name": "Blæðing á meðgöngu",
-        "content": "9 mánuðir https://www.9manudir.is/\nFyrirburar .is http://fyrirburar.is/\nHeilsuborg https://heilsuborg.is/\nHeilsugæsla Höfuðborgarsvæðisins https://www.heilsugaeslan.is/\nHeilsuvera https://www.heilsuvera.is/\nJafnrétti .is https://www.jafnretti.is/\nLandlæknir https://www.landlaeknir.is/\nLjósmóðir .is http://www.ljosmodir.is/\nLjósmæðrafélag Íslands https://www.ljosmaedrafelag.is/\nNúvitundarsetrið https://www.nuvitundarsetrid.is/\nSjúkratryggingar Íslands https://www.sjukra.is/\n\nGamla handbók Fylgjunnar https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631",
+        "content": "",
         "subchapters": [
         {   
             "key": "47.1",
@@ -1173,7 +1179,7 @@ export default [
         {   
             "key": "47.2",
             "name": "Eftir 22 vikur",
-            "content": "Gæðaskjal LSH\nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5878505932557DA700257E760038FBF7",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5878505932557DA700257E760038FBF7",
                 "subchapters": [],
             },
         ],
@@ -1186,8 +1192,8 @@ export default [
         [
             {   
                 "key": "48.1",
-                "name": "Viðbrögð við alvarlegri blæðingu - Flæðirit",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F7B234D1D3122F6400257E76003905FB",
+                "name": "Viðbrögð við alvarlegri blæðingu",
+                "content": "Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F7B234D1D3122F6400257E76003905FB",
                 "subchapters": [],
                 },
             ],
@@ -1264,7 +1270,287 @@ export default [
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F3569A6D8373DC9A00257F08002E578E",
                 "subchapters": [],
                 },
-            ],
+        ],
+                
 }, 
+{
+    "key": "51",
+    "name": "Síðfyrirburar",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5E78096815ED115600257E7600508728",
+    "subchapters": [
+        {   
+            "key": "51.1",
+            "name": "Brjóstagjöf síðfyrirbura",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/3a14086bbd073a5d00257fd40041f126?OpenDocument",
+            "subchapters": [],
+            },
+        {   
+            "key": "51.2",
+            "name": "Fræðslubæklingur",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12b2f5bf4a227c6a00257e76005093e9/$FILE/S%C3%AD%C3%B0fyrirburar%20-%20Foreldrab%C3%A6klingur.pdf",
+            "subchapters": [],
+            },
+        {   
+            "key": "51.3",
+            "name": "Fræðslubæklingur, að hefja mjólkurframleiðslu",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12b2f5bf4a227c6a00257e76005093e9/$FILE/S%C3%AD%C3%B0fyrirburar%20-%20Foreldrab%C3%A6klingur.pdf",
+            "subchapters": [],
+            },
+
+        ],
+},
+
+{
+    "key" : "52",
+    "name" : "Brjóstagjöf – vandamál",
+    "content" : "",
+    "subchapters": [
+        {   
+            "key": "52.9",
+            "name": "Sárar geirvörtur",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/96DAF177829189A100257E7600505915\n\nFyrirbygging sársauka í geirvörtum https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FB6A258FBA15EFE200257EED003F8B10\n\nOrsakaþættir sársauka í geirvörtum https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/4FC9DBA3B7DBDD6F00257EED003FE115",
+            "subchapters": [],
+            },
+            {   
+            "key": "52.10",
+            "name": "Sýking í geirvörtu",
+            "content": "Bakteríusýking https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/4F552BD2561165E100257E760050681F\n\nSveppasýking https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/7CCE0849B0E6E5F500257E7600507102",
+            "subchapters": [],
+            },
+            {   
+            "key": "52.11",
+            "name": "Stálmi",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EFA993EBDF7FC56800257E7600505C0D",
+            "subchapters": [],
+            },
+            {   
+            "key": "52.12",
+            "name": "Brjóstabólga",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/2D92B218110192FC00257E7600514ED2\n\nFlæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/503f6896c21d168a00257f700037dc96/$FILE/Fl%C3%A6%C3%B0irit%20brj%C3%B3stab%C3%B3lga_lesi%C3%B0_GH_IEi.pdf\n\nFræðslubæklingur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/f7474b42619dec1000257f700037f82c/$FILE/Brj%C3%B3stab%C3%B3lga%20og%20brj%C3%B3stagj%C3%B6f_fr%C3%A6%C3%B0sla_lesi%C3%B0GH.pdf",
+            "subchapters": [],
+            },
+        ],
+},
+
+{
+    "key": "53",
+    "name": "Tunguhaft",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/2D2B826D5231E547002580B9004CD106",
+    "subchapters": [
+        {   
+            "key": "53.1",
+            "name": "Mat á tunguhafti",
+            "content": "Matslisti Hazelbaker (ATLFF) https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/74a1bef00e418ad7002580d4003ff4a0/$FILE/Matslisti%20Hazelbaker%20.pdf\n\nBristol tounge assessment tool (BTAT) https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/74a1bef00e418ad7002580d4003ff4a0/$FILE/Kl%C3%ADn%C3%ADskt%20mat%20%C3%A1%20tunguhafti.pdf",
+            "subchapters": [],
+            },
+        
+        ],
+}, 
+{
+    "key": "54",
+    "name": "Vaxtarseinkun",
+    "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2015/Vaxtarseinkun.pdf\n\nFlæðirit LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/252dc1b82557f9db00257e7600515c06/$FILE/Vaxtarseinkun%20flaedirit.pdf",
+    "subchapters": [],
+}, 
+{
+    "key": "55",
+    "name": "Fósturlát",
+    "content": "Fósturlát verður í um 15% allra greindra þungana. Talið er að þriðja hver kona missi fóstur á frjósemisskeiðinu. Ekki er talin ástæða til að rannsaka orsök fósturláts fyrr en konan hefur misst fóstur þrisvar sinnum. Algengasta ástæða fósturláts er fósturgalli, en aðrar ástæður geta verið galli í fylgjuvef eða sjúkdómur hjá móður. \n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5DCA63B1CF3290AA00257E760036AD9A\n\nUpplýsingablækingur vegna framköllunar fósturláts við 12-22 vikur. https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fe94c0877812b0f400257e760036c2a8/$FILE/Uppl%C3%BDsingar%20vi%C3%B0%20innskrift-Framkallad%20f%C3%B3sturlat%2012-22%20vikur.pdf",
+    "subchapters": [],
+}, 
+{
+    "key": "56",
+    "name": "Framköllun fæðingar",
+    "content": "Ábendingar:\n▪Meðgöngulengd >41 vika\n▪Vaxtarseinkun fósturs\n▪Langvinnur háþrýstingur og meðgöngulengd >40 vikur\n▪Vægur háþrýstingur eða góð viðbrögð við meðferð og meðgöngulengd 40 vikur\n▪Meðal/alvarlegur háþrýstingur og meðgöngulengd >37 vikur\n▪Meðgöngueitrun\n▪Legvatn fer áður en sótt hefst\n▪Grunur um fósturstreitu\n▪Tvíburameðganga\n▪Rh mótefnamyndun/blóðflokkamisræmi\n▪Alvarlegir sjúkdómar á meðgöngu s.s. sykursýki, gallstasi, rauðir úlfar eða annað sem hefur áhrif á fylgjustarfsemi og fósturvöxt\n▪Andvana barn\n▪Sálfélagslegir þættir\n▪Konur 40 ára og eldri – ræða framköllun fæðingar við 40-41 viku.\n\nAngusta® er notað við framköllun fæðingar hjá öllum konum nema þeim sem eru með ör á legi eða með Bishop score > 8.\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Framk%C3%B6llun%20f%C3%A6%C3%B0ingar%202017.pdf\n\nGæðaskjal LSH – ábendingar https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1FC5AA668C05775300257E7600541856\n\nBishop score https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/8A3B392269A5E6F800257E7600516E2F\n\nFramköllun fæðingar með Angusta® https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F71D91F1B572821A00257E7600516AA5\n\nFramköllun fæðingar með foley þvaglegg\nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CAE068241F5EE97300257E7600542EE5\n\nMeistararitgerð Ástu Hlínar Ólafsdóttur (2018) – Áhrif framköllunar fæðingar eftir 41 vikna meðgöngu á fæðingarmáta og útkomu fæðingar https://skemman.is/bitstream/1946/31122/3/Ritger%c3%b0in6.pdf",
+    "subchapters": [],
+}, 
+{
+    "key": "57",
+    "name": "Fyrirburar",
+    "content": "Yfirvofandi fyrirburafæðing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1221A55C909AB83F00257E75004649F0\n\nFyrirburafæðing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6B870FB97F61273300257E75004658E9\n\nFyrirburar .is http://www.fyrirburar.is/",
+    "subchapters": [],
+}, 
+
+{
+    "key": "58",
+    "name": "Legvatnsleki",
+    "content": "",
+    "subchapters": 
+    [
+        {   
+            "key": "58.1",
+            "name": "PPROM < 22 vikur",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FC7C91F6435D943F00257E7500463A7B",
+            "subchapters": [],
+            },
+            {   
+            "key": "58.2",
+            "name": "PPROM 22-37 vikur",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CBBB642712F43B3B00257E7500462F1F",
+            "subchapters": [],
+        },
+        {   
+            "key": "58.3",
+            "name": "PROM >37 vikur",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1A84E6DEE6329D4C00257E75004633CF",
+            "subchapters": [],
+            },
+        ],
+},
+{
+    "key": "59",
+    "name": "Fæðing eftir fyrri keisaraskurð",
+    "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Faeding%20eftir%20keisaraskurd.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/845DCB667546237A00257E760036DDC4\n\nBæklingaröð Ljósmæðrafélags Íslands http://ljosmodirdev.wm.is/asset/342/faeding_eftir_fyrri_keisara.pdf",
+    "subchapters": 
+    [],
+},
+{
+    "key": "60",
+    "name": "Fæðing í vatni",
+    "content": "",
+    "subchapters": 
+    [
+        {   
+            "key": "60.1",
+            "name": "Ábendingar og frábendingar",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5230B402777A729300257E7600369A71",
+            "subchapters": [],
+            },
+            {   
+            "key": "60.2",
+            "name": "Fæðing í vatni",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5230B402777A729300257E7600369A71",
+            "subchapters": [],
+        },
+    ],
+},
+{
+    "key": "61",
+    "name": "Þvagteppa í og eftir fæðingu",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6ED2300B9CE9C41000257E7600385557",
+    "subchapters": [],
+},
+{
+    "key": "62",
+    "name": "Þriðja stig fæðingar",
+    "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Faeding%20eftir%20keisaraskurd.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/845DCB667546237A00257E760036DDC4\n\nBæklingaröð Ljósmæðrafélags Íslands http://ljosmodirdev.wm.is/asset/342/faeding_eftir_fyrri_keisara.pdf",
+    "subchapters": 
+    [
+        {   
+            "key": "62.1",
+            "name": "Gæðaskjal LSH",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/CEC934FF5D05D8D900257E760050A0F4?OpenDocument",
+            "subchapters": [],
+            },
+            {   
+            "key": "62.2",
+            "name": "Föst fylgja og fanghlutar",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6054462A71FCB73C00257E7600369573",
+            "subchapters": [],
+        },
+    ],
+},
+{
+    "key": "63",
+    "name": "GBS á meðgöngu",
+    "content": "Ekki er mælt með skimun fyrir GBS meðal allra barnshafandi kvenna hér á landi.\nMælt er með að eftirfarandi hópar kvenna fái fyrirbyggjandi sýklalyf í æð í fæðingu:\n▪Kona sem hefur áður fætt barn með GBS sýkingu\n▪GBS hefur greinst í þvagi á meðgöngunni\n▪GBS hefur greinst í stroki frá leggöngum á meðgöngunni\n▪Klínísk merki um sýkingu í fæðingu\n▪Fyrirburafæðing\n\nHafi kona áður greinst með GBS er mælt með að taka sýni við 35-37 vikna meðgöngu.\nGæðaskjal LSH \nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F15F54157E4BB35B00257E7600370A60\n\nFlæðirit\nhttps://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/a57646296b18b6b8002582490038633d/$FILE/Fl%C3%A6%C3%B0irit-GBS.JPG\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=e0b30f0b-9cc6-11e9-9445-005056bc2afe",
+    "subchapters": 
+    [],
+},
+{
+    "key": "64",
+    "name": "Hiti í og eftir fæðingu",
+    "content": "",
+    "subchapters": 
+    [
+        {   
+            "key": "64.1",
+            "name": "Hiti í fæðingu",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EE810EA43081BEEE00257E7600515470",
+            "subchapters": [],
+            },
+            {   
+            "key": "64.2",
+            "name": "Hiti eftir fæðingu",
+            "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1EC9C99797AFEEBB00257E760054415B",
+            "subchapters": [],
+        },
+    ],
+},
+{
+    "key": "65",
+    "name": "Eftirlit á meðgöngu eftir magahjáveitu, magaband, magaermi",
+    "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=ecf6e214-9cc6-11e9-9445-005056bc2afe\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/DE034194BB7BC45C00257E75004508FA",
+    "subchapters": [],
+},
+{
+    "key": "66",
+    "name": "Umönnun eftir keisaraskurð",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C01F78BC914861B500257E75004552E5",
+    "subchapters": [],
+},
+{
+    "key": "67",
+    "name": "Ógleði og uppköst á meðgöngu/hyperemesis gravidarum",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3BD9C2107796661200257E7600387514\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Hyperemesis%20gravidarum%202017.pdf",
+    "subchapters": [],
+},
+{
+    "key": "68",
+    "name": "Áverki/fall á meðgöngu",
+    "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3700AD2F51A575C700257E7600388C76",
+    "subchapters": [],
+},
+{
+    "key": "69",
+    "name": "Spangaráverkar í fæðingu",
+    "content": "Gæðaskjöl LSH\n\nVerndun spangar https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/39BA52BAC612E1AD00257E760037758E\n\nFyrstu og annarar gráðu spangarrifur og spangarklipping https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/A7C940CC5AB5C7F500257E760037816A\n\nSaumaskapur á fyrstu og annarar gráðu spangarrifum og spangarklippingu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/025523EDA4C8236900257E7600378698\n\nSkýringarmyndir - viðgerð annarar gráðu spangarrifu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ac99b3e7ecc812fd00257e7600379081/$FILE/Vi%C3%B0ger%C3%B0%20annars%20stigs%20spangarrifu-Sk%C3%BDringarmyndir.pdf\n\nÞriðju og fjórðu gráðu spangarrifur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/12B744084574CD0C00257E760037927F\n\nFræðslubæklingur – rof á hringvöðva endaþarms https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/763e1d3432daf33300257e760037a089/$FILE/Rof%20%C3%A1%20hringv%C3%B6%C3%B0va%20enda%C3%BEarms_A5_snu.pdf\n\nMeistararitgerð Eddu Sveinsdóttur - Áhrif innleiðingar breytts vinnulags á öðru stigi fæðingar á alvarlega spangaráverka á Landspítala https://skemman.is/bitstream/1946/25034/2/Edda%20Sveinsd%c3%b3ttir%20ritger%c3%b0%2005062016.pdf\n\nHeimasíða Gynzone https://www.gynzone.net/",
+    "subchapters": [],
+},
+{
+    "key": "70",
+    "name": "Verkjastilling í fæðingu",
+    "content": "",
+    "subchapters": [
+        {
+            "key": "70.1",
+            "name": "Langdregið forstig fæðingar",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6F7980BC8D23D69D00257E760038BBF9",
+            "subchapters": [],
+        },
+        {
+            "key": "70.2",
+            "name": "Glaðloft",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/AED7EF188EFDF36C00257E760038C0C2",
+            "subchapters": [],
+        },
+        {
+            "key": "70.3",
+            "name": "Vatnsbólur",
+            "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/B9F922D68123F10000257E760038E835",
+            "subchapters": [],
+        },
+        {
+            "key": "70.4",
+            "name": "Nálastungur",
+            "content": "Sjá kafla um Nálastungur",
+            "subchapters": [],
+        },
+        {
+            "key": "70.5",
+            "name": "Utanbastdeyfing",
+            "content": "Epidural í sídreypi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E631693A2C6D219C002581B0005A5EF0\n\nSpinal höfuðverkur – há spinal deyfing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3532D65C01F4438B00257E760038D007\n\nFræðslubæklingur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/7e4348dc0a5835ef0025826500541988/$FILE/M%C3%A6nur%C3%B3tardeyfing%20(epiduraldeyfing)%20%C3%AD%20f%C3%A6%C3%B0ingu.%20breyttur.pdf",
+            "subchapters": [],
+        },
+    ],
+},
+{
+    "key": "71",
+    "name": "Þvagfærasýkingar á meðgöngu",
+    "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Syklamiga,%20einkennalaus%20og%20tvagfaerasykingar%20%C3%A1%20medgongu%202016.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/DEFF6EAE78F66F610025822C0049BC9E",
+    "subchapters": [],
+},
+
+
 
 ]

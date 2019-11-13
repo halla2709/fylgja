@@ -14,6 +14,7 @@ export default class AppContainer extends React.Component {
   async componentDidMount() {
     await Font.loadAsync({
       'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
+      'merriweather-bold': require('../assets/fonts/Merriweather/Merriweather-Bold.ttf'),
       'merriweather-regular': require('../assets/fonts/Merriweather/Merriweather-Regular.ttf'),
       'merriweather-light': require('../assets/fonts/Merriweather/Merriweather-Light.ttf'),
       'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),

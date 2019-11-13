@@ -89,9 +89,9 @@ export default StyleSheet.create({
   },
 
   h2: {
-    fontFamily: 'merriweather-light',
-    fontSize: 20/PixelRatio.getFontScale(),
-    alignSelf: 'center',
+    fontFamily: 'merriweather-bold',
+    fontSize: 18/PixelRatio.getFontScale(),
+    
   },
 
   searchh2: {
@@ -387,14 +387,14 @@ export default StyleSheet.create({
     width: '100%',
     backgroundColor: 'rgb(248,248,249)',
     borderRadius: 10,
-    opacity: 0.6,
+    opacity: 0.7,
 
   },
 
   searchBar: {
     backgroundColor: 'white',
     color: 'white',
-    fontSize: 10/PixelRatio.getFontScale(),
+    fontSize: 12/PixelRatio.getFontScale(),
     alignSelf: 'center',
   },
 
