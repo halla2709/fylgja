@@ -304,7 +304,7 @@ export default [
     {
         "key": "17",
         "name": "Endurlífgun nýbura",
-        "content": "Aðhlynning og endurlífgun nýbura felst í eftirfarandi: \n- Blóðgjöf frá fylgju um naflastreng (þegar við á) með því að seinka því að skilið sé á milli. \n- Þurrka barnið, vefja það líni og grípa til frekari aðgerða til viðhalds eðlilegum líkamshita (36,5°C - 37,5°C) sé þess þörf. \n- Meta ástand barnsins og þörf fyrir frekari inngrip. \n- Halda öndunarvegi opnum. \n- Anda fyrir barnið með belg og maska ef það andar ekki sjálft. \n- Halda áfram öndunarhjálp þar til barnið fer að anda sjálft. \n- Hefja skal hjartahnoð ef hjartsláttur er undir 60 slögum á mínútu eftir fimm þanblástra (e. inflation breaths) og 30 sekúndur af virkri öndunarhjálp því til viðbótar.\n\nÍ langflestum tilvikum er nóg að veita öndunarhjálp svo barnið taki við sér og fari að anda sjálft. Loftun lungna og viðvarandi öndunarhjálp er algjör forsenda endurlífgunar nýbura. Í stöku tilvikum er útfall hjarta hins vegar það skert að flæði súrefnisríks blóðs frá loftfylltum lungum til hjarta er ófullnægjandi. Þegar svo er, getur þurft að beita hjartahnoði með öndunarhjálpinni, en þá oftast aðeins í stuttan tíma. Enn fátíðara er að því til viðbótar þurfi að grípa til lyfja.\n\nSjá nánar grein í ljósmæðrablaðinu, bls 29, júlí 2018.\nhttps://www.ljosmaedrafelag.is/assets/Lj%C3%B3sm%C3%A6%C3%B0rabla%C3%B0i%C3%B0/LMFI-1tbl-j%C3%BAl-2018-2_2980460.pdf",
+        "content": "Aðhlynning og endurlífgun nýbura felst í eftirfarandi: \n▪Blóðgjöf frá fylgju um naflastreng (þegar við á) með því að seinka því að skilið sé á milli. \n▪Þurrka barnið, vefja það líni og grípa til frekari aðgerða til viðhalds eðlilegum líkamshita (36,5°C - 37,5°C) sé þess þörf. \n▪Meta ástand barnsins og þörf fyrir frekari inngrip. \n▪Halda öndunarvegi opnum. \n▪Anda fyrir barnið með belg og maska ef það andar ekki sjálft. \n▪Halda áfram öndunarhjálp þar til barnið fer að anda sjálft. \n▪Hefja skal hjartahnoð ef hjartsláttur er undir 60 slögum á mínútu eftir fimm þanblástra (e. inflation breaths) og 30 sekúndur af virkri öndunarhjálp því til viðbótar.\n\nÍ langflestum tilvikum er nóg að veita öndunarhjálp svo barnið taki við sér og fari að anda sjálft. Loftun lungna og viðvarandi öndunarhjálp er algjör forsenda endurlífgunar nýbura. Í stöku tilvikum er útfall hjarta hins vegar það skert að flæði súrefnisríks blóðs frá loftfylltum lungum til hjarta er ófullnægjandi. Þegar svo er, getur þurft að beita hjartahnoði með öndunarhjálpinni, en þá oftast aðeins í stuttan tíma. Enn fátíðara er að því til viðbótar þurfi að grípa til lyfja.\n\nSjá nánar grein í ljósmæðrablaðinu, bls 29, júlí 2018.\nhttps://www.ljosmaedrafelag.is/assets/Lj%C3%B3sm%C3%A6%C3%B0rabla%C3%B0i%C3%B0/LMFI-1tbl-j%C3%BAl-2018-2_2980460.pdf",
         "subchapters": [
             {
                 "key": "17.1",
@@ -432,13 +432,13 @@ export default [
                 "key": "26.2",
                 "name": "Koparlykkja",
                 "subchapters": [],
-                "content": "Hentug getnaðarvörn og uppsetning auðveld 6-12 vikum eftir fæðingu. Á meðan tíðastopp varir eftir fæðingu, sem er lengur eftir því sem brjóstagjöf varir\nlengur, veldur lykkjan ekki sinni algengustu aukaverkun, sem er auknar\nblæðingar. Hér á landi er lykkjan algengasta getnaðarvörn kvenna, sem\nalið hafa börn. Lykkjuna má hafa þann tíma sem konan þarf á vörn að halda eða allt upp í 10 ár.  \n\nHelstu kostir koparlykkju\n- Örugg getnaðarvörn (+99%)\n- Lykkjan veitir vörn þar sem hún er þ.e. í leginu og er því ekki virk til að koma í veg fyrir þungun utan legs þ.e. utanlegsfóstur. \n- Gleymist ekki\n- Hefur ekki áhrif á hormónastarfssemi líkamans\n\nAukaverkanir\nAuknar blæðingar eru algengasta aukaverkunin því hentar koparlykkjan síst þeim konum sem hafa miklar blæðingar. \nEkki er þekktur langtímaskaði af völdum koparlykkju. "
+                "content": "Hentug getnaðarvörn og uppsetning auðveld 6-12 vikum eftir fæðingu. Á meðan tíðastopp varir eftir fæðingu, sem er lengur eftir því sem brjóstagjöf varir\nlengur, veldur lykkjan ekki sinni algengustu aukaverkun, sem er auknar\nblæðingar. Hér á landi er lykkjan algengasta getnaðarvörn kvenna, sem\nalið hafa börn. Lykkjuna má hafa þann tíma sem konan þarf á vörn að halda eða allt upp í 10 ár.\n\nHelstu kostir koparlykkju\n▪Örugg getnaðarvörn (+99%)\n▪Lykkjan veitir vörn þar sem hún er þ.e. í leginu og er því ekki virk til að koma í veg fyrir þungun utan legs þ.e. utanlegsfóstur. \n▪Gleymist ekki\n▪Hefur ekki áhrif á hormónastarfssemi líkamans\n\nAukaverkanir\nAuknar blæðingar eru algengasta aukaverkunin því hentar koparlykkjan síst þeim konum sem hafa miklar blæðingar. \nEkki er þekktur langtímaskaði af völdum koparlykkju. "
             },
             {
                 "key": "26.3",
                 "name": "Hormónalykkjan",
                 "subchapters": [],
-                "content": "Frábrugðin koparlykkjunni að því leyti að hún inniheldur lyfið levónorgestrel sem líkir eftir áhrifum prógestrón. Lykkjan sjálf hefur sín staðbundnu áhrif á legið á sama hátt og koparlykkjan en levónorgestrel breytir legslímhúðinni þannig að hún verður ekki tilbúin til að taka við frjóvguðu eggi. Levónorgestrel veldur breytingum á slími\nleghálsins og vökvasamsetningu í eggjaleiðurum og torveldar þannig flutning sæðis til eggjaleiðara. Misjafnt er hversu mikil áhrif lyfið hefur á egglos, sumar konur hafa egglos og aðrar ekki. \nHérlendis eru mest notaðar tvær gerðir hormónalykkja\n- Mirena hefur hylki sem endist í 5-7ár\n- Jaydess er aðeins minni lykkja og hefur hylki sem endist í 3ár.\n\nHelstu kostir homónalykkju\n- Örugg getnaðarvörn (+99%)\n- Gleymist ekki\n- Blæðingar minnka eða hverfa alveg sem mörgum konum finnst ákjósanlegt\n- Aðeins staðbundin verkun\n- Virkar strax eftir uppsetningu\n\nHelstu aukaverkanir\n- Algengastar eru milliblæðingar í byrjun\n- Þyngdaraukning\n- Bólur á húð\n- Blóðtappahætta er afar lítil\n\nHormónalykkjan er afar örugg þar sem bæði eru áhrif lykkju og áhrif hormóna til að hindra þungun og ver hormónalykkja bæði fyrir þungun í legi og utan þess. "
+                "content": "Frábrugðin koparlykkjunni að því leyti að hún inniheldur lyfið levónorgestrel sem líkir eftir áhrifum prógestrón. Lykkjan sjálf hefur sín staðbundnu áhrif á legið á sama hátt og koparlykkjan en levónorgestrel breytir legslímhúðinni þannig að hún verður ekki tilbúin til að taka við frjóvguðu eggi. Levónorgestrel veldur breytingum á slími\nleghálsins og vökvasamsetningu í eggjaleiðurum og torveldar þannig flutning sæðis til eggjaleiðara. Misjafnt er hversu mikil áhrif lyfið hefur á egglos, sumar konur hafa egglos og aðrar ekki. \nHérlendis eru mest notaðar tvær gerðir hormónalykkja\n▪Mirena hefur hylki sem endist í 5-7ár\n▪Jaydess er aðeins minni lykkja og hefur hylki sem endist í 3ár.\n\nHelstu kostir homónalykkju\n▪Örugg getnaðarvörn (+99%)\n▪Gleymist ekki\n▪Blæðingar minnka eða hverfa alveg sem mörgum konum finnst ákjósanlegt\n▪Aðeins staðbundin verkun\n▪Virkar strax eftir uppsetningu\n\nHelstu aukaverkanir\n▪Algengastar eru milliblæðingar í byrjun\n▪Þyngdaraukning\n▪Bólur á húð\n▪Blóðtappahætta er afar lítil\n\nHormónalykkjan er afar örugg þar sem bæði eru áhrif lykkju og áhrif hormóna til að hindra þungun og ver hormónalykkja bæði fyrir þungun í legi og utan þess. "
             },
             {
                 "key": "26.4",
@@ -798,7 +798,7 @@ export default [
                 "key": "41.1",
                 "name": "Meðferð",
                 "subchapters": [],
-                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu.\n\n- Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n- Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n- Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n- Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits. \n- Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar. \n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf\n\nGrein á síðu Ljósmæðrafélagsins“Ljósmóðirin skrifar um fósturhreyfingar á meðgöngu\""
+                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu.\n\n▪Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n▪Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n▪Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n▪Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits. \n▪Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar. \n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf\n\nGrein á síðu Ljósmæðrafélagsins“Ljósmóðirin skrifar um fósturhreyfingar á meðgöngu\""
             }
         ]
     },
@@ -1084,6 +1084,7 @@ export default [
     {
         "key": "47",
         "name": "Nýburagula",
+        "content":"",
         "subchapters": [
             {
                 "key": "47.1",
@@ -1095,35 +1096,42 @@ export default [
                 "key": "47.2",
                 "name": "Mat",
                 "subchapters": [],
-                "content": "Sýnileg gula á húð og í augnhvítu gefur vísbendingu um hækkað bilirubin í blóði nýbura, sér í lagi ef gulan er greinileg á neðri hluta líkamans. Önnur klínísk einkenni gulu/hækkandi bilirubingilda eru slappleiki og lystarleysi, barnið sefur mikið/erfitt er að vekja barnið og það hefur takmarkaðan áhuga á brjóstagjöf/fæðuinntekt.\nAð meta dreifingu gula litarins frá toppi til táar getur gagnast við klínískt mat þegar gula er að þróast, sjá mynd.\n\nHjálpartæki fyrir klínískt mat: "
+                "content": "Sýnileg gula á húð og í augnhvítu gefur vísbendingu um hækkað bilirubin í blóði nýbura, sér í lagi ef gulan er greinileg á neðri hluta líkamans. Önnur klínísk einkenni gulu/hækkandi bilirubingilda eru slappleiki og lystarleysi, barnið sefur mikið/erfitt er að vekja barnið og það hefur takmarkaðan áhuga á brjóstagjöf/fæðuinntekt.\nAð meta dreifingu gula litarins frá toppi til táar getur gagnast við klínískt mat þegar gula er að þróast, sjá mynd."
             },
             {
                 "key": "47.3",
                 "name": "#EkkiBirta#",
                 "subchapters": [],
                 "image": require('../images/handbok_27-3.png'),
-                "content": "Svæði 1: 100 µmol/ L\nSvæði 2: 150 µmol/ L\nSvæði 3: 200 µmol/ L\nSvæði 4: 250 µmol/ L\nSvæði 5: >250 µmol/ \n\nSvæði 1: 100 µmol/ L\nSvæði 2: 150 µmol/ L\nSvæði 3: 200 µmol/ L\nSvæði 4: 250 µmol/ L\nSvæði 5: >250 µmol/ L\n\nSýnileg gula hjá nýbura á fyrsta sólarhring eftir fæðingu er að öllum líkindum vegna óeðlilega mikils niðurbrots á rauðum blóðkornum og þarfnast tafarlausrar skoðunar læknis. Líklegasta ástæða þess er blóðflokkamisræmi milli móður og barns."
+                "content": "Hjálpartæki fyrir klínískt mat:"
             },
             {
                 "key": "47.4",
+                "name": "",
+                "subchapters": [],
+                "content": "Svæði 1: 100 µmol/ L\nSvæði 2: 150 µmol/ L\nSvæði 3: 200 µmol/ L\nSvæði 4: 250 µmol/ L\nSvæði 5: >250 µmol/ L\n\nSýnileg gula hjá nýbura á fyrsta sólarhring eftir fæðingu er að öllum líkindum vegna óeðlilega mikils niðurbrots á rauðum blóðkornum og þarfnast tafarlausrar skoðunar læknis. Líklegasta ástæða þess er blóðflokkamisræmi milli móður og barns."
+            },
+        
+            {
+                "key": "47.5",
                 "name": "Ljósamörk",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/9a1a2416ce6c3f7400257e760050c6f6/$FILE/N%C3%BDburagula%20-%20Lj%C3%B3sam%C3%B6rk.pdf"
             },
             {
-                "key": "47.5",
+                "key": "47.6",
                 "name": "Meðferð",
                 "subchapters": [],
                 "content": "Mikilvægt er að barn með gulu fái nóg að drekka og drekki oft. Börn með gulu er oft löt að drekka og þá þarf að hvetja þau til að drekka. Fyrst og fremst á að mæla með aðferðum sem örva mjólkurframleiðslu svo sem handmjólkun, notkun mjaltavéla og síðast en ekki síst að fylgjast með hvort barnið sjúgi rétt. Ljósmæður ættu ekki ráðleggja sólböð fyrir nýbura með gulu en geta óhikað mælt með því að gluggatjöld séu dregin frá svo nýburinn fái notið dagsbirtunnar. \nTelji ljósmæður þörf á meðferð við gulu er rétt að vísa barninu til barnalæknis."
             },
             {
-                "key": "47.6",
+                "key": "47.67",
                 "name": "Gæðaskjal LSH",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/B5FE90B3A2A4254E00257E760050B68D"
             },
             {
-                "key": "47.7",
+                "key": "47.8",
                 "name": "Fræðslubæklingur",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12c2d9065477ece000257e760050bbed/$FILE/N%C3%BDburagula_yfirfari%C3%B0%20b%C3%A6klingur.pdf"
@@ -1144,13 +1152,13 @@ export default [
                 "key": "48.2",
                 "name": "Fyrirburi",
                 "subchapters": [],
-                "content": "(e. premature infant) \nBarn sem fætt er fyrir lok 37. viku. \n\nHelstu einkenni - fara eftir meðgöngulengd: \nBörnin liggja í afslappaðri stellingu með útlimi útrétta. \nHöfuð virkar stórt. \nNeglur eru þunnar og stuttar. \nSubcutant fita er lítil eða engin. \nEyru eru án brjósks. \nLanugo hár eru aðallega á baki og andliti. \nIljar eru þrútnar og lítið af rákum á þeim. \nKynfæri virka stór og óþroskuð. \nÖll taugaviðbrögð (reflexar) eru dauf. \nHósta, sog og kyngingarreflexar eru ekki þroskaðir fyrr en við 32 - 34 vikur. \n\nHelstu vandamál: \nÖndunarörðugleikar og apnea. \nLéleg hitastjórnun. \nFæðuinntektarvandamál. \nBlóðsykursfall (hypoglycemia). \nSýkingarhætta (m.a. vegna lítilla mótefna). \nTengslamyndun við foreldra."
+                "content": "(e. premature infant) \nBarn sem fætt er fyrir lok 37. viku. \n\nHelstu einkenni - fara eftir meðgöngulengd:\n▪Börnin liggja í afslappaðri stellingu með útlimi útrétta.\n▪Höfuð virkar stórt.\n▪Neglur eru þunnar og stuttar.\n▪Subcutant fita er lítil eða engin.\n▪Eyru eru án brjósks.\n▪Lanugo hár eru aðallega á baki og andliti.\n▪Iljar eru þrútnar og lítið af rákum á þeim.\n▪Kynfæri virka stór og óþroskuð.\n▪Öll taugaviðbrögð (reflexar) eru dauf.\n▪Hósta, sog og kyngingarreflexar eru ekki þroskaðir fyrr en við 32 - 34 vikur.\n\nHelstu vandamál:\n▪Öndunarörðugleikar og apnea.\n▪Léleg hitastjórnun.\n▪Fæðuinntektarvandamál.\n▪Blóðsykursfall (hypoglycemia).\n▪Sýkingarhætta (m.a. vegna lítilla mótefna).\n▪Tengslamyndun við foreldra."
             },
             {
                 "key": "48.3",
                 "name": "Léttburi",
                 "subchapters": [],
-                "content": "(e. small for gestational age) \nBarn sem er lítið miðað við meðgöngulengd (undir 10. percentil). \n\nHelstu einkenni: \nBörnin eru létt eða horuð en höfuðummál og lengd eru oftast eðlileg nema ef þau hafa verið „svelt“ lengi. \nHúðin er þurr og virkar of stór miðað við búk. \nBörnin virka „gömul“ í útliti. \nAugun eru etv. útstæð. \nBörnin eru oft óróleg, mikið vakandi og sísvöng. \nÁlitið er að heilafrumur haldi áfram að vaxa í 8 - 15 mán. eftir fæðingu. \nAukin hætta er á seinþroska hjá léttburum vegna færri og minni heilafruma. \n\nHelstu vandamál: \nAsphyxia. \nHypoglycemia á 1. - 2. sólarhring. \nPolycytemia vegna þurrks. \nAukin hætta á votum lungum og meconium aspiration ef asphyxia (þá taka þau fyrsta andardráttinn of snemma). \nEtv. persistent ductus arterious ef hypoxia til staðar. \nSýkingarhætta. "
+                "content": "(e. small for gestational age) \nBarn sem er lítið miðað við meðgöngulengd (undir 10. percentil). \n\nHelstu einkenni: \n▪Börnin eru létt eða horuð en höfuðummál og lengd eru oftast eðlileg nema ef þau hafa verið „svelt“ lengi. \n▪Húðin er þurr og virkar of stór miðað við búk. \n▪Börnin virka „gömul“ í útliti. \n▪Augun eru etv. útstæð. \n▪Börnin eru oft óróleg, mikið vakandi og sísvöng. \n▪Álitið er að heilafrumur haldi áfram að vaxa í 8 - 15 mán. eftir fæðingu. \nAukin hætta er á seinþroska hjá léttburum vegna færri og minni heilafruma. \n\nHelstu vandamál: \n▪Asphyxia. \n▪Hypoglycemia á 1. - 2. sólarhring. \n▪Polycytemia vegna þurrks. \n▪Aukin hætta á votum lungum og meconium aspiration ef asphyxia (þá taka þau fyrsta andardráttinn of snemma).\n▪Etv. persistent ductus arterious ef hypoxia til staðar. \n▪Sýkingarhætta. "
             },
             {
                 "key": "48.4",
