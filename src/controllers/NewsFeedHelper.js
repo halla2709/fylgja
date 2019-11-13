@@ -36,7 +36,25 @@ function parseBody(data) {
     });
 }
 
+function GetDate(dateString) {
+    console.log("Getting date from " + dateString)
+    var date = new Date(dateString);
+    var monthNames = [
+        "janúar", "febrúar", "mars",
+        "apríl", "maí", "júní", "júlí",
+        "ágúst", "september", "október",
+        "nóvember", "desember"
+      ];
+    
+      var day = date.getDate();
+      var monthIndex = date.getMonth();
+      var year = date.getFullYear();
+    
+      return day + '. ' + monthNames[monthIndex] + ' ' + year;
+}
+
 export {
     GetNews,
-    GetNewsJson
+    GetNewsJson,
+    GetDate
 };

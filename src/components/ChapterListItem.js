@@ -27,6 +27,9 @@ class ChapterListItem extends React.Component {
                 />
             }
         }
+        else if(this.subChapterView) {
+            this.subChapterView = null;
+        }
         
         var fontSize = (this.props.level == 0 ? 20 : 17)/PixelRatio.getFontScale();
         var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';

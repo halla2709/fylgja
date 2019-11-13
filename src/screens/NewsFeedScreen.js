@@ -16,7 +16,7 @@ import {
     CardButton
 } from 'react-native-cards';
 import Styles from './../styles/Styles';
-import { GetNewsJson } from '../controllers/NewsFeedHelper';
+import { GetNewsJson, GetDate } from '../controllers/NewsFeedHelper';
 
 export class NewsFeedScreen extends React.Component {
 
@@ -55,22 +55,6 @@ export class NewsFeedScreen extends React.Component {
             return text.substring(3, text.length-4);
         }
         return text;
-    }
-
-    getDate(dateString) {
-        var date = new Date(dateString);
-        var monthNames = [
-            "Janúar", "Febrúar", "Mars",
-            "Apríl", "Maí", "Júní", "Júlí",
-            "Ágúst", "September", "Október",
-            "Nóvember", "Desember"
-          ];
-        
-          var day = date.getDate();
-          var monthIndex = date.getMonth();
-          var year = date.getFullYear();
-        
-          return day + '. ' + monthNames[monthIndex] + ' ' + year;
     }
 
     toggleNewsItem(index) {
@@ -145,7 +129,7 @@ export class NewsFeedScreen extends React.Component {
                     <View>
                         <Card>
                             <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
-                                <Text style={Styles.dateText}>{this.getDate(element.displayDate)}</Text>
+                                <Text style={Styles.dateText}>{GetDate(element.displayDate)}</Text>
                             </View>
                             <View style={{ flex: 1, flexDirection: "row", paddingRight: 5 }}>
                                 <CardTitle title={element.title} style={{ flex: 1}} />

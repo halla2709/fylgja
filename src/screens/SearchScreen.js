@@ -19,22 +19,13 @@ export class SearchScreen extends React.Component {
   };
 
   getChapterView(chapter, level) {
-    if (chapter.name === "#EkkiBirta#") {
-      return <Text
-      key={chapter.key}
-      style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
-      onPress={() => this.props.navigation.navigate('Reader', {
-        drawerContent: "chapters",
-        currentChapter: chapter.key})}/>
-
-    } else {
+    if (chapter.name !== "#EkkiBirta#") {
       return <Text
       key={chapter.key}
       style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
       onPress={() => this.props.navigation.navigate('Reader', {
         drawerContent: "chapters",
         currentChapter: chapter.key})}>{chapter.name}</Text>
-
     }
   }
 

@@ -21,21 +21,39 @@ export default class DrawerComponent extends React.Component {
     this.props.navigation.navigate(navigation, options);
   }
 
+  GenerateDrawerContent() {
+    if(this.currentRouteParams.drawerContent === "chapters") {
+      console.log("Creating drawer content");
+      this.drawerContent = 
+     <FlatList 
+          data={Chapters}
+          renderItem={({ item }) => 
+          <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={this.currentRouteParams.currentChapter} onChapterPressed={(chapterKey) => this.onChapterPressed(chapterKey)}/>}
+          extraData={currentChapter = this.currentRouteParams.currentChapter}
+        />
+    }   
+  }
+
+  GetDrawerContent(routeParams) {
+    if(routeParams == null) 
+      return;
+    if (this.drawerContent != null) {
+      if(routeParams.drawerContent === "chapters" && routeParams.currentChapter == this.currentRouteParams.currentChapter) {
+        console.log("Current chapter is still " + routeParams.currentChapter + ". Nothing has changed.");
+        return;
+      }
+      this.currentRouteParams = routeParams;
+      this.GenerateDrawerContent();
+    }
+    else {
+      this.currentRouteParams = routeParams;
+      this.GenerateDrawerContent();
+    }    
+  }
+
   render() {
     const { navigation } = this.props;
-    const params = GetCurrentRouteParams(navigation.state);
-    var drawerContent;
-    if (params) {
-      if (params.drawerContent === "chapters") {
-        drawerContent =
-       <FlatList 
-            data={Chapters}
-            renderItem={({ item }) => 
-            <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={params.currentChapter} onChapterPressed={(chapterKey) => this.onChapterPressed(chapterKey)}/>}
-            extraData={currentChapter = params.currentChapter}
-          />
-      }
-    }
+    this.GetDrawerContent(GetCurrentRouteParams(navigation.state));
     return (
       this.props.screenProps.fontLoaded ? (
     <View style={styles.drawer}>
@@ -51,7 +69,7 @@ export default class DrawerComponent extends React.Component {
       
 
       <ScrollView style={styles.drawerChapters}>   
-        {drawerContent}
+        {this.drawerContent}
       </ScrollView>
         
       <View style={styles.drawerButtons} > 
