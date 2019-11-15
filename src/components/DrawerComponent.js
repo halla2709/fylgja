@@ -30,7 +30,10 @@ export default class DrawerComponent extends React.Component {
           <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={this.currentRouteParams.currentChapter} onChapterPressed={(chapterKey) => this.onChapterPressed(chapterKey)}/>}
           extraData={currentChapter = this.currentRouteParams.currentChapter}
         />
-    }   
+    }  
+    else {
+      this.drawerContent = null;
+    } 
   }
 
   GetDrawerContent(routeParams) {
