@@ -10,7 +10,8 @@
     },
     "android": {
       "package": "com.fylgja.fylgja",
-      "icon": "src/assets/images/icon.png"    
+      "icon": "src/assets/images/icon.png",
+      "permissions": []
     },
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
