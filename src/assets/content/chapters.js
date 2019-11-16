@@ -2,8 +2,8 @@ export default [
     {
         "key": "1",
         "parent": "2",
-        "name": "Aðrar Leiðbeiningar",
-        "content": "Áhættumat mæðraverndar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/%C3%81h%C3%A6ttumat%20m%C3%A6%C3%B0raverndar%20n%C3%B3vember%202017.pdf\n\nVinnulag við meðferð þunglyndis og kvíða https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Vinnulag%20vi%C3%B0%20me%C3%B0fer%C3%B0%20%C3%BEunglyndis%20og%20kv%C3%AD%C3%B0a%C3%AD%20m%C3%A6%C3%B0ravernd%202017.pdf\n\nTvíburameðganga – vinnuleiðbeiningar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Tv%C3%ADburame%C3%B0ganga%20Vinnulei%C3%B0beiningar%20um%20m%C3%A6%C3%B0ravernd%202016.pdf\n\nLeiðbeiningar um val á fæðingarstað https://www.landlaeknir.is/servlet/file/store93/item2818/3304.pdf \n\nFaglegar leiðbeiningar fyrir heimaþjónustu ljósmæðra https://www.landlaeknir.is/servlet/file/store93/item23146/Fagl-leidbein-heima_ljosmaedur_2014_heildarskjal.pdf \n\nHeilsufarsflokkun sængurkonu og barns https://www.sjukra.is/media/eydublodin/heilsufarsflokkun-saengurkonu-og-barns.doc \n\nLeiðbeiningar um mataræði á meðgöngu https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
+        "name": "Hagnýtar Leiðbeiningar",
+        "content": "Áhættumat mæðraverndar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/%C3%81h%C3%A6ttumat%20m%C3%A6%C3%B0raverndar%20n%C3%B3vember%202017.pdf\n\nLeiðbeiningar um val á fæðingarstað https://www.landlaeknir.is/servlet/file/store93/item2818/3304.pdf \n\nFaglegar leiðbeiningar fyrir heimaþjónustu ljósmæðra https://www.landlaeknir.is/servlet/file/store93/item23146/Fagl-leidbein-heima_ljosmaedur_2014_heildarskjal.pdf \n\nHeilsufarsflokkun sængurkonu og barns https://www.sjukra.is/media/eydublodin/heilsufarsflokkun-saengurkonu-og-barns.doc \n\nLeiðbeiningar um mataræði á meðgöngu https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
         "subchapters": []
     },
     {
@@ -15,70 +15,52 @@ export default [
                 "key": "2.1",
                 "name": "Skimun",
                 "subchapters": [],
-                "content": "Í fyrstu komu í meðgönguvernd ætti að spyrja um:\n▪Fyrri eða núverandi alvarlega geðræna sjúkdóma.\n▪Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi.\nFjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli"
+                "content": "Í fyrstu komu í meðgönguvernd ætti að spyrja um:\n▪Fyrri eða núverandi alvarlega geðræna sjúkdóma.\n▪Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi.\nFjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli\n\nSpyrja þessara spurninga til að skima fyrir þunglyndi:\n▪Hefur líðan þín breyst síðastliðinn mánuð þanig að þér hafi t.d. fundist þú langt niðri, þunglynd eða haldin vonleysi?\n▪Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?\n\nSpyrja þessara spurninga til að skima fyrir kvíða:\n▪Hefur þér fundist þú vera kvíðin, taugaóstyrk eða eins og á mörkunum sl. 2 vikur?\n▪Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?\n\nEf já við einni eða fleiri spurningum, má spyrja:\n▪Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?\n\nEf já, fylgja þá meðferðarþrepum eftir alvarleika vandans.\n\nÞessar spurningar má nota alla meðgönguna, í sængurlegu og í ungbarnavernd."
             },
             {
                 "key": "2.2",
-                "name": "Spyrja þessara spurninga til að skima fyrir þunglyndi:",
-                "subchapters": [],
-                "content": "▪Hefur líðan þín breyst síðastliðinn mánuð þanig að þér hafi t.d. fundist þú langt niðri, þunglynd eða haldin vonleysi?\n▪Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?"
-            },
-            {
-                "key": "2.3",
-                "name": "Spyrja þessara spurninga til að skima fyrir kvíða:",
-                "subchapters": [],
-                "content": "▪Hefur þér fundist þú vera kvíðin, taugaóstyrk eða eins og á mörkunum sl. 2 vikur?\n▪Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?"
-            },
-            {
-                "key": "2.4",
-                "name": "Ef já við einni eða fleiri spurningum, má spyrja:",
-                "subchapters": [],
-                "content": "▪Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?\n\nEf já, fylgja þá meðferðarþrepum eftir alvarleika vandans.\n\nÞessar spurningar má nota alla meðgönguna, í sængurlegu og í ungbarnavernd."
-            },
-            {
-                "key": "2.5",
                 "name": "16 vikna skoðun",
                 "subchapters": [],
                 "content": "Nota skal EPDS til að skima fyrir þunglyndi og GAD-7 til að skima fyrir kvíða.\n\nEf kona skorar 12 eða yfir á EPDS eða 10 eða yfir á GAD-7 skal fylgja meðferðarþrepum eftir alvarleika vandans."
             },
             {
-                "key": "2.6",
+                "key": "2.3",
                 "name": "Meðferðarþrep",
                 "subchapters": [],
                 "content": "1. Ef vægur tilfinningalegur vandi, bjóða þá þéttari viðtöl við ljósmóður í mæðravernd, innan 2 vikna. Nota má EPDS og GAD-7 til nánara mats.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 2.\nEf alvarlegur vandi, fara þá beint í meðferðarþrep 3, t.d.:\n▪Já við 10. Spurningu á EPDS um sjálfskaða.\n▪15 stig eða meira á GAD-7.\n\n2. Bjóða hópmeðferð fyrir þungaðar konur hjá ljósmóður eða sálfræðingi í heilsugæslu.\nBjóða almenna HAM-hópmeðferð við þunglyndi og kvíða ef hentar betur. Tilvísun frá lækni til sálfræðings á stöð.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 3.\n\n3. Samráð við heilsugæslulækni eða sálfræðing á stöð til ítarlegra mats á vanda og meðferðarþörf.\n\n4. Ef alvarlegur geðheilbrigðisvandi, vísa þá til inntökuteymis geðsviðs Landspítala, í samráði við heilsugæslulækni."
             },
             {
-                "key": "2.7",
+                "key": "2.4",
                 "name": "Fróðleiksmoli HH",
                 "subchapters": [],
                 "content": "https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Vinnulag%20vi%C3%B0%20me%C3%B0fer%C3%B0%20%C3%BEunglyndis%20og%20kv%C3%AD%C3%B0a%C3%AD%20m%C3%A6%C3%B0ravernd%202017.pdf"
             },
             {
-                "key": "2.8",
+                "key": "2.5",
                 "name": "Geðræn vandamál í barneignarferlinu",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/208996F2BDCE519F00257E75003D3C63"
             },
             {
-                "key": "2.9",
+                "key": "2.6",
                 "name": "Átröskun og meðganga, fræðslubæklingur",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga.pdf"
             },
             {
-                "key": "2.10",
+                "key": "2.7",
                 "name": "Gæðaskjal LSH um andlega vanlíðan/geðröskun í barneignarferlinu",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/8F5F652A5659339E00257E75003D30CC"
             },
             {
-                "key": "2.11",
+                "key": "2.8",
                 "name": "Lyf vegna geðraskana í barneignarferli",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/BE04A4BAE7D1BC1400257E75003D39A7"
             },
             {
-                "key": "2.12",
+                "key": "2.9",
                 "name": "Flæðirit umönnunar",
                 "subchapters": [],
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/A818CED1C42B2A4400257E75003D5549"
@@ -100,7 +82,7 @@ export default [
     {
         "key": "4",
         "name": "Axlarklemma",
-        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/31276FD71468B79600257E7600391EC7",
+        "content": "",
         "subchapters": [
             {
                 "key": "4.1",
@@ -113,7 +95,13 @@ export default [
                 "name": "Flæðirit",
                 "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C074903E5570B44700257E7600392FC3",
                 "subchapters": []
-            }
+            },
+            {
+                "key": "4.3",
+                "name": "Gæðaskjal LSH",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/31276FD71468B79600257E7600391EC7",
+                "subchapters": []
+            },
         ]
     },
     {
@@ -181,12 +169,18 @@ export default [
     {
         "key": "10",
         "name": "Blæðing eftir fæðingu",
-        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5D89844F3D3F0E4B00257E760039016F",
+        "content": "",
         "subchapters": [
             {
                 "key": "10.1",
                 "name": "Viðbrögð við alvarlegri blæðingu",
                 "content": "Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F7B234D1D3122F6400257E76003905FB",
+                "subchapters": []
+            },
+            {
+                "key": "10.2",
+                "name": "Gæðaskjal LSH",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5D89844F3D3F0E4B00257E760039016F",
                 "subchapters": []
             }
         ]
@@ -223,7 +217,7 @@ export default [
             {
                 "key": "14.2",
                 "name": "Upphaf brjóstagjafar",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/9FC1B397B3FD855200257E760050095",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/9FC1B397B3FD855200257E760050095E",
                 "subchapters": []
             },
             {
@@ -247,7 +241,7 @@ export default [
             {
                 "key": "14.6",
                 "name": "Matslisti fyrir ábótargjafir",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/AB0E34DF6353BE3A00257E7600503FFD",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/DD389A27A38DAE8D00257E7600504518",
                 "subchapters": []
             },
             {
@@ -328,13 +322,13 @@ export default [
             {
                 "key": "19.1",
                 "name": "Ábendingar og frábendingar",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5230B402777A729300257E7600369A71",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/624CB472D39B9BAC00257E760056111D",
                 "subchapters": []
             },
             {
                 "key": "19.2",
                 "name": "Fæðing í vatni",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5230B402777A729300257E7600369A71",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/5230B402777A729300257E7600369A71",
                 "subchapters": []
             }
         ]
@@ -393,22 +387,16 @@ export default [
                 "content": "Lyf sem lækka gallsýrustyrk\nUrsochol® 250 mg. Byrjunarskammtur er 250 mg x3, hámarksskammtur er 8 töflur á sólarhring\nDexametason 4mg. Sterameðferð í 11 daga til viðbótar Ursochol meðferð þegar hámarksskammtar duga ekki til að halda gallsýrum niðri og konan gengin skemur en 37 vikur."
             },
             {
-                "key": "24.5",
+                "key": "24.7",
                 "name": "Kláðastillandi lyf",
-                "subchapters": [],
-                "content": "Lyf sem lækka gallsýrustyrk\nUrsochol® 250 mg. Byrjunarskammtur er 250 mg x3, hámarksskammtur er 8 töflur á sólarhring\nDexametason 4mg. Sterameðferð í 11 daga til viðbótar Ursochol meðferð þegar hámarksskammtar duga ekki til að halda gallsýrum niðri og konan gengin skemur en 37 vikur."
-            },
-            {
-                "key": "24.6",
-                "name": "Eftirfylgd",
                 "subchapters": [],
                 "content": "Kláðastillandi lyf má nota ein sér eða með Ursochol®, sérstaklega getur verið þörf fyrir þau í byrjun Ursochol meðferðar áður en góð verkun fæst: \nT. Tavegyl®\nT. Atarax®\nT. Phenergan®\n"
             },
             {
-                "key": "24.7",
+                "key": "24.8",
                 "name": "Eftirfylgd",
                 "subchapters": [],
-                "content": "Vægur gallstasi (gallsýrur 16-100 míkrómól/L): Mæðravernd á heilsugæslustöð í samráði við fæðinga –og kvensjúkdómalækni. Konur þurfa oft ekki lyfjameðferð með UDCA, heldur nægja kláðastillandi lyf og almenn ráð.\nEndurtaka gallsýrumælingar vikulega.\nFramköllun fæðingar við 39-40 vikur.\nVið sjálfkrafa sótt geta konur fætt á fæðingarstað D.\n\nAlvarlegur gallstasi (gallsýrur >100 míkrómól/L): Vísa í áhættumæðravernd Landspítala. Ástæða til að framkalla fæðingu ef meðgöngulengd hefur náð 37 vikum.\nFæðing á fæðingarstað A.\n\nSjá nánar: Fróðleiksmola Heilsugæslu Höfuðborgarsvæðisins https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe\nGæðahandbók LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/EE9F2643BA4F185500257E760036824B?OpenDocument"
+                "content": "Vægur gallstasi (gallsýrur 16-100 míkrómól/L): Mæðravernd á heilsugæslustöð í samráði við fæðinga –og kvensjúkdómalækni. Konur þurfa oft ekki lyfjameðferð með UDCA, heldur nægja kláðastillandi lyf og almenn ráð.\nEndurtaka gallsýrumælingar vikulega.\nFramköllun fæðingar við 39-40 vikur.\nVið sjálfkrafa sótt geta konur fætt á fæðingarstað D.\n\nAlvarlegur gallstasi (gallsýrur >100 míkrómól/L): Vísa í áhættumæðravernd Landspítala. Ástæða til að framkalla fæðingu ef meðgöngulengd hefur náð 37 vikum.\nFæðing á fæðingarstað A.\n\nSjá nánar: Fróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe\nGæðahandbók LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/EE9F2643BA4F185500257E760036824B?OpenDocument"
             }
         ]
     },
@@ -475,7 +463,7 @@ export default [
     {
         "key": "27",
         "name": "Greiningarkóðar fyrir sjúkdóma á meðgöngu og eftir fæðingu",
-        "content": "https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Greiningark%C3%B3%C3%B0ar%20fyrir%20sj%C3%BAkd%C3%B3ma%20%C3%A1%20me%C3%B0g%C3%B6ngu%20og%20eftir%20f%C3%A6%C3%B0ingu%20-%202017.pdf",
+        "content": "Vinnuleiðbeiningar HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Greiningark%C3%B3%C3%B0ar%20fyrir%20sj%C3%BAkd%C3%B3ma%20%C3%A1%20me%C3%B0g%C3%B6ngu%20og%20eftir%20f%C3%A6%C3%B0ingu%20-%202017.pdf",
         "subchapters": []
     },
     {
@@ -651,7 +639,7 @@ export default [
     {
         "key": "33",
         "name": "Ilmkjarnaolíur",
-        "content": "Taldar auka framleiðslu líkamans á róandi, slakandi og örvandi efnum og hafa lyfjafræðileg áhrif. Ilmkjarnaolíur eru öflugar og virka líkt og lyf og því þarf að bera virðingu fyrir þeim. Ilmkjarnaolíur eru viðkvæmar fyrir ljósi og súrefni og þær þarf að geyma í litlum, dökkum glösum. Sítrusolíur (bergamot, grapefruit, neroli) er aðeins hægt að geyma í 3-6 mánuði og ætti að geyma í ísskáp. \nIlmkjarnaolíur eru fyrst og fremst notaðar til að auka slökun og vellíðan kvenna. Fyrir notkun þarf að liggja fyrir upplýsingar um almenn heilsufar, sjúkdóma og vandamál á meðgöngu, notkun á óhefðbundnum meðferðum, lyfjanotkun, ofnæmi og lífsmörk (chamomila og lavender ekki góðar ef konan er með hita). Gæta þarf varúðar við notkun hjá konum með undirliggjandi áhættuþætti. Frábendingar eru t.d. ofnæmi fyrir olíum eða saga um mikið/alvarlegt ofnæmi, flogaveiki, alvarleg meðgöngueitrun, astmi sem versnar við frjókorn (lavender) og hjartasjúkdómar (peppermint). Sumar ilmkjarnaolíur geta valdið lækkun á blóþrýstingi (clary sage, lavender, ylangylang), aukið blæðingarhættu (rose, frankincense, lavender, peppermint og clary sage) og verið vatnslosandi og því varhugaverðar eftir mikla blæðingu (chamomila, lavender og rose).",
+        "content": "Taldar auka framleiðslu líkamans á róandi, slakandi og örvandi efnum og hafa lyfjafræðileg áhrif. Ilmkjarnaolíur eru öflugar og virka líkt og lyf og því þarf að bera virðingu fyrir þeim. Ilmkjarnaolíur eru viðkvæmar fyrir ljósi og súrefni og þær þarf að geyma í litlum, dökkum glösum. Sítrusolíur (bergamot, grapefruit, neroli) er aðeins hægt að geyma í 3-6 mánuði og ætti að geyma í ísskáp. \nIlmkjarnaolíur eru fyrst og fremst notaðar til að auka slökun og vellíðan kvenna. Fyrir notkun þurfa að liggja fyrir upplýsingar um almennt heilsufar, sjúkdóma og vandamál á meðgöngu, notkun á óhefðbundnum meðferðum, lyfjanotkun, ofnæmi og lífsmörk (chamomila og lavender ekki góðar ef konan er með hita). Gæta þarf varúðar við notkun hjá konum með undirliggjandi áhættuþætti. Frábendingar eru t.d. ofnæmi fyrir olíum eða saga um mikið/alvarlegt ofnæmi, flogaveiki, alvarleg meðgöngueitrun, astmi sem versnar við frjókorn (lavender) og hjartasjúkdómar (peppermint). Sumar ilmkjarnaolíur geta valdið lækkun á blóþrýstingi (clary sage, lavender, ylangylang), aukið blæðingarhættu (rose, frankincense, lavender, peppermint og clary sage) og verið vatnslosandi og því varhugaverðar eftir mikla blæðingu (chamomila, lavender og rose).",
         "subchapters": [
             {
                 "key": "33.1",
@@ -709,7 +697,7 @@ export default [
         "key": "37",
         "name": "Lyf á meðgöngu",
         "subchapters": [],
-        "content": "Sjá fróðleiksmola heilsugæslunnar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Lyf%20%C3%A1%20me%C3%B0g%C3%B6ngu%20april%202016.pdf"
+        "content": "Sjá Fróðleiksmola HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Lyf%20%C3%A1%20me%C3%B0g%C3%B6ngu%20april%202016.pdf"
     },
     {
         "key": "38",
@@ -798,7 +786,7 @@ export default [
                 "key": "41.1",
                 "name": "Meðferð",
                 "subchapters": [],
-                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu.\n\n▪Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n▪Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n▪Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n▪Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits. \n▪Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar. \n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf\n\nGrein á síðu Ljósmæðrafélagsins“Ljósmóðirin skrifar um fósturhreyfingar á meðgöngu\""
+                "content": "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.\nSkoða sögu konunnar m.t.t. áhættuþátta \nMæla lífsmörk \nMæla hæð legbotns - ath. vaxtarkúrfu.\n\n▪Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.\n▪Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.\n▪Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).\n▪Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits. \n▪Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar. \n\nAth! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara.\n\nSkv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu).\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf"
             }
         ]
     },
@@ -1178,12 +1166,6 @@ export default [
                 "subchapters": [],
                 "content": "(e. post term)\nBarn sem fætt er eftir 42 meðgönguvikur. \n\nHelstu einkenni: \nBörnin eru oft stór en grönn vegna fylgjuþurrðar. \nHúðin er oft flögnuð og soðin. \nNeglur eru langar. \nHypoglycemia. \nAukin hætta er á dauða in utero\n\nHeimildir:\nGamla fylgju handbók https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631"
             },
-            {
-                "key": "48.7",
-                "name": "Flæðirit",
-                "subchapters": [],
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ce71226d7cab254200257e7600391796/$FILE/endurl%C3%ADfgun%20n%C3%BDbura%20fl%C3%A6%C3%B0irit.pdf"
-            }
         ]
     },
     {
@@ -1194,7 +1176,7 @@ export default [
     },
     {
         "key": "50",
-        "name": "Ógleði og uppköst á meðgöngu/hyperemesis gravidarum",
+        "name": "Hyperemesis gravidarum",
         "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3BD9C2107796661200257E7600387514\n\nFróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Hyperemesis%20gravidarum%202017.pdf",
         "subchapters": []
     },
@@ -1226,7 +1208,7 @@ export default [
     {
         "key": "52",
         "name": "Síðfyrirburar",
-        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5E78096815ED115600257E7600508728",
+        "content": "",
         "subchapters": [
             {
                 "key": "52.1",
@@ -1243,15 +1225,25 @@ export default [
             {
                 "key": "52.3",
                 "name": "Fræðslubæklingur, að hefja mjólkurframleiðslu",
-                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12b2f5bf4a227c6a00257e76005093e9/$FILE/S%C3%AD%C3%B0fyrirburar%20-%20Foreldrab%C3%A6klingur.pdf",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/bb89c1a01fac521100257e76005097e7/$FILE/A%C3%B0%20hefja%20mj%C3%B3lkurframlei%C3%B0slu.pdf",
                 "subchapters": []
             }
+            ,
+            {
+                "key": "52.4",
+                "name": "Gæðaskjal LSH",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5E78096815ED115600257E7600508728",
+                "subchapters": []
+            }
+
+
+             
         ]
     },
     {
         "key": "53",
         "name": "Síritun í fæðingu",
-        "content": "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit. Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.\nSíritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats.\n\nSjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E",
+        "content": "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.\nEftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.\nSíritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats.\n\nSjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E\n",
         "subchapters": [
             {
                 "key": "53.1",
@@ -1269,7 +1261,7 @@ export default [
                 "key": "54.1",
                 "name": "Tegundir sitjanda",
                 "subchapters": [],
-                "content": "Fullkomin sitjandastaða (e. complete breech)\nFætur eru bognir, barnið situr á hækjum sér.\n\nEinföld sitjandastaða (e. Frank breech)\nFætur eru beinir og liggja alveg upp með líkama barnsins.\n\nÓfullkomin staða/Fótstaða (e. incomplete breech)\nFætur eru fyrirsætir og ná niður fyrir rass barnsins\n\nSjá Gæðahandbók LSH fyrir greiningu og skilyrði fyrir fæðingu um leggöng. https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1404FE787237DD3B00257E750045C91F\n\nBæklingur Ljósmæðrafélagsins um sitjanda http://www.ljosmodir.is/asset/336/sitjandi_stada.pdf\n\nSkýringarmyndir https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C614C38028304C0C00257E750045F114"
+                "content": "Fullkomin sitjandastaða (e. complete breech)\nFætur eru bognir, barnið situr á hækjum sér.\n\nEinföld sitjandastaða (e. Frank breech)\nFætur eru beinir og liggja alveg upp með líkama barnsins.\n\nÓfullkomin staða/Fótstaða (e. incomplete breech)\nFætur eru fyrirsætir og ná niður fyrir rass barnsins\n\nSkýringarmyndir https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C614C38028304C0C00257E750045F114\n\nBæklingur Ljósmæðrafélagsins um sitjanda http://www.ljosmodir.is/asset/336/sitjandi_stada.pdf"
             },
             {
                 "key": "54.2",
@@ -1288,15 +1280,8 @@ export default [
     {
         "key": "55",
         "name": "Skemmri skírn",
-        "content": "Þegar barn er hættulega sjúkt og eigi er unnt að ná til prests, má skíra það skemmri skírn. Má hver skírður maður fullvita, karl eða kona, framkvæma skemmri skírn, en tilkynna skal presti um hana og ber honum að staðfesta hana í kirkju. Skírnarvatn skal vera hreint og ylvolgt.",
-        "subchapters": [
-            {
-                "key": "55.1",
-                "name": "Skemmri skírn fer fram með þessum hætti: ",
-                "subchapters": [],
-                "content": "Sá er skírir, nefnir nafn barnsins, eys þrisvar með lófa sínum vatni á höfuð þess og segir um leið: \nÉg skíri þig í nafni föður, sonar og heilags anda. Amen. \nSíðan biður hann Faðir vor og blessar yfir barnið með blessunarorðunum. Þá er sunginn skírnarsálmur, ef því verður við komið, annars lesinn. \n\nFaðir vor, þú sem ert á himnum. \nHelgist þitt nafn, til komi þitt ríki, \nverði þinn vilji svo á jörðu sem á himni. \nGef oss í dag vort daglegt brauð. \nOg fyrirgef oss vorar skuldir \nsvo sem vér og fyrirgefum vorum skuldunautum. \nEigi leið þú oss í freistni, \nheldur frelsa oss frá illu. \nÞví að þitt er ríkið, mátturinn og dýrðin að eilífu. \nAmen \n\nDrottinn blessi þig og varðveiti þig. \nDrottinn láti sína ásjónu lýsa yfir þig og sé þér náðugur. \nDrottinn upplyfti sínu augliti yfir þig og gefi þér frið. \n\nSvar: Amen."
-            }
-        ]
+        "content": "Þegar barn er hættulega sjúkt og eigi er unnt að ná til prests, má skíra það skemmri skírn. Má hver skírður maður fullvita, karl eða kona, framkvæma skemmri skírn, en tilkynna skal presti um hana og ber honum að staðfesta hana í kirkju. Skírnarvatn skal vera hreint og ylvolgt.\n\nSkemmri skírn fer fram með þessum hætti:\nSá er skírir, nefnir nafn barnsins, eys þrisvar með lófa sínum vatni á höfuð þess og segir um leið: \nÉg skíri þig í nafni föður, sonar og heilags anda. Amen. \nSíðan biður hann Faðir vor og blessar yfir barnið með blessunarorðunum. Þá er sunginn skírnarsálmur, ef því verður við komið, annars lesinn. \n\nFaðir vor, þú sem ert á himnum. \nHelgist þitt nafn, til komi þitt ríki, \nverði þinn vilji svo á jörðu sem á himni. \nGef oss í dag vort daglegt brauð. \nOg fyrirgef oss vorar skuldir \nsvo sem vér og fyrirgefum vorum skuldunautum. \nEigi leið þú oss í freistni, \nheldur frelsa oss frá illu. \nÞví að þitt er ríkið, mátturinn og dýrðin að eilífu. \nAmen \n\nDrottinn blessi þig og varðveiti þig. \nDrottinn láti sína ásjónu lýsa yfir þig og sé þér náðugur. \nDrottinn upplyfti sínu augliti yfir þig og gefi þér frið.\n\nSvar: Amen.",
+        "subchapters": []
     },
     {
         "key": "56",
@@ -1341,7 +1326,7 @@ export default [
             },
             {
                 "key": "58.5",
-                "name": "Lestur blóðs úr kolli barns",
+                "name": "Úrlestur blóðsýna úr kolli barns",
                 "subchapters": [],
                 "image": require('../images/handbok_22-5.png')
             },
@@ -1376,7 +1361,7 @@ export default [
         "key": "60",
         "name": "Tvíburameðganga",
         "subchapters": [],
-        "content": "Monochoríonískir tvíburar, diamniotískir (MC/DA):\nEin fylgja, tveir belgir, þunn belgjaskil, T-laga belgjaskil. 30% allra tvíbura. Alltaf eineggja. Mögulega samgangur milli blóðrásarkerfa barnanna með hættu á „twin-to-twin transfusion” heilkenni. Aukin hætta á misræmi í vexti fóstra. Eftirlit á Göngudeild mæðraverndar LSH.\n\nMonoamniotískir tvíburar (MC/MA):\nBæði börnin í sama vatnsbelg (amnion). Sjaldgæft (< 1%), mikil áhætta. Eftirlit á Göngudeild mæðraverndar LSH.\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1A8DD6A47C92711B00257E75004610FB"
+        "content": "Dichoríonískir tvíburar (DC/DA):\nTvær fylgjur, tveir belgir, þykk belgjaskil. Algengast, 70% allra tvíbura. Annað hvort eru þeir tvíeggja (80%) eða eineggja (20%). Þessar konur geta verið í mæðraeftirliti á heilsugæslustöð svo lengi sem meðgangan er eðlileg.\n\nMonochoríonískir tvíburar, diamniotískir (MC/DA):\nEin fylgja, tveir belgir, þunn belgjaskil, T-laga belgjaskil. 30% allra tvíbura. Alltaf eineggja. Mögulega samgangur milli blóðrásarkerfa barnanna með hættu á „twin-to-twin transfusion” heilkenni. Aukin hætta á misræmi í vexti fóstra. Eftirlit á Göngudeild mæðraverndar LSH.\n\nMonoamniotískir tvíburar (MC/MA):\nBæði börnin í sama vatnsbelg (amnion). Sjaldgæft (< 1%), mikil áhætta. Eftirlit á Göngudeild mæðraverndar LSH.\n\nMæðravernd í tvíburameðgöngu - vinnuleiðbeiningar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Tv%C3%ADburame%C3%B0ganga%20Vinnulei%C3%B0beiningar%20um%20m%C3%A6%C3%B0ravernd%202016.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1A8DD6A47C92711B00257E75004610FB\n\nGæðaskjal LSH um tvíburafæðingu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/F50E5CD16E790C5600257E750046182C\n\nTvíburameðganga – vinnuleiðbeiningar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Tv%C3%ADburame%C3%B0ganga%20Vinnulei%C3%B0beiningar%20um%20m%C3%A6%C3%B0ravernd%202016.pdf"
     },
     {
         "key": "61",
@@ -1443,19 +1428,19 @@ export default [
                 "key": "65.1",
                 "name": "Skimunarspurningar",
                 "subchapters": [],
-                "content": "VANTAR"
-            },
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/98699c1baa579ff100257e760037fb70/$FILE/V%C3%ADmuefni-Spurningar%20fyrir%20skimun.pdf",
+             },
             {
                 "key": "65.2",
                 "name": "Flæðirit",
                 "subchapters": [],
-                "content": "VANTAR"
-            },
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/d8be601ff59fab7400257e760037d397/$FILE/Fl%C3%A6%C3%B0irit_2016.pdf",
+                        },
             {
                 "key": "65.3",
                 "name": "Vímuefnaneysla og barneignarferlið",
                 "subchapters": [],
-                "content": "Vímuefnaleit í þvagi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CC23442B89B1AE5800257E760037E8BE\n\nKannabis á meðgöngu, fræðsluefni https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fd55427735fb5431002583b7005e5a52/$FILE/Kannabis%20og%20me%C3%B0ganga.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CFC3355E8A6651C200257E760037D8D2\n\nÍtarefni til leiðbeininga og stuðnings https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FF6AF863579AEF3B00257E760037EF08\n\nVímuefni og brjóstagjöf https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/BA97EF5EE5365C3700257E7600381851"
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CFC3355E8A6651C200257E760037D8D2\n\nVímuefnaleit í þvagi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CC23442B89B1AE5800257E760037E8BE\n\nKannabis á meðgöngu, fræðsluefni https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fd55427735fb5431002583b7005e5a52/$FILE/Kannabis%20og%20me%C3%B0ganga.pdf\n\nÍtarefni til leiðbeininga og stuðnings https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FF6AF863579AEF3B00257E760037EF08\n\nVímuefni og brjóstagjöf https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/BA97EF5EE5365C3700257E7600381851"
             }
         ]
     },
@@ -1498,7 +1483,7 @@ export default [
     {
         "key": "67",
         "name": "Þriðja stig fæðingar",
-        "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Faeding%20eftir%20keisaraskurd.pdf\n\nGæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/845DCB667546237A00257E760036DDC4\n\nBæklingaröð Ljósmæðrafélags Íslands http://ljosmodirdev.wm.is/asset/342/faeding_eftir_fyrri_keisara.pdf",
+        "content": "",
         "subchapters": [
             {
                 "key": "67.1",
@@ -1541,7 +1526,7 @@ export default [
     {
         "key": "71",
         "name": "Þyngdaraukning á meðgöngu",
-        "content": "Þyngdaraukning á meðgöngu: https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Greiningark%C3%B3%C3%B0ar%20fyrir%20sj%C3%BAkd%C3%B3ma%20%C3%A1%20me%C3%B0g%C3%B6ngu%20og%20eftir%20f%C3%A6%C3%B0ingu%20-%202017.pdf\n\nTafla fengin úr bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
+        "content": "Tafla fengin úr bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
         "subchapters": [
             {
                 "key": "71.1",
@@ -1551,9 +1536,9 @@ export default [
             },
             {
                 "key": "71.2",
-                "name": "#EkkiBirta#",
+                "name": "",
                 "subchapters": [],
-                "image": require('../images/handbok_42-2.png')
+                "content": "Sjá einnig dreifingu þyngdaraukningar á bls 5 í bæklingi um átröskun á meðgöngu: https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga",
             }
         ]
     }
