@@ -19,7 +19,7 @@ export class SearchScreen extends React.Component {
   };
 
   getChapterView(chapter, level) {
-    if (chapter.name !== "#EkkiBirta#") {
+    if (chapter.name !== "#EkkiBirta#" && chapter.name.length > 0) {
       return <Text
       key={chapter.key}
       style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
