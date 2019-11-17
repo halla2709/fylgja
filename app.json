@@ -17,6 +17,9 @@
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon_nottransparent.png"
+    },
+    "notification": {
+      "icon": "src/assets/images/fylgja_notification_icon.png"
     }
   }
 }

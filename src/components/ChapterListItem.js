@@ -48,7 +48,7 @@ class ChapterListItem extends React.Component {
         });
 
         var text = "";
-        if (this.props.chapter.name !== "#EkkiBirta#" && this.props.chapter.name.lenght > 0) {
+        if (this.props.chapter.name !== "#EkkiBirta#" && this.props.chapter.name.length > 0) {
             text = indent + this.props.chapter.name;
         }
         
