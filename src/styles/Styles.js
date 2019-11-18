@@ -91,6 +91,7 @@ export default StyleSheet.create({
   h2: {
     fontFamily: 'merriweather-bold',
     fontSize: 18/PixelRatio.getFontScale(),
+    paddingTop:5,
     
   },
 

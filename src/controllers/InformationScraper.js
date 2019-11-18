@@ -82,7 +82,7 @@ class InformationScraper {
                         "key": items.length + 2,
                         "text": [[
                             {
-                                "text": "Smelltu hér til að hlaða niður nýjustu launatöflu",
+                                "text": "Sækja nýjustu launatöflu",
                                 "type": "a",
                                 "href": "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
                                 "key": items.length + 3,
