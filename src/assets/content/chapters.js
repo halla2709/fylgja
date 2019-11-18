@@ -407,7 +407,7 @@ export default [
                 "key": "25.1",
                 "name": "Smokkur",
                 "subchapters": [],
-                "content": "Smokkurinn er sjálfsögð getnaðarvörn en hettan er síðri, því erfitt\ngetur verið að finna hentuga stærð á fyrstu mánuðum eftir fæðingu."
+                "content": "Smokkurinn er sjálfsögð getnaðarvörn en hettan er síðri, því erfitt getur verið að finna hentuga stærð á fyrstu mánuðum eftir fæðingu."
             },
             {
                 "key": "25.2",
@@ -571,7 +571,7 @@ export default [
     {
         "key": "30",
         "name": "Heimasíður",
-        "content": "9 mánuðir https://www.9manudir.is/\nFyrirburar.is \nHeilsuborg https://heilsuborg.is/\nHeilsugæsla Höfuðborgarsvæðisins https://www.heilsugaeslan.is/\nHeilsuvera https://www.heilsuvera.is/\nJafnrétti.is \nLandlæknir https://www.landlaeknir.is/\nLjósmóðir.is \nLjósmæðrafélag Íslands https://www.ljosmaedrafelag.is/\nNúvitundarsetrið https://www.nuvitundarsetrid.is/\nSjúkratryggingar Íslands https://www.sjukra.is/\n\nGamla handbók Fylgjunnar https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631",
+        "content": "9 mánuðir https://www.9manudir.is/\n\nFyrirburar.is \n\nHeilsuborg https://heilsuborg.is/\n\nHeilsugæsla Höfuðborgarsvæðisins https://www.heilsugaeslan.is/\n\nHeilsuvera https://www.heilsuvera.is/\n\nJafnrétti.is \n\nLandlæknir https://www.landlaeknir.is/\n\nLjósmóðir.is \n\nLjósmæðrafélag Íslands https://www.ljosmaedrafelag.is/\n\nNúvitundarsetrið https://www.nuvitundarsetrid.is/\n\nSjúkratryggingar Íslands https://www.sjukra.is/\n\nGamla handbók Fylgjunnar https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631",
         "subchapters": []
     },
     {
@@ -1519,14 +1519,7 @@ export default [
     {
         "key": "71",
         "name": "Þyngdaraukning á meðgöngu",
-        "content": "Sjá töflu á bls 6 í bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf",
-        "subchapters": [
-            {
-                "key": "71.1",
-                "name": "",
-                "subchapters": [],
-                "content": "Sjá dreifingu þyngdaraukningar á bls 5 í bæklingi um átröskun á meðgöngu: https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga",
-            }
-        ]
+        "content": "Sjá töflu á bls 6 í bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf\n\nSjá dreifingu þyngdaraukningar á bls 5 í bæklingi um átröskun á meðgöngu: https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga",
+        "subchapters": []
     }
 ];
