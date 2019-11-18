@@ -3,7 +3,7 @@ import { AsyncStorage, Text, View, TouchableOpacity, TextInput, ImageBackground 
 import Styles from './../styles/Styles';
 
 export class LogInScreen extends React.Component {
-  ACCESS_WORD = "fylgjaljosmodir";
+  ACCESS_WORD = "obstetrix";
   static navigationOptions = {
     header: null
   }
@@ -40,7 +40,6 @@ export class LogInScreen extends React.Component {
   }
 
   onSubmit(text) {
-    console.log("Submitted " + text);
     if(text === this.ACCESS_WORD) {
       AsyncStorage.setItem('hasLoggedIn', 'true')
       .then(()=>{console.log("saved");})
@@ -66,7 +65,8 @@ export class LogInScreen extends React.Component {
                   <Text style={Styles.pBoldCenter}>Þetta app er einungis ætlað meðlimum Ljósmæðrafélagsins.</Text>
                   <Text style={Styles.pBoldCenter}> Vinsamlegast sláðu inn aðgangsorð eða hafðu samband við formann Ljósmæðrafélagsins.</Text>
                   </View>
-                  <TextInput autoCapitalize="none" autoCorrect={false} placeholder="Aðgangsorð..." returnKeyType="go"
+                  <TextInput autoCapitalize="none" autoCorrect={false} placeholder="Aðgangsorð..." 
+                    returnKeyType="go" secureTextEntry={true}
                     onSubmitEditing={(input) => this.onSubmit(input.nativeEvent.text)} style={Styles.input}></TextInput>
                 </View>
               </ImageBackground>

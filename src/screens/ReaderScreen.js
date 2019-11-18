@@ -26,11 +26,9 @@ export class ReaderScreen extends React.Component {
   getChapterViews(chapter) {
     var textBlocks = [];
 
-
-
     chapter.subchapters.forEach(subchapter => {
 
-      if (subchapter.name == "#EkkiBirta#") {
+      if (subchapter.name == "#EkkiBirta#" && subchapter.name.length > 0) {
         textBlocks.push(
           <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
             var { x, y, width, height } = event.nativeEvent.layout;
@@ -73,7 +71,24 @@ export class ReaderScreen extends React.Component {
     return textBlocks;
   }
 
+  getUrlText(url) {
+    if(this.differentUrls[url]) 
+      return url.substring(7);
+    else
+      return url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk';
+  }
 
+  getUrl(url) {
+    if(this.differentUrls[url])
+      return this.differentUrls[url];
+    else
+      return url;
+  }
+
+  openUrl(url) {
+    url = this.getUrl(url);
+    WebBrowser.openBrowserAsync(url);
+  }
 
   constructor(props) {
     super(props);
@@ -82,6 +97,7 @@ export class ReaderScreen extends React.Component {
     this.textBlockYs = [];
     this.textBlocks = this.getChapterViews(this.chapter);
     this.state = { toScrollTo: 0 };
+    this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" }
   }
 
   render() {
@@ -115,8 +131,8 @@ export class ReaderScreen extends React.Component {
             }
           }}>
             <View style={{ paddingBottom: 150 }}>
-              <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => WebBrowser.openBrowserAsync(url)}
-                linkText={url => url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk'}>
+              <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => this.openUrl(url)}
+                linkText={url => this.getUrlText(url)}>
                 <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
                 {this.textBlocks}
               </Hyperlink>

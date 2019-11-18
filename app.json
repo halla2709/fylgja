@@ -2,6 +2,7 @@
   "expo": {
     "sdkVersion": "34.0.0",
     "name": "Fylgja",
+    "version": "1.0.1",
     "slug": "fylgja",
     "icon": "src/assets/images/icon.png",
     "splash": {
@@ -16,6 +17,9 @@
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon_nottransparent.png"
+    },
+    "notification": {
+      "icon": "src/assets/images/fylgja_notification_icon.png"
     }
   }
 }
