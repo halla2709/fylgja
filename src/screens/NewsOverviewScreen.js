@@ -29,7 +29,7 @@ export class NewsOverviewScreen extends React.Component {
         super(props);
         this.state = {
             fontLoaded: props.screenProps.fontLoaded,
-            isLargeWindow: Dimensions.get('window').height > 500,
+            isLargeWindow: Dimensions.get('window').height > 700,
             newsLoaded: false
         };
     }
@@ -66,14 +66,15 @@ export class NewsOverviewScreen extends React.Component {
     render() {
         Dimensions.addEventListener("change", (dimension) => {
             this.setState(() => {
-                return { isLargeWindow: dimension.window.height > 500 };
+
+                return { isLargeWindow: dimension.window.height > 700 };
             })
         });
 
         var frettirContainer =
             <View style={{ flex: 1 }}>
                 <Card>
-                    <CardTitle title="Fréttir"/>
+                    <CardTitle style={{flexShrink: 0}} title="Fréttir"/>
                     <CardContent text={ this.GetNewestString("frett")} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
@@ -85,7 +86,7 @@ export class NewsOverviewScreen extends React.Component {
         var vidburdirContainer =
             <View style={{ flex: 1 }}>
                 <Card>
-                    <CardTitle title="Viðburðir" />
+                    <CardTitle style={{flexShrink: 0}} title="Viðburðir" />
                     <CardContent text={this.GetNewestString("vidburdur")} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 132}); }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
@@ -96,7 +97,7 @@ export class NewsOverviewScreen extends React.Component {
         var malstofurContainer =
             <View style={{ flex: 1 }}>
                 <Card>
-                    <CardTitle title="Málstofur og Fræðslufundir" />
+                    <CardTitle style={{flexShrink: 0}} title="Málstofur og Fræðslufundir" />
                     <CardContent text={this.GetNewestString("malstofa")} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 149}); }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
@@ -107,7 +108,7 @@ export class NewsOverviewScreen extends React.Component {
         var radstefnurContainer =
             <View style={{ flex: 1 }}>
                 <Card>
-                    <CardTitle title="Ráðstefnur" />
+                    <CardTitle style={{flexShrink: 0}} title="Ráðstefnur" />
                     <CardContent text={this.GetNewestString("radstefna")} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 148}); }} style={{  width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
