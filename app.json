@@ -12,7 +12,8 @@
     "android": {
       "package": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon.png",
-      "permissions": []
+      "permissions": [],
+      "versionCode": 2
     },
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",

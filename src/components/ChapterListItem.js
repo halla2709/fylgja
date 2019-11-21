@@ -27,7 +27,7 @@ class ChapterListItem extends React.Component {
                 />
             }
         }
-        else if(this.subChapterView) {
+        else {
             this.subChapterView = null;
         }
         
@@ -50,23 +50,21 @@ class ChapterListItem extends React.Component {
         var text = "";
         if (this.props.chapter.name !== "#EkkiBirta#" && this.props.chapter.name.length > 0) {
             text = indent + this.props.chapter.name;
-        }
-        
-        return (
-            <View>
-                
-                <TouchableOpacity onPress={() => {
-                    this.props.onChapterPressed(this.props.chapter.key)}}>
-                    <View> 
-                        <Text style={styles.text}>
-                        {text}
-                        </Text>
-                    </View>
-                </TouchableOpacity>
+            return (
+                <View>
+                    <TouchableOpacity onPress={() => {
+                        this.props.onChapterPressed(this.props.chapter.key)}}>
+                        <View> 
+                            <Text style={styles.text}>
+                            {text}
+                            </Text>
+                        </View>
+                    </TouchableOpacity>
                     {this.subChapterView}
-        
-            </View>
-        );
+                </View>
+            );
+        }      
+        return null;
     }
 }
 
