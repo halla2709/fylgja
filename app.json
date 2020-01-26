@@ -2,7 +2,7 @@
   "expo": {
     "sdkVersion": "34.0.0",
     "name": "Fylgja",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "slug": "fylgja",
     "icon": "src/assets/images/icon.png",
     "splash": {
