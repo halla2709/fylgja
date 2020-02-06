@@ -18,8 +18,8 @@ export class LogInScreen extends React.Component {
   }
   async componentDidMount() {
     try {
-      const value = false;
-      //const value = await AsyncStorage.getItem('hasLoggedIn');
+      //const value = false;
+      const value = await AsyncStorage.getItem('hasLoggedIn');
       if (value) {
         // reroute
         console.log("Has logged in");
