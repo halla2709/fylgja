@@ -1,4 +1,4 @@
-import Chapters from "../assets/content/chapters.js";
+import Chapters from "../controllers/Chapters.js";
 
 function GetCurrentRouteParams(state) {
     if (state.index || state.index === 0) {
