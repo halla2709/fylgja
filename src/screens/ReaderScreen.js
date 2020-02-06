@@ -38,12 +38,12 @@ export class ReaderScreen extends React.Component {
             <View style={Styles.pcontainer}>
               <Text style={Styles.p} layout="row">{subchapter.content}</Text>
             </View>
+            
 
             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
               <Image resizeMode="contain" source={subchapter.image} style={{ flex: 1, width: '80%' }} />
             </View>
           </View>)
-
 
       }
       else {
