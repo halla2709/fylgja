@@ -30,12 +30,15 @@ class ChapterListItem extends React.Component {
         else {
             this.subChapterView = null;
         }
-        
-        var fontSize = (this.props.level == 0 ? 20 : 17)/PixelRatio.getFontScale();
+        var fancy = this.isCurrentChapter() ? '☼' : "" ;
+        var fontSize = (this.props.level == 0 ? 20 : 18)/PixelRatio.getFontScale();
         var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';
         var indent = "";
+        var mypadding = 2;
+        var anotherpadding = 4;
         for (var i = 0; i < this.props.level; i++) {
-            indent += "   ";
+         //   indent += "   ";
+            mypadding = 22 ;
         }
 
         const styles = StyleSheet.create({
@@ -43,13 +46,15 @@ class ChapterListItem extends React.Component {
                 fontFamily: fontFamily,
                 fontSize: fontSize,
                 color: '#3a3a3a',
+                paddingLeft: mypadding,
+                paddingBottom: anotherpadding,
 
             }
         });
 
         var text = "";
         if (this.props.chapter.name !== "#EkkiBirta#" && this.props.chapter.name.length > 0) {
-            text = indent + this.props.chapter.name;
+            text = fancy + indent + this.props.chapter.name;
             return (
                 <View>
                     <TouchableOpacity onPress={() => {
