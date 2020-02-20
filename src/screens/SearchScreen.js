@@ -10,7 +10,7 @@ import {
 import Styles from './../styles/Styles';
 import { SearchBar } from 'react-native-elements';
 import { SearchChapterTitles } from './../controllers/SearchHelper';
-import Chapters from "../controllers/Chapters.js";
+import GetChapters from "../controllers/Chapters.js";
 
 export class SearchScreen extends React.Component {
 
@@ -45,7 +45,8 @@ export class SearchScreen extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {currentChapterBlocks:this.getChapterViews(Chapters)};
+    this.chapters = GetChapters();
+    this.state = {currentChapterBlocks:this.getChapterViews(this.chapters)};
   }
 
   render() {
@@ -71,7 +72,7 @@ export class SearchScreen extends React.Component {
               this.setState({currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString))});
             }}
               onClear={() => { 
-              this.setState({currentChapterBlocks: this.getChapterViews(Chapters)});
+              this.setState({currentChapterBlocks: this.getChapterViews(this.chapters)});
             }}
               />
                

@@ -3,11 +3,10 @@ import { Text, View, Image, ScrollView, FlatList, TouchableOpacity } from 'react
 import { StackActions, NavigationActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
-import Chapters from "../controllers/Chapters.js";
+import GetChapters from "../controllers/Chapters.js";
 import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 
 export default class DrawerComponent extends React.Component {
-
   onChapterPressed(chapterKey) {
     this.props.navigation.closeDrawer();
     this.props.navigation.dispatch(
@@ -25,7 +24,7 @@ export default class DrawerComponent extends React.Component {
     if(this.currentRouteParams.drawerContent === "chapters") {
       this.drawerContent = 
      <FlatList 
-          data={Chapters}
+          data={GetChapters()}
           renderItem={({ item }) => 
           <ChapterListItem style={styles.chapterlist} chapter={item} level={0} currentChapter={this.currentRouteParams.currentChapter} onChapterPressed={(chapterKey) => this.onChapterPressed(chapterKey)}/>}
           extraData={currentChapter = this.currentRouteParams.currentChapter}
