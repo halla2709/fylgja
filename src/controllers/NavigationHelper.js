@@ -1,4 +1,4 @@
-import Chapters from "../controllers/Chapters.js";
+import GetChapters from "../controllers/Chapters.js";
 
 function GetCurrentRouteParams(state) {
     if (state.index || state.index === 0) {
@@ -10,7 +10,7 @@ function GetCurrentRouteParams(state) {
 }
 
 function SwitchChapter(currentChapter, increment) {
-    const numberOfChapters = Chapters.length;
+    const numberOfChapters = GetChapters().length;
     const topChapter = parseInt(currentChapter.split(".")[0]);
     let nextNumber = topChapter + increment;
     

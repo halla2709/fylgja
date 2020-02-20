@@ -1,9 +1,9 @@
-import Chapters from "../controllers/Chapters.js";
+import GetChapters from "../controllers/Chapters.js";
 import { Scraper } from "./InformationScraper";
 
 function SearchChapterTitles(key) {
     let chaptersToReturn = [];
-    Chapters.forEach(chapter => {
+    GetChapters().forEach(chapter => {
         let subChaptersThatMatchSearch = findMatchingSubChapters(chapter, key);
         if (subChaptersThatMatchSearch.length > 0) {
             let matchingChapter = {

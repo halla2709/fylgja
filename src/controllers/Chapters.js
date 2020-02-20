@@ -7,10 +7,8 @@ function CreateChapters() {
         if(chaptersInfo[title]) {
             var chapter = chaptersInfo[title];
             chapter.key = ""+(chapterIndex+1);
-            console.log(chapter.key);
             chapter.subchapters.forEach((subchapter, subIndex) => {
                 subchapter.key = chapter.key+"."+(subIndex+1);
-                console.log(subchapter.key);
             });
             chapters.push(chapter);
         }
@@ -20,5 +18,9 @@ function CreateChapters() {
     });
 }
 
-CreateChapters();
-export default chapters;
+function GetChapters() {
+    if (chapters.length === 0)
+        CreateChapters();
+    return chapters;    
+}
+export default GetChapters;

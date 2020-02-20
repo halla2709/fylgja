@@ -1,16 +1,30 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, Image, ScrollView, } from 'react-native';
+import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import Chapters from "../controllers/Chapters.js";
+import GetChapters from "../controllers/Chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
-
+import ImageReziser from 'react-native-image-resizer';
 
 export class ReaderScreen extends React.Component {
-
-
+  async getImage(imageSource) {
+    console.log("Getting image " + imageSource);
+    Image.getSize(imageSource, (width, height) => {
+      console.log("Image " + imageSource + " W: " + width + " H: " + height);
+    }, (error) => { console.error(error); });
+    // ImageReziser.createResizedImage(imageSource, Dimensions.get('window').width, Dimensions.get('window').height, 'PNG', 100)
+    //   .then(function(response) {
+    //     console.log("In response");
+    //     console.log(response);
+    //   })
+    //   .catch(function(error) {
+    //     console.error(error);
+    //   });
+    
+    //<Image resizeMode="contain" source={{uri: subchapter.image}} style={{ flex: 1, width: '80%' }} />
+  }
 
   onViewLayout(key, y) {
     if (key === this.props.navigation.state.params.currentChapter) {
@@ -20,55 +34,41 @@ export class ReaderScreen extends React.Component {
 
   getChapter(chapterKey) {
     const topChapter = chapterKey.split(".")[0];
-    return Chapters[topChapter - 1];
+    return this.chapters[topChapter - 1];
   }
 
-  getChapterViews(chapter) {
+  async getChapterViews(chapter) {
+    console.log("Getting chapter views " + this.chapter.key);
     var textBlocks = [];
+    var hasImage = false;
 
     chapter.subchapters.forEach(subchapter => {
-
-      if (subchapter.name == "#EkkiBirta#" && subchapter.name.length > 0) {
-        textBlocks.push(
-          <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
-            var { x, y, width, height } = event.nativeEvent.layout;
-            this.onViewLayout(subchapter.key, y);
-          }}>
-
-            <View style={Styles.pcontainer}>
-              <Text style={Styles.p} layout="row">{subchapter.content}</Text>
-            </View>
-
-            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-              <Image resizeMode="contain" source={subchapter.image} style={{ flex: 1, width: '80%' }} />
-            </View>
-          </View>)
-
-
-      }
-      else {
-
-        textBlocks.push(
-          <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
-            var { x, y, width, height } = event.nativeEvent.layout;
-            this.onViewLayout(subchapter.key, y);
-          }}>
-            <View style={Styles.subchaptercontainer}>
+      // if(subchapter.image) {
+      //   console.log("Subchapter " + subchapter.key + " has image");
+      //   this.getImage(subchapter.image);
+      // }
+      var showTitle = !(subchapter.name == "#EkkiBirta#" && subchapter.name.length > 0);
+      console.log(subchapter.name);
+      textBlocks.push(
+      <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
+        var { x, y, width, height } = event.nativeEvent.layout;
+        this.onViewLayout(subchapter.key, y);
+      }}>
+        {showTitle ? <View style={Styles.subchaptercontainer}>
               <Text style={Styles.h2}>{subchapter.name}</Text>
-            </View>
+            </View> : <Text></Text>}
 
-            <View style={Styles.pcontainer}>
-              <Text selectable={true} selectionColor='#4E75BC' style={Styles.p} layout="row">{subchapter.content}</Text>
-            </View>
+        <View style={Styles.pcontainer}>
+          <Text style={Styles.p} layout="row">{subchapter.content}</Text>
+        </View>
 
-            <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-              <Image resizeMode="contain" source={subchapter.image} style={{ flex: 1, width: '80%' }} />
-            </View>
-          </View>)
-      }
-
+        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+          <Image source={{uri: subchapter.image}} style={{ width: Dimensions.get('window').width*0.8, height: Dimensions.get('window').width*0.5, resizeMode: "contain" }} />
+        </View>
+      </View>);
     });
-    return textBlocks;
+    console.log("Returning text blocks " + textBlocks.length);
+    this.setState({textBlocks: textBlocks});
   }
 
   getUrlText(url) {
@@ -90,17 +90,28 @@ export class ReaderScreen extends React.Component {
     WebBrowser.openBrowserAsync(url);
   }
 
+  async componentDidMount() {
+    console.log("Did mount");
+    this.getChapterViews(this.chapter);
+    console.log("Blocks ready " + this.chapter.key);
+  }
+
   constructor(props) {
     super(props);
+    this.chapters = GetChapters();
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
-    this.numberOfChapters = Chapters.length;
-    this.textBlockYs = [];
-    this.textBlocks = this.getChapterViews(this.chapter);
-    this.state = { toScrollTo: 0 };
-    this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" }
+    console.log("Constructor " + this.chapter.key);
+    this.numberOfChapters = this.chapters.length;
+    this.state = { toScrollTo: 0, textBlocks: []};
+    this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };
+  }
+
+  componentWillUnmount() {
+    console.log("Unmount " + this.chapter.key);
   }
 
   render() {
+    console.log("Render " + this.chapter.key + " blocks: " + this.state.textBlocks.length);
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
@@ -134,17 +145,12 @@ export class ReaderScreen extends React.Component {
               <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => this.openUrl(url)}
                 linkText={url => this.getUrlText(url)}>
                 <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
-                {this.textBlocks}
+                {this.state.textBlocks}
               </Hyperlink>
             </View>
-
-            <Image style={Styles.readerImage} resizeMode="contain" source={require('../assets/images/litilhendi.jpg')} />
           </ScrollView>
-
-
-
         </View>
       ) : null
-    );
+    );  
   }
 }

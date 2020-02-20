@@ -42,8 +42,7 @@ class ChapterListItem extends React.Component {
             text: {
                 fontFamily: fontFamily,
                 fontSize: fontSize,
-                color: '#3a3a3a',
-
+                color: '#3a3a3a'
             }
         });
 
