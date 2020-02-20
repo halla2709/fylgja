@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { PixelRatio } from 'react-native';
 import { createStackNavigator, createDrawerNavigator, createSwitchNavigator } from 'react-navigation';
 import { Ionicons } from '@expo/vector-icons';
@@ -10,6 +10,7 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import { LogInScreen } from '../screens/LogInScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
+
 
 const ReaderStack = createStackNavigator({
     Search: {
@@ -54,8 +55,7 @@ const InformationStack = createStackNavigator({
 const MainStack = createStackNavigator({
     Home: {
         screen: HomeScreen
-    },
-    ReaderStack: {
+    },    ReaderStack: {
         screen: ReaderStack
     },
     InformationStack: {
@@ -79,11 +79,15 @@ const DrawerStack = createDrawerNavigator({
         contentComponent: DrawerComponent
     });
 
+   
+
 
 const AppStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
     {
+
+          
         headerMode: 'screen',
         swipeEnabled: false,
         animationEnabled: false,
