@@ -363,7 +363,7 @@ export default StyleSheet.create({
   },
 
   input: {
-    width: 400,
+    width: 350,
     padding: 5,
     margin: 10,
     borderColor: 'rgb(128,128,128)',
@@ -630,5 +630,13 @@ backgroundImage: {
   },
   textInput: {
     flex:1
+
+  },
+  wrongpw: {
+    alignItems: 'center',
+    color: 'rgb(255, 0, 0)',
+    fontSize: 20/PixelRatio.getFontScale()
+
+
   }
 });
