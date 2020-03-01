@@ -1,0 +1,139 @@
+{
+    "Grindarmál": {
+        "name": "Grindarmál",
+        "elements": [
+            {
+                "type": "list",
+                "content": {
+                    "header": "Mikilvægustu málin í:",
+                    "items": [
+                        "Grindarinngangi: fjarlægðin milli spjaldbrúnar og lífbeins",
+                        "Miðgrind: fjarlægðin milli þjóbeinsnibbanna",
+                        "Grindarútgangi: fjarlægðin milli þjóbeinshnúskanna"
+                    ]
+                }
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Conjugata vera diagonalis (CD) = skáþykktarvídd",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Fjarlægðin frá neðri brún lífbeins (symfysu) að spjaldbrún (promontorium). Við skoðunina lætur maður löngutöng nema við spjaldbrún. Ekki á að nást aftur að spjaldbrún, ef það er hægt er um grindarinngangsþrengsli að ræða. Lengdin á fingrinum er mæld. CD er venjulega ≥12.5 cm. Conjugata vera (CV) = CD - 1 – 1½ cm."
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-2.png"
+                    }
+                ]
+            },
+            {
+                "name": "Diameter interspinalis = þjóbeinsnibbabilið",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Er venjulega um 10 - 11 sm. Ekki hægt að mæla kliniskt. Ef þjóbeinsnibburnar finnast á eðlilegum stað eru þær ekki prominerandi. Ef önnur finnst greinilegar en hin getur verið um grindarskekkju að ræða"
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-4.png"
+                    }
+                ]
+            },
+            {
+                "name": "Os sacrum og os coccygis = spjald-og rófubein",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "text",
+                        "content":  "Athugað er hvort sveigjan á þessum beinum er eðlileg. Rófubein fettist aftur í fæðingunni"
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-6.png"
+                    }
+                ]
+            },
+            {
+                "name": "Arcus = nárabogi",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Vísifingri og löngutöng er ýtt upp undir lífbeinið. Fingurnir eiga að rúmast þar samsíða með innri hlið upp og telst náraboginn þá vera minnst 90°. "
+                    }
+                ]
+            },
+            {
+                "name": "Diameter intertuberalis = þjóbeinshnúskabilið",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Þetta mál er mælt með því að þrýsta krepptum hnefanum upp að perineum. Ef hnefinn rúmast á milli þjóbeinshnúskanna er fjarlægðin milli þeirra amk. 11 sm sem er eðlilegt."
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2725/handbok_14-9.png"
+                    }
+                ] 
+            },
+            {
+                "name": "Eðlileg grindarmál",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarinngangur:",
+                            "items": [
+                                "Conjugata vera 11-12 cm",
+                                "Diameter transversum 13-14 sm",
+                                "≥23 sm"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarútgangur:",
+                            "items": [
+                                "Diameter interspinalis 10-11 cm",
+                                "Diameter intertuberalis 10-11",
+                                "Diameter recta 11-12 sm",
+                                "≥31.5 cm"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Grindarmál fyrir sitjandafæðingu",
+                "subchapters": [],
+                "elements": [
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarinngangur:",
+                            "items": [
+                                "Conjugata vera 11,5 cm"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarútgangur:",
+                            "items": [
+                                "Samanlögð útgangsmál ≥ 34.5 cm"
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

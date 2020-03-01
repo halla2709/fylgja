@@ -1,4 +1,4 @@
-import GetChapters from "../controllers/Chapters.js";
+import { GetChapters } from "../controllers/Chapters.js";
 import { Scraper } from "./InformationScraper";
 
 function SearchChapterTitles(key) {

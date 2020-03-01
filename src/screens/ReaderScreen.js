@@ -2,11 +2,10 @@ import React from 'react';
 import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import GetChapters from "../controllers/Chapters.js";
+import { GetChapters, ChapterElementsToViews }  from "../controllers/Chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
-import ImageReziser from 'react-native-image-resizer';
 
 export class ReaderScreen extends React.Component {
   async getImage(imageSource) {
@@ -92,8 +91,9 @@ export class ReaderScreen extends React.Component {
 
   async componentDidMount() {
     console.log("Did mount");
-    this.getChapterViews(this.chapter);
+    var views = await ChapterElementsToViews(this.chapter);
     console.log("Blocks ready " + this.chapter.key);
+    this.setState({textBlocks: views});
   }
 
   constructor(props) {
@@ -144,7 +144,6 @@ export class ReaderScreen extends React.Component {
             <View style={{ paddingBottom: 150 }}>
               <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => this.openUrl(url)}
                 linkText={url => this.getUrlText(url)}>
-                <Text style={Styles.p} layout="row">{this.chapter.content}</Text>
                 {this.state.textBlocks}
               </Hyperlink>
             </View>
