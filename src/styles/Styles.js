@@ -437,6 +437,13 @@ export default StyleSheet.create({
       paddingBottom: 1,
       paddingHorizontal: 5,
     },
+
+    elementcontainer: {
+      width: '100%',
+      justifyContent: 'space-around',
+      paddingTop: 3,
+      paddingBottom: 3
+    },
   
     pcontainer: {
       width: '100%',

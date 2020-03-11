@@ -1,7 +1,6 @@
 {
     "Andleg líðan á meðgöngu":{
         "name": "Andleg líðan á meðgöngu",
-        "elements": [],
         "subchapters": [
             {
                 "name": "Skimun",
@@ -23,7 +22,7 @@
                             "header": "Spyrja þessara spurninga til að skima fyrir þunglyndi:",
                             "items": [
                                 "▪ Hefur líðan þín breyst síðastliðinn mánuð þanig að þér hafi t.d. fundist þú langt niðri, þunglynd eða haldin vonleysi?",
-                                "▪ Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?",
+                                "▪ Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?"
                             ]
                         }
                     },
@@ -33,7 +32,7 @@
                             "header": "Spyrja þessara spurninga til að skima fyrir kvíða:",
                             "items": [
                                 "▪ Hefur þér fundist þú vera kvíðin, taugaóstyrk eða eins og á mörkunum sl. 2 vikur?",
-                                "▪ Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?",
+                                "▪ Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?"
                             ]
                         }
                     },
@@ -82,8 +81,26 @@
                 "name": "Meðferðarþrep",
                 "elements": [
                     {
-                        "type":"text",
-                        "content":"1. Ef vægur tilfinningalegur vandi, bjóða þá þéttari viðtöl við ljósmóður í mæðravernd, innan 2 vikna. Nota má EPDS og GAD-7 til nánara mats.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 2.\nEf alvarlegur vandi, fara þá beint í meðferðarþrep 3, t.d.:\n▪ Já við 10. Spurningu á EPDS um sjálfskaða.\n▪ 15 stig eða meira á GAD-7.\n\n2. Bjóða hópmeðferð fyrir þungaðar konur hjá ljósmóður eða sálfræðingi í heilsugæslu.\nBjóða almenna HAM-hópmeðferð við þunglyndi og kvíða ef hentar betur. Tilvísun frá lækni til sálfræðings á stöð.\nEf engin breyting á líðan eða versnun, fara þá í meðferðarþrep 3.\n\n3. Samráð við heilsugæslulækni eða sálfræðing á stöð til ítarlegra mats á vanda og meðferðarþörf.\n\n4. Ef alvarlegur geðheilbrigðisvandi, vísa þá til inntökuteymis geðsviðs Landspítala, í samráði við heilsugæslulækni."
+                        "type":"numberList",
+                        "content": {
+                            "items": [
+                                [
+                                    "Ef vægur tilfinningalegur vandi, bjóða þá þéttari viðtöl við ljósmóður í mæðravernd, innan 2 vikna. Nota má EPDS og GAD-7 til nánara mats.",
+                                    "Ef engin breyting á líðan eða versnun, fara þá í meðferðarþrep 2.",
+                                    "Ef alvarlegur vandi, fara þá beint í meðferðarþrep 3, t.d.:",
+                                    "▪ Já við 10. Spurningu á EPDS um sjálfskaða.",
+                                    "▪ 15 stig eða meira á GAD-7."
+                                ],
+                                [
+                                    "Bjóða hópmeðferð fyrir þungaðar konur hjá ljósmóður eða sálfræðingi í heilsugæslu.",
+                                    "Bjóða almenna HAM-hópmeðferð við þunglyndi og kvíða ef hentar betur. Tilvísun frá lækni til sálfræðings á stöð.",
+                                    "Ef engin breyting á líðan eða versnun, fara þá í meðferðarþrep 3."
+                                ],
+                                "Samráð við heilsugæslulækni eða sálfræðing á stöð til ítarlegra mats á vanda og meðferðarþörf.",
+                                "Ef alvarlegur geðheilbrigðisvandi, vísa þá til inntökuteymis geðsviðs Landspítala, í samráði við heilsugæslulækni."
+
+                            ]
+                        }                        
                     }
                 ] 
             },
@@ -125,7 +142,7 @@
             },
             {
                 "name": "Lyf vegna geðraskana í barneignarferli",
-                "elements":[
+                "elements": [
                     {
                         "type": "text",
                         "content":"https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/BE04A4BAE7D1BC1400257E75003D39A7"
@@ -134,7 +151,7 @@
             },
             {
                 "name": "Flæðirit umönnunar",
-                "elements":[
+                "elements": [
                     {
                         "type": "text",
                         "content":"https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/A818CED1C42B2A4400257E75003D5549"
@@ -161,7 +178,6 @@
         "subchapters": [
             {
                 "name": "Conjugata vera diagonalis (CD) = skáþykktarvídd",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "text",
@@ -175,7 +191,6 @@
             },
             {
                 "name": "Diameter interspinalis = þjóbeinsnibbabilið",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "text",
@@ -189,7 +204,6 @@
             },
             {
                 "name": "Os sacrum og os coccygis = spjald-og rófubein",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "text",
@@ -203,7 +217,6 @@
             },
             {
                 "name": "Arcus = nárabogi",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "text",
@@ -213,7 +226,6 @@
             },
             {
                 "name": "Diameter intertuberalis = þjóbeinshnúskabilið",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "text",
@@ -227,7 +239,6 @@
             },
             {
                 "name": "Eðlileg grindarmál",
-                "subchapters": [],
                 "elements": [
                     {
                         "type": "list",
@@ -256,25 +267,342 @@
             },
             {
                 "name": "Grindarmál fyrir sitjandafæðingu",
-                "subchapters": [],
                 "elements": [
                     {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarinngangur:",
-                            "items": [
-                                "Conjugata vera 11,5 cm"
-                            ]
-                        }
-                    },
+                        "type": "text",
+                        "content": [
+                            "Grindarinngangur: Conjugata vera 11,5 cm",
+                            "Grindarútgangur: Samanlögð útgangsmál ≥ 34.5 cm"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Apgar skor": {
+        "name": "Apgar skor",
+        "elements": [
+            {
+                "type":"image",
+                "content": "https://ljosmaedrafelag.is/asset/2729/handbok_25-1.png"
+            }
+        ]
+    },
+    "Axlarklemma": {
+        "name": "Axlarklemma",
+        "subchapters": [
+            {
+                "name": "Aðferðir til að losa axlarklemmu",
+                "elements": [
                     {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarútgangur:",
-                            "items": [
-                                "Samanlögð útgangsmál ≥ 34.5 cm"
-                            ]
-                        }
+                        "type": "image",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/D1D285F9C7B1168300257E7600392928"
+                    }
+                ]
+            },
+            {
+                "name": "Flæðirit",
+                "elements": [
+                    {
+                        "type": "image",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C074903E5570B44700257E7600392FC3"
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjal LSH",
+                "elements": [
+                    {
+                        "type": "image",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/31276FD71468B79600257E7600391EC7"
+                    }
+                ]
+            }
+        ]
+    },
+    "Álagslaus fósturhjartsláttarrit": {
+        "name": "Álagslaus fósturhjartsláttarrit",
+        "elements": [
+            {
+                "type":"text",
+                "content": [
+                    "Álagslaust rit er fósturhjartsláttarrit sem tekið er hjá konu sem ekki telst í fæðingu.",
+                    "Ekki hefur verið sýnt fram á að notkun álagslausra rita hjá konu/fóstri án áhættuþátta bæti útkomu barns."
+                ]
+            },
+            {
+                "type":"text",
+                "content": "Sjá Gæðahandbók LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/9674253FC097AD0400257E750045161E"
+            }
+        ]
+    },
+    "Áverki/fall á meðgöngu": {
+        "name": "Áverki/fall á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3700AD2F51A575C700257E7600388C76"
+            }
+        ]
+    },
+    "Belgjarof í fæðingu": {
+        "name": "Belgjarof í fæðingu",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Belgjarof er mest notaða inngrip í fæðingarferlinu. Margir hafa talið að með því að framkvæma belgjarof megi auka kraft hríða og þannig stytta fyrsta og annað stig fæðingar."
+            },
+            {
+                "type":"text",
+                "content": "Við belgjarof er konan vaginal skoðuð og sá sem það gerir útilokar að fyrirsætar fósturæðar séu til staðar (vasa previa). Einnig þarf að meta staðsetningu höfuðs í grind móður og almennt er miðað við að kollur standi ekki hærra en -2 miðað við spinur"
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header": "Ábendingar",
+                    "items": [
+                        "Framköllun eða örvun fæðingaru",
+                        "Óeðlilegt fósturhjartsláttarrit",
+                        "Til að koma fyrir elektróðu á kolli barns",
+                        "Ef taka þarf blóðsýni úr kolli barns til að mæla ph/lactat\nÖrvun á langdreginni fæðingu m.v. 4 tíma action línu"
+                    ]
+                }
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header": "Fylgikvillar",
+                    "items": [
+                        "Þrýstingur á naflastreng (cord compression) og hæging á fósturhjartslætti",
+                        "Aukin sýkingarhætta",
+                        "Framfall á naflastreng",
+                        "Blæðing frá fóstur og/eða fylgjuæðum",
+                        "Aukinn sársauki og óþægindi fyrir konuna"
+                    ]
+                }
+            },
+            {
+                "type":"text",
+                "content": "WHO mælir með að í eðlilegum fæðingum þurfi að vera skýr ábending fyrir belgjarofi og að eingöngu eigi að íhuga belgjarof hjá konum þar sem gangur fæðingar er óeðlilegur."
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Samkvæmt yfirlitsgrein Cochrane styttir belgjarof án ábendingar ekki fyrsta eða annað stig fæðingar. Vísbendingar eru um að belgjarof geti aukið líkur á keisaraskurði og lægri Apgar við 5 mín.",
+                    "Niðurstaðan er því að belgjarof skal einungis gera ef klár ábending er fyrir því."
+                ]
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header": "Heimildir",
+                    "items": [
+                        "Smyth, R. M. D., Markham, C., Dowswell, T. (2008). Amniotomy for shortening spontaneous labour (Review). Cochrane Database of Systematic Reviews, 46.",
+                        "Lavender, T., Hart, A. og Symth, R. M. D. (2013). Effect of partogram use on outcomes for women in spontaneous labour at term. Cochrane Database of systemic Review, 7."
+                    ]
+                }
+            }
+        ]
+    },
+    "Bishop skor": {
+        "name": "Bishop skor",
+        "elements": [
+            {
+                "type":"image",
+                "content": "https://ljosmaedrafelag.is/asset/2726/handbok_16-1.png"
+            }
+        ]
+    },
+    "Blæðing á meðgöngu": {
+        "name": "Blæðing á meðgöngu",
+        "subchapters": [
+            {
+                "name": "12-22 vikur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/521A5F3FE748897000257E760038FA2A"
+                    }
+                ]
+            },
+            {
+                "name": "Eftir 22 vikur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5878505932557DA700257E760038FBF7"
+                    }
+                ]
+            }
+        ]
+    },
+    "Blæðing eftir fæðingu": {
+        "name": "Blæðing eftir fæðingu",
+        "subchapters": [
+            {
+                "name": "Viðbrögð við alvarlegri blæðingu",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F7B234D1D3122F6400257E76003905FB"                
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjal LSH",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5D89844F3D3F0E4B00257E760039016F"
+                    }
+                ]
+            }
+        ]
+    },
+    "Blóðleysi á meðgöngu": {
+        "name": "Blóðleysi á meðgöngu",
+        "elements": [
+            {
+                "type":"text",
+                "content": [
+                    "Skilgreining:",
+                    "Hemoglobin <110 á fyrri hluta meðgöngu eða <105 á seinnihluta meðgöngu."
+                ]
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Ef skimun við 12 eða 28 vikna meðgöngu bendir til blóðleysis er ástæða til að taka blóðhag, þar sem litið er til MCV, MCH og MCHC.",
+                    "Lækkað hemoglobin en eðlilegt MCV, MCH og MCHC: Eðlileg meðgönguþynning.",
+                    "Lækkað hemoglobin og lækkað MCV, MCH og MCHC: Járnskortsblóðleysi. Fyrsta meðferð er járnríkt fæði og járnlyf. Fullur skammtur er 200 mg á dag t.d. Duroferon 100 mg x2."
+                ]
+            },
+            {
+                "type":"text",
+                "content":"Sjá fróðleiksmola HH um Blóðleysi https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Blodhagur_og_blodleysi_2017.pdf"
+            },
+            {
+                "type":"text",
+                "content": "Sjá einnig fróðleiksmola um Járngjöf https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/J%C3%A1rngj%C3%B6f%20%C3%A1%20me%C3%B0g%C3%B6ngu%202017.pdf"
+            }
+        ]
+    },
+    "Blóðrannsóknir": {
+        "name": "Blóðrannsóknir",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Við túlkun niðurstaðna úr blóðrannsóknum þarf að taka tillit til þungunar og sumar rannsóknir eru næsta gagnslausar á meðgöngu vegna breytinganna sem verða. Breytingarnar gerast á fyrstu vikum meðgöngu. Í fæstum tilvikum gefa rannsóknarstofur upp sérstök viðmiðunargildi fyrir þungaðar konur."
+            },
+            {
+                "type":"list",
+                "content": {
+                    "header": "Helstu breytingar:",
+                    "items": [
+                        "Hb lækkar",
+                        "Hvítum blóðkornum fjölgar",
+                        "B12 lækkar verulega",
+                        "Járnbindigeta hækkar mikið",
+                        "Kreatínín lækkar mikið",
+                        "Gaukulsíunarhraði eykst mikið",
+                        "Na+ og K+ lækka aðeins",
+                        "D-dimer hækkar mikið",
+                        "Fibrinogen hækkar mikið",
+                        "Sökk hækkar mikið",
+                        "ALP hækkar mikið"
+                    ]
+                }
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Sjá nánar:",
+                    "Fróðleiksmoli Heilsugæslu höfuðborgarsvæðisins https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Bl%C3%B3%C3%B0ranns%C3%B3knir%20%C3%A1%20me%C3%B0g%C3%B6ngu%202017.pdf"
+                ]
+            }
+        ]
+    },
+    "Blóðsegi/blóðtappi á meðgöngu og í sængurlegu": {
+        "name": "Blóðsegi/blóðtappi á meðgöngu og í sængurlegu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/4B1BD3D265F8C4D2002581EF0030F757"
+            }
+        ]
+    },
+    "Brjóstagjöf": {
+        "name": "Brjóstagjöf",
+        "subchapters": [
+            {
+                "name": "10 þrep til árangursríkrar brjóstagjafar (WHO)",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/D4496C60F6404F3500257E7600500E2D"
+                    }
+                ]
+            },
+            {
+                "name": "Upphaf brjóstagjafar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/9FC1B397B3FD855200257E760050095E"
+                    }
+                ]
+            },
+            {
+                "name": "Hungurmerki barns",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/5468e7ecc703b10400257e7600502094/$FILE/Tj%C3%A1ning%20barns%20um%20svengd.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Inntekt og útskilnaður",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/28D1885A22B3F37500257E760050264D"
+                    }
+                ]
+            },
+            {
+                "name": "Ábótargjafir",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/AB0E34DF6353BE3A00257E7600503FFD"
+                    }
+                ]
+            },
+            {
+                "name": "Matslisti fyrir ábótargjafir",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/DD389A27A38DAE8D00257E7600504518"
+                    }
+                ]
+            },
+            {
+                "name": "Mexíkanahattur leiðbeiningar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/16dde0e00e89f6ec00257e7600504f34/$FILE/Geirv%C3%B6rtuhl%C3%ADf%20lei%C3%B0beiningar_lesi%C3%B0_Rakel_lei%C3%B0r%C3%A9tt_IEi_sept_2014_GH_jan_2015.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Mjaltavél og geymsla brjóstamjólkur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F3569A6D8373DC9A00257F08002E578E"
                     }
                 ]
             }

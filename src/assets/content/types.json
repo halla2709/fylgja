@@ -1,0 +1,36 @@
+[
+    {
+        "type": "list",
+        "content": {
+            "header": "header",
+            "items": [
+                "textblock",
+                [
+                    "other text", "text in new line"
+                ]
+            ]
+        }
+    },
+    {
+        "type": "text",
+        "content": "some text"
+    },
+    {
+        "type": "text",
+        "content": ["some text", "text in a new line"]
+    },
+    {
+        "type": "numberList",
+        "content": {
+            "header": "header",
+            "items": [
+                "first item",
+                [ "second item", "with two lines"]
+            ]
+        }
+    },
+    {
+        "type": "image",
+        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-2.png"
+    }
+]
