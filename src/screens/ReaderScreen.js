@@ -1,11 +1,15 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
+import { Text, View, TouchableHighlight, ScrollView, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { GetChapters, ChapterElementsToViews }  from "../controllers/Chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
+import Image from 'react-native-scalable-image';
+
+//Gamla: <Image source={{uri: subchapter.image}} style={{ width: Dimensions.get('window').width*0.8, height: Dimensions.get('window').width*0.5, resizeMode: "contain" }} />
+  
 
 export class ReaderScreen extends React.Component {
   async getImage(imageSource) {
@@ -62,8 +66,8 @@ export class ReaderScreen extends React.Component {
         </View>
 
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-          <Image source={{uri: subchapter.image}} style={{ width: Dimensions.get('window').width*0.8, height: Dimensions.get('window').width*0.5, resizeMode: "contain" }} />
-        </View>
+        <Image width={Dimensions.get('window').width} height={Dimensions.get('window').height} source={{uri: subchapter.image}}/>
+       </View>
       </View>);
     });
     console.log("Returning text blocks " + textBlocks.length);
@@ -118,7 +122,7 @@ export class ReaderScreen extends React.Component {
 
           <View style={{ borderColor: "rgb(34,82,171)", borderRadius: 10, borderBottomWidth: 0.5, width: '99%', alignSelf: 'center', }}>
             <View style={Styles.decorationcontainer}>
-              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/11.png')} />
+              <Image height={25} resizeMode="contain" source={require('../assets/images/11.png')} />
             </View>
             <View style={Styles.chaptercontainer}>
               <TouchableHighlight style={Styles.leftarrow} onPress={() => { this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1) }); }} underlayColor="rgb(245,245,245)">
@@ -132,7 +136,7 @@ export class ReaderScreen extends React.Component {
               </TouchableHighlight>
             </View>
             <View style={Styles.decorationcontainer}>
-              <Image style={Styles.readerdecoration} resizeMode="contain" source={require('../assets/images/10.png')} />
+              <Image height={25} resizeMode="contain" source={require('../assets/images/10.png')} />
             </View>
           </View>
 
