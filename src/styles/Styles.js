@@ -137,6 +137,11 @@ export default StyleSheet.create({
     fontSize: 18/PixelRatio.getFontScale(),
   },
 
+  pItalic: {
+    fontFamily: 'opensans-italic',
+    fontSize: 18/PixelRatio.getFontScale(),
+  },
+
   h1Information: {
     fontFamily: 'opensans-regular',
     fontSize: 24/PixelRatio.getFontScale(),
@@ -147,7 +152,6 @@ export default StyleSheet.create({
     fontSize: 15/PixelRatio.getFontScale(),
     paddingLeft: 15,
     color: '#696969',
-
   },
 
   pBold: {
@@ -486,8 +490,7 @@ export default StyleSheet.create({
     height: '30%',
   },
 
-  informationcontainer: {
-   
+  informationcontainer: {   
     backgroundColor: 'rgb(218,232,245)',
     borderRadius: 10,
     opacity: 0.6,

@@ -21,6 +21,7 @@ export default class AppContainer extends React.Component {
       'dosis-regular': require('../assets/fonts/Dosis/Dosis-Regular.ttf'),
       'dosis-bold': require('../assets/fonts/Dosis/Dosis-Bold.ttf'),
       'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
+      'opensans-italic': require('../assets/fonts/Open_Sans/OpenSans-Italic.ttf'),
       'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
       'MaterialIcons': require('../assets/fonts/MaterialIcons.ttf'),
       'Material Icons': require('../assets/fonts/MaterialIcons.ttf'),

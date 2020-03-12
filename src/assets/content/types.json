@@ -16,6 +16,10 @@
         "content": "some text"
     },
     {
+        "type": "italics",
+        "content": "some text"
+    },
+    {
         "type": "text",
         "content": ["some text", "text in a new line"]
     },

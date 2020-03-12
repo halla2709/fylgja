@@ -393,14 +393,12 @@
                 ]
             },
             {
-                "type": "list",
-                "content": {
-                    "header": "Heimildir",
-                    "items": [
-                        "Smyth, R. M. D., Markham, C., Dowswell, T. (2008). Amniotomy for shortening spontaneous labour (Review). Cochrane Database of Systematic Reviews, 46.",
-                        "Lavender, T., Hart, A. og Symth, R. M. D. (2013). Effect of partogram use on outcomes for women in spontaneous labour at term. Cochrane Database of systemic Review, 7."
-                    ]
-                }
+                "type": "italics",
+                "content": [
+                    "Heimildir",
+                    "Smyth, R. M. D., Markham, C., Dowswell, T. (2008). Amniotomy for shortening spontaneous labour (Review). Cochrane Database of Systematic Reviews, 46.",
+                    "Lavender, T., Hart, A. og Symth, R. M. D. (2013). Effect of partogram use on outcomes for women in spontaneous labour at term. Cochrane Database of systemic Review, 7."
+                ]
             }
         ]
     },
@@ -605,6 +603,15 @@
                         "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F3569A6D8373DC9A00257F08002E578E"
                     }
                 ]
+            }
+        ]
+    },
+    "Prufukafli með link": {
+        "name": "Prufukafli með link",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Sjá texta hér um Axlaklemmur //fylgja.app/Andleg_líðan_á_meðgöngu/16_vikna_skoðun/!"
             }
         ]
     }

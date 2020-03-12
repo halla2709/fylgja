@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-import { GetChapters, ChapterElementsToViews }  from "../controllers/Chapters.js";
+import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers/Chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
@@ -71,7 +71,10 @@ export class ReaderScreen extends React.Component {
   }
 
   getUrlText(url) {
-    if(this.differentUrls[url]) 
+    if(url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/)) {
+      return "hér"
+    }
+    else if(this.differentUrls[url]) 
       return url.substring(7);
     else
       return url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk';
@@ -85,13 +88,21 @@ export class ReaderScreen extends React.Component {
   }
 
   openUrl(url) {
+    var matches = url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/);
+    if(matches) {
+
+      var newKey = KeyForName(matches[2].replace(/_/g," "), matches[4].replace(/_/g," "));
+      if(newKey)
+        this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: newKey });
+      return;
+    }
     url = this.getUrl(url);
     WebBrowser.openBrowserAsync(url);
   }
 
   async componentDidMount() {
     console.log("Did mount");
-    var views = await ChapterElementsToViews(this.chapter);
+    var views = await ChapterElementsToViews(this.chapter, this);
     console.log("Blocks ready " + this.chapter.key);
     this.setState({textBlocks: views});
   }
@@ -106,12 +117,7 @@ export class ReaderScreen extends React.Component {
     this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };
   }
 
-  componentWillUnmount() {
-    console.log("Unmount " + this.chapter.key);
-  }
-
   render() {
-    console.log("Render " + this.chapter.key + " blocks: " + this.state.textBlocks.length);
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
