@@ -1094,62 +1094,62 @@
 
 "@expo/ngrok-bin-darwin-ia32@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-darwin-ia32/-/ngrok-bin-darwin-ia32-2.2.8.tgz#46ed6d485a87396acf4af317beeaab7a1f607315"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-darwin-ia32/-/ngrok-bin-darwin-ia32-2.2.8.tgz#46ed6d485a87396acf4af317beeaab7a1f607315"
   integrity sha512-Mgept4WvXobcNQbxV0f8Nqrukl4HsAM4ExfFOC5BJ1PinlZisb1lQYp+PGu/3DuOYAinAspbL/3m77JkhT5Oow==
 
 "@expo/ngrok-bin-darwin-x64@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-darwin-x64/-/ngrok-bin-darwin-x64-2.2.8.tgz#bf32ece32c3a1c6dcbe518ee88e6c2af3ad8764a"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-darwin-x64/-/ngrok-bin-darwin-x64-2.2.8.tgz#bf32ece32c3a1c6dcbe518ee88e6c2af3ad8764a"
   integrity sha512-hEVxBAKTT9G+jCy+2NOjgFrPrrzmdxljLhz3cQIb4izjooQXGCbTFvnEntB0odgsf6Dpa2jWNNt18H6t2nneOQ==
 
 "@expo/ngrok-bin-freebsd-ia32@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-freebsd-ia32/-/ngrok-bin-freebsd-ia32-2.2.8.tgz#7b198757f6bb6602a4c2bc5384b4ddb4d272eca5"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-freebsd-ia32/-/ngrok-bin-freebsd-ia32-2.2.8.tgz#7b198757f6bb6602a4c2bc5384b4ddb4d272eca5"
   integrity sha512-yGdq06wUxreCPxXnhqlL3GzvLtArJ6eDOQinv4SiDK+ftQPY4TloEMQr/rwohvtx63O+bT9jAtgJW44jlfIQ2Q==
 
 "@expo/ngrok-bin-freebsd-x64@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-freebsd-x64/-/ngrok-bin-freebsd-x64-2.2.8.tgz#3d510c3196087e17747d5e34b765cca1e3279f36"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-freebsd-x64/-/ngrok-bin-freebsd-x64-2.2.8.tgz#3d510c3196087e17747d5e34b765cca1e3279f36"
   integrity sha512-1uSZRastddaUIrK/2B5MANhV7LDKJ8/4cSQxn+E2+U296VKkU6n1ZfZ207a7hA1ctQeBcvwkRx9biFxDa99How==
 
 "@expo/ngrok-bin-linux-arm64@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-linux-arm64/-/ngrok-bin-linux-arm64-2.2.8.tgz#3829665093c7921c8b73e26c7c262493a93d53b4"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-linux-arm64/-/ngrok-bin-linux-arm64-2.2.8.tgz#3829665093c7921c8b73e26c7c262493a93d53b4"
   integrity sha512-9iXr88LlzBCp7+NwfPDsSg2sIy5GfWFXrhU8+vGLnFvZ5MO6ZoRmXbw2VRPFm7ekMa0Losddny4aiLDJkr9hXw==
 
 "@expo/ngrok-bin-linux-arm@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-linux-arm/-/ngrok-bin-linux-arm-2.2.8.tgz#1e64ca1a0856daea5fd752b56d394f083079f195"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-linux-arm/-/ngrok-bin-linux-arm-2.2.8.tgz#1e64ca1a0856daea5fd752b56d394f083079f195"
   integrity sha512-qruRsoEuFvaVsSSlhNtHR8uWgF7aA6jdRtCuVKO4pMW32lTZfGS+U/y6hB0YBxXv4xhEn8o1x/15oLU7cNUxEA==
 
 "@expo/ngrok-bin-linux-ia32@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-linux-ia32/-/ngrok-bin-linux-ia32-2.2.8.tgz#dcd8be0a894ba8969548e113a3cd16e7e6fe912b"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-linux-ia32/-/ngrok-bin-linux-ia32-2.2.8.tgz#dcd8be0a894ba8969548e113a3cd16e7e6fe912b"
   integrity sha512-Cm3BH4nv55A6KF+XjrK8oLe1Ktn4WrUabd6TcErQRM6/2454A+vh1r6CEKWOVWy4bg7ceTbjgHhCdj9WMv8WTg==
 
 "@expo/ngrok-bin-linux-x64@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-linux-x64/-/ngrok-bin-linux-x64-2.2.8.tgz#517119cb9aa0b74e678d953878910500b6f7f6ec"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-linux-x64/-/ngrok-bin-linux-x64-2.2.8.tgz#517119cb9aa0b74e678d953878910500b6f7f6ec"
   integrity sha512-jNhnnfMR/yAgUV1LnAheq/WWB/Tkdgm5sxZhN0fjN00CeiYTVyNuCsii2tdjXJCGrxdpb6RzvOxjLGstIT0mUQ==
 
 "@expo/ngrok-bin-sunos-x64@2.2.8":
   version "2.2.8"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-sunos-x64/-/ngrok-bin-sunos-x64-2.2.8.tgz#66ebd87786b94836ba5636b22e386b81d4e7da32"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-sunos-x64/-/ngrok-bin-sunos-x64-2.2.8.tgz#66ebd87786b94836ba5636b22e386b81d4e7da32"
   integrity sha512-Ogcn/6jNN2PMMaZ1PJu7JBiZz92Yowa119cclI2E2RKyIqQaOYol2g72oHzm8SQ49KfzEJMGDmQA4Xh29cKmrQ==
 
 "@expo/ngrok-bin-win32-ia32@2.2.8-beta.1":
   version "2.2.8-beta.1"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-win32-ia32/-/ngrok-bin-win32-ia32-2.2.8-beta.1.tgz#c68e530b3c1c96a548d0926fb93e45e2980acd59"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-win32-ia32/-/ngrok-bin-win32-ia32-2.2.8-beta.1.tgz#c68e530b3c1c96a548d0926fb93e45e2980acd59"
   integrity sha512-Pva9ZNjUieD2/RVav7LYGAXZ1O6MVXlvOnJmHSmjP4rhreek7/Ez7b5HsCEN3YLjZIcPHH8SV8Duix1NO2zB5A==
 
 "@expo/ngrok-bin-win32-x64@2.2.8-beta.1":
   version "2.2.8-beta.1"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin-win32-x64/-/ngrok-bin-win32-x64-2.2.8-beta.1.tgz#598d74968ef6d0c15f00df1a41d0df2a40562f23"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin-win32-x64/-/ngrok-bin-win32-x64-2.2.8-beta.1.tgz#598d74968ef6d0c15f00df1a41d0df2a40562f23"
   integrity sha512-tVn0jkRC7cbDL502FU7iVI4jbaEKcbTER7pYo2xdUZgM02n4u0AS+FFuzUN+irDiRYZQIFdmDIhxDGl+SHkzbA==
 
 "@expo/ngrok-bin@2.2.8-beta.3":
   version "2.2.8-beta.3"
-  resolved "http://registry.npmjs.org/@expo/ngrok-bin/-/ngrok-bin-2.2.8-beta.3.tgz#22b5fadf0a0de91adbcc62a9a3c86402fe74e672"
+  resolved "https://registry.npmjs.org/@expo/ngrok-bin/-/ngrok-bin-2.2.8-beta.3.tgz#22b5fadf0a0de91adbcc62a9a3c86402fe74e672"
   integrity sha512-VzL67ybSvSYhFJxwBm19VMEHAcgg6bDhE9p8HKDOXL2tdHIzqYtqAYxOyhv2mS263WYqdomtoAChSOb449of+g==
   optionalDependencies:
     "@expo/ngrok-bin-darwin-ia32" "2.2.8"
@@ -1166,7 +1166,7 @@
 
 "@expo/ngrok@2.4.2":
   version "2.4.2"
-  resolved "http://registry.npmjs.org/@expo/ngrok/-/ngrok-2.4.2.tgz#cb304ca49913b8bc23550407fb4f8b25f3e76a9a"
+  resolved "https://registry.npmjs.org/@expo/ngrok/-/ngrok-2.4.2.tgz#cb304ca49913b8bc23550407fb4f8b25f3e76a9a"
   integrity sha512-x2VbnHVyaID2zGqfX2fD2Ui8as+bebhV6IFODSVhSSsKTSke+ORviLkvEZJgd5Hlz6WgRzuCAtqMkxXb1G6o6Q==
   dependencies:
     "@expo/ngrok-bin" "2.2.8-beta.3"
@@ -1755,9 +1755,9 @@ acorn-globals@^4.1.0:
     acorn "^5.0.0"
 
 acorn@^5.0.0, acorn@^5.3.0:
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.4.1.tgz#fdc58d9d17f4a4e98d102ded826a9b9759125102"
-  integrity sha512-XLmq3H/BVvW6/GbxKryGxWORz1ebilSsUDlyC27bXhWGWAZWkGwS6FLHjOlwFXNFoWFQEO/Df4u0YYd0K3BQgQ==
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.4.tgz#3e8d8a9947d0599a1796d10225d7432f4a4acf5e"
+  integrity sha512-1D++VG7BhrtvQpNbBzovKNc1FLGGEE/oGe7b9xJm/RFHMBeUaUGpluV9RLjZa47YFdPcDAenEYuq9pQPcMdLJg==
 
 ajv@^5.1.0, ajv@^5.2.2:
   version "5.5.2"
@@ -3391,7 +3391,7 @@ event-target-shim@^1.0.5:
 
 eventemitter2@^1.0.0:
   version "1.0.5"
-  resolved "http://registry.npmjs.org/eventemitter2/-/eventemitter2-1.0.5.tgz#f983610517b1737c0b9dc643beca93893c04df18"
+  resolved "https://registry.npmjs.org/eventemitter2/-/eventemitter2-1.0.5.tgz#f983610517b1737c0b9dc643beca93893c04df18"
   integrity sha1-+YNhBRexc3wLncZDvsqTiTwE3xg=
 
 eventemitter3@^3.0.0:
@@ -3612,6 +3612,11 @@ expo-web-browser@~6.0.0:
   resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-6.0.0.tgz#63a59d4c02cd7ba47faa6a2eb04decb1a1ab2a32"
   integrity sha512-7XkFPd4PRlVP6FscTnn78c0tY6+yLzb2Eai/ed+l+LB+hZWuhyY3ONzYM7/IKAiPmfhZr4Qs80vIa7iiavti8A==
 
+expo-web-browser@~7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/expo-web-browser/-/expo-web-browser-7.0.1.tgz#b64ef895b5c0604f312b64b085f7a2f1da630e20"
+  integrity sha512-THjqlMitUsjHUGYEfag2ybdhgZpp0C4ATixfNpWlS/8vTM4Sw/KGfwB0VuqtqLUMT2q2MTJSrlrWY8Boi4yvTg==
+
 expo@^34.0.3:
   version "34.0.4"
   resolved "https://registry.yarnpkg.com/expo/-/expo-34.0.4.tgz#af6ef0da40c98981b5f3323c86fd815dfa417fff"
@@ -3727,7 +3732,7 @@ extend@^3.0.0, extend@~3.0.1:
 
 external-editor@^2.0.1, external-editor@^2.1.0:
   version "2.2.0"
-  resolved "http://registry.npmjs.org/external-editor/-/external-editor-2.2.0.tgz#045511cfd8d133f3846673d1047c154e214ad3d5"
+  resolved "https://registry.npmjs.org/external-editor/-/external-editor-2.2.0.tgz#045511cfd8d133f3846673d1047c154e214ad3d5"
   integrity sha512-bSn6gvGxKt+b7+6TKEv1ZycHleA7aHhRHyAqJyp5pbUFuYYNIzpZnQDk7AsYckyWdEnTeAnay0aCy2aV6iTk9A==
   dependencies:
     chardet "^0.4.0"
@@ -4627,7 +4632,7 @@ inquirer@^3.0.6:
 
 inquirer@^5.0.1:
   version "5.2.0"
-  resolved "http://registry.npmjs.org/inquirer/-/inquirer-5.2.0.tgz#db350c2b73daca77ff1243962e9f22f099685726"
+  resolved "https://registry.npmjs.org/inquirer/-/inquirer-5.2.0.tgz#db350c2b73daca77ff1243962e9f22f099685726"
   integrity sha512-E9BmnJbAKLPGonz0HeWHtbKf+EeSP93paWO3ZYoUpq/aowXvYGjjCSuashhXPpzbArIjBbji39THkxTz9ZeEUQ==
   dependencies:
     ansi-escapes "^3.0.0"
@@ -5488,7 +5493,7 @@ json5@^0.5.1:
 
 json5@^1.0.1:
   version "1.0.1"
-  resolved "http://registry.npmjs.org/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
+  resolved "https://registry.npmjs.org/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
   integrity sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==
   dependencies:
     minimist "^1.2.0"
@@ -5660,7 +5665,7 @@ lodash.clone@^4.5.0:
 
 lodash.isempty@^4.4.0:
   version "4.4.0"
-  resolved "http://registry.npmjs.org/lodash.isempty/-/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
+  resolved "https://registry.npmjs.org/lodash.isempty/-/lodash.isempty-4.4.0.tgz#6f86cbedd8be4ec987be9aaf33c9684db1b31e7e"
   integrity sha1-b4bL7di+TsmHvpqvM8loTbGzHn4=
 
 lodash.pad@^4.1.0:
@@ -6399,7 +6404,7 @@ nice-try@^1.0.4:
 
 node-fetch@1.6.3:
   version "1.6.3"
-  resolved "http://registry.npmjs.org/node-fetch/-/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
+  resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-1.6.3.tgz#dc234edd6489982d58e8f0db4f695029abcd8c04"
   integrity sha1-3CNO3WSJmC1Y6PDbT2lQKavNjAQ=
   dependencies:
     encoding "^0.1.11"
@@ -6677,7 +6682,7 @@ opencollective@^1.0.3:
 
 opn@4.0.2, opn@^4.0.2:
   version "4.0.2"
-  resolved "http://registry.npmjs.org/opn/-/opn-4.0.2.tgz#7abc22e644dff63b0a96d5ab7f2790c0f01abc95"
+  resolved "https://registry.npmjs.org/opn/-/opn-4.0.2.tgz#7abc22e644dff63b0a96d5ab7f2790c0f01abc95"
   integrity sha1-erwi5kTf9jsKltWrfyeQwPAavJU=
   dependencies:
     object-assign "^4.0.1"
@@ -7365,7 +7370,7 @@ react-native-drawer-layout@1.3.2:
 
 react-native-elements@^0.19.1:
   version "0.19.1"
-  resolved "http://registry.npmjs.org/react-native-elements/-/react-native-elements-0.19.1.tgz#f92b69d864a150215d01f81fe3c52a9cada83e45"
+  resolved "https://registry.npmjs.org/react-native-elements/-/react-native-elements-0.19.1.tgz#f92b69d864a150215d01f81fe3c52a9cada83e45"
   integrity sha1-+Stp2GShUCFdAfgf48UqnK2oPkU=
   dependencies:
     lodash.isempty "^4.4.0"
@@ -7446,6 +7451,11 @@ react-native-safe-area-view@^0.8.0:
   integrity sha512-uAUzpBxXPVmfupz71GYcPjUBnZFtDuThKO/Q4FWEUykSuML78lItYR6JRsE006CY6gw6mUwpk4MJjhDE4uZ+Ww==
   dependencies:
     hoist-non-react-statics "^2.3.1"
+
+react-native-scalable-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-scalable-image/-/react-native-scalable-image-1.0.0.tgz#2751a02c2610b4266eb06ce0d466fb1eff266127"
+  integrity sha512-Hcizro1eh7GhelTIjpAYi6WR8ybHNFkMMPSpEeMNI6u1Lxt7b6o97MM9r7+g8hlUjKUlNPQvwaqcf+rW75sSfg==
 
 react-native-search-bar@^3.4.2:
   version "3.4.2"
@@ -7717,7 +7727,7 @@ readable-stream@^2.0.1, readable-stream@^2.0.5, readable-stream@^2.0.6, readable
 
 readable-stream@^2.0.2:
   version "2.3.6"
-  resolved "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
+  resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   integrity sha512-tQtKA9WIAhBF3+VLAseyMqZeBjW0AHJoxOtYqSUZNJxauErmLbVm2FW1y+J/YA9dUrAC39ITejlZWhVIwawkKw==
   dependencies:
     core-util-is "~1.0.0"
