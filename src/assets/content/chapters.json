@@ -606,6 +606,176 @@
             }
         ]
     },
+    "Brjóstagjöf – vandamál": {
+        "name": "Brjóstagjöf – vandamál",
+        "subchapters": [
+            {
+                "name": "Sárar geirvörtur",
+                "elements": [
+                    {                        
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/96DAF177829189A100257E7600505915"
+                    },
+                    {                        
+                        "type": "text",
+                        "content": "Fyrirbygging sársauka í geirvörtum https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FB6A258FBA15EFE200257EED003F8B10"
+                    },
+                    {                        
+                        "type": "text",
+                        "content": "Orsakaþættir sársauka í geirvörtum https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/4FC9DBA3B7DBDD6F00257EED003FE115"
+                    }
+                ]
+            },
+            {
+                "name": "Sýking í geirvörtu",
+                "elements": [
+                    {                        
+                        "type": "text",
+                        "content": "Bakteríusýking https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/4F552BD2561165E100257E760050681F"
+                    },
+                    {                        
+                        "type": "text",
+                        "content": "Sveppasýking https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/7CCE0849B0E6E5F500257E7600507102"
+                    }
+                ]
+            },
+            {
+                "name": "Stálmi",
+                "elements": [
+                    {                        
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EFA993EBDF7FC56800257E7600505C0D"
+                    }
+                ]
+            },
+            {
+                "name": "Brjóstabólga",
+                "elements": [
+                    {                        
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/2D92B218110192FC00257E7600514ED2"
+                    },
+                    {                        
+                        "type": "text",
+                        "content": "Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/503f6896c21d168a00257f700037dc96/$FILE/Fl%C3%A6%C3%B0irit%20brj%C3%B3stab%C3%B3lga_lesi%C3%B0_GH_IEi.pdf"
+                    },
+                    {                        
+                        "type": "text",
+                        "content": "Fræðslubæklingur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/f7474b42619dec1000257f700037f82c/$FILE/Brj%C3%B3stab%C3%B3lga%20og%20brj%C3%B3stagj%C3%B6f_fr%C3%A6%C3%B0sla_lesi%C3%B0GH.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Eftirlit á meðgöngu eftir magahjáveitu, magaband, magaermi": {
+        "name": "Eftirlit á meðgöngu eftir magahjáveitu, magaband, magaermi",
+        "elements": [
+            {                        
+                "type": "text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=ecf6e214-9cc6-11e9-9445-005056bc2afe"
+            },
+            {                        
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/DE034194BB7BC45C00257E75004508F"
+            }
+        ]   
+    },
+    "Endurlífgun nýbura": {
+        "name": "Endurlífgun nýbura",
+        "elements": [
+            {
+                "type": "list",
+                "content": {
+                    "header": "Aðhlynning og endurlífgun nýbura felst í eftirfarandi:",
+                    "items": [
+                        "▪ Blóðgjöf frá fylgju um naflastreng (þegar við á) með því að seinka því að skilið sé á milli.",
+                        "▪ Þurrka barnið, vefja það líni og grípa til frekari aðgerða til viðhalds eðlilegum líkamshita (36,5°C - 37,5°C) sé þess þörf.",
+                        "▪ Meta ástand barnsins og þörf fyrir frekari inngrip.",
+                        "▪ Halda öndunarvegi opnum.",
+                        "▪ Anda fyrir barnið með belg og maska ef það andar ekki sjálft.",
+                        "▪ Halda áfram öndunarhjálp þar til barnið fer að anda sjálft.",
+                        "▪ Hefja skal hjartahnoð ef hjartsláttur er undir 60 slögum á mínútu eftir fimm þanblástra (e. inflation breaths) og 30 sekúndur af virkri öndunarhjálp því til viðbótar."
+                    ]
+                }
+            },
+            {
+                "type": "text",
+                "content": "Í langflestum tilvikum er nóg að veita öndunarhjálp svo barnið taki við sér og fari að anda sjálft. Loftun lungna og viðvarandi öndunarhjálp er algjör forsenda endurlífgunar nýbura. Í stöku tilvikum er útfall hjarta hins vegar það skert að flæði súrefnisríks blóðs frá loftfylltum lungum til hjarta er ófullnægjandi. Þegar svo er, getur þurft að beita hjartahnoði með öndunarhjálpinni, en þá oftast aðeins í stuttan tíma. Enn fátíðara er að því til viðbótar þurfi að grípa til lyfja."
+            },
+            {
+                "type": "text",
+                "content": "Sjá nánar grein í ljósmæðrablaðinu, bls 29, júlí 2018.\nhttps://www.ljosmaedrafelag.is/assets/Lj%C3%B3sm%C3%A6%C3%B0rabla%C3%B0i%C3%B0/LMFI-1tbl-j%C3%BAl-2018-2_2980460.pdf"
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Flæðirit",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ce71226d7cab254200257e7600391796/$FILE/endurl%C3%ADfgun%20n%C3%BDbura%20fl%C3%A6%C3%B0irit.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Fæðing eftir fyrri keisaraskurð": {
+        "name": "Fæðing eftir fyrri keisaraskurð",
+        "elements": [
+            {                        
+                "type": "text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Faeding%20eftir%20keisaraskurd.pdf"
+            },
+            {                        
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/845DCB667546237A00257E760036DDC4"
+            },
+            {                        
+                "type": "text",
+                "content": "Bæklingaröð Ljósmæðrafélags Íslands http://ljosmodirdev.wm.is/asset/342/faeding_eftir_fyrri_keisara.pdf"
+            }
+        ]
+    },
+    "Fæðing í vatni": {
+        "name": "Fæðing í vatni",
+        "subchapters": [
+            {
+                "name": "Ábendingar og frábendingar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/624CB472D39B9BAC00257E760056111D"
+                    }
+                ]
+            },
+            {
+                "name": "Fæðing í vatni",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/5230B402777A729300257E7600369A71",
+                    }
+                ]
+            }
+        ]
+    },
+    "Fósturlát": {
+        "name": "Fósturlát",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Fósturlát verður í um 15% allra greindra þungana. Talið er að þriðja hver kona missi fóstur á frjósemisskeiðinu. Ekki er talin ástæða til að rannsaka orsök fósturláts fyrr en konan hefur misst fóstur þrisvar sinnum. Algengasta ástæða fósturláts er fósturgalli, en aðrar ástæður geta verið galli í fylgjuvef eða sjúkdómur hjá móður."
+            },
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5DCA63B1CF3290AA00257E760036AD9A"
+            },
+            {
+                "type": "text",
+                "content": "Upplýsingablækingur vegna framköllunar fósturláts við 12-22 vikur. https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fe94c0877812b0f400257e760036c2a8/$FILE/Uppl%C3%BDsingar%20vi%C3%B0%20innskrift-Framkallad%20f%C3%B3sturlat%2012-22%20vikur.pdf"
+            } 
+        ]
+    },
     "Prufukafli með link": {
         "name": "Prufukafli með link",
         "elements": [
