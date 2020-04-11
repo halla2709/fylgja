@@ -94,8 +94,9 @@ export class ReaderScreen extends React.Component {
   openUrl(url) {
     var matches = url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/);
     if(matches) {
-
       var newKey = KeyForName(matches[2].replace(/_/g," "), matches[4].replace(/_/g," "));
+      console.log("Matches", matches);
+      console.log(newKey);
       if(newKey)
         this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: newKey });
       return;

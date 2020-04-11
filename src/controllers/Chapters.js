@@ -86,7 +86,7 @@ function ElementToView(element, key) {
     }
     else if(element.type == "image") {
         return <View key={key}>
-            <Text style={Styles.pA}>{element.image.content}</Text>
+            <Text style={Styles.pA}>{element.content}</Text>
         </View>
     }
     else if(element.type == "numberList") {

@@ -160,125 +160,6 @@
             }
         ]
     },
-    "Grindarmál": {
-        "name": "Grindarmál",
-        "elements": [
-            {
-                "type": "list",
-                "content": {
-                    "header": "Mikilvægustu málin í:",
-                    "items": [
-                        "Grindarinngangi: fjarlægðin milli spjaldbrúnar og lífbeins",
-                        "Miðgrind: fjarlægðin milli þjóbeinsnibbanna",
-                        "Grindarútgangi: fjarlægðin milli þjóbeinshnúskanna"
-                    ]
-                }
-            }
-        ],
-        "subchapters": [
-            {
-                "name": "Conjugata vera diagonalis (CD) = skáþykktarvídd",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": "Fjarlægðin frá neðri brún lífbeins (symfysu) að spjaldbrún (promontorium). Við skoðunina lætur maður löngutöng nema við spjaldbrún. Ekki á að nást aftur að spjaldbrún, ef það er hægt er um grindarinngangsþrengsli að ræða. Lengdin á fingrinum er mæld. CD er venjulega ≥12.5 cm. Conjugata vera (CV) = CD - 1 – 1½ cm."
-                    },
-                    {
-                        "type": "image",
-                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-2.png"
-                    }
-                ]
-            },
-            {
-                "name": "Diameter interspinalis = þjóbeinsnibbabilið",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": "Er venjulega um 10 - 11 sm. Ekki hægt að mæla kliniskt. Ef þjóbeinsnibburnar finnast á eðlilegum stað eru þær ekki prominerandi. Ef önnur finnst greinilegar en hin getur verið um grindarskekkju að ræða"
-                    },
-                    {
-                        "type": "image",
-                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-4.png"
-                    }
-                ]
-            },
-            {
-                "name": "Os sacrum og os coccygis = spjald-og rófubein",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content":  "Athugað er hvort sveigjan á þessum beinum er eðlileg. Rófubein fettist aftur í fæðingunni"
-                    },
-                    {
-                        "type": "image",
-                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-6.png"
-                    }
-                ]
-            },
-            {
-                "name": "Arcus = nárabogi",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": "Vísifingri og löngutöng er ýtt upp undir lífbeinið. Fingurnir eiga að rúmast þar samsíða með innri hlið upp og telst náraboginn þá vera minnst 90°. "
-                    }
-                ]
-            },
-            {
-                "name": "Diameter intertuberalis = þjóbeinshnúskabilið",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": "Þetta mál er mælt með því að þrýsta krepptum hnefanum upp að perineum. Ef hnefinn rúmast á milli þjóbeinshnúskanna er fjarlægðin milli þeirra amk. 11 sm sem er eðlilegt."
-                    },
-                    {
-                        "type": "image",
-                        "content": "https://ljosmaedrafelag.is/asset/2725/handbok_14-9.png"
-                    }
-                ] 
-            },
-            {
-                "name": "Eðlileg grindarmál",
-                "elements": [
-                    {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarinngangur:",
-                            "items": [
-                                "Conjugata vera 11-12 cm",
-                                "Diameter transversum 13-14 sm",
-                                "≥23 sm"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarútgangur:",
-                            "items": [
-                                "Diameter interspinalis 10-11 cm",
-                                "Diameter intertuberalis 10-11",
-                                "Diameter recta 11-12 sm",
-                                "≥31.5 cm"
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "Grindarmál fyrir sitjandafæðingu",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": [
-                            "Grindarinngangur: Conjugata vera 11,5 cm",
-                            "Grindarútgangur: Samanlögð útgangsmál ≥ 34.5 cm"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
     "Apgar skor": {
         "name": "Apgar skor",
         "elements": [
@@ -364,7 +245,8 @@
                         "Framköllun eða örvun fæðingaru",
                         "Óeðlilegt fósturhjartsláttarrit",
                         "Til að koma fyrir elektróðu á kolli barns",
-                        "Ef taka þarf blóðsýni úr kolli barns til að mæla ph/lactat\nÖrvun á langdreginni fæðingu m.v. 4 tíma action línu"
+                        "Ef taka þarf blóðsýni úr kolli barns til að mæla ph/lactat",
+                        "Örvun á langdreginni fæðingu m.v. 4 tíma action línu"
                     ]
                 }
             },
@@ -704,7 +586,10 @@
             },
             {
                 "type": "text",
-                "content": "Sjá nánar grein í ljósmæðrablaðinu, bls 29, júlí 2018.\nhttps://www.ljosmaedrafelag.is/assets/Lj%C3%B3sm%C3%A6%C3%B0rabla%C3%B0i%C3%B0/LMFI-1tbl-j%C3%BAl-2018-2_2980460.pdf"
+                "content": [
+                    "Sjá nánar grein í ljósmæðrablaðinu, bls 29, júlí 2018.",
+                    "https://www.ljosmaedrafelag.is/assets/Lj%C3%B3sm%C3%A6%C3%B0rabla%C3%B0i%C3%B0/LMFI-1tbl-j%C3%BAl-2018-2_2980460.pdf"
+                ]
             }
         ],
         "subchapters": [
@@ -753,7 +638,7 @@
                 "elements": [
                     {
                         "type": "text",
-                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/5230B402777A729300257E7600369A71",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/5230B402777A729300257E7600369A71"
                     }
                 ]
             }
@@ -774,6 +659,2902 @@
                 "type": "text",
                 "content": "Upplýsingablækingur vegna framköllunar fósturláts við 12-22 vikur. https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fe94c0877812b0f400257e760036c2a8/$FILE/Uppl%C3%BDsingar%20vi%C3%B0%20innskrift-Framkallad%20f%C3%B3sturlat%2012-22%20vikur.pdf"
             } 
+        ]
+    },
+    "Fósturskimanir": {
+        "name": "Fósturskimanir",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Sjá upplýsingar á Heilsuveru https://www.heilsuvera.is/efnisflokkar/throskaferlid/medganga/fosturskimanir/"
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header": "Nokkrar algengar skammstafanir við mælingar:",
+                    "items": [
+                        "CRL: Crown Rump Length (haus daus lengd)",
+                        "BPD: Bipariatal Diameter (höfuðbreidd)",
+                        "OFD: Occiptal Frontal Diameter (enni-hnakki)",
+                        "HC: Head Circumferans (ummál höfuðs)",
+                        "AD: Abdominal Diameter (mittismál)",
+                        "AC: Abdominal Circumferans (ummál kviðar)",
+                        "FL: Femur length (lærleggslengd)",
+                        "HL: Humerus length (upphandleggslengd)"
+                    ]                    
+                }
+            }
+        ]
+    },
+    "Framköllun fæðingar": {
+        "name": "Framköllun fæðingar",
+        "elements": [
+            {
+                "type": "list",
+                "content": {
+                    "header": "Ábendingar:",
+                    "items": [
+                        "▪ Meðgöngulengd >41 vika",
+                        "▪ Vaxtarseinkun fósturs",
+                        "▪ Langvinnur háþrýstingur og meðgöngulengd >40 vikur",
+                        "▪ Vægur háþrýstingur eða góð viðbrögð við meðferð og meðgöngulengd 40 vikur",
+                        "▪ Meðal/alvarlegur háþrýstingur og meðgöngulengd >37 vikur",
+                        "▪ Meðgöngueitrun",
+                        "▪ Legvatn fer áður en sótt hefst",
+                        "▪ Grunur um fósturstreitu",
+                        "▪ Tvíburameðganga",
+                        "▪ Rh mótefnamyndun/blóðflokkamisræmi",
+                        "▪ Alvarlegir sjúkdómar á meðgöngu s.s. sykursýki, gallstasi, rauðir úlfar eða annað sem hefur áhrif á fylgjustarfsemi og fósturvöxt",
+                        "▪ Andvana barn",
+                        "▪ Sálfélagslegir þættir",
+                        "▪ Konur 40 ára og eldri – ræða framköllun fæðingar við 40-41 viku."
+                    ]
+                }
+            },
+            {
+                "type": "text",
+                "content": "Angusta® er notað við framköllun fæðingar hjá öllum konum nema þeim sem eru með ör á legi eða með Bishop score > 8."
+            },
+            {
+                "type": "text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Framk%C3%B6llun%20f%C3%A6%C3%B0ingar%202017.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH – ábendingar https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1FC5AA668C05775300257E7600541856"
+            },
+            {
+                "type": "text",
+                "content": "Bishop score https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/8A3B392269A5E6F800257E7600516E2F"
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Framköllun fæðingar með foley þvaglegg",
+                    "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CAE068241F5EE97300257E7600542EE5"
+                ]
+            },
+            {
+                "type": "text",
+                "content": "Meistararitgerð Ástu Hlínar Ólafsdóttur (2018) – Áhrif framköllunar fæðingar eftir 41 vikna meðgöngu á fæðingarmáta og útkomu fæðingar https://skemman.is/bitstream/1946/31122/3/Ritger%c3%b0in6.pdf"
+            }
+        ]
+    },
+    "Fyrirburar": {
+        "name": "Fyrirburar",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Yfirvofandi fyrirburafæðing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1221A55C909AB83F00257E75004649F0"
+            },
+            {
+                "type":"text",
+                "content": "Fyrirburafæðing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6B870FB97F61273300257E75004658E9"
+            },
+            {
+                "type":"text",
+                "content": "Fyrirburar.is"
+            }
+        ]
+    },
+    "Gallstasi á meðgöngu": {
+        "name": "Gallstasi á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Tíðni sjúkdómsins á Íslandi hefur verið um 3% síðastliðin ár."
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header":"Hætta sem sjúkdómurinn getur haft í för með sér fyrir ófædda barnið er:",
+                    "items": [
+                        "▪ Barnabik í legvatni",
+                        "▪ Fósturstreita",
+                        "▪ Fyrirburafæðing",
+                        "▪ Fósturdauði"
+                    ]
+                }
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Þessi hætta tengist styrk gallsýra í blóði.",
+                    "Hætta fyrir móður er lítil en í alvarlegum tilfellum þar sem frásog K-vítamíns hefur truflast er aukin hætta á blæðingum eftir fæðingu."
+                ]
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Skilgreining",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Gallstasi í lifur með kláða án útbrota ásamt hækkun á gallsýrum í sermi."
+                    }
+                ]
+            },
+            {
+                "name": "Einkenni",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Kláði án útbrota, kemur oftast fram á síðasta þriðjungi meðgöngu, er oft áberandi í lófum og iljum en getur verið dreifður um allan líkamann, bol, útlimi, andlit, á augnlokum, í nefi og munnholi. Önnur einkenni geta verið svefntruflanir (vegna kláðans) og í alvarlegri tilvikum dökkt þvag og niðurgangur/fituskita og gula. Einkenni sjúkdómsins ganga alltaf til baka eftir fæðingu og oftast á örfáum dögum."
+                    }
+                ]
+            },
+            {
+                "name": "Greining",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Kláði með dæmigerðri útbreiðslu án húðútbrota.",
+                            "Gallsýrur hækkaðar.",
+                            "Ekki önnur skýring á einkennum."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Eðlilegur styrkur gallsýra í sermi er <15 mikromol/L.",
+                            "Gildi milli 16 og 100 míkromól/L segja til um vægan sjúkdóm",
+                            "Gildi > 100 míkromól/L segja til um alvarlegan sjúkdóm."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content":"Blóðsýni þarf að taka eftir 8 klst föstu, annars getur mælingin orðið lítillega of há."
+                    }
+                ]
+            },
+            {
+                "name": "Lyf",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content":[
+                            "Lyf sem lækka gallsýrustyrk",
+                            "Ursochol® 250 mg. Byrjunarskammtur er 250 mg x3, hámarksskammtur er 8 töflur á sólarhring",
+                            "Dexametason 4mg. Sterameðferð í 11 daga til viðbótar Ursochol meðferð þegar hámarksskammtar duga ekki til að halda gallsýrum niðri og konan gengin skemur en 37 vikur."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kláðastillandi lyf",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content":[
+                            "Kláðastillandi lyf má nota ein sér eða með Ursochol®, sérstaklega getur verið þörf fyrir þau í byrjun Ursochol meðferðar áður en góð verkun fæst:",
+                            "T. Tavegyl®",
+                            "T. Atarax®",
+                            "T. Phenergan®"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Eftirfylgd",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Vægur gallstasi (gallsýrur 16-100 míkrómól/L): Mæðravernd á heilsugæslustöð í samráði við fæðinga –og kvensjúkdómalækni. Konur þurfa oft ekki lyfjameðferð með UDCA, heldur nægja kláðastillandi lyf og almenn ráð.",
+                            "Endurtaka gallsýrumælingar vikulega.",
+                            "Framköllun fæðingar við 39-40 vikur.",
+                            "Við sjálfkrafa sótt geta konur fætt á fæðingarstað D."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Alvarlegur gallstasi (gallsýrur >100 míkrómól/L): Vísa í áhættumæðravernd Landspítala. Ástæða til að framkalla fæðingu ef meðgöngulengd hefur náð 37 vikum.",
+                            "Fæðing á fæðingarstað A."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Sjá nánar: Fróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=611c65c0-9cc5-11e9-9445-005056bc2afe",
+                            "Gæðahandbók LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/EE9F2643BA4F185500257E760036824B?OpenDocument"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "GBS á meðgöngu": {
+        "name": "GBS á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Ekki er mælt með skimun fyrir GBS meðal allra barnshafandi kvenna hér á landi."
+            },
+            {
+                "type": "list",
+                "content": {
+                    "header": "Mælt er með að eftirfarandi hópar kvenna fái fyrirbyggjandi sýklalyf í æð í fæðingu:",
+                    "items": [
+                        "▪ Kona sem hefur áður fætt barn með GBS sýkingu",
+                        "▪ GBS hefur greinst í þvagi á meðgöngunni",
+                        "▪ GBS hefur greinst í stroki frá leggöngum á meðgöngunni",
+                        "▪ Klínísk merki um sýkingu í fæðingu",
+                        "▪ Fyrirburafæðing"
+                    ]
+                }
+            },
+            {
+                "type":"text",
+                "content":"Hafi kona áður greinst með GBS er mælt með að taka sýni við 35-37 vikna meðgöngu."
+            },
+            {
+                "type":"text",
+                "content":"Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F15F54157E4BB35B00257E7600370A60"
+            },
+            {
+                "type":"text",
+                "content":"Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/a57646296b18b6b8002582490038633d/$FILE/Fl%C3%A6%C3%B0irit-GBS.JPG"
+            },
+            {
+                "type":"text",
+                "content":"Fróðleiksmoli HH https://www.heilsugaeslan.is/lisalib/getfile.aspx?itemid=e0b30f0b-9cc6-11e9-9445-005056bc2afe"
+            }
+        ]
+    },
+    "Getnaðarvarnir": {
+        "name": "Getnaðarvarnir",
+        "subchapters": [
+            {
+                "name": "Smokkur",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Smokkurinn er sjálfsögð getnaðarvörn en hettan er síðri, því erfitt getur verið að finna hentuga stærð á fyrstu mánuðum eftir fæðingu."
+                    }
+                ]
+            },
+            {
+                "name": "Koparlykkja",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Hentug getnaðarvörn og uppsetning auðveld 6-12 vikum eftir fæðingu. Á meðan tíðastopp varir eftir fæðingu, sem er lengur eftir því sem brjóstagjöf varir lengur, veldur lykkjan ekki sinni algengustu aukaverkun, sem er auknar blæðingar. Hér á landi er lykkjan algengasta getnaðarvörn kvenna, sem alið hafa börn. Lykkjuna má hafa þann tíma sem konan þarf á vörn að halda eða allt upp í 10 ár."
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu kostir koparlykkju",
+                            "items": [
+                                "▪ Örugg getnaðarvörn (+99%)",
+                                "▪ Lykkjan veitir vörn þar sem hún er þ.e. í leginu og er því ekki virk til að koma í veg fyrir þungun utan legs þ.e. utanlegsfóstur.",
+                                "▪ Gleymist ekki",
+                                "▪ Hefur ekki áhrif á hormónastarfssemi líkamans"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Aukaverkanir",
+                            "items": [
+                                "Auknar blæðingar eru algengasta aukaverkunin því hentar koparlykkjan síst þeim konum sem hafa miklar blæðingar.",
+                                "Ekki er þekktur langtímaskaði af völdum koparlykkju."
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Hormónalykkjan",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Frábrugðin koparlykkjunni að því leyti að hún inniheldur lyfið levónorgestrel sem líkir eftir áhrifum prógestrón. Lykkjan sjálf hefur sín staðbundnu áhrif á legið á sama hátt og koparlykkjan en levónorgestrel breytir legslímhúðinni þannig að hún verður ekki tilbúin til að taka við frjóvguðu eggi. Levónorgestrel veldur breytingum á slími leghálsins og vökvasamsetningu í eggjaleiðurum og torveldar þannig flutning sæðis til eggjaleiðara. Misjafnt er hversu mikil áhrif lyfið hefur á egglos, sumar konur hafa egglos og aðrar ekki."
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Hérlendis eru mest notaðar tvær gerðir hormónalykkja",
+                            "items": [
+                                "▪ Mirena hefur hylki sem endist í 5-7 ár",
+                                "▪ Jaydess er aðeins minni lykkja og hefur hylki sem endist í 3 ár."
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu kostir homónalykkju",
+                            "items": [
+                                "▪ Örugg getnaðarvörn (+99%)",
+                                "▪ Gleymist ekki",
+                                "▪ Blæðingar minnka eða hverfa alveg sem mörgum konum finnst ákjósanlegt",
+                                "▪ Aðeins staðbundin verkun",
+                                "▪ Virkar strax eftir uppsetningu"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu aukaverkanir",
+                            "items": [
+                                "▪ Algengastar eru milliblæðingar í byrjun",
+                                "▪ Þyngdaraukning",
+                                "▪ Bólur á húð",
+                                "▪ Blóðtappahætta er afar lítil"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "text",
+                        "content": "Hormónalykkjan er afar örugg þar sem bæði eru áhrif lykkju og áhrif hormóna til að hindra þungun og ver hormónalykkja bæði fyrir þungun í legi og utan þess."
+                    }
+                ]
+            },
+            {
+                "name": "Mini pillan",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Inniheldur eingöngu prógesteron virkt hormón í lágum skammti, hefur ekki áhrif á mjólkurframleiðslu og hentar vel sem fyrsta getnaðarvörn eftir fæðingu.",
+                            "Helsti ókostur hennar er blæðingaróregla, sem getur verið langvarandi, en minnkar oftast er tíminn líður og getur hún jafnvel lengt tímann sem blæðingarstopp varir."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Samsetta pillan",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Almennt ekki notuð meðan konur hafa barn á brjósti, því östrógen samsettu pillunnar hafa letjandi áhrif á mjólkurframleiðslu.",
+                            "Talin 99% örugg, kemur í veg fyrir egglos, þykkir slímhúð í legi og slím í leghálsi. Pillan er tekin í 21 dag en síðan gert hlé í 7 daga.",
+                            "Helstu kostir eru minni blæðingar.",
+                            "Helstu ókostir eru þyngdaraukning og hækkaður blóðþrýstingur.",
+                            "Áhætta af notkun pillunnar hefur verið skoðuð og eru til rannsóknir sem sýna mælanlega aukningu á sumu krabbameini en minnkun á öðru.",
+                            "Önnur alvarleg áhætta tengd samsettu pillunni er blóðtappi og er smá munur milli tegunda. Konur sem reykja eða eru í yfirþyngd eru í aukinni áhættu að fá blóðtappa."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Hormónasprautan",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Getnaðarvarnalyf sem gefið er í vöðva á 3ja mánaða fresti. Inniheldur hormón sem er mjög líkt náttúrulegu prógesteróni og frásogast hægt inn í líkamann frá stungustaðnum. Kemur í veg fyrir egglos og þykkir slím í leghálsi og slímhúð í legi og hentar því ágætlega fyrir konur með barn á brjósti, t.d. þær sem erfitt eiga með að muna eftir að taka mini pilluna, en þola hana vel. Talin 99% örugg.",
+                            "Henni fylgir oftast blæðingarleysi sem mörgum konum finnst ákjósanlegt.",
+                            "Helstu ókostir eru óreglulegar blæðingar og þyngdaraukning.",
+                            "Ef hætt er á sprautunni þarf að reikna með að eftir síðustu gjöf endast áhrif í 3-6 mánuði."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Hormónahringurinn",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Mjúkur plasthringur sem settur er upp í leggöngin, kringum leghálsinn. Hann er fjarlægður eftir 3 vikur og gert einnar viku hlé, áður en nýr hringur er settur. Hann virkar eins og samsetta pillan en hormónamagnið sem losnar daglega er um 1/3 af því sem er í pillunni. Þó er öryggi hans jafnt og pillunnar ef notaður rétt, eða yfir 99%. Bólga og erting í leggöngum getur komið fyrir svo og væg aukning á útferð. Hann inniheldur bæði prógesterón og östrógen og er því almennt ekki notaður þegar konur eru með barn á brjósti."
+                    }
+                ]
+            },
+            {
+                "name": "Hormónaplásturinn",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Samsett lágskammta getnaðarvörn eins og hormónahringurinn. Hormónin frásogast frá húð. Plásturinn er settur á hreina, þurra húð og hárlausa húð, t.d á rasskinnar, utanverðan upphandlegg eða á magann. Skipta þarf um plásturinn vikulega og gera einnar viku hlé eftir 3 vikur, eins og með hormónahringinn. Auðveldur í notkun og hentar vel þegar konur eru ekki með barn á brjósti. Helstu ókostir eru brjóstaspenna og erting á húð."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Sjá nánari upplýsingar á Heilsuveru https://www.heilsuvera.is/efnisflokkar/kynheilbrigdi/getnadarvarnir/getnadarvarnir/"
+                    }
+                ]
+            }
+        ]
+    },
+    "Greiningarkóðar fyrir sjúkdóma á meðgöngu og eftir fæðingu": {
+        "name": "Greiningarkóðar fyrir sjúkdóma á meðgöngu og eftir fæðingu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Vinnuleiðbeiningar HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Greiningark%C3%B3%C3%B0ar%20fyrir%20sj%C3%BAkd%C3%B3ma%20%C3%A1%20me%C3%B0g%C3%B6ngu%20og%20eftir%20f%C3%A6%C3%B0ingu%20-%202017.pdf"
+            }
+        ]
+    },
+    "Grindarmál": {
+        "name": "Grindarmál",
+        "elements": [
+            {
+                "type": "list",
+                "content": {
+                    "header": "Mikilvægustu málin í:",
+                    "items": [
+                        "Grindarinngangi: fjarlægðin milli spjaldbrúnar og lífbeins",
+                        "Miðgrind: fjarlægðin milli þjóbeinsnibbanna",
+                        "Grindarútgangi: fjarlægðin milli þjóbeinshnúskanna"
+                    ]
+                }
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Conjugata vera diagonalis (CD) = skáþykktarvídd",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Fjarlægðin frá neðri brún lífbeins (symfysu) að spjaldbrún (promontorium). Við skoðunina lætur maður löngutöng nema við spjaldbrún. Ekki á að nást aftur að spjaldbrún, ef það er hægt er um grindarinngangsþrengsli að ræða. Lengdin á fingrinum er mæld. CD er venjulega ≥12.5 cm. Conjugata vera (CV) = CD - 1 – 1½ cm."
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-2.png"
+                    }
+                ]
+            },
+            {
+                "name": "Diameter interspinalis = þjóbeinsnibbabilið",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Er venjulega um 10 - 11 sm. Ekki hægt að mæla kliniskt. Ef þjóbeinsnibburnar finnast á eðlilegum stað eru þær ekki prominerandi. Ef önnur finnst greinilegar en hin getur verið um grindarskekkju að ræða"
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-4.png"
+                    }
+                ]
+            },
+            {
+                "name": "Os sacrum og os coccygis = spjald-og rófubein",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content":  "Athugað er hvort sveigjan á þessum beinum er eðlileg. Rófubein fettist aftur í fæðingunni"
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-6.png"
+                    }
+                ]
+            },
+            {
+                "name": "Arcus = nárabogi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Vísifingri og löngutöng er ýtt upp undir lífbeinið. Fingurnir eiga að rúmast þar samsíða með innri hlið upp og telst náraboginn þá vera minnst 90°. "
+                    }
+                ]
+            },
+            {
+                "name": "Diameter intertuberalis = þjóbeinshnúskabilið",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Þetta mál er mælt með því að þrýsta krepptum hnefanum upp að perineum. Ef hnefinn rúmast á milli þjóbeinshnúskanna er fjarlægðin milli þeirra amk. 11 sm sem er eðlilegt."
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2725/handbok_14-9.png"
+                    }
+                ] 
+            },
+            {
+                "name": "Eðlileg grindarmál",
+                "elements": [
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarinngangur:",
+                            "items": [
+                                "Conjugata vera 11-12 cm",
+                                "Diameter transversum 13-14 sm",
+                                "≥23 sm"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Grindarútgangur:",
+                            "items": [
+                                "Diameter interspinalis 10-11 cm",
+                                "Diameter intertuberalis 10-11",
+                                "Diameter recta 11-12 sm",
+                                "≥31.5 cm"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Grindarmál fyrir sitjandafæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Grindarinngangur: Conjugata vera 11,5 cm",
+                            "Grindarútgangur: Samanlögð útgangsmál ≥ 34.5 cm"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Hagnýtar Leiðbeiningar": {
+        "name": "Hagnýtar Leiðbeiningar",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Áhættumat mæðraverndar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/%C3%81h%C3%A6ttumat%20m%C3%A6%C3%B0raverndar%20n%C3%B3vember%202017.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Leiðbeiningar um val á fæðingarstað https://www.landlaeknir.is/servlet/file/store93/item2818/3304.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Faglegar leiðbeiningar fyrir heimaþjónustu ljósmæðra https://www.landlaeknir.is/servlet/file/store93/item23146/Fagl-leidbein-heima_ljosmaedur_2014_heildarskjal.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Heilsufarsflokkun sængurkonu og barns https://www.sjukra.is/media/eydublodin/heilsufarsflokkun-saengurkonu-og-barns.doc"
+            },
+            {
+                "type": "text",
+                "content": "Leiðbeiningar um mataræði á meðgöngu https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf"
+            }
+        ]
+    },
+    "Háþrýstingur og meðgöngueitrun": {
+        "name": "Háþrýstingur og meðgöngueitrun",
+        "subchapters": [
+            {
+                "name": "Skilgreiningar",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Háþrýstingur:",
+                            "Systóla ≥ 140mmHg eða diastóla ≥ 90mmHg, mældur tvisvar sinnum með minnst 4 klst millibili."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Meðgönguháþrýstingur:",
+                            "Háþrýstingur sem greinist eftir 20 vikna meðgöngu."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Langvinnur háþrýstingur:",
+                            "Háþrýstingur sem greinist fyrir 20 vikna meðgöngu eða fyrir þungun."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Meðgöngueitrun:",
+                            "Háþrýstingur og marktækur útskilnaður á próteinum í þvagi eða álag á önnur líffærakerfi."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Nýru: Prótein í þvagi, hækkun á kreatini, lítill þvagútskilnaður",
+                            "Lifur: Hækkun á ALAT, verkur undir hægri rifjaboga",
+                            "Blóðkerfi: Lækkun á blóðflögum, hemolysa með hækkun á LDH og lækkun á haptoglobin)",
+                            "Miðtaugakerfi: Svæsinn höfuðverkur, sjóntruflanir, krampar",
+                            "Fóstur/fylgju-eining: vaxtarseinkun, skert blóðflæði"
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": "Prótein í þvagi: ≥ 2+ á stixi. Alb/krea hlutfall: ≥ 25"
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Viðbætt meðgöngueitrun (superimposed preeclampsia):",
+                            "Meðgöngueitrun hjá konu með langvinnan háþrýsting."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "Fæðingarkrampar (eclampsia):",
+                            "Alvarleg meðgöngueitrun með krömpum."
+                        ]
+                    },
+                    {
+                        "type":"text",
+                        "content": [
+                            "FHELLP heilkenni:",
+                            "Alvarleg meðgöngueitrun með eftirfarandi:",
+                            "H: hemolyses",
+                            "EL: elevated liverenzymes",
+                            "LP: low platelet count"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Orsakir meðgöngueitrunar",
+                "elements": [
+                    "Taldar tengjast lélegri fylgjumyndun (implantation) sem orsakar blóðþurrð í fylgju. Þá losna ýmis efni í blóðrás móður (cytokine, fríir radikalar, brot af trofoblöstum) sem valda almennri bólgusvörun hjá móðurinni (neutrophil activation). Afleiðingar eru skemmdir á æðaþeli móður. Svörun móður við þessum skemmdum gefur síðan sjúkdómsmyndina sem er mjög mismunandi eftir því hvaða líffærakerfi verður fyrir mestu álagi.",
+                    "Meðgöngueitrun getur komið fram sem mildur sjúkdómur undir lok meðgöngu án áhrifa á horfur móður og barns en getur líka birst sem hættulegur sjúkdómur þar sem líf móður og barns er í hættu."
+                ]
+            },
+            {
+                "name": "Áhættuþættir meðgöngueitrunar",
+                "elements": [
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Miðlungs áhætta:",
+                            "items": [
+                                "Fyrsta meðganga",
+                                "Aldur >40 ár",
+                                "Lengra en 10 ár frá síðustu meðgöngu",
+                                "BMI ≥35 kg/m² við fyrstu komu",
+                                "Fjölskyldusaga um meðgöngueitrun",
+                                "Fjölburameðganga"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Mikil áhætta:",
+                            "items": [
+                                "Háþrýstingsvandamál í fyrri meðgöngu",
+                                "Langvarandi nýrnasjúkdómur",
+                                "Sjálfsónæmissjúkdómar s.s. Lupus, antiphospholipid syndrome",
+                                "Sykursýki tegund 1 eða 2",
+                                "Langvarandi háþrýstingur"
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Meðferð",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Háþrýstingur:",
+                            "Ástæða til lyfjameðferðar ef blóðþrýstingur liggur endurtekið ≥150/100 mmHg.",
+                            "Byrjunarmeðferð er T. Trandate 100 mg x3 og er markmiðið að lækka blóðþrýsting niður í um 145/95.",
+                            "Mælt er með vaxtarsónar og mat á legvatnsmagni við 28-30 vikur og 32-34 vikur eða þegar háþrýstingur greinist. Á þetta við hvort sem konan fær lyfjameðferð eða ekki."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Meðgöngueitrun:",
+                            "Meðferð við meðgöngueitrun er fæðing.",
+                            "Enginn ávinningur er af lengingu meðgöngu eftir fullar 37 vikur við meðgöngueitrun."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Fæðingarmáti:",
+                            "Ef > 34 vikur: Oftast stefnt að fæðingu um leggöng (nema frábendingar eða ástand móður býður ekki upp á það).",
+                            "Ef < 32 vikur: Oftast mælt með fæðingu með keisaraskurði.",
+                            "Ef 32-34 vikur: Metið í hverju tilfelli fyrir sig."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Ráðlagt er að vísa konum á göngudeild mæðraverndar LSH ef blóðþrýstingur fer yfir 150/100 og/eða ≥ 2+ prótein á stixi eða einkenni meðgöngueitrunar koma fram (höfuðverkur, sjóntruflanir, verkur undir bringuspölum).",
+                            "Þegar konu er vísað í dagönn, er hentugt að hún byrji í blóðprufu (á rannsóknardeild10E á LSH) með beiðni fyrir preeclampsiuprufum. Þá liggja svörin fyrir i lok heimsóknar.",
+                            "Preeclampsiublóðprufur eru:",
+                            "Blóðstatus",
+                            "S-ALAT",
+                            "S-LD",
+                            "S-Kreatinin",
+                            "S-Þvagsýra"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": "Ekki er þörf á dagönn ef blóðþrýstingur liggur ≤ 145/95, ≤ + prótínmiga, engin/ mjög væg einkenni og góðar hreyfingar. Eftirlit er ráðlagt eftir 2-3 daga í mæðraverndinni."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fróðleiksmoli Heilsugæslunnar um háþrýsting og meðgöngueitrun: https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/H%C3%A1%C3%BEr%C3%BDstingur%20og%20me%C3%B0g%C3%B6ngueitrun%202017.pdf"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH um háþrýsting https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/838009B5DC3E251300257E760037487E"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Skema um einkenni og meðferð háþrýstings https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/09AE1E511836C6D100257F5B0039010D"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH um meðgöngueitrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F16118D99CA28A3E00257E760037566A"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH um fæðingarkrampa https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/7F23E3D5408C947000257E760054B187"
+                    }
+                ]
+            }
+        ]
+    },
+    "Heimasíður": {
+        "name": "Heimasíður",
+        "elements": [
+            {
+                "type": "text",
+                "content": "9 mánuðir https://www.9manudir.is/"
+            },
+            {
+                "type": "text",
+                "content": "Fyrirburar.is"
+            },
+            {
+                "type": "text",
+                "content": "Heilsuborg https://heilsuborg.is/"
+            },
+            {
+                "type": "text",
+                "content": "Heilsugæsla Höfuðborgarsvæðisins https://www.heilsugaeslan.is/"
+            },
+            {
+                "type": "text",
+                "content": "Heilsuvera https://www.heilsuvera.is/"
+            },
+            {
+                "type": "text",
+                "content": "Jafnrétti.is"
+            },
+            {
+                "type": "text",
+                "content": "Landlæknir https://www.landlaeknir.is/"
+            },
+            {
+                "type": "text",
+                "content": "Ljósmóðir.is"
+            },
+            {
+                "type": "text",
+                "content": "Ljósmæðrafélag Íslands https://www.ljosmaedrafelag.is/"
+            },
+            {
+                "type": "text",
+                "content": "Núvitundarsetrið https://www.nuvitundarsetrid.is/"
+            },
+            {
+                "type": "text",
+                "content": "Sjúkratryggingar Íslands https://www.sjukra.is/"
+            },
+            {
+                "type": "text",
+                "content": "Gamla handbók Fylgjunnar https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631"
+            }
+        ]
+    },
+    "Hiti í og eftir fæðingu": {
+        "name": "Hiti í og eftir fæðingu",
+        "subchapters": [
+            {
+                "name": "Hiti í fæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EE810EA43081BEEE00257E7600515470"
+                    }
+                ]
+            },
+            {
+                "name": "Hiti eftir fæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1EC9C99797AFEEBB00257E760054415B"
+                    }
+                ]
+            }
+        ]
+    },
+    "Höfuðmál fósturs": {
+        "name": "Höfuðmál fósturs",
+        "subchapters": [
+            {
+                "name": "Hnakka-framhöfuðsmál",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(diameter suboccipitio-bregmatica)",
+                            "Frá hnakkagróf fram á miðju ferhyrndu hausmóta = 9.5 sm (hvirfilstaða)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Hnakka-ennismál",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(diameter fronto-occipitalis)",
+                            "Frá hnakkakúlu fram á nefrót = 12 sm (framhöfuðstaða)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Stóra skámál",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(diameter mento-occipitalis)",
+                            "Frá höku til hnakkakúlu =13.5 sm (ennisstaða)."
+                        ]
+                    }
+                ] 
+            },
+            {
+                "name": "Hæðarmál",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(diameter submento-bregmatica)",
+                            "Frá málbeini upp á miðju ferhyrndu hausamóta = 9.5 sm (andlitsstaða)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Stóra þvermál",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(diameter biparietalis)",
+                            "Fjarlægðin milli hnúska hvirfilbeina (eminentia parietalis) = 9 sm."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ummál höfuðs ",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(circumferentia capitis)",
+                            "Stærsta ummál höfuðs, sem mælt er frá nefrót aftur á hnakkakúlu = 35 sm."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Ilmkjarnaolíur": {
+        "name": "Ilmkjarnaolíur",
+        "elements": [
+            {
+                "type": "text",
+                "content": [
+                    "Taldar auka framleiðslu líkamans á róandi, slakandi og örvandi efnum og hafa lyfjafræðileg áhrif. Ilmkjarnaolíur eru öflugar og virka líkt og lyf og því þarf að bera virðingu fyrir þeim. Ilmkjarnaolíur eru viðkvæmar fyrir ljósi og súrefni og þær þarf að geyma í litlum, dökkum glösum. Sítrusolíur (bergamot, grapefruit, neroli) er aðeins hægt að geyma í 3-6 mánuði og ætti að geyma í ísskáp.",
+                    "Ilmkjarnaolíur eru fyrst og fremst notaðar til að auka slökun og vellíðan kvenna. Fyrir notkun þurfa að liggja fyrir upplýsingar um almennt heilsufar, sjúkdóma og vandamál á meðgöngu, notkun á óhefðbundnum meðferðum, lyfjanotkun, ofnæmi og lífsmörk (chamomila og lavender ekki góðar ef konan er með hita). Gæta þarf varúðar við notkun hjá konum með undirliggjandi áhættuþætti. Frábendingar eru t.d. ofnæmi fyrir olíum eða saga um mikið/alvarlegt ofnæmi, flogaveiki, alvarleg meðgöngueitrun, astmi sem versnar við frjókorn (lavender) og hjartasjúkdómar (peppermint). Sumar ilmkjarnaolíur geta valdið lækkun á blóþrýstingi (clary sage, lavender, ylangylang), aukið blæðingarhættu (rose, frankincense, lavender, peppermint og clary sage) og verið vatnslosandi og því varhugaverðar eftir mikla blæðingu (chamomila, lavender og rose)."
+                ]
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Blöndun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Notið alltaf minnsta mögulega skammt sem virkar. Ekki æskilegt að blanda saman meira en 3 ilmkjarnaolíum í einu. Ilmkjarnaolíum er yfirleitt blandað í Grapeseed eða Sweet Almond grunnolíu. Fyrir hverja 5 ml af grunnolíu er fjöldi dropa sá sami og styrkur blöndunnar í prósentum (1-1½% á meðgöngu, 2% í fæðingu/eftir fæðingu, 4% í bað)."
+                    }
+                ]
+            },
+            {
+                "name": "Notkunarmöguleikar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Kvíði, spenna, streita, þörf á slökun:",
+                            "Lavender, Frankincense, Mandarin, Chamomile, Jasmine, Rose",
+                            "Notkun: Nudd, fótabað, bað, dropi í lófann (eingöngu Frankincense)."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Hystería, oföndun:",
+                            "Frankincense",
+                            "Notkun: Dropi í lófann"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Ógleði, uppköst:",
+                            "Peppermint",
+                            "Notkun: Einn dropi á ennið eða í grisju"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Höfuðverkur, mígreni:",
+                            "Peppermint, Lavender. Chamomile (eingöngu í grisju)",
+                            "Notkun: Dropi á gagnaugu. Grisja á enni eða hnakka."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Svefnleysi:",
+                            "Lavender, Mandarin, Chamomile, Frankincense",
+                            "Notkun: Nudd, fótabað, bað, dropi í grisju eða á kodda."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Upplífgandi/hressandi:",
+                            "Lemon, Jasmine, Mandarin, Rose",
+                            "Notkun: Nudd, fótabað, bað, dropi í grisju eða á kodda."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Þunglyndi, erfið fyrri reynsla",
+                            "Rose, Jasmine, Lavender, Clary sage, Mandarin",
+                            "Notkun: Nudd, fótabað, heitir bakstrar, bað (ekki Clary Sage)"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Sveittir fætur:",
+                            "Peppermint",
+                            "Notkun: Fótabað"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Leggangakrampi (Vaginismus):",
+                            "Rose, Jasmine, Clary sage",
+                            "Notkun: Fótabað, nudd, dropi í grisju eða á kodda."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Bakverkur:",
+                            "Lavender, Chamomile, Eucalyptus, Clary sage",
+                            "Notkun: Baknudd, bað (ekki Eucalyptus eða Clary sage)"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Veikar hríðar, Föst fylgja:",
+                            "Clary sage, Jasmine, Lavender, Rose",
+                            "Notkun: Nudda varlega kviðinn eða lendarhrygg. Heitir bakstrar á sömu svæði. Fótabað."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Hægja á hríðum/ samdráttum:",
+                            "Chamomile, Mandarin",
+                            "Notkun: Heitir bakstrar á kvið og/eða lendarhrygg."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Hiti:",
+                            "Peppermint (1-2 dropar), Eucalyptus (1-2 dropar), Lemon",
+                            "Notkun: Volgir eða heitir bakstrar á líkamann, fótabað."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Bólga á spangarsvæði eftir fæðingu:",
+                            "Chamomile, Lavender",
+                            "Notkun: Skolun á spangarsvæði, kaldir bakstrar (bindi)."
+                        ]
+                    },
+                    {
+                        "type": "italics",
+                        "content": [
+                            "Heimildir:",
+                            "Gamla fylgjuhandbók https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631",
+                            "Sjá einnig gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/F02F2EE0490707F800257E760055D6BB"
+                        ]
+                    }                    
+                ]
+            }
+        ]
+    },
+    "Klínískar Leiðbeiningar": {
+        "name": "Klínískar Leiðbeiningar",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Meðgönguvernd heilbrigðra kvenna í eðlilegri meðgöngu https://www.landlaeknir.is/servlet/file/store93/item2548/4407.pdf"
+            },
+            {
+                "type":"text",
+                "content": "NICE: Antenatal care for uncomplicated pregnancies https://www.nice.org.uk/guidance/CG62"
+            },
+            {
+                "type":"text",
+                "content": "Meðgöngusykursýki, klínískar leiðbeiningar https://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf"
+            },
+            {
+                "type":"text",
+                "content": "NICE: Antenatal and postnatal mental health: clinical management and service guidance https://www.nice.org.uk/guidance/CG192"
+            },
+            {
+                "type":"text",
+                "content": "Ofbeldi í nánum samböndum: Mat og viðbrögð: Klínískar leiðbeiningar, 2012 https://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf"
+            },
+            {
+                "type":"text",
+                "content": "NICE: Intrapartum care for healthy women and babies https://www.nice.org.uk/guidance/cg190"
+            },
+            {
+                "type":"text",
+                "content": "WHO recommendations on antenatal care for a positive pregnancy experience http://apps.who.int/iris/bitstream/10665/250796/1/9789241549912-eng.pdf?ua=1"
+            },
+            {
+                "type":"text",
+                "content": "WHO recommendations: intrapartum care for a positive childbirth experience http://apps.who.int/iris/bitstream/10665/260178/1/9789241550215-eng.pdf?ua=1"
+            },
+            {
+                "type":"text",
+                "content": "Sjá fleiri leiðbeiningar á vefsíðu Ljósmæðrafélagsins https://www.ljosmaedrafelag.is/utgafa/kliniskar-leidbeiningar"
+            }
+        ]
+    },
+    "Legvatnsleki": {
+        "name": "Legvatnsleki",
+        "subchapters": [
+            {
+                "name": "PPROM < 22 vikur",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FC7C91F6435D943F00257E7500463A7B"
+                    }                    
+                ]
+            },
+            {
+                "name": "PPROM 22-37 vikur",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CBBB642712F43B3B00257E7500462F1F"
+                    }                    
+                ]
+            },
+            {
+                "name": "PROM >37 vikur",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1A84E6DEE6329D4C00257E75004633CF"
+                    }
+                ]
+            }
+        ]
+    },
+    "Líkamlegar breytingar á meðgöngu": {
+        "name": "Líkamlegar breytingar á meðgöngu",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Sjá Heilsuveru https://www.heilsuvera.is/efnisflokkar/throskaferlid/medganga/breytingar-a-medgongu/"
+            }
+        ]
+    },
+    "Lyf á meðgöngu": {
+        "name": "Lyf á meðgöngu",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Sjá Fróðleiksmola HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Lyf%20%C3%A1%20me%C3%B0g%C3%B6ngu%20april%202016.pdf"
+            }
+        ]
+    },
+    "Mat á hríðum": {
+        "name": "Mat á hríðum",
+        "elements": [
+            {
+                "type":"text",
+                "content": [
+                    "Það er löng hefð fyrir því að nota X-XX-XXX til að lýsa hríðum hér á landi en uppruni þessarar aðferðar er óljós. Heimildaleit árangurslaus og því spurning hvort þetta sé íslenskt fyrirbæri.",
+                    "Þó að X-in fyrirfinnist ekki í heimildum þá er víða talað um þrjá styrkleika hríða, m.a. í kennslubók Medforth, Battersby, Evans, March & Walker (2006)."
+                ]
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Vægar – X Lítillega spenntur legbotn sem gefur auðveldlega eftir þegar þrýst er á með fingurgómum",
+                    "Eðlilegar – XX Vel spenntur legbotn sem gefur ekki auðveldlega eftir þegar þrýst er á með fingurgómum",
+                    "Kröftugar – XXX Alveg harður legbotn sem gefur ekki eftir þegar þrýst er á með fingurgómum",
+                    "Í gömlum mæðraskrám kemur fram að X-in voru eingöngu hugsuð til þess að lýsa styrkleika hríðanna en hvorki lengd né tíðni."
+                ]
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Með þessari aðferð, ásamt því að lýsa lengd hríða og tíðni með sekúndum og mínútum fæst hlutlægt mat og lýsing á hríðum sem ætti að gera matið áreiðanlegra. Sársaukaupplifun konunnar skiptir líka máli þegar verið er að meta hríðir og samdrætti.",
+                    "Þetta ætti að auðvelda kennslu og stuðla að samræmi í mati á hríðum. Í raun og veru er þetta ekki breyting á því sem verið hefur, einungis betur skilgreind hugtök og markvissari notkun á þeim."
+                ]
+            },
+            {
+                "type":"italics",
+                "content": [
+                    "Anna Sigríður Vernharðsdóttir.",
+                    "Heimildir Medforth, J., Battersby, S., Evans, M., March, B. & Walker, A. (2006). Oxford Handbook of Midwifery. New York, Oxford University Press. Vogler, J.H. (1993) First Stage of Labor. Í I.M. Bobak and M.D. Jensen (ritst) Maternity & Gynecologic Care (bls. 423-467). The Nurse and the Family. St. Louis, Mosby"
+                ]
+            }
+        ]
+    },
+    "Meðgöngukvillar og ráð": {
+        "name": "Meðgöngukvillar og ráð",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Sjá heilsuveru https://www.heilsuvera.is/efnisflokkar/throskaferlid/medganga/medgongukvillar-og-rad/"
+            }
+        ]
+    },
+    "Meðgöngusykursýki": {
+        "name": "Meðgöngusykursýki",
+        "subchapters": [
+            {
+                "name": "Skilgreining",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Meðgöngusykursýki (gestational diabetes; GDM) er sykursýki sem greinist fyrst á meðgöngu. Hún skiptist í tvo flokka:",
+                            "GDMA1: White flokkur A1, ICD-10 kóði O24.4, þar sem mataræðisbreyting og hreyfing duga til að halda blóðsykri í viðunandi horfi.",
+                            "GDMA2: White flokkur A2, ICD-10 kóði O24.9, sem krefst lyfjameðferðar (insúlín eða metformin)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Skimun",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Skimað fyrir sykursýki 2 og GDM eftir fyrstu skoðun í mæðravernd hjá konum með áhættuþætti, með mælingu á fastandi blóðsykri.",
+                            "Skimað fyrir meðgöngusykursýki við 24-28 vikna meðgöngu með 75 g sykurþolprófi hjá konum með áhættuþætti, sem ekki hafa áður greinst með sykursýki.",
+                            "Ef einn áhættuþáttur er til staðar er mælt með skimun"
+                        ]
+                    }
+                ]                
+            },
+            {
+                "name": "Áhættuþættir",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Aldur > 40",
+                            "Offita (BMI > 30)",
+                            "Áður GDM",
+                            "Áður fætt þungbura (> 4500g)",
+                            "Skert sykurþol fyrir þungun",
+                            "Ættarsaga um sykursýki í fyrsta ættlið",
+                            "Kynþáttur annar en hvítur"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Greiningarskilmerki",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Við 12 vikna skimun:",
+                            "Fastandi blóðsykur: ≥ 5,1",
+                            "Við 24-28 vikna skimun með sykurþolsprófi:",
+                            "Fastandi blóðsykur ≥ 5,1 mmól/l",
+                            "Blóðsykur eftir 1 klst ≥ 10 mmól/l",
+                            "Blóðsykur eftir 2 klst ≥ 8,5 mmól/l"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Blóðsykurmælingar",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": [
+                            "Konur með meðgöngusykursýki mæla blóðsykur fjórum sinnum á dag: fastandi og einni klst eftir að morgunmatur, hádegismatur og kvöldmatur hefst.",
+                            "Markmiðið er að fastandi blóðsykur sé á bilinu 3,5-5,9 mmól/l og <7,8 eftir máltíðir.",
+                            "Blóðsykurmælingar eru skoðaðar 1-2 vikum eftir greiningu. Ef flestar mælingar eru innan marka má fækka mælingum, oft er þá mælt með mælingum 2-3 daga vikunnar 4x á dag. Ef meira en 15% mælinga eru yfir mörkum er konum vísað í áhættumæðravernd og ákvörðun tekin um blóðsykurslækkandi lyf."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Flæðirit um greiningu og meðferð",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://www.heilsugaeslan.is/library/Files/MM/Maedravernd-leidbeiningar/Flaedirit_medgongusykursyki_mars_2013.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Klínískar leiðbeiningar um skimun, greiningu og meðferð",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://www.landspitali.is/library/Sameiginlegar-skrar/Gagnasafn/BRUNNURINN/Kliniskar-leidbeiningar/Medgongusykursyki/klinleid_sykursyki_medg_090312.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Börn mæðra með sykursýki",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/369BE48A2563282D00257E760050FB85"
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjal LSH um meðgöngusykursýki og sykursýki týpu II",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/16FF731BBB1EFC8800257E7500467930"
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjal LSH um IDDM",
+                "elements": [
+                    {
+                        "type":"text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/18819147B6C12DEF00257E75004672C6"
+                    }
+                ]
+            }
+        ]
+    },
+    "Minnkaðar hreyfingar": {
+        "name": "Minnkaðar hreyfingar",
+        "elements": [
+            {
+                "type":"text",
+                "content": [
+                    "Allt að 15% þungaðra kvenna láta vita af minnkuðum hreyfingum fósturs á þriðja þriðjungi meðgöngu. Fjórðungur þessara kvenna fær slæma útkomu eins og t.d. vaxtarskerðingu, fyrirburafæðingu, lægri apgar við fæðingu, innlögn á vökudeild og þær eru í aukinni hættu á andvana fæðingu.",
+                    "Konur í ofþyngd, sem reykja eða eru eldri en 35 ára eru í meiri hættu á óhagstæðari útkomu, einnig þær sem skynja minnkaðar fósturhreyfingar endurtekið, bíða lengi með að leita ráða, það er meira en 48 klukkustundir með minnkaðar hreyfingar eða meira en 24 klukkustundir með engar hreyfingar."
+                ]
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Skynjun móður á minnkuðum hreyfingum getur stafað af sakleysislegum eða alvarlegum ástæðum. Eftirfarandi þættir geta haft áhrif á skynjun fósturhreyfinga:",
+                    "Móðir: ofþyngd, aukið legvatn, staðsetning fylgju, lyf, reykingar, önnum kafin móðir, alvarlegur járnskortur, sjúkdómar móður, vanstarfsemi fylgju.",
+                    "Barn: sofandi, dáið, steragjöf til að auka lungnaþroska (getur valdið tímabundnum minnkuðum hreyfingum), blóðleysi fósturs, fósturgallar, yfirvofandi fósturköfnun."
+                ]
+            },
+            {
+                "type":"text",
+                "content": "Mikilvægt er að taka góða sögu og vera vel vakandi fyrir áhættuþáttum sem geta haft áhrif á fósturvöxt s.s. háþrýstingi, sykursýki, reykingum, lyfja/vímuefnanotkun og næringarástandi."
+            }            
+        ],
+        "subchapters": [
+            {
+                "name": "Meðferð",
+                "elements":[
+                    {
+                        "type": "text",
+                        "content": [
+                            "Síritun fósturhjartsláttar, samdrættir og tíðni fósturhreyfinga í a.m.k. 20 mín.",
+                            "Skoða sögu konunnar m.t.t. áhættuþátta",
+                            "Mæla lífsmörk",
+                            "Mæla hæð legbotns - ath. vaxtarkúrfu."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "items": [
+                                "▪ Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.",
+                                "▪ Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.",
+                                "▪ Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).",
+                                "▪ Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits.",
+                                "▪ Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar."
+                            ]
+                        }
+                    },
+                    {
+                        "type":"text",
+                        "content": "Ath! Ekki hefur verið sýnt fram á að gefa konunni að drekka eða borða hjálpi og getur verið skaðlegt ef konan þarf að fara í bráðakeisara."
+                    },
+                    {
+                        "type":"text",
+                        "content": "Skv. leiðbeiningum ACOG getur rit við 28-32 vikur talist eðlilegt ef til staðar eru hraðanir sem eru 10 slög á mínutu og vara í 10 sek (þ.e. minni en síðar á meðgöngu)."
+                    },
+                    {
+                        "type":"text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E9C7B8682F3A80BF00257E75004578DD"
+                    },
+                    {
+                        "type":"text",
+                        "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2018/Minnka%C3%B0ar%20hreyfingar%202018.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "MÓSA, VÓE og BBL (ESBL, AmpC, Karbapenemasi)": {
+        "name": "MÓSA, VÓE og BBL (ESBL, AmpC, Karbapenemasi)",
+        "subchapters": [
+            {
+                "name": "Skimun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": 
+                            [
+                                "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/413BAD5193BAD1F700257DEC00359C69?OpenDocument",
+                                "Flæðirit https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/413bad5193bad1f700257dec00359c69/$FILE/Fl%C3%A6%C3%B0irit%201%20og%202%20%C3%B3n%C3%A6mar%20bakter%C3%ADur%20j%C3%BAl%C3%AD%202018.pdf"
+                            ]
+                    }
+                ]
+            },
+            {
+                "name": "MÓSA",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": 
+                            [
+                                "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/C77B3A41ECBD6CC200257DEC003EB320?OpenDocument",
+                                "Fræðsluefni fyrir skjólstæðinga https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ce493240dbc354c900257dec003dbce3/$FILE/M%C3%93SA_fr%C3%A6%C3%B0sluefni.pdf"
+                            ]
+                    }
+                ]
+            },
+            {
+                "name": "VÓE",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": 
+                            [
+                                "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/C77B3A41ECBD6CC200257DEC003EB320?OpenDocument",
+                                "Fræðsluefni fyrir skjólstæðinga https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/9485a03190b7879c00257dec0049c1fc/$FILE/Vancomycin%20on%C3%A6mir%20enterokokkar%20(VOE).pdf"
+                            ]
+                    }
+                ]
+            },
+            {
+                "name": "BBL myndandi bakteríur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": 
+                            [
+                                "Upplýsingar, smitgát og einangrun https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/C77B3A41ECBD6CC200257DEC003EB320?OpenDocument",
+                                "Fræðsluefni fyrir skjólstæðinga – AmpC og ESBL myndandi bakteríur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/2869f72ee506421500257ded003e0781/$FILE/Fj%C3%B6l%C3%B3n%C3%A6mar%20bakter%C3%ADur_BBL%20AmpC_ESBL.pdf",
+                                "Fræðsluefni fyrir skjólstæðinga – Karbapenemasa myndandi bakteríur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/2869f72ee506421500257ded003e0781/$FILE/Fj%C3%B6l%C3%B3n%C3%A6mar%20bakter%C3%ADur_BBL%20Karba.pdf"
+                            ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Nálastunga á meðgöngu": {
+        "name": "Nálastunga á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": 
+                    [
+                        "Ráðlagt að notast við fáar nálar í einu eða 3-7.",
+                        "Meðhöndlunartíminn er 20-30 mín, nálar örvaðar 1-2x á því tímabili.",
+                        "Tíðni meðhöndlunar þétt í byrjun (hvern dag eða annan hvern) en lengja síðan á milli eftir því sem á líður.",
+                        "Forðist að nota punktana Sp 6, Lr 3, Li 4 og Bl 67 fyrir 36. Viku þar sem talið er að þeir geti valdið samdráttum.",
+                        "Forðist að nota punkta á kviðsvæði",
+                    ]
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Ógleði",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Yintang, Pc 6, St 36 eða St 44, Ex 9 ef áberandi æðar undir tungu og þá bara þessi punktur."
+                    }
+                ]
+            },
+            {
+                "name": "Sinadráttur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Lr 3, Lr 8, Bl 57"
+                    }
+                ]
+            },
+            {
+                "name": "Grindarverkir – mjóbak, þjóhnappar, mjaðmir",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Bl 27, 28, 29, 30, 54, 60, Gb 29, 30, Ex 19"
+                    }
+                ]
+            },
+            {
+                "name": "Grindarverkir - lífbein",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Ki 11"
+                    }
+                ]
+            },
+            {
+                "name": "Svefnleysi/óróleiki/kvíði/andl.vanlíðan",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Yintang eða GV 20, Pc 11 og/eða Ht 7"
+                    }
+                ]
+            },
+            {
+                "name": "Carpal tunnel",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Te 5, Li 10, Ht 7, Pc 6"
+                    }
+                ]
+            },
+            {
+                "name": "Hægðatregða",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "St 36, Li 10"
+                    }
+                ]
+            },
+            {
+                "name": "Slökun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Öflug: GV 20, Ht 7",
+                            "Mildari: Yintang, Lu 7",
+                            "Ef niðurdregin: Yintang, Lu 7, Ren 17",
+                            "Ef andleg vanlíðan: GV20, Ht 7, Bl 62, Ki 6"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Bjúgur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Te 5, Sp 9, St 36, Ki 3"
+                    }
+                ]
+            },
+            {
+                "name": "Undirbúningur fyrir fæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "1x í viku frá viku 36.",
+                            "GV 20, Ht 7, Sp 6"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Vending",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Moxa Bl 67",
+                            "Bl 67: naglapunktur á litlu tá",
+                            "Best að byrja fyrir viku 37",
+                            "Moxa ca 10 mín hvoru megin",
+                            "Meðhöndlun 1-2x á dag í viku – hvíld eina viku og svo aftur 1-2x á dag í viku.",
+                            "Ekki stinga, bara moxa"
+                        ]
+                    },
+                    {
+                        "type": "italics",
+                        "content": "Heimildir: Guðlaug María Sigurðardóttir. (2017). Nálastunga fyrir ljósmæður."
+                    }
+                ]
+            }
+        ]
+    },
+    "Nálastunga eftir fæðingu": {
+        "name": "Nálastunga eftir fæðingu",
+        "subchapters": [
+            {
+                "name": "Samdráttarverkir eftir fæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "CV 6, Li 4, St 36"
+                    }
+                ]
+            },
+            {
+                "name": "Gyllinæð",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Bl 35, Bl 57"
+                    }
+                ]
+            },
+            {
+                "name": "Stálmi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Ren 17, Lr 3 Te 5"
+                    }
+                ]
+            },
+            {
+                "name": "Mastitis",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Ht 3, Li 4"
+                    }
+                ]
+            },
+            {
+                "name": "Auka mjólkurmyndun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Ren 17, St 36, Lr 3"
+                    }
+                ]
+            },
+            {
+                "name": "Sængurkvennagrátur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Pc 6 eða Ht 7"
+                    }
+                ]
+            },
+            {
+                "name": "Styrking postpartum",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Ren 6, St 36"
+                    }
+                ]
+            },
+            {
+                "name": "Slökun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Öflug: GV 20, Ht 7",
+                            "Mildari: Yintang, Lu 7",
+                            "Ef niðurdregin: Yintang, Lu 7, Ren 17",
+                            "Ef andleg vanlíðan: GV20, Ht 7, Bl 62, Ki 6"
+                        ]
+                    }
+                ]
+                
+            },
+            {
+                "name": "Þvagteppa",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Ren 3, Ki 3"
+                    }
+                ]
+            },
+            {
+                "name": "Hægðatregða",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Li 4, St 25, 36"
+                    }
+                ]
+            },
+            {
+                "name": "Börn með magakrampa",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Li 4"
+                    },
+                    {
+                        "type": "italics",
+                        "content": "Heimildir: Guðlaug María Sigurðardóttir. (2017). Nálastunga fyrir ljósmæður."
+                    }
+                ]
+            }
+        ]
+    },
+    "Nálastunga í fæðingu": {
+        "name": "Nálastunga í fæðingu",
+        "elements": [
+            {
+                "type": "text",
+                "content": [
+                    "Best að byrja meðhöndlun snemma í ferlinu",
+                    "Fleiri nálar en á meðgöngu",
+                    "Local nálar geta verið lengi en distal nálar í 20-40 mín."
+                ]
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Latent fasi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Stuttir óreglulegir samdrættir",
+                            "Oft langt á milli samdrátta",
+                            "Konur finna helst verki í baki og lífbeini",
+                            "Tillaga að punktum: GV20, Lu 7, Li 4, Yintang, Ht 7"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Virkur fasi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Hríðar eru lengri, þéttari, reglubundnari og sterkari",
+                            "Konur finna oft fyrir verkjum í baki, mjöðmum, yfir lífbeini eða í nára",
+                            "Tillaga að punktum: Bl 27-30, Ex 19, Bl 60, Li 4, Lr 3, Gb 27, 28"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ótímabær rembingur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Bl 35, 36, Sp 9"
+                    }
+                ]
+            },
+            {
+                "name": "Slökun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Öflug: GV 20, Ht 7",
+                            "Mildari: Yintang, Lu 7"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Alhliða verkjameðferð",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Li 4, Li 10, St 36, Lr 3, Sp 6}"
+                    }
+                ]
+            },
+            {
+                "name": "Verkir á grindarsvæði",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Ex 19, Bl 27-30, 54, 60, Gb 27-30, Lr 3, Li 4",
+                            "Bakverkir snemma: nálar ofar",
+                            "Bakverkir síðar í ferlinu: nálar neðar"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Örvun samdrátta",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "GV 20, Sp 6, Bl 60, Li 4, Lr 3, St 36, Ki 3"
+                    }
+                ]
+            },
+            {
+                "name": "Stífur legháls",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Bl 60, Ki 3"
+                    }
+                ]
+            },
+            {
+                "name": "Kollur stendur hátt",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gb 26, 41"
+                    }
+                ]
+            },
+            {
+                "name": "Púdental virkni",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Bl 35, 36, Sp 9, Li 4"
+                    }
+                ]
+            },
+            {
+                "name": "Styrking",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Styrkja konu sem er búin á því: GV 20, St 36"
+                    }
+                ]
+            },
+            {
+                "name": "Föst fylgja",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Bl 67, St 25, Yintang"
+                    },
+                    {
+                        "type": "italics",
+                        "content": "Heimildir: Guðlaug María Sigurðardóttir. (2017). Nálastunga fyrir ljósmæður."
+                    }
+                ]
+            }
+        ]
+    },
+    "Nálastungur": {
+        "name": "Nálastungur",
+        "subchapters": [
+            {
+                "name": "Hvernig virkar nálastunga",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Nálastunga örvar eigið verkjadeyfingarkerfi líkamans:",
+                            "Nálarnar losa um boðefni eins og endorfín, enkefalín, dynofin, noradrenalin, serotonin, somasostasin og oxytocin. Þetta er hópur efnasambanda sem hafa áhrif á skynjun sársauka og verkja. Einnig verður losun á GABA (Gamma Aminobutyric Acid) og Glutamat sem einnig hefur hamlandi áhrif á sársaukaskynjun.",
+                            "Gáttakenning (e. Gate Control Theory). Felur í sér samkeppni um taugabrautir. Með því að örva taugar sem ekki flytja sársaukaboð en flytja taugaboð hratt dregur úr skilaboðum tauga sem flytja sársaukaboð og hafa hægari leiðni",
+                            "Nálarnar virkja verkjastillandi taugabrautir sem flytja skilaboð frá heila til líkamans"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Eykur virkni nálastungu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "NSAID lyf (t.d. Ibufen og Voltaren) - prostaglandinletjandi",
+                            "SSRI lyf (t.d. Cipramil og Zoloft) - minnka endurupptöku á serotonini og noradrenalini í verkjastillandi taugabrautum sem fara frá heila.",
+                            "Veik opiod lyf t.d. Kódein (10% umbreytist í morfín)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Dregur úr virkni nálastungu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Kortisónlyf - binda kortisónviðtakana þannig að það minnkar bólgueyðandi virkni nálastungunnar og þau draga einnig úr losun β-endorfína.",
+                            "Benzodiazepín (t.d. Mogadon, Valíum, Stesolid, Sobril) – letur flutning af m.a. noradrenalíni, serotonini, dópamíni og acetylkólíni.",
+                            "Kódein í stórum skömmtum (yfir 10%)",
+                            "Stórir skammtar af ópíðum (t.d. Morfín, Pethidín, Methadon og Ketogan) - upptekur ópíðviðtakana",
+                            "Staðdeyfing – taugin er deyfð og hefur þar af leiðandi ekki leiðni",
+                            "Alkohól – upptekur ópíð viðtakana"
+                        ]
+                    },
+                    {
+                        "type": "italics",
+                        "content": "Heimildir: Guðlaug María Sigurðardóttir. (2017). Nálastunga fyrir ljósmæður."
+                    }
+               ]
+            }
+        ]
+    },
+    "Nýburagula": {
+        "name": "Nýburagula",
+        "subchapters": [
+            {
+                "name": "Helstu áhættuþættir",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Fyrirburar",
+                            "Blæðing/mar í eða eftir fæðingu",
+                            "Blóðflokkamisræmi",
+                            "Lítil næringarinntekt"
+                        ]
+                    }                   
+                ]
+            },
+            {
+                "name": "Mat",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Sýnileg gula á húð og í augnhvítu gefur vísbendingu um hækkað bilirubin í blóði nýbura, sér í lagi ef gulan er greinileg á neðri hluta líkamans. Önnur klínísk einkenni gulu/hækkandi bilirubingilda eru slappleiki og lystarleysi, barnið sefur mikið/erfitt er að vekja barnið og það hefur takmarkaðan áhuga á brjóstagjöf/fæðuinntekt.",
+                            "Að meta dreifingu gula litarins frá toppi til táar getur gagnast við klínískt mat þegar gula er að þróast, sjá mynd."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": "Hjálpartæki fyrir klínískt mat:"
+                    },
+                    {
+                        "type": "image",
+                        "content": "https://ljosmaedrafelag.is/asset/2719/handbok_27-3.png"
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Svæði 1: 100 µmol/ L",
+                            "Svæði 2: 150 µmol/ L",
+                            "Svæði 3: 200 µmol/ L",
+                            "Svæði 4: 250 µmol/ L",
+                            "Svæði 5: >250 µmol/ L"
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Sýnileg gula hjá nýbura á fyrsta sólarhring eftir fæðingu er að öllum líkindum vegna óeðlilega mikils niðurbrots á rauðum blóðkornum og þarfnast tafarlausrar skoðunar læknis. Líklegasta ástæða þess er blóðflokkamisræmi milli móður og barns."
+                        ]
+                    }    
+                ]
+            },                  
+            {
+                "name": "Ljósamörk",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/9a1a2416ce6c3f7400257e760050c6f6/$FILE/N%C3%BDburagula%20-%20Lj%C3%B3sam%C3%B6rk.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Meðferð",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Mikilvægt er að barn með gulu fái nóg að drekka og drekki oft. Börn með gulu er oft löt að drekka og þá þarf að hvetja þau til að drekka. Fyrst og fremst á að mæla með aðferðum sem örva mjólkurframleiðslu svo sem handmjólkun, notkun mjaltavéla og síðast en ekki síst að fylgjast með hvort barnið sjúgi rétt. Ljósmæður ættu ekki ráðleggja sólböð fyrir nýbura með gulu en geta óhikað mælt með því að gluggatjöld séu dregin frá svo nýburinn fái notið dagsbirtunnar.",
+                            "Telji ljósmæður þörf á meðferð við gulu er rétt að vísa barninu til barnalæknis."                  
+                        ]      
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjal LSH",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/B5FE90B3A2A4254E00257E760050B68D"
+                    }
+                ]
+            },
+            {
+                "name": "Fræðslubæklingur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12c2d9065477ece000257e760050bbed/$FILE/N%C3%BDburagula_yfirfari%C3%B0%20b%C3%A6klingur.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Nýburinn – skilgreiningar": {
+        "name": "Nýburinn – skilgreiningar",
+        "subchapters": [
+            {
+                "name": "Fullburi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. full term)",
+                            "Barn sem fætt er eftir 37 - 42 vikna meðgöngu.",
+                            "Dánartíðni er lág."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Fyrirburi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. premature infant)",
+                            "Barn sem fætt er fyrir lok 37. viku."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu einkenni - fara eftir meðgöngulengd:",
+                            "items": [
+                                "▪ Börnin liggja í afslappaðri stellingu með útlimi útrétta.",
+                                "▪ Höfuð virkar stórt.",
+                                "▪ Neglur eru þunnar og stuttar.",
+                                "▪ Subcutant fita er lítil eða engin.",
+                                "▪ Eyru eru án brjósks.",
+                                "▪ Lanugo hár eru aðallega á baki og andliti.",
+                                "▪ Iljar eru þrútnar og lítið af rákum á þeim.",
+                                "▪ Kynfæri virka stór og óþroskuð.",
+                                "▪ Öll taugaviðbrögð (reflexar) eru dauf.",
+                                "▪ Hósta, sog og kyngingarreflexar eru ekki þroskaðir fyrr en við 32 - 34 vikur."
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu vandamál:",
+                            "items": [
+                                "▪ Öndunarörðugleikar og apnea.",
+                                "▪ Léleg hitastjórnun.",
+                                "▪ Fæðuinntektarvandamál.",
+                                "▪ Blóðsykursfall (hypoglycemia).",
+                                "▪ Sýkingarhætta (m.a. vegna lítilla mótefna).",
+                                "▪ Tengslamyndun við foreldra."
+                            ]
+                        }
+                    }
+                ]
+            },
+
+            {
+                "name": "Léttburi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. small for gestational age)",
+                            "Barn sem er lítið miðað við meðgöngulengd (undir 10. percentil)."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu einkenni:",
+                            "items": [
+                                "▪ Börnin eru létt eða horuð en höfuðummál og lengd eru oftast eðlileg nema ef þau hafa verið „svelt“ lengi.",
+                                "▪ Húðin er þurr og virkar of stór miðað við búk.",
+                                "▪ Börnin virka „gömul“ í útliti.",
+                                "▪ Augun eru etv. útstæð.",
+                                "▪ Börnin eru oft óróleg, mikið vakandi og sísvöng.",
+                                "▪ Álitið er að heilafrumur haldi áfram að vaxa í 8 - 15 mán. eftir fæðingu.",
+                                "Aukin hætta er á seinþroska hjá léttburum vegna færri og minni heilafruma."
+                            ]
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu vandamál:",
+                            "items": [
+                                "▪ Asphyxia.",
+                                "▪ Hypoglycemia á 1. - 2. sólarhring.",
+                                "▪ Polycytemia vegna þurrks.",
+                                "▪ Aukin hætta á votum lungum og meconium aspiration ef asphyxia (þá taka þau fyrsta andardráttinn of snemma).",
+                                "▪ Etv. persistent ductus arterious ef hypoxia til staðar.",
+                                "▪ Sýkingarhætta."
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Lág fæðingarþyngd",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. low birth weight)",
+                            "Barn sem fæðist <2500 g.",
+                            "Um 1/3 barna með lága fæðingarþyngd er einnig léttburi, þ.e. lítið miðað við meðgöngulengd."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Þungburi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. large for gestational age)",
+                            "Barn sem er þungt miðað við meðgöngulengd (yfir 90 percentil).",
+                            ">4500 g miðað við fullburða barn."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Yfirburi",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "(e. post term)",
+                            "Barn sem fætt er eftir 42 meðgönguvikur."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "content": {
+                            "header": "Helstu einkenni:",
+                            "items": [
+                                "Börnin eru oft stór en grönn vegna fylgjuþurrðar.",
+                                "Húðin er oft flögnuð og soðin.",
+                                "Neglur eru langar.",
+                                "Hypoglycemia.",
+                                "Aukin hætta er á dauða in utero"
+                            ]
+                        }
+                    },
+                    {
+                        "type": "italics",
+                        "content": [
+                            "Heimildir:",
+                            "Gamla fylgju handbók https://www.ljosmaedrafelag.is/GetAsset.ashx?id=1631"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Ofbeldi í nánum samböndum": {
+        "name": "Ofbeldi í nánum samböndum",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Flýtispjald https://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_spjald.pdf"
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Klínískar leiðbeiningar um ofbeldi í nánum samböndum",
+                    "https://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum.pdf"
+                ]
+            },
+            {
+                "type":"text",
+                "content": [
+                    "Hvert get ég leitað og fengið hjálp?",
+                    "https://www.heilsugaeslan.is/library/Files/Ofbeldi_i_nanum_sambondum_baeklingur.pdf"
+                ]
+            }
+        ]
+    },
+    "Hyperemesis gravidarum": {
+        "name": "Hyperemesis gravidarum",
+        "elements": [
+            {
+                "type":"text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3BD9C2107796661200257E7600387514"
+            },
+            {
+                "type":"text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2017/Hyperemesis%20gravidarum%202017.pdf"
+            }
+        ]
+    },
+    "Óvænt fæðingarhjálp": {
+        "name": "Óvænt fæðingarhjálp",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Allar ljósmæður geta komist í þá aðstöðu að þurfa að hjálpa konu í barnsnauð við frumstæð skilyrði."
+            },
+            {
+                "type": "numberList",
+                "content": {
+                    "header": "Undirbúningur",
+                    "items": [
+                        "Sýna stillingu og róa móðurina.",
+                        "Gæta þess að vel fari um móðurina, henni sé hlýtt og hún liggi á hreinni undirbreiðslu (gott að hafa plastdúk undir).",
+                        "3. Sjóða í 10 mín. eða spritta skæri og þrjú bönd til að binda naflastreng. Hægt er að sótthreinsa lín og naflabönd með því að strauja með heitu járni.",
+                        "4. Hreinsa vel hendur með sápuvatni eða sótthreinsandi vökva."
+                    ]
+                }
+            },
+            {
+                "type": "numberList",
+                "content": {
+                    "header": "Fæðing",
+                    "items": [
+                        "1. Konan sé í þeirri stellingu sem hún vill sjálf.",
+                        "2. Þurrka strax andlit og búk barnsins og hreinsa úr vitum þess.",
+                        "3. Barnið er lagt á magann upp á kvið móðurinnar og þess gætt að því sé hlýtt.",
+                        "4. Ef barnið andar ekki þarf að örva það með nuddi, jafnvel soga úr vitum þess munn við munn og beita blástursaðferð.",
+                        "5. Þegar skilið er á milli eru tvö bönd bundin nær barninu og eitt fylgjumegin og klippt á milli.",
+                        "6. Gott er að leggja barnið strax á brjóst til að örva samdrátt legs. Mun þá fylgjan fæðast fyrr og minna blæða frá legi.",
+                        "7. Forðast skal að toga í naflastrenginn, gott er að nudda legið varlega."
+                    ]
+                }
+            },
+            {
+                "type": "numberList",
+                "content": {
+                    "header": "Aðhlynning móður eftir fæðingu",
+                    "items": [
+                        "1. Þvo vandlega burðarbarma með hreinu vatni, leggja hreint stykki við.",
+                        "2. Gefa henni heitt að drekka, sjá til þess að hún geti hvílst.",
+                        "3. Fylgjast með púls og öndun, ennfremur blæðingu frá legi og öðrum hugsanlegum áverkum eftir fæðingu."
+                    ]
+                }
+            }
+        ]
+    },
+    "Síðfyrirburar": {
+        "name": "Síðfyrirburar",
+        "subchapters": [
+            {
+                "name": "Brjóstagjöf síðfyrirbura",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/3a14086bbd073a5d00257fd40041f126?OpenDocument",
+                    }
+                ]
+            },
+            {
+                "name": "Fræðslubæklingur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/12b2f5bf4a227c6a00257e76005093e9/$FILE/S%C3%AD%C3%B0fyrirburar%20-%20Foreldrab%C3%A6klingur.pdf",
+                    }
+                ]
+            },
+            {
+                "name": "Fræðslubæklingur, að hefja mjólkurframleiðslu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/bb89c1a01fac521100257e76005097e7/$FILE/A%C3%B0%20hefja%20mj%C3%B3lkurframlei%C3%B0slu.pdf",
+                    }
+                ]
+            }
+            ,
+            {
+                "name": "Gæðaskjal LSH",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/5E78096815ED115600257E7600508728",
+                    }
+                ]
+            }
+        ]
+    },
+    "Síritun í fæðingu": {
+        "name": "Síritun í fæðingu",
+        "elements": [
+            {
+                "type": "text",
+                "content": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.",
+                            "Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.",
+                            "Síritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats."
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "content": "Sjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E"
+                    }                    
+                ]
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Flæðirit – eftirlit fósturhjartsláttar í fæðingu",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/0e9f83f79b60151c00257e7500451d69/$FILE/Fl%C3%A6%C3%B0irit%20%2005.042018-Hlustun%20f%C3%B3sturhjartsl%C3%A1ttar.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Sitjandi staða": {
+        "name": "Sitjandi staða",
+        "subchapters": [
+            {
+                "name": "Tegundir sitjanda",
+                "elements": [
+                    [
+                        {
+                            "type": "text",
+                            "content": [
+                                "Fullkomin sitjandastaða (e. complete breech)",
+                                "Fætur eru bognir, barnið situr á hækjum sér."
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": [
+                                "Einföld sitjandastaða (e. Frank breech)",
+                                "Fætur eru beinir og liggja alveg upp með líkama barnsins."
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": [
+                                "Ófullkomin staða/Fótstaða (e. incomplete breech)",
+                                "Fætur eru fyrirsætir og ná niður fyrir rass barnsins"
+                            ]
+                        },
+                        {
+                            "type": "text",
+                            "content": "Skýringarmyndir https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C614C38028304C0C00257E750045F114"
+                        },
+                        {
+                            "type": "text",
+                            "content": "Bæklingur Ljósmæðrafélagsins um sitjanda http://www.ljosmodir.is/asset/336/sitjandi_stada.pdf"
+                        }
+                    ]
+                ]
+            },
+            {
+                "name": "Vending",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/493BF80657A3FE6600257E76003846C2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fræðslubæklingur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/938e0183d33f07e300257e7600384c9c/$FILE/Vending%20b%C3%A6klingur%20mars%202014_leidrettur%20-.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Gæðaskjöl LSH",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Greining og skilyrði fyrir fæðingu um leggöng https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1404FE787237DD3B00257E750045C91F"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Sitjandafæðing um leggöng https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1DB2560E8E63D10600257E750045CB09"
+                    }
+                ]
+            }
+        ]
+    },
+    "Skemmri skírn": {
+        "name": "Skemmri skírn",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Þegar barn er hættulega sjúkt og eigi er unnt að ná til prests, má skíra það skemmri skírn. Má hver skírður maður fullvita, karl eða kona, framkvæma skemmri skírn, en tilkynna skal presti um hana og ber honum að staðfesta hana í kirkju. Skírnarvatn skal vera hreint og ylvolgt."
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Skemmri skírn fer fram með þessum hætti:",
+                    "Sá er skírir, nefnir nafn barnsins, eys þrisvar með lófa sínum vatni á höfuð þess og segir um leið:",
+                    "Ég skíri þig í nafni föður, sonar og heilags anda. Amen.",
+                    "Síðan biður hann Faðir vor og blessar yfir barnið með blessunarorðunum. Þá er sunginn skírnarsálmur, ef því verður við komið, annars lesinn."
+                ]
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Faðir vor, þú sem ert á himnum.",
+                    "Helgist þitt nafn, til komi þitt ríki,",
+                    "verði þinn vilji svo á jörðu sem á himni.",
+                    "Gef oss í dag vort daglegt brauð.",
+                    "Og fyrirgef oss vorar skuldir",
+                    "svo sem vér og fyrirgefum vorum skuldunautum.",
+                    "Eigi leið þú oss í freistni,",
+                    "heldur frelsa oss frá illu.",
+                    "Því að þitt er ríkið, mátturinn og dýrðin að eilífu.",
+                    "Amen"
+                ]
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Drottinn blessi þig og varðveiti þig.",
+                    "Drottinn láti sína ásjónu lýsa yfir þig og sé þér náðugur.",
+                    "Drottinn upplyfti sínu augliti yfir þig og gefi þér frið."
+                ]
+            },
+            {
+                "type": "text",
+                "content": "Svar: Amen."
+            }
+        ]
+    },
+    "Spangaráverkar í fæðingu": {
+        "name": "Spangaráverkar í fæðingu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjöl LSH"
+            },
+            {
+                "type": "text",
+                "content": "Verndun spangar https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/39BA52BAC612E1AD00257E760037758E"
+            },
+            {
+                "type": "text",
+                "content": "Fyrstu og annarar gráðu spangarrifur og spangarklipping https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/A7C940CC5AB5C7F500257E760037816A"
+            },
+            {
+                "type": "text",
+                "content": "Saumaskapur á fyrstu og annarar gráðu spangarrifum og spangarklippingu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/025523EDA4C8236900257E7600378698"
+            },
+            {
+                "type": "text",
+                "content": "Skýringarmyndir - viðgerð annarar gráðu spangarrifu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/ac99b3e7ecc812fd00257e7600379081/$FILE/Vi%C3%B0ger%C3%B0%20annars%20stigs%20spangarrifu-Sk%C3%BDringarmyndir.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Þriðju og fjórðu gráðu spangarrifur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/12B744084574CD0C00257E760037927F"
+            },
+            {
+                "type": "text",
+                "content": "Fræðslubæklingur – rof á hringvöðva endaþarms https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/763e1d3432daf33300257e760037a089/$FILE/Rof%20%C3%A1%20hringv%C3%B6%C3%B0va%20enda%C3%BEarms_A5_snu.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Meistararitgerð Eddu Sveinsdóttur - Áhrif innleiðingar breytts vinnulags á öðru stigi fæðingar á alvarlega spangaráverka á Landspítala https://skemman.is/bitstream/1946/25034/2/Edda%20Sveinsd%c3%b3ttir%20ritger%c3%b0%2005062016.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Heimasíða Gynzone https://www.gynzone.net/"
+            }
+        ]
+    },
+    "Sýnatökur fyrir nýburaskimun": {
+        "name": "Sýnatökur fyrir nýburaskimun",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/EEE382157BA774B800257E760050D6B2"
+            }
+        ]
+    },
+    "Sýrustig barns": {
+        "name": "Sýrustig barns",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Fóstur eru misviðkvæm fyrir súrefnisþurrð og oft er óljóst hvenær atburðir sem leiða til súrefnisþurrðar eiga sér stað. Við kvæmustu fóstrin eru fyrirburar, þau fóstur sem eru vaxtarskert, þau sem verða fyrir fylgjuþurrð (t.d. fylgjulos) og fullmeðgengin fóstur mæðra með alvarlegan undirliggjandi sjúkdóm (t.d. sykursýki, háþrýsting, sýkingar í móðurkviði).",
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Respíratórísk acidósa",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Respíratórísk acidósa.",
+                            "Við tímabundna klemmu á naflastreng getur O2 í blóði fallið og CO2 hleðst upp sem leiðir til respíratórískrar acidósu og pH lækkar. Hefur yfirleitt ekki afleiðingar í för með sér fyrir barnið."
+                        ]
+                    }
+                ]                
+            },
+            {
+                "name": "Metabólísk acidósa",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Ef barnið verður fyrir langvarandi álagi í fæðingu (t.d. tíðar hríðar, hríðar sem líða illa úr, fylgjuþurrð, langvarandi klemma á naflastreng), eða hefur litlar birgðir fyrir, fellur súrefnisþrýstingur. Þá fer fóstrið að flytja súrefnisblóðflæðið til þeirra vefja sem mest þurfa á því að halda (e. brainsparing). Þá minnkar blóðflæðið til annarra vefna og við það byrja loftfirrð efnaskipti, mjólkursýra (e. laktat) myndast og pH lækkar. Ef súrefnisþrýstingurinn fellur frekar, þá verður ekki nægur súrefnisflutningur (loftháð efnaskipti) til lífsnauðsynlegra líffæra og alvarleg metabólísk acidósa myndast sem fóstrið þolir í stuttan tíma."
+                    }
+                ]
+            },
+            {
+                "name": "Base excess",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "ABE er neikvæð reiknuð stærð, mæld út frá pH og HCO3. Er mælikvarði á það hvort barnið hafi orðið fyrir súrefnisskorti í fæðingunni. Breytist ekki að ráði við respíratóríska acidósu.",
+                            "Eðlileg gildi eru -2,1 til -3,6 mEq/L.",
+                            "Í alvarlegri acidosu er ABE -12 til -16",
+                            "Í mjög alvarlegri acidosu er ABE >-16."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Laktat",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Laktat er mjólkursýra sem er lokastig loftfirrðrar glýkólýsu. Endurspeglar súrefnisskort í vefjum. Spilar stærsta hlutverkið varðandi sýrustig fósturs.",
+                            "Eðlileg laktatgildi eru <4,2 mmól/L",
+                            "Grunsamleg 4,2-4,8 mmól/L",
+                            "Óeðlileg gildi >4,8 mmól/L og er þá mælt með að ljúka fæðingu tafarlaust.",
+                            "Erfitt er að túlka laktatgildi úr naflastreng."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Úrlestur blóðsýna úr kolli barns",
+                "elements": [
+                    {
+                        "type": "image",
+                        "image": "https://ljosmaedrafelag.is/asset/2727/handbok_22-5.png"
+                    }
+                ]
+            },
+            {
+                "name": "Fósturköfnun",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Sjúdómsgreiningin fósturköfnun (e. asphyxia) er einkum byggð á tveim þáttum, apgar stigun nýbura og mælingum á sýrustigi blóðs strax eftir fæðingu (laktat og pH mælingar). 30-40% nýbura sem eru slöpp við fæðingu, eru súr við fæðingu."
+                    }
+                ]
+            },
+            {
+                "name": "Naflastrengsblóð",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Blóðprufa sem tekin er úr naflastreng eftir fæðingu. Þegar búið er að skilja á milli er blóðið tekið úr naflastreng, hægt er að setja klemmu á naflastrenginn á milli tveggja tanga og má bíða með sýnatöku að hámarki í 30 mín ef mæla á pH. Þá er stungið á naflastrengsslagæð og sýni tekið í 1 ml sprautu með heparíni. Mælt er með að taka blóð úr slagæð (tvær slagæðar í naflastreng og ein bláæð) því munur á milli æða getur numið allt að 0,20 en ef barn er mjög slappt við fæðingu, er mælt með að taka úr báðum æðum. Að auki er hægt að taka blóð beint úr naflastreng án þess að búið sé að klemma áður. "
+                    }
+                ]
+            }
+        ]
+    },
+    "Tunguhaft": {
+        "name": "Tunguhaft",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/2D2B826D5231E547002580B9004CD106",
+            }
+        ],
+        "subchapters": [
+            {
+                "name": "Mat á tunguhafti",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Matslisti Hazelbaker (ATLFF) https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/74a1bef00e418ad7002580d4003ff4a0/$FILE/Matslisti%20Hazelbaker%20.pdf"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Bristol tounge assessment tool (BTAT) https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/5e27f2e5a88c898e00256500003c98c2/74a1bef00e418ad7002580d4003ff4a0/$FILE/Kl%C3%ADn%C3%ADskt%20mat%20%C3%A1%20tunguhafti.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Tvíburameðganga": {
+        "name": "Tvíburameðganga",
+        "elements": [
+            {
+                "type": "text",
+                "content": [
+                    "Dichoríonískir tvíburar (DC/DA):",
+                    "Tvær fylgjur, tveir belgir, þykk belgjaskil. Algengast, 70% allra tvíbura. Annað hvort eru þeir tvíeggja (80%) eða eineggja (20%). Þessar konur geta verið í mæðraeftirliti á heilsugæslustöð svo lengi sem meðgangan er eðlileg."
+                ]
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Monochoríonískir tvíburar, diamniotískir (MC/DA):",
+                    "Ein fylgja, tveir belgir, þunn belgjaskil, T-laga belgjaskil. 30% allra tvíbura. Alltaf eineggja. Mögulega samgangur milli blóðrásarkerfa barnanna með hættu á „twin-to-twin transfusion” heilkenni. Aukin hætta á misræmi í vexti fóstra. Eftirlit á Göngudeild mæðraverndar LSH."
+                ]
+            },
+            {
+                "type": "text",
+                "content": [
+                    "Monoamniotískir tvíburar (MC/MA):",
+                    "Bæði börnin í sama vatnsbelg (amnion). Sjaldgæft (< 1%), mikil áhætta. Eftirlit á Göngudeild mæðraverndar LSH."
+                ]
+            },
+            {
+                "type": "text",
+                "content": "Mæðravernd í tvíburameðgöngu - vinnuleiðbeiningar https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Tv%C3%ADburame%C3%B0ganga%20Vinnulei%C3%B0beiningar%20um%20m%C3%A6%C3%B0ravernd%202016.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH um tvíburameðgöngu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/1A8DD6A47C92711B00257E75004610FB"
+            },
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH um tvíburafæðingu https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/F50E5CD16E790C5600257E750046182C"
+            }
+        ]
+    },
+    "Umönnun eftir keisaraskurð": {
+        "name": "Umönnun eftir keisaraskurð",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C01F78BC914861B500257E75004552E5",                
+            }
+        ]
+    },
+    "Væntanlegur fæðingardagur": {
+        "name": "Væntanlegur fæðingardagur",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Meðgöngulengd 40 vikur (280 d.) frá 1. degi síðustu tíðablæðinga +/- 2 vikur."
+            },
+            {
+                "type": "text",
+                "content": "Naegele’s formúla: St + 7 dagar + 9 mánuðir Dæmi: St. = 6/2 + 7 dagar = 13/2 + 9 mán. = 13/11 Miðast við 28 daga tíðahring. Ef tíðir eru lengri bætist 1 dagur við fyrir hvern dag sem er umfram 28 daga"
+            }
+        ]
+    },
+    "Vaxtarseinkun": {
+        "name": "Vaxtarseinkun",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2015/Vaxtarseinkun.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Flæðirit LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/252dc1b82557f9db00257e7600515c06/$FILE/Vaxtarseinkun%20flaedirit.pdf"
+            }
+        ]
+    },
+    "Verkjastilling í fæðingu": {
+        "name": "Verkjastilling í fæðingu",
+        "subchapters": [
+            {
+                "name": "Langdregið forstig fæðingar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6F7980BC8D23D69D00257E760038BBF9"
+                    }
+                ]
+            },
+            {
+                "name": "Glaðloft",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/AED7EF188EFDF36C00257E760038C0C2"
+                    }
+                ]
+            },
+            {
+                "name": "Vatnsbólur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/B9F922D68123F10000257E760038E835"
+                    }
+                ]
+            },
+            {
+                "name": "Nálastungur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Sjá kafla um Nálastungur //fylgja.app/Nálastungur//"
+                    }
+                ]
+            },
+            {
+                "name": "Utanbastdeyfing",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Epidural í sídreypi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/E631693A2C6D219C002581B0005A5EF0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Spinal höfuðverkur – há spinal deyfing https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/3532D65C01F4438B00257E760038D007"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Fræðslubæklingur https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/7e4348dc0a5835ef0025826500541988/$FILE/M%C3%A6nur%C3%B3tardeyfing%20(epiduraldeyfing)%20%C3%AD%20f%C3%A6%C3%B0ingu.%20breyttur.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    "Vímuefnaneysla á meðgöngu": {
+        "name": "Vímuefnaneysla á meðgöngu",
+        "subchapters": [
+            {
+                "name": "Skimunarspurningar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/98699c1baa579ff100257e760037fb70/$FILE/V%C3%ADmuefni-Spurningar%20fyrir%20skimun.pdf"
+                    }
+                ]
+             },
+            {
+                "name": "Flæðirit",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/d8be601ff59fab7400257e760037d397/$FILE/Fl%C3%A6%C3%B0irit_2016.pdf"
+                    }
+                ]
+            },
+            {
+                "name": "Vímuefnaneysla og barneignarferlið",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CFC3355E8A6651C200257E760037D8D2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Vímuefnaleit í þvagi https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/CC23442B89B1AE5800257E760037E8BE"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Kannabis á meðgöngu, fræðsluefni https://traveler.lsh.is/focal/gaedahandbaekur/gnhskurda.nsf/0/fd55427735fb5431002583b7005e5a52/$FILE/Kannabis%20og%20me%C3%B0ganga.pdf"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Ítarefni til leiðbeininga og stuðnings https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/FF6AF863579AEF3B00257E760037EF08"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Vímuefni og brjóstagjöf https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/BA97EF5EE5365C3700257E7600381851"
+                    }
+                ]
+            }
+        ]
+    },
+    "Vökvaþörf barna": {
+        "name": "Vökvaþörf barna",
+        "subchapters": [
+            {
+                "name": "Vökvaþörf pr. kg/24 klst.",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "1. dagur 65 - 80 ml/kg",
+                            "2. dagur 90 - 100 ml/kg",
+                            "3. dagur 110 - 120 ml/kg",
+                            "4. dagur 130 - 140 ml/kg",
+                            "5. dagur 150 - 160 ml/kg",
+                            "6. dagur 170 ml/kg"
+                        ]                     
+                    },
+                    {
+                        "type": "text",
+                        "content": [
+                            "Eftir 1 mánuð minnkar þörfin í 150 ml/kg/24 klst.",
+                            "Fyrirburar og léttburar þurfa meira pr/kg/24 klst"   
+                        ]                     
+                    }
+                ]
+            },
+            {
+                "name": "Hitaeiningaþörf",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "120 kkal/kg/24 klst. til 1 mán. aldurs",
+                            "100 kkal/kg/24 klst. eftir 1 mán. aldur."
+                        ]                        
+                    }
+                ]
+            },
+            {
+                "name": "Þyngdaraukning",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Um það bil 10 g/kg/dag, um það bil 200 g/viku.",
+                            "Tvöfalda fæðingarþyngd sína fyrstu 6 mán.",
+                            "Þrefalda þyngd sína 1. árið."
+                        ]                        
+                    }
+                ]
+            },
+            {
+                "name": "Lengdarvöxtur",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "Á 1. ári + 50% af fæðingarlengd",
+                            "Á 2. ári + 25% af fæðingarlengd",
+                            "Eftir það + 12% af fæðingarlengd á ári til 12 ára"
+                        ]                        
+                    }
+                ]
+            },
+            {
+                "name": "Vöxtur höfuðs ",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": [
+                            "5 cm reglan",
+                            "3 mán. = 40 cm höfuðmál - 9 mán. = 45 cm höfuðmál - 2 ára = 50 cm höfuðmál - 18 ára = 56 sm höfuðmál."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "Þriðja stig fæðingar": {
+        "name": "Þriðja stig fæðingar",
+        "subchapters": [
+            {
+                "name": "Gæðaskjal LSH",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/CEC934FF5D05D8D900257E760050A0F4?OpenDocument"
+                    }
+                ]
+            },
+            {
+                "name": "Föst fylgja og fanghlutar",
+                "elements": [
+                    {
+                        "type": "text",
+                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6054462A71FCB73C00257E7600369573"
+                    }
+                ]
+            }
+        ]
+    },
+    "Þroskamat finnström": {
+        "name": "Þroskamat finnström",
+        "elements": [
+            {
+                "type": "image",
+                "content": "https://ljosmaedrafelag.is/asset/2728/handbok_24-1.png"
+            }
+        ]
+    },
+    "Þvagfærasýkingar á meðgöngu": {
+        "name": "Þvagfærasýkingar á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Fróðleiksmoli HH https://www.heilsugaeslan.is/library/Files/Frodleiksmolar-2016/Syklamiga,%20einkennalaus%20og%20tvagfaerasykingar%20%C3%A1%20medgongu%202016.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/DEFF6EAE78F66F610025822C0049BC9E"                
+            }
+        ]
+    },
+    "Þvagteppa í og eftir fæðingu": {
+        "name": "Þvagteppa í og eftir fæðingu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/6054462A71FCB73C00257E7600369573"
+            }
+        ]
+    },
+    "Þyngdaraukning á meðgöngu": {
+        "name": "Þyngdaraukning á meðgöngu",
+        "elements": [
+            {
+                "type": "text",
+                "content": "Sjá töflu á bls 6 í bæklingi um mataræði á meðgöngu: https://www.landlaeknir.is/servlet/file/store93/item35168/Mataraedi%20a%20medgongu%20baekl.2018-5.pdf"
+            },
+            {
+                "type": "text",
+                "content": "Sjá dreifingu þyngdaraukningar á bls 5 í bæklingi um átröskun á meðgöngu: https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/cc067c3bcf2a475c0025840000560b5e/$FILE/%C3%81tr%C3%B6skun%20og%20me%C3%B0ganga"                
+            }
         ]
     },
     "Prufukafli með link": {
