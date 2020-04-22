@@ -52,7 +52,7 @@ function KeyForName(name, subName) {
 function GetText(textItem, key, array, italic) {
     var style = italic ? Styles.pItalic : Styles.p;
     if(typeof textItem === "string") {
-        array.push(<Text style={style} key={key}>{textItem}</Text>);
+        array.push(<Text style={style} key={key+"0"}>{textItem}</Text>);
     } else {
         textItem.forEach(function(item, index) {
             array.push(<Text style={style} key={key+index}>{item}</Text>)
@@ -119,6 +119,7 @@ function GetViewBlocks(elements, title) {
             blocks.push(ElementToView(element, title+index));
         });
     }
+    console.log(blocks);
     return blocks;
 }
 

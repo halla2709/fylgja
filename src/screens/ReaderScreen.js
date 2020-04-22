@@ -71,25 +71,20 @@ export class ReaderScreen extends React.Component {
        </View>
       </View>);
     });
-    console.log("Returning text blocks " + textBlocks.length);
     this.setState({textBlocks: textBlocks});
   }
 
   getUrlText(url) {
+    console.log("Get url", url);
     if(url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/)) {
       return "hér"
     }
-    else if(this.differentUrls[url]) 
-      return url.substring(7);
+    var simpleLinkMatch = url.match(/https?:\/\/(www\.)?(\w+\.\w+)\/?$/);
+    if(simpleLinkMatch) {
+      return simpleLinkMatch[2];
+    }
     else
       return url.endsWith('.pdf') ? 'Sækja skjal' : 'Opna hlekk';
-  }
-
-  getUrl(url) {
-    if(this.differentUrls[url])
-      return this.differentUrls[url];
-    else
-      return url;
   }
 
   openUrl(url) {
@@ -102,7 +97,6 @@ export class ReaderScreen extends React.Component {
         this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: newKey });
       return;
     }
-    url = this.getUrl(url);
     WebBrowser.openBrowserAsync(url);
   }
 
@@ -120,14 +114,13 @@ export class ReaderScreen extends React.Component {
     console.log("Constructor " + this.chapter.key);
     this.numberOfChapters = this.chapters.length;
     this.state = { toScrollTo: 0, textBlocks: []};
-    this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };
+    //this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };
   }
 
   render() {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
-
           <View style={{ borderColor: "rgb(34,82,171)", borderRadius: 10, borderBottomWidth: 0.5, width: '99%', alignSelf: 'center', }}>
             <View style={Styles.decorationcontainer}>
               <Image height={25} resizeMode="contain" source={require('../assets/images/11.png')} />
