@@ -41,6 +41,7 @@ export class ReaderScreen extends React.Component {
   }
 
   async getChapterViews(chapter) {
+    //NOT USED
     console.log("Getting chapter views " + this.chapter.key);
     var textBlocks = [];
     var hasImage = false;

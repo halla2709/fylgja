@@ -80,11 +80,13 @@ async function GetFilteredInformationChapters(filter) {
 
 function findMatchingSubChapters(chapter, key) {
     let subChaptersToReturn = [];
-    chapter.subchapters.forEach(subchapter => {
-        if (chapterTitleMatchesSearch(subchapter, key)) {
-            subChaptersToReturn.push({ key: subchapter.key, name: subchapter.name });
-        }
-    });
+    if (chapter.subchapters) {
+        chapter.subchapters.forEach(subchapter => {
+            if (chapterTitleMatchesSearch(subchapter, key)) {
+                subChaptersToReturn.push({ key: subchapter.key, name: subchapter.name });
+            }
+        });
+    }
     return subChaptersToReturn;
 }
 
