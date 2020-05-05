@@ -63,13 +63,9 @@ export class NewsOverviewScreen extends React.Component {
     }
 
     TagNewest(data) {
-        console.log("Finding newest");
         var newest = data.frett.date > data.vidburdur.date ? data.frett : data.vidburdur;
-        console.log(newest.title, newest.date);
         newest = newest.date > data.radstefna.date ? newest : data.radstefna;
-        console.log(newest.title, newest.date);
         newest = newest.date > data.malstofa.date ? newest : data.malstofa;
-        console.log(newest.title, newest.date);
         newest.newest = true;
     }
     
