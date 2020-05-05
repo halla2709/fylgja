@@ -50,23 +50,41 @@ export class NewsOverviewScreen extends React.Component {
         ])
             .then((items) => {
                 data.frett = items[0][0];
+                data.frett.date = new Date(data.frett.published);
                 data.vidburdur = items[1][0];
+                data.vidburdur.date = new Date(data.vidburdur.published);
                 data.radstefna = items[2][0];
+                data.radstefna.date = new Date(data.radstefna.published);
                 data.malstofa = items[3][0];
+                data.malstofa.date = new Date(data.malstofa.published);
+                this.TagNewest(data);
                 this.setState({ news: data, newsLoaded: true });
-
             }).catch((e) => { console.error(e); });
     }
 
+    TagNewest(data) {
+        console.log("Finding newest");
+        var newest = data.frett.date > data.vidburdur.date ? data.frett : data.vidburdur;
+        console.log(newest.title, newest.date);
+        newest = newest.date > data.radstefna.date ? newest : data.radstefna;
+        console.log(newest.title, newest.date);
+        newest = newest.date > data.malstofa.date ? newest : data.malstofa;
+        console.log(newest.title, newest.date);
+        newest.newest = true;
+    }
+    
     GetNewestString(objectName) {
-        var st = "Nýjast, birt " + (this.state.newsLoaded ? GetDate(this.state.news[objectName].published) : "") + "\n";
-        st += (this.state.newsLoaded ? this.state.news[objectName].title : "")
+        if (!this.state.newsLoaded) 
+            return  <CardContent />;
+        var dataObject = this.state.news[objectName];
+        var st =  dataObject.newest ? "• " : "";
+        st += "Nýjast, birt " + GetDate(dataObject.published) + "\n" + dataObject.title;
         return st;
     }
+
     render() {
         Dimensions.addEventListener("change", (dimension) => {
             this.setState(() => {
-
                 return { isLargeWindow: dimension.window.height > 700 };
             })
         });

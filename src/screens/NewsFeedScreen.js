@@ -119,7 +119,7 @@ export class NewsFeedScreen extends React.Component {
                 }
                 else {
                     body.push(
-                        <Text style={Styles.pImportant} key={ data.key } >Ýtið að Opna frétt hér að neðan til að lesa meira.</Text>
+                        <Text style={Styles.pImportant} key={ data.key } >Ýtið á Opna frétt hér að neðan til að lesa meira.</Text>
                     );
                 }
             });
