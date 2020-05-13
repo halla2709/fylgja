@@ -42,7 +42,6 @@ export class ReaderScreen extends React.Component {
 
   async getChapterViews(chapter) {
     //NOT USED
-    console.log("Getting chapter views " + this.chapter.key);
     var textBlocks = [];
     var hasImage = false;
 
@@ -52,7 +51,6 @@ export class ReaderScreen extends React.Component {
       //   this.getImage(subchapter.image);
       // }
       var showTitle = !(subchapter.name == "#EkkiBirta#" && subchapter.name.length > 0);
-      console.log(subchapter.name);
       textBlocks.push(
       <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
         var { x, y, width, height } = event.nativeEvent.layout;
@@ -75,7 +73,6 @@ export class ReaderScreen extends React.Component {
   }
 
   getUrlText(url) {
-    console.log("Get url", url);
     if(url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/)) {
       return "hér"
     }
@@ -91,8 +88,6 @@ export class ReaderScreen extends React.Component {
     var matches = url.match(/\/\/fylgja\.app\/((.+)\/)((.*)\/)/);
     if(matches) {
       var newKey = KeyForName(matches[2].replace(/_/g," "), matches[4].replace(/_/g," "));
-      console.log("Matches", matches);
-      console.log(newKey);
       if(newKey)
         this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: newKey });
       return;
@@ -101,9 +96,7 @@ export class ReaderScreen extends React.Component {
   }
 
   async componentDidMount() {
-    console.log("Did mount");
     var views = await ChapterElementsToViews(this.chapter, this);
-    console.log("Blocks ready " + this.chapter.key);
     this.setState({textBlocks: views});
   }
 
@@ -111,7 +104,6 @@ export class ReaderScreen extends React.Component {
     super(props);
     this.chapters = GetChapters();
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
-    console.log("Constructor " + this.chapter.key);
     this.numberOfChapters = this.chapters.length;
     this.state = { toScrollTo: 0, textBlocks: []};
     //this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };

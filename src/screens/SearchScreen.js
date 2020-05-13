@@ -5,12 +5,13 @@ import {
   ScrollView,
   KeyboardAvoidingView,
   ImageBackground,
-  PixelRatio
+  PixelRatio,
+  ActivityIndicator
 } from 'react-native';
 import Styles from './../styles/Styles';
 import { SearchBar } from 'react-native-elements';
 import { SearchChapterTitles } from './../controllers/SearchHelper';
-import { GetChapters } from "../controllers/Chapters.js";
+import { GetChapters, SetChaptersLoadedCallback } from "../controllers/Chapters.js";
 
 export class SearchScreen extends React.Component {
 
@@ -21,11 +22,12 @@ export class SearchScreen extends React.Component {
   getChapterView(chapter, level) {
     if (chapter.name !== "#EkkiBirta#" && chapter.name.length > 0) {
       return <Text
-      key={chapter.key}
-      style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
-      onPress={() => this.props.navigation.navigate('Reader', {
-        drawerContent: "chapters",
-        currentChapter: chapter.key})}>{chapter.name}</Text>
+        key={chapter.key}
+        style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
+        onPress={() => this.props.navigation.navigate('Reader', {
+          drawerContent: "chapters",
+          currentChapter: chapter.key
+        })}>{chapter.name}</Text>
     }
   }
 
@@ -37,7 +39,7 @@ export class SearchScreen extends React.Component {
         chapter.subchapters.forEach(subchapter => {
           chapterBlocks.push(this.getChapterView(subchapter, 2));
         });
-        
+
       }
     });
     return chapterBlocks;
@@ -46,49 +48,56 @@ export class SearchScreen extends React.Component {
   constructor(props) {
     super(props);
     this.chapters = GetChapters();
-    this.state = {currentChapterBlocks:this.getChapterViews(this.chapters)};
+    this.state = { currentChapterBlocks: this.getChapterViews(this.chapters) };
+    var self = this;
+    SetChaptersLoadedCallback(function (newChapters) {
+      self.chapters = newChapters;
+      self.setState({ currentChapterBlocks: self.getChapterViews(self.chapters) });
+    });
   }
 
   render() {
     return (
       this.props.screenProps.fontLoaded ? (
+        this.state.currentChapterBlocks.length > 0 ? (
+          <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
+            <View style={Styles.searchcontainer}>
+              <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
+                <SearchBar lightTheme round style={Styles.searchBar}
+                  placeholder='Skrifaðu leitarorð hér...'
+                  placeholderTextColor='rgb(189, 194, 201)'
+                  searchIcon={{ color: 'grey', padding: 3, type: 'material-community' }}
+                  clearIcon={{ color: 'grey', type: 'material-community' }}
+                  inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
+                  inputContainerStyle={Styles.p}
+                  containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10, }}
 
-        <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
+                  onChangeText={(searchString) => {
+                    this.setState({ currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString)) });
+                  }}
+                  onClear={() => {
+                    this.setState({ currentChapterBlocks: this.getChapterViews(this.chapters) });
+                  }}
+                />
 
-          <View style={Styles.searchcontainer}>
-          <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{width: '100%', height: '100%'}}>
-      
-         
-            <SearchBar lightTheme round style={Styles.searchBar} 
-            placeholder='Skrifaðu leitarorð hér...'
-            placeholderTextColor='rgb(189, 194, 201)'
-            searchIcon={{color: 'grey', padding:3,type: 'material-community'}}
-            clearIcon={{color: 'grey',type: 'material-community'}}
-            inputStyle={{color: 'black', fontSize: 18/PixelRatio.getFontScale(), backgroundColor: 'white'}} //Style TextInput
-            inputContainerStyle={Styles.p}
-            containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10,}}
+                <ScrollView style={{ width: '100%', paddingHorizontal: 8, paddingBottom: 10 }}>
 
-            onChangeText={(searchString) => {
-              this.setState({currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString))});
-            }}
-              onClear={() => { 
-              this.setState({currentChapterBlocks: this.getChapterViews(this.chapters)});
-            }}
-              />
-               
-            <ScrollView style={{ width: '100%', paddingHorizontal: 8, paddingBottom: 10}}>
-            
-              <View style={Styles.searchresult}>
-              
-                {this.state.currentChapterBlocks}
-              </View>
-            </ScrollView>
-            </ImageBackground>
-          </View>
-          
+                  <View style={Styles.searchresult}>
 
-        </KeyboardAvoidingView>
-
+                    {this.state.currentChapterBlocks}
+                  </View>
+                </ScrollView>
+              </ImageBackground>
+            </View>
+          </KeyboardAvoidingView>
+        ) :
+          (
+            <View>
+              <ActivityIndicator style={{ margin: 20 }} size="large" color="#0000ff" />
+              <Text style={{ fontFamily: 'merriweather-light', fontSize: 20, color: "#0000ff", textAlign: "center" }}>Sæki gögn af vefsíðu</Text>
+              <Text style={{ fontFamily: 'opensans-regular', fontSize: 12, color: "#0000ff", textAlign: "center" }}>Ef þú hefur beðið lengi, athugaðu þá nettenginguna þína</Text>
+            </View>
+          )
       )
         : null
     );

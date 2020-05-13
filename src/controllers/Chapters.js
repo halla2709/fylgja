@@ -2,15 +2,38 @@ import React from 'react';
 import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
-const chaptersInfo = require("../assets/content/chapters.json");
-const chapterTitles = require("../assets/content/chaptertitles.json")
+var chaptersData, chapterTitles;
 var chapters = [];
+var waitingForChapters = false;
+var chaptersReloadedCb;
+
+async function getJson(uri) {
+    var text = await fetch(uri);
+    var json = await text.json();
+    return json;
+}
+
+async function DownloadChapters() {
+    var result = await Promise.all([
+        getJson("https://ljosmaedrafelag.is/asset/2757/chapters.txt"),
+        getJson("https://ljosmaedrafelag.is/asset/2758/chaptertitles.txt")]);
+    await new Promise((resolve, reject) => setTimeout(resolve, 15000));
+    chaptersData = result[0];
+    chapterTitles = result[1];
+    if (waitingForChapters)
+        CreateChapters();
+}
+
 function CreateChapters() {
+    if (!chapterTitles || !chaptersData) {
+        console.warn("Not ready");
+        waitingForChapters = true;
+        return;
+    }
     console.log("Create chapters!");
     chapterTitles.forEach((title, chapterIndex) => {
-        console.log(title);
-        if(chaptersInfo[title]) {
-            var chapter = chaptersInfo[title];
+        if(chaptersData[title]) {
+            var chapter = chaptersData[title];
             chapter.key = ""+(chapterIndex+1);
             if(chapter.subchapters) {
                 chapter.subchapters.forEach((subchapter, subIndex) => {
@@ -23,7 +46,9 @@ function CreateChapters() {
             console.error("Missing chapter " + title + "!!!");
         }
     });
-    console.log("Chapters length", chapters.length);
+    if (chaptersReloadedCb)
+        chaptersReloadedCb(chapters);
+    waitingForChapters = false;
 }
 
 function GetChapters() {
@@ -119,7 +144,6 @@ function GetViewBlocks(elements, title) {
             blocks.push(ElementToView(element, title+index));
         });
     }
-    console.log(blocks);
     return blocks;
 }
 
@@ -146,8 +170,14 @@ async function ChapterElementsToViews(chapter, parent) {
     return blocks;
 }
 
+function SetChaptersLoadedCallback(cb) {
+    chaptersReloadedCb = cb;
+}
+
 export {
     GetChapters,
     ChapterElementsToViews,
-    KeyForName
+    KeyForName,
+    DownloadChapters,
+    SetChaptersLoadedCallback
 };

@@ -8,6 +8,7 @@ import registerForPushNotificationsAsync from './src/controllers/NotificationCon
 import AppContainer from './src/screens/AppContainer.js';
 import Styles from './src/styles/Styles';
 import NavigationService from './src/controllers/NavigationService';
+import { DownloadChapters } from './src/controllers/Chapters';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -18,9 +19,11 @@ export default class App extends React.Component {
     YellowBox.ignoreWarnings(['Setting a timer']);
   }
 
+
+
   async componentDidMount() {
     registerForPushNotificationsAsync();
-
+    DownloadChapters();
     // Handle notifications that are received or selected while the app
     // is open. If the app was closed and then opened by tapping the
     // notification (rather than just tapping the app icon to open it),
