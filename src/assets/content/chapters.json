@@ -176,7 +176,7 @@
                 "name": "Aðferðir til að losa axlarklemmu",
                 "elements": [
                     {
-                        "type": "image",
+                        "type": "text",
                         "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/D1D285F9C7B1168300257E7600392928"
                     }
                 ]
@@ -185,7 +185,7 @@
                 "name": "Flæðirit",
                 "elements": [
                     {
-                        "type": "image",
+                        "type": "text",
                         "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/C074903E5570B44700257E7600392FC3"
                     }
                 ]
@@ -194,7 +194,7 @@
                 "name": "Gæðaskjal LSH",
                 "elements": [
                     {
-                        "type": "image",
+                        "type": "text",
                         "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/31276FD71468B79600257E7600391EC7"
                     }
                 ]
@@ -2932,19 +2932,14 @@
             {
                 "type": "text",
                 "content": [
-                    {
-                        "type": "text",
-                        "content": [
-                            "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.",
-                            "Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.",
-                            "Síritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats."
-                        ]
-                    },
-                    {
-                        "type": "text",
-                        "content": "Sjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E"
-                    }                    
+                    "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.",
+                    "Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.",
+                    "Síritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats."
                 ]
+            },
+            {
+                "type": "text",
+                "content": "Sjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E"
             }
         ],
         "subchapters": [
@@ -3185,7 +3180,7 @@
                 "elements": [
                     {
                         "type": "image",
-                        "image": "https://ljosmaedrafelag.is/asset/2746/handbok_22-5.png"
+                        "content": "https://ljosmaedrafelag.is/asset/2746/handbok_22-5.png"
                     }
                 ]
             },

@@ -12,23 +12,6 @@ import Image from 'react-native-scalable-image';
   
 
 export class ReaderScreen extends React.Component {
-  async getImage(imageSource) {
-    console.log("Getting image " + imageSource);
-    Image.getSize(imageSource, (width, height) => {
-      console.log("Image " + imageSource + " W: " + width + " H: " + height);
-    }, (error) => { console.error(error); });
-    // ImageReziser.createResizedImage(imageSource, Dimensions.get('window').width, Dimensions.get('window').height, 'PNG', 100)
-    //   .then(function(response) {
-    //     console.log("In response");
-    //     console.log(response);
-    //   })
-    //   .catch(function(error) {
-    //     console.error(error);
-    //   });
-    
-    //<Image resizeMode="contain" source={{uri: subchapter.image}} style={{ flex: 1, width: '80%' }} />
-  }
-
   onViewLayout(key, y) {
     if (key === this.props.navigation.state.params.currentChapter) {
       this.setState({ toScrollTo: y });
@@ -38,38 +21,6 @@ export class ReaderScreen extends React.Component {
   getChapter(chapterKey) {
     const topChapter = chapterKey.split(".")[0];
     return this.chapters[topChapter - 1];
-  }
-
-  async getChapterViews(chapter) {
-    //NOT USED
-    var textBlocks = [];
-    var hasImage = false;
-
-    chapter.subchapters.forEach(subchapter => {
-      // if(subchapter.image) {
-      //   console.log("Subchapter " + subchapter.key + " has image");
-      //   this.getImage(subchapter.image);
-      // }
-      var showTitle = !(subchapter.name == "#EkkiBirta#" && subchapter.name.length > 0);
-      textBlocks.push(
-      <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
-        var { x, y, width, height } = event.nativeEvent.layout;
-        this.onViewLayout(subchapter.key, y);
-      }}>
-        {showTitle ? <View style={Styles.subchaptercontainer}>
-              <Text style={Styles.h2}>{subchapter.name}</Text>
-            </View> : <Text></Text>}
-
-        <View style={Styles.pcontainer}>
-          <Text style={Styles.p} layout="row">{subchapter.content}</Text>
-        </View>
-
-        <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-        <Image width={Dimensions.get('window').width} height={Dimensions.get('window').height} source={{uri: subchapter.image}}/>
-       </View>
-      </View>);
-    });
-    this.setState({textBlocks: textBlocks});
   }
 
   getUrlText(url) {
@@ -95,18 +46,30 @@ export class ReaderScreen extends React.Component {
     WebBrowser.openBrowserAsync(url);
   }
 
+  async dimensionChanged(dim) { 
+    if(this.chapter.hasImages) {
+      var views = await ChapterElementsToViews(this.chapter, this);
+      this.setState({textBlocks: views});
+    }
+  }
+
+  componentWillUnmount() {
+    Dimensions.removeEventListener("change", this.dimensionChanged);
+  }
+
   async componentDidMount() {
     var views = await ChapterElementsToViews(this.chapter, this);
     this.setState({textBlocks: views});
+    Dimensions.addEventListener("change", this.dimensionChanged);
   }
 
   constructor(props) {
     super(props);
+    this.dimensionChanged = this.dimensionChanged.bind(this);
     this.chapters = GetChapters();
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
     this.numberOfChapters = this.chapters.length;
     this.state = { toScrollTo: 0, textBlocks: []};
-    //this.differentUrls = { "http://Fyrirburar.is": "http://fyrirburar.is", "http://Jafnrétti.is": "http://jafnretti.is", "http://Ljósmóðir.is": "http://ljosmodir.is" };
   }
 
   render() {

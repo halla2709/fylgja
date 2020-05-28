@@ -5,8 +5,15 @@ import { Ionicons } from '@expo/vector-icons';
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
+  dimensionChanged(dim) {
+    this.setState(() => {
+      return { isLargeWindow: dim.window.height > 500 };
+    });
+  }
+  
   constructor(props) {
     super(props);
+    this.dimensionChanged = this.dimensionChanged.bind(this);
     this.state = {
       fontLoaded: props.screenProps.fontLoaded,
       isLargeWindow: Dimensions.get('window').height > 500
@@ -18,15 +25,15 @@ export class HomeScreen extends React.Component {
       this.setState({ fontLoaded: newProps.screenProps.fontLoaded });
     }
   }
+  
+  componentDidMount() {
+    Dimensions.addEventListener("change", this.dimensionChanged);
+  }
+  componentWillUnmount() {
+    Dimensions.removeEventListener("change", this.dimensionChanged);
+  }
  
   render() {
-    Dimensions.addEventListener("change", (dimension) => {
-      this.setState(() => {
-        return { isLargeWindow: dimension.window.height > 500 };
-      })
-    });
-
-
     var titlecontainer =
       <View style={Styles.titlecontainer}>
         <Text style={Styles.title}> F<Text style={Styles.smallTitle}>YLGJA </Text> </Text>
