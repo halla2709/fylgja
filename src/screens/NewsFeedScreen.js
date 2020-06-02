@@ -113,16 +113,24 @@ export class NewsFeedScreen extends React.Component {
         var cnt = 0;
         this.data.forEach(element => {
             var body = [];
-            element.parsedBody.forEach((data) => {
-                if(data.type == 'p') {
-                    this.getTextViews(data, body);
-                }
-                else {
-                    body.push(
-                        <Text style={Styles.pImportant} key={ data.key } >Ýtið á Opna frétt hér að neðan til að lesa meira.</Text>
-                    );
-                }
-            });
+            if (element.parsedEntry && element.parsedEntry.length > 0) {
+                body.push(<Text style={Styles.pImportant} key={cnt+"parsedEntry"}>{element.parsedEntry}</Text>);
+            }
+            if(this.state.states[cnt]) {
+                element.parsedBody.forEach((data) => {
+                    if(data.type == 'p') {
+                        this.getTextViews(data, body);
+                    }
+                    else {
+                        body.push(
+                            <Text style={Styles.pImportant} key={ data.key } >Ýtið á Opna frétt hér að neðan til að lesa meira.</Text>
+                        );
+                    }
+                });
+            }
+            else {
+                body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Sjá meira</Text>);
+            }
             var index = cnt;
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
@@ -136,19 +144,7 @@ export class NewsFeedScreen extends React.Component {
                             </View>
                             
                             <CardContent> 
-                                {this.state.states[index] ? (
-                                    <View>
-                                        <Text style={Styles.pImportant}>{element.parsedEntry}</Text>
-                                        {body}
-                                        </View>
-                                 ) : 
-                                (
-                                <View>
-                                    <Text style={Styles.pImportant}>{element.parsedEntry}</Text> 
-                                    <Text style={Styles.ptiny}>Sjá meira</Text>       
-                                </View>                        
-                                )}
-
+                                <View>{body}</View>
                             </CardContent>
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
@@ -159,7 +155,6 @@ export class NewsFeedScreen extends React.Component {
                     </View>
                 </TouchableWithoutFeedback>
             );
-
        });
         
         var view = (this.state.newsLoaded ?  (

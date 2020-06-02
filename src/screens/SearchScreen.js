@@ -20,7 +20,7 @@ export class SearchScreen extends React.Component {
   };
 
   getChapterView(chapter, level) {
-    if (chapter.name !== "#EkkiBirta#" && chapter.name.length > 0) {
+    if (chapter.name.length > 0) {
       return <Text
         key={chapter.key}
         style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
@@ -48,18 +48,18 @@ export class SearchScreen extends React.Component {
   constructor(props) {
     super(props);
     this.chapters = GetChapters();
-    this.state = { currentChapterBlocks: this.getChapterViews(this.chapters) };
+    this.state = { currentChapterBlocks: this.getChapterViews(this.chapters), loaded: this.chapters.length > 0 };
     var self = this;
     SetChaptersLoadedCallback(function (newChapters) {
       self.chapters = newChapters;
-      self.setState({ currentChapterBlocks: self.getChapterViews(self.chapters) });
+      self.setState({ currentChapterBlocks: self.getChapterViews(self.chapters), loaded: true });
     });
   }
 
   render() {
     return (
       this.props.screenProps.fontLoaded ? (
-        this.state.currentChapterBlocks.length > 0 ? (
+        this.state.loaded ? (
           <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
             <View style={Styles.searchcontainer}>
               <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
@@ -71,7 +71,6 @@ export class SearchScreen extends React.Component {
                   inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
                   inputContainerStyle={Styles.p}
                   containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10, }}
-
                   onChangeText={(searchString) => {
                     this.setState({ currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString)) });
                   }}
@@ -79,12 +78,14 @@ export class SearchScreen extends React.Component {
                     this.setState({ currentChapterBlocks: this.getChapterViews(this.chapters) });
                   }}
                 />
-
                 <ScrollView style={{ width: '100%', paddingHorizontal: 8, paddingBottom: 10 }}>
-
                   <View style={Styles.searchresult}>
-
-                    {this.state.currentChapterBlocks}
+                    {
+                      this.state.currentChapterBlocks.length > 0 ?
+                        this.state.currentChapterBlocks
+                        :
+                        <Text style={Styles.searchedtext}>Engar niðurstöður. Vinsamlegast reynið aftur.</Text>
+                      }
                   </View>
                 </ScrollView>
               </ImageBackground>
