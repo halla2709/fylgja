@@ -142,6 +142,14 @@ export default StyleSheet.create({
     fontSize: 18/PixelRatio.getFontScale(),
   },
 
+  ptiny: {
+    fontFamily: 'opensans-regular',
+    fontSize: 12/PixelRatio.getFontScale(),
+    color: 'rgb(43,43,43)',
+    alignSelf: "center",
+    marginTop: 2
+  },
+
   h1Information: {
     fontFamily: 'opensans-regular',
     fontSize: 24/PixelRatio.getFontScale(),
@@ -181,7 +189,7 @@ export default StyleSheet.create({
 
   pImportant: {
     fontFamily: 'opensans-regular',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 15/PixelRatio.getFontScale(),
     color:'rgb(131,27,0)'
   },
 
