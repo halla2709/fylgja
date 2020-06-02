@@ -143,8 +143,12 @@ export class NewsFeedScreen extends React.Component {
                                         </View>
                                  ) : 
                                 (
-                                    <Text style={Styles.p}>{element.parsedEntry}</Text>                                    
+                                <View>
+                                    <Text style={Styles.pImportant}>{element.parsedEntry}</Text> 
+                                    <Text style={Styles.ptiny}>Sjá meira</Text>       
+                                </View>                        
                                 )}
+
                             </CardContent>
                             <CardAction separator={true} inColumn={false}>
                             <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
