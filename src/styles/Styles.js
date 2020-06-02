@@ -144,8 +144,8 @@ export default StyleSheet.create({
 
   ptiny: {
     fontFamily: 'opensans-regular',
-    fontSize: 12/PixelRatio.getFontScale(),
-    color: 'rgb(43,43,43)',
+    fontSize: 14/PixelRatio.getFontScale(),
+    color: 'rgb(138,138,138)',
     alignSelf: "center",
     marginTop: 2
   },
@@ -189,7 +189,7 @@ export default StyleSheet.create({
 
   pImportant: {
     fontFamily: 'opensans-regular',
-    fontSize: 15/PixelRatio.getFontScale(),
+    fontSize: 18/PixelRatio.getFontScale(),
     color:'rgb(131,27,0)'
   },
 
@@ -313,7 +313,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: '100%',
-    backgroundColor: '#f7f7f7',
+    backgroundColor: 'rgb(247,247,247)'
   },
 
   imagetext: {

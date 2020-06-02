@@ -129,7 +129,7 @@ export class NewsFeedScreen extends React.Component {
                 });
             }
             else {
-                body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Sjá meira</Text>);
+                body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Ýttu til að lesa meira</Text>);
             }
             var index = cnt;
             cards.push(
@@ -146,10 +146,8 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent> 
                                 <View>{body}</View>
                             </CardContent>
-                            <CardAction separator={true} inColumn={false}>
-                            <View style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
-                                <CardButton onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} title="Opna Frétt" color="rgb(34,82,171)" />
-                            </View>
+                            <CardAction separator={true} inColumn={false} style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
+                                <CardButton title="Opna á vefsíðu" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
                             </CardAction>
                         </Card>
                     </View>

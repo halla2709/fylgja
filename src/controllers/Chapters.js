@@ -16,6 +16,7 @@ async function getJson(uri) {
         }});
     var json = await text.json();
     return json;
+
 }
 
 async function DownloadChapters() {
@@ -112,7 +113,7 @@ function CreateChapters() {
             chapters.push(chapter);
         }
         else {
-            console.error("Missing chapter " + title + "!!!");
+            console.error("Missing chapter " + title + "!");
         }
     });
     if (chaptersReloadedCb)
@@ -193,6 +194,8 @@ async function ElementToView(element, key) {
             items.push(<Text key={key+"header"} style={Styles.pBold}>{element.content.header}</Text>);
         
         element.content.items.forEach(function(item, index) {
+                item[0] = "▪ " + item[0];      
+            
             GetText(item, key+index, items);
         });
         return <View key={key} style={Styles.elementcontainer}>
@@ -225,7 +228,8 @@ async function ElementToView(element, key) {
             }
             GetText(item, key+index, items);
         });
-        return <View key={key} style={Styles.elementcontainer}>
+
+return <View key={key} style={Styles.elementcontainer}>
             {items}
         </View>
 

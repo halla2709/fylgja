@@ -30,7 +30,7 @@ class ChapterListItem extends React.Component {
         else {
             this.subChapterView = null;
         }
-        var fancy = this.isCurrentChapter() ? '☼' : "" ;
+        var fancy = this.isCurrentChapter() ? '> ' : "" ;
         var fontSize = (this.props.level == 0 ? 20 : 18)/PixelRatio.getFontScale();
         var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';
         var indent = "";
