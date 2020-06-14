@@ -95,7 +95,8 @@ export class ReaderScreen extends React.Component {
               <Image height={25} resizeMode="contain" source={require('../assets/images/10.png')} />
             </View>
           </View>
-
+          <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
+              
           <ScrollView style={{ height: '100%', opacity: 0.7, paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, }} ref={(scrollView) => {
             if (scrollView != null) {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
@@ -108,6 +109,7 @@ export class ReaderScreen extends React.Component {
               </Hyperlink>
             </View>
           </ScrollView>
+          </ImageBackground>
         </View>
       ) : null
     );  

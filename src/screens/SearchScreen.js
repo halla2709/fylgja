@@ -95,7 +95,7 @@ export class SearchScreen extends React.Component {
           (
             <View>
               <ActivityIndicator style={{ margin: 20 }} size="large" color="#0000ff" />
-              <Text style={{ fontFamily: 'merriweather-light', fontSize: 20, color: "#0000ff", textAlign: "center" }}>Sæki gögn af vefsíðu</Text>
+              <Text style={{ fontFamily: 'merriweather-light', fontSize: 20, color: "#0000ff", textAlign: "center" }}>Sæki gögn</Text>
               <Text style={{ fontFamily: 'opensans-regular', fontSize: 12, color: "#0000ff", textAlign: "center" }}>Ef þú hefur beðið lengi, athugaðu þá nettenginguna þína</Text>
             </View>
           )

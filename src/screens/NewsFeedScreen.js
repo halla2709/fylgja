@@ -147,8 +147,8 @@ export class NewsFeedScreen extends React.Component {
                             <CardContent> 
                                 <View>{body}</View>
                             </CardContent>
-                            <CardAction separator={true} inColumn={false} style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
-                                <CardButton title="Opna á vef" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
+                            <CardAction separator={true} inColumn={false} >
+                                <CardButton title="Opna frétt" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
                             </CardAction>
                         </Card>
                     </View>
@@ -169,7 +169,7 @@ export class NewsFeedScreen extends React.Component {
         ( <View>
             <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>       
             <ActivityIndicator style={{margin:20}}size="large" color="#0000ff" />
-            <Text style={{fontFamily: 'merriweather-light',fontSize: 20,color:"#0000ff",textAlign:"center"}}>Sæki gögn af vefsíðu</Text>
+            <Text style={{fontFamily: 'merriweather-light',fontSize: 20,color:"#0000ff",textAlign:"center"}}>Sæki gögn</Text>
             <Text style={{fontFamily: 'opensans-regular',fontSize: 12,color:"#0000ff",textAlign:"center"}}>Ef þú hefur beðið lengi, athugaðu nettenginguna þína</Text>
             </ImageBackground>
             </View> )
