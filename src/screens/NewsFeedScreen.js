@@ -129,7 +129,8 @@ export class NewsFeedScreen extends React.Component {
                 });
             }
             else {
-                body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Ýttu til að lesa meira</Text>);
+                if(element.parsedBody.length > 0)
+                    body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Ýttu til að lesa meira</Text>);
             }
             var index = cnt;
             cards.push(
