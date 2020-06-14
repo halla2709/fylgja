@@ -147,7 +147,7 @@ export class NewsFeedScreen extends React.Component {
                                 <View>{body}</View>
                             </CardContent>
                             <CardAction separator={true} inColumn={false} style={{alignSelf:"center", alignContent:"center", alignItems:"center"}}>
-                                <CardButton title="Opna á vefsíðu" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
+                                <CardButton title="Opna á vef" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
                             </CardAction>
                         </Card>
                     </View>
