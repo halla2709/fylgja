@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, ScrollView, Dimensions } from 'react-native';
+import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers/Chapters.js";
@@ -95,8 +95,9 @@ export class ReaderScreen extends React.Component {
               <Image height={25} resizeMode="contain" source={require('../assets/images/10.png')} />
             </View>
           </View>
-
-          <ScrollView style={{ height: '100%', paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, opacity: 0.95, }} ref={(scrollView) => {
+          <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
+              
+          <ScrollView style={{ height: '100%', opacity: 0.7, paddingHorizontal: 5, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, }} ref={(scrollView) => {
             if (scrollView != null) {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
             }
@@ -108,6 +109,7 @@ export class ReaderScreen extends React.Component {
               </Hyperlink>
             </View>
           </ScrollView>
+          </ImageBackground>
         </View>
       ) : null
     );  
