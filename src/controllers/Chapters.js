@@ -248,6 +248,21 @@ function GetText(textItem, key, array, italic) {
     return array;
 }
 
+function GetListText(listItem, key, array, prefix) {
+    if (typeof listItem === "string") {
+        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key+"0b"}>{prefix}</Text>{listItem}</Text>);        
+    }
+    else {
+        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key+"0b"}>{prefix}</Text>{listItem[0]}</Text>);        
+        listItem.forEach(function (item, index) {
+            if(index === listItem.length-1)
+                array.push(<Text style={Styles.p} key={key + index}>{item}</Text>)            
+            else if (index > 0)
+                array.push(<Text style={Styles.p} key={key + index}>{item}</Text>)
+        });
+    }
+}
+
 async function ElementToView(element, key) {
     if (element.type == "list") {
         var items = [];
@@ -255,17 +270,7 @@ async function ElementToView(element, key) {
             items.push(<Text key={key + "header"} style={Styles.pBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
-            var text = [];
-            if (typeof item === "string")
-                text = "▪ " + item;
-            else {
-                text[0] = "▪ " + item[0];
-                item.forEach(function(t, i){
-                    if (i > 0)
-                        text[i] = "      "+t;
-                });
-            }
-            GetText(text, key + index, items);
+            GetListText(item, key+index, items, "▪ ");
         });
         return <View key={key} style={Styles.elementcontainer}>
             {items}
@@ -290,17 +295,7 @@ async function ElementToView(element, key) {
             items.push(<Text key={key + "header"} style={Styles.pBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
-            var text = [];
-            if (typeof item === "string") {
-                text = (index + 1) + ". " + item;
-            } else {
-                text[0] = (index + 1) + ". " + item[0];
-                item.forEach(function(t, i){
-                    if (i > 0)
-                        text[i] = "      "+t;
-                });
-            }
-            GetText(text, key + index, items);
+            GetListText(item, key+index, items, (index + 1) + ". ");
         });
 
         return <View key={key} style={Styles.elementcontainer}>

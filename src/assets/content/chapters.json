@@ -10,9 +10,9 @@
                         "content": {
                             "header": "Í fyrstu komu í meðgönguvernd ætti að spyrja um:",
                             "items": [
-                                "▪ Fyrri eða núverandi alvarlega geðræna sjúkdóma",
-                                "▪ Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi",
-                                "▪ Fjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli"
+                                "Fyrri eða núverandi alvarlega geðræna sjúkdóma",
+                                "Fyrri meðferð hjá geðlækni eða sérhæfðu geðheilbrigðisteymi",
+                                "Fjölskyldusögu um geðræn vandamál eða geðsjúkdóm í barneignarferli"
                             ]
                         }
                     },
@@ -21,8 +21,8 @@
                         "content": {
                             "header": "Spyrja þessara spurninga til að skima fyrir þunglyndi:",
                             "items": [
-                                "▪ Hefur líðan þín breyst síðastliðinn mánuð þanig að þér hafi t.d. fundist þú langt niðri, þunglynd eða haldin vonleysi?",
-                                "▪ Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?"
+                                "Hefur líðan þín breyst síðastliðinn mánuð þanig að þér hafi t.d. fundist þú langt niðri, þunglynd eða haldin vonleysi?",
+                                "Hefur þú oft fundið fyrir áhugaleysi eða því að hafa ekki ánægju af að gera það sem þú ert vön að gera, á síðastliðnum mánuði?"
                             ]
                         }
                     },
@@ -31,8 +31,8 @@
                         "content": {
                             "header": "Spyrja þessara spurninga til að skima fyrir kvíða:",
                             "items": [
-                                "▪ Hefur þér fundist þú vera kvíðin, taugaóstyrk eða eins og á mörkunum sl. 2 vikur?",
-                                "▪ Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?"
+                                "Hefur þér fundist þú vera kvíðin, taugaóstyrk eða eins og á mörkunum sl. 2 vikur?",
+                                "Hefur þér fundist eins og þú getir ekki hætt að hafa áhyggjur eða hafir ekki stjórn á þeim sl. 2 vikur?"
                             ]
                         }
                     },
@@ -41,7 +41,7 @@
                         "content": {
                             "header": "Ef já við einni eða fleiri spurningum, má spyrja:",
                             "items": [
-                                "▪ Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?"
+                                "Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?"
                             ]
                         }
                     },
@@ -50,7 +50,7 @@
                         "content": {
                             "header": "Ef já við einni eða fleiri spurningum, má spyrja:",
                             "items": [
-                                "▪ Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?"
+                                "Er þetta eitthvað sem þú vilt ræða frekar eða fá aðstoð við?"
                             ]
                         }
                     },
@@ -88,8 +88,8 @@
                                     "Ef vægur tilfinningalegur vandi, bjóða þá þéttari viðtöl við ljósmóður í mæðravernd, innan 2 vikna. Nota má EPDS og GAD-7 til nánara mats.",
                                     "Ef engin breyting á líðan eða versnun, fara þá í meðferðarþrep 2.",
                                     "Ef alvarlegur vandi, fara þá beint í meðferðarþrep 3, t.d.:",
-                                    "▪ Já við 10. Spurningu á EPDS um sjálfskaða.",
-                                    "▪ 15 stig eða meira á GAD-7."
+                                    "- Já við 10. Spurningu á EPDS um sjálfskaða.",
+                                    "- 15 stig eða meira á GAD-7."
                                 ],
                                 [
                                     "Bjóða hópmeðferð fyrir þungaðar konur hjá ljósmóður eða sálfræðingi í heilsugæslu.",
@@ -570,13 +570,13 @@
                 "content": {
                     "header": "Aðhlynning og endurlífgun nýbura felst í eftirfarandi:",
                     "items": [
-                        "▪ Blóðgjöf frá fylgju um naflastreng (þegar við á) með því að seinka því að skilið sé á milli.",
-                        "▪ Þurrka barnið, vefja það líni og grípa til frekari aðgerða til viðhalds eðlilegum líkamshita (36,5°C - 37,5°C) sé þess þörf.",
-                        "▪ Meta ástand barnsins og þörf fyrir frekari inngrip.",
-                        "▪ Halda öndunarvegi opnum.",
-                        "▪ Anda fyrir barnið með belg og maska ef það andar ekki sjálft.",
-                        "▪ Halda áfram öndunarhjálp þar til barnið fer að anda sjálft.",
-                        "▪ Hefja skal hjartahnoð ef hjartsláttur er undir 60 slögum á mínútu eftir fimm þanblástra (e. inflation breaths) og 30 sekúndur af virkri öndunarhjálp því til viðbótar."
+                        "Blóðgjöf frá fylgju um naflastreng (þegar við á) með því að seinka því að skilið sé á milli.",
+                        "Þurrka barnið, vefja það líni og grípa til frekari aðgerða til viðhalds eðlilegum líkamshita (36,5°C - 37,5°C) sé þess þörf.",
+                        "Meta ástand barnsins og þörf fyrir frekari inngrip.",
+                        "Halda öndunarvegi opnum.",
+                        "Anda fyrir barnið með belg og maska ef það andar ekki sjálft.",
+                        "Halda áfram öndunarhjálp þar til barnið fer að anda sjálft.",
+                        "Hefja skal hjartahnoð ef hjartsláttur er undir 60 slögum á mínútu eftir fimm þanblástra (e. inflation breaths) og 30 sekúndur af virkri öndunarhjálp því til viðbótar."
                     ]
                 }
             },
@@ -694,20 +694,20 @@
                 "content": {
                     "header": "Ábendingar:",
                     "items": [
-                        "▪ Meðgöngulengd >41 vika",
-                        "▪ Vaxtarseinkun fósturs",
-                        "▪ Langvinnur háþrýstingur og meðgöngulengd >40 vikur",
-                        "▪ Vægur háþrýstingur eða góð viðbrögð við meðferð og meðgöngulengd 40 vikur",
-                        "▪ Meðal/alvarlegur háþrýstingur og meðgöngulengd >37 vikur",
-                        "▪ Meðgöngueitrun",
-                        "▪ Legvatn fer áður en sótt hefst",
-                        "▪ Grunur um fósturstreitu",
-                        "▪ Tvíburameðganga",
-                        "▪ Rh mótefnamyndun/blóðflokkamisræmi",
-                        "▪ Alvarlegir sjúkdómar á meðgöngu s.s. sykursýki, gallstasi, rauðir úlfar eða annað sem hefur áhrif á fylgjustarfsemi og fósturvöxt",
-                        "▪ Andvana barn",
-                        "▪ Sálfélagslegir þættir",
-                        "▪ Konur 40 ára og eldri – ræða framköllun fæðingar við 40-41 viku."
+                        "Meðgöngulengd >41 vika",
+                        "Vaxtarseinkun fósturs",
+                        "Langvinnur háþrýstingur og meðgöngulengd >40 vikur",
+                        "Vægur háþrýstingur eða góð viðbrögð við meðferð og meðgöngulengd 40 vikur",
+                        "Meðal/alvarlegur háþrýstingur og meðgöngulengd >37 vikur",
+                        "Meðgöngueitrun",
+                        "Legvatn fer áður en sótt hefst",
+                        "Grunur um fósturstreitu",
+                        "Tvíburameðganga",
+                        "Rh mótefnamyndun/blóðflokkamisræmi",
+                        "Alvarlegir sjúkdómar á meðgöngu s.s. sykursýki, gallstasi, rauðir úlfar eða annað sem hefur áhrif á fylgjustarfsemi og fósturvöxt",
+                        "Andvana barn",
+                        "Sálfélagslegir þættir",
+                        "Konur 40 ára og eldri – ræða framköllun fæðingar við 40-41 viku."
                     ]
                 }
             },
@@ -769,10 +769,10 @@
                 "content": {
                     "header":"Hætta sem sjúkdómurinn getur haft í för með sér fyrir ófædda barnið er:",
                     "items": [
-                        "▪ Barnabik í legvatni",
-                        "▪ Fósturstreita",
-                        "▪ Fyrirburafæðing",
-                        "▪ Fósturdauði"
+                        "Barnabik í legvatni",
+                        "Fósturstreita",
+                        "Fyrirburafæðing",
+                        "Fósturdauði"
                     ]
                 }
             },
@@ -897,11 +897,11 @@
                 "content": {
                     "header": "Mælt er með að eftirfarandi hópar kvenna fái fyrirbyggjandi sýklalyf í æð í fæðingu:",
                     "items": [
-                        "▪ Kona sem hefur áður fætt barn með GBS sýkingu",
-                        "▪ GBS hefur greinst í þvagi á meðgöngunni",
-                        "▪ GBS hefur greinst í stroki frá leggöngum á meðgöngunni",
-                        "▪ Klínísk merki um sýkingu í fæðingu",
-                        "▪ Fyrirburafæðing"
+                        "Kona sem hefur áður fætt barn með GBS sýkingu",
+                        "GBS hefur greinst í þvagi á meðgöngunni",
+                        "GBS hefur greinst í stroki frá leggöngum á meðgöngunni",
+                        "Klínísk merki um sýkingu í fæðingu",
+                        "Fyrirburafæðing"
                     ]
                 }
             },
@@ -947,10 +947,10 @@
                         "content": {
                             "header": "Helstu kostir koparlykkju",
                             "items": [
-                                "▪ Örugg getnaðarvörn (+99%)",
-                                "▪ Lykkjan veitir vörn þar sem hún er þ.e. í leginu og er því ekki virk til að koma í veg fyrir þungun utan legs þ.e. utanlegsfóstur.",
-                                "▪ Gleymist ekki",
-                                "▪ Hefur ekki áhrif á hormónastarfssemi líkamans"
+                                "Örugg getnaðarvörn (+99%)",
+                                "Lykkjan veitir vörn þar sem hún er þ.e. í leginu og er því ekki virk til að koma í veg fyrir þungun utan legs þ.e. utanlegsfóstur.",
+                                "Gleymist ekki",
+                                "Hefur ekki áhrif á hormónastarfssemi líkamans"
                             ]
                         }
                     },
@@ -978,8 +978,8 @@
                         "content": {
                             "header": "Hérlendis eru mest notaðar tvær gerðir hormónalykkja",
                             "items": [
-                                "▪ Mirena hefur hylki sem endist í 5-7 ár",
-                                "▪ Jaydess er aðeins minni lykkja og hefur hylki sem endist í 3 ár."
+                                "Mirena hefur hylki sem endist í 5-7 ár",
+                                "Jaydess er aðeins minni lykkja og hefur hylki sem endist í 3 ár."
                             ]
                         }
                     },
@@ -988,11 +988,11 @@
                         "content": {
                             "header": "Helstu kostir homónalykkju",
                             "items": [
-                                "▪ Örugg getnaðarvörn (+99%)",
-                                "▪ Gleymist ekki",
-                                "▪ Blæðingar minnka eða hverfa alveg sem mörgum konum finnst ákjósanlegt",
-                                "▪ Aðeins staðbundin verkun",
-                                "▪ Virkar strax eftir uppsetningu"
+                                "Örugg getnaðarvörn (+99%)",
+                                "Gleymist ekki",
+                                "Blæðingar minnka eða hverfa alveg sem mörgum konum finnst ákjósanlegt",
+                                "Aðeins staðbundin verkun",
+                                "Virkar strax eftir uppsetningu"
                             ]
                         }
                     },
@@ -1001,10 +1001,10 @@
                         "content": {
                             "header": "Helstu aukaverkanir",
                             "items": [
-                                "▪ Algengastar eru milliblæðingar í byrjun",
-                                "▪ Þyngdaraukning",
-                                "▪ Bólur á húð",
-                                "▪ Blóðtappahætta er afar lítil"
+                                "Algengastar eru milliblæðingar í byrjun",
+                                "Þyngdaraukning",
+                                "Bólur á húð",
+                                "Blóðtappahætta er afar lítil"
                             ]
                         }
                     },
@@ -2014,11 +2014,11 @@
                         "type": "list",
                         "content": {
                             "items": [
-                                "▪ Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.",
-                                "▪ Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.",
-                                "▪ Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).",
-                                "▪ Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits.",
-                                "▪ Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar."
+                                "Ef ritið er eðlilegt, konan finnur eðlilegar hreyfingar og meðgangan án áhættuþátta fer konan í hefðbundið mæðraeftirlit.",
+                                "Konan fær fræðslu um fósturhreyfingar sem felur í sér að í hvíld finni konan amk. 10 hreyfingar á 2 klst.",
+                                "Ef ritið er eðlilegt en konan finnur engar hreyfingar þarf frekara mat á hreyfingum fósturs (t.d. klínískt mat ljósmóður eða ómskoðun til að meta hreyfingar og legvatnsmagn).",
+                                "Ef ritið er eðlilegt en einhver áhættuþáttur til staðar er fengið álit sérfræðings og ef konan er utan LSH er pantaður tími í dagönn fyrir konuna til nánara eftirlits.",
+                                "Ef ritið er óeðlilegt þarf álit sérfræðings sem metur þörf fyrir áframhaldandi rannsóknir s.s. ómskoðun til að meta legvatnsmagn, hreyfingar og flæðishraða í MCA. Meta þarf heildarmyndina eins og meðgöngulengd og fyrri sögu, sérstaklega m.t.t. hvort framkalla þurfi fæðingu eða gera keisaraskurð. Sérstaklega þarf að huga vel að stöðu mála ef kona hefur endurtekið minnkaðar fósturhreyfingar."
                             ]
                         }
                     },
@@ -2670,16 +2670,16 @@
                         "content": {
                             "header": "Helstu einkenni - fara eftir meðgöngulengd:",
                             "items": [
-                                "▪ Börnin liggja í afslappaðri stellingu með útlimi útrétta.",
-                                "▪ Höfuð virkar stórt.",
-                                "▪ Neglur eru þunnar og stuttar.",
-                                "▪ Subcutant fita er lítil eða engin.",
-                                "▪ Eyru eru án brjósks.",
-                                "▪ Lanugo hár eru aðallega á baki og andliti.",
-                                "▪ Iljar eru þrútnar og lítið af rákum á þeim.",
-                                "▪ Kynfæri virka stór og óþroskuð.",
-                                "▪ Öll taugaviðbrögð (reflexar) eru dauf.",
-                                "▪ Hósta, sog og kyngingarreflexar eru ekki þroskaðir fyrr en við 32 - 34 vikur."
+                                "Börnin liggja í afslappaðri stellingu með útlimi útrétta.",
+                                "Höfuð virkar stórt.",
+                                "Neglur eru þunnar og stuttar.",
+                                "Subcutant fita er lítil eða engin.",
+                                "Eyru eru án brjósks.",
+                                "Lanugo hár eru aðallega á baki og andliti.",
+                                "Iljar eru þrútnar og lítið af rákum á þeim.",
+                                "Kynfæri virka stór og óþroskuð.",
+                                "Öll taugaviðbrögð (reflexar) eru dauf.",
+                                "Hósta, sog og kyngingarreflexar eru ekki þroskaðir fyrr en við 32 - 34 vikur."
                             ]
                         }
                     },
@@ -2688,12 +2688,12 @@
                         "content": {
                             "header": "Helstu vandamál:",
                             "items": [
-                                "▪ Öndunarörðugleikar og apnea.",
-                                "▪ Léleg hitastjórnun.",
-                                "▪ Fæðuinntektarvandamál.",
-                                "▪ Blóðsykursfall (hypoglycemia).",
-                                "▪ Sýkingarhætta (m.a. vegna lítilla mótefna).",
-                                "▪ Tengslamyndun við foreldra."
+                                "Öndunarörðugleikar og apnea.",
+                                "Léleg hitastjórnun.",
+                                "Fæðuinntektarvandamál.",
+                                "Blóðsykursfall (hypoglycemia).",
+                                "Sýkingarhætta (m.a. vegna lítilla mótefna).",
+                                "Tengslamyndun við foreldra."
                             ]
                         }
                     }
@@ -2715,12 +2715,12 @@
                         "content": {
                             "header": "Helstu einkenni:",
                             "items": [
-                                "▪ Börnin eru létt eða horuð en höfuðummál og lengd eru oftast eðlileg nema ef þau hafa verið „svelt“ lengi.",
-                                "▪ Húðin er þurr og virkar of stór miðað við búk.",
-                                "▪ Börnin virka „gömul“ í útliti.",
-                                "▪ Augun eru etv. útstæð.",
-                                "▪ Börnin eru oft óróleg, mikið vakandi og sísvöng.",
-                                "▪ Álitið er að heilafrumur haldi áfram að vaxa í 8 - 15 mán. eftir fæðingu.",
+                                "Börnin eru létt eða horuð en höfuðummál og lengd eru oftast eðlileg nema ef þau hafa verið „svelt“ lengi.",
+                                "Húðin er þurr og virkar of stór miðað við búk.",
+                                "Börnin virka „gömul“ í útliti.",
+                                "Augun eru etv. útstæð.",
+                                "Börnin eru oft óróleg, mikið vakandi og sísvöng.",
+                                "Álitið er að heilafrumur haldi áfram að vaxa í 8 - 15 mán. eftir fæðingu.",
                                 "Aukin hætta er á seinþroska hjá léttburum vegna færri og minni heilafruma."
                             ]
                         }
@@ -2730,12 +2730,12 @@
                         "content": {
                             "header": "Helstu vandamál:",
                             "items": [
-                                "▪ Asphyxia.",
-                                "▪ Hypoglycemia á 1. - 2. sólarhring.",
-                                "▪ Polycytemia vegna þurrks.",
-                                "▪ Aukin hætta á votum lungum og meconium aspiration ef asphyxia (þá taka þau fyrsta andardráttinn of snemma).",
-                                "▪ Etv. persistent ductus arterious ef hypoxia til staðar.",
-                                "▪ Sýkingarhætta."
+                                "Asphyxia.",
+                                "Hypoglycemia á 1. - 2. sólarhring.",
+                                "Polycytemia vegna þurrks.",
+                                "Aukin hætta á votum lungum og meconium aspiration ef asphyxia (þá taka þau fyrsta andardráttinn of snemma).",
+                                "Etv. persistent ductus arterious ef hypoxia til staðar.",
+                                "Sýkingarhætta."
                             ]
                         }
                     }
@@ -2851,8 +2851,8 @@
                     "items": [
                         "Sýna stillingu og róa móðurina.",
                         "Gæta þess að vel fari um móðurina, henni sé hlýtt og hún liggi á hreinni undirbreiðslu (gott að hafa plastdúk undir).",
-                        "3. Sjóða í 10 mín. eða spritta skæri og þrjú bönd til að binda naflastreng. Hægt er að sótthreinsa lín og naflabönd með því að strauja með heitu járni.",
-                        "4. Hreinsa vel hendur með sápuvatni eða sótthreinsandi vökva."
+                        "Sjóða í 10 mín. eða spritta skæri og þrjú bönd til að binda naflastreng. Hægt er að sótthreinsa lín og naflabönd með því að strauja með heitu járni.",
+                        "Hreinsa vel hendur með sápuvatni eða sótthreinsandi vökva."
                     ]
                 }
             },
@@ -2861,13 +2861,13 @@
                 "content": {
                     "header": "Fæðing",
                     "items": [
-                        "1. Konan sé í þeirri stellingu sem hún vill sjálf.",
-                        "2. Þurrka strax andlit og búk barnsins og hreinsa úr vitum þess.",
-                        "3. Barnið er lagt á magann upp á kvið móðurinnar og þess gætt að því sé hlýtt.",
-                        "4. Ef barnið andar ekki þarf að örva það með nuddi, jafnvel soga úr vitum þess munn við munn og beita blástursaðferð.",
-                        "5. Þegar skilið er á milli eru tvö bönd bundin nær barninu og eitt fylgjumegin og klippt á milli.",
-                        "6. Gott er að leggja barnið strax á brjóst til að örva samdrátt legs. Mun þá fylgjan fæðast fyrr og minna blæða frá legi.",
-                        "7. Forðast skal að toga í naflastrenginn, gott er að nudda legið varlega."
+                        "Konan sé í þeirri stellingu sem hún vill sjálf.",
+                        "Þurrka strax andlit og búk barnsins og hreinsa úr vitum þess.",
+                        "Barnið er lagt á magann upp á kvið móðurinnar og þess gætt að því sé hlýtt.",
+                        "Ef barnið andar ekki þarf að örva það með nuddi, jafnvel soga úr vitum þess munn við munn og beita blástursaðferð.",
+                        "Þegar skilið er á milli eru tvö bönd bundin nær barninu og eitt fylgjumegin og klippt á milli.",
+                        "Gott er að leggja barnið strax á brjóst til að örva samdrátt legs. Mun þá fylgjan fæðast fyrr og minna blæða frá legi.",
+                        "Forðast skal að toga í naflastrenginn, gott er að nudda legið varlega."
                     ]
                 }
             },
@@ -2876,9 +2876,9 @@
                 "content": {
                     "header": "Aðhlynning móður eftir fæðingu",
                     "items": [
-                        "1. Þvo vandlega burðarbarma með hreinu vatni, leggja hreint stykki við.",
-                        "2. Gefa henni heitt að drekka, sjá til þess að hún geti hvílst.",
-                        "3. Fylgjast með púls og öndun, ennfremur blæðingu frá legi og öðrum hugsanlegum áverkum eftir fæðingu."
+                        "Þvo vandlega burðarbarma með hreinu vatni, leggja hreint stykki við.",
+                        "Gefa henni heitt að drekka, sjá til þess að hún geti hvílst.",
+                        "Fylgjast með púls og öndun, ennfremur blæðingu frá legi og öðrum hugsanlegum áverkum eftir fæðingu."
                     ]
                 }
             }
@@ -2927,40 +2927,35 @@
         ]
     },
     "Síritun í fæðingu": {
-        "name": "Síritun í fæðingu",
-        "elements": [
-            {
-                "type": "text",
-                "content": [
-                    "Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.",
-                    "Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.",
-                    "Síritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats."
-                ]
-            },
-            {
-                "type": "text",
-                "content": "Sjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E"
-            }
-        ],
-        "subchapters": [
-            {
-                "name": "Flæðirit – eftirlit fósturhjartsláttar í fæðingu",
-                "elements": [
-                    {
-                        "type": "text",
-                        "content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/0e9f83f79b60151c00257e7500451d69/$FILE/Fl%C3%A6%C3%B0irit%20%2005.042018-Hlustun%20f%C3%B3sturhjartsl%C3%A1ttar.pdf"
-                    }
-                ]
-            }
-        ]
-    },
+	"name": "Síritun í fæðingu",
+	"elements": [{
+			"type": "text",
+			"content": [
+				"Notkun síritunar er mörgum takmörkunum háð og rannsóknir hafa sýnt töluverðan mun á milli úrlestra hjá mismunandi fagaðilium og hjá sama fagaðila á mismunandi tíma. Þegar útkoma fæðingar er þekkt hefur það áhrif á úrlestur rita eftirá. Þeir þættir sem mest ósamkomulag er um er greining og mat á dýfum, mat á breytileika og flokkun rits sem grunsamlegt eða óeðlilegt. Síritun hefur hátt falskt jákvætt forspárgildi, þ.e. barn fæðist án merkja um súrefnisskort þrátt fyrir óeðlilegt rit.",
+				"Eftir að byrjað var að notast við síritun fósturhjartsláttar í fæðingu hefur tíðni heilalömunar (CP) haldist óbreytt og tíðni áhaldafæðinga og keisaraskurða aukist stöðugt. Jafnmikilvægt er að greina eðlilegar breytingar á fósturhjartslætti í fæðingu eins og óeðlilegar, til að koma í veg fyrir óþarfa inngrip.",
+				"Síritun ætti aldrei að koma í stað vandaðs klínísks eftirlits og mats."
+			]
+		},
+		{
+			"type": "text",
+			"content": "Sjá gæðaskjal LSH https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf//0/88FA365A2E0B1C59002581AF004C2E1E"
+		}
+	],
+	"subchapters": [{
+		"name": "Flæðirit – eftirlit fósturhjartsláttar í fæðingu",
+		"elements": [{
+			"type": "text",
+			"content": "https://kaldur.landspitali.is/focal/gaedahandbaekur/gnhskurda.nsf/0/0e9f83f79b60151c00257e7500451d69/$FILE/Fl%C3%A6%C3%B0irit%20%2005.042018-Hlustun%20f%C3%B3sturhjartsl%C3%A1ttar.pdf"
+		}]
+	}]
+},
     "Sitjandi staða": {
         "name": "Sitjandi staða",
         "subchapters": [
             {
                 "name": "Tegundir sitjanda",
                 "elements": [
-                    [
+                    
                         {
                             "type": "text",
                             "content": [
@@ -2991,7 +2986,7 @@
                             "content": "Bæklingur Ljósmæðrafélagsins um sitjanda http://www.ljosmodir.is/asset/336/sitjandi_stada.pdf"
                         }
                     ]
-                ]
+                
             },
             {
                 "name": "Vending",
@@ -3552,13 +3547,50 @@
             }
         ]
     },
+    
+
     "Prufukafli með link": {
-        "name": "Prufukafli með link",
+        "name": "Prufukafli",
         "elements": [
             {
+                "type": "list",
+                "content": {
+                    "header": "header á lista",
+                    "items": [
+                        "listi hér er textblock",
+                        [
+                            "listi hér er texti", "listi hér er texti í nyrri línu"
+                        ]
+                    ]
+                }
+            },
+            {
                 "type": "text",
-                "content": "Sjá texta hér um Axlaklemmur //fylgja.app/Andleg_líðan_á_meðgöngu/16_vikna_skoðun/!"
+                "content": "venjulegur texti"
+            },
+            {
+                "type": "italics",
+                "content": "skáletur fyrir heimildir"
+            },
+            {
+                "type": "text",
+                "content": ["einhver texti", "texti birtist í næstu línu"]
+            },
+            {
+                "type": "numberList",
+                "content": {
+                    "header": "header á númeruðum lista",
+                    "items": [
+                        "númeraður listi fyrsti hlutur",
+                        [ "annar hlutur í númeruðum lista", "önnur lína í númeruðum lista"]
+                    ]
+                }
+            },
+            {
+                "type": "image",
+                "content": "https://ljosmaedrafelag.is/asset/2722/handbok_14-2.png"
             }
+
         ]
     }
 }
