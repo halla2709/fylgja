@@ -1310,8 +1310,13 @@
             {
                 "name": "Orsakir meðgöngueitrunar",
                 "elements": [
-                    "Taldar tengjast lélegri fylgjumyndun (implantation) sem orsakar blóðþurrð í fylgju. Þá losna ýmis efni í blóðrás móður (cytokine, fríir radikalar, brot af trofoblöstum) sem valda almennri bólgusvörun hjá móðurinni (neutrophil activation). Afleiðingar eru skemmdir á æðaþeli móður. Svörun móður við þessum skemmdum gefur síðan sjúkdómsmyndina sem er mjög mismunandi eftir því hvaða líffærakerfi verður fyrir mestu álagi.",
-                    "Meðgöngueitrun getur komið fram sem mildur sjúkdómur undir lok meðgöngu án áhrifa á horfur móður og barns en getur líka birst sem hættulegur sjúkdómur þar sem líf móður og barns er í hættu."
+                    {
+                        "type": "text",
+                        "content": [
+                            "Taldar tengjast lélegri fylgjumyndun (implantation) sem orsakar blóðþurrð í fylgju. Þá losna ýmis efni í blóðrás móður (cytokine, fríir radikalar, brot af trofoblöstum) sem valda almennri bólgusvörun hjá móðurinni (neutrophil activation). Afleiðingar eru skemmdir á æðaþeli móður. Svörun móður við þessum skemmdum gefur síðan sjúkdómsmyndina sem er mjög mismunandi eftir því hvaða líffærakerfi verður fyrir mestu álagi.",
+                            "Meðgöngueitrun getur komið fram sem mildur sjúkdómur undir lok meðgöngu án áhrifa á horfur móður og barns en getur líka birst sem hættulegur sjúkdómur þar sem líf móður og barns er í hættu."        
+                        ]
+                    }
                 ]
             },
             {
