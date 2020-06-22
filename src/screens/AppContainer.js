@@ -23,6 +23,7 @@ export default class AppContainer extends React.Component {
       'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
       'opensans-italic': require('../assets/fonts/Open_Sans/OpenSans-Italic.ttf'),
       'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
+      'opensans-semibold': require('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
       'MaterialIcons': require('../assets/fonts/MaterialIcons.ttf'),
       'Material Icons': require('../assets/fonts/MaterialIcons.ttf'),
     });
