@@ -267,7 +267,7 @@ async function ElementToView(element, key) {
     if (element.type == "list") {
         var items = [];
         if (element.content.header)
-            items.push(<Text key={key + "header"} style={Styles.pBold}>{element.content.header}</Text>);
+            items.push(<Text key={key + "header"} style={Styles.pSubchapterBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
             GetListText(item, key+index, items, "▪ ");
@@ -292,7 +292,7 @@ async function ElementToView(element, key) {
     else if (element.type == "numberList") {
         var items = [];
         if (element.content.header)
-            items.push(<Text key={key + "header"} style={Styles.pBold}>{element.content.header}</Text>);
+            items.push(<Text key={key + "header"} style={Styles.pSubchapterBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
             GetListText(item, key+index, items, (index + 1) + ". ");
@@ -330,7 +330,7 @@ async function ChapterElementsToViews(chapter, parent) {
                     parent.onViewLayout(subchapter.key, y);
                 }}>
                     <View style={Styles.subchaptercontainer}>
-                        <Text style={Styles.h2}>{subchapter.name}</Text>
+                        <Text style={Styles.h2subchapter}>{subchapter.name}</Text>
                     </View>
 
                     <View style={Styles.pcontainer}>

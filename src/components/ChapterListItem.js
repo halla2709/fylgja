@@ -31,7 +31,7 @@ class ChapterListItem extends React.Component {
             this.subChapterView = null;
         }
         var fancy = this.isCurrentChapter() ? '> ' : "" ;
-        var fontSize = (this.props.level == 0 ? 20 : 18)/PixelRatio.getFontScale();
+        var fontSize = (this.props.level == 0 ? 22 : 20)/PixelRatio.getFontScale();
         var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';
         var indent = "";
         var mypadding = 2;
@@ -53,7 +53,7 @@ class ChapterListItem extends React.Component {
         });
 
         var text = "";
-        if (this.props.chapter.name !== "#EkkiBirta#" && this.props.chapter.name.length > 0) {
+        if (this.props.chapter.name.length > 0) {
             text = fancy + indent + this.props.chapter.name;
             return (
                 <View>

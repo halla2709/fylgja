@@ -95,6 +95,13 @@ export default StyleSheet.create({
     
   },
 
+  h2subchapter: {
+    fontFamily: 'merriweather-bold',
+    fontSize: 20/PixelRatio.getFontScale(),
+    paddingTop: 3,
+    
+  },
+
   searchh2: {
     fontFamily: 'merriweather-light',
     fontSize: 18/PixelRatio.getFontScale(),
@@ -164,6 +171,11 @@ export default StyleSheet.create({
 
   pBold: {
     fontFamily: 'opensans-bold',
+    fontSize: 18/PixelRatio.getFontScale(),
+  },
+  
+  pSubchapterBold: {
+    fontFamily: 'opensans-semibold',
     fontSize: 18/PixelRatio.getFontScale(),
   },
 
