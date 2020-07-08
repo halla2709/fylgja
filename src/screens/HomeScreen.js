@@ -20,10 +20,10 @@ export class HomeScreen extends React.Component {
     };
   }
 
-  componentWillReceiveProps(newProps) {
-    if (this.state.fontLoaded !== newProps.screenProps.fontLoaded) {
-      this.setState({ fontLoaded: newProps.screenProps.fontLoaded });
-    }
+  componentDidUpdate(prevProps) {
+    if (prevProps.screenProps.fontLoaded !== this.props.screenProps.fontLoaded) {
+     this.setState({ fontLoaded: this.props.screenProps.fontLoaded });
+   }
   }
   
   componentDidMount() {

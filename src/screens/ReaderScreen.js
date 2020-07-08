@@ -6,10 +6,6 @@ import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
-import Image from 'react-native-scalable-image';
-
-//Gamla: <Image source={{uri: subchapter.image}} style={{ width: Dimensions.get('window').width*0.8, height: Dimensions.get('window').width*0.5, resizeMode: "contain" }} />
-  
 
 export class ReaderScreen extends React.Component {
   onViewLayout(key, y) {

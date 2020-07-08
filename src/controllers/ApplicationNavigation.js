@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { PixelRatio } from 'react-native';
-import { createStackNavigator, createDrawerNavigator, createSwitchNavigator } from 'react-navigation';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
@@ -120,4 +122,4 @@ const RootStack = createSwitchNavigator({
     initialRouteName: 'LogIn'
 })
 
-export default RootStack;
+export default createAppContainer(RootStack);
