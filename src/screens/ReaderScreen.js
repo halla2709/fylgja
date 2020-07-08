@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground } from 'react-native';
+import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground, Image } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers/Chapters.js";
