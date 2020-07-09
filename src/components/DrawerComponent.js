@@ -9,10 +9,17 @@ import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 export default class DrawerComponent extends React.Component {
   onChapterPressed(chapterKey) {
     this.props.navigation.closeDrawer();
-    this.props.navigation.dispatch(
-      StackActions.reset({ index:0, actions:[
-        NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
-    ]}));
+    StackActions.reset({ index:0, actions:[
+      NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
+  ]});
+    //NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}});
+    /* this.props.navigation.dispatch(
+      NavigationActions.navigate({ routeName: 'Main', params: {}, action: 
+        StackActions.reset({ index:0, actions:[
+          NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
+      ]})
+      })
+      ); */
   }
 
   navigate(navigation, options) {
@@ -68,9 +75,7 @@ export default class DrawerComponent extends React.Component {
         </TouchableOpacity>
       
 
-      <ScrollView style={styles.drawerChapters}>   
-        {this.drawerContent}
-      </ScrollView>
+      {this.drawerContent}
         
       <View style={styles.drawerButtons} > 
         <TouchableOpacity  onPress={() => this.navigate('NewsFeedStack', { drawerContent: "news" })}>

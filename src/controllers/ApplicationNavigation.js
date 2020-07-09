@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { PixelRatio } from 'react-native';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -57,7 +57,7 @@ const InformationStack = createStackNavigator({
 const MainStack = createStackNavigator({
     Home: {
         screen: HomeScreen
-    },    ReaderStack: {
+    }, ReaderStack: {
         screen: ReaderStack
     },
     InformationStack: {
@@ -77,49 +77,50 @@ const DrawerStack = createDrawerNavigator({
         screen: MainStack
     }
 },
-    {
-        contentComponent: DrawerComponent
-    });
-
-   
-
+{
+    contentComponent: DrawerComponent,
+    headerMode: 'none'
+});
 
 const AppStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
-    {
-
-          
-        headerMode: 'screen',
-        swipeEnabled: false,
-        animationEnabled: false,
-        navigationOptions: ({ navigation }) => ({
-            headerLeft:
+{
+    headerMode: 'screen',
+    swipeEnabled: false,
+    animationEnabled: false,
+    defaultNavigationOptions: ({ navigation }) => ({
+        headerTitle:'',
+        headerLeft: () =>
             <Ionicons onPress={() => navigation.toggleDrawer()}
                 name="md-menu" size={35} color="white" />,
-            headerRight:
-            <Ionicons onPress={() => navigation.goBack(null)} 
-                name="ios-undo" size={35} color="white" />, 
-            headerStyle: {
-                backgroundColor: 'rgb(34,82,171)',
-                paddingLeft: 10,
-                paddingRight: 10,
-            },
-            headerTintColor: 'white',
-            headerTitleStyle: {
-                fontSize: 25/PixelRatio.getFontScale(),
-                alignSelf: 'center',
-            },
+        headerRight: () =>
+            <Ionicons onPress={() => navigation.goBack(null)}
+                name="ios-undo" size={35} color="white" />,
+        headerLeftContainerStyle: {
+            padding: 10
+        },
+        headerRightContainerStyle: {
+            padding: 10
+        },
+        headerStyle: {
+            backgroundColor: 'rgb(34,82,171)',
+        },
+        headerTintColor: 'white',
+        headerTitleStyle: {
+            fontSize: 25 / PixelRatio.getFontScale(),
+            alignSelf: 'center',
+        },
 
-        })
-    });
+    })
+});
 
 const RootStack = createSwitchNavigator({
     App: AppStack,
     LogIn: LogInScreen
 },
-{
-    initialRouteName: 'LogIn'
-})
+    {
+        initialRouteName: 'LogIn'
+    })
 
 export default createAppContainer(RootStack);

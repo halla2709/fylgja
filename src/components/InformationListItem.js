@@ -7,11 +7,12 @@ import Styles from './../styles/Styles';
 import * as WebBrowser from 'expo-web-browser';
 
 export default class InformationListItem extends React.Component {
-    componentWillMount() {
-        this.setState({
+    constructor() {
+        super();
+        this.state = {
             status: false,
             icon: true
-        });
+        };
     }
 
     ShowHideTextComponentView = () => {
