@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { PixelRatio } from 'react-native';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createStackNavigator,CardStyleInterpolators,TransitionPresets } from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
@@ -12,7 +12,6 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import { LogInScreen } from '../screens/LogInScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
-
 
 const ReaderStack = createStackNavigator({
     Search: {
@@ -25,9 +24,13 @@ const ReaderStack = createStackNavigator({
     {
         initialRouteName: 'Search',
         title: 'Handbók',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
+
 const NewsFeedStack = createStackNavigator({
     Overview: {
         screen: NewsOverviewScreen
@@ -39,7 +42,10 @@ const NewsFeedStack = createStackNavigator({
     {
         initialRouteName: 'Overview',
         title: 'Fréttir',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
 
@@ -50,7 +56,10 @@ const InformationStack = createStackNavigator({
 },
     {
         title: 'Upplýsingar',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
 
@@ -68,7 +77,10 @@ const MainStack = createStackNavigator({
     }
 },
     {
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.ScaleFromCenterAndroid
+        }
     }
 )
 
@@ -79,7 +91,7 @@ const DrawerStack = createDrawerNavigator({
 },
 {
     contentComponent: DrawerComponent,
-    headerMode: 'none'
+    headerMode: 'none',
 });
 
 const AppStack = createStackNavigator({

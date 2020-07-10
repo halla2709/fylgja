@@ -9,17 +9,9 @@ import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 export default class DrawerComponent extends React.Component {
   onChapterPressed(chapterKey) {
     this.props.navigation.closeDrawer();
-    StackActions.reset({ index:0, actions:[
-      NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
-  ]});
-    //NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}});
-    /* this.props.navigation.dispatch(
-      NavigationActions.navigate({ routeName: 'Main', params: {}, action: 
-        StackActions.reset({ index:0, actions:[
-          NavigationActions.navigate({ routeName: 'Reader', params: {drawerContent: "chapters", currentChapter: chapterKey}}),
-      ]})
-      })
-      ); */
+    this.props.navigation.dispatch(
+      StackActions.replace({ routeName: "Reader", params: {drawerContent: "chapters", currentChapter: chapterKey}})
+    );
   }
 
   navigate(navigation, options) {

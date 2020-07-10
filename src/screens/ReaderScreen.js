@@ -1,11 +1,12 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground, Image } from 'react-native';
+import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers/Chapters.js";
 import { SwitchChapter } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
+import Image from 'react-native-scalable-image';
 
 export class ReaderScreen extends React.Component {
   onViewLayout(key, y) {
@@ -98,7 +99,7 @@ export class ReaderScreen extends React.Component {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
             }
           }}>
-           <View style={{ paddingBottom: 400 }}>
+           <View style={{ paddingBottom: 220 }}>
               <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => this.openUrl(url)}
                 linkText={url => this.getUrlText(url)}>
                 {this.state.textBlocks}

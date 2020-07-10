@@ -78,13 +78,21 @@ export class NewsOverviewScreen extends React.Component {
         return st;
     }
 
-    render() {
-        Dimensions.addEventListener("change", (dimension) => {
-            this.setState(() => {
-                return { isLargeWindow: dimension.window.height > 700 };
-            })
+    dimensionChanged(dimension) {
+        this.setState(() => {
+            return { isLargeWindow: dimension.window.height > 700 };
         });
+    }
 
+    componentDidMount() {
+      Dimensions.addEventListener("change", this.dimensionChanged);
+    }
+    componentWillUnmount() {
+      Dimensions.removeEventListener("change", this.dimensionChanged);
+    }
+   
+
+    render() {
         var frettirContainer =
             <View style={{ flex: 1 }}>
                 <Card>
