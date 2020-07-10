@@ -41,6 +41,7 @@ export class NewsOverviewScreen extends React.Component {
       }
 
     async componentDidMount() {
+        Dimensions.addEventListener("change", this.dimensionChanged);
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
@@ -57,6 +58,7 @@ export class NewsOverviewScreen extends React.Component {
                 data.radstefna.date = new Date(data.radstefna.published);
                 data.malstofa = items[3][0];
                 data.malstofa.date = new Date(data.malstofa.published);
+                console.log("Got news");
                 this.TagNewest(data);
                 this.setState({ news: data, newsLoaded: true });
             }).catch((e) => { console.error(e); });
@@ -84,9 +86,6 @@ export class NewsOverviewScreen extends React.Component {
         });
     }
 
-    componentDidMount() {
-      Dimensions.addEventListener("change", this.dimensionChanged);
-    }
     componentWillUnmount() {
       Dimensions.removeEventListener("change", this.dimensionChanged);
     }
