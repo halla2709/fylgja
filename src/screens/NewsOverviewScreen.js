@@ -43,7 +43,7 @@ export class NewsOverviewScreen extends React.Component {
     async componentDidMount() {
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
-            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
+            GetNews('https://www.rss.ashx?catId=136&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=132&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=148&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=149&cnt=1')
@@ -86,19 +86,18 @@ export class NewsOverviewScreen extends React.Component {
         });
 
         var frettirContainer =
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
                     <CardTitle style={{flexShrink: 0}} title="Fréttir"/>
                     <CardContent text={this.GetNewestString("frett")} />
                     <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
                         <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
                     </CardAction>
-
                 </Card>
             </View>
 
         var vidburdirContainer =
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
                     <CardTitle style={{flexShrink: 0}} title="Viðburðir" />
                     <CardContent text={this.GetNewestString("vidburdur")} />
@@ -109,7 +108,7 @@ export class NewsOverviewScreen extends React.Component {
             </View>
 
         var malstofurContainer =
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
                     <CardTitle style={{flexShrink: 0}} title="Málstofur og Fræðslufundir" />
                     <CardContent text={this.GetNewestString("malstofa")} />
@@ -120,7 +119,7 @@ export class NewsOverviewScreen extends React.Component {
             </View>
 
         var radstefnurContainer =
-            <View style={{ flex: 1 }}>
+            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
                     <CardTitle style={{flexShrink: 0}} title="Ráðstefnur" />
                     <CardContent text={this.GetNewestString("radstefna")} />
