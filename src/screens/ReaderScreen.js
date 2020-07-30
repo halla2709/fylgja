@@ -8,9 +8,6 @@ import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
 import Image from 'react-native-scalable-image';
 
-//Gamla: <Image source={{uri: subchapter.image}} style={{ width: Dimensions.get('window').width*0.8, height: Dimensions.get('window').width*0.5, resizeMode: "contain" }} />
-  
-
 export class ReaderScreen extends React.Component {
   onViewLayout(key, y) {
     if (key === this.props.navigation.state.params.currentChapter) {
@@ -102,7 +99,7 @@ export class ReaderScreen extends React.Component {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
             }
           }}>
-           <View style={{ paddingBottom: 400 }}>
+           <View style={{ paddingBottom: 220 }}>
               <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => this.openUrl(url)}
                 linkText={url => this.getUrlText(url)}>
                 {this.state.textBlocks}

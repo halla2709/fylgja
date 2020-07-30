@@ -17,8 +17,6 @@ export class InformationScreen extends React.Component {
     constructor() {
         super();
         this.state = {
-            status: false,
-            icon: true,
             data: [],
             searchingText: false,
             textMoreThanThree: false,

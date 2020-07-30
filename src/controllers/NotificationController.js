@@ -1,12 +1,23 @@
-import { Notifications } from 'expo';
 import * as Permissions from 'expo-permissions'
+import * as Notifications from 'expo-notifications';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
 import firebaseConfig from '../assets/firebaseConfig';
+import { Platform } from 'react-native';
+import { useEffect } from 'react';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
+
 var token;
 
 export default async function registerForPushNotificationsAsync() {
@@ -48,5 +59,15 @@ export default async function registerForPushNotificationsAsync() {
   });
 
   console.log(token);
+
+  if (Platform.OS === 'android') {
+    Notifications.setNotificationChannelAsync('default', {
+      name: 'default',
+      importance: Notifications.AndroidImportance.MAX,
+      vibrationPattern: [0, 250, 250, 250],
+      lightColor: '#FF231F7C',
+    });
+  }
+  
   return;
 }

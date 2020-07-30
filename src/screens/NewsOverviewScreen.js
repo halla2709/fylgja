@@ -34,13 +34,14 @@ export class NewsOverviewScreen extends React.Component {
         };
     }
 
-    componentWillReceiveProps(newProps) {
-        if (this.state.fontLoaded !== newProps.screenProps.fontLoaded) {
-            this.setState({ fontLoaded: newProps.screenProps.fontLoaded });
-        }
-    }
+    componentDidUpdate(prevProps) {
+        if (prevProps.screenProps.fontLoaded !== this.props.screenProps.fontLoaded) {
+         this.setState({ fontLoaded: this.props.screenProps.fontLoaded });
+       }
+      }
 
     async componentDidMount() {
+        Dimensions.addEventListener("change", this.dimensionChanged);
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
             GetNews('https://www.rss.ashx?catId=136&cnt=1'),
@@ -57,6 +58,7 @@ export class NewsOverviewScreen extends React.Component {
                 data.radstefna.date = new Date(data.radstefna.published);
                 data.malstofa = items[3][0];
                 data.malstofa.date = new Date(data.malstofa.published);
+                console.log("Got news");
                 this.TagNewest(data);
                 this.setState({ news: data, newsLoaded: true });
             }).catch((e) => { console.error(e); });
@@ -78,13 +80,18 @@ export class NewsOverviewScreen extends React.Component {
         return st;
     }
 
-    render() {
-        Dimensions.addEventListener("change", (dimension) => {
-            this.setState(() => {
-                return { isLargeWindow: dimension.window.height > 700 };
-            })
+    dimensionChanged(dimension) {
+        this.setState(() => {
+            return { isLargeWindow: dimension.window.height > 700 };
         });
+    }
 
+    componentWillUnmount() {
+      Dimensions.removeEventListener("change", this.dimensionChanged);
+    }
+   
+
+    render() {
         var frettirContainer =
             <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>

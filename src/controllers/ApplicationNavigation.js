@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { PixelRatio } from 'react-native';
-import { createStackNavigator, createDrawerNavigator, createSwitchNavigator } from 'react-navigation';
+import { createSwitchNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator,CardStyleInterpolators,TransitionPresets } from 'react-navigation-stack';
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
@@ -10,7 +12,6 @@ import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
 import { ReaderScreen } from '../screens/ReaderScreen.js';
 import { LogInScreen } from '../screens/LogInScreen.js';
 import DrawerComponent from '../components/DrawerComponent.js';
-
 
 const ReaderStack = createStackNavigator({
     Search: {
@@ -23,9 +24,13 @@ const ReaderStack = createStackNavigator({
     {
         initialRouteName: 'Search',
         title: 'Handbók',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
+
 const NewsFeedStack = createStackNavigator({
     Overview: {
         screen: NewsOverviewScreen
@@ -37,7 +42,10 @@ const NewsFeedStack = createStackNavigator({
     {
         initialRouteName: 'Overview',
         title: 'Fréttir',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
 
@@ -48,14 +56,17 @@ const InformationStack = createStackNavigator({
 },
     {
         title: 'Upplýsingar',
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.FadeFromBottomAndroid
+        }
     }
 )
 
 const MainStack = createStackNavigator({
     Home: {
         screen: HomeScreen
-    },    ReaderStack: {
+    }, ReaderStack: {
         screen: ReaderStack
     },
     InformationStack: {
@@ -66,7 +77,10 @@ const MainStack = createStackNavigator({
     }
 },
     {
-        headerMode: 'none'
+        headerMode: 'none',
+        defaultNavigationOptions: {
+            ...TransitionPresets.ScaleFromCenterAndroid
+        }
     }
 )
 
@@ -75,49 +89,50 @@ const DrawerStack = createDrawerNavigator({
         screen: MainStack
     }
 },
-    {
-        contentComponent: DrawerComponent
-    });
-
-   
-
+{
+    contentComponent: DrawerComponent,
+    headerMode: 'none',
+});
 
 const AppStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
-    {
-
-          
-        headerMode: 'screen',
-        swipeEnabled: false,
-        animationEnabled: false,
-        navigationOptions: ({ navigation }) => ({
-            headerLeft:
+{
+    headerMode: 'screen',
+    swipeEnabled: false,
+    animationEnabled: false,
+    defaultNavigationOptions: ({ navigation }) => ({
+        headerTitle:'',
+        headerLeft: () =>
             <Ionicons onPress={() => navigation.toggleDrawer()}
                 name="md-menu" size={35} color="white" />,
-            headerRight:
-            <Ionicons onPress={() => navigation.goBack(null)} 
-                name="ios-undo" size={35} color="white" />, 
-            headerStyle: {
-                backgroundColor: 'rgb(34,82,171)',
-                paddingLeft: 10,
-                paddingRight: 10,
-            },
-            headerTintColor: 'white',
-            headerTitleStyle: {
-                fontSize: 25/PixelRatio.getFontScale(),
-                alignSelf: 'center',
-            },
+        headerRight: () =>
+            <Ionicons onPress={() => navigation.goBack(null)}
+                name="ios-undo" size={35} color="white" />,
+        headerLeftContainerStyle: {
+            padding: 10
+        },
+        headerRightContainerStyle: {
+            padding: 10
+        },
+        headerStyle: {
+            backgroundColor: 'rgb(34,82,171)',
+        },
+        headerTintColor: 'white',
+        headerTitleStyle: {
+            fontSize: 25 / PixelRatio.getFontScale(),
+            alignSelf: 'center',
+        },
 
-        })
-    });
+    })
+});
 
 const RootStack = createSwitchNavigator({
     App: AppStack,
     LogIn: LogInScreen
 },
-{
-    initialRouteName: 'LogIn'
-})
+    {
+        initialRouteName: 'LogIn'
+    })
 
-export default RootStack;
+export default createAppContainer(RootStack);
