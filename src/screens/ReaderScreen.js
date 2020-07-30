@@ -73,10 +73,7 @@ export class ReaderScreen extends React.Component {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
-          <View style={{ borderColor: "rgb(34,82,171)", borderRadius: 10, borderBottomWidth: 0.5, width: '99%', alignSelf: 'center', }}>
-            <View style={Styles.decorationcontainer}>
-              <Image height={25} resizeMode="contain" source={require('../assets/images/11.png')} />
-            </View>
+          <View style={{ borderColor: "rgb(34,82,171)", padding: 10, borderRadius: 10, borderBottomWidth: 0.5, width: '95%', alignSelf: 'center', }}>
             <View style={Styles.chaptercontainer}>
               <TouchableHighlight style={Styles.leftarrow} onPress={() => { this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1) }); }} underlayColor="rgb(245,245,245)">
                 <Ionicons name="ios-arrow-back" size={42} color="rgb(34,82,171)" />
@@ -88,13 +85,9 @@ export class ReaderScreen extends React.Component {
                 <Ionicons name="ios-arrow-forward" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
             </View>
-            <View style={Styles.decorationcontainer}>
-              <Image height={25} resizeMode="contain" source={require('../assets/images/10.png')} />
-            </View>
           </View>
           <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
-              
-          <ScrollView style={{ height: '100%', opacity: 0.7, width: '99%', alignSelf: 'center', backgroundColor: 'rgb(248,248,249)', borderRadius: 10, }} ref={(scrollView) => {            
+          <ScrollView style={{ height: '100%', opacity: 0.8, paddingTop: 3, paddingRight: 10, paddingLeft: 10, backgroundColor: 'rgb(248,248,249)', marginBottom: 50}} ref={(scrollView) => {            
             if (scrollView != null) {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
             }

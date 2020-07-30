@@ -135,7 +135,7 @@ export class NewsFeedScreen extends React.Component {
             var index = cnt;
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
-                    <View>
+                    <View style = {{opacity: 0.8}}>
                         <Card>
                             <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
                                 <Text style={Styles.dateText}>{GetDate(element.displayDate)}</Text>
