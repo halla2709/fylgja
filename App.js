@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Notifications from 'expo-notifications';
+import { Notifications as Notifications2 } from 'expo'; // :(
 import * as Font from 'expo-font';
 import { View, Text, Platform, YellowBox } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
@@ -17,15 +18,30 @@ export default class App extends React.Component {
       notification: {}
     };
     YellowBox.ignoreWarnings(['Setting a timer']);
+    
+    //this.receivedSubscription = Notifications.addNotificationReceivedListener(this._handleNotification);
+    //this.responseSubscription = Notifications.addNotificationResponseReceivedListener(response => {});
+    Notifications2.addListener(this._handleNotification);
+    
+    /* Notifications.setNotificationHandler({
+      handleNotification: async () => ({
+        shouldShowAlert: true,
+        shouldPlaySound: false,
+        shouldSetBadge: false
+      })
+    }); */
   }
 
+ /*  componentWillUnmount() {
+    console.log("unmount");
+    this.receivedSubscription.remmove();
+    this.responseSubscription.remmove();
+  } */
+
   async componentDidMount() {
-    registerForPushNotificationsAsync();
     DownloadChapters();
-    Notifications.addNotificationReceivedListener(this._handleNotification);
-    Notifications.addNotificationResponseReceivedListener(response => {
-      console.log("on response", response);
-    });
+    registerForPushNotificationsAsync();
+    
     // Handle notifications that are received or selected while the app
     // is open. If the app was closed and then opened by tapping the
     // notification (rather than just tapping the app icon to open it),
@@ -37,6 +53,8 @@ export default class App extends React.Component {
   }
 
   _handleNotification = (notification) => {
+    // nota origin field í notification til að navigatea beint!
+    // skoða warning
     console.log("Handling notifications");
     this.popup.show({
       onPress: function () { NavigationService.navigate('NewsFeedStack', { drawerContent: "news" }); },

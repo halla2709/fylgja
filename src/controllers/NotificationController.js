@@ -9,15 +9,6 @@ import { useEffect } from 'react';
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
-
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowAlert: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-  }),
-});
-
 var token;
 
 export default async function registerForPushNotificationsAsync() {
@@ -49,7 +40,7 @@ export default async function registerForPushNotificationsAsync() {
   token = await Notifications.getExpoPushTokenAsync();
 
   firestore.collection("tokens").doc("tokens").update({
-    array: firebase.firestore.FieldValue.arrayUnion(token)
+    array: firebase.firestore.FieldValue.arrayUnion(token.data)
   })
   .then(function(){
     console.log("Written to db");
