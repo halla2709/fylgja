@@ -71,15 +71,15 @@ export default class DrawerComponent extends React.Component {
         
       <View style={styles.drawerButtons} > 
         <TouchableOpacity  onPress={() => this.navigate('NewsFeedStack', { drawerContent: "news" })}>
-          <Text style={styles.drawerItem}> Fréttaveita </Text>
+          <Text style={styles.drawerItem1}> Fréttaveita </Text>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => this.navigate('InformationStack', { drawerContent: "information" })}>
-         <Text style={styles.drawerItem}> Upplýsingar </Text>
+         <Text style={styles.drawerItem2}> Upplýsingar </Text>
         </TouchableOpacity>
         
         <TouchableOpacity onPress={() => this.navigate('ReaderStack')}>
-         <Text style={styles.drawerItem}> Handbók  </Text>
+         <Text style={styles.drawerItem3}> Handbók  </Text>
         </TouchableOpacity>
 
       </View>

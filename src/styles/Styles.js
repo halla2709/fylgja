@@ -247,7 +247,7 @@ export default StyleSheet.create({
   },
 
   button1:{
-    width: "90%",
+    width: "95%",
     height: "33%",
     justifyContent: 'center',
     padding: 10,
@@ -255,20 +255,20 @@ export default StyleSheet.create({
   },
 
   button2:{
-    width: "90%",
+    width: "95%",
     height: "33%",
     justifyContent: 'center',
     padding: 10,
-    borderTopColor: 'rgb(160,199,230)',
-    borderTopWidth: 1.5,
+    borderTopColor: '#C0C0C0',
+    borderTopWidth: 0.8,
   
   },
   button3:{
-    width: "90%",
+    width: "95%",
     height: "33%",
     padding: 10,
-    borderTopWidth: 1.5, 
-    borderTopColor: 'rgb(160,199,230)',
+    borderTopWidth: 0.8, 
+    borderTopColor: '#C0C0C0',
     justifyContent: 'center',
     alignItems: 'center',
 
@@ -276,11 +276,9 @@ export default StyleSheet.create({
 
   buttontitle1:{
     textAlign: 'center',
-    color: '#FF3A0D',
+    fontFamily: 'opensans-semibold',
+    color: 'rgb(201,52,36)',
     fontSize: 32/PixelRatio.getFontScale(),
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 2,
   },
 
   buttontext1:{
@@ -291,11 +289,9 @@ export default StyleSheet.create({
 
   buttontitle2:{
     textAlign: 'center',
-    color: '#1500FF',
+    fontFamily: 'opensans-semibold',
+    color: 'rgb(34,82,171)',
     fontSize: 32/PixelRatio.getFontScale(),
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 2,
   },
 
   buttontext2:{
@@ -305,11 +301,9 @@ export default StyleSheet.create({
   },
 
   buttontitle3:{
-    color: '#05bc00',
+    fontFamily: 'opensans-semibold',
+    color: 'rgb(62,135,60)',
     fontSize: 32/PixelRatio.getFontScale(),
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 2,
     textAlign: 'center',
   },
 
@@ -325,7 +319,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgb(247,247,247)'
+    backgroundColor: 'rgb(255,255,255)'
   },
 
   imagetext: {
@@ -442,7 +436,6 @@ export default StyleSheet.create({
       justifyContent: 'space-around',
       flexDirection: 'row',
       alignItems: 'center',
-      backgroundColor: 'rgb(248,248,249)',
     },
   
     decorationcontainer: {
@@ -571,7 +564,6 @@ export default StyleSheet.create({
     flexDirection: 'row', 
     justifyContent: 'flex-start',
     alignItems: 'center',
-    backgroundColor: 'rgb(242,242,243)',
     borderBottomWidth: 1.5,
     borderColor: '#d8d8d8',
     minHeight: 85,
@@ -618,7 +610,6 @@ export default StyleSheet.create({
 
   drawerButtons: {
     justifyContent: 'flex-end',
-    backgroundColor: 'rgb(239,239,240)'
   },
 
 backgroundImage: {
@@ -630,18 +621,44 @@ backgroundImage: {
     
   },
 
-  drawerItem: {
+  drawerItem1: {
+    fontFamily: 'opensans-semibold',
     fontSize: 18/PixelRatio.getFontScale(),
-    padding: 8,
+    padding: 6,
     margin: 4,
     textAlign: 'center',
-    color: 'white',
-    textShadowColor: 'rgba(0, 0, 0, 0.25)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 5,
+    backgroundColor: 'white',
+    borderColor: 'rgb(201,52,36)',
+    borderWidth: 1,
+    color: 'rgb(201,52,36)',
+    opacity: 0.85,
+    borderRadius: 10,
+  },
+
+  drawerItem2: {
+    fontFamily: 'opensans-semibold',
+    fontSize: 18/PixelRatio.getFontScale(),
+    padding: 6,
+    margin: 4,
+    textAlign: 'center',
+    backgroundColor: 'white',
     borderColor: 'rgb(34,82,171)',
-    borderTopWidth: 1,
-    backgroundColor: 'rgb(34,82,171)',
+    borderWidth: 1,
+    color: 'rgb(34,82,171)',
+    opacity: 0.85,
+    borderRadius: 10,
+  },
+
+  drawerItem3: {
+    fontFamily: 'opensans-semibold',
+    fontSize: 18/PixelRatio.getFontScale(),
+    padding: 6,
+    margin: 4,
+    textAlign: 'center',
+    backgroundColor: 'white',
+    borderColor: 'rgb(62,135,60)',
+    borderWidth: 1,
+    color: 'rgb(62,135,60)',
     opacity: 0.85,
     borderRadius: 10,
   },
