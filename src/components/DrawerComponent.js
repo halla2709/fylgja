@@ -30,29 +30,40 @@ export default class DrawerComponent extends React.Component {
         />
     }  
     else {
-      this.drawerContent = null;
+      this.drawerContent = [];
     } 
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextProps.screenProps.fontLoaded && this.props.screenProps.fontLoaded !== nextProps.screenProps.fontLoaded) 
+      return true;
+    var newRouteParams = GetCurrentRouteParams(nextProps.navigation.state);
+
+    if (newRouteParams === undefined) newRouteParams = {};
+    const keys1 = Object.keys(this.currentRouteParams);
+    const keys2 = Object.keys(newRouteParams);
+
+    if (keys1.length !== keys2.length)
+      return true;
+
+    for (let key of keys1) {
+      if (this.currentRouteParams[key] !== newRouteParams[key])
+        return true;
+    }
+    return false;
   }
 
   GetDrawerContent(routeParams) {
     if(routeParams == null) 
-      return;
-    if (this.drawerContent != null) {
-      if(routeParams.drawerContent === "chapters" && routeParams.currentChapter == this.currentRouteParams.currentChapter) {
-        return;
-      }
+      this.currentRouteParams = {};
+    else
       this.currentRouteParams = routeParams;
-      this.GenerateDrawerContent();
-    }
-    else {
-      this.currentRouteParams = routeParams;
-      this.GenerateDrawerContent();
-    }    
+
+    this.GenerateDrawerContent();
   }
 
   render() {
-    const { navigation } = this.props;
-    this.GetDrawerContent(GetCurrentRouteParams(navigation.state));
+    this.GetDrawerContent(GetCurrentRouteParams(this.props.navigation.state));
     return (
       this.props.screenProps.fontLoaded ? (
     <View style={styles.drawer}>
