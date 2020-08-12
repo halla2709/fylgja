@@ -3,10 +3,11 @@ import { Text, View, TouchableHighlight, ScrollView, Dimensions, ImageBackground
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 import { GetChapters, ChapterElementsToViews, KeyForName }  from "../controllers/Chapters.js";
-import { SwitchChapter } from '../controllers/NavigationHelper.js';
+import { GetNextChapterNumber } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
 import Image from 'react-native-scalable-image';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
 export class ReaderScreen extends React.Component {
   onViewLayout(key, y) {
@@ -69,23 +70,30 @@ export class ReaderScreen extends React.Component {
     this.state = { toScrollTo: 0, textBlocks: []};
   }
 
+  SwitchChapter(direction) {
+    this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: GetNextChapterNumber(this.chapter.key, direction), direction: direction });
+  }
+
   render() {
     return (
       this.props.screenProps.fontLoaded ? (
         <View contentContainerStyle={Styles.readerwholepage}>
           <View style={{ borderColor: "rgb(34,82,171)", padding: 10, borderRadius: 10, borderBottomWidth: 0.5, width: '95%', alignSelf: 'center', }}>
             <View style={Styles.chaptercontainer}>
-              <TouchableHighlight style={Styles.leftarrow} onPress={() => { this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, -1) }); }} underlayColor="rgb(245,245,245)">
+              <TouchableHighlight style={Styles.leftarrow} onPress={() => { this.SwitchChapter(-1) }} underlayColor="rgb(245,245,245)">
                 <Ionicons name="ios-arrow-back" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
               <View style={Styles.chaptertext}>
                 <Text style={Styles.h1reader}> {this.chapter.name} </Text>
               </View>
-              <TouchableHighlight style={Styles.rightarrow} onPress={() => { this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: SwitchChapter(this.chapter.key, 1) }); }} underlayColor="rgb(245,245,245)">
+              <TouchableHighlight style={Styles.rightarrow} onPress={() => { this.SwitchChapter(1); }} underlayColor="rgb(245,245,245)">
                 <Ionicons name="ios-arrow-forward" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
             </View>
           </View>
+          <GestureRecognizer
+            onSwipeLeft={(state) => { this.SwitchChapter(1); }}
+            onSwipeRight={(state) => { this.SwitchChapter(-1); }}>
           <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
           <ScrollView style={{ height: '100%', opacity: 0.8, paddingTop: 3, paddingRight: 10, paddingLeft: 10, backgroundColor: 'rgb(248,248,249)', marginBottom: 50}} ref={(scrollView) => {            
             if (scrollView != null) {
@@ -100,6 +108,7 @@ export class ReaderScreen extends React.Component {
             </View>
           </ScrollView>
           </ImageBackground>
+          </GestureRecognizer>
         </View>
       ) : null
     );  

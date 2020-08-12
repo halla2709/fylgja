@@ -9,7 +9,7 @@ function GetCurrentRouteParams(state) {
     }
 }
 
-function SwitchChapter(currentChapter, increment) {
+function GetNextChapterNumber(currentChapter, increment) {
     const numberOfChapters = GetChapters().length;
     const topChapter = parseInt(currentChapter.split(".")[0]);
     let nextNumber = topChapter + increment;
@@ -25,5 +25,5 @@ function SwitchChapter(currentChapter, increment) {
 
 export {
     GetCurrentRouteParams,
-    SwitchChapter
+    GetNextChapterNumber
 };

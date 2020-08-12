@@ -44,7 +44,7 @@ export class NewsOverviewScreen extends React.Component {
         Dimensions.addEventListener("change", this.dimensionChanged);
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
-            GetNews('https://www.rss.ashx?catId=136&cnt=1'),
+            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=132&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=148&cnt=1'),
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=149&cnt=1')

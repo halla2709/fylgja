@@ -4,7 +4,6 @@ import * as firebase from 'firebase';
 import 'firebase/firestore';
 import firebaseConfig from '../assets/firebaseConfig';
 import { Platform } from 'react-native';
-import { useEffect } from 'react';
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
