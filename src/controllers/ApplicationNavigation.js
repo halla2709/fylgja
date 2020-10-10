@@ -105,10 +105,10 @@ const AppStack = createStackNavigator({
         headerTitle:'',
         headerLeft: () =>
             <Ionicons onPress={() => navigation.toggleDrawer()}
-                name="md-menu" size={34 / PixelRatio.getFontScale()} color="white" />,
+                name="md-menu" size={34} color="white" />,
         headerRight: () =>
             <Ionicons onPress={() => navigation.goBack(null)}
-                name="ios-undo" size={34 / PixelRatio.getFontScale()} color="white" />,
+                name="ios-undo" size={34} color="white" />,
         headerLeftContainerStyle: {
             padding: 10
         },
@@ -117,6 +117,7 @@ const AppStack = createStackNavigator({
         },
         headerStyle: {
             backgroundColor: 'rgb(34,82,171)',
+            height: 76
         },
         headerTintColor: 'white',
         headerTitleStyle: {
