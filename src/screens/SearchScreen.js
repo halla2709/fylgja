@@ -3,7 +3,6 @@ import {
   Text,
   View,
   ScrollView,
-  KeyboardAvoidingView,
   ImageBackground,
   PixelRatio,
   ActivityIndicator
