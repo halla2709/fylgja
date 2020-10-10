@@ -366,6 +366,7 @@ export default StyleSheet.create({
     backgroundColor: 'rgb(239,239,239)',
     alignItems: 'center',
     flex: 8,
+    height: '100%'
   },
 
   searchTitle: {

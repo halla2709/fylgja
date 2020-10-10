@@ -60,9 +60,8 @@ export class SearchScreen extends React.Component {
     return (
       this.props.screenProps.fontLoaded ? (
         this.state.loaded ? (
-          <KeyboardAvoidingView style={Styles.searchwholepage} behavior="padding" enabled>
-            <View style={Styles.searchcontainer}>
-              <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
+          <View style={Styles.searchwholepage} behavior="padding" enabled>
+              <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ height:'100%', width: '100%' }}>
                 <SearchBar lightTheme round style={Styles.searchBar}
                   placeholder='Skrifaðu leitarorð hér...'
                   placeholderTextColor='rgb(189, 194, 201)'
@@ -78,7 +77,7 @@ export class SearchScreen extends React.Component {
                     this.setState({ currentChapterBlocks: this.getChapterViews(this.chapters) });
                   }}
                 />
-                <ScrollView style={{ width: '100%', paddingHorizontal: 8, paddingBottom: 10 }}>
+                <ScrollView style={{ height:'100%', width: '100%', paddingHorizontal: 8, paddingBottom: 10 }}>
                   <View style={Styles.searchresult}>
                     {
                       this.state.currentChapterBlocks.length > 0 ?
@@ -89,8 +88,7 @@ export class SearchScreen extends React.Component {
                   </View>
                 </ScrollView>
               </ImageBackground>
-            </View>
-          </KeyboardAvoidingView>
+          </View>
         ) :
           (
             <View>
