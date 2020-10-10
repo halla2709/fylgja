@@ -25,115 +25,8 @@ async function DownloadChapters() {
         var result = await Promise.all([
             getJson("https://ljosmaedrafelag.is/asset/2757/chapters.txt"),
             getJson("https://ljosmaedrafelag.is/asset/2758/chaptertitles.txt")]);
-    } catch (err)
-    {
+    } catch (err) {
         console.warn("Could not parse json. Using test content", err);
-    result = [
-        {
-            "Prufukafli": {
-                "name": "Prufukafli",
-                "elements": [
-                    {
-                        "type": "list",
-                        "content": {
-                            "header": "header",
-                            "items": [
-                                "textblock",
-                                [
-                                    "other text", "text in new line"
-                                ]
-                            ]
-                        }
-                    },
-                    {
-                        "type": "text",
-                        "content": "some text"
-                    },
-                    {
-                        "type": "italics",
-                        "content": "some text"
-                    },
-                    {
-                        "type": "text",
-                        "content": ["some text", "text in a new line"]
-                    },
-                    {
-                        "type": "numberList",
-                        "content": {
-                            "header": "header",
-                            "items": [
-                                "first item",
-                                ["second item", "with two lines"]
-                            ]
-                        }
-                    },
-                    {
-                        "type": "image",
-                        "content": "https://ljosmaedrafelag.is/asset/2744/handbok_16-1.png"
-                    }
-                ]
-            },
-            "Prufukafli 2": {
-                "name": "Prufukafli 2",
-                "elements": [
-                    {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarinngangur:",
-                            "items": [
-                                "Conjugata vera 11-12 cm",
-                                "Diameter transversum 13-14 sm",
-                                "≥23 sm"
-                            ]
-                        }
-                    },
-                    {
-                        "type": "list",
-                        "content": {
-                            "header": "Grindarútgangur:",
-                            "items": [
-                                "Diameter interspinalis 10-11 cm",
-                                "Diameter intertuberalis 10-11",
-                                "Diameter recta 11-12 sm",
-                                "≥31.5 cm"
-                            ]
-                        }
-                    }
-                ],
-                "subchapters": [
-                    {
-                        "name": "undir",
-                        "elements": [
-                            {
-                                "type": "list",
-                                "content": {
-                                    "header": "Grindarinngangur:",
-                                    "items": [
-                                        "Conjugata vera 11-12 cm",
-                                        "Diameter transversum 13-14 sm",
-                                        "≥23 sm"
-                                    ]
-                                }
-                            },
-                            {
-                                "type": "list",
-                                "content": {
-                                    "header": "Grindarútgangur:",
-                                    "items": [
-                                        "Diameter interspinalis 10-11 cm",
-                                        "Diameter intertuberalis 10-11",
-                                        "Diameter recta 11-12 sm",
-                                        "≥31.5 cm"
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-
-            }
-        },
-        ["Prufukafli", "Prufukafli 2"]];
     }
     chaptersData = result[0];
     chapterTitles = result[1];
@@ -250,13 +143,13 @@ function GetText(textItem, key, array, italic) {
 
 function GetListText(listItem, key, array, prefix) {
     if (typeof listItem === "string") {
-        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key+"0b"}>{prefix}</Text>{listItem}</Text>);        
+        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key + "0b"}>{prefix}</Text>{listItem}</Text>);
     }
     else {
-        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key+"0b"}>{prefix}</Text>{listItem[0]}</Text>);        
+        array.push(<Text style={Styles.p} key={key + "0"}><Text style={Styles.pBold} key={key + "0b"}>{prefix}</Text>{listItem[0]}</Text>);
         listItem.forEach(function (item, index) {
-            if(index === listItem.length-1)
-                array.push(<Text style={Styles.p} key={key + index}>{item}</Text>)            
+            if (index === listItem.length - 1)
+                array.push(<Text style={Styles.p} key={key + index}>{item}</Text>)
             else if (index > 0)
                 array.push(<Text style={Styles.p} key={key + index}>{item}</Text>)
         });
@@ -270,7 +163,7 @@ async function ElementToView(element, key) {
             items.push(<Text key={key + "header"} style={Styles.pSubchapterBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
-            GetListText(item, key+index, items, "▪ ");
+            GetListText(item, key + index, items, "▪ ");
         });
         return <View key={key} style={Styles.elementcontainer}>
             {items}
@@ -295,7 +188,7 @@ async function ElementToView(element, key) {
             items.push(<Text key={key + "header"} style={Styles.pSubchapterBold}>{element.content.header}</Text>);
 
         element.content.items.forEach(function (item, index) {
-            GetListText(item, key+index, items, (index + 1) + ". ");
+            GetListText(item, key + index, items, (index + 1) + ". ");
         });
 
         return <View key={key} style={Styles.elementcontainer}>

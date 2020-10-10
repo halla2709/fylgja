@@ -7,7 +7,6 @@ import { GetNextChapterNumber } from '../controllers/NavigationHelper.js';
 import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
 import Image from 'react-native-scalable-image';
-import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
 export class ReaderScreen extends React.Component {
   onViewLayout(key, y) {
@@ -91,9 +90,6 @@ export class ReaderScreen extends React.Component {
               </TouchableHighlight>
             </View>
           </View>
-          <GestureRecognizer
-            onSwipeLeft={(state) => { this.SwitchChapter(1); }}
-            onSwipeRight={(state) => { this.SwitchChapter(-1); }}>
           <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
           <ScrollView style={{ height: '100%', opacity: 0.8, paddingTop: 3, paddingRight: 10, paddingLeft: 10, backgroundColor: 'rgb(248,248,249)', marginBottom: 50}} ref={(scrollView) => {            
             if (scrollView != null) {
@@ -108,7 +104,6 @@ export class ReaderScreen extends React.Component {
             </View>
           </ScrollView>
           </ImageBackground>
-          </GestureRecognizer>
         </View>
       ) : null
     );  
