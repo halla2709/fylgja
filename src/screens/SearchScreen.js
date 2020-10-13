@@ -82,7 +82,7 @@ export class SearchScreen extends React.Component {
                       this.state.currentChapterBlocks.length > 0 ?
                         this.state.currentChapterBlocks
                         :
-                        <Text style={Styles.searchedtext}>Engar niðurstöður. Vinsamlegast reynið aftur.</Text>
+                        <Text style={Styles.searchedtext}>Engar niðurstöður fundust, vinsamlegast reynið aftur.</Text>
                       }
                   </View>
                 </ScrollView>

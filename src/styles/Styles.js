@@ -405,7 +405,7 @@ export default StyleSheet.create({
 
   searchresult: {
     width: '100%',
-    backgroundColor: 'rgb(248,248,249)',
+    backgroundColor: 'rgb(249,249,249)',
     borderRadius: 10,
     opacity: 0.7,
 
@@ -428,7 +428,7 @@ export default StyleSheet.create({
     },
 
     readerwholepage: {
-      backgroundColor: 'rgb(239,239,239)',
+      //backgroundColor: 'rgb(239,239,239)',
       justifyContent: 'space-between',
     },
   
@@ -441,7 +441,6 @@ export default StyleSheet.create({
   
     decorationcontainer: {
       alignItems: 'center',
-      backgroundColor: 'rgb(248,248,249)',
     },
   
     readerdecoration: {
@@ -603,7 +602,7 @@ export default StyleSheet.create({
 
   drawerChapters:{
     paddingHorizontal: 6,
-    backgroundColor: 'rgb(239,239,240)',
+    backgroundColor: 'rgb(239,239,239)',
     height: '100%',
     borderBottomWidth: 1.5,
     borderColor: '#d8d8d8',
