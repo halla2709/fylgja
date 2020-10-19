@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions } from 'react-native';
+import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions, Alert } from 'react-native';
 import Styles from './../styles/Styles';
 import { Ionicons } from '@expo/vector-icons';
 var chaptersData, chapterTitles;
@@ -8,30 +8,43 @@ var waitingForChapters = false;
 var chaptersReloadedCb;
 
 async function getJson(uri) {
-    var text = await fetch(uri, {
-        headers: {
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': 0
-        }
-    });
-    var json = await text.json();
-    return json;
-
+    try {
+        var response = await fetch(uri, {
+            headers: {
+            'Cache-Control': 'no-cache',
+            'Content-Type': 'application/json'
+        }});
+        var json = await response.json();
+        return json;
+    }
+    catch(err) {
+        throw "Unable to parse json from " + uri + ". " + err;  
+    }
 }
 
 async function DownloadChapters() {
     try {
         var result = await Promise.all([
-            getJson("https://ljosmaedrafelag.is/asset/2757/chapters.txt"),
-            getJson("https://ljosmaedrafelag.is/asset/2758/chaptertitles.txt")]);
+            getJson("https://ljosmaedrafelag.is/fylgja-app/chapters"),
+            getJson("https://ljosmaedrafelag.is/fylgja-app/chaptertitles")]);
+            chaptersData = result[0];
+            chapterTitles = result[1];
+            if (waitingForChapters)
+                CreateChapters();
     } catch (err) {
-        console.warn("Could not parse json. Using test content", err);
-    }
-    chaptersData = result[0];
-    chapterTitles = result[1];
-    if (waitingForChapters)
-        CreateChapters();
+        console.warn(err);
+        if(err.message === "JSON Parse error: Unrecognized token '﻿'" || err.message === "JSON Parse error: Unrecognized token ''")  {
+            Alert.alert(
+                "Gat ekki lesið JSON",
+                "Það gæti verið að skjalið sé ekki vistað með UTF-8 encoding. Skoðið leiðbeiningarnar um hvernig skal gera það og hlaðið skránni upp aftur."
+              );
+        } else {
+            Alert.alert(
+            "Gat ekki lesið JSON",
+            err + ". Ef vandræðin hafa með skrána að gera athugið JSON-ið með góðum validator."
+          );
+        }
+    }    
 }
 
 function HasImages(chapter) {
@@ -52,6 +65,7 @@ function CreateChapters() {
         return;
     }
     console.log("Create chapters!");
+    var missingChapters = "";
     chapterTitles.forEach((title, chapterIndex) => {
         if (chaptersData[title]) {
             var chapter = chaptersData[title];
@@ -66,9 +80,16 @@ function CreateChapters() {
             chapters.push(chapter);
         }
         else {
-            console.error("Missing chapter " + title + "!");
+            missingChapters += title + " ";
+            chapters.push({ hasImages: false, key: "" + (chapterIndex + 1), elements: [], name: title })
         }
     });
+    if(missingChapters.length > 0) {            
+        Alert.alert(
+            "Vantar kafla",
+            "Eftirfarandi kaflaheiti fundust ekki í chapters.txt.\n" + missingChapters 
+          );
+    }
     if (chaptersReloadedCb)
         chaptersReloadedCb(chapters);
     waitingForChapters = false;
