@@ -90,8 +90,10 @@ export class ReaderScreen extends React.Component {
               </TouchableHighlight>
             </View>
           </View>
+
+          
           <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
-          <ScrollView style={{ height: '100%', opacity: 0.8, paddingTop: 3, paddingRight: 10, paddingLeft: 10, backgroundColor: 'rgb(248,248,249)', marginBottom: 50}} ref={(scrollView) => {            
+          <ScrollView style={{ height: '100%', opacity: 0.8, paddingTop: 3, paddingRight: 10, paddingLeft: 10, backgroundColor: 'rgb(243,243,243)', marginBottom: 50}} ref={(scrollView) => {            
             if (scrollView != null) {
               scrollView.scrollTo({ x: 0, y: this.state.toScrollTo, animated: true });
             }
