@@ -38,9 +38,9 @@ export class ReaderScreen extends React.Component {
       var newKey = KeyForName(matches[2].replace(/_/g," "), matches[4].replace(/_/g," "));
       if(newKey)
         this.props.navigation.replace('Reader', { drawerContent: "chapters", currentChapter: newKey });
-      return;
+    } else {
+      WebBrowser.openBrowserAsync(url);
     }
-    WebBrowser.openBrowserAsync(url);
   }
 
   async dimensionChanged(dim) { 

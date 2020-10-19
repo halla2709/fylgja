@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { PixelRatio } from 'react-native';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator,CardStyleInterpolators,TransitionPresets, TransitionSpecs } from 'react-navigation-stack';
+import SafeAreaView from 'react-native-safe-area-view';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Ionicons } from '@expo/vector-icons';
 import { HomeScreen } from '../screens/HomeScreen.js';
@@ -94,6 +95,7 @@ const DrawerStack = createDrawerNavigator({
     headerMode: 'none',
 });
 
+
 const AppStack = createStackNavigator({
     DrawerStack: { screen: DrawerStack }
 },
@@ -104,20 +106,24 @@ const AppStack = createStackNavigator({
     defaultNavigationOptions: ({ navigation }) => ({
         headerTitle:'',
         headerLeft: () =>
+         <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
             <Ionicons onPress={() => navigation.toggleDrawer()}
-                name="md-menu" size={34} color="white" />,
+                name="md-menu" size={34} color="white" style={{ height: 34 }} />
+                </SafeAreaView>,
         headerRight: () =>
+        <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
             <Ionicons onPress={() => navigation.goBack(null)}
-                name="ios-undo" size={34} color="white" />,
+                name="ios-undo" size={34} color="white" style={{ height: 34 }} />
+                    </SafeAreaView>,
         headerLeftContainerStyle: {
-            padding: 10
+            padding: 10,
         },
         headerRightContainerStyle: {
-            padding: 10
+            padding: 10,
         },
         headerStyle: {
             backgroundColor: 'rgb(34,82,171)',
-            height: 72
+            height: 85
         },
         headerTintColor: 'white',
         headerTitleStyle: {
