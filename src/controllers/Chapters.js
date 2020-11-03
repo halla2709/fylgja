@@ -9,15 +9,22 @@ var chaptersReloadedCb;
 
 async function getJson(uri) {
     try {
-        var response = await fetch(uri, {
-            headers: {
-            'Cache-Control': 'no-cache',
-            'Content-Type': 'application/json'
-        }});
+        var response = await fetch(uri);
         var json = await response.json();
         return json;
     }
     catch(err) {
+        if(err.message === "JSON Parse error: Unrecognized token '﻿'" || err.message === "JSON Parse error: Unrecognized token ''")  {
+            Alert.alert(
+                "Gat ekki lesið JSON",
+                uri + "\nÞað gæti verið að skjalið sé ekki vistað með UTF-8 encoding. Skoðið leiðbeiningarnar um hvernig skal gera það og hlaðið skránni upp aftur."
+              );
+        } else {
+            Alert.alert(
+            "Gat ekki lesið JSON frá",
+            uri + "\n" + err + ". Ef vandræðin hafa með skrána að gera athugið JSON-ið með góðum validator."
+          );
+        }
         throw "Unable to parse json from " + uri + ". " + err;  
     }
 }
@@ -33,17 +40,6 @@ async function DownloadChapters() {
                 CreateChapters();
     } catch (err) {
         console.warn(err);
-        if(err.message === "JSON Parse error: Unrecognized token '﻿'" || err.message === "JSON Parse error: Unrecognized token ''")  {
-            Alert.alert(
-                "Gat ekki lesið JSON",
-                "Það gæti verið að skjalið sé ekki vistað með UTF-8 encoding. Skoðið leiðbeiningarnar um hvernig skal gera það og hlaðið skránni upp aftur."
-              );
-        } else {
-            Alert.alert(
-            "Gat ekki lesið JSON",
-            err + ". Ef vandræðin hafa með skrána að gera athugið JSON-ið með góðum validator."
-          );
-        }
     }    
 }
 
