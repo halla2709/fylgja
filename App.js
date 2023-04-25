@@ -1,8 +1,7 @@
 import React from 'react';
 import * as Notifications from 'expo-notifications';
-import { Notifications as Notifications2 } from 'expo'; // :(
 import * as Font from 'expo-font';
-import { View, Text, Platform, YellowBox } from 'react-native';
+import { View, Text, Platform, LogBox } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
 import InformationScraper from './src/controllers/InformationScraper';
 import registerForPushNotificationsAsync from './src/controllers/NotificationController';
@@ -17,11 +16,11 @@ export default class App extends React.Component {
     this.state = {
       notification: {}
     };
-    YellowBox.ignoreWarnings(['Setting a timer']);
+    LogBox.ignoreLogs(['Setting a timer']);
     
     //this.receivedSubscription = Notifications.addNotificationReceivedListener(this._handleNotification);
     //this.responseSubscription = Notifications.addNotificationResponseReceivedListener(response => {});
-    Notifications2.addListener(this._handleNotification);
+    Notifications.addNotificationReceivedListener(this._handleNotification);
     
     /* Notifications.setNotificationHandler({
       handleNotification: async () => ({
