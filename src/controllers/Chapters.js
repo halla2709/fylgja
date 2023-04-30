@@ -1,7 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions, Alert } from 'react-native';
 import Styles from './../styles/Styles';
-import { Ionicons } from '@expo/vector-icons';
 var chaptersData, chapterTitles;
 var chapters = [];
 var waitingForChapters = false;

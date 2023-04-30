@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Notifications from 'expo-notifications';
-import * as Font from 'expo-font';
 import { View, Text, Platform, LogBox } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
 import InformationScraper from './src/controllers/InformationScraper';
@@ -20,7 +19,7 @@ export default class App extends React.Component {
     
     //this.receivedSubscription = Notifications.addNotificationReceivedListener(this._handleNotification);
     //this.responseSubscription = Notifications.addNotificationResponseReceivedListener(response => {});
-    Notifications.addNotificationReceivedListener(this._handleNotification);
+    this.notificationListener = Notifications.addNotificationReceivedListener(this._handleNotification);
     
     /* Notifications.setNotificationHandler({
       handleNotification: async () => ({
@@ -48,7 +47,7 @@ export default class App extends React.Component {
     // with the notification data.
   }
   componentWillUnmount() {
-    Notifications.removeAllNotificationListeners();
+    Notifications.removeNotificationSubscription(this.notificationListener);
   }
 
   _handleNotification = (notification) => {

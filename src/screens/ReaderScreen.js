@@ -80,13 +80,13 @@ export class ReaderScreen extends React.Component {
           <View style={{ borderColor: "rgb(34,82,171)", padding: 10, borderRadius: 10, borderBottomWidth: 0.5, width: '95%', alignSelf: 'center', }}>
             <View style={Styles.chaptercontainer}>
               <TouchableHighlight style={Styles.leftarrow} onPress={() => { this.SwitchChapter(-1) }} underlayColor="rgb(245,245,245)">
-                <Ionicons name="ios-arrow-back" size={42} color="rgb(34,82,171)" />
+                <Ionicons name="arrow-back-outline" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
               <View style={Styles.chaptertext}>
                 <Text style={Styles.h1reader}> {this.chapter.name} </Text>
               </View>
               <TouchableHighlight style={Styles.rightarrow} onPress={() => { this.SwitchChapter(1); }} underlayColor="rgb(245,245,245)">
-                <Ionicons name="ios-arrow-forward" size={42} color="rgb(34,82,171)" />
+                <Ionicons name="arrow-forward-outline" size={42} color="rgb(34,82,171)" />
               </TouchableHighlight>
             </View>
           </View>

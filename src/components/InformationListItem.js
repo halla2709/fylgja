@@ -149,7 +149,7 @@ export default class InformationListItem extends React.Component {
                                     <Text numberOfLines={1} style={Styles.h2informationplus}>{this.props.title}</Text>
                                 </View>
                                 <View style={Styles.info2}>
-                                    <Ionicons style={Styles.plusbutton} name="md-add" size={30} />
+                                    <Ionicons style={Styles.plusbutton} name="add-outline" size={30} />
                                 </View>
                             </View>
                             :
@@ -158,7 +158,7 @@ export default class InformationListItem extends React.Component {
                                     <Text numberOfLines={2} style={Styles.h2informationminus}>{this.props.title}</Text>
                                 </View>
                                 <View style={Styles.info2}>
-                                    <Ionicons style={Styles.minusbutton} name="md-remove" size={30} />
+                                    <Ionicons style={Styles.minusbutton} name="remove-outline" size={30} />
                                 </View>
                             </View>
                     }

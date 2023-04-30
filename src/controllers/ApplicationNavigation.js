@@ -108,12 +108,12 @@ const AppStack = createStackNavigator({
         headerLeft: () =>
          <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
             <Ionicons onPress={() => navigation.toggleDrawer()}
-                name="md-menu" size={34} color="white" style={{ height: 34 }} />
+                name="menu-outline" size={34} color="white" style={{ height: 34 }} />
                 </SafeAreaView>,
         headerRight: () =>
         <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
             <Ionicons onPress={() => navigation.goBack(null)}
-                name="ios-undo" size={34} color="white" style={{ height: 34 }} />
+                name="arrow-undo-outline" size={34} color="white" style={{ height: 34 }} />
                     </SafeAreaView>,
         headerLeftContainerStyle: {
             padding: 10,
