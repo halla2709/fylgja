@@ -1,5 +1,6 @@
 import React from 'react';
-import { AsyncStorage, Text, View, TouchableOpacity, TextInput, ImageBackground } from 'react-native';
+import { Text, View, TextInput, ImageBackground } from 'react-native';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import Styles from './../styles/Styles';
 
 export class LogInScreen extends React.Component {
