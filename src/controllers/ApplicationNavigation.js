@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { PixelRatio } from 'react-native';
 import { createSwitchNavigator, createAppContainer } from 'react-navigation';
-import { createStackNavigator,CardStyleInterpolators,TransitionPresets, TransitionSpecs } from 'react-navigation-stack';
+import { createStackNavigator,TransitionPresets } from 'react-navigation-stack';
 import SafeAreaView from 'react-native-safe-area-view';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import { Ionicons } from '@expo/vector-icons';

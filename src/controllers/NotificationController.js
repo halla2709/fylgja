@@ -1,4 +1,3 @@
-import * as Permissions from 'expo-permissions'
 import * as Notifications from 'expo-notifications';
 import * as firebase from 'firebase';
 import 'firebase/firestore';
@@ -13,17 +12,11 @@ var token;
 export default async function registerForPushNotificationsAsync() {
   let finalStatus;
   try {
-    const { existingStatus } = await Permissions.getAsync(Permissions.NOTIFICATIONS);
-    finalStatus = existingStatus;
-
-    // only ask if permissions have not already been determined, because
-    // iOS won't necessarily prompt the user a second time.
+    const { status: existingStatus } = await Notifications.getPermissionsAsync();
     if (existingStatus !== 'granted') {
-      // Android remote notification permissions are granted during the app
-      // install, so this will only ask on iOS
-      const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+      const { status } = await Notifications.requestPermissionsAsync();
       finalStatus = status;
-    }
+    };
   }
   catch (e) {
     console.log(e);

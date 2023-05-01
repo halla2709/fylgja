@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, Image, ScrollView, FlatList, TouchableOpacity } from 'react-native'
-import { StackActions, NavigationActions } from 'react-navigation'
+import { StackActions } from 'react-navigation'
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
 import { GetChapters } from "../controllers/Chapters.js";
