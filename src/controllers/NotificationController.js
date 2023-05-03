@@ -1,12 +1,12 @@
 import * as Notifications from 'expo-notifications';
-import * as firebase from 'firebase';
-import 'firebase/firestore';
+//import * as firebase from 'firebase';
+//import 'firebase/firestore';
 import firebaseConfig from '../assets/firebaseConfig';
 import { Platform } from 'react-native';
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const firestore = firebase.firestore();
+//firebase.initializeApp(firebaseConfig);
+//const firestore = firebase.firestore();
 var token;
 
 export default async function registerForPushNotificationsAsync() {
@@ -31,15 +31,15 @@ export default async function registerForPushNotificationsAsync() {
   // Get the token that uniquely identifies this device
   token = await Notifications.getExpoPushTokenAsync();
 
-  firestore.collection("tokens").doc("tokens").update({
-    array: firebase.firestore.FieldValue.arrayUnion(token.data)
-  })
-  .then(function(){
-    console.log("Written to db");
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
+  // firestore.collection("tokens").doc("tokens").update({
+  //   array: firebase.firestore.FieldValue.arrayUnion(token.data)
+  // })
+  // .then(function(){
+  //   console.log("Written to db");
+  // })
+  // .catch(function(error) {
+  //   console.log(error);
+  // });
 
   console.log(token);
 
