@@ -43,7 +43,7 @@ export class ReaderScreen extends React.Component {
     }
   }
 
-  async dimensionChanged(dim) { 
+  dimensionChanged = async () => { 
     if(this.chapter.hasImages) {
       var views = await ChapterElementsToViews(this.chapter, this);
       this.setState({textBlocks: views});
@@ -51,18 +51,17 @@ export class ReaderScreen extends React.Component {
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener("change", this.dimensionChanged);
+    this.dimensionListener.remove();
   }
 
   async componentDidMount() {
     var views = await ChapterElementsToViews(this.chapter, this);
     this.setState({textBlocks: views});
-    Dimensions.addEventListener("change", this.dimensionChanged);
+    this.dimensionListener = Dimensions.addEventListener("change", this.dimensionChanged);
   }
 
   constructor(props) {
     super(props);
-    this.dimensionChanged = this.dimensionChanged.bind(this);
     this.chapters = GetChapters();
     this.chapter = this.getChapter(props.navigation.state.params.currentChapter);
     this.numberOfChapters = this.chapters.length;

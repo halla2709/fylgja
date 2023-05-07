@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
-  dimensionChanged(dim) {
+  dimensionChanged = (dim) => {
     this.setState(() => {
       return { isLargeWindow: dim.window.height > 500 };
     });
@@ -13,7 +13,6 @@ export class HomeScreen extends React.Component {
   
   constructor(props) {
     super(props);
-    this.dimensionChanged = this.dimensionChanged.bind(this);
     this.state = {
       fontLoaded: props.screenProps.fontLoaded,
       isLargeWindow: Dimensions.get('window').height > 500
@@ -27,10 +26,10 @@ export class HomeScreen extends React.Component {
   }
   
   componentDidMount() {
-    Dimensions.addEventListener("change", this.dimensionChanged);
+    this.dimensionListener = Dimensions.addEventListener("change", this.dimensionChanged);
   }
   componentWillUnmount() {
-    Dimensions.removeEventListener("change", this.dimensionChanged);
+    this.dimensionListener.remove();
   }
  
   render() {

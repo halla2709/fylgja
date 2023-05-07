@@ -41,7 +41,7 @@ export class NewsOverviewScreen extends React.Component {
       }
 
     async componentDidMount() {
-        Dimensions.addEventListener("change", this.dimensionChanged);
+        this.dimensionsListener = Dimensions.addEventListener("change", this.dimensionChanged);
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
             GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
@@ -80,14 +80,14 @@ export class NewsOverviewScreen extends React.Component {
         return st;
     }
 
-    dimensionChanged(dimension) {
+    dimensionChanged = (dimension) => {
         this.setState(() => {
             return { isLargeWindow: dimension.window.height > 700 };
         });
     }
 
     componentWillUnmount() {
-      Dimensions.removeEventListener("change", this.dimensionChanged);
+        this.dimensionsListener.remove();
     }
    
 
