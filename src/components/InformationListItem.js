@@ -2,7 +2,7 @@ import React from 'react'
 import {
     Text, View, TouchableOpacity,StyleSheet
 } from 'react-native'
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import Styles from './../styles/Styles';
 import * as WebBrowser from 'expo-web-browser';
 

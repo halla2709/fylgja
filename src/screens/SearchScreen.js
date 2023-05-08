@@ -5,7 +5,8 @@ import {
   ScrollView,
   ImageBackground,
   PixelRatio,
-  ActivityIndicator
+  ActivityIndicator,
+  FlatList
 } from 'react-native';
 import Styles from './../styles/Styles';
 import { SearchBar } from 'react-native-elements';
@@ -62,13 +63,10 @@ export class SearchScreen extends React.Component {
           <View style={Styles.searchwholepage} behavior="padding" enabled>
               <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ height:'100%', width: '100%' }}>
                 <SearchBar lightTheme round style={Styles.searchBar}
-                  placeholder='Skrifaðu leitarorð hér...'
-                  placeholderTextColor='rgb(189, 194, 201)'
-                  searchIcon={{ color: 'grey', padding: 3, type: 'material-community' }}
-                  clearIcon={{ color: 'grey', type: 'material-community' }}
+                  placeholder=' Skrifaðu leitarorð hér...'
                   inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
-                  inputContainerStyle={Styles.p}
-                  containerStyle={{ width: '70%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10, }}
+                  inputContainerStyle={{backgroundColor: 'white'}}
+                  containerStyle={{ width: '85%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'transparent'}}
                   onChangeText={(searchString) => {
                     this.setState({ currentChapterBlocks: this.getChapterViews(SearchChapterTitles(searchString)) });
                   }}

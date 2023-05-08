@@ -4,7 +4,7 @@ import { createSwitchNavigator, createAppContainer } from 'react-navigation';
 import { createStackNavigator,TransitionPresets } from 'react-navigation-stack';
 import SafeAreaView from 'react-native-safe-area-view';
 import { createDrawerNavigator } from 'react-navigation-drawer';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import { HomeScreen } from '../screens/HomeScreen.js';
 import { SearchScreen } from '../screens/SearchScreen.js';
 import { InformationScreen } from '../screens/InformationScreen.js';
@@ -108,7 +108,7 @@ const AppStack = createStackNavigator({
         headerLeft: () =>
          <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
             <Ionicons onPress={() => navigation.toggleDrawer()}
-                name="menu-outline" size={34} color="white" style={{ height: 34 }} />
+                name="md-menu" size={34} color="white" style={{ height: 34 }} />
                 </SafeAreaView>,
         headerRight: () =>
         <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>

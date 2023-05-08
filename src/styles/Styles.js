@@ -312,7 +312,6 @@ export default StyleSheet.create({
     fontSize: 12/PixelRatio.getFontScale(),
     textAlign: 'center',
   },
-  
 
   buttoncontainer: {
     flex: 4,
@@ -409,13 +408,6 @@ export default StyleSheet.create({
     borderRadius: 10,
     opacity: 0.7,
 
-  },
-
-  searchBar: {
-    backgroundColor: 'white',
-    color: 'white',
-    fontSize: 12/PixelRatio.getFontScale(),
-    alignSelf: 'center',
   },
 
   //ReaderScreen
@@ -591,6 +583,7 @@ export default StyleSheet.create({
     color: 'rgb(34,82,171)',
     alignSelf: 'center',
   },
+
   ljosmaedrafelagInfo2: {
     fontFamily: 'merriweather-black',
     fontSize: 18/PixelRatio.getFontScale(),

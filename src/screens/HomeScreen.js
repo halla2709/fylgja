@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Image, ImageBackground, Dimensions, PixelRatio } from 'react-native';
 import Styles from './../styles/Styles';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 <Image source={require("../assets/images/2.png")} />
 
 export class HomeScreen extends React.Component {
@@ -61,7 +61,7 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('InformationStack', { drawerContent: "information" })}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="information-circle-outline" reverse color='rgb(34,82,171)' size={38} />
+          <Ionicons name="md-information-circle" reverse color='rgb(34,82,171)' size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle2}>Upplýsingar</Text>
@@ -72,7 +72,7 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button3} onPress={() => this.props.navigation.navigate('ReaderStack')}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="book-outline" reverse color='rgb(62,135,60)' size={38} />
+          <Ionicons name="book" reverse color='rgb(62,135,60)' size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle3}>Handbók</Text>

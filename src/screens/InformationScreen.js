@@ -5,8 +5,8 @@ import {
     ImageBackground,
     ScrollView,
     ActivityIndicator,
-    PixelRatio
-} from 'react-native';
+    PixelRatio,
+    FlatList} from 'react-native';
 import Styles from './../styles/Styles';
 import InformationListItem from '../components/InformationListItem';
 import { Scraper } from "../controllers/InformationScraper";
@@ -97,14 +97,11 @@ export class InformationScreen extends React.Component {
                         <ScrollView style={{ marginBottom: 1 }} >
                             {this.state.loaded ?
                                 <View>
-                                    <SearchBar showLoading={this.state.searchingText} lightTheme round style={Styles.searchBar}
-                                        placeholder='Skrifaðu þrjá stafi eða fleiri til að leita...'
-                                        placeholderTextColor='rgb(189, 194, 201)'
-                                        searchIcon={{ color: 'grey', padding: 3, type: 'material-community' }}
-                                        clearIcon={{ color: 'grey', type: 'material-community'}}
-                                        inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
-                                        inputContainerStyle={Styles.p}
-                                        containerStyle={{ width: '100%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'rgb(238,249,251)', borderRadius: 10, }}
+                                    <SearchBar lightTheme round style={Styles.searchBar}
+                                    placeholder=' Skrifaðu leitarorð hér...'
+                                    inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
+                                    inputContainerStyle={{backgroundColor: 'white'}}
+                                    containerStyle={{ width: '85%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'transparent'}}
 
                                         onChangeText={(searchString) => {
                                             this.currentFilter = searchString;
