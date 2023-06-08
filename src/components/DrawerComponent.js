@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, Image, FlatList, TouchableOpacity } from 'react-native'
+import { Text, View, Image, FlatList, TouchableOpacity, StatusBar } from 'react-native'
 import { StackActions } from '@react-navigation/native';
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
@@ -75,7 +75,8 @@ export default class DrawerComponent extends React.Component {
     this.GetDrawerContent(this.GetCurrentRouteParams(this.props.state));
     return (
     <View style={styles.drawer}>
-      <TouchableOpacity onPress={() => { this.navigate('Home') } }> 
+      <StatusBar backgroundColor={'rgb(34,82,171)'}/>
+      <TouchableOpacity onPress={() => { this.navigate('HomeStack') } }> 
         <View style={styles.drawerLogo}>
           <Image resizeMode='contain' style={styles.drawerImage} source={require('../assets/images/logo.png')} />
             <View style={styles.drawerLogoText}>
