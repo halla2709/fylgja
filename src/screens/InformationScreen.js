@@ -91,7 +91,6 @@ export class InformationScreen extends React.Component {
         const infoItems = this.getInfoViews();
 
         return (
-            this.props.screenProps.fontLoaded ? (
                 <View contentContainerStyle={Styles.informationwholepage}>
                     <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
                         <ScrollView style={{ marginBottom: 1 }} >
@@ -130,7 +129,6 @@ export class InformationScreen extends React.Component {
                         </ScrollView>
                     </ImageBackground>
                 </View>
-            ) : null
         );
 
     }

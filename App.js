@@ -6,7 +6,7 @@ import InformationScraper from './src/controllers/InformationScraper';
 import registerForPushNotificationsAsync from './src/controllers/NotificationController';
 import AppContainer from './src/screens/AppContainer.js';
 import Styles from './src/styles/Styles';
-import NavigationService from './src/controllers/NavigationService';
+// import NavigationService from './src/controllers/NavigationService';
 import { DownloadChapters } from './src/controllers/Chapters';
 
 export default class App extends React.Component {
@@ -55,7 +55,7 @@ export default class App extends React.Component {
     // skoða warning
     console.log("Handling notifications");
     this.popup.show({
-      onPress: function () { NavigationService.navigate('NewsFeedStack', { drawerContent: "news" }); },
+      onPress: function () { console.log("would navigate :D"); /*NavigationService.navigate('NewsFeedStack');*/ },
       appIconSource: require('./src/assets/images/logo.png'),
       appTitle: 'Fylgjan',
       title: "Ný færsla",
@@ -67,7 +67,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={Styles.appcontainer}>
-        <AppContainer navigatorRef={navigatorRef => { NavigationService.setTopLevelNavigator(navigatorRef); }} />
+        <AppContainer />
         <NotificationPopup ref={ref => this.popup = ref} />
       </View>
     );

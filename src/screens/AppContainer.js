@@ -1,14 +1,37 @@
 import React from 'react';
 import * as Font from 'expo-font';
+import { NavigationContainer } from '@react-navigation/native';
 import RootStack from '../controllers/ApplicationNavigation.js';
-
+import { LogInScreen } from './LogInScreen.js';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 export default class AppContainer extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      fontLoaded: false
+      fontLoaded: false,
+      loggedIn: false,
+      loading: true
     };
+    this.onLoggedIn = this.onLoggedIn.bind(this);
+  }
+
+  async getLoginInformation() {
+    try {
+      console.log("checking login");
+      const value = await AsyncStorage.getItem('hasLoggedIn');
+      console.log("login is " + value);
+      this.setState( { loggedIn: value, loading: false });
+    }
+    catch (error) {
+      // Error retrieving data
+      console.error(error);
+      this.setState( { loading: false });
+    }
+  }
+
+  onLoggedIn() {
+    this.setState( { loggedIn: true } );
   }
 
   async componentDidMount() {
@@ -26,13 +49,16 @@ export default class AppContainer extends React.Component {
       'opensans-semibold': require('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
     });
     this.setState({ fontLoaded: true });
-    
+    this.getLoginInformation();
   }
 
   render() {
     return (
-      <RootStack ref={this.props.navigatorRef}
-        screenProps={{ fontLoaded: this.state.fontLoaded }} />
+      this.state.fontLoaded && !this.state.loading ? (
+        <NavigationContainer>
+          { this.state.loggedIn ? <RootStack /> : <LogInScreen loginCallback={this.onLoggedIn}/> }
+        </NavigationContainer>
+      ) : null
     );
   }
 }

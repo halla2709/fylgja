@@ -14,17 +14,12 @@ import { SearchChapterTitles } from './../controllers/SearchHelper';
 import { GetChapters, SetChaptersLoadedCallback } from "../controllers/Chapters.js";
 
 export class SearchScreen extends React.Component {
-
-  static navigationOptions = {
-    title: 'Handbók',
-  };
-
   getChapterView(chapter, level) {
     if (chapter.name.length > 0) {
       return <Text
         key={chapter.key}
         style={(level === 1 ? Styles.searchh1 : Styles.searchh2)}
-        onPress={() => this.props.navigation.navigate('Reader', {
+        onPress={() => this.navigation.navigate('Reader', {
           drawerContent: "chapters",
           currentChapter: chapter.key
         })}>{chapter.name}</Text>
@@ -47,6 +42,7 @@ export class SearchScreen extends React.Component {
 
   constructor(props) {
     super(props);
+    this.navigation = props.navigation;
     this.chapters = GetChapters();
     this.state = { currentChapterBlocks: this.getChapterViews(this.chapters), loaded: this.chapters.length > 0 };
     var self = this;
@@ -58,7 +54,6 @@ export class SearchScreen extends React.Component {
 
   render() {
     return (
-      this.props.screenProps.fontLoaded ? (
         this.state.loaded ? (
           <View style={Styles.searchwholepage} behavior="padding" enabled>
               <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ height:'100%', width: '100%' }}>
@@ -94,8 +89,6 @@ export class SearchScreen extends React.Component {
               <Text style={{ fontFamily: 'opensans-regular', fontSize: 12, color: "#0000ff", textAlign: "center" }}>Ef þú hefur beðið lengi, athugaðu þá nettenginguna þína</Text>
             </View>
           )
-      )
-        : null
     );
   }
 }

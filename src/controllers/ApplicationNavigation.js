@@ -1,145 +1,101 @@
-import React, { Component } from 'react';
-import { PixelRatio } from 'react-native';
-import { createSwitchNavigator, createAppContainer } from 'react-navigation';
-import { createStackNavigator,TransitionPresets } from 'react-navigation-stack';
-import SafeAreaView from 'react-native-safe-area-view';
-import { createDrawerNavigator } from 'react-navigation-drawer';
+import { createStackNavigator, TransitionPresets } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { SearchScreen } from '../screens/SearchScreen';
+import { ReaderScreen } from '../screens/ReaderScreen';
+import { NewsOverviewScreen } from '../screens/NewsOverviewScreen';
+import { NewsFeedScreen } from '../screens/NewsFeedScreen';
+import { InformationScreen } from '../screens/InformationScreen';
+import DrawerComponent from '../components/DrawerComponent';
+import { HomeScreen } from '../screens/HomeScreen';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { HomeScreen } from '../screens/HomeScreen.js';
-import { SearchScreen } from '../screens/SearchScreen.js';
-import { InformationScreen } from '../screens/InformationScreen.js';
-import { NewsOverviewScreen } from '../screens/NewsOverviewScreen.js';
-import { NewsFeedScreen } from '../screens/NewsFeedScreen.js';
-import { ReaderScreen } from '../screens/ReaderScreen.js';
-import { LogInScreen } from '../screens/LogInScreen.js';
-import DrawerComponent from '../components/DrawerComponent.js';
+import { PixelRatio, SafeAreaView } from 'react-native';
+import { DrawerActions, CommonActions } from '@react-navigation/native';
 
-const ReaderStack = createStackNavigator({
-    Search: {
-        screen: SearchScreen
-    },
-    Reader: {
-        screen: ReaderScreen
-    }
-},
-    {
-        initialRouteName: 'Search',
-        title: 'Handbók',
-        headerMode: 'none',
-        defaultNavigationOptions: {
-            ...TransitionPresets.ScaleFromCenterAndroid
-        }
-    }
-)
+const Stack = createStackNavigator();
 
-const NewsFeedStack = createStackNavigator({
-    Overview: {
-        screen: NewsOverviewScreen
-    },
-    News: {
-        screen: NewsFeedScreen
-    }
-},
-    {
-        initialRouteName: 'Overview',
-        title: 'Fréttir',
-        headerMode: 'none',
-        defaultNavigationOptions: {
-            ...TransitionPresets.FadeFromBottomAndroid
-        }
-    }
-)
+function ReaderStack() {
+  return (
+    <Stack.Navigator
+      initialRouteName='Search'
+      screenOptions={{ title: 'Handbók', headerShown: false, ...TransitionPresets.ScaleFromCenterAndroid }}>
+      <Stack.Screen name='Search' component={SearchScreen} />
+      <Stack.Screen name='Reader' component={ReaderScreen} />
+    </Stack.Navigator>
+  )
+}
 
-const InformationStack = createStackNavigator({
-    Information: {
-        screen: InformationScreen
-    }
-},
-    {
-        title: 'Upplýsingar',
-        headerMode: 'none',
-        defaultNavigationOptions: {
-            ...TransitionPresets.FadeFromBottomAndroid
-        }
-    }
-)
+function NewsFeedStack() {
+  return (
+    <Stack.Navigator
+      initialRouteName='Overview'
+      screenOptions={{ title: 'Fréttir', headerShown: false, ...TransitionPresets.FadeFromBottomAndroid }}>
+      <Stack.Screen name='Overview' component={NewsOverviewScreen} />
+      <Stack.Screen name='News' component={NewsFeedScreen} />
+    </Stack.Navigator>
+  )
+}
 
-const MainStack = createStackNavigator({
-    Home: {
-        screen: HomeScreen
-    }, ReaderStack: {
-        screen: ReaderStack
-    },
-    InformationStack: {
-        screen: InformationStack
-    },
-    NewsFeedStack: {
-        screen: NewsFeedStack
-    }
-},
-    {
-        headerMode: 'none',
-        defaultNavigationOptions: {
-            ...TransitionPresets.ScaleFromCenterAndroid
-        }
-    }
-)
+function InformationStack() {
+  return (
+    <Stack.Navigator
+      screenOptions={{ title: 'Upplýsingar', headerShown: false, ...TransitionPresets.FadeFromBottomAndroid }}>
+      <Stack.Screen name='Information' component={InformationScreen} />
+    </Stack.Navigator>
+  )
+}
 
-const DrawerStack = createDrawerNavigator({
-    Main: {
-        screen: MainStack
-    }
-},
-{
-    contentComponent: DrawerComponent,
-    headerMode: 'none',
-});
+const Drawer = createDrawerNavigator();
 
+function DrawerNavigator() {
+  return (
+    <Drawer.Navigator
+      initialRouteName='Home'
+      drawerContent={(props) => <DrawerComponent {...props} />}
+      screenOptions={{headerShown:false}}
+      backBehavior='history'
+    >
+      <Drawer.Screen name="Home" component={HomeScreen} />
+      <Drawer.Screen name="ReaderStack" component={ReaderStack} />
+      <Drawer.Screen name="NewsFeedStack" component={NewsFeedStack} initialParams={{ drawerContent: "news" }} />
+      <Drawer.Screen name="InformationStack" component={InformationStack} initialParams={{ drawerContent: "information" }} />
+    </Drawer.Navigator>
+  )
+}
 
-const AppStack = createStackNavigator({
-    DrawerStack: { screen: DrawerStack }
-},
-{
-    headerMode: 'screen',
-    swipeEnabled: false,
-    animationEnabled: false,
-    defaultNavigationOptions: ({ navigation }) => ({
-        headerTitle:'',
-        headerLeft: () =>
-         <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
-            <Ionicons onPress={() => navigation.toggleDrawer()}
-                name="md-menu" size={34} color="white" style={{ height: 34 }} />
-                </SafeAreaView>,
-        headerRight: () =>
-        <SafeAreaView style={{flex:1}} forceInset={{ top: 'never' }}>
-            <Ionicons onPress={() => navigation.goBack(null)}
-                name="arrow-undo-outline" size={34} color="white" style={{ height: 34 }} />
-                    </SafeAreaView>,
-        headerLeftContainerStyle: {
-            padding: 10,
-        },
-        headerRightContainerStyle: {
-            padding: 10,
-        },
-        headerStyle: {
-            backgroundColor: 'rgb(34,82,171)',
-            height: 85
-        },
-        headerTintColor: 'white',
-        headerTitleStyle: {
-            fontSize: 25 / PixelRatio.getFontScale(),
-            alignSelf: 'center',
-        },
+function MainStack() {
+  return (
+    <Stack.Navigator
+    screenOptions={({ navigation }) => ({
+      headerTitle: '',
+      headerLeft: () =>
+        <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
+          <Ionicons onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
+            name="md-menu" size={34} color="white" style={{ height: 34 }} />
+        </SafeAreaView>,
+      headerRight: () =>
+        <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
+          <Ionicons onPress={() => { navigation.goBack()}}
+            name="arrow-undo-outline" size={34} color="white" style={{ height: 34 }} />
+        </SafeAreaView>,
+      headerLeftContainerStyle: {
+        padding: 10,
+      },
+      headerRightContainerStyle: {
+        padding: 10,
+      },
+      headerStyle: {
+        backgroundColor: 'rgb(34,82,171)',
+        height: 85
+      },
+      headerTintColor: 'white',
+      headerTitleStyle: {
+        fontSize: 25 / PixelRatio.getFontScale(),
+        alignSelf: 'center',
+      }
+    })}>
+      <Stack.Screen name="MainDrawer" component={DrawerNavigator}/>
+    </Stack.Navigator>
+  )
+}
 
-    })
-});
-
-const RootStack = createSwitchNavigator({
-    App: AppStack,
-    LogIn: LogInScreen
-},
-    {
-        initialRouteName: 'LogIn'
-    })
-
-export default createAppContainer(RootStack);
+export default MainStack;

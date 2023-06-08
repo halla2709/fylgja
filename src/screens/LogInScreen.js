@@ -12,34 +12,8 @@ export class LogInScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fontLoaded: props.screenProps.fontLoaded,
-      show: false,
       showwrongpwtext: false,
     };
-  }
-  async componentDidMount() {
-    try {
-      //const value = false;
-      const value = await AsyncStorage.getItem('hasLoggedIn');
-      if (value) {
-        // reroute
-        console.log("Has logged in");
-        this.props.navigation.navigate('App');
-      }
-      else {
-        this.setState({ show: true });
-      }
-    } catch (error) {
-      // Error retrieving data
-      console.error(errortext);
-      this.setState({ show: true });
-    }
-  }
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.screenProps.fontLoaded !== this.props.screenProps.fontLoaded) {
-     this.setState({ fontLoaded: this.props.screenProps.fontLoaded });
-   }
   }
 
   onSubmit(text) {
@@ -47,7 +21,7 @@ export class LogInScreen extends React.Component {
       AsyncStorage.setItem('hasLoggedIn', 'true')
       .then(()=>{console.log("saved");})
       .catch(()=>{console.error("Could not save");});
-      this.props.navigation.navigate('DrawerStack');
+      this.props.loginCallback(true);
     }
     else
     {
@@ -58,9 +32,7 @@ export class LogInScreen extends React.Component {
   }
 
   render() {
-    return (
-      this.state.fontLoaded ? (
-        this.state.show ? (      
+    return (  
           this.state.showwrongpwtext ? (
     
             <View style={Styles.wholepage}>
@@ -111,8 +83,6 @@ export class LogInScreen extends React.Component {
 
           </ImageBackground>
         </View >
-      ) : null
-      ) : null
     );
     
   }

@@ -1,16 +1,15 @@
 import React from 'react'
-import { Text, View, Image, ScrollView, FlatList, TouchableOpacity } from 'react-native'
-import { StackActions } from 'react-navigation'
+import { Text, View, Image, FlatList, TouchableOpacity } from 'react-native'
+import { StackActions } from '@react-navigation/native';
 import ChapterListItem from './ChapterListItem'
 import styles from '../styles/Styles'
 import { GetChapters } from "../controllers/Chapters.js";
-import { GetCurrentRouteParams } from '../controllers/NavigationHelper.js';
 
 export default class DrawerComponent extends React.Component {
   onChapterPressed(chapterKey) {
     this.props.navigation.closeDrawer();
     this.props.navigation.dispatch(
-      StackActions.replace({ routeName: "Reader", params: {drawerContent: "chapters", currentChapter: chapterKey}})
+      StackActions.replace("Reader", { drawerContent: "chapters", currentChapter: chapterKey })
     );
   }
 
@@ -34,10 +33,8 @@ export default class DrawerComponent extends React.Component {
     } 
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    if (nextProps.screenProps.fontLoaded && this.props.screenProps.fontLoaded !== nextProps.screenProps.fontLoaded) 
-      return true;
-    var newRouteParams = GetCurrentRouteParams(nextProps.navigation.state);
+  shouldComponentUpdate(nextProps) {
+    var newRouteParams = this.GetCurrentRouteParams(nextProps.state);
 
     if (newRouteParams === undefined) newRouteParams = {};
     const keys1 = Object.keys(this.currentRouteParams);
@@ -53,6 +50,18 @@ export default class DrawerComponent extends React.Component {
     return false;
   }
 
+  GetCurrentRouteParams(state) {
+      if (state.index || state.index === 0) {
+          return this.GetCurrentRouteParams(state.routes[state.index]);
+      }
+      else if (state.state) {
+          return this.GetCurrentRouteParams(state.state);
+      }
+      else {
+          return state.params;
+      }
+  }
+
   GetDrawerContent(routeParams) {
     if(routeParams == null) 
       this.currentRouteParams = {};
@@ -63,9 +72,8 @@ export default class DrawerComponent extends React.Component {
   }
 
   render() {
-    this.GetDrawerContent(GetCurrentRouteParams(this.props.navigation.state));
+    this.GetDrawerContent(this.GetCurrentRouteParams(this.props.state));
     return (
-      this.props.screenProps.fontLoaded ? (
     <View style={styles.drawer}>
       <TouchableOpacity onPress={() => { this.navigate('Home') } }> 
         <View style={styles.drawerLogo}>
@@ -97,9 +105,6 @@ export default class DrawerComponent extends React.Component {
     </View>
 
 )
-: null
-
-    )
   }
 }
 

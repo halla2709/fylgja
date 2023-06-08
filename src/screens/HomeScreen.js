@@ -14,15 +14,8 @@ export class HomeScreen extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fontLoaded: props.screenProps.fontLoaded,
       isLargeWindow: Dimensions.get('window').height > 500
     };
-  }
-
-  componentDidUpdate(prevProps) {
-    if (prevProps.screenProps.fontLoaded !== this.props.screenProps.fontLoaded) {
-     this.setState({ fontLoaded: this.props.screenProps.fontLoaded });
-   }
   }
   
   componentDidMount() {
@@ -84,8 +77,6 @@ export class HomeScreen extends React.Component {
       </View>
 
     return (
-      this.state.fontLoaded ? (
-
         this.state.isLargeWindow ? (
 
           <View style={Styles.wholepage}>
@@ -112,7 +103,6 @@ export class HomeScreen extends React.Component {
               </View>
             </View>
           )
-      ) : null
     );
 
   }

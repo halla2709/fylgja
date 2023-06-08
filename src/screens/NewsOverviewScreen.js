@@ -28,17 +28,10 @@ export class NewsOverviewScreen extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            fontLoaded: props.screenProps.fontLoaded,
             isLargeWindow: Dimensions.get('window').height > 700,
             newsLoaded: false
         };
     }
-
-    componentDidUpdate(prevProps) {
-        if (prevProps.screenProps.fontLoaded !== this.props.screenProps.fontLoaded) {
-         this.setState({ fontLoaded: this.props.screenProps.fontLoaded });
-       }
-      }
 
     async componentDidMount() {
         this.dimensionsListener = Dimensions.addEventListener("change", this.dimensionChanged);
@@ -137,7 +130,7 @@ export class NewsOverviewScreen extends React.Component {
             </View>
 
 
-        return (this.props.screenProps.fontLoaded ? (
+        return (
             this.state.newsLoaded ? (
                 (this.state.isLargeWindow && PixelRatio.getFontScale() < 1.2) ? (
                     <View style={{ flex: 1 }} contentContainerStyle={Styles.informationwholepage}>
@@ -170,7 +163,6 @@ export class NewsOverviewScreen extends React.Component {
             <Text style={{fontFamily: 'opensans-regular',fontSize: 12,color:"#0000ff",textAlign:"center"}}>Ef þú hefur beðið lengi, athugaðu nettenginguna þína</Text>
             </View>
                 )
-        ) : null
         );
     }
 }

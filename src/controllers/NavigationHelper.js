@@ -1,13 +1,5 @@
 import { GetChapters } from "../controllers/Chapters.js";
 
-function GetCurrentRouteParams(state) {
-    if (state.index || state.index === 0) {
-        return GetCurrentRouteParams(state.routes[state.index]);
-    }
-    else {
-        return state.params;
-    }
-}
 
 function GetNextChapterNumber(currentChapter, increment) {
     const numberOfChapters = GetChapters().length;
@@ -24,6 +16,5 @@ function GetNextChapterNumber(currentChapter, increment) {
 }
 
 export {
-    GetCurrentRouteParams,
     GetNextChapterNumber
 };

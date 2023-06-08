@@ -26,7 +26,7 @@ export class NewsFeedScreen extends React.Component {
 
     constructor(props) {
         super(props);
-        this.contentID = props.navigation.state.params.contentID;
+        this.contentID = props.route.params.contentID;
         this.data = [];
         this.state = {newsLoaded: false, states: []};
     }
@@ -156,7 +156,7 @@ export class NewsFeedScreen extends React.Component {
             );
        });
         
-        var view = (this.state.newsLoaded ?  (
+        return (this.state.newsLoaded ?  (
             <View contentContainerStyle={Styles.informationwholepage}>
                 <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
                 <ScrollView>
@@ -174,6 +174,5 @@ export class NewsFeedScreen extends React.Component {
             </ImageBackground>
             </View> )
     )
-        return (this.props.screenProps.fontLoaded ? view : null);
     }
 }
