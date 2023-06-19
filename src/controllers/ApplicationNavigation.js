@@ -23,8 +23,8 @@ const stackScreenHeaderOptions = ({ navigation }) => ({
     </SafeAreaView>,
   headerRight: () =>
     <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
-      <Ionicons onPress={() => { navigation.goBack() }}
-        name="arrow-undo-outline" size={34} color="white" style={{ height: 34 }} />
+      <Ionicons onPress={() => { navigation.goBack()}}
+        name="arrow-undo" size={30} color="white" style={{ height: 34 }} />
     </SafeAreaView>,
   headerLeftContainerStyle: {
     padding: 10,

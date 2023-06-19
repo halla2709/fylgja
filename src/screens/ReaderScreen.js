@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext, useRef} from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import { Text, View, TouchableHighlight, ScrollView, useWindowDimensions } from 'react-native';
 import Styles from './../styles/Styles';
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -8,7 +8,7 @@ import Hyperlink from 'react-native-hyperlink';
 import * as WebBrowser from 'expo-web-browser';
 import { DrawerContentChanger, DrawerContentContext } from '../components/DrawerContentContext';
 
-export function ReaderScreen ({ navigation, route }) {
+export function ReaderScreen({ navigation, route }) {
   const chapterKey = useContext(DrawerContentContext);
   const setChapterKey = useContext(DrawerContentChanger);
 
@@ -16,18 +16,18 @@ export function ReaderScreen ({ navigation, route }) {
   const chapters = GetChapters();
   const topChapter = chapterKey.split(".")[0];
   const [chapterViews, setChapterViews] = useState([]);
-  const chapter = useRef(chapters[topChapter-1]);
+  const chapter = useRef(chapters[topChapter - 1]);
   const scrollViewRef = useRef(null);
 
   useEffect(() => {
     ChapterElementsToViews(chapter.current, onChapterViewLayout)
-    .then(function(views) {
-      setChapterViews(views);
-    })
-    .catch(function(error) {
-      console.error("Could not create chapter views");
-      console.error(error);
-    });
+      .then(function (views) {
+        setChapterViews(views);
+      })
+      .catch(function (error) {
+        console.error("Could not create chapter views");
+        console.error(error);
+      });
   }, [dimensions]);
 
   function changeChapter(newChapterKey) {
@@ -36,7 +36,7 @@ export function ReaderScreen ({ navigation, route }) {
 
   function onChapterViewLayout(subchapterKey, yPos) {
     if (subchapterKey === chapterKey && scrollViewRef.current) {
-      scrollViewRef.current.scrollTo({y: yPos, animated: true});
+      scrollViewRef.current.scrollTo({ y: yPos, animated: true });
       scrollViewRef.current = null; // til að skrolla bara einu sinni, ekki þegar skjánum er flippað
     }
   }
@@ -69,18 +69,19 @@ export function ReaderScreen ({ navigation, route }) {
     changeChapter(GetNextChapterNumber(chapterKey, direction));
   }
 
+
   return (
     <View contentContainerStyle={Styles.readerwholepage}>
-      <View style={{ borderColor: "rgb(34,82,171)", padding: 10, borderRadius: 10, borderBottomWidth: 0.5, width: '95%', alignSelf: 'center', }}>
+      <View style={{ borderColor: "rgb(211,211,211)", padding: 10, borderBottomWidth: 0.5, width: '95%', alignSelf: 'center', }}>
         <View style={Styles.chaptercontainer}>
           <TouchableHighlight style={Styles.leftarrow} onPress={() => { SwitchChapter(-1) }} underlayColor="rgb(245,245,245)">
-            <Ionicons name="arrow-back" size={30} color="rgb(34,82,171)" />
+            <Ionicons name="arrow-back" size={28} color="rgb(34,82,171)" />
           </TouchableHighlight>
           <View style={Styles.chaptertext}>
             <Text style={Styles.h1reader}> {chapter.current.name} </Text>
           </View>
           <TouchableHighlight style={Styles.rightarrow} onPress={() => { SwitchChapter(1); }} underlayColor="rgb(245,245,245)">
-            <Ionicons name="arrow-forward" size={30} color="rgb(34,82,171)" />
+            <Ionicons name="arrow-forward" size={28} color="rgb(34,82,171)" />
           </TouchableHighlight>
         </View>
       </View>

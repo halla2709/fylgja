@@ -43,7 +43,7 @@ export class HomeScreen extends React.Component {
         <TouchableOpacity style={Styles.button1} onPress={() => this.props.navigation.navigate('NewsFeedStack', { drawerContent: "news" })}>
 
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="newspaper-outline" reverse color='rgb(201,52,36)' size={38} />
+          <Ionicons name="newspaper" color='rgb(201,52,36)' size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle1}>Fréttaveita</Text>
