@@ -228,15 +228,15 @@ async function GetViewBlocks(elements, title) {
 }
 
 
-async function ChapterElementsToViews(chapter, parent) {
+async function ChapterElementsToViews(chapter, onLayoutCallback) {
     var blocks = await GetViewBlocks(chapter.elements, chapter.name);
     if (chapter.subchapters) {
         async function GetSubchapterBlocks(subchapter) {
             var subchapterBlocks = await GetViewBlocks(subchapter.elements, chapter.name + subchapter.name);
             return (
                 <View style={{ marginBottom: 10 }} key={subchapter.key} onLayout={(event) => {
-                    var { x, y, width, height } = event.nativeEvent.layout;
-                    parent.onViewLayout(subchapter.key, y);
+                    var { x, y } = event.nativeEvent.layout;
+                    onLayoutCallback(subchapter.key, y);
                 }}>
                     <View style={Styles.subchaptercontainer}>
                         <Text style={Styles.h2subchapter}>{subchapter.name}</Text>
