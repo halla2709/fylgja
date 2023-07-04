@@ -52,6 +52,11 @@ export function InformationScreen({ navigation, route }) {
 
         if (currentData.length == 0) {
             Scraper.init();
+
+        }
+        else {
+            setData(GetAllInformationChapters());
+            setLoaded(true);
         }
     }, [])
 
