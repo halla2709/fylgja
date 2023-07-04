@@ -202,7 +202,7 @@ export default StyleSheet.create({
   pImportant: {
     fontFamily: 'opensans-regular',
     fontSize: 18/PixelRatio.getFontScale(),
-    color:'rgb(131,27,0)'
+    color:'rgb(0,0,0)'
   },
 
   body: {

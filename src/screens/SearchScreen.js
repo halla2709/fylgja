@@ -59,7 +59,8 @@ export function SearchScreen({ navigation, route }) {
     loaded ? (
       <View style={Styles.searchwholepage} behavior="padding" enabled>
         <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ height: '100%', width: '100%' }}>
-          <SearchBar lightTheme round style={Styles.searchBar} value={searchString}
+          <SearchBar lightTheme round style={Styles.searchBar} 
+            value={searchString}
             placeholder=' Skrifaðu leitarorð hér...'
             inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
             inputContainerStyle={{ backgroundColor: 'white' }}
