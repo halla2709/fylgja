@@ -17,13 +17,23 @@
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon_nottransparent.png",
-      "config": 
-        { 
+      "config": {
         "usesNonExemptEncryption": false
-        }
+      }
     },
     "notification": {
       "icon": "src/assets/images/fylgja_notification_icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "12360320-48de-11e9-b563-1d9064181fbd"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/12360320-48de-11e9-b563-1d9064181fbd"
     }
   }
 }

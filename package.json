@@ -7,7 +7,6 @@
     "jest-expo": "^47.0.0",
     "react-test-renderer": "16.2.0"
   },
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "eject": "expo eject",
@@ -28,6 +27,7 @@
     "expo": "^48.0.0",
     "expo-font": "~11.1.1",
     "expo-notifications": "~0.18.1",
+    "expo-updates": "~0.16.4",
     "expo-web-browser": "~12.1.1",
     "firebase": "8.2.3",
     "react": "18.2.0",
