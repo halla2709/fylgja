@@ -4,8 +4,8 @@
   },
   "build": {
     "development": {
-      "developmentClient": true,
-      "distribution": "internal",
+      "android": {
+        "buildType": "apk"},
       "channel": "development",
       "ios": {
         "simulator": true
@@ -17,8 +17,8 @@
     "preview": {
       "channel": "preview"
     },
-    "testChapters": {
-      "channel": "testChapters"
+    "testchapters": {
+      "channel": "testchapters"
     }
   },
   "submit": {

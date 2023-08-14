@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Fylgja",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "slug": "fylgja",
     "icon": "src/assets/images/icon.png",
     "splash": {
@@ -12,7 +12,7 @@
       "package": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon.png",
       "permissions": [],
-      "versionCode": 3
+      "versionCode": 4
     },
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",

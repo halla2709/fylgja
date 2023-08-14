@@ -1,7 +1,7 @@
 import * as Notifications from 'expo-notifications';
 //import * as firebase from 'firebase';
 //import 'firebase/firestore';
-import firebaseConfig from '../assets/firebaseConfig';
+//import firebaseConfig from '../assets/firebaseConfig';
 import { Platform } from 'react-native';
 
 // Initialize Firebase
