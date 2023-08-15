@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, TouchableHighlight, Image, ScrollView, Dimensions, Alert } from 'react-native';
+import { Text, View, Image, Dimensions, Alert } from 'react-native';
 import Styles from './../styles/Styles';
 var chaptersData, chapterTitles;
 var chapters = [];

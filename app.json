@@ -19,7 +19,8 @@
       "icon": "src/assets/images/icon_nottransparent.png",
       "config": {
         "usesNonExemptEncryption": false
-      }
+      },
+      "buildNumber": "2"
     },
     "notification": {
       "icon": "src/assets/images/fylgja_notification_icon.png"

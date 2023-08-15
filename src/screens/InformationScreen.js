@@ -68,7 +68,7 @@ export function InformationScreen({ navigation, route }) {
     return (
         <View contentContainerStyle={Styles.informationwholepage}>
             <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
-                <ScrollView style={{ marginBottom: 1 }} >
+                <ScrollView style={{ marginBottom: 1 }} scrollIndicatorInsets={{ right: 1 }} >
                     {
                         loaded ? (
                             <View>
