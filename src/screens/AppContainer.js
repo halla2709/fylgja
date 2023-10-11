@@ -1,64 +1,66 @@
-import React from 'react';
-import * as Font from 'expo-font';
-import { NavigationContainer } from '@react-navigation/native';
+import React, { useEffect, useRef } from 'react';
+import * as Notifications from 'expo-notifications';
+import { View} from 'react-native';
+import NotificationPopup from 'react-native-push-notification-popup';
+import registerForPushNotificationsAsync from '../controllers/NotificationController';
+import Styles from '../styles/Styles';
+import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
+import { DownloadChapters } from '../controllers/Chapters';
 import RootStack from '../controllers/ApplicationNavigation.js';
-import { LogInScreen } from './LogInScreen.js';
-import AsyncStorage from "@react-native-async-storage/async-storage";
-export default class AppContainer extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      fontLoaded: false,
-      loggedIn: false,
-      loading: true
-    };
-    this.onLoggedIn = this.onLoggedIn.bind(this);
-  }
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
-  async getLoginInformation() {
-    try {
-      console.log("checking login");
-      const value = await AsyncStorage.getItem('hasLoggedIn');
-      console.log("login is " + value);
-      this.setState( { loggedIn: value, loading: false });
-    }
-    catch (error) {
-      // Error retrieving data
-      console.error(error);
-      this.setState( { loading: false });
-    }
-  }
+export default function AppContainer(props) {
+  const notificationListener = useRef();
+  const responseListener = useRef();
+  const notificationPopup = useRef();
+  const navigationRef = useNavigationContainerRef();
 
-  onLoggedIn() {
-    this.setState( { loggedIn: true } );
-  }
+  useEffect(() => {
+    DownloadChapters();
 
-  async componentDidMount() {
-    await Font.loadAsync({
-      'merriweather-black': require('../assets/fonts/Merriweather/Merriweather-Black.ttf'),
-      'merriweather-bold': require('../assets/fonts/Merriweather/Merriweather-Bold.ttf'),
-      'merriweather-regular': require('../assets/fonts/Merriweather/Merriweather-Regular.ttf'),
-      'merriweather-light': require('../assets/fonts/Merriweather/Merriweather-Light.ttf'),
-      'dosis-medium': require('../assets/fonts/Dosis/Dosis-Medium.ttf'),
-      'dosis-regular': require('../assets/fonts/Dosis/Dosis-Regular.ttf'),
-      'dosis-bold': require('../assets/fonts/Dosis/Dosis-Bold.ttf'),
-      'opensans-regular': require('../assets/fonts/Open_Sans/OpenSans-Regular.ttf'),
-      'opensans-italic': require('../assets/fonts/Open_Sans/OpenSans-Italic.ttf'),
-      'opensans-bold': require('../assets/fonts/Open_Sans/OpenSans-Bold.ttf'),
-      'opensans-semibold': require('../assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
+    registerForPushNotificationsAsync();
+
+    notificationListener.current = Notifications.addNotificationReceivedListener(notification => {
+      notificationPopup.current.show({
+        onPress: function () { navigationRef.navigate('NewsFeedStack'); },
+        appIconSource: require('../assets/images/logo.png'),
+        appTitle: 'Fylgjan',
+        title: "Ný færsla",
+        body: "Ný frétt, viðburður eða ráðstefna á vegum Ljósmæðrafélagsins.",
+      });
     });
-    this.setState({ fontLoaded: true });
-    this.getLoginInformation();
-  }
 
-  render() {
-    return (
-      this.state.fontLoaded && !this.state.loading ? (
-        <NavigationContainer>
-          { this.state.loggedIn ? <RootStack /> : <LogInScreen loginCallback={this.onLoggedIn}/> }
-        </NavigationContainer>
-      ) : null
-    );
-  }
+    responseListener.current = Notifications.addNotificationResponseReceivedListener(response => {
+      navigationRef.navigate('NewsFeedStack');
+    });
+
+    return () => {
+      Notifications.removeNotificationSubscription(notificationListener.current);
+      Notifications.removeNotificationSubscription(responseListener.current);
+    };
+  }, []);
+
+  
+  return (
+    <NavigationContainer ref={navigationRef}>
+    <View style={Styles.appcontainer}>
+      <RootStack /> 
+      <NotificationPopup ref={ref => notificationPopup.current = ref} />
+    </View>
+    </NavigationContainer>
+  );
 }
+
+
+
+
+
+
+

@@ -131,43 +131,6 @@ function DrawerNavigator() {
         </Drawer.Navigator>
       </DrawerContentChanger.Provider>
     </DrawerContentContext.Provider>
-
-  )
-}
-
-function MainStack() {
-  return (
-    <Stack.Navigator
-      screenOptions={({ navigation }) => ({
-        headerTitle: '',
-        headerLeft: () =>
-          <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
-            <Ionicons onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}
-              name="md-menu" size={34} color="white" style={{ height: 34 }} />
-          </SafeAreaView>,
-        headerRight: () =>
-          <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
-            <Ionicons onPress={() => { navigation.goBack() }}
-              name="arrow-undo-outline" size={34} color="white" style={{ height: 34 }} />
-          </SafeAreaView>,
-        headerLeftContainerStyle: {
-          padding: 10,
-        },
-        headerRightContainerStyle: {
-          padding: 10,
-        },
-        headerStyle: {
-          backgroundColor: 'rgb(34,82,171)',
-          height: 85
-        },
-        headerTintColor: 'white',
-        headerTitleStyle: {
-          fontSize: 25 / PixelRatio.getFontScale(),
-          alignSelf: 'center',
-        }
-      })}>
-      <Stack.Screen name="MainDrawer" component={DrawerNavigator} />
-    </Stack.Navigator>
   )
 }
 

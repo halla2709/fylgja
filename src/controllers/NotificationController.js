@@ -1,47 +1,48 @@
+import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
-//import * as firebase from 'firebase';
-//import 'firebase/firestore';
-//import firebaseConfig from '../assets/firebaseConfig';
+import Constants from 'expo-constants';
+import { initializeApp } from "firebase/app";
+import { getFirestore, doc, setDoc } from "firebase/firestore/lite";
+import firebaseConfig from '../assets/firebase/fylgjatestconfig'; // ATH breyta í fylgjaofficial.js fyrir production
 import { Platform } from 'react-native';
 
 // Initialize Firebase
-//firebase.initializeApp(firebaseConfig);
-//const firestore = firebase.firestore();
-var token;
+const firebase = initializeApp(firebaseConfig);
+const firestoreDb = getFirestore(firebase);
+
+function writeExpoTokenToFirestore(token) {
+  const docRef = doc(firestoreDb, "tokens/" + token.data);
+  setDoc(docRef, { lastActive: Date.now() })
+    .then(function () {
+      console.log("Written to db");
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+
+}
 
 export default async function registerForPushNotificationsAsync() {
-  let finalStatus;
-  try {
+  let token;
+  if (Device.isDevice) {
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
+    let finalStatus = existingStatus;
     if (existingStatus !== 'granted') {
       const { status } = await Notifications.requestPermissionsAsync();
       finalStatus = status;
-    };
+    }
+    if (finalStatus !== 'granted') {
+      alert('Failed to get push token for push notification!');
+      return;
+    }
+    token = await Notifications.getExpoPushTokenAsync({
+      projectId: Constants.expoConfig.extra.eas.projectId,
+    });
+    console.log(token);
+    //writeExpoTokenToFirestore(token); // TODO uncomment me!
+  } else {
+    alert('Must use physical device for Push Notifications');
   }
-  catch (e) {
-    console.log(e);
-    return;
-  }
-
-  // Stop here if the user did not grant permissions
-  if (finalStatus !== 'granted') {
-    return;
-  }
-
-  // Get the token that uniquely identifies this device
-  token = await Notifications.getExpoPushTokenAsync();
-
-  // firestore.collection("tokens").doc("tokens").update({
-  //   array: firebase.firestore.FieldValue.arrayUnion(token.data)
-  // })
-  // .then(function(){
-  //   console.log("Written to db");
-  // })
-  // .catch(function(error) {
-  //   console.log(error);
-  // });
-
-  console.log(token);
 
   if (Platform.OS === 'android') {
     Notifications.setNotificationChannelAsync('default', {
@@ -51,6 +52,5 @@ export default async function registerForPushNotificationsAsync() {
       lightColor: '#FF231F7C',
     });
   }
-  
-  return;
+  return token;
 }
