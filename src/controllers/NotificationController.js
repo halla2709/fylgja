@@ -32,19 +32,14 @@ export default async function registerForPushNotificationsAsync() {
       finalStatus = status;
     }
     if (finalStatus !== 'granted') {
-      alert('Failed to get push token for push notification!');
+      alert('Failed to get necessary information for push notifications!');
       return;
     }
-    try {
-      token = await Notifications.getExpoPushTokenAsync({
-        projectId: Constants.expoConfig.extra.eas.projectId,
-      });
-      alert("got token " + token.data)
-      console.log(token);
-      writeExpoTokenToFirestore(token);
-    } catch(error) {
-      alert(error);
-    }
+    token = await Notifications.getExpoPushTokenAsync({
+      projectId: Constants.expoConfig.extra.eas.projectId,
+    });
+    console.log(token);
+    writeExpoTokenToFirestore(token);
   } else {
     alert('Must use physical device for Push Notifications');
   }
