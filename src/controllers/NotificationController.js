@@ -35,11 +35,16 @@ export default async function registerForPushNotificationsAsync() {
       alert('Failed to get push token for push notification!');
       return;
     }
-    token = await Notifications.getExpoPushTokenAsync({
-      projectId: Constants.expoConfig.extra.eas.projectId,
-    });
-    console.log(token);
-    //writeExpoTokenToFirestore(token); // TODO uncomment me!
+    try {
+      token = await Notifications.getExpoPushTokenAsync({
+        projectId: Constants.expoConfig.extra.eas.projectId,
+      });
+      alert("got token " + token.data)
+      console.log(token);
+      writeExpoTokenToFirestore(token);
+    } catch(error) {
+      alert(error);
+    }
   } else {
     alert('Must use physical device for Push Notifications');
   }

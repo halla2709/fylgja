@@ -12,7 +12,8 @@
       "package": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon.png",
       "permissions": [],
-      "versionCode": 4
+      "versionCode": 4,
+      "googleServicesFile": "./google-services.json"
     },
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
