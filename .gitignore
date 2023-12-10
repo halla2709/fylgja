@@ -17,4 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 serverside
 src/assets/fylgjahandbok.json
-src/assets/firebase
+src/assets/firebase/fylgjatestconfig.js
+src/assets/firebase/fylgjaofficial.js
+google-services*
