@@ -54,7 +54,7 @@ export class HomeScreen extends React.Component {
 
         <TouchableOpacity style={Styles.button2} onPress={() => this.props.navigation.navigate('InformationStack', { drawerContent: "information" })}>
           <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center', }}>
-          <Ionicons name="md-information-circle" reverse color='rgb(34,82,171)' size={38} />
+          <Ionicons name="information-circle" reverse color='rgb(34,82,171)' size={38} />
           
             <View style={{ flex: 1 }}>
               <Text style={Styles.buttontitle2}>Upplýsingar</Text>
