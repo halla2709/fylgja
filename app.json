@@ -13,7 +13,7 @@
       "icon": "src/assets/images/icon.png",
       "permissions": [],
       "versionCode": 5,
-      "googleServicesFile": "./google-services-fylgjanotificationsofficial.json"
+      "googleServicesFile": "./google-services-fylgjatest.json"
     },
     "ios": {
       "bundleIdentifier": "com.fylgja.fylgja",
