@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Fylgja",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "slug": "fylgja",
     "icon": "src/assets/images/icon.png",
     "splash": {
@@ -12,7 +12,7 @@
       "package": "com.fylgja.fylgja",
       "icon": "src/assets/images/icon.png",
       "permissions": [],
-      "versionCode": 5,
+      "versionCode": 6,
       "googleServicesFile": "./google-services-fylgjatest.json"
     },
     "ios": {
@@ -21,7 +21,7 @@
       "config": {
         "usesNonExemptEncryption": false
       },
-      "buildNumber": "3"
+      "buildNumber": "4"
     },
     "notification": {
       "icon": "src/assets/images/fylgja_notification_icon.png"
