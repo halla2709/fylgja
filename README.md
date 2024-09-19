@@ -1,3 +1,9 @@
+Quick set up
+* Install using `yarn install`
+* Get the private config files from the secret storage and put them in the correct location
+* Run `npx expo start` - this will give you a hint where to put the missing files
+* Scan QR code using ExpoGo app and voila
+
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
 Below you'll find information about performing common tasks. The most recent version of this guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).

@@ -6,15 +6,10 @@ import {
     Text,
     ActivityIndicator,
     TouchableWithoutFeedback,
+    Button
 } from 'react-native';
 import * as WebBrowser from 'expo-web-browser';
-import {
-    Card,
-    CardTitle,
-    CardContent,
-    CardAction,
-    CardButton
-} from 'react-native-cards';
+import { Card } from '@rneui/themed'
 import Styles from './../styles/Styles';
 import { GetNewsJson, GetDate } from '../controllers/NewsFeedHelper';
 
@@ -135,23 +130,13 @@ export class NewsFeedScreen extends React.Component {
             var index = cnt;
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
-                    <View style = {{opacity: 0.8}}>
-                        <Card>
-                            <View style={{ paddingRight: 5, alignContent: "flex-end", alignItems: 'flex-end', alignSelf: 'flex-end' }}>
-                                <Text style={Styles.dateText}>{GetDate(element.displayDate)}</Text>
-                            </View>
-                            <View style={{ flex: 1, flexDirection: "row", paddingRight: 5 }}>
-                                <CardTitle title={element.title} style={{ flex: 1}} />
-                            </View>
-                            
-                            <CardContent> 
-                                <View>{body}</View>
-                            </CardContent>
-                            <CardAction separator={true} inColumn={false} >
-                                <CardButton title="Opna frétt" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '95%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)" />
-                            </CardAction>
-                        </Card>
-                    </View>
+                    <Card>
+                        <Text style={Styles.dateText}>{GetDate(element.displayDate)}</Text>
+                        <Card.Title  style={Styles.pImportant} >{element.title}</Card.Title>
+                        <View>{body}</View>
+                        <Card.Divider/>
+                        <Button title="Opna frétt" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '95%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)"/>
+                    </Card>
                 </TouchableWithoutFeedback>
             );
        });

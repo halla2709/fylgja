@@ -6,16 +6,10 @@ import {
     ScrollView,
     ActivityIndicator,
     Text,
-    PixelRatio
+    PixelRatio,
+    Button
 } from 'react-native';
-import {
-    Card,
-    CardTitle,
-    CardContent,
-    CardAction,
-    CardButton,
-
-} from 'react-native-cards';
+import { Card } from '@rneui/themed'
 import Styles from './../styles/Styles';
 import { GetNews, GetDate } from './../controllers/NewsFeedHelper';
 
@@ -66,7 +60,7 @@ export class NewsOverviewScreen extends React.Component {
     
     GetNewestString(objectName) {
         if (!this.state.newsLoaded) 
-            return  <CardContent />;
+            return "";
         var dataObject = this.state.news[objectName];
         var st =  dataObject.newest ? "• " : "";
         st += "Nýjast, birt " + GetDate(dataObject.published) + "\n" + dataObject.title;
@@ -86,49 +80,36 @@ export class NewsOverviewScreen extends React.Component {
 
     render() {
         var frettirContainer =
-            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
-                    <CardTitle style={{flexShrink: 0}} title="Fréttir"/>
-                    <CardContent text={this.GetNewestString("frett")} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
-                    </CardAction>
+                    <Card.Title>Fréttir</Card.Title>
+                    <Card.Divider/>
+                    <Text>{this.GetNewestString("frett")}</Text>
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
-            </View>
 
         var vidburdirContainer =
-            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
-                    <CardTitle style={{flexShrink: 0}} title="Viðburðir" />
-                    <CardContent text={this.GetNewestString("vidburdur")} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 132}); }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
-                    </CardAction>
+                    <Card.Title>Viðburðir</Card.Title>
+                    <Card.Divider/>
+                    <Text>{this.GetNewestString("vidburdur")}</Text>
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 132}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
-            </View>
 
         var malstofurContainer =
-            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
-                    <CardTitle style={{flexShrink: 0}} title="Málstofur og Fræðslufundir" />
-                    <CardContent text={this.GetNewestString("malstofa")} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center'}}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 149}); }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
-                    </CardAction>
+                    <Card.Title>Málstofur og Fræðslufundir</Card.Title>
+                    <Card.Divider/>
+                    <Text>{this.GetNewestString("malstofa")}</Text>
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 149}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
-            </View>
 
         var radstefnurContainer =
-            <View style={{ flex: 1, opacity: 0.8}}>
                 <Card>
-                    <CardTitle style={{flexShrink: 0}} title="Ráðstefnur" />
-                    <CardContent text={this.GetNewestString("radstefna")} />
-                    <CardAction separator={true} inColumn={false} style={{ alignContent: 'center', alignItems: 'center', alignSelf: 'center' }}>
-                        <CardButton onPress={() => { this.props.navigation.navigate("News", {contentID: 148}); }} style={{  width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)'}} title="Skoða fleiri" color="rgb(34,82,171)" />
-                    </CardAction>
+                    <Card.Title>Ráðstefnur</Card.Title>
+                    <Card.Divider/>
+                    <Text>{this.GetNewestString("radstefna")}</Text>
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 148}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
-            </View>
-
 
         return (
             this.state.newsLoaded ? (
