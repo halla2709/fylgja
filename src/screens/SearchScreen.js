@@ -61,8 +61,8 @@ export function SearchScreen({ navigation, route }) {
         <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ height: '100%', width: '100%' }}>
           <SearchBar lightTheme round style={Styles.searchBar} 
             value={searchString}
-            placeholder=' Skrifaðu leitarorð hér...'
-            inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
+            placeholder=' Skrifaðu leitarorð hér'
+            inputStyle={{ color: 'black', fontSize: 14 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
             inputContainerStyle={{ backgroundColor: 'white' }}
             containerStyle={{ width: '85%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'transparent' }}
             onChangeText={(searchString) => {

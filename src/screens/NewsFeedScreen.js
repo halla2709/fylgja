@@ -125,16 +125,16 @@ export class NewsFeedScreen extends React.Component {
             }
             else {
                 if(element.parsedBody.length > 0)
-                    body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Ýttu til að lesa meira</Text>);
+                    body.push(<Text style={Styles.ptiny} key={cnt+"seemore"}>Lesa meira</Text>) + "\n";
             }
             var index = cnt;
             cards.push(
                 <TouchableWithoutFeedback key={cnt++} onPress={() => {this.toggleNewsItem(index)}}>
                     <Card>
-                        <Text style={Styles.dateText}>{GetDate(element.displayDate)}</Text>
-                        <Card.Title  style={Styles.pImportant} >{element.title}</Card.Title>
+                        <Text style={Styles.dateText}>{GetDate(element.displayDate) + "\n" }</Text>
+                        <Card.Title>{element.title}</Card.Title>
                         <View>{body}</View>
-                        <Card.Divider/>
+                        <Card.Divider style={{border:0}}/>
                         <Button title="Opna frétt" onPress={()=>{WebBrowser.openBrowserAsync(element.hostUrl+element.url);}} style={{ width: '95%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} color="rgb(34,82,171)"/>
                     </Card>
                 </TouchableWithoutFeedback>

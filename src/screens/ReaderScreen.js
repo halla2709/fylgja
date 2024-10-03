@@ -91,7 +91,7 @@ export function ReaderScreen({ navigation, route }) {
         ref={scrollViewRef}
       >
         <View style={{ paddingBottom: 220 }}>
-          <Hyperlink linkStyle={{ color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' }} onPress={(url, text) => openUrl(url)}
+          <Hyperlink linkStyle={Styles.readerLink} onPress={(url, text) => openUrl(url)}
             linkText={url => getUrlText(url)}>
             {chapterViews}
           </Hyperlink>

@@ -62,8 +62,8 @@ export class NewsOverviewScreen extends React.Component {
         if (!this.state.newsLoaded) 
             return "";
         var dataObject = this.state.news[objectName];
-        var st =  dataObject.newest ? "• " : "";
-        st += "Nýjast, birt " + GetDate(dataObject.published) + "\n" + dataObject.title;
+        var st =  dataObject.newest ? "► " : "";
+        st += "Nýjast, birt " + GetDate(dataObject.published) + "\n" + dataObject.title + "\n";
         return st;
     }
 
@@ -116,10 +116,12 @@ export class NewsOverviewScreen extends React.Component {
                 (this.state.isLargeWindow && PixelRatio.getFontScale() < 1.2) ? (
                     <View style={{ flex: 1 }} contentContainerStyle={Styles.informationwholepage}>
                         <ImageBackground source={require('../assets/images/bluegray.jpg')} resizeMode="cover" style={{ width: '100%', height: '100%' }}>
-                            {frettirContainer}
-                            {vidburdirContainer}
-                            {malstofurContainer}
-                            {radstefnurContainer}
+                            <ScrollView>
+                                {frettirContainer}
+                                {vidburdirContainer}
+                                {malstofurContainer}
+                                {radstefnurContainer}
+                            </ScrollView>
                         </ImageBackground>
                     </View>
                 ) :

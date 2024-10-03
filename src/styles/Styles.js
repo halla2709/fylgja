@@ -38,11 +38,11 @@ export default StyleSheet.create({
 
   title: {
     fontFamily: 'merriweather-black',
-    fontSize: 74/PixelRatio.getFontScale()
+    fontSize: 60/PixelRatio.getFontScale()
   },
 
   smallTitle: {
-    fontSize: 52/PixelRatio.getFontScale()
+    fontSize: 40/PixelRatio.getFontScale()
   },
 
   buttons: {
@@ -65,14 +65,14 @@ export default StyleSheet.create({
 
   h1: {
     fontFamily: 'merriweather-regular',
-    fontSize: 25/PixelRatio.getFontScale(),
+    fontSize: 20/PixelRatio.getFontScale(),
     alignSelf: 'center',
     padding: 25,
   },
 
   h1reader: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22/PixelRatio.getFontScale(),
+    fontSize: 18/PixelRatio.getFontScale(),
     alignSelf: 'center',
     alignContent: 'center',
     textAlign: 'center',
@@ -83,7 +83,7 @@ export default StyleSheet.create({
 
   searchh1: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22/PixelRatio.getFontScale(),
+    fontSize: 18/PixelRatio.getFontScale(),
     padding: 10,
     opacity: 1,
   },
@@ -97,34 +97,34 @@ export default StyleSheet.create({
 
   h2subchapter: {
     fontFamily: 'merriweather-bold',
-    fontSize: 20/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     paddingTop: 3,
     
   },
 
   searchh2: {
     fontFamily: 'merriweather-light',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 15/PixelRatio.getFontScale(),
     paddingLeft: 35,
   },
 
   h22: {
     fontFamily: 'dosis-medium',
-    fontSize: 25/PixelRatio.getFontScale(),
+    fontSize: 118/PixelRatio.getFontScale(),
     paddingBottom: 5,
     alignItems: 'flex-start',
   },
 
   h2informationplus: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     paddingBottom: 5,
     
   },
 
   h2informationminus: {
     fontFamily: 'merriweather-regular',
-    fontSize: 22/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     paddingBottom: 5,
     color: 'rgb(34,82,171)',
 
@@ -141,20 +141,21 @@ export default StyleSheet.create({
 
   p: {
     fontFamily: 'opensans-regular',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
   },
 
   pItalic: {
     fontFamily: 'opensans-italic',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
   },
 
   ptiny: {
     fontFamily: 'opensans-regular',
-    fontSize: 14/PixelRatio.getFontScale(),
+    fontSize: 11/PixelRatio.getFontScale(),
     color: 'rgb(138,138,138)',
     alignSelf: "center",
-    marginTop: 2
+    textAlign: 'right',
+    margin: 2
   },
 
   h1Information: {
@@ -164,36 +165,36 @@ export default StyleSheet.create({
 
   searchedtext: {
     fontFamily: 'opensans-regular',
-    fontSize: 15/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
     paddingLeft: 15,
     color: '#696969',
   },
 
   pBold: {
     fontFamily: 'opensans-bold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
   },
   
   pSubchapterBold: {
     fontFamily: 'opensans-semibold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
   },
 
   pBoldCenter: {
     fontFamily: 'opensans-bold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
     textAlign: 'center'
   },
 
   pBoldCenterU: {
     fontFamily: 'opensans-bold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
     textAlign: 'center',
     textDecorationLine: 'underline'
   },
 
   pA: {
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
     color: 'rgb(34,82,171)', 
     fontWeight: 'bold', 
     textDecorationLine: 'underline'
@@ -201,13 +202,13 @@ export default StyleSheet.create({
 
   pImportant: {
     fontFamily: 'opensans-regular',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 15/PixelRatio.getFontScale(),
     color:'rgb(0,0,0)'
   },
 
   body: {
     fontFamily: 'opensans-regular',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 14/PixelRatio.getFontScale(),
   },
 
   //HomeScreen
@@ -278,7 +279,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'opensans-semibold',
     color: 'rgb(201,52,36)',
-    fontSize: 32/PixelRatio.getFontScale(),
+    fontSize: 26/PixelRatio.getFontScale(),
   },
 
   buttontext1:{
@@ -291,7 +292,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     fontFamily: 'opensans-semibold',
     color: 'rgb(34,82,171)',
-    fontSize: 32/PixelRatio.getFontScale(),
+    fontSize: 26/PixelRatio.getFontScale(),
   },
 
   buttontext2:{
@@ -303,7 +304,7 @@ export default StyleSheet.create({
   buttontitle3:{
     fontFamily: 'opensans-semibold',
     color: 'rgb(62,135,60)',
-    fontSize: 32/PixelRatio.getFontScale(),
+    fontSize: 26/PixelRatio.getFontScale(),
     textAlign: 'center',
   },
 
@@ -343,11 +344,10 @@ export default StyleSheet.create({
   //NewsFeedScreen
   dateText: {
     fontFamily: 'opensans-bold',
-    fontSize: 14/PixelRatio.getFontScale(),
+    fontSize: 11/PixelRatio.getFontScale(),
     color: 'rgb(131,27,0)',
     textAlign: 'right',
-    alignContent: 'flex-end',
-    alignSelf: 'flex-end',
+    MarginBottom: 5, 
   },
 
   dateText2: {
@@ -484,6 +484,8 @@ export default StyleSheet.create({
     head: { height: 40, backgroundColor: '#f1f8ff' },
     text: { margin: 6 },  
 
+    readerLink: { color: 'rgb(34,82,171)', fontWeight: 'bold', textDecorationLine: 'underline' },
+
 
   //InformationScreen
   informationwholepage: {
@@ -577,7 +579,7 @@ export default StyleSheet.create({
 
   ljosmaedrafelagInfo1: {
     fontFamily: 'merriweather-black',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     paddingTop: 5,
     paddingRight: 10,
     color: 'rgb(34,82,171)',
@@ -586,7 +588,7 @@ export default StyleSheet.create({
 
   ljosmaedrafelagInfo2: {
     fontFamily: 'merriweather-black',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     paddingBottom: 5,
     paddingRight: 10,
     color: 'rgb(34,82,171)',
@@ -594,6 +596,8 @@ export default StyleSheet.create({
   },
 
   drawerChapters:{
+    fontFamily: 'merriweather-black',
+    fontSize: 5/PixelRatio.getFontScale(),
     paddingHorizontal: 6,
     backgroundColor: 'rgb(239,239,239)',
     height: '100%',
@@ -616,7 +620,7 @@ backgroundImage: {
 
   drawerItem1: {
     fontFamily: 'opensans-semibold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     padding: 6,
     margin: 4,
     textAlign: 'center',
@@ -630,7 +634,7 @@ backgroundImage: {
 
   drawerItem2: {
     fontFamily: 'opensans-semibold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     padding: 6,
     margin: 4,
     textAlign: 'center',
@@ -644,7 +648,7 @@ backgroundImage: {
 
   drawerItem3: {
     fontFamily: 'opensans-semibold',
-    fontSize: 18/PixelRatio.getFontScale(),
+    fontSize: 16/PixelRatio.getFontScale(),
     padding: 6,
     margin: 4,
     textAlign: 'center',

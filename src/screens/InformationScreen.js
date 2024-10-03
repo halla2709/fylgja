@@ -74,8 +74,8 @@ export function InformationScreen({ navigation, route }) {
                             <View>
                                 <SearchBar lightTheme round style={Styles.searchBar}
                                     value={searchString}
-                                    placeholder=' Skrifaðu leitarorð hér...'
-                                    inputStyle={{ color: 'black', fontSize: 18 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
+                                    placeholder=' Skrifaðu leitarorð hér'
+                                    inputStyle={{ color: 'black', fontSize: 14 / PixelRatio.getFontScale(), backgroundColor: 'white' }} //Style TextInput
                                     inputContainerStyle={{ backgroundColor: 'white' }}
                                     containerStyle={{ width: '85%', alignSelf: 'center', marginBottom: 10, backgroundColor: 'transparent' }}
                                     onChangeText={(searchString) => {
@@ -85,7 +85,7 @@ export function InformationScreen({ navigation, route }) {
                                         setSearchString("");
                                     }}
                                 />
-                                {isFiltering ? <Text style={Styles.searchedtext}>Sýni leitarniðurstöður sem innihalda: {searchString}</Text> : null}
+                                {isFiltering ? <Text style={Styles.searchedtext}>Leitarniðurstöður fyrir: "{searchString}"</Text> : null}
                                 {infoItems}
                             </View>)
                             :
