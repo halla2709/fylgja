@@ -30,12 +30,12 @@ class ChapterListItem extends React.Component {
         else {
             this.subChapterView = null;
         }
-        var fancy = this.isCurrentChapter() ? '> ' : "" ;
-        var fontSize = (this.props.level == 0 ? 22 : 20)/PixelRatio.getFontScale();
-        var fontFamily = this.isCurrentChapter() ? 'dosis-bold' : 'dosis-regular';
+        var fancy = this.isCurrentChapter() ? '► ' : "" ;
+        var fontSize = (this.props.level == 0 ? 16 : 15)/PixelRatio.getFontScale();
+        var fontFamily = this.isCurrentChapter() ? 'merriweather-bold' : 'merriweather-light';
         var indent = "";
         var mypadding = 2;
-        var anotherpadding = 4;
+        var anotherpadding = 5;
         for (var i = 0; i < this.props.level; i++) {
          //   indent += "   ";
             mypadding = 22 ;

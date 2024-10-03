@@ -107,13 +107,7 @@ export default StyleSheet.create({
     fontSize: 15/PixelRatio.getFontScale(),
     paddingLeft: 35,
   },
-
-  h22: {
-    fontFamily: 'dosis-medium',
-    fontSize: 118/PixelRatio.getFontScale(),
-    paddingBottom: 5,
-    alignItems: 'flex-start',
-  },
+  
 
   h2informationplus: {
     fontFamily: 'merriweather-regular',
@@ -597,7 +591,7 @@ export default StyleSheet.create({
 
   drawerChapters:{
     fontFamily: 'merriweather-black',
-    fontSize: 5/PixelRatio.getFontScale(),
+    fontSize: 18/PixelRatio.getFontScale(),
     paddingHorizontal: 6,
     backgroundColor: 'rgb(239,239,239)',
     height: '100%',
