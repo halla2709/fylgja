@@ -44,8 +44,8 @@ export class LogInScreen extends React.Component {
                 <View style={Styles.loginContainer}>
                   <View>
                   
-                  <Text style={Styles.pBoldCenter}>Fylgjan er einungis ætlað meðlimum Ljósmæðrafélagsins.</Text>
-                  <Text style={Styles.pBoldCenter}>Vinsamlegast sláðu inn aðgangsorð eða hafðu samband við formann Ljósmæðrafélagsins.</Text>
+                  <Text style={Styles.pImportant}>Fylgjan er einungis ætluð meðlimum Ljósmæðrafélagsins.</Text>
+                  <Text style={Styles.pImportant}>Vinsamlegast sláðu inn aðgangsorð eða hafðu samband við formann Ljósmæðrafélagsins.</Text>
                   </View>  
 
                  
@@ -72,11 +72,11 @@ export class LogInScreen extends React.Component {
             <View style={Styles.loginContainer}>
               <View>
               
-              <Text style={Styles.pBoldCenter}>Fylgjan er einungis ætlað meðlimum Ljósmæðrafélagsins.</Text>
-              <Text style={Styles.pBoldCenter}>Vinsamlegast sláðu inn aðgangsorð eða hafðu samband við formann Ljósmæðrafélagsins.</Text>
+              <Text style={Styles.pImportant}>Fylgjan er einungis ætluð meðlimum Ljósmæðrafélagsins.</Text>
+              <Text style={Styles.pImportant}>Vinsamlegast sláðu inn aðgangsorð eða hafðu samband við formann Ljósmæðrafélagsins.</Text>
               </View>          
               
-              <TextInput autoCapitalize="none" autoCorrect={false} placeholder="Aðgangsorð..." 
+              <TextInput autoCapitalize="none" autoCorrect={false} placeholder="Aðgangsorð" 
                 returnKeyType="go" secureTextEntry={true}
                 onSubmitEditing={(input) => this.onSubmit(input.nativeEvent.text)} style={Styles.input}></TextInput>
               </View> 

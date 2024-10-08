@@ -84,7 +84,7 @@ export class NewsOverviewScreen extends React.Component {
                     <Card.Title>Fréttir</Card.Title>
                     <Card.Divider/>
                     <Text>{this.GetNewestString("frett")}</Text>
-                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 136}) }} title="Skoða fleiri" color="rgb(34,82,171)" width="50%" />
                 </Card>
 
         var vidburdirContainer =
@@ -92,7 +92,7 @@ export class NewsOverviewScreen extends React.Component {
                     <Card.Title>Viðburðir</Card.Title>
                     <Card.Divider/>
                     <Text>{this.GetNewestString("vidburdur")}</Text>
-                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 132}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 132}) }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
 
         var malstofurContainer =
@@ -100,7 +100,7 @@ export class NewsOverviewScreen extends React.Component {
                     <Card.Title>Málstofur og Fræðslufundir</Card.Title>
                     <Card.Divider/>
                     <Text>{this.GetNewestString("malstofa")}</Text>
-                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 149}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 149}) }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
 
         var radstefnurContainer =
@@ -108,7 +108,7 @@ export class NewsOverviewScreen extends React.Component {
                     <Card.Title>Ráðstefnur</Card.Title>
                     <Card.Divider/>
                     <Text>{this.GetNewestString("radstefna")}</Text>
-                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 148}) }} style={{ width: '90%', alignSelf: 'center', borderColor:'rgb(34,82,171)' }} title="Skoða fleiri" color="rgb(34,82,171)" />
+                    <Button onPress={() => { this.props.navigation.navigate("News", {contentID: 148}) }} title="Skoða fleiri" color="rgb(34,82,171)" />
                 </Card>
 
         return (
