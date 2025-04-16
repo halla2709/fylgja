@@ -2,6 +2,7 @@
 
 # expo
 .expo/
+.expo-shared/
 
 # dependencies
 /node_modules
@@ -17,6 +18,6 @@ yarn-debug.log*
 yarn-error.log*
 serverside
 src/assets/fylgjahandbok.json
-src/assets/firebase/fylgjatestconfig.js
-src/assets/firebase/fylgjaofficial.js
+dist/
+src/assets/firebase/
 google-services*

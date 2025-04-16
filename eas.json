@@ -15,9 +15,6 @@
     "production": {
       "channel": "production" 
     },
-    "preview": {
-      "channel": "preview"
-    },
     "testchapters": {
       "channel": "testchapters"
     }

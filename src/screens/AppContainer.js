@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as Notifications from 'expo-notifications';
-import { View} from 'react-native';
+import { View } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
 import registerForPushNotificationsAsync from '../controllers/NotificationController';
 import Styles from '../styles/Styles';

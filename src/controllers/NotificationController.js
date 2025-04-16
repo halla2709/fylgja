@@ -3,7 +3,7 @@ import * as Notifications from 'expo-notifications';
 import Constants from 'expo-constants';
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc } from "firebase/firestore/lite";
-//import firebaseConfig from '../assets/firebase/fylgjaofficial';
+//import firebaseConfig from '../assets/firebase/fylgjanotificationsofficial';
 import firebaseConfig from '../assets/firebase/fylgjatestconfig'; 
 import { Platform } from 'react-native';
 
