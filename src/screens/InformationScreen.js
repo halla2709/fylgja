@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {
     Text,
     View,
@@ -12,6 +12,7 @@ import InformationListItem from '../components/InformationListItem';
 import { Scraper } from "../controllers/InformationScraper";
 import { SearchBar } from 'react-native-elements';
 import { GetAllInformationChapters, GetFilteredInformationChapters } from '../controllers/SearchHelper';
+import { MainUrlContext } from '../components/MainUrlProvider.js';
 
 
 export function InformationScreen({ navigation, route }) {
@@ -20,6 +21,7 @@ export function InformationScreen({ navigation, route }) {
     const [loaded, setLoaded] = useState(false);
     const [searchString, setSearchString] = useState("");
     var infoItems = [];
+    const { mainUrl } = useContext(MainUrlContext);
 
     useEffect(() => {
 
@@ -42,7 +44,11 @@ export function InformationScreen({ navigation, route }) {
     }, [searchString])
 
     useEffect(() => {
+        if (mainUrl === "") {
+            return;
+        }
 
+        Scraper.setUrl(mainUrl);
         const currentData = GetAllInformationChapters();
 
         Scraper.setDataChangedCallback((data) => {
@@ -58,10 +64,10 @@ export function InformationScreen({ navigation, route }) {
             setData(GetAllInformationChapters());
             setLoaded(true);
         }
-    }, [])
+    }, [mainUrl])
 
     data.forEach(dataItem => {
-        infoItems.push(<InformationListItem data={dataItem.data} key={dataItem.name} title={dataItem.name} />);
+        infoItems.push(<InformationListItem data={dataItem.data} key={dataItem.name} title={dataItem.name} mainUrl={mainUrl} />);
     });
 
 

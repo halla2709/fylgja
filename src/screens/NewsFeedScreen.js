@@ -12,12 +12,15 @@ import * as WebBrowser from 'expo-web-browser';
 import { Card } from '@rneui/themed'
 import Styles from './../styles/Styles';
 import { GetNewsJson, GetDate } from '../controllers/NewsFeedHelper';
+import { MainUrlContext } from '../components/MainUrlProvider.js';
 
 export class NewsFeedScreen extends React.Component {
 
     static navigationOptions = {
         title: 'Fréttir og Viðburðir'
     };
+
+    static contextType = MainUrlContext;
 
     constructor(props) {
         super(props);
@@ -38,7 +41,7 @@ export class NewsFeedScreen extends React.Component {
       }
 
     async componentDidMount() {
-        GetNewsJson("https://www.ljosmaedrafelag.is/api/articles/GetArticleList?count=10&catId="+this.contentID+"&skip=0")
+        GetNewsJson(this.context.mainUrl + "/api/articles/GetArticleList?count=10&catId="+this.contentID+"&skip=0")
             .then((items) => {
                 this.data = items;
                 this.setState({newsLoaded: true});
@@ -59,11 +62,11 @@ export class NewsFeedScreen extends React.Component {
         this.setState({states});
     }
 
-    getTextWithStyle(data) {
+    getTextWithStyle(mainUrl, data) {
         function goToLink(href) {
             try {
                 if (href.startsWith("/")) {
-                    WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+                    WebBrowser.openBrowserAsync(mainUrl+href);
                 }
                 else if(!href.startsWith("#")){
                     WebBrowser.openBrowserAsync(href);
@@ -91,10 +94,11 @@ export class NewsFeedScreen extends React.Component {
         var views = [];
         var index = 0;
         var f = this.getTextWithStyle;
+        var mainUrl = this.context.mainUrl;
         paragraphs.text.forEach(function(p) {
             var texts = [];
             p.forEach(function(textItem) {
-                texts.push(f(textItem));
+                texts.push(f(mainUrl, textItem));
             });
             array.push(
                 <Text key={ paragraphs.key+"."+index++ } >{texts}</Text>

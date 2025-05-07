@@ -24,11 +24,11 @@ export default class InformationListItem extends React.Component {
         }
     }
 
-    getTextWithStyle(data) {
+    getTextWithStyle(mainUrl, data) {
         function goToLink(href) {
             try {
                 if (href.startsWith("/")) {
-                    WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+                    WebBrowser.openBrowserAsync(mainUrl+href);
                 }
                 else if(!href.startsWith("#")){
                     WebBrowser.openBrowserAsync(href);
@@ -53,14 +53,14 @@ export default class InformationListItem extends React.Component {
         }
     }
     
-    getTextViews(paragraphs, array) {
+    getTextViews(mainUrl, paragraphs, array) {
         var views = [];
         var index = 0;
         var f = this.getTextWithStyle;
         paragraphs.text.forEach(function(p) {
             var texts = [];
             p.forEach(function(textItem) {
-                texts.push(f(textItem));
+                texts.push(f(mainUrl, textItem));
             });
             array.push(
                 <Text selectable={true} selectionColor="#4E75BC" key={ paragraphs.key+"."+index++ }>{texts}</Text>
@@ -77,10 +77,10 @@ export default class InformationListItem extends React.Component {
         return result;
     }
 
-    goToLink(href) {
+    goToLink(mainUrl, href) {
         try {
             if (href.startsWith("/")) {
-                WebBrowser.openBrowserAsync("http://www.ljosmaedrafelag.is"+href);
+                WebBrowser.openBrowserAsync(mainUrl+href);
             }
             else if(!href.startsWith("#")){
                 WebBrowser.openBrowserAsync(href);
@@ -94,6 +94,7 @@ export default class InformationListItem extends React.Component {
     render() {
         const allData = this.props.data;
         const self = this;
+        const mainUrl = this.props.mainUrl;
         var infoItems = [];
         allData.forEach(dataItem => {
             if (dataItem.type == "table") {
@@ -108,7 +109,7 @@ export default class InformationListItem extends React.Component {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.pBold, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);                                
                             }
                             else if(dataColumn.type === 'a') {
-                                columns.push(<Text selectable={true} onPress={ () => {self.goToLink(dataColumn.href)} } style={[Styles.pA, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
+                                columns.push(<Text selectable={true} onPress={ () => {self.goToLink(mainUrl, dataColumn.href)} } style={[Styles.pA, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
                             }
                             else {
                                 columns.push(<Text selectable={true} selectionColor="#2252AB" style={[Styles.p, Styles.columnItem]} key={dataColumn.key}>{dataColumn.text}</Text>);
@@ -131,7 +132,7 @@ export default class InformationListItem extends React.Component {
                     </View>);
             }
             else if(dataItem.type == 'p') {
-                this.getTextViews(dataItem, infoItems);
+                this.getTextViews(mainUrl, dataItem, infoItems);
             }
             else {
                 console.error("Not recognized type", dataItem.type);

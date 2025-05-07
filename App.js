@@ -3,6 +3,7 @@ import * as Font from 'expo-font';
 import { LogInScreen } from './src/screens/LogInScreen.js';
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import AppContainer from './src/screens/AppContainer.js';
+import { MainUrlProvider } from './src/components/MainUrlProvider.js';
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
@@ -56,7 +57,12 @@ export default function App() {
 
     return (
       (fontLoaded && loginStatusLoaded) ?
-        (loggedIn ? <AppContainer/> : <LogInScreen loginCallback={onLoggedIn}/>)
+        (loggedIn ? 
+        <MainUrlProvider>
+          <AppContainer/>
+        </MainUrlProvider>
+         : 
+         <LogInScreen loginCallback={onLoggedIn}/>)
         : null
     );
 }

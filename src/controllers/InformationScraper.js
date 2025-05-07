@@ -36,39 +36,44 @@ class InformationScraper {
             "Skráning ljósmæðra á lista",
             "Um Fylgjuappið"
         ];
+        this.url = "";
+    }
+
+    setUrl(url) {
+        this.url = url;
     }
     
-    async init() {
+    async init() {        
         Promise.all([
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/skraningljosmaedra', "Skráning ljósmæðra á lista"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/framhaldsnam', "Framhaldsnám"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/stofnanasamningar', "Stofnanasamningar"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid', "Um félagið"),            
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/stjorn', "Stjórn og nefndir"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/trunadarmenn', "Trúnaðarmenn"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/ljosmaedrarad', "Ljósmæðraráð"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/skrifstofa', "Skrifstofa félagsins"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/um-felagid/logogreglurlmfi', "Lög og reglur LMFÍ"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/utgafa/handbok-lmfi', "Handbók LMFÍ"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal', "Kjaramál"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/kjaramal/laus-storf', "Laus störf"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/log_og_reglugerdir', "Lög og reglugerðir"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/althjodasidareglur', "Alþjóða siðareglur"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/ljosmodir/ljosmaedranamid', "Ljósmæðranámið"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta', "Skipulag ljósmæðraþjónustu á Íslandi"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir', "Þjónustustaðir – símaskrá"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/1', "Höfuðborgarsvæðið"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/2', "Vesturland"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/3', "Vestfirðir"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/4', "Norðurland"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/5', "Austurland"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/6', "Suðurland"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/faedingastadir/7', "Suðurnes"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimafaedingar', "Heimafæðingaljósmæður"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/heimathj-ljosm', "Heimaþjónustuljósmæður"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/heimathjonusta/log-og-samningar-og-leidbeiningar', "Heimaþjónustu samningar og leiðbeiningar"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/brjostagjafaradgjof', "Brjóstagjafaráðgjöf"),
-            ParseDataFromUrl('https://www.ljosmaedrafelag.is/thjonusta/serfraediljosmaedur', "Starfandi sérfræðiljósmæður")
+            ParseDataFromUrl(this.url + '/thjonusta/heimathjonusta/skraningljosmaedra', "Skráning ljósmæðra á lista"),
+            ParseDataFromUrl(this.url + '/ljosmodir/framhaldsnam', "Framhaldsnám"),
+            ParseDataFromUrl(this.url + '/kjaramal/stofnanasamningar', "Stofnanasamningar"),
+            ParseDataFromUrl(this.url + '/um-felagid', "Um félagið"),            
+            ParseDataFromUrl(this.url + '/um-felagid/stjorn', "Stjórn og nefndir"),
+            ParseDataFromUrl(this.url + '/um-felagid/trunadarmenn', "Trúnaðarmenn"),
+            ParseDataFromUrl(this.url + '/um-felagid/ljosmaedrarad', "Ljósmæðraráð"),
+            ParseDataFromUrl(this.url + '/um-felagid/skrifstofa', "Skrifstofa félagsins"),
+            ParseDataFromUrl(this.url + '/um-felagid/logogreglurlmfi', "Lög og reglur LMFÍ"),
+            ParseDataFromUrl(this.url + '/utgafa/handbok-lmfi', "Handbók LMFÍ"),
+            ParseDataFromUrl(this.url + '/kjaramal', "Kjaramál"),
+            ParseDataFromUrl(this.url + '/kjaramal/laus-storf', "Laus störf"),
+            ParseDataFromUrl(this.url + '/ljosmodir/log_og_reglugerdir', "Lög og reglugerðir"),
+            ParseDataFromUrl(this.url + '/ljosmodir/althjodasidareglur', "Alþjóða siðareglur"),
+            ParseDataFromUrl(this.url + '/ljosmodir/ljosmaedranamid', "Ljósmæðranámið"),
+            ParseDataFromUrl(this.url + '/thjonusta', "Skipulag ljósmæðraþjónustu á Íslandi"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir', "Þjónustustaðir – símaskrá"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/1', "Höfuðborgarsvæðið"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/2', "Vesturland"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/3', "Vestfirðir"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/4', "Norðurland"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/5', "Austurland"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/6', "Suðurland"),
+            ParseDataFromUrl(this.url + '/thjonusta/faedingastadir/7', "Suðurnes"),
+            ParseDataFromUrl(this.url + '/thjonusta/heimafaedingar', "Heimafæðingaljósmæður"),
+            ParseDataFromUrl(this.url + '/thjonusta/heimathjonusta/heimathj-ljosm', "Heimaþjónustuljósmæður"),
+            ParseDataFromUrl(this.url + '/thjonusta/heimathjonusta/log-og-samningar-og-leidbeiningar', "Heimaþjónustu samningar og leiðbeiningar"),
+            ParseDataFromUrl(this.url + '/thjonusta/brjostagjafaradgjof', "Brjóstagjafaráðgjöf"),
+            ParseDataFromUrl(this.url + '/thjonusta/serfraediljosmaedur', "Starfandi sérfræðiljósmæður")
         ])
             .then((items) => {
                 // Need to sort chapters here so they are in the right order
@@ -84,7 +89,7 @@ class InformationScraper {
                             {
                                 "text": "Sækja nýjustu launatöflu",
                                 "type": "a",
-                                "href": "https://www.ljosmaedrafelag.is/kjaramal/nyjasta-launataflan",
+                                "href": this.url + "/kjaramal/nyjasta-launataflan",
                                 "key": items.length + 3,
                             }
                         ]],
@@ -101,7 +106,7 @@ class InformationScraper {
                         "key": items.length + 5,
                         "text": [[
                             {
-                                "text": "Þú ert með útgáfu 2.2 af Fylgju appinu.\nEf þú hefur athugasemdir eða hugmyndir um umbætur á appinu, sendu þá tölvupóst á",
+                                "text": "Þú ert með útgáfu 2.3 af Fylgju appinu.\nEf þú hefur athugasemdir eða hugmyndir um umbætur á appinu, sendu þá tölvupóst á",
                                 "type": "p",
                                 "key": items.length + 6,
                                 "href": "",
@@ -122,6 +127,12 @@ class InformationScraper {
                                 "text": "Halla Björk Ragnarsdóttir og Unnur Kristín Brynjólfsdóttir",
                                 "type": "strong",
                                 "key": items.length + 9,
+                                "href": "",
+                            },                           
+                            {
+                                "text": "\n\nUpplýsingar í appinu koma frá " + this.url,
+                                "type": "p",
+                                "key": items.length + 10,
                                 "href": "",
                             },
                         ]],

@@ -12,12 +12,15 @@ import {
 import { Card } from '@rneui/themed'
 import Styles from './../styles/Styles';
 import { GetNews, GetDate } from './../controllers/NewsFeedHelper';
+import { MainUrlContext } from '../components/MainUrlProvider.js';
 
 export class NewsOverviewScreen extends React.Component {
 
     static navigationOptions = {
         title: 'Fréttir og Viðburðir - Yfirlit'
     };
+
+    static contextType = MainUrlContext;
 
     constructor(props) {
         super(props);
@@ -31,10 +34,10 @@ export class NewsOverviewScreen extends React.Component {
         this.dimensionsListener = Dimensions.addEventListener("change", this.dimensionChanged);
         var data = { frett: [], vidburdur: [], radstefna: [], malstofa: [] };
         Promise.all([
-            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=136&cnt=1'),
-            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=132&cnt=1'),
-            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=148&cnt=1'),
-            GetNews('https://www.ljosmaedrafelag.is/rss.ashx?catId=149&cnt=1')
+            GetNews(this.context.mainUrl + '/rss.ashx?catId=136&cnt=1'),
+            GetNews(this.context.mainUrl + '/rss.ashx?catId=132&cnt=1'),
+            GetNews(this.context.mainUrl + '/rss.ashx?catId=148&cnt=1'),
+            GetNews(this.context.mainUrl + '/rss.ashx?catId=149&cnt=1')
         ])
             .then((items) => {
                 data.frett = items[0][0];
@@ -77,7 +80,6 @@ export class NewsOverviewScreen extends React.Component {
         this.dimensionsListener.remove();
     }
    
-
     render() {
         var frettirContainer =
                 <Card>

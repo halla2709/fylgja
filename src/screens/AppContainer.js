@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useContext } from 'react';
 import * as Notifications from 'expo-notifications';
 import { View } from 'react-native';
 import NotificationPopup from 'react-native-push-notification-popup';
@@ -7,6 +7,7 @@ import Styles from '../styles/Styles';
 import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 import { DownloadChapters } from '../controllers/Chapters';
 import RootStack from '../controllers/ApplicationNavigation.js';
+import { MainUrlContext } from '../components/MainUrlProvider.js';
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -21,10 +22,14 @@ export default function AppContainer(props) {
   const responseListener = useRef();
   const notificationPopup = useRef();
   const navigationRef = useNavigationContainerRef();
+  const { mainUrl } = useContext(MainUrlContext);
+  useEffect(() => {
+    if (mainUrl !== "") {
+      DownloadChapters(mainUrl);
+    }
+  }, [mainUrl]);
 
   useEffect(() => {
-    DownloadChapters();
-
     registerForPushNotificationsAsync();
 
     notificationListener.current = Notifications.addNotificationReceivedListener(notification => {
