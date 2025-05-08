@@ -31,8 +31,8 @@ async function getJson(uri) {
 async function DownloadChapters(url) {
     try {
         var result = await Promise.all([
-            getJson(url+"/fylgja-app/chapters"),
-            getJson(url+"/fylgja-app/chaptertitles")]);
+            getJson(url+"/asset/2803/chapters-02062021.txt"),
+            getJson(url+"/asset/2788/chaptertitles-230221.txt")]);
             chaptersData = result[0];
             chapterTitles = result[1];
             if (waitingForChapters)

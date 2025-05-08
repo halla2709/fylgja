@@ -89,7 +89,7 @@ class InformationScraper {
                             {
                                 "text": "Sækja nýjustu launatöflu",
                                 "type": "a",
-                                "href": this.url + "/kjaramal/nyjasta-launataflan",
+                                "href": this.url + "/asset/2831/launatafla-2023-2024.pdf",
                                 "key": items.length + 3,
                             }
                         ]],
