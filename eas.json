@@ -13,10 +13,7 @@
       }
     },
     "production": {
-      "channel": "production" 
-    },
-    "testchapters": {
-      "channel": "testchapters"
+      "channel": "production"
     }
   },
   "submit": {

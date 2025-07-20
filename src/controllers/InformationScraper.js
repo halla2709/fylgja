@@ -106,7 +106,7 @@ class InformationScraper {
                         "key": items.length + 5,
                         "text": [[
                             {
-                                "text": "Þú ert með útgáfu 2.4 af Fylgju appinu.\nEf þú hefur athugasemdir eða hugmyndir um umbætur á appinu, sendu þá tölvupóst á",
+                                "text": "Þú ert með útgáfu 2.5 af Fylgju appinu.\nEf þú hefur athugasemdir eða hugmyndir um umbætur á appinu, sendu þá tölvupóst á",
                                 "type": "p",
                                 "key": items.length + 6,
                                 "href": "",
